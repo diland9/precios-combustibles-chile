@@ -1,0 +1,13 @@
+{
+  "name": "precios-combustibles-chile",
+  "version": "1.0.0",
+  "description": "Monitor diario de precios de combustibles en Chile, por estacion, operador, comuna y region.",
+  "scripts": {
+    "snapshot": "node scripts/fetch_snapshot.js"
+  },
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "xlsx": "^0.18.5"
+  }
+}

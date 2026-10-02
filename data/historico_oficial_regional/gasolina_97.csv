@@ -1,0 +1,5447 @@
+fecha,region,precio_clp_litro
+1994-12,Metropolitana,182.3
+1995-01,Metropolitana,182.4
+1995-01,Antofagasta,193.5
+1995-01,Atacama,202.4
+1995-01,Coquimbo,193.9
+1995-01,Valparaíso,189.4
+1995-01,O'Higgins,190.6
+1995-01,Maule,188
+1995-01,Biobío,187.5
+1995-01,Araucanía,195.6
+1995-01,Los Lagos,196.9
+1995-02,Metropolitana,187.2
+1995-02,Antofagasta,197.8
+1995-02,Atacama,207.6
+1995-02,Coquimbo,197.9
+1995-02,Valparaíso,194
+1995-02,O'Higgins,195.4
+1995-02,Maule,193
+1995-02,Biobío,192.3
+1995-02,Araucanía,199.7
+1995-02,Los Lagos,200.2
+1995-03,Metropolitana,193.1
+1995-03,Antofagasta,204.3
+1995-03,Atacama,211.6
+1995-03,Coquimbo,203.5
+1995-03,Valparaíso,200.5
+1995-03,O'Higgins,203.2
+1995-03,Maule,197.7
+1995-03,Biobío,199
+1995-03,Araucanía,206
+1995-03,Los Lagos,201.3
+1995-04,Metropolitana,192.1
+1995-04,Antofagasta,204.1
+1995-04,Atacama,211.2
+1995-04,Coquimbo,204
+1995-04,Valparaíso,200.3
+1995-04,O'Higgins,201.6
+1995-04,Maule,197.7
+1995-04,Biobío,198.8
+1995-04,Araucanía,205.7
+1995-04,Los Lagos,207
+1995-05,Metropolitana,191
+1995-05,Antofagasta,204.1
+1995-05,Atacama,211.2
+1995-05,Coquimbo,203.9
+1995-05,Valparaíso,200.1
+1995-05,O'Higgins,201.7
+1995-05,Maule,199
+1995-05,Biobío,198.8
+1995-05,Araucanía,205.6
+1995-05,Los Lagos,206.9
+1995-06,Metropolitana,200
+1995-06,Antofagasta,211.1
+1995-06,Atacama,219.6
+1995-06,Coquimbo,211.1
+1995-06,Valparaíso,207.1
+1995-06,O'Higgins,208.8
+1995-06,Maule,205.5
+1995-06,Biobío,206
+1995-06,Araucanía,212.7
+1995-06,Los Lagos,212
+1995-07,Metropolitana,200.1
+1995-07,Tarapacá,210.8
+1995-07,Antofagasta,211.1
+1995-07,Atacama,219.6
+1995-07,Coquimbo,211.1
+1995-07,Valparaíso,207.4
+1995-07,O'Higgins,208.8
+1995-07,Maule,205.5
+1995-07,Biobío,203.4
+1995-07,Araucanía,212.6
+1995-07,Los Lagos,212.7
+1995-08,Metropolitana,196.3
+1995-08,Tarapacá,218
+1995-08,Antofagasta,214.3
+1995-08,Atacama,213.2
+1995-08,Coquimbo,218.9
+1995-08,Valparaíso,214.6
+1995-08,O'Higgins,216.8
+1995-08,Maule,212.5
+1995-08,Biobío,212
+1995-08,Araucanía,218.6
+1995-08,Los Lagos,218.6
+1995-09,Metropolitana,206.8
+1995-09,Tarapacá,218.9
+1995-09,Antofagasta,218.4
+1995-09,Atacama,226
+1995-09,Coquimbo,218.9
+1995-09,Valparaíso,214.2
+1995-09,O'Higgins,216.4
+1995-09,Maule,212.7
+1995-09,Biobío,212.1
+1995-09,Araucanía,217.3
+1995-09,Los Lagos,218.9
+1995-10,Metropolitana,206.2
+1995-10,Tarapacá,218.4
+1995-10,Antofagasta,218.4
+1995-10,Atacama,226
+1995-10,Coquimbo,219
+1995-10,Valparaíso,213.8
+1995-10,O'Higgins,216.8
+1995-10,Maule,211.3
+1995-10,Biobío,211.3
+1995-10,Araucanía,217.3
+1995-10,Los Lagos,218.9
+1995-11,Metropolitana,205.2
+1995-11,Tarapacá,218.7
+1995-11,Antofagasta,218.3
+1995-11,Atacama,226
+1995-11,Coquimbo,218.7
+1995-11,Valparaíso,214
+1995-11,O'Higgins,216.7
+1995-11,Maule,212.7
+1995-11,Biobío,211.9
+1995-11,Araucanía,217.3
+1995-11,Los Lagos,218.9
+1995-12,Metropolitana,208.9
+1995-12,Tarapacá,221.4
+1995-12,Antofagasta,221.1
+1995-12,Atacama,228.6
+1995-12,Coquimbo,221.2
+1995-12,Valparaíso,216.5
+1995-12,O'Higgins,220.1
+1995-12,Maule,212
+1995-12,Biobío,214.7
+1995-12,Araucanía,220.1
+1995-12,Los Lagos,220.8
+1996-01,Metropolitana,222.9
+1996-01,Tarapacá,226.2
+1996-01,Antofagasta,226.4
+1996-01,Atacama,233.8
+1996-01,Coquimbo,226.1
+1996-01,Valparaíso,220.2
+1996-01,O'Higgins,225.9
+1996-01,Maule,216.6
+1996-01,Biobío,220.5
+1996-01,Araucanía,225
+1996-01,Los Lagos,225.7
+1996-02,Metropolitana,223
+1996-02,Tarapacá,235.7
+1996-02,Antofagasta,235.2
+1996-02,Atacama,240.4
+1996-02,Coquimbo,235.5
+1996-02,Valparaíso,230.8
+1996-02,O'Higgins,234.8
+1996-02,Maule,226.9
+1996-02,Biobío,229.6
+1996-02,Araucanía,233.7
+1996-02,Los Lagos,235.2
+1996-03,Metropolitana,223
+1996-03,Tarapacá,235.4
+1996-03,Antofagasta,235.2
+1996-03,Atacama,242.4
+1996-03,Coquimbo,235.6
+1996-03,Valparaíso,230
+1996-03,O'Higgins,234.4
+1996-03,Maule,227.2
+1996-03,Biobío,229.7
+1996-03,Araucanía,233.2
+1996-03,Los Lagos,235.3
+1996-04,Metropolitana,234
+1996-04,Tarapacá,246.5
+1996-04,Antofagasta,245.6
+1996-04,Atacama,253.2
+1996-04,Coquimbo,246.5
+1996-04,Valparaíso,241
+1996-04,O'Higgins,246
+1996-04,Maule,238.6
+1996-04,Biobío,240.6
+1996-04,Araucanía,243.9
+1996-04,Los Lagos,246.5
+1996-05,Metropolitana,240.3
+1996-05,Tarapacá,253.4
+1996-05,Antofagasta,253.1
+1996-05,Atacama,260
+1996-05,Coquimbo,253.5
+1996-05,Valparaíso,247
+1996-05,O'Higgins,253.4
+1996-05,Maule,252.3
+1996-05,Biobío,247.9
+1996-05,Araucanía,251.1
+1996-05,Los Lagos,253.2
+1996-06,Metropolitana,237.4
+1996-06,Tarapacá,249.2
+1996-06,Antofagasta,247.4
+1996-06,Atacama,254.6
+1996-06,Coquimbo,247.9
+1996-06,Valparaíso,241.8
+1996-06,O'Higgins,247.3
+1996-06,Maule,247.5
+1996-06,Biobío,244.7
+1996-06,Araucanía,246.6
+1996-06,Los Lagos,247
+1996-07,Metropolitana,226.8
+1996-07,Tarapacá,240.9
+1996-07,Antofagasta,240.5
+1996-07,Atacama,246.4
+1996-07,Coquimbo,240.7
+1996-07,Valparaíso,235.8
+1996-07,O'Higgins,239.4
+1996-07,Maule,239.8
+1996-07,Biobío,234.9
+1996-07,Araucanía,238.7
+1996-07,Los Lagos,239.8
+1996-08,Metropolitana,230.56
+1996-08,Tarapacá,245.8
+1996-08,Antofagasta,245.1
+1996-08,Atacama,250.8
+1996-08,Coquimbo,245.3
+1996-08,Valparaíso,232.8
+1996-08,O'Higgins,243.9
+1996-08,Maule,244.8
+1996-08,Biobío,239.5
+1996-08,Araucanía,243.3
+1996-08,Los Lagos,244.5
+1996-09,Metropolitana,227.6
+1996-09,Tarapacá,245.9
+1996-09,Antofagasta,244.5
+1996-09,Atacama,250.8
+1996-09,Coquimbo,245.4
+1996-09,Valparaíso,233
+1996-09,O'Higgins,243.8
+1996-09,Maule,241.3
+1996-09,Biobío,238.7
+1996-09,Araucanía,243.2
+1996-09,Los Lagos,244
+1996-10,Metropolitana,236
+1996-10,Tarapacá,253.8
+1996-10,Antofagasta,252.3
+1996-10,Atacama,257.8
+1996-10,Coquimbo,253.2
+1996-10,Valparaíso,242.3
+1996-10,O'Higgins,251.2
+1996-10,Maule,247.4
+1996-10,Biobío,246.5
+1996-10,Araucanía,251.1
+1996-10,Los Lagos,252
+1996-11,Metropolitana,241.66
+1996-11,Tarapacá,258.1
+1996-11,Antofagasta,258.4
+1996-11,Atacama,262.9
+1996-11,Coquimbo,258.8
+1996-11,Valparaíso,248.5
+1996-11,O'Higgins,256.5
+1996-11,Maule,254.8
+1996-11,Biobío,253.2
+1996-11,Araucanía,256.4
+1996-11,Los Lagos,258.5
+1996-12,Metropolitana,241.34
+1996-12,Tarapacá,257.9
+1996-12,Antofagasta,258.4
+1996-12,Atacama,262.9
+1996-12,Coquimbo,258.8
+1996-12,Valparaíso,247.3
+1996-12,O'Higgins,256.5
+1996-12,Maule,252.8
+1996-12,Biobío,251.6
+1996-12,Araucanía,256
+1996-12,Los Lagos,258.5
+1997-01,Metropolitana,246.3
+1997-01,Tarapacá,260.7
+1997-01,Antofagasta,262.5
+1997-01,Atacama,267.4
+1997-01,Coquimbo,263
+1997-01,Valparaíso,251.9
+1997-01,O'Higgins,261.2
+1997-01,Maule,257.1
+1997-01,Biobío,257.2
+1997-01,Araucanía,260.4
+1997-01,Los Lagos,263.3
+1997-02,Metropolitana,246.1
+1997-02,Tarapacá,261.6
+1997-02,Antofagasta,262.5
+1997-02,Atacama,267.6
+1997-02,Coquimbo,262.8
+1997-02,Valparaíso,252.1
+1997-02,O'Higgins,261.2
+1997-02,Maule,257.1
+1997-02,Biobío,258.1
+1997-02,Araucanía,260
+1997-02,Los Lagos,263.3
+1997-02,Aysén,273.5
+1997-02,Magallanes,266
+1997-03,Metropolitana,242
+1997-03,Tarapacá,261.6
+1997-03,Antofagasta,262.5
+1997-03,Atacama,267.4
+1997-03,Coquimbo,262.5
+1997-03,Valparaíso,251.7
+1997-03,O'Higgins,261.2
+1997-03,Maule,256.8
+1997-03,Biobío,257.4
+1997-03,Araucanía,259.8
+1997-03,Los Lagos,263.1
+1997-03,Aysén,273.5
+1997-03,Magallanes,266
+1997-04,Metropolitana,245.9
+1997-04,Tarapacá,261.8
+1997-04,Antofagasta,262.1
+1997-04,Atacama,267.3
+1997-04,Coquimbo,261.6
+1997-04,Valparaíso,250.9
+1997-04,O'Higgins,259.9
+1997-04,Maule,257.1
+1997-04,Biobío,258.2
+1997-04,Araucanía,248.1
+1997-04,Los Lagos,263.1
+1997-04,Aysén,273.5
+1997-04,Magallanes,266
+1997-05,Metropolitana,245.6
+1997-05,Tarapacá,261.6
+1997-05,Antofagasta,262
+1997-05,Atacama,267.3
+1997-05,Coquimbo,260
+1997-05,Valparaíso,251
+1997-05,O'Higgins,258.8
+1997-05,Maule,255.1
+1997-05,Biobío,257.3
+1997-05,Araucanía,248.1
+1997-05,Los Lagos,263
+1997-05,Aysén,273.5
+1997-05,Magallanes,266
+1997-06,Metropolitana,245.3
+1997-06,Tarapacá,261.3
+1997-06,Antofagasta,262
+1997-06,Atacama,267.4
+1997-06,Coquimbo,260.3
+1997-06,Valparaíso,251
+1997-06,O'Higgins,255.3
+1997-06,Maule,252.1
+1997-06,Biobío,257.1
+1997-06,Araucanía,248.1
+1997-06,Los Lagos,263
+1997-06,Aysén,273.5
+1997-06,Magallanes,266
+1997-07,Metropolitana,236.66
+1997-07,Tarapacá,249.7
+1997-07,Antofagasta,254.4
+1997-07,Atacama,259.8
+1997-07,Coquimbo,252
+1997-07,Valparaíso,251
+1997-07,O'Higgins,249
+1997-07,Maule,244.5
+1997-07,Biobío,249
+1997-07,Araucanía,240.8
+1997-07,Los Lagos,254.5
+1997-07,Aysén,269
+1997-07,Magallanes,258
+1997-08,Metropolitana,236.71
+1997-08,Tarapacá,247.5
+1997-08,Antofagasta,254.2
+1997-08,Atacama,258.4
+1997-08,Coquimbo,250.5
+1997-08,Valparaíso,241.2
+1997-08,O'Higgins,249
+1997-08,Maule,245.5
+1997-08,Biobío,248.9
+1997-08,Araucanía,239.2
+1997-08,Los Lagos,254.5
+1997-08,Aysén,269
+1997-08,Magallanes,258
+1997-09,Metropolitana,243.52
+1997-09,Tarapacá,254.4
+1997-09,Antofagasta,262.6
+1997-09,Atacama,265
+1997-09,Coquimbo,258
+1997-09,Valparaíso,248.7
+1997-09,O'Higgins,256.8
+1997-09,Maule,252.2
+1997-09,Biobío,256.8
+1997-09,Araucanía,250.4
+1997-09,Los Lagos,262.5
+1997-09,Aysén,276
+1997-09,Magallanes,266
+1997-10,Metropolitana,241.99
+1997-10,Tarapacá,252.3
+1997-10,Antofagasta,256.1
+1997-10,Atacama,265
+1997-10,Coquimbo,253.3
+1997-10,Valparaíso,248.7
+1997-10,O'Higgins,257
+1997-10,Maule,252.3
+1997-10,Biobío,256.1
+1997-10,Araucanía,250.4
+1997-10,Los Lagos,262.7
+1997-10,Aysén,276
+1997-10,Magallanes,254
+1997-11,Metropolitana,236.88
+1997-11,Tarapacá,250.1
+1997-11,Antofagasta,256.9
+1997-11,Atacama,260.1
+1997-11,Coquimbo,252.5
+1997-11,Valparaíso,242.5
+1997-11,O'Higgins,251.2
+1997-11,Maule,246.4
+1997-11,Biobío,251.1
+1997-11,Araucanía,244.3
+1997-11,Los Lagos,255.4
+1997-11,Aysén,271
+1997-11,Magallanes,254
+1997-12,Metropolitana,235.47
+1997-12,Tarapacá,250.1
+1997-12,Antofagasta,256.9
+1997-12,Atacama,260.4
+1997-12,Coquimbo,251.7
+1997-12,Valparaíso,242.7
+1997-12,O'Higgins,251.1
+1997-12,Maule,234.6
+1997-12,Biobío,250.6
+1997-12,Araucanía,244.5
+1997-12,Los Lagos,255.1
+1997-12,Aysén,271
+1997-12,Magallanes,255
+1998-01,Metropolitana,234.85
+1998-01,Tarapacá,247.3
+1998-01,Antofagasta,257
+1998-01,Atacama,259.7
+1998-01,Coquimbo,251.7
+1998-01,Valparaíso,243.3
+1998-01,O'Higgins,241.4
+1998-01,Maule,242.6
+1998-01,Biobío,250.5
+1998-01,Araucanía,244.8
+1998-01,Los Lagos,256.5
+1998-01,Aysén,271
+1998-01,Magallanes,255
+1998-02,Metropolitana,233.67
+1998-02,Tarapacá,244.7
+1998-02,Antofagasta,255
+1998-02,Atacama,257.3
+1998-02,Coquimbo,250.8
+1998-02,Valparaíso,241.4
+1998-02,O'Higgins,251.5
+1998-02,Maule,240.8
+1998-02,Biobío,248.6
+1998-02,Araucanía,242.7
+1998-02,Los Lagos,256.5
+1998-02,Aysén,269.5
+1998-02,Magallanes,254.7
+1998-03,Metropolitana,233.81
+1998-03,Tarapacá,244.5
+1998-03,Antofagasta,255
+1998-03,Atacama,257.3
+1998-03,Coquimbo,251
+1998-03,Valparaíso,241.2
+1998-03,O'Higgins,251.2
+1998-03,Maule,241
+1998-03,Biobío,248.5
+1998-03,Araucanía,243.2
+1998-03,Los Lagos,252.9
+1998-03,Aysén,267.7
+1998-03,Magallanes,255
+1998-04,Metropolitana,230.85
+1998-04,Tarapacá,241.1
+1998-04,Antofagasta,250.6
+1998-04,Atacama,254.3
+1998-04,Coquimbo,248.3
+1998-04,Valparaíso,238.4
+1998-04,O'Higgins,247.1
+1998-04,Maule,239.6
+1998-04,Biobío,245.5
+1998-04,Araucanía,241
+1998-04,Los Lagos,250.4
+1998-04,Aysén,266.5
+1998-04,Magallanes,255
+1998-05,Metropolitana,230.96
+1998-05,Tarapacá,240.6
+1998-05,Antofagasta,251.1
+1998-05,Atacama,254
+1998-05,Coquimbo,248.2
+1998-05,Valparaíso,237.6
+1998-05,O'Higgins,247.2
+1998-05,Maule,239.3
+1998-05,Biobío,245.8
+1998-05,Araucanía,241
+1998-05,Los Lagos,251.8
+1998-05,Aysén,266.5
+1998-05,Magallanes,249.2
+1998-06,Tarapacá,243.1
+1998-06,Antofagasta,253.9
+1998-06,Atacama,256
+1998-06,Coquimbo,251.4
+1998-06,Valparaíso,240.8
+1998-06,O'Higgins,249.8
+1998-06,Maule,242.2
+1998-06,Biobío,248.6
+1998-06,Araucanía,244.6
+1998-06,Los Lagos,254.7
+1998-06,Aysén,269.5
+1998-06,Magallanes,249.2
+1998-07,Metropolitana,237.52
+1998-07,Tarapacá,245.4
+1998-07,Antofagasta,256.6
+1998-07,Atacama,259.1
+1998-07,Coquimbo,253.8
+1998-07,Valparaíso,244.3
+1998-07,O'Higgins,251.2
+1998-07,Maule,242.7
+1998-07,Biobío,250.1
+1998-07,Araucanía,246.4
+1998-07,Los Lagos,257.8
+1998-07,Aysén,272.5
+1998-07,Magallanes,256.2
+1998-08,Metropolitana,237.72
+1998-08,Tarapacá,246
+1998-08,Antofagasta,256.6
+1998-08,Atacama,259.2
+1998-08,Coquimbo,253.4
+1998-08,Valparaíso,244.8
+1998-08,O'Higgins,252.3
+1998-08,Maule,242.3
+1998-08,Biobío,251
+1998-08,Araucanía,246.3
+1998-08,Los Lagos,258.2
+1998-08,Aysén,272.5
+1998-08,Magallanes,256.2
+1998-09,Metropolitana,237.45
+1998-09,Tarapacá,245.9
+1998-09,Antofagasta,256.6
+1998-09,Atacama,259.1
+1998-09,Coquimbo,253
+1998-09,Valparaíso,244.5
+1998-09,O'Higgins,252
+1998-09,Maule,243
+1998-09,Biobío,251.1
+1998-09,Araucanía,246.4
+1998-09,Los Lagos,255.2
+1998-09,Aysén,272.5
+1998-09,Magallanes,248
+1998-10,Metropolitana,236.82
+1998-10,Tarapacá,239.6
+1998-10,Antofagasta,256.6
+1998-10,Atacama,258.9
+1998-10,Coquimbo,253
+1998-10,Valparaíso,244.7
+1998-10,O'Higgins,251.9
+1998-10,Maule,243.4
+1998-10,Biobío,251.1
+1998-10,Araucanía,246
+1998-10,Los Lagos,257.5
+1998-10,Aysén,272.5
+1998-10,Magallanes,248
+1998-11,Metropolitana,232.03
+1998-11,Tarapacá,244.6
+1998-11,Antofagasta,256.6
+1998-11,Atacama,258.8
+1998-11,Coquimbo,252.5
+1998-11,Valparaíso,245.5
+1998-11,O'Higgins,251.6
+1998-11,Maule,246
+1998-11,Biobío,251.1
+1998-11,Araucanía,245.3
+1998-11,Los Lagos,257.5
+1998-11,Aysén,273
+1998-11,Magallanes,248
+1998-12,Metropolitana,233.92
+1998-12,Tarapacá,244.3
+1998-12,Antofagasta,257.8
+1998-12,Atacama,261.3
+1998-12,Coquimbo,252.5
+1998-12,Valparaíso,245.5
+1998-12,O'Higgins,252.6
+1998-12,Maule,246
+1998-12,Biobío,251
+1998-12,Araucanía,245.6
+1998-12,Los Lagos,257.4
+1998-12,Aysén,273
+1998-12,Magallanes,249
+1999-01,Metropolitana,229.49
+1999-01,Tarapacá,242.5
+1999-01,Antofagasta,255.9
+1999-01,Atacama,259.9
+1999-01,Coquimbo,251.9
+1999-01,Valparaíso,243.3
+1999-01,O'Higgins,250.7
+1999-01,Maule,243.8
+1999-01,Biobío,249.5
+1999-01,Araucanía,243.1
+1999-01,Los Lagos,255
+1999-01,Aysén,271
+1999-01,Magallanes,247
+1999-02,Metropolitana,231.1
+1999-02,Tarapacá,242
+1999-02,Antofagasta,256.2
+1999-02,Atacama,259.3
+1999-02,Coquimbo,251
+1999-02,Valparaíso,243.5
+1999-02,O'Higgins,250.7
+1999-02,Maule,243.4
+1999-02,Biobío,249.2
+1999-02,Araucanía,243.3
+1999-02,Los Lagos,255
+1999-02,Aysén,272
+1999-02,Magallanes,247
+1999-03,Metropolitana,230.31
+1999-03,Tarapacá,242.2
+1999-03,Antofagasta,257.3
+1999-03,Atacama,260.4
+1999-03,Coquimbo,252.1
+1999-03,Valparaíso,244.7
+1999-03,O'Higgins,251.6
+1999-03,Maule,245.4
+1999-03,Biobío,253.1
+1999-03,Araucanía,245.1
+1999-03,Los Lagos,257.8
+1999-03,Aysén,274
+1999-03,Magallanes,249.2
+1999-04,Metropolitana,246.35
+1999-04,Tarapacá,261.1
+1999-04,Antofagasta,275.3
+1999-04,Atacama,277.6
+1999-04,Coquimbo,270.1
+1999-04,Valparaíso,264.1
+1999-04,O'Higgins,270.1
+1999-04,Maule,264.3
+1999-04,Biobío,270.7
+1999-04,Araucanía,262.9
+1999-04,Los Lagos,277
+1999-04,Aysén,293.5
+1999-04,Magallanes,267.5
+1999-05,Metropolitana,251.76
+1999-05,Tarapacá,264.6
+1999-05,Antofagasta,278.8
+1999-05,Atacama,281.3
+1999-05,Coquimbo,273.9
+1999-05,Valparaíso,266.5
+1999-05,O'Higgins,271.2
+1999-05,Maule,267.4
+1999-05,Biobío,274.6
+1999-05,Araucanía,265.6
+1999-05,Los Lagos,279.6
+1999-05,Aysén,296.5
+1999-05,Magallanes,268.8
+1999-06,Metropolitana,253.74
+1999-06,Tarapacá,263.2
+1999-06,Antofagasta,277.8
+1999-06,Atacama,280
+1999-06,Coquimbo,272.2
+1999-06,Valparaíso,265.7
+1999-06,O'Higgins,269.9
+1999-06,Maule,266.7
+1999-06,Biobío,274
+1999-06,Araucanía,266.8
+1999-06,Los Lagos,278.8
+1999-06,Aysén,295.5
+1999-06,Magallanes,267.8
+1999-07,Metropolitana,252.33
+1999-07,Tarapacá,269.7
+1999-07,Antofagasta,279.8
+1999-07,Atacama,284.8
+1999-07,Coquimbo,279.8
+1999-07,Valparaíso,274
+1999-07,O'Higgins,278.2
+1999-07,Maule,274.8
+1999-07,Biobío,281
+1999-07,Araucanía,274.5
+1999-07,Los Lagos,286.5
+1999-07,Aysén,303.5
+1999-07,Magallanes,277
+1999-08,Metropolitana,270.67
+1999-08,Tarapacá,280.7
+1999-08,Antofagasta,296
+1999-08,Atacama,298.1
+1999-08,Coquimbo,290.8
+1999-08,Valparaíso,284.2
+1999-08,O'Higgins,286
+1999-08,Maule,285.4
+1999-08,Biobío,292.9
+1999-08,Araucanía,285.5
+1999-08,Los Lagos,294.1
+1999-08,Aysén,303.5
+1999-08,Magallanes,286.1
+1999-09,Metropolitana,268.98
+1999-09,Tarapacá,280.8
+1999-09,Antofagasta,294.2
+1999-09,Atacama,298
+1999-09,Coquimbo,290.8
+1999-09,Valparaíso,284.5
+1999-09,O'Higgins,284.1
+1999-09,Maule,284.9
+1999-09,Biobío,292.7
+1999-09,Araucanía,285.2
+1999-09,Los Lagos,296.4
+1999-09,Aysén,316
+1999-09,Magallanes,286.1
+1999-10,Metropolitana,267.19
+1999-10,Tarapacá,280.8
+1999-10,Antofagasta,293.9
+1999-10,Atacama,298
+1999-10,Coquimbo,290.6
+1999-10,Valparaíso,284.9
+1999-10,O'Higgins,284.3
+1999-10,Maule,285
+1999-10,Biobío,292.8
+1999-10,Araucanía,285.6
+1999-10,Los Lagos,296.5
+1999-10,Aysén,316
+1999-10,Magallanes,285.8
+1999-11,Metropolitana,264.46
+1999-11,Tarapacá,280.8
+1999-11,Antofagasta,294
+1999-11,Atacama,298
+1999-11,Coquimbo,290.1
+1999-11,Valparaíso,288.3
+1999-11,O'Higgins,284
+1999-11,Maule,284.9
+1999-11,Biobío,292.9
+1999-11,Araucanía,286.4
+1999-11,Los Lagos,296.5
+1999-11,Aysén,316.3
+1999-11,Magallanes,287.8
+1999-12,Metropolitana,270.29
+1999-12,Tarapacá,280.8
+1999-12,Antofagasta,295.3
+1999-12,Atacama,299.4
+1999-12,Coquimbo,290.2
+1999-12,Valparaíso,285.5
+1999-12,O'Higgins,286.3
+1999-12,Maule,286.6
+1999-12,Biobío,293.6
+1999-12,Araucanía,290.3
+1999-12,Los Lagos,296.8
+1999-12,Aysén,316.3
+1999-12,Magallanes,292.1
+2000-01,Metropolitana,276.88
+2000-01,Tarapacá,288.6
+2000-01,Antofagasta,301.5
+2000-01,Atacama,305.2
+2000-01,Coquimbo,295.6
+2000-01,Valparaíso,289.7
+2000-01,O'Higgins,291.6
+2000-01,Maule,292
+2000-01,Biobío,298.8
+2000-01,Araucanía,296.4
+2000-01,Los Lagos,302.5
+2000-01,Aysén,322.8
+2000-01,Magallanes,296.1
+2000-02,Metropolitana,276.97
+2000-02,Tarapacá,288.6
+2000-02,Antofagasta,300.7
+2000-02,Atacama,304.2
+2000-02,Coquimbo,293.2
+2000-02,Valparaíso,317.1
+2000-02,O'Higgins,291.3
+2000-02,Maule,292
+2000-02,Biobío,298.4
+2000-02,Araucanía,295
+2000-02,Los Lagos,302.2
+2000-02,Aysén,323
+2000-02,Magallanes,296.3
+2000-03,Metropolitana,306.27
+2000-03,Tarapacá,316.6
+2000-03,Antofagasta,327.2
+2000-03,Atacama,330.2
+2000-03,Coquimbo,319.1
+2000-03,Valparaíso,317.3
+2000-03,O'Higgins,318
+2000-03,Maule,317.9
+2000-03,Biobío,316.1
+2000-03,Araucanía,322.3
+2000-03,Los Lagos,328.5
+2000-03,Aysén,350.8
+2000-03,Magallanes,320
+2000-04,Metropolitana,319.14
+2000-04,Tarapacá,316.6
+2000-04,Antofagasta,327.2
+2000-04,Atacama,344.6
+2000-04,Coquimbo,317.1
+2000-04,Valparaíso,331.7
+2000-04,O'Higgins,315.9
+2000-04,Maule,317.6
+2000-04,Biobío,324.7
+2000-04,Araucanía,323
+2000-04,Los Lagos,328.5
+2000-04,Aysén,350.8
+2000-04,Magallanes,320
+2000-05,Metropolitana,320.97
+2000-05,Tarapacá,336.2
+2000-05,Antofagasta,342.6
+2000-05,Atacama,345.9
+2000-05,Coquimbo,334
+2000-05,Valparaíso,333.3
+2000-05,O'Higgins,332.3
+2000-05,Maule,335
+2000-05,Biobío,341
+2000-05,Araucanía,340.1
+2000-05,Los Lagos,302.2
+2000-05,Aysén,367.3
+2000-05,Magallanes,337.8
+2000-06,Metropolitana,320.3
+2000-06,Tarapacá,336.2
+2000-06,Antofagasta,343.1
+2000-06,Atacama,346.3
+2000-06,Coquimbo,334.7
+2000-06,Valparaíso,332.7
+2000-06,O'Higgins,332.9
+2000-06,Maule,334.9
+2000-06,Biobío,341.2
+2000-06,Araucanía,340.1
+2000-06,Los Lagos,344.7
+2000-06,Aysén,366.8
+2000-06,Magallanes,337.8
+2000-07,Metropolitana,332.86
+2000-07,Tarapacá,336.2
+2000-07,Antofagasta,343.3
+2000-07,Atacama,356.6
+2000-07,Coquimbo,342.3
+2000-07,Valparaíso,345.3
+2000-07,O'Higgins,343.7
+2000-07,Maule,347.7
+2000-07,Biobío,341.3
+2000-07,Araucanía,340.2
+2000-07,Los Lagos,354.6
+2000-07,Aysén,370
+2000-07,Magallanes,350.5
+2000-08,Metropolitana,347.32
+2000-08,Tarapacá,361.2
+2000-08,Antofagasta,368.1
+2000-08,Atacama,372.5
+2000-08,Coquimbo,362.1
+2000-08,Valparaíso,358.6
+2000-08,O'Higgins,357.5
+2000-08,Maule,361.6
+2000-08,Biobío,365.5
+2000-08,Araucanía,365.2
+2000-08,Los Lagos,369.1
+2000-08,Aysén,385.2
+2000-08,Magallanes,364.9
+2000-09,Metropolitana,349.29
+2000-09,Tarapacá,365.4
+2000-09,Antofagasta,371.4
+2000-09,Atacama,372.9
+2000-09,Coquimbo,366.2
+2000-09,Valparaíso,362.8
+2000-09,O'Higgins,361.4
+2000-09,Maule,365.7
+2000-09,Biobío,365.3
+2000-09,Araucanía,369.5
+2000-09,Los Lagos,374.3
+2000-09,Aysén,389.2
+2000-09,Magallanes,375.5
+2000-10,Metropolitana,364.93
+2000-10,Tarapacá,376
+2000-10,Antofagasta,390.7
+2000-10,Atacama,399.1
+2000-10,Coquimbo,385.2
+2000-10,Valparaíso,379.5
+2000-10,O'Higgins,379.9
+2000-10,Maule,385.5
+2000-10,Biobío,389.6
+2000-10,Araucanía,389.1
+2000-10,Los Lagos,393.3
+2000-10,Aysén,409
+2000-10,Magallanes,389.5
+2000-11,Metropolitana,368.51
+2000-11,Tarapacá,390.5
+2000-11,Antofagasta,396.7
+2000-11,Atacama,402.2
+2000-11,Coquimbo,391
+2000-11,Valparaíso,385.8
+2000-11,O'Higgins,384.3
+2000-11,Maule,391.5
+2000-11,Biobío,387.2
+2000-11,Araucanía,396.8
+2000-11,Los Lagos,398.9
+2000-11,Aysén,416
+2000-11,Magallanes,396.8
+2000-12,Metropolitana,362.06
+2000-12,Tarapacá,387.4
+2000-12,Antofagasta,396.7
+2000-12,Atacama,398.5
+2000-12,Coquimbo,384.3
+2000-12,Valparaíso,383.8
+2000-12,O'Higgins,375.1
+2000-12,Maule,387.9
+2000-12,Biobío,362.3
+2000-12,Araucanía,391.9
+2000-12,Los Lagos,386.5
+2000-12,Aysén,413
+2000-12,Magallanes,393.8
+2001-01,Metropolitana,357.07
+2001-01,Tarapacá,382
+2001-01,Antofagasta,381.3
+2001-01,Atacama,391.4
+2001-01,Coquimbo,374.3
+2001-01,Valparaíso,378.9
+2001-01,O'Higgins,375.5
+2001-01,Maule,382.2
+2001-01,Biobío,387.7
+2001-01,Araucanía,387.4
+2001-01,Los Lagos,390.5
+2001-01,Aysén,409
+2001-01,Magallanes,388.1
+2001-02,Metropolitana,396.86
+2001-02,Tarapacá,419.4
+2001-02,Antofagasta,425.3
+2001-02,Atacama,428.8
+2001-02,Coquimbo,408.8
+2001-02,Valparaíso,412.1
+2001-02,O'Higgins,411.3
+2001-02,Maule,414.3
+2001-02,Biobío,423.1
+2001-02,Araucanía,415.2
+2001-02,Los Lagos,421.9
+2001-02,Aysén,446
+2001-02,Magallanes,426.4
+2001-03,Metropolitana,381.46
+2001-03,Tarapacá,403.6
+2001-03,Antofagasta,414.2
+2001-03,Atacama,418
+2001-03,Coquimbo,400.7
+2001-03,Valparaíso,403.9
+2001-03,O'Higgins,393.8
+2001-03,Maule,408.3
+2001-03,Biobío,412.1
+2001-03,Araucanía,414.1
+2001-03,Los Lagos,416.5
+2001-03,Aysén,427.8
+2001-03,Magallanes,408.3
+2001-04,Metropolitana,389.11
+2001-04,Tarapacá,410.1
+2001-04,Antofagasta,418.7
+2001-04,Atacama,420.5
+2001-04,Coquimbo,407.5
+2001-04,Valparaíso,415.5
+2001-04,O'Higgins,406.4
+2001-04,Maule,420.3
+2001-04,Biobío,417.7
+2001-04,Araucanía,415.5
+2001-04,Los Lagos,428.2
+2001-04,Aysén,447
+2001-04,Magallanes,418.7
+2001-05,Metropolitana,438.95
+2001-05,Tarapacá,463
+2001-05,Antofagasta,469.4
+2001-05,Atacama,473.3
+2001-05,Coquimbo,450.8
+2001-05,Valparaíso,458.3
+2001-05,O'Higgins,451.3
+2001-05,Maule,463.2
+2001-05,Biobío,466.3
+2001-05,Araucanía,466.3
+2001-05,Los Lagos,472.9
+2001-05,Aysén,490
+2001-05,Magallanes,469.7
+2001-06,Metropolitana,434.53
+2001-06,Tarapacá,455
+2001-06,Antofagasta,461.4
+2001-06,Atacama,466
+2001-06,Coquimbo,437.6
+2001-06,Valparaíso,453.6
+2001-06,O'Higgins,445.9
+2001-06,Maule,455.1
+2001-06,Biobío,459.8
+2001-06,Araucanía,458.4
+2001-06,Los Lagos,467.5
+2001-06,Aysén,482
+2001-06,Magallanes,461.3
+2001-07,Metropolitana,379.87
+2001-07,Tarapacá,402.9
+2001-07,Antofagasta,409.5
+2001-07,Atacama,413.4
+2001-07,Coquimbo,385
+2001-07,Valparaíso,398.5
+2001-07,O'Higgins,389.3
+2001-07,Maule,403
+2001-07,Biobío,406.5
+2001-07,Araucanía,408.2
+2001-07,Los Lagos,411.3
+2001-07,Aysén,430
+2001-07,Magallanes,409.3
+2001-08,Metropolitana,380.23
+2001-08,Tarapacá,413.9
+2001-08,Antofagasta,420.1
+2001-08,Atacama,423.6
+2001-08,Coquimbo,392.6
+2001-08,Valparaíso,408.8
+2001-08,O'Higgins,406.2
+2001-08,Maule,413.4
+2001-08,Biobío,417.7
+2001-08,Araucanía,418.3
+2001-08,Los Lagos,428.3
+2001-08,Aysén,440
+2001-08,Magallanes,417.9
+2001-09,Metropolitana,416.88
+2001-09,Tarapacá,435.9
+2001-09,Antofagasta,441.6
+2001-09,Atacama,445.6
+2001-09,Coquimbo,415.6
+2001-09,Valparaíso,428.7
+2001-09,O'Higgins,427.7
+2001-09,Maule,435
+2001-09,Biobío,438.2
+2001-09,Araucanía,440.3
+2001-09,Los Lagos,443.3
+2001-09,Aysén,462
+2001-09,Magallanes,439.7
+2001-10,Metropolitana,417.96
+2001-10,Tarapacá,433.1
+2001-10,Antofagasta,436.3
+2001-10,Atacama,440.2
+2001-10,Coquimbo,410
+2001-10,Valparaíso,427.1
+2001-10,O'Higgins,433.6
+2001-10,Maule,430.1
+2001-10,Biobío,433.6
+2001-10,Araucanía,435.8
+2001-10,Los Lagos,439.7
+2001-10,Aysén,457
+2001-10,Magallanes,436.9
+2001-11,Metropolitana,388.71
+2001-11,Tarapacá,404.8
+2001-11,Antofagasta,409.5
+2001-11,Atacama,413.9
+2001-11,Coquimbo,387.7
+2001-11,Valparaíso,399
+2001-11,O'Higgins,395.9
+2001-11,Maule,403.9
+2001-11,Biobío,404.5
+2001-11,Araucanía,408.6
+2001-11,Los Lagos,411.2
+2001-11,Aysén,432
+2001-11,Magallanes,408.5
+2001-12,Metropolitana,372
+2001-12,Tarapacá,389.2
+2001-12,Antofagasta,393.5
+2001-12,Atacama,396.9
+2001-12,Coquimbo,371.1
+2001-12,Valparaíso,382.8
+2001-12,O'Higgins,379
+2001-12,Maule,387.7
+2001-12,Biobío,390
+2001-12,Araucanía,391.2
+2001-12,Los Lagos,395.8
+2001-12,Aysén,415
+2001-12,Magallanes,392.4
+2002-01,Metropolitana,372.02
+2002-01,Tarapacá,389.2
+2002-01,Antofagasta,393.8
+2002-01,Atacama,396.8
+2002-01,Coquimbo,371.1
+2002-01,Valparaíso,382.6
+2002-01,O'Higgins,379
+2002-01,Maule,387.7
+2002-01,Biobío,389
+2002-01,Araucanía,389.8
+2002-01,Los Lagos,394.3
+2002-01,Aysén,402
+2002-01,Magallanes,390.6
+2002-02,Metropolitana,374.15
+2002-02,Tarapacá,390.8
+2002-02,Antofagasta,395.9
+2002-02,Atacama,397.5
+2002-02,Coquimbo,374.5
+2002-02,Valparaíso,383.8
+2002-02,O'Higgins,382
+2002-02,Maule,390.9
+2002-02,Biobío,391.1
+2002-02,Araucanía,389.4
+2002-02,Los Lagos,400.3
+2002-02,Aysén,403
+2002-02,Magallanes,393.7
+2002-03,Metropolitana,370.22
+2002-03,Tarapacá,389.1
+2002-03,Antofagasta,365.5
+2002-03,Atacama,398.6
+2002-03,Coquimbo,374.7
+2002-03,Valparaíso,384.7
+2002-03,O'Higgins,377.9
+2002-03,Maule,389.3
+2002-03,Biobío,389
+2002-03,Araucanía,390.4
+2002-03,Los Lagos,397.6
+2002-03,Aysén,404
+2002-03,Magallanes,394.5
+2002-04,Metropolitana,407.32
+2002-04,Tarapacá,423.1
+2002-04,Antofagasta,436.1
+2002-04,Atacama,437.9
+2002-04,Coquimbo,415.9
+2002-04,Valparaíso,422.2
+2002-04,O'Higgins,419.9
+2002-04,Maule,429.4
+2002-04,Biobío,427.4
+2002-04,Araucanía,430.6
+2002-04,Los Lagos,437.5
+2002-04,Aysén,440.7
+2002-04,Magallanes,425
+2002-05,Metropolitana,400.99
+2002-05,Tarapacá,428.6
+2002-05,Antofagasta,439.4
+2002-05,Atacama,443
+2002-05,Coquimbo,418.3
+2002-05,Valparaíso,430.2
+2002-05,O'Higgins,425.1
+2002-05,Maule,434.8
+2002-05,Biobío,433.2
+2002-05,Araucanía,435.7
+2002-05,Los Lagos,442.9
+2002-05,Aysén,448.8
+2002-05,Magallanes,428.9
+2002-06,Metropolitana,384.21
+2002-06,Tarapacá,417
+2002-06,Antofagasta,428.6
+2002-06,Atacama,434
+2002-06,Coquimbo,415
+2002-06,Valparaíso,419.5
+2002-06,O'Higgins,414.4
+2002-06,Maule,424
+2002-06,Biobío,423.7
+2002-06,Araucanía,407.1
+2002-06,Los Lagos,432.9
+2002-06,Aysén,438.2
+2002-06,Magallanes,413.3
+2002-07,Metropolitana,406.58
+2002-07,Tarapacá,427.6
+2002-07,Antofagasta,427.3
+2002-07,Atacama,437.1
+2002-07,Coquimbo,422.1
+2002-07,Valparaíso,424.6
+2002-07,O'Higgins,419.7
+2002-07,Maule,429.8
+2002-07,Biobío,424.6
+2002-07,Araucanía,418.3
+2002-07,Los Lagos,442.8
+2002-07,Aysén,443.2
+2002-07,Magallanes,419.1
+2002-08,Metropolitana,429.69
+2002-08,Tarapacá,442.7
+2002-08,Antofagasta,453.6
+2002-08,Atacama,462.1
+2002-08,Coquimbo,446.4
+2002-08,Valparaíso,447.1
+2002-08,O'Higgins,443.5
+2002-08,Maule,444.3
+2002-08,Biobío,447.9
+2002-08,Araucanía,439.7
+2002-08,Los Lagos,459.9
+2002-08,Aysén,464.5
+2002-08,Magallanes,437
+2002-09,Metropolitana,429.75
+2002-09,Tarapacá,441.3
+2002-09,Antofagasta,447.2
+2002-09,Atacama,462.7
+2002-09,Coquimbo,443.5
+2002-09,Valparaíso,445.7
+2002-09,O'Higgins,440.4
+2002-09,Maule,445.1
+2002-09,Biobío,446.1
+2002-09,Araucanía,441
+2002-09,Los Lagos,458.2
+2002-09,Aysén,461.8
+2002-09,Magallanes,439.5
+2002-10,Metropolitana,440.99
+2002-10,Tarapacá,448.4
+2002-10,Antofagasta,459.9
+2002-10,Atacama,470.1
+2002-10,Coquimbo,451.5
+2002-10,Valparaíso,453
+2002-10,O'Higgins,448.9
+2002-10,Maule,451.6
+2002-10,Biobío,453.9
+2002-10,Araucanía,450.8
+2002-10,Los Lagos,459.6
+2002-10,Aysén,469.8
+2002-10,Magallanes,447.5
+2002-11,Metropolitana,445.1
+2002-11,Tarapacá,455.8
+2002-11,Antofagasta,471
+2002-11,Atacama,480.5
+2002-11,Coquimbo,459.6
+2002-11,Valparaíso,461.9
+2002-11,O'Higgins,458.2
+2002-11,Maule,462
+2002-11,Biobío,458.2
+2002-11,Araucanía,463.8
+2002-11,Los Lagos,468.5
+2002-11,Aysén,481.6
+2002-11,Magallanes,458.4
+2002-12,Metropolitana,411.05
+2002-12,Tarapacá,416.3
+2002-12,Antofagasta,428.2
+2002-12,Atacama,438.3
+2002-12,Coquimbo,420.7
+2002-12,Valparaíso,422.4
+2002-12,O'Higgins,417.2
+2002-12,Maule,421.4
+2002-12,Biobío,422.3
+2002-12,Araucanía,420.3
+2002-12,Los Lagos,435.5
+2002-12,Aysén,437.9
+2002-12,Magallanes,416.2
+2003-01,Metropolitana,443.36
+2003-01,Tarapacá,441.3
+2003-01,Antofagasta,452.3
+2003-01,Atacama,466
+2003-01,Coquimbo,444.9
+2003-01,Valparaíso,446.6
+2003-01,O'Higgins,442.5
+2003-01,Maule,445.9
+2003-01,Biobío,446.7
+2003-01,Araucanía,445.1
+2003-01,Los Lagos,460.4
+2003-01,Aysén,462.4
+2003-01,Magallanes,440.9
+2003-02,Metropolitana,460.61
+2003-02,Tarapacá,464.2
+2003-02,Antofagasta,472.7
+2003-02,Atacama,481.8
+2003-02,Coquimbo,469.2
+2003-02,Valparaíso,464.3
+2003-02,O'Higgins,465.5
+2003-02,Maule,468.3
+2003-02,Biobío,468.6
+2003-02,Araucanía,469.9
+2003-02,Los Lagos,500.1
+2003-02,Aysén,487.3
+2003-02,Magallanes,465.4
+2003-03,Metropolitana,487.18
+2003-03,Tarapacá,500.4
+2003-03,Antofagasta,506.8
+2003-03,Atacama,523.2
+2003-03,Coquimbo,501.9
+2003-03,Valparaíso,504.8
+2003-03,O'Higgins,503.1
+2003-03,Maule,505.6
+2003-03,Biobío,500.7
+2003-03,Araucanía,503.6
+2003-03,Los Lagos,511.7
+2003-03,Aysén,522.2
+2003-03,Magallanes,498.3
+2003-04,Metropolitana,467.75
+2003-04,Tarapacá,476.5
+2003-04,Antofagasta,484.4
+2003-04,Atacama,492.5
+2003-04,Coquimbo,478.5
+2003-04,Valparaíso,479.7
+2003-04,O'Higgins,477
+2003-04,Maule,481
+2003-04,Biobío,480.6
+2003-04,Araucanía,483.2
+2003-04,Los Lagos,493.5
+2003-04,Aysén,496.2
+2003-04,Magallanes,474.7
+2003-05,Metropolitana,450.5
+2003-05,Tarapacá,459.1
+2003-05,Antofagasta,469.4
+2003-05,Atacama,479.6
+2003-05,Coquimbo,462.5
+2003-05,Valparaíso,464.1
+2003-05,O'Higgins,458.3
+2003-05,Maule,466.9
+2003-05,Biobío,464.7
+2003-05,Araucanía,468.6
+2003-05,Los Lagos,476.7
+2003-05,Aysén,482.6
+2003-05,Magallanes,461
+2003-06,Metropolitana,452.77
+2003-06,Tarapacá,459.9
+2003-06,Antofagasta,470.3
+2003-06,Atacama,478.3
+2003-06,Coquimbo,464.7
+2003-06,Valparaíso,464.9
+2003-06,O'Higgins,459.1
+2003-06,Maule,466.6
+2003-06,Biobío,466
+2003-06,Araucanía,467.7
+2003-06,Los Lagos,472.2
+2003-06,Aysén,481.1
+2003-06,Magallanes,461.1
+2003-07,Metropolitana,447.95
+2003-07,Tarapacá,455.9
+2003-07,Antofagasta,466.4
+2003-07,Atacama,474.2
+2003-07,Coquimbo,460.4
+2003-07,Valparaíso,461.4
+2003-07,O'Higgins,454.2
+2003-07,Maule,462.6
+2003-07,Biobío,463.9
+2003-07,Araucanía,464.6
+2003-07,Los Lagos,470.1
+2003-07,Aysén,477.6
+2003-07,Magallanes,456.9
+2003-08,Metropolitana,471.35
+2003-08,Tarapacá,478.8
+2003-08,Antofagasta,488.8
+2003-08,Atacama,496.4
+2003-08,Coquimbo,483
+2003-08,Valparaíso,484.1
+2003-08,O'Higgins,478.1
+2003-08,Maule,484.9
+2003-08,Biobío,467.3
+2003-08,Araucanía,486.7
+2003-08,Los Lagos,493.6
+2003-08,Aysén,500.1
+2003-08,Magallanes,479.5
+2003-09,Metropolitana,515.89
+2003-09,Tarapacá,523
+2003-09,Antofagasta,515.6
+2003-09,Atacama,525.8
+2003-09,Coquimbo,509.1
+2003-09,Valparaíso,511
+2003-09,O'Higgins,522.2
+2003-09,Maule,522.3
+2003-09,Biobío,500.8
+2003-09,Araucanía,531.5
+2003-09,Los Lagos,537.3
+2003-09,Aysén,545.2
+2003-09,Magallanes,524.2
+2003-10,Metropolitana,433.49
+2003-10,Tarapacá,461.5
+2003-10,Antofagasta,461.5
+2003-10,Atacama,470.5
+2003-10,Coquimbo,455.4
+2003-10,Valparaíso,456.5
+2003-10,O'Higgins,450.1
+2003-10,Maule,456.7
+2003-10,Biobío,452.5
+2003-10,Araucanía,459.3
+2003-10,Los Lagos,464.1
+2003-10,Aysén,473
+2003-10,Magallanes,451.9
+2003-11,Metropolitana,434.1
+2003-11,Tarapacá,445.7
+2003-11,Antofagasta,457.8
+2003-11,Atacama,468.9
+2003-11,Coquimbo,445.4
+2003-11,Valparaíso,450.8
+2003-11,O'Higgins,448.7
+2003-11,Maule,451.1
+2003-11,Biobío,446.2
+2003-11,Araucanía,458.1
+2003-11,Los Lagos,455.1
+2003-11,Aysén,472.4
+2003-11,Magallanes,450.4
+2003-12,Metropolitana,433.25
+2003-12,Tarapacá,440
+2003-12,Antofagasta,450.9
+2003-12,Atacama,461.6
+2003-12,Coquimbo,445.3
+2003-12,Valparaíso,446.6
+2003-12,O'Higgins,440.4
+2003-12,Maule,445.9
+2003-12,Biobío,443.3
+2003-12,Araucanía,449.2
+2003-12,Los Lagos,454.5
+2003-12,Aysén,462.4
+2003-12,Magallanes,440.3
+2004-01,Metropolitana,424.39
+2004-01,Tarapacá,432.5
+2004-01,Antofagasta,443
+2004-01,Atacama,454.3
+2004-01,Coquimbo,437.8
+2004-01,Valparaíso,439.2
+2004-01,O'Higgins,433.1
+2004-01,Maule,438.3
+2004-01,Biobío,435.5
+2004-01,Araucanía,441.1
+2004-01,Los Lagos,446.1
+2004-01,Aysén,455.3
+2004-01,Magallanes,433
+2004-02,Metropolitana,457.07
+2004-02,Tarapacá,443.1
+2004-02,Antofagasta,456
+2004-02,Atacama,486.6
+2004-02,Coquimbo,468.6
+2004-02,Valparaíso,471.8
+2004-02,O'Higgins,455.5
+2004-02,Maule,451.8
+2004-02,Biobío,443.5
+2004-02,Araucanía,464.1
+2004-02,Los Lagos,480.8
+2004-02,Aysén,487
+2004-02,Magallanes,456.2
+2004-03,Metropolitana,451.6
+2004-03,Tarapacá,463.6
+2004-03,Antofagasta,474.1
+2004-03,Atacama,479.2
+2004-03,Coquimbo,465.7
+2004-03,Valparaíso,466.8
+2004-03,O'Higgins,463.3
+2004-03,Maule,460.7
+2004-03,Biobío,458.5
+2004-03,Araucanía,471.4
+2004-03,Los Lagos,477.8
+2004-03,Aysén,485.4
+2004-03,Magallanes,464.2
+2004-04,Metropolitana,475.26
+2004-04,Tarapacá,493.4
+2004-04,Antofagasta,496
+2004-04,Atacama,495
+2004-04,Coquimbo,491.2
+2004-04,Valparaíso,492.7
+2004-04,O'Higgins,485.1
+2004-04,Maule,490.9
+2004-04,Biobío,488.6
+2004-04,Araucanía,493.8
+2004-04,Los Lagos,499.6
+2004-04,Aysén,518.2
+2004-04,Magallanes,486.5
+2004-05,Metropolitana,503.37
+2004-05,Tarapacá,513.4
+2004-05,Antofagasta,525.4
+2004-05,Atacama,518.8
+2004-05,Coquimbo,520.2
+2004-05,Valparaíso,521.9
+2004-05,O'Higgins,514.2
+2004-05,Maule,509.7
+2004-05,Biobío,518.4
+2004-05,Araucanía,522.3
+2004-05,Los Lagos,528.4
+2004-05,Aysén,536.4
+2004-05,Magallanes,513.5
+2004-06,Metropolitana,561.45
+2004-06,Tarapacá,572.2
+2004-06,Antofagasta,583.9
+2004-06,Atacama,575.8
+2004-06,Coquimbo,578.3
+2004-06,Valparaíso,576
+2004-06,O'Higgins,570.5
+2004-06,Maule,556
+2004-06,Biobío,576.3
+2004-06,Araucanía,582.6
+2004-06,Los Lagos,588
+2004-06,Aysén,595.1
+2004-06,Magallanes,570.3
+2004-07,Metropolitana,501.92
+2004-07,Tarapacá,515.2
+2004-07,Antofagasta,525.7
+2004-07,Atacama,515.2
+2004-07,Coquimbo,521.3
+2004-07,Valparaíso,522.7
+2004-07,O'Higgins,513.2
+2004-07,Maule,515
+2004-07,Biobío,518.6
+2004-07,Araucanía,524.8
+2004-07,Los Lagos,525.6
+2004-07,Aysén,538.3
+2004-07,Magallanes,514.9
+2004-08,Metropolitana,524.74
+2004-08,Tarapacá,536.1
+2004-08,Antofagasta,546.2
+2004-08,Atacama,537.6
+2004-08,Coquimbo,537.5
+2004-08,Valparaíso,542.4
+2004-08,O'Higgins,533.8
+2004-08,Maule,537.5
+2004-08,Biobío,537.4
+2004-08,Araucanía,541.2
+2004-08,Los Lagos,541.8
+2004-08,Aysén,562.4
+2004-08,Magallanes,537
+2004-09,Metropolitana,528.72
+2004-09,Tarapacá,534.2
+2004-09,Antofagasta,544.8
+2004-09,Atacama,532.6
+2004-09,Coquimbo,539.9
+2004-09,Valparaíso,541.7
+2004-09,O'Higgins,532.3
+2004-09,Maule,537
+2004-09,Biobío,536.7
+2004-09,Araucanía,542.3
+2004-09,Los Lagos,544.8
+2004-09,Aysén,556.2
+2004-09,Magallanes,533.7
+2004-10,Metropolitana,530.49
+2004-10,Tarapacá,527.2
+2004-10,Antofagasta,535.9
+2004-10,Atacama,521.5
+2004-10,Coquimbo,540.8
+2004-10,Valparaíso,532.8
+2004-10,O'Higgins,527
+2004-10,Maule,528
+2004-10,Biobío,524.8
+2004-10,Araucanía,534.1
+2004-10,Los Lagos,545.8
+2004-10,Aysén,557.2
+2004-10,Magallanes,524.1
+2004-11,Metropolitana,541.78
+2004-11,Tarapacá,547.2
+2004-11,Antofagasta,556.8
+2004-11,Atacama,541.6
+2004-11,Coquimbo,552.3
+2004-11,Valparaíso,553.6
+2004-11,O'Higgins,550.8
+2004-11,Maule,549
+2004-11,Biobío,549.5
+2004-11,Araucanía,555.1
+2004-11,Los Lagos,556.7
+2004-11,Aysén,568.2
+2004-11,Magallanes,545.9
+2004-12,Metropolitana,500.4
+2004-12,Tarapacá,507.2
+2004-12,Antofagasta,516.7
+2004-12,Atacama,503.9
+2004-12,Coquimbo,513.7
+2004-12,Valparaíso,513.5
+2004-12,O'Higgins,510.6
+2004-12,Maule,509.1
+2004-12,Biobío,509.5
+2004-12,Araucanía,515.1
+2004-12,Los Lagos,516.6
+2004-12,Aysén,533.2
+2004-12,Magallanes,509.9
+2005-01,Metropolitana,462.44
+2005-01,Tarapacá,471.9
+2005-01,Antofagasta,471.3
+2005-01,Atacama,455.1
+2005-01,Coquimbo,474.4
+2005-01,Valparaíso,471.8
+2005-01,O'Higgins,472.8
+2005-01,Maule,471
+2005-01,Biobío,464.7
+2005-01,Araucanía,477.2
+2005-01,Los Lagos,478.8
+2005-01,Aysén,482.2
+2005-01,Magallanes,465.2
+2005-02,Metropolitana,510.65
+2005-02,Tarapacá,521.7
+2005-02,Antofagasta,525.8
+2005-02,Atacama,507.9
+2005-02,Coquimbo,521.6
+2005-02,Valparaíso,522.5
+2005-02,O'Higgins,520
+2005-02,Maule,518
+2005-02,Biobío,519.9
+2005-02,Araucanía,526
+2005-02,Los Lagos,525.8
+2005-02,Aysén,537.2
+2005-02,Magallanes,515.2
+2005-03,Metropolitana,492.55
+2005-03,Tarapacá,499.1
+2005-03,Antofagasta,508.8
+2005-03,Atacama,494.3
+2005-03,Coquimbo,504.1
+2005-03,Valparaíso,505.5
+2005-03,O'Higgins,503.3
+2005-03,Maule,500.1
+2005-03,Biobío,503.3
+2005-03,Araucanía,509
+2005-03,Los Lagos,508.8
+2005-03,Aysén,520.2
+2005-03,Magallanes,497.9
+2005-04,Metropolitana,567.64
+2005-04,Tarapacá,561.7
+2005-04,Antofagasta,574.3
+2005-04,Atacama,559.8
+2005-04,Coquimbo,564.9
+2005-04,Valparaíso,566.5
+2005-04,O'Higgins,578.5
+2005-04,Maule,565.1
+2005-04,Biobío,568.4
+2005-04,Araucanía,580.8
+2005-04,Los Lagos,584.8
+2005-04,Aysén,588.1
+2005-04,Magallanes,580.7
+2005-05,Metropolitana,572
+2005-05,Tarapacá,580
+2005-05,Antofagasta,576.4
+2005-05,Atacama,561.4
+2005-05,Coquimbo,583.4
+2005-05,Valparaíso,586.5
+2005-05,O'Higgins,583.1
+2005-05,Maule,542.6
+2005-05,Biobío,573.7
+2005-05,Araucanía,589.7
+2005-05,Los Lagos,589.8
+2005-05,Aysén,603.2
+2005-05,Magallanes,584.4
+2005-06,Metropolitana,538.77
+2005-06,Tarapacá,543.3
+2005-06,Antofagasta,552.7
+2005-06,Atacama,542.4
+2005-06,Coquimbo,519.9
+2005-06,Valparaíso,547.8
+2005-06,O'Higgins,548.1
+2005-06,Maule,516.9
+2005-06,Biobío,547.5
+2005-06,Araucanía,552.8
+2005-06,Los Lagos,552.8
+2005-06,Aysén,566.2
+2005-06,Magallanes,546.7
+2005-07,Metropolitana,572.85
+2005-07,Tarapacá,569.2
+2005-07,Antofagasta,582.8
+2005-07,Atacama,569.6
+2005-07,Coquimbo,536.1
+2005-07,Valparaíso,578.4
+2005-07,O'Higgins,579.7
+2005-07,Maule,549.1
+2005-07,Biobío,577.3
+2005-07,Araucanía,584.8
+2005-07,Los Lagos,587.8
+2005-07,Aysén,591.2
+2005-07,Magallanes,571.4
+2005-08,Metropolitana,569.22
+2005-08,Tarapacá,576.3
+2005-08,Antofagasta,582.8
+2005-08,Atacama,573.8
+2005-08,Coquimbo,531.5
+2005-08,Valparaíso,577.6
+2005-08,O'Higgins,581.3
+2005-08,Maule,551.6
+2005-08,Biobío,581.4
+2005-08,Araucanía,583.4
+2005-08,Los Lagos,582.9
+2005-08,Aysén,601.8
+2005-08,Magallanes,582.5
+2005-09,Metropolitana,598.47
+2005-09,Tarapacá,624.2
+2005-09,Antofagasta,633.7
+2005-09,Atacama,611.7
+2005-09,Coquimbo,581.9
+2005-09,Valparaíso,626.5
+2005-09,O'Higgins,628.6
+2005-09,Maule,604
+2005-09,Biobío,629.3
+2005-09,Araucanía,634
+2005-09,Los Lagos,633.9
+2005-09,Aysén,649.2
+2005-09,Magallanes,625.8
+2005-10,Metropolitana,630.57
+2005-10,Tarapacá,612.7
+2005-10,Antofagasta,629.9
+2005-10,Atacama,612.4
+2005-10,Coquimbo,586.9
+2005-10,Valparaíso,611.9
+2005-10,O'Higgins,637.6
+2005-10,Maule,608.6
+2005-10,Biobío,623
+2005-10,Araucanía,640.6
+2005-10,Los Lagos,644.9
+2005-10,Aysén,653.6
+2005-10,Magallanes,635.2
+2005-11,Metropolitana,589.11
+2005-11,Tarapacá,590.2
+2005-11,Antofagasta,599.8
+2005-11,Atacama,592.5
+2005-11,Coquimbo,567.9
+2005-11,Valparaíso,592.7
+2005-11,O'Higgins,594.3
+2005-11,Maule,579.8
+2005-11,Biobío,595.5
+2005-11,Araucanía,600.2
+2005-11,Los Lagos,599.6
+2005-11,Aysén,615.2
+2005-11,Magallanes,592.1
+2005-12,Metropolitana,531.37
+2005-12,Tarapacá,533.2
+2005-12,Antofagasta,542.7
+2005-12,Atacama,535
+2005-12,Coquimbo,511.1
+2005-12,Valparaíso,533.3
+2005-12,O'Higgins,532.7
+2005-12,Maule,523
+2005-12,Biobío,538.5
+2005-12,Araucanía,543.1
+2005-12,Los Lagos,542.1
+2005-12,Aysén,558.2
+2005-12,Magallanes,535
+2006-01,Metropolitana,547.24
+2006-01,Tarapacá,547.2
+2006-01,Antofagasta,557.5
+2006-01,Atacama,549.8
+2006-01,Coquimbo,526.3
+2006-01,Valparaíso,543.8
+2006-01,O'Higgins,551.4
+2006-01,Maule,537.3
+2006-01,Biobío,553.4
+2006-01,Araucanía,557.8
+2006-01,Los Lagos,558.6
+2006-01,Aysén,572.2
+2006-01,Magallanes,549.5
+2006-02,Metropolitana,587.84
+2006-02,Tarapacá,590.2
+2006-02,Antofagasta,601
+2006-02,Atacama,592.6
+2006-02,Coquimbo,568.9
+2006-02,Valparaíso,591.7
+2006-02,O'Higgins,594.8
+2006-02,Maule,581
+2006-02,Biobío,596.5
+2006-02,Araucanía,600.9
+2006-02,Los Lagos,600.6
+2006-02,Aysén,616.4
+2006-02,Magallanes,584
+2006-03,Metropolitana,555.45
+2006-03,Tarapacá,559.2
+2006-03,Antofagasta,569.1
+2006-03,Atacama,560.6
+2006-03,Coquimbo,538.1
+2006-03,Valparaíso,559.2
+2006-03,O'Higgins,562.5
+2006-03,Maule,548.6
+2006-03,Biobío,564.7
+2006-03,Araucanía,569.1
+2006-03,Los Lagos,568.6
+2006-03,Aysén,584.2
+2006-03,Magallanes,552
+2006-04,Metropolitana,597.23
+2006-04,Tarapacá,593.7
+2006-04,Antofagasta,608.6
+2006-04,Atacama,609.1
+2006-04,Coquimbo,579.5
+2006-04,Valparaíso,600.3
+2006-04,O'Higgins,610.7
+2006-04,Maule,598.5
+2006-04,Biobío,607.7
+2006-04,Araucanía,611.7
+2006-04,Los Lagos,609.6
+2006-04,Aysén,638.2
+2006-04,Magallanes,603
+2006-05,Metropolitana,639.3
+2006-05,Tarapacá,634.9
+2006-05,Antofagasta,652.5
+2006-05,Atacama,645.5
+2006-05,Coquimbo,623.9
+2006-05,Valparaíso,645.7
+2006-05,O'Higgins,649
+2006-05,Maule,635
+2006-05,Biobío,649.5
+2006-05,Araucanía,651.7
+2006-05,Los Lagos,657.4
+2006-05,Aysén,670.2
+2006-05,Magallanes,637
+2006-06,Metropolitana,634.32
+2006-06,Tarapacá,605.2
+2006-06,Antofagasta,647.3
+2006-06,Atacama,638.8
+2006-06,Coquimbo,615.9
+2006-06,Valparaíso,638
+2006-06,O'Higgins,642
+2006-06,Maule,626.8
+2006-06,Biobío,643.8
+2006-06,Araucanía,643.1
+2006-06,Los Lagos,649.6
+2006-06,Aysén,662.2
+2006-06,Magallanes,629.5
+2006-07,Metropolitana,661.07
+2006-07,Tarapacá,669.5
+2006-07,Antofagasta,677.5
+2006-07,Atacama,670.6
+2006-07,Coquimbo,646.4
+2006-07,Valparaíso,665.2
+2006-07,O'Higgins,671.5
+2006-07,Maule,656.8
+2006-07,Biobío,673.8
+2006-07,Araucanía,673
+2006-07,Los Lagos,679.6
+2006-07,Aysén,683.7
+2006-07,Magallanes,660.3
+2006-08,Metropolitana,663.58
+2006-08,Tarapacá,673.2
+2006-08,Antofagasta,676.1
+2006-08,Atacama,672.4
+2006-08,Coquimbo,650.6
+2006-08,Valparaíso,670.5
+2006-08,O'Higgins,675.5
+2006-08,Maule,660.8
+2006-08,Biobío,677.8
+2006-08,Araucanía,677.3
+2006-08,Los Lagos,683.6
+2006-08,Aysén,687.7
+2006-08,Magallanes,663.8
+2006-09,Metropolitana,660.16
+2006-09,Tarapacá,672.2
+2006-09,Antofagasta,668.2
+2006-09,Atacama,654.7
+2006-09,Coquimbo,654.7
+2006-09,Valparaíso,666.1
+2006-09,O'Higgins,672.2
+2006-09,Maule,656.4
+2006-09,Biobío,679
+2006-09,Araucanía,676.4
+2006-09,Los Lagos,679.6
+2006-09,Aysén,683.7
+2006-09,Magallanes,659.5
+2006-10,Metropolitana,605.42
+2006-10,Tarapacá,611.6
+2006-10,Antofagasta,617.6
+2006-10,Atacama,614.1
+2006-10,Coquimbo,597.1
+2006-10,Valparaíso,612.1
+2006-10,O'Higgins,616.7
+2006-10,Maule,598.4
+2006-10,Biobío,618.9
+2006-10,Araucanía,620.3
+2006-10,Los Lagos,625.8
+2006-10,Aysén,628.7
+2006-10,Magallanes,604.7
+2006-11,Metropolitana,588.77
+2006-11,Tarapacá,596.2
+2006-11,Antofagasta,602.2
+2006-11,Atacama,598
+2006-11,Coquimbo,582.7
+2006-11,Valparaíso,591.4
+2006-11,O'Higgins,602.2
+2006-11,Maule,586.3
+2006-11,Biobío,603.5
+2006-11,Araucanía,605.1
+2006-11,Los Lagos,606
+2006-11,Aysén,613.7
+2006-11,Magallanes,589.5
+2006-12,Metropolitana,595.95
+2006-12,Tarapacá,588.5
+2006-12,Antofagasta,609.4
+2006-12,Atacama,606.2
+2006-12,Coquimbo,592
+2006-12,Valparaíso,599.7
+2006-12,O'Higgins,610.4
+2006-12,Maule,594.4
+2006-12,Biobío,610.1
+2006-12,Araucanía,613
+2006-12,Los Lagos,618.6
+2006-12,Aysén,626.5
+2006-12,Magallanes,597.8
+2007-01,Metropolitana,593.54
+2007-01,Tarapacá,588.1
+2007-01,Antofagasta,609.4
+2007-01,Atacama,605.3
+2007-01,Coquimbo,592.9
+2007-01,Valparaíso,598.7
+2007-01,O'Higgins,609.5
+2007-01,Maule,593.8
+2007-01,Biobío,610.8
+2007-01,Araucanía,612.5
+2007-01,Los Lagos,618
+2007-01,Aysén,620.7
+2007-01,Magallanes,597.2
+2007-02,Metropolitana,566.84
+2007-02,Tarapacá,572.8
+2007-02,Antofagasta,583.3
+2007-02,Atacama,579.8
+2007-02,Coquimbo,566.1
+2007-02,Valparaíso,571.5
+2007-02,O'Higgins,584.1
+2007-02,Maule,569
+2007-02,Biobío,583.9
+2007-02,Araucanía,587
+2007-02,Los Lagos,590.6
+2007-02,Aysén,596.7
+2007-02,Magallanes,572.5
+2007-03,Metropolitana,573.45
+2007-03,Tarapacá,581
+2007-03,Antofagasta,585.4
+2007-03,Atacama,577.9
+2007-03,Coquimbo,572.4
+2007-03,Valparaíso,574.3
+2007-03,O'Higgins,587.8
+2007-03,Maule,573.6
+2007-03,Biobío,585.7
+2007-03,Araucanía,587
+2007-03,Los Lagos,598.6
+2007-03,Aysén,611.7
+2007-03,Magallanes,570.9
+2007-04,Metropolitana,595.32
+2007-04,Tarapacá,604.9
+2007-04,Antofagasta,610
+2007-04,Atacama,605.2
+2007-04,Coquimbo,595.1
+2007-04,Valparaíso,600.5
+2007-04,O'Higgins,608.6
+2007-04,Maule,593.7
+2007-04,Biobío,610.7
+2007-04,Araucanía,612.3
+2007-04,Los Lagos,618.6
+2007-04,Aysén,620.7
+2007-04,Magallanes,596.5
+2007-05,Metropolitana,652.23
+2007-05,Tarapacá,655.7
+2007-05,Antofagasta,662.1
+2007-05,Atacama,658.1
+2007-05,Coquimbo,646.9
+2007-05,Valparaíso,650.7
+2007-05,O'Higgins,659.9
+2007-05,Maule,644.6
+2007-05,Biobío,661.7
+2007-05,Araucanía,663.2
+2007-05,Los Lagos,669.6
+2007-05,Aysén,671.7
+2007-05,Magallanes,647.5
+2007-06,Metropolitana,659.21
+2007-06,Tarapacá,668.8
+2007-06,Antofagasta,676.1
+2007-06,Atacama,675.1
+2007-06,Coquimbo,663.9
+2007-06,Valparaíso,666.4
+2007-06,O'Higgins,675.9
+2007-06,Maule,660.3
+2007-06,Biobío,677
+2007-06,Araucanía,679
+2007-06,Los Lagos,685.6
+2007-06,Aysén,687.7
+2007-06,Magallanes,663.5
+2007-07,Metropolitana,664.22
+2007-07,Tarapacá,664.4
+2007-07,Antofagasta,678.8
+2007-07,Atacama,680.2
+2007-07,Coquimbo,668.9
+2007-07,Valparaíso,671.2
+2007-07,O'Higgins,681
+2007-07,Maule,665.4
+2007-07,Biobío,682.8
+2007-07,Araucanía,684.2
+2007-07,Los Lagos,690.6
+2007-07,Aysén,692.7
+2007-07,Magallanes,668.6
+2007-08,Metropolitana,679.34
+2007-08,Tarapacá,662.5
+2007-08,Antofagasta,686.5
+2007-08,Atacama,694.7
+2007-08,Coquimbo,680.9
+2007-08,Valparaíso,682.4
+2007-08,O'Higgins,697.4
+2007-08,Maule,679
+2007-08,Biobío,692.3
+2007-08,Araucanía,696.4
+2007-08,Los Lagos,698.6
+2007-08,Aysén,708.7
+2007-08,Magallanes,683.8
+2007-09,Metropolitana,649.43
+2007-09,Tarapacá,641.2
+2007-09,Antofagasta,659.8
+2007-09,Atacama,664.6
+2007-09,Coquimbo,653.1
+2007-09,Valparaíso,655.2
+2007-09,O'Higgins,665
+2007-09,Maule,649.4
+2007-09,Biobío,666.3
+2007-09,Araucanía,668.1
+2007-09,Los Lagos,673.9
+2007-09,Aysén,676.7
+2007-09,Magallanes,652.5
+2007-10,Metropolitana,653.9
+2007-10,Tarapacá,648.1
+2007-10,Antofagasta,664.5
+2007-10,Atacama,671.3
+2007-10,Coquimbo,659.9
+2007-10,Valparaíso,662.8
+2007-10,O'Higgins,672.1
+2007-10,Maule,651.1
+2007-10,Biobío,673.2
+2007-10,Araucanía,675.1
+2007-10,Los Lagos,681.6
+2007-10,Aysén,683.7
+2007-10,Magallanes,659.5
+2007-11,Metropolitana,647.56
+2007-11,Tarapacá,654.9
+2007-11,Antofagasta,662.8
+2007-11,Atacama,668.3
+2007-11,Coquimbo,656.7
+2007-11,Valparaíso,659.2
+2007-11,O'Higgins,669.1
+2007-11,Maule,653.6
+2007-11,Biobío,671.3
+2007-11,Araucanía,672
+2007-11,Los Lagos,678.6
+2007-11,Aysén,680.7
+2007-11,Magallanes,656.2
+2007-12,Metropolitana,661.79
+2007-12,Tarapacá,687.2
+2007-12,Antofagasta,693.9
+2007-12,Atacama,699.7
+2007-12,Coquimbo,688.9
+2007-12,Valparaíso,691.9
+2007-12,O'Higgins,700.5
+2007-12,Maule,685.6
+2007-12,Biobío,702.9
+2007-12,Araucanía,704.9
+2007-12,Los Lagos,710.7
+2007-12,Aysén,712.7
+2007-12,Magallanes,688.5
+2008-01,Metropolitana,661.79
+2008-01,Tarapacá,667.3
+2008-01,Antofagasta,676.3
+2008-01,Atacama,676.6
+2008-01,Coquimbo,672.8
+2008-01,Valparaíso,669.2
+2008-01,O'Higgins,681.1
+2008-01,Maule,662.6
+2008-01,Biobío,680.9
+2008-01,Araucanía,689.3
+2008-01,Los Lagos,696.6
+2008-01,Aysén,689.7
+2008-01,Magallanes,667.1
+2008-02,Metropolitana,608.84
+2008-02,Tarapacá,624.7
+2008-02,Antofagasta,625.7
+2008-02,Atacama,631.4
+2008-02,Coquimbo,619.4
+2008-02,Valparaíso,621.1
+2008-02,O'Higgins,632
+2008-02,Maule,616.3
+2008-02,Biobío,633.7
+2008-02,Araucanía,634.8
+2008-02,Los Lagos,641
+2008-02,Aysén,643.7
+2008-02,Magallanes,619.5
+2008-03,Metropolitana,610.19
+2008-03,Tarapacá,597
+2008-03,Antofagasta,627.1
+2008-03,Atacama,633.2
+2008-03,Coquimbo,622.3
+2008-03,Valparaíso,623.6
+2008-03,O'Higgins,636.9
+2008-03,Maule,617.6
+2008-03,Biobío,634.4
+2008-03,Araucanía,636.4
+2008-03,Los Lagos,639.6
+2008-03,Aysén,644.5
+2008-03,Magallanes,620.9
+2008-04,Metropolitana,563.2
+2008-04,Arica y Parinacota,591.7
+2008-04,Tarapacá,560.1
+2008-04,Antofagasta,581.5
+2008-04,Atacama,587.4
+2008-04,Coquimbo,575.3
+2008-04,Valparaíso,577.1
+2008-04,O'Higgins,589.2
+2008-04,Maule,571.6
+2008-04,Biobío,585.1
+2008-04,Araucanía,589.7
+2008-04,Los Ríos,594.6
+2008-04,Los Lagos,591.6
+2008-04,Aysén,600
+2008-04,Magallanes,575.7
+2008-05,Metropolitana,578.52
+2008-05,Arica y Parinacota,616.6
+2008-05,Tarapacá,582.5
+2008-05,Antofagasta,605.2
+2008-05,Atacama,607.3
+2008-05,Coquimbo,596.2
+2008-05,Valparaíso,594.9
+2008-05,O'Higgins,611.5
+2008-05,Maule,592.6
+2008-05,Biobío,609.7
+2008-05,Araucanía,610.6
+2008-05,Los Ríos,613.8
+2008-05,Los Lagos,617.2
+2008-05,Aysén,620
+2008-05,Magallanes,596.3
+2008-06,Metropolitana,630.19
+2008-06,Arica y Parinacota,702.7
+2008-06,Tarapacá,633.1
+2008-06,Antofagasta,657.1
+2008-06,Atacama,659.4
+2008-06,Coquimbo,648.2
+2008-06,Valparaíso,651.5
+2008-06,O'Higgins,663.3
+2008-06,Maule,644
+2008-06,Biobío,661.2
+2008-06,Araucanía,662.5
+2008-06,Los Ríos,667.3
+2008-06,Los Lagos,670.9
+2008-06,Aysén,672
+2008-06,Magallanes,648.3
+2008-07,Metropolitana,655.82
+2008-07,Arica y Parinacota,691
+2008-07,Tarapacá,624.4
+2008-07,Antofagasta,681.2
+2008-07,Atacama,679.7
+2008-07,Coquimbo,668.4
+2008-07,Valparaíso,667
+2008-07,O'Higgins,684.6
+2008-07,Maule,667
+2008-07,Biobío,681.9
+2008-07,Araucanía,683
+2008-07,Los Ríos,692.1
+2008-07,Los Lagos,690
+2008-07,Aysén,696
+2008-07,Magallanes,668.4
+2008-08,Metropolitana,679.44
+2008-08,Arica y Parinacota,718
+2008-08,Tarapacá,674.3
+2008-08,Antofagasta,708.4
+2008-08,Atacama,710.2
+2008-08,Coquimbo,695.7
+2008-08,Valparaíso,720.3
+2008-08,O'Higgins,709.8
+2008-08,Maule,692
+2008-08,Biobío,711.7
+2008-08,Araucanía,709.8
+2008-08,Los Ríos,718.8
+2008-08,Los Lagos,715.6
+2008-08,Aysén,722
+2008-08,Magallanes,695.7
+2008-09,Metropolitana,728.95
+2008-09,Arica y Parinacota,769.9
+2008-09,Tarapacá,743.9
+2008-09,Antofagasta,760
+2008-09,Atacama,762.8
+2008-09,Coquimbo,750.2
+2008-09,Valparaíso,753.9
+2008-09,O'Higgins,762.1
+2008-09,Maule,734.3
+2008-09,Biobío,763.7
+2008-09,Araucanía,762.6
+2008-09,Los Ríos,769.8
+2008-09,Los Lagos,767.3
+2008-09,Aysén,774
+2008-09,Magallanes,747.8
+2008-10,Metropolitana,743.35
+2008-10,Arica y Parinacota,797.7
+2008-10,Tarapacá,786.7
+2008-10,Antofagasta,790.2
+2008-10,Atacama,779.8
+2008-10,Coquimbo,796.1
+2008-10,Valparaíso,769.8
+2008-10,O'Higgins,780
+2008-10,Maule,766.4
+2008-10,Biobío,787.2
+2008-10,Araucanía,819
+2008-10,Los Ríos,791.9
+2008-10,Los Lagos,784.6
+2008-10,Aysén,811
+2008-10,Magallanes,764.8
+2008-11,Metropolitana,720.13
+2008-11,Arica y Parinacota,767.9
+2008-11,Tarapacá,742.2
+2008-11,Antofagasta,757.8
+2008-11,Atacama,759.4
+2008-11,Coquimbo,748.5
+2008-11,Valparaíso,744.9
+2008-11,O'Higgins,763.5
+2008-11,Maule,734.9
+2008-11,Biobío,761.5
+2008-11,Araucanía,762.2
+2008-11,Los Ríos,775.8
+2008-11,Los Lagos,780.6
+2008-11,Aysén,775
+2008-11,Magallanes,747.7
+2008-12,Metropolitana,597.66
+2008-12,Arica y Parinacota,642.9
+2008-12,Tarapacá,611.7
+2008-12,Antofagasta,633.4
+2008-12,Atacama,635.2
+2008-12,Coquimbo,623.7
+2008-12,Valparaíso,625.6
+2008-12,O'Higgins,638.4
+2008-12,Maule,611.8
+2008-12,Biobío,636.6
+2008-12,Araucanía,627.8
+2008-12,Los Ríos,640.3
+2008-12,Los Lagos,641.6
+2008-12,Aysén,650.2
+2008-12,Magallanes,620.8
+2009-01,Metropolitana,451.81
+2009-01,Arica y Parinacota,500
+2009-01,Tarapacá,492.1
+2009-01,Antofagasta,490.8
+2009-01,Atacama,496.8
+2009-01,Coquimbo,481.9
+2009-01,Valparaíso,481
+2009-01,O'Higgins,496.6
+2009-01,Maule,472.5
+2009-01,Biobío,494.1
+2009-01,Araucanía,484.1
+2009-01,Los Ríos,497.7
+2009-01,Los Lagos,497
+2009-01,Aysén,506.2
+2009-01,Magallanes,482.6
+2009-02,Metropolitana,482.73
+2009-02,Arica y Parinacota,528.5
+2009-02,Tarapacá,516.8
+2009-02,Antofagasta,521.6
+2009-02,Atacama,524.5
+2009-02,Coquimbo,511
+2009-02,Valparaíso,503.5
+2009-02,O'Higgins,521.7
+2009-02,Maule,498.9
+2009-02,Biobío,523.1
+2009-02,Araucanía,512.6
+2009-02,Los Ríos,525.7
+2009-02,Los Lagos,525.5
+2009-02,Aysén,535.2
+2009-02,Magallanes,507.2
+2009-03,Metropolitana,504.74
+2009-03,Arica y Parinacota,520.6
+2009-03,Tarapacá,511.7
+2009-03,Antofagasta,508
+2009-03,Atacama,529.3
+2009-03,Coquimbo,511
+2009-03,Valparaíso,493.3
+2009-03,O'Higgins,522.1
+2009-03,Maule,496.3
+2009-03,Biobío,510.9
+2009-03,Araucanía,505
+2009-03,Los Ríos,534.9
+2009-03,Los Lagos,513.8
+2009-03,Aysén,546.3
+2009-03,Magallanes,517.3
+2009-04,Metropolitana,494.39
+2009-04,Arica y Parinacota,523.6
+2009-04,Tarapacá,505.5
+2009-04,Antofagasta,510.8
+2009-04,Atacama,515.7
+2009-04,Coquimbo,499.3
+2009-04,Valparaíso,492.4
+2009-04,O'Higgins,524.9
+2009-04,Maule,488
+2009-04,Biobío,513.4
+2009-04,Araucanía,500.5
+2009-04,Los Ríos,534.9
+2009-04,Los Lagos,516.6
+2009-04,Aysén,523.2
+2009-04,Magallanes,497.3
+2009-05,Metropolitana,524.77
+2009-05,Arica y Parinacota,549.6
+2009-05,Tarapacá,537.8
+2009-05,Antofagasta,544.5
+2009-05,Atacama,554
+2009-05,Coquimbo,540.8
+2009-05,Valparaíso,533
+2009-05,O'Higgins,557.9
+2009-05,Maule,531.7
+2009-05,Biobío,556.3
+2009-05,Araucanía,546
+2009-05,Los Ríos,560.5
+2009-05,Los Lagos,560.8
+2009-05,Aysén,564.2
+2009-05,Magallanes,537.3
+2009-06,Metropolitana,532.05
+2009-06,Arica y Parinacota,554.3
+2009-06,Tarapacá,544.4
+2009-06,Antofagasta,558.6
+2009-06,Atacama,556.2
+2009-06,Coquimbo,550.8
+2009-06,Valparaíso,536.2
+2009-06,O'Higgins,566.9
+2009-06,Maule,538.4
+2009-06,Biobío,563.2
+2009-06,Araucanía,561
+2009-06,Los Ríos,576.8
+2009-06,Los Lagos,578.4
+2009-06,Aysén,580.3
+2009-06,Magallanes,542.8
+2009-07,Metropolitana,561.25
+2009-07,Arica y Parinacota,582.5
+2009-07,Tarapacá,567.4
+2009-07,Antofagasta,577.7
+2009-07,Atacama,588.6
+2009-07,Coquimbo,575.9
+2009-07,Valparaíso,570.8
+2009-07,O'Higgins,603.9
+2009-07,Maule,572.5
+2009-07,Biobío,592.9
+2009-07,Araucanía,589.3
+2009-07,Los Ríos,608.8
+2009-07,Los Lagos,606.9
+2009-07,Aysén,611.7
+2009-07,Magallanes,582.4
+2009-08,Metropolitana,570.86
+2009-08,Arica y Parinacota,591.6
+2009-08,Tarapacá,577.4
+2009-08,Antofagasta,587.3
+2009-08,Atacama,595.8
+2009-08,Coquimbo,593.4
+2009-08,Valparaíso,580.9
+2009-08,O'Higgins,603.9
+2009-08,Maule,577.1
+2009-08,Biobío,601
+2009-08,Araucanía,590.5
+2009-08,Los Ríos,604.7
+2009-08,Los Lagos,603.8
+2009-08,Aysén,610.3
+2009-08,Magallanes,582.4
+2009-09,Metropolitana,606.96
+2009-09,Arica y Parinacota,619.7
+2009-09,Tarapacá,615.6
+2009-09,Antofagasta,621
+2009-09,Atacama,633.1
+2009-09,Coquimbo,624.9
+2009-09,Valparaíso,618.2
+2009-09,O'Higgins,640.5
+2009-09,Maule,614.3
+2009-09,Biobío,637.9
+2009-09,Araucanía,627.6
+2009-09,Los Ríos,642.5
+2009-09,Los Lagos,643
+2009-09,Aysén,647.3
+2009-09,Magallanes,620.9
+2009-10,Metropolitana,591.3
+2009-10,Arica y Parinacota,601.9
+2009-10,Tarapacá,598.6
+2009-10,Antofagasta,606
+2009-10,Atacama,621.5
+2009-10,Coquimbo,607.4
+2009-10,Valparaíso,603.3
+2009-10,O'Higgins,626.7
+2009-10,Maule,600.1
+2009-10,Biobío,622.4
+2009-10,Araucanía,612.4
+2009-10,Los Ríos,630.4
+2009-10,Los Lagos,625.9
+2009-10,Aysén,629
+2009-10,Magallanes,605.3
+2009-11,Metropolitana,602.55
+2009-11,Arica y Parinacota,612.5
+2009-11,Tarapacá,608.4
+2009-11,Antofagasta,618
+2009-11,Atacama,627.8
+2009-11,Coquimbo,617.4
+2009-11,Valparaíso,612.8
+2009-11,O'Higgins,635.4
+2009-11,Maule,609.4
+2009-11,Biobío,633.9
+2009-11,Araucanía,623.8
+2009-11,Los Ríos,637.2
+2009-11,Los Lagos,636.3
+2009-11,Aysén,642.3
+2009-11,Magallanes,614.3
+2009-12,Metropolitana,594.07
+2009-12,Arica y Parinacota,601.4
+2009-12,Tarapacá,597.6
+2009-12,Antofagasta,608.3
+2009-12,Atacama,618.9
+2009-12,Coquimbo,608.4
+2009-12,Valparaíso,596.3
+2009-12,O'Higgins,621.5
+2009-12,Maule,596.9
+2009-12,Biobío,617.6
+2009-12,Araucanía,607.2
+2009-12,Los Ríos,627
+2009-12,Los Lagos,622.4
+2009-12,Aysén,631.3
+2009-12,Magallanes,606.6
+2010-01,Metropolitana,584.73
+2010-01,Arica y Parinacota,599.5
+2010-01,Tarapacá,595.1
+2010-01,Antofagasta,606
+2010-01,Atacama,615.9
+2010-01,Coquimbo,607
+2010-01,Valparaíso,594
+2010-01,O'Higgins,618.5
+2010-01,Maule,592.4
+2010-01,Biobío,615.7
+2010-01,Araucanía,606
+2010-01,Los Ríos,620.6
+2010-01,Los Lagos,620.6
+2010-01,Aysén,626.3
+2010-01,Magallanes,598.1
+2010-02,Metropolitana,617.49
+2010-02,Arica y Parinacota,632.8
+2010-02,Tarapacá,628.5
+2010-02,Antofagasta,639.6
+2010-02,Atacama,649.3
+2010-02,Coquimbo,639.3
+2010-02,Valparaíso,626.7
+2010-02,O'Higgins,663.8
+2010-02,Maule,625
+2010-02,Biobío,649.9
+2010-02,Araucanía,639.4
+2010-02,Los Ríos,654.3
+2010-02,Los Lagos,654.6
+2010-02,Aysén,671.7
+2010-02,Magallanes,631.6
+2010-03,Metropolitana,610.93
+2010-03,Arica y Parinacota,624.6
+2010-03,Tarapacá,621
+2010-03,Antofagasta,631.1
+2010-03,Atacama,642.1
+2010-03,Coquimbo,633.5
+2010-03,Valparaíso,618.9
+2010-03,O'Higgins,646.4
+2010-03,Los Ríos,647.3
+2010-03,Los Lagos,647.4
+2010-03,Aysén,654.2
+2010-03,Magallanes,624.1
+2010-04,Metropolitana,686.39
+2010-04,Arica y Parinacota,696.3
+2010-04,Tarapacá,694.3
+2010-04,Antofagasta,707.1
+2010-04,Atacama,712.5
+2010-04,Coquimbo,710.8
+2010-04,Valparaíso,688
+2010-04,O'Higgins,723.7
+2010-04,Maule,693.9
+2010-04,Biobío,712.2
+2010-04,Araucanía,710.3
+2010-04,Los Ríos,719.4
+2010-04,Los Lagos,722.1
+2010-04,Aysén,733
+2010-04,Magallanes,697.6
+2010-05,Metropolitana,701.57
+2010-05,Arica y Parinacota,720.2
+2010-05,Tarapacá,714.7
+2010-05,Antofagasta,723
+2010-05,Atacama,735.2
+2010-05,Coquimbo,726.1
+2010-05,Valparaíso,710.3
+2010-05,O'Higgins,737.1
+2010-05,Maule,713.9
+2010-05,Biobío,736.1
+2010-05,Araucanía,727.8
+2010-05,Los Ríos,741
+2010-05,Los Lagos,742
+2010-05,Aysén,748.2
+2010-05,Magallanes,720.6
+2010-06,Metropolitana,706.36
+2010-06,Arica y Parinacota,725.3
+2010-06,Tarapacá,719.5
+2010-06,Antofagasta,729.3
+2010-06,Atacama,741.4
+2010-06,Coquimbo,730.9
+2010-06,Valparaíso,716.5
+2010-06,O'Higgins,741.7
+2010-06,Maule,719.4
+2010-06,Biobío,741.1
+2010-06,Araucanía,733.8
+2010-06,Los Ríos,747
+2010-06,Los Lagos,747
+2010-06,Aysén,753.2
+2010-06,Magallanes,722.1
+2010-07,Metropolitana,678.55
+2010-07,Arica y Parinacota,700
+2010-07,Tarapacá,691.1
+2010-07,Antofagasta,698.1
+2010-07,Atacama,709.2
+2010-07,Coquimbo,701.6
+2010-07,Valparaíso,688.9
+2010-07,O'Higgins,719
+2010-07,Maule,689.1
+2010-07,Biobío,709.8
+2010-07,Araucanía,708.2
+2010-07,Los Ríos,712.8
+2010-07,Los Lagos,723
+2010-07,Aysén,729.2
+2010-07,Magallanes,701.5
+2010-08,Metropolitana,668.68
+2010-08,Arica y Parinacota,688.6
+2010-08,Tarapacá,682.6
+2010-08,Antofagasta,690.7
+2010-08,Atacama,703.6
+2010-08,Coquimbo,697.7
+2010-08,Valparaíso,681.8
+2010-08,O'Higgins,707.4
+2010-08,Maule,683.7
+2010-08,Biobío,704.9
+2010-08,Araucanía,698.4
+2010-08,Los Ríos,710.6
+2010-08,Los Lagos,710.9
+2010-08,Aysén,717.2
+2010-08,Magallanes,690
+2010-09,Metropolitana,655.61
+2010-09,Arica y Parinacota,664.5
+2010-09,Tarapacá,666.6
+2010-09,Antofagasta,678.9
+2010-09,Atacama,695.3
+2010-09,Coquimbo,681.8
+2010-09,Valparaíso,670.3
+2010-09,O'Higgins,694
+2010-09,Maule,670.5
+2010-09,Biobío,688
+2010-09,Araucanía,682.8
+2010-09,Los Ríos,700.2
+2010-09,Los Lagos,694
+2010-09,Aysén,705.5
+2010-09,Magallanes,677.9
+2010-10,Metropolitana,646.9
+2010-10,Arica y Parinacota,651
+2010-10,Tarapacá,657.3
+2010-10,Antofagasta,666.7
+2010-10,Atacama,678.3
+2010-10,Coquimbo,669.7
+2010-10,Valparaíso,661.2
+2010-10,O'Higgins,682.5
+2010-10,Maule,657.8
+2010-10,Biobío,679.9
+2010-10,Araucanía,673.3
+2010-10,Los Ríos,685.6
+2010-10,Los Lagos,686
+2010-10,Aysén,692.2
+2010-10,Magallanes,667.7
+2010-11,Metropolitana,678.9
+2010-11,Arica y Parinacota,684.3
+2010-11,Tarapacá,690.1
+2010-11,Antofagasta,697.9
+2010-11,Atacama,712.4
+2010-11,Coquimbo,703
+2010-11,Valparaíso,694.9
+2010-11,O'Higgins,716
+2010-11,Maule,690.1
+2010-11,Biobío,712.9
+2010-11,Araucanía,706
+2010-11,Los Ríos,719.1
+2010-11,Los Lagos,719.1
+2010-11,Aysén,725
+2010-11,Magallanes,698.4
+2010-12,Metropolitana,679.7
+2010-12,Arica y Parinacota,682.9
+2010-12,Tarapacá,692.1
+2010-12,Antofagasta,701.1
+2010-12,Atacama,715.7
+2010-12,Coquimbo,703.8
+2010-12,Valparaíso,698.6
+2010-12,O'Higgins,717.9
+2010-12,Maule,693.2
+2010-12,Biobío,714
+2010-12,Araucanía,706.7
+2010-12,Los Ríos,722.4
+2010-12,Los Lagos,720
+2010-12,Aysén,727.8
+2010-12,Magallanes,698.5
+2011-01,Metropolitana,694.8
+2011-01,Arica y Parinacota,692.8
+2011-01,Tarapacá,705.6
+2011-01,Antofagasta,713.6
+2011-01,Atacama,727.3
+2011-01,Coquimbo,717.8
+2011-01,Valparaíso,711.1
+2011-01,O'Higgins,730.6
+2011-01,Maule,706.6
+2011-01,Biobío,727.8
+2011-01,Araucanía,721.6
+2011-01,Los Ríos,733.4
+2011-01,Los Lagos,733.9
+2011-01,Aysén,740.2
+2011-01,Magallanes,712.8
+2011-02,Metropolitana,734.4
+2011-02,Arica y Parinacota,726
+2011-02,Tarapacá,732.5
+2011-02,Antofagasta,742.5
+2011-02,Atacama,761.6
+2011-02,Coquimbo,748.8
+2011-02,Valparaíso,738.2
+2011-02,O'Higgins,758.8
+2011-02,Maule,737.4
+2011-02,Biobío,753.5
+2011-02,Araucanía,748
+2011-02,Los Ríos,766
+2011-02,Los Lagos,754.6
+2011-02,Aysén,771.5
+2011-02,Magallanes,742.1
+2011-03,Metropolitana,694
+2011-03,Arica y Parinacota,693.4
+2011-03,Tarapacá,710.8
+2011-03,Antofagasta,715.2
+2011-03,Atacama,721.6
+2011-03,Coquimbo,712.5
+2011-03,Valparaíso,708.4
+2011-03,O'Higgins,728
+2011-03,Maule,709.3
+2011-03,Biobío,727.1
+2011-03,Araucanía,728.2
+2011-03,Los Ríos,740.1
+2011-03,Los Lagos,744.4
+2011-03,Aysén,735
+2011-03,Magallanes,712.8
+2011-04,Metropolitana,763.6
+2011-04,Arica y Parinacota,761
+2011-04,Tarapacá,774.4
+2011-04,Antofagasta,779.2
+2011-04,Atacama,796.5
+2011-04,Coquimbo,786.9
+2011-04,Valparaíso,779.7
+2011-04,O'Higgins,796.5
+2011-04,Maule,775.3
+2011-04,Biobío,796.9
+2011-04,Araucanía,790.2
+2011-04,Los Ríos,803.3
+2011-04,Los Lagos,802.8
+2011-04,Aysén,809.2
+2011-04,Magallanes,782
+2011-05,Metropolitana,773.7
+2011-05,Arica y Parinacota,786.2
+2011-05,Tarapacá,800.1
+2011-05,Antofagasta,807.5
+2011-05,Atacama,824.1
+2011-05,Coquimbo,813
+2011-05,Valparaíso,808.6
+2011-05,O'Higgins,816.2
+2011-05,Maule,801.8
+2011-05,Biobío,823.3
+2011-05,Araucanía,816.8
+2011-05,Los Ríos,830.8
+2011-05,Los Lagos,819.6
+2011-05,Aysén,835.3
+2011-05,Magallanes,808.2
+2011-06,Metropolitana,753.8
+2011-06,Arica y Parinacota,774.6
+2011-06,Tarapacá,793.5
+2011-06,Antofagasta,800
+2011-06,Atacama,819.9
+2011-06,Coquimbo,807.5
+2011-06,Valparaíso,802
+2011-06,O'Higgins,798.7
+2011-06,Maule,799.7
+2011-06,Biobío,806.3
+2011-06,Araucanía,806.1
+2011-06,Los Ríos,825
+2011-06,Los Lagos,797.2
+2011-06,Aysén,830
+2011-06,Magallanes,803.1
+2011-07,Metropolitana,754.8
+2011-07,Arica y Parinacota,774.4
+2011-07,Tarapacá,787.6
+2011-07,Antofagasta,795.8
+2011-07,Atacama,807.7
+2011-07,Coquimbo,800.2
+2011-07,Valparaíso,796.3
+2011-07,O'Higgins,793.8
+2011-07,Maule,789.9
+2011-07,Biobío,800.7
+2011-07,Araucanía,803.6
+2011-07,Los Ríos,812.6
+2011-07,Los Lagos,790.5
+2011-07,Aysén,823.3
+2011-07,Magallanes,796.8
+2011-08,Metropolitana,779.8
+2011-08,Arica y Parinacota,795.1
+2011-08,Tarapacá,808.4
+2011-08,Antofagasta,819.1
+2011-08,Atacama,827.7
+2011-08,Coquimbo,821.5
+2011-08,Valparaíso,816.7
+2011-08,O'Higgins,815.3
+2011-08,Maule,811.1
+2011-08,Biobío,821.7
+2011-08,Araucanía,823.2
+2011-08,Los Ríos,833.6
+2011-08,Los Lagos,812.2
+2011-08,Aysén,844.2
+2011-08,Magallanes,817.8
+2011-09,Metropolitana,753.2
+2011-09,Arica y Parinacota,778.1
+2011-09,Tarapacá,783.1
+2011-09,Antofagasta,795.6
+2011-09,Atacama,799.9
+2011-09,Coquimbo,798.1
+2011-09,Valparaíso,788.5
+2011-09,O'Higgins,791
+2011-09,Maule,786.2
+2011-09,Biobío,805.3
+2011-09,Araucanía,801.4
+2011-09,Los Ríos,803.6
+2011-09,Los Lagos,784.5
+2011-09,Aysén,819
+2011-09,Magallanes,793.3
+2011-10,Metropolitana,799.4
+2011-10,Arica y Parinacota,807.7
+2011-10,Tarapacá,821.5
+2011-10,Antofagasta,832.4
+2011-10,Atacama,839.6
+2011-10,Coquimbo,833.8
+2011-10,Valparaíso,829.2
+2011-10,O'Higgins,827.4
+2011-10,Maule,824.2
+2011-10,Biobío,833.8
+2011-10,Araucanía,837.9
+2011-10,Los Ríos,845.2
+2011-10,Los Lagos,825.5
+2011-10,Aysén,857.3
+2011-10,Magallanes,830.7
+2011-11,Metropolitana,807.7
+2011-11,Arica y Parinacota,802.5
+2011-11,Tarapacá,818.6
+2011-11,Antofagasta,825.1
+2011-11,Atacama,843.1
+2011-11,Coquimbo,839.5
+2011-11,Valparaíso,825.7
+2011-11,O'Higgins,825.7
+2011-11,Maule,825.6
+2011-11,Biobío,828.9
+2011-11,Araucanía,833.2
+2011-11,Los Ríos,849.5
+2011-11,Los Lagos,821.6
+2011-11,Aysén,859.5
+2011-11,Magallanes,831.4
+2011-12,Metropolitana,768
+2011-12,Arica y Parinacota,796.5
+2011-12,Tarapacá,812.8
+2011-12,Antofagasta,823.6
+2011-12,Atacama,839
+2011-12,Coquimbo,830.5
+2011-12,Valparaíso,817.1
+2011-12,O'Higgins,823.7
+2011-12,Maule,820.6
+2011-12,Biobío,824.7
+2011-12,Araucanía,826.2
+2011-12,Los Ríos,841
+2011-12,Los Lagos,811.6
+2011-12,Aysén,854.3
+2011-12,Magallanes,822.3
+2012-01,Metropolitana,792.3
+2012-01,Arica y Parinacota,799
+2012-01,Tarapacá,813.1
+2012-01,Antofagasta,821.7
+2012-01,Atacama,830.3
+2012-01,Coquimbo,821.3
+2012-01,Valparaíso,814.2
+2012-01,O'Higgins,817.8
+2012-01,Maule,815.5
+2012-01,Biobío,825.1
+2012-01,Araucanía,822.7
+2012-01,Los Ríos,836.2
+2012-01,Los Lagos,815.4
+2012-01,Aysén,843
+2012-01,Magallanes,820.2
+2012-02,Metropolitana,804.9
+2012-02,Arica y Parinacota,813.1
+2012-02,Tarapacá,825.2
+2012-02,Antofagasta,833.7
+2012-02,Atacama,842.6
+2012-02,Coquimbo,836.4
+2012-02,Valparaíso,825.8
+2012-02,O'Higgins,830.7
+2012-02,Maule,827.7
+2012-02,Biobío,832.6
+2012-02,Araucanía,835.5
+2012-02,Los Ríos,848.1
+2012-02,Los Lagos,827.4
+2012-02,Aysén,860.5
+2012-02,Magallanes,832.2
+2012-03,Metropolitana,811.6
+2012-03,Arica y Parinacota,819.9
+2012-03,Tarapacá,836.2
+2012-03,Antofagasta,843.8
+2012-03,Atacama,850.2
+2012-03,Coquimbo,846.5
+2012-03,Valparaíso,832.4
+2012-03,O'Higgins,842.5
+2012-03,Maule,841.9
+2012-03,Biobío,840.9
+2012-03,Araucanía,846.5
+2012-03,Los Ríos,855.3
+2012-03,Los Lagos,842.4
+2012-03,Magallanes,842.6
+2012-04,Metropolitana,824.2
+2012-04,Arica y Parinacota,843.5
+2012-04,Tarapacá,854.1
+2012-04,Antofagasta,862.6
+2012-04,Atacama,870.6
+2012-04,Coquimbo,863.8
+2012-04,Valparaíso,851.2
+2012-04,O'Higgins,860.7
+2012-04,Maule,856.8
+2012-04,Biobío,861.3
+2012-04,Araucanía,863.6
+2012-04,Los Ríos,877.1
+2012-04,Los Lagos,856.4
+2012-04,Aysén,889.8
+2012-04,Magallanes,861.5
+2012-05,Metropolitana,845.7
+2012-05,Arica y Parinacota,862.5
+2012-05,Tarapacá,876.5
+2012-05,Antofagasta,885.4
+2012-05,Atacama,893.6
+2012-05,Coquimbo,887.1
+2012-05,Valparaíso,874.6
+2012-05,O'Higgins,885.3
+2012-05,Maule,880
+2012-05,Biobío,884.2
+2012-05,Araucanía,887.3
+2012-05,Los Ríos,900.1
+2012-05,Los Lagos,879.5
+2012-05,Aysén,913
+2012-05,Magallanes,883.8
+2012-06,Metropolitana,826
+2012-06,Arica y Parinacota,839.5
+2012-06,Tarapacá,852.7
+2012-06,Antofagasta,863.1
+2012-06,Atacama,870.5
+2012-06,Coquimbo,864.5
+2012-06,Valparaíso,852.7
+2012-06,O'Higgins,859.7
+2012-06,Maule,856.9
+2012-06,Biobío,861.5
+2012-06,Araucanía,864.4
+2012-06,Los Ríos,877.6
+2012-06,Los Lagos,855.2
+2012-06,Aysén,888.7
+2012-06,Magallanes,859.1
+2012-07,Metropolitana,784.4
+2012-07,Arica y Parinacota,797.8
+2012-07,Tarapacá,810.5
+2012-07,Antofagasta,820.3
+2012-07,Atacama,828.6
+2012-07,Coquimbo,822.5
+2012-07,Valparaíso,809.9
+2012-07,O'Higgins,815
+2012-07,Maule,815.2
+2012-07,Biobío,818.2
+2012-07,Araucanía,821.7
+2012-07,Los Ríos,834.9
+2012-07,Los Lagos,813.8
+2012-07,Aysén,845
+2012-07,Magallanes,816.1
+2012-08,Metropolitana,794.3
+2012-08,Arica y Parinacota,802.9
+2012-08,Tarapacá,815.6
+2012-08,Antofagasta,825.9
+2012-08,Atacama,833.1
+2012-08,Coquimbo,827.5
+2012-08,Valparaíso,820.5
+2012-08,O'Higgins,819.6
+2012-08,Maule,820.7
+2012-08,Biobío,824.4
+2012-08,Araucanía,827.1
+2012-08,Los Ríos,839.9
+2012-08,Los Lagos,818.8
+2012-08,Aysén,850.3
+2012-08,Magallanes,820.8
+2012-09,Metropolitana,835.1
+2012-09,Arica y Parinacota,839.9
+2012-09,Tarapacá,852.4
+2012-09,Antofagasta,862.6
+2012-09,Atacama,870.6
+2012-09,Coquimbo,864.3
+2012-09,Valparaíso,856.1
+2012-09,O'Higgins,856.2
+2012-09,Maule,856.8
+2012-09,Biobío,862.9
+2012-09,Araucanía,864
+2012-09,Los Ríos,876.9
+2012-09,Los Lagos,855.8
+2012-09,Aysén,887.3
+2012-09,Magallanes,857.7
+2012-10,Metropolitana,842.7
+2012-10,Arica y Parinacota,836.9
+2012-10,Tarapacá,850.2
+2012-10,Antofagasta,860.7
+2012-10,Atacama,868.1
+2012-10,Coquimbo,862.1
+2012-10,Valparaíso,854.2
+2012-10,O'Higgins,855
+2012-10,Maule,855.1
+2012-10,Biobío,859.3
+2012-10,Araucanía,861.4
+2012-10,Los Ríos,874.2
+2012-10,Los Lagos,853.9
+2012-10,Aysén,884
+2012-10,Magallanes,856.5
+2012-11,Metropolitana,800.4
+2012-11,Arica y Parinacota,793.6
+2012-11,Tarapacá,806.6
+2012-11,Antofagasta,817
+2012-11,Atacama,825.3
+2012-11,Coquimbo,819.7
+2012-11,Valparaíso,810.2
+2012-11,O'Higgins,812.4
+2012-11,Maule,813.9
+2012-11,Biobío,815.1
+2012-11,Araucanía,817.7
+2012-11,Los Ríos,825.6
+2012-11,Los Lagos,810.3
+2012-11,Aysén,840.5
+2012-11,Magallanes,812.5
+2012-12,Metropolitana,776
+2012-12,Arica y Parinacota,769.2
+2012-12,Tarapacá,781.9
+2012-12,Antofagasta,792.6
+2012-12,Atacama,800.6
+2012-12,Coquimbo,794.9
+2012-12,Valparaíso,785.8
+2012-12,O'Higgins,787.6
+2012-12,Maule,791.2
+2012-12,Biobío,790.2
+2012-12,Araucanía,794.6
+2012-12,Los Ríos,801.9
+2012-12,Los Lagos,785.3
+2012-12,Aysén,816.2
+2012-12,Magallanes,786.5
+2013-01,Metropolitana,795.63
+2013-01,Arica y Parinacota,795.92
+2013-01,Tarapacá,803.28
+2013-01,Antofagasta,814.65
+2013-01,Atacama,821.36
+2013-01,Coquimbo,816
+2013-01,Valparaíso,807.42
+2013-01,O'Higgins,810.95
+2013-01,Maule,808.4
+2013-01,Biobío,809.6
+2013-01,Araucanía,815.33
+2013-01,Los Ríos,820.18
+2013-01,Los Lagos,806.79
+2013-01,Aysén,844.17
+2013-01,Magallanes,797.45
+2013-02,Metropolitana,806.52
+2013-02,Arica y Parinacota,822.21
+2013-02,Tarapacá,829.74
+2013-02,Antofagasta,839.65
+2013-02,Atacama,848.55
+2013-02,Coquimbo,841.75
+2013-02,Valparaíso,835.32
+2013-02,O'Higgins,836.5
+2013-02,Maule,829.3
+2013-02,Biobío,836.37
+2013-02,Araucanía,839.93
+2013-02,Los Ríos,849.64
+2013-02,Los Lagos,833.5
+2013-02,Aysén,871.17
+2013-02,Magallanes,838.09
+2013-03,Metropolitana,858.77
+2013-03,Arica y Parinacota,861.54
+2013-03,Tarapacá,869.37
+2013-03,Antofagasta,879.59
+2013-03,Atacama,888.64
+2013-03,Coquimbo,881.23
+2013-03,Valparaíso,873.32
+2013-03,O'Higgins,876.68
+2013-03,Maule,868.42
+2013-03,Biobío,877.17
+2013-03,Araucanía,877.93
+2013-03,Los Ríos,888.64
+2013-03,Los Lagos,872.64
+2013-03,Aysén,910.17
+2013-03,Magallanes,877.36
+2013-04,Metropolitana,829.41
+2013-04,Arica y Parinacota,831.38
+2013-04,Tarapacá,838.32
+2013-04,Antofagasta,849.05
+2013-04,Atacama,862.55
+2013-04,Coquimbo,852.62
+2013-04,Valparaíso,842.84
+2013-04,O'Higgins,850.35
+2013-04,Maule,848.33
+2013-04,Biobío,845.09
+2013-04,Araucanía,850.15
+2013-04,Los Ríos,856.73
+2013-04,Los Lagos,839.64
+2013-04,Aysén,876.5
+2013-04,Magallanes,850.36
+2013-05,Metropolitana,808.51
+2013-05,Arica y Parinacota,814.54
+2013-05,Tarapacá,820.21
+2013-05,Antofagasta,829.45
+2013-05,Atacama,841
+2013-05,Coquimbo,831.62
+2013-05,Valparaíso,825.53
+2013-05,O'Higgins,829.48
+2013-05,Maule,829.58
+2013-05,Biobío,824.72
+2013-05,Araucanía,829.81
+2013-05,Los Ríos,837.27
+2013-05,Los Lagos,820.21
+2013-05,Aysén,858
+2013-05,Magallanes,827.36
+2013-06,Metropolitana,848.02
+2013-06,Arica y Parinacota,842.31
+2013-06,Tarapacá,850.17
+2013-06,Antofagasta,861.52
+2013-06,Atacama,870.55
+2013-06,Coquimbo,863.08
+2013-06,Valparaíso,855.74
+2013-06,O'Higgins,858.78
+2013-06,Maule,860.42
+2013-06,Biobío,856.06
+2013-06,Araucanía,860.81
+2013-06,Los Ríos,870.82
+2013-06,Los Lagos,850.21
+2013-06,Aysén,888
+2013-06,Magallanes,859
+2013-07,Metropolitana,847.71
+2013-07,Arica y Parinacota,848.38
+2013-07,Tarapacá,856.32
+2013-07,Antofagasta,864.99
+2013-07,Atacama,875.45
+2013-07,Coquimbo,866.15
+2013-07,Valparaíso,860.26
+2013-07,O'Higgins,864.13
+2013-07,Maule,861.33
+2013-07,Biobío,859.96
+2013-07,Araucanía,864.11
+2013-07,Los Ríos,874.27
+2013-07,Los Lagos,859.07
+2013-07,Aysén,895
+2013-07,Magallanes,864.36
+2013-08,Metropolitana,871.47
+2013-08,Arica y Parinacota,873.86
+2013-08,Tarapacá,880.05
+2013-08,Antofagasta,892.52
+2013-08,Atacama,902.73
+2013-08,Coquimbo,892.77
+2013-08,Valparaíso,885.53
+2013-08,O'Higgins,885.61
+2013-08,Maule,888.58
+2013-08,Biobío,886.72
+2013-08,Araucanía,888.71
+2013-08,Los Ríos,901.45
+2013-08,Los Lagos,891.21
+2013-08,Aysén,920.33
+2013-08,Magallanes,891.09
+2013-09,Metropolitana,866.35
+2013-09,Arica y Parinacota,865.64
+2013-09,Tarapacá,871.37
+2013-09,Antofagasta,883.93
+2013-09,Atacama,897.45
+2013-09,Coquimbo,883.69
+2013-09,Valparaíso,877.21
+2013-09,O'Higgins,883.39
+2013-09,Maule,880.67
+2013-09,Biobío,878.94
+2013-09,Araucanía,884.57
+2013-09,Los Ríos,892.64
+2013-09,Los Lagos,878.29
+2013-09,Aysén,914.17
+2013-09,Magallanes,880
+2013-10,Metropolitana,805
+2013-10,Arica y Parinacota,798.21
+2013-10,Tarapacá,805.37
+2013-10,Antofagasta,816.19
+2013-10,Atacama,830.91
+2013-10,Coquimbo,817.77
+2013-10,Valparaíso,813.79
+2013-10,O'Higgins,821.7
+2013-10,Maule,813.17
+2013-10,Biobío,811.65
+2013-10,Araucanía,816.93
+2013-10,Los Ríos,824.36
+2013-10,Los Lagos,810.67
+2013-10,Aysén,859
+2013-10,Magallanes,812.18
+2013-11,Metropolitana,797
+2013-11,Arica y Parinacota,790.43
+2013-11,Tarapacá,797.16
+2013-11,Antofagasta,807.86
+2013-11,Atacama,821.64
+2013-11,Coquimbo,809.38
+2013-11,Valparaíso,805.53
+2013-11,O'Higgins,807.86
+2013-11,Maule,805.75
+2013-11,Biobío,804.13
+2013-11,Araucanía,808.86
+2013-11,Los Ríos,813.27
+2013-11,Los Lagos,802
+2013-11,Aysén,851.83
+2013-11,Magallanes,805.18
+2013-12,Metropolitana,821
+2013-12,Arica y Parinacota,818.36
+2013-12,Tarapacá,820.68
+2013-12,Antofagasta,834.33
+2013-12,Atacama,842.64
+2013-12,Coquimbo,833.85
+2013-12,Valparaíso,830.32
+2013-12,O'Higgins,831.23
+2013-12,Maule,833.83
+2013-12,Biobío,829.13
+2013-12,Araucanía,833.64
+2013-12,Los Ríos,839.82
+2013-12,Los Lagos,828
+2013-12,Aysén,862.5
+2013-12,Magallanes,830.45
+2014-01,Metropolitana,857
+2014-01,Arica y Parinacota,848.07
+2014-01,Tarapacá,856.79
+2014-01,Antofagasta,866.73
+2014-01,Atacama,873.55
+2014-01,Coquimbo,866.92
+2014-01,Valparaíso,859
+2014-01,O'Higgins,864.04
+2014-01,Maule,864.67
+2014-01,Biobío,860.3
+2014-01,Araucanía,865.71
+2014-01,Los Ríos,874.3
+2014-01,Los Lagos,862
+2014-01,Aysén,896.83
+2014-01,Magallanes,866
+2014-02,Metropolitana,857.58
+2014-02,Arica y Parinacota,846.14
+2014-02,Tarapacá,856.11
+2014-02,Antofagasta,865.46
+2014-02,Atacama,876.73
+2014-02,Coquimbo,864.92
+2014-02,Valparaíso,858
+2014-02,O'Higgins,861.17
+2014-02,Maule,860.5
+2014-02,Biobío,857.77
+2014-02,Araucanía,864.75
+2014-02,Los Ríos,876.9
+2014-02,Los Lagos,862.5
+2014-02,Aysén,894.67
+2014-02,Magallanes,861.64
+2014-03,Metropolitana,900.41
+2014-03,Arica y Parinacota,891.36
+2014-03,Tarapacá,901
+2014-03,Antofagasta,910.26
+2014-03,Atacama,923.36
+2014-03,Coquimbo,907.77
+2014-03,Valparaíso,897.92
+2014-03,O'Higgins,907.48
+2014-03,Maule,905.25
+2014-03,Biobío,902.77
+2014-03,Araucanía,910.36
+2014-03,Los Ríos,922.2
+2014-03,Los Lagos,907.14
+2014-03,Aysén,932.83
+2014-03,Magallanes,906.73
+2014-04,Metropolitana,872.39
+2014-04,Arica y Parinacota,861.43
+2014-04,Tarapacá,875.26
+2014-04,Antofagasta,881.19
+2014-04,Atacama,895.55
+2014-04,Coquimbo,881.31
+2014-04,Valparaíso,874.16
+2014-04,O'Higgins,880.17
+2014-04,Maule,874.92
+2014-04,Biobío,874.52
+2014-04,Araucanía,882.79
+2014-04,Los Ríos,892.73
+2014-04,Los Lagos,885.14
+2014-04,Aysén,914.67
+2014-04,Magallanes,866.91
+2014-05,Metropolitana,914.72
+2014-05,Arica y Parinacota,904.86
+2014-05,Tarapacá,906.84
+2014-05,Antofagasta,922.66
+2014-05,Atacama,934.09
+2014-05,Coquimbo,922.92
+2014-05,Valparaíso,915.05
+2014-05,O'Higgins,914.87
+2014-05,Maule,917.33
+2014-05,Biobío,910.91
+2014-05,Araucanía,924.57
+2014-05,Los Ríos,926.27
+2014-05,Los Lagos,923.14
+2014-05,Aysén,950.33
+2014-05,Magallanes,907.18
+2014-06,Metropolitana,907.03
+2014-06,Arica y Parinacota,897
+2014-06,Tarapacá,901.58
+2014-06,Antofagasta,914.33
+2014-06,Atacama,926.91
+2014-06,Coquimbo,915.38
+2014-06,Valparaíso,906.89
+2014-06,O'Higgins,909.78
+2014-06,Maule,909
+2014-06,Biobío,906.48
+2014-06,Araucanía,916.29
+2014-06,Los Ríos,920.09
+2014-06,Los Lagos,915.14
+2014-06,Aysén,943
+2014-06,Magallanes,897.64
+2014-07,Metropolitana,944.77
+2014-07,Arica y Parinacota,938.5
+2014-07,Tarapacá,944.68
+2014-07,Antofagasta,955.06
+2014-07,Atacama,967.09
+2014-07,Coquimbo,956.69
+2014-07,Valparaíso,944.37
+2014-07,O'Higgins,948.04
+2014-07,Maule,949.33
+2014-07,Biobío,944.46
+2014-07,Araucanía,956.61
+2014-07,Los Ríos,953.45
+2014-07,Los Lagos,949.29
+2014-07,Aysén,982
+2014-07,Magallanes,939.36
+2014-08,Metropolitana,916.41
+2014-08,Arica y Parinacota,908.5
+2014-08,Tarapacá,921.37
+2014-08,Antofagasta,924.99
+2014-08,Atacama,937
+2014-08,Coquimbo,926.69
+2014-08,Valparaíso,918.26
+2014-08,O'Higgins,921.61
+2014-08,Maule,919
+2014-08,Biobío,916.75
+2014-08,Araucanía,927.68
+2014-08,Los Ríos,931.64
+2014-08,Los Lagos,927.71
+2014-08,Aysén,957.33
+2014-08,Magallanes,910.45
+2014-09,Metropolitana,922.72
+2014-09,Arica y Parinacota,913.07
+2014-09,Tarapacá,920.47
+2014-09,Antofagasta,928.99
+2014-09,Atacama,940.27
+2014-09,Coquimbo,930.15
+2014-09,Valparaíso,923.32
+2014-09,O'Higgins,919.91
+2014-09,Maule,925
+2014-09,Biobío,917.93
+2014-09,Araucanía,929.64
+2014-09,Los Ríos,936.64
+2014-09,Los Lagos,929.71
+2014-09,Aysén,958
+2014-09,Magallanes,913.27
+2014-10,Metropolitana,960.66
+2014-10,Arica y Parinacota,943.57
+2014-10,Tarapacá,952.74
+2014-10,Antofagasta,960.06
+2014-10,Atacama,972.18
+2014-10,Coquimbo,959.15
+2014-10,Valparaíso,953.05
+2014-10,O'Higgins,954.26
+2014-10,Maule,951.17
+2014-10,Biobío,949.89
+2014-10,Araucanía,960.71
+2014-10,Los Ríos,964.64
+2014-10,Los Lagos,959.14
+2014-10,Aysén,987.5
+2014-10,Magallanes,944.18
+2014-11,Metropolitana,965.97
+2014-11,Arica y Parinacota,950.57
+2014-11,Tarapacá,957.95
+2014-11,Antofagasta,965.13
+2014-11,Atacama,978.45
+2014-11,Coquimbo,967.08
+2014-11,Valparaíso,958.32
+2014-11,O'Higgins,959.04
+2014-11,Maule,950.83
+2014-11,Biobío,954.96
+2014-11,Araucanía,967.25
+2014-11,Los Ríos,968.82
+2014-11,Los Lagos,964.71
+2014-11,Aysén,992.83
+2014-11,Magallanes,950.27
+2014-12,Metropolitana,858.19
+2014-12,Arica y Parinacota,838.36
+2014-12,Tarapacá,851.42
+2014-12,Antofagasta,869.46
+2014-12,Atacama,868
+2014-12,Coquimbo,862.85
+2014-12,Valparaíso,853.63
+2014-12,O'Higgins,854
+2014-12,Maule,840
+2014-12,Biobío,856.64
+2014-12,Araucanía,867.93
+2014-12,Los Ríos,868.18
+2014-12,Los Lagos,853.86
+2014-12,Aysén,883.83
+2014-12,Magallanes,837.45
+2015-01,Metropolitana,770.54
+2015-01,Arica y Parinacota,749.29
+2015-01,Tarapacá,767.37
+2015-01,Antofagasta,777.66
+2015-01,Atacama,783.36
+2015-01,Coquimbo,779.85
+2015-01,Valparaíso,767.37
+2015-01,O'Higgins,776.13
+2015-01,Maule,752.25
+2015-01,Biobío,777.21
+2015-01,Araucanía,780.46
+2015-01,Los Ríos,791.55
+2015-01,Los Lagos,776
+2015-01,Aysén,793.17
+2015-01,Magallanes,752.55
+2015-02,Metropolitana,732.4
+2015-02,Arica y Parinacota,708.29
+2015-02,Tarapacá,731.68
+2015-02,Antofagasta,741.66
+2015-02,Atacama,737.64
+2015-02,Coquimbo,745.69
+2015-02,Valparaíso,730.16
+2015-02,O'Higgins,729.74
+2015-02,Maule,709.58
+2015-02,Biobío,724.04
+2015-02,Araucanía,725.86
+2015-02,Los Ríos,747.91
+2015-02,Los Lagos,726.86
+2015-02,Aysén,753.33
+2015-02,Magallanes,718.45
+2015-03,Metropolitana,746.91
+2015-03,Arica y Parinacota,724.57
+2015-03,Tarapacá,747.37
+2015-03,Antofagasta,743.39
+2015-03,Atacama,753.82
+2015-03,Coquimbo,743.92
+2015-03,Valparaíso,746.37
+2015-03,O'Higgins,745.26
+2015-03,Maule,727.17
+2015-03,Biobío,737.71
+2015-03,Araucanía,741.75
+2015-03,Los Ríos,764.27
+2015-03,Los Lagos,745.29
+2015-03,Aysén,769.5
+2015-03,Magallanes,733.91
+2015-04,Metropolitana,772.93
+2015-04,Arica y Parinacota,766.71
+2015-04,Tarapacá,787.47
+2015-04,Antofagasta,783.79
+2015-04,Atacama,775.45
+2015-04,Coquimbo,778
+2015-04,Valparaíso,785.47
+2015-04,O'Higgins,785
+2015-04,Maule,766.42
+2015-04,Biobío,770
+2015-04,Araucanía,781.61
+2015-04,Los Ríos,798.27
+2015-04,Los Lagos,787.43
+2015-04,Aysén,812.67
+2015-04,Magallanes,776.36
+2015-05,Metropolitana,780
+2015-05,Arica y Parinacota,783
+2015-05,Tarapacá,802
+2015-05,Antofagasta,800
+2015-05,Atacama,791
+2015-05,Coquimbo,797
+2015-05,Valparaíso,799
+2015-05,O'Higgins,802
+2015-05,Maule,783
+2015-05,Biobío,787
+2015-05,Araucanía,797
+2015-05,Los Ríos,813
+2015-05,Los Lagos,800
+2015-05,Aysén,826
+2015-05,Magallanes,793
+2015-06,Metropolitana,787.35
+2015-06,Arica y Parinacota,797.14
+2015-06,Tarapacá,815.42
+2015-06,Antofagasta,814.39
+2015-06,Atacama,806.55
+2015-06,Coquimbo,808.69
+2015-06,Valparaíso,810.63
+2015-06,O'Higgins,814.91
+2015-06,Maule,797
+2015-06,Biobío,801.29
+2015-06,Araucanía,811.07
+2015-06,Los Ríos,827.45
+2015-06,Los Lagos,813.14
+2015-06,Aysén,842
+2015-06,Magallanes,807.18
+2015-07,Metropolitana,812.05
+2015-07,Arica y Parinacota,832.14
+2015-07,Tarapacá,843.68
+2015-07,Antofagasta,849.4
+2015-07,Atacama,840.55
+2015-07,Coquimbo,840.54
+2015-07,Valparaíso,843.53
+2015-07,O'Higgins,848.57
+2015-07,Maule,828.33
+2015-07,Biobío,834.43
+2015-07,Araucanía,844.61
+2015-07,Los Ríos,861.09
+2015-07,Los Lagos,847.14
+2015-07,Aysén,877
+2015-07,Magallanes,842
+2015-08,Metropolitana,835.86
+2015-08,Arica y Parinacota,859.14
+2015-08,Tarapacá,871.68
+2015-08,Antofagasta,875.73
+2015-08,Atacama,869.82
+2015-08,Coquimbo,875.31
+2015-08,Valparaíso,869.42
+2015-08,O'Higgins,873.78
+2015-08,Maule,851.33
+2015-08,Biobío,860.86
+2015-08,Araucanía,871.43
+2015-08,Los Ríos,886.64
+2015-08,Los Lagos,876.14
+2015-08,Aysén,905
+2015-08,Magallanes,870.73
+2015-09,Metropolitana,842.63
+2015-09,Arica y Parinacota,850.14
+2015-09,Tarapacá,863.68
+2015-09,Antofagasta,868.93
+2015-09,Atacama,862.18
+2015-09,Coquimbo,868.58
+2015-09,Valparaíso,861.94
+2015-09,O'Higgins,864.61
+2015-09,Maule,833.27
+2015-09,Biobío,853.22
+2015-09,Araucanía,867.61
+2015-09,Los Ríos,879.36
+2015-09,Los Lagos,867.71
+2015-09,Aysén,895
+2015-09,Magallanes,862.36
+2015-10,Metropolitana,822.11
+2015-10,Arica y Parinacota,827.14
+2015-10,Tarapacá,838.68
+2015-10,Antofagasta,847.47
+2015-10,Atacama,837.64
+2015-10,Coquimbo,843.85
+2015-10,Valparaíso,838.26
+2015-10,O'Higgins,841.57
+2015-10,Maule,809.92
+2015-10,Biobío,831.07
+2015-10,Araucanía,844.54
+2015-10,Los Ríos,856.82
+2015-10,Los Lagos,844.71
+2015-10,Aysén,872
+2015-10,Magallanes,838.27
+2015-11,Metropolitana,802.75
+2015-11,Arica y Parinacota,814.14
+2015-11,Tarapacá,826.37
+2015-11,Antofagasta,835.33
+2015-11,Atacama,824.55
+2015-11,Coquimbo,832.77
+2015-11,Valparaíso,826.21
+2015-11,O'Higgins,827.61
+2015-11,Maule,795
+2015-11,Biobío,819.46
+2015-11,Araucanía,831.32
+2015-11,Los Ríos,844.55
+2015-11,Los Lagos,828.86
+2015-11,Aysén,859
+2015-11,Magallanes,824.82
+2015-12,Metropolitana,797.85
+2015-12,Arica y Parinacota,792.14
+2015-12,Tarapacá,804.74
+2015-12,Antofagasta,809.4
+2015-12,Atacama,802.45
+2015-12,Coquimbo,812.08
+2015-12,Valparaíso,804.79
+2015-12,O'Higgins,806.52
+2015-12,Maule,773.25
+2015-12,Biobío,799.21
+2015-12,Araucanía,810.71
+2015-12,Los Ríos,822.36
+2015-12,Los Lagos,806.86
+2015-12,Aysén,837
+2015-12,Magallanes,802.64
+2016-01,Metropolitana,758.45
+2016-01,Arica y Parinacota,774.14
+2016-01,Tarapacá,787
+2016-01,Antofagasta,783.33
+2016-01,Atacama,784.91
+2016-01,Coquimbo,795.62
+2016-01,Valparaíso,787.74
+2016-01,O'Higgins,787.74
+2016-01,Maule,755
+2016-01,Biobío,780.86
+2016-01,Araucanía,793.25
+2016-01,Los Ríos,803.91
+2016-01,Los Lagos,788.86
+2016-01,Aysén,820
+2016-01,Magallanes,784.82
+2016-02,Metropolitana,743.34
+2016-02,Arica y Parinacota,757.14
+2016-02,Tarapacá,768.74
+2016-02,Antofagasta,774.33
+2016-02,Atacama,768.45
+2016-02,Coquimbo,780.31
+2016-02,Valparaíso,772.63
+2016-02,O'Higgins,771.26
+2016-02,Maule,739.58
+2016-02,Biobío,765.64
+2016-02,Araucanía,778.11
+2016-02,Los Ríos,787.18
+2016-02,Los Lagos,771.71
+2016-02,Aysén,802
+2016-02,Magallanes,767.82
+2016-03,Metropolitana,713.14
+2016-03,Arica y Parinacota,728.64
+2016-03,Tarapacá,740.68
+2016-03,Antofagasta,746.4
+2016-03,Atacama,740.09
+2016-03,Coquimbo,747.75
+2016-03,Valparaíso,743.39
+2016-03,O'Higgins,745.17
+2016-03,Maule,701.08
+2016-03,Biobío,739.29
+2016-03,Araucanía,752.39
+2016-03,Los Ríos,760.09
+2016-03,Los Lagos,743.57
+2016-03,Aysén,774
+2016-03,Magallanes,739.82
+2016-04,Metropolitana,708.51
+2016-04,Arica y Parinacota,727.64
+2016-04,Tarapacá,739.68
+2016-04,Antofagasta,745.4
+2016-04,Atacama,738.64
+2016-04,Coquimbo,753.15
+2016-04,Valparaíso,745.84
+2016-04,O'Higgins,741.52
+2016-04,Maule,694.25
+2016-04,Biobío,737.61
+2016-04,Araucanía,751.04
+2016-04,Los Ríos,759.45
+2016-04,Los Lagos,742.57
+2016-04,Aysén,773
+2016-04,Magallanes,739.91
+2016-05,Metropolitana,725.54
+2016-05,Arica y Parinacota,760.36
+2016-05,Tarapacá,772.68
+2016-05,Antofagasta,778.4
+2016-05,Atacama,771.64
+2016-05,Coquimbo,779.92
+2016-05,Valparaíso,777.05
+2016-05,O'Higgins,774.39
+2016-05,Maule,724.5
+2016-05,Biobío,766.85
+2016-05,Araucanía,781.5
+2016-05,Los Ríos,792
+2016-05,Los Lagos,777.14
+2016-05,Aysén,806
+2016-05,Magallanes,774.45
+2016-06,Metropolitana,751
+2016-06,Arica y Parinacota,790
+2016-06,Tarapacá,802
+2016-06,Antofagasta,807
+2016-06,Atacama,800
+2016-06,Coquimbo,808
+2016-06,Valparaíso,805
+2016-06,O'Higgins,803
+2016-06,Maule,758
+2016-06,Biobío,797
+2016-06,Araucanía,802
+2016-06,Los Ríos,820
+2016-06,Los Lagos,807
+2016-06,Aysén,835
+2016-06,Magallanes,804
+2016-07,Metropolitana,747.22
+2016-07,Arica y Parinacota,786.64
+2016-07,Tarapacá,799.42
+2016-07,Antofagasta,804.4
+2016-07,Atacama,797.45
+2016-07,Coquimbo,806
+2016-07,Valparaíso,801.22
+2016-07,O'Higgins,802.57
+2016-07,Maule,756.42
+2016-07,Biobío,795.85
+2016-07,Araucanía,802.71
+2016-07,Los Ríos,817.45
+2016-07,Los Lagos,805.14
+2016-07,Aysén,832.33
+2016-07,Magallanes,801.64
+2016-08,Metropolitana,729.06
+2016-08,Arica y Parinacota,765.64
+2016-08,Tarapacá,781
+2016-08,Antofagasta,784
+2016-08,Atacama,777.82
+2016-08,Coquimbo,784.77
+2016-08,Valparaíso,780.44
+2016-08,O'Higgins,782.04
+2016-08,Maule,735.75
+2016-08,Biobío,775.27
+2016-08,Araucanía,783.14
+2016-08,Los Ríos,796.09
+2016-08,Los Lagos,784.43
+2016-08,Aysén,811.33
+2016-08,Magallanes,780
+2016-09,Metropolitana,728
+2016-09,Arica y Parinacota,738.64
+2016-09,Tarapacá,751.89
+2016-09,Antofagasta,756.4
+2016-09,Atacama,749.45
+2016-09,Coquimbo,756.92
+2016-09,Valparaíso,753.78
+2016-09,O'Higgins,754.68
+2016-09,Maule,711.92
+2016-09,Biobío,749.12
+2016-09,Araucanía,755.26
+2016-09,Los Ríos,769.73
+2016-09,Los Lagos,758
+2016-09,Aysén,784.33
+2016-09,Magallanes,752.82
+2016-10,Metropolitana,756.87
+2016-10,Arica y Parinacota,764.64
+2016-10,Tarapacá,778.21
+2016-10,Antofagasta,782
+2016-10,Atacama,775.64
+2016-10,Coquimbo,782.75
+2016-10,Valparaíso,779.17
+2016-10,O'Higgins,781.62
+2016-10,Maule,742.67
+2016-10,Biobío,773.31
+2016-10,Araucanía,781.57
+2016-10,Los Ríos,794.91
+2016-10,Los Lagos,784.43
+2016-10,Aysén,810
+2016-10,Magallanes,777.82
+2016-11,Metropolitana,784.28
+2016-11,Arica y Parinacota,788.21
+2016-11,Tarapacá,802
+2016-11,Antofagasta,805.2
+2016-11,Atacama,798.82
+2016-11,Coquimbo,807.92
+2016-11,Valparaíso,802.11
+2016-11,O'Higgins,803.76
+2016-11,Maule,769.42
+2016-11,Biobío,797.46
+2016-11,Araucanía,804.89
+2016-11,Los Ríos,818.36
+2016-11,Los Lagos,808.33
+2016-11,Aysén,834
+2016-11,Magallanes,801.82
+2016-12,Metropolitana,767.5
+2016-12,Arica y Parinacota,759
+2016-12,Tarapacá,778.47
+2016-12,Antofagasta,782.6
+2016-12,Atacama,775.18
+2016-12,Coquimbo,783.77
+2016-12,Valparaíso,779.24
+2016-12,O'Higgins,781.57
+2016-12,Maule,746.5
+2016-12,Biobío,776.38
+2016-12,Araucanía,781.36
+2016-12,Los Ríos,796.18
+2016-12,Los Lagos,785
+2016-12,Aysén,810.33
+2016-12,Magallanes,780
+2017-01,Metropolitana,790.09
+2017-01,Arica y Parinacota,786.71
+2017-01,Tarapacá,799.79
+2017-01,Antofagasta,804.4
+2017-01,Atacama,796.82
+2017-01,Coquimbo,805.38
+2017-01,Valparaíso,801.41
+2017-01,O'Higgins,801.95
+2017-01,Maule,767.75
+2017-01,Biobío,796.38
+2017-01,Araucanía,802.96
+2017-01,Los Ríos,817.64
+2017-01,Los Lagos,803.57
+2017-01,Aysén,832
+2017-01,Magallanes,802.09
+2017-02,Metropolitana,799.99
+2017-02,Arica y Parinacota,806.62
+2017-02,Tarapacá,819.68
+2017-02,Antofagasta,824.4
+2017-02,Atacama,817.18
+2017-02,Coquimbo,825.62
+2017-02,Valparaíso,821.83
+2017-02,O'Higgins,821.55
+2017-02,Maule,791.5
+2017-02,Biobío,817.19
+2017-02,Araucanía,823.56
+2017-02,Los Ríos,837.91
+2017-02,Los Lagos,826.83
+2017-02,Aysén,852
+2017-02,Magallanes,822
+2017-03,Metropolitana,779.33
+2017-03,Arica y Parinacota,786.69
+2017-03,Tarapacá,800.16
+2017-03,Antofagasta,804.47
+2017-03,Atacama,796.64
+2017-03,Coquimbo,805.62
+2017-03,Valparaíso,802.22
+2017-03,O'Higgins,801.32
+2017-03,Maule,771.08
+2017-03,Biobío,793.35
+2017-03,Araucanía,801.48
+2017-03,Los Ríos,815.09
+2017-03,Los Lagos,801.33
+2017-03,Aysén,833.83
+2017-03,Magallanes,802.27
+2017-04,Metropolitana,774.01
+2017-04,Arica y Parinacota,776.62
+2017-04,Tarapacá,789.84
+2017-04,Antofagasta,794.47
+2017-04,Atacama,786.73
+2017-04,Coquimbo,795.46
+2017-04,Valparaíso,792.56
+2017-04,O'Higgins,791.47
+2017-04,Maule,763.58
+2017-04,Biobío,783.08
+2017-04,Araucanía,791.74
+2017-04,Los Ríos,804.64
+2017-04,Los Lagos,791.33
+2017-04,Aysén,822
+2017-04,Magallanes,792.09
+2017-05,Metropolitana,784.3
+2017-05,Arica y Parinacota,797.62
+2017-05,Tarapacá,810.47
+2017-05,Antofagasta,815.4
+2017-05,Atacama,807.64
+2017-05,Coquimbo,816.62
+2017-05,Valparaíso,813.06
+2017-05,O'Higgins,812
+2017-05,Maule,784.67
+2017-05,Biobío,799.65
+2017-05,Araucanía,812.22
+2017-05,Los Ríos,825.91
+2017-05,Los Lagos,812.33
+2017-05,Aysén,843
+2017-05,Magallanes,813
+2017-06,Metropolitana,775.92
+2017-06,Arica y Parinacota,797.62
+2017-06,Tarapacá,810.74
+2017-06,Antofagasta,815.57
+2017-06,Atacama,807.45
+2017-06,Coquimbo,815.91
+2017-06,Valparaíso,813.11
+2017-06,O'Higgins,812.1
+2017-06,Maule,785.5
+2017-06,Biobío,801.65
+2017-06,Araucanía,810.29
+2017-06,Los Ríos,825.55
+2017-06,Los Lagos,813
+2017-06,Aysén,843
+2017-06,Magallanes,813.18
+2017-07,Metropolitana,760.65
+2017-07,Arica y Parinacota,782.62
+2017-07,Tarapacá,796.05
+2017-07,Antofagasta,799.07
+2017-07,Atacama,793.36
+2017-07,Coquimbo,793.7
+2017-07,Valparaíso,798.61
+2017-07,O'Higgins,797.5
+2017-07,Maule,771.08
+2017-07,Biobío,786.62
+2017-07,Araucanía,796.12
+2017-07,Los Ríos,810.64
+2017-07,Los Lagos,798.67
+2017-07,Aysén,828
+2017-07,Magallanes,798.18
+2017-08,Metropolitana,751.57
+2017-08,Arica y Parinacota,771.15
+2017-08,Tarapacá,785.16
+2017-08,Antofagasta,788.33
+2017-08,Atacama,784.7
+2017-08,Coquimbo,778.5
+2017-08,Valparaíso,786.39
+2017-08,O'Higgins,786.1
+2017-08,Maule,760.67
+2017-08,Biobío,772.76
+2017-08,Araucanía,784.59
+2017-08,Los Ríos,799.73
+2017-08,Los Lagos,787.43
+2017-08,Aysén,817
+2017-08,Magallanes,786.9
+2017-09,Metropolitana,765.93
+2017-09,Arica y Parinacota,773.62
+2017-09,Tarapacá,787.42
+2017-09,Antofagasta,790.33
+2017-09,Atacama,784.6
+2017-09,Coquimbo,781.08
+2017-09,Valparaíso,788.78
+2017-09,O'Higgins,788.9
+2017-09,Maule,765.25
+2017-09,Ñuble,742.06
+2017-09,Biobío,777.23
+2017-09,Araucanía,787.86
+2017-09,Los Ríos,801.91
+2017-09,Los Lagos,789.86
+2017-09,Aysén,820.33
+2017-09,Magallanes,789.18
+2017-10,Metropolitana,777.66
+2017-10,Arica y Parinacota,796.62
+2017-10,Tarapacá,808.78
+2017-10,Antofagasta,812.73
+2017-10,Atacama,806.27
+2017-10,Coquimbo,803.33
+2017-10,Valparaíso,811.83
+2017-10,O'Higgins,812.45
+2017-10,Maule,793.83
+2017-10,Ñuble,761.11
+2017-10,Biobío,804.04
+2017-10,Araucanía,811.29
+2017-10,Los Ríos,825.55
+2017-10,Los Lagos,812.83
+2017-10,Aysén,842
+2017-10,Magallanes,812.36
+2017-11,Metropolitana,779.35
+2017-11,Arica y Parinacota,796.62
+2017-11,Tarapacá,808.17
+2017-11,Antofagasta,812.86
+2017-11,Atacama,806
+2017-11,Coquimbo,802.83
+2017-11,Valparaíso,810.94
+2017-11,O'Higgins,810.4
+2017-11,Maule,793.25
+2017-11,Ñuble,765.06
+2017-11,Biobío,805.08
+2017-11,Araucanía,812.32
+2017-11,Los Ríos,825.36
+2017-11,Los Lagos,812.83
+2017-11,Aysén,842
+2017-11,Magallanes,812
+2017-12,Metropolitana,801.41
+2017-12,Arica y Parinacota,820.23
+2017-12,Tarapacá,831.33
+2017-12,Antofagasta,834.36
+2017-12,Atacama,826.18
+2017-12,Coquimbo,826.54
+2017-12,Valparaíso,832.83
+2017-12,O'Higgins,835.4
+2017-12,Maule,817.08
+2017-12,Ñuble,789
+2017-12,Biobío,828.92
+2017-12,Araucanía,837.43
+2017-12,Los Ríos,847.91
+2017-12,Los Lagos,836.83
+2017-12,Aysén,866
+2017-12,Magallanes,836
+2018-01,Metropolitana,791.96
+2018-01,Arica y Parinacota,814.62
+2018-01,Tarapacá,825.5
+2018-01,Antofagasta,828.79
+2018-01,Atacama,820
+2018-01,Coquimbo,820.23
+2018-01,Valparaíso,825.35
+2018-01,O'Higgins,829.79
+2018-01,Maule,801.58
+2018-01,Ñuble,779
+2018-01,Biobío,818.81
+2018-01,Araucanía,828.07
+2018-01,Los Ríos,840.09
+2018-01,Los Lagos,825.86
+2018-01,Aysén,860
+2018-01,Magallanes,831.09
+2018-02,Metropolitana,815.28
+2018-02,Arica y Parinacota,836.62
+2018-02,Tarapacá,848.53
+2018-02,Antofagasta,849.93
+2018-02,Atacama,841.18
+2018-02,Coquimbo,841.92
+2018-02,Valparaíso,847.67
+2018-02,O'Higgins,851.35
+2018-02,Maule,823.08
+2018-02,Ñuble,798.24
+2018-02,Biobío,838.65
+2018-02,Araucanía,844.81
+2018-02,Los Ríos,858.18
+2018-02,Los Lagos,846.86
+2018-02,Aysén,881.17
+2018-02,Magallanes,853.3
+2018-03,Metropolitana,793.04
+2018-03,Arica y Parinacota,814.62
+2018-03,Tarapacá,829.94
+2018-03,Antofagasta,828.6
+2018-03,Atacama,820.64
+2018-03,Coquimbo,819.77
+2018-03,Valparaíso,826.61
+2018-03,O'Higgins,831.68
+2018-03,Maule,801.92
+2018-03,Ñuble,777.76
+2018-03,Biobío,814.27
+2018-03,Araucanía,823.71
+2018-03,Los Ríos,834.73
+2018-03,Los Lagos,825.71
+2018-03,Aysén,860
+2018-03,Magallanes,830.45
+2018-04,Metropolitana,792.33
+2018-04,Arica y Parinacota,821.62
+2018-04,Tarapacá,835.5
+2018-04,Antofagasta,835.93
+2018-04,Atacama,827.09
+2018-04,Coquimbo,827.15
+2018-04,Valparaíso,831.78
+2018-04,O'Higgins,837.1
+2018-04,Maule,808.33
+2018-04,Ñuble,784.41
+2018-04,Biobío,819.69
+2018-04,Araucanía,830.46
+2018-04,Los Ríos,841.91
+2018-04,Los Lagos,830.57
+2018-04,Aysén,867.33
+2018-04,Magallanes,838.73
+2018-05,Metropolitana,809.04
+2018-05,Arica y Parinacota,836.62
+2018-05,Tarapacá,847.35
+2018-05,Antofagasta,850.73
+2018-05,Atacama,842.09
+2018-05,Coquimbo,842.31
+2018-05,Valparaíso,851.11
+2018-05,O'Higgins,852.1
+2018-05,Maule,823.08
+2018-05,Ñuble,799.29
+2018-05,Biobío,834.88
+2018-05,Araucanía,846.31
+2018-05,Los Ríos,857.09
+2018-05,Los Lagos,847.86
+2018-05,Aysén,882
+2018-05,Magallanes,853.64
+2018-06,Metropolitana,838.07
+2018-06,Arica y Parinacota,866.62
+2018-06,Tarapacá,877.35
+2018-06,Antofagasta,879.8
+2018-06,Atacama,871.55
+2018-06,Coquimbo,872.15
+2018-06,Valparaíso,877.11
+2018-06,O'Higgins,882
+2018-06,Maule,834.67
+2018-06,Ñuble,827.53
+2018-06,Biobío,865.76
+2018-06,Araucanía,875.38
+2018-06,Los Ríos,887
+2018-06,Los Lagos,877.57
+2018-06,Aysén,912
+2018-06,Magallanes,884.09
+2018-07,Metropolitana,846.15
+2018-07,Arica y Parinacota,874.62
+2018-07,Tarapacá,884.95
+2018-07,Antofagasta,888.64
+2018-07,Atacama,880
+2018-07,Coquimbo,879.85
+2018-07,Valparaíso,885.17
+2018-07,O'Higgins,890.32
+2018-07,Maule,842.33
+2018-07,Ñuble,829.29
+2018-07,Biobío,873.96
+2018-07,Araucanía,884.24
+2018-07,Los Ríos,893.18
+2018-07,Los Lagos,885
+2018-07,Aysén,920
+2018-07,Magallanes,892.91
+2018-08,Metropolitana,852.95
+2018-08,Arica y Parinacota,879.18
+2018-08,Tarapacá,888.89
+2018-08,Antofagasta,892.5
+2018-08,Atacama,884.09
+2018-08,Coquimbo,884.08
+2018-08,Valparaíso,888.89
+2018-08,O'Higgins,894.16
+2018-08,Maule,846.33
+2018-08,Ñuble,833.71
+2018-08,Biobío,877.36
+2018-08,Araucanía,887.64
+2018-08,Los Ríos,896
+2018-08,Los Lagos,890.29
+2018-08,Aysén,924
+2018-08,Magallanes,898.45
+2018-09,Metropolitana,874.16
+2018-09,Arica y Parinacota,899.62
+2018-09,Tarapacá,908.84
+2018-09,Antofagasta,913.5
+2018-09,Atacama,905
+2018-09,Coquimbo,905.62
+2018-09,Valparaíso,906.5
+2018-09,O'Higgins,912.68
+2018-09,Maule,867.08
+2018-09,Ñuble,854.76
+2018-09,Biobío,898.08
+2018-09,Araucanía,907.84
+2018-09,Los Ríos,916.82
+2018-09,Los Lagos,911.17
+2018-09,Aysén,945
+2018-09,Magallanes,919.82
+2018-10,Metropolitana,889.62
+2018-10,Arica y Parinacota,913.62
+2018-10,Tarapacá,923.42
+2018-10,Antofagasta,927.87
+2018-10,Atacama,919.27
+2018-10,Coquimbo,919.62
+2018-10,Valparaíso,920.33
+2018-10,O'Higgins,928.61
+2018-10,Maule,881.42
+2018-10,Ñuble,868.82
+2018-10,Biobío,912.36
+2018-10,Araucanía,921.36
+2018-10,Los Ríos,931.27
+2018-10,Los Lagos,924.71
+2018-10,Aysén,959
+2018-10,Magallanes,934.45
+2018-11,Metropolitana,892.16
+2018-11,Arica y Parinacota,913.62
+2018-11,Tarapacá,923.53
+2018-11,Antofagasta,928.47
+2018-11,Atacama,919.33
+2018-11,Coquimbo,919.69
+2018-11,Valparaíso,920.33
+2018-11,O'Higgins,923.56
+2018-11,Maule,884.67
+2018-11,Ñuble,868.88
+2018-11,Biobío,913.12
+2018-11,Araucanía,922.88
+2018-11,Los Ríos,931.27
+2018-11,Los Lagos,926.29
+2018-11,Aysén,959
+2018-11,Magallanes,935.91
+2018-12,Metropolitana,869.27
+2018-12,Arica y Parinacota,892.77
+2018-12,Tarapacá,903.11
+2018-12,Antofagasta,907.73
+2018-12,Atacama,898.75
+2018-12,Coquimbo,898.69
+2018-12,Valparaíso,899.28
+2018-12,O'Higgins,907.84
+2018-12,Maule,864.17
+2018-12,Ñuble,850.44
+2018-12,Biobío,890.76
+2018-12,Araucanía,900.76
+2018-12,Los Ríos,909.82
+2018-12,Los Lagos,903.57
+2018-12,Aysén,938
+2018-12,Magallanes,914
+2019-01,Metropolitana,838.25
+2019-01,Arica y Parinacota,867.62
+2019-01,Tarapacá,870.95
+2019-01,Antofagasta,883.13
+2019-01,Atacama,873.25
+2019-01,Coquimbo,874.46
+2019-01,Valparaíso,874.72
+2019-01,O'Higgins,882.79
+2019-01,Maule,839.09
+2019-01,Ñuble,825.59
+2019-01,Biobío,865.88
+2019-01,Araucanía,876.04
+2019-01,Los Ríos,884.73
+2019-01,Los Lagos,878.86
+2019-01,Aysén,913
+2019-01,Magallanes,888.91
+2019-02,Metropolitana,814.62
+2019-02,Arica y Parinacota,846.62
+2019-02,Tarapacá,835.79
+2019-02,Antofagasta,861
+2019-02,Atacama,852.17
+2019-02,Coquimbo,854.08
+2019-02,Valparaíso,853.35
+2019-02,O'Higgins,861.58
+2019-02,Maule,818
+2019-02,Ñuble,805.38
+2019-02,Biobío,840.8
+2019-02,Araucanía,853.71
+2019-02,Los Ríos,863.73
+2019-02,Los Lagos,858
+2019-02,Aysén,892.83
+2019-02,Magallanes,867.18
+2019-03,Metropolitana,791.42
+2019-03,Arica y Parinacota,822.77
+2019-03,Tarapacá,811.42
+2019-03,Antofagasta,836.53
+2019-03,Atacama,829
+2019-03,Coquimbo,830.77
+2019-03,Valparaíso,829.59
+2019-03,O'Higgins,837.42
+2019-03,Maule,794.09
+2019-03,Ñuble,781.38
+2019-03,Biobío,820.96
+2019-03,Araucanía,830.09
+2019-03,Los Ríos,840.55
+2019-03,Los Lagos,834
+2019-03,Aysén,868
+2019-03,Magallanes,844.82
+2019-04,Metropolitana,811.35
+2019-04,Arica y Parinacota,837.38
+2019-04,Tarapacá,827.58
+2019-04,Antofagasta,850.8
+2019-04,Atacama,843.5
+2019-04,Coquimbo,844.15
+2019-04,Valparaíso,844.53
+2019-04,O'Higgins,851.68
+2019-04,Maule,808.91
+2019-04,Ñuble,796.38
+2019-04,Biobío,834.6
+2019-04,Araucanía,845.38
+2019-04,Los Ríos,855.64
+2019-04,Los Lagos,849
+2019-04,Aysén,883
+2019-04,Magallanes,859.45
+2019-05,Metropolitana,839.27
+2019-05,Arica y Parinacota,879.15
+2019-05,Tarapacá,869.26
+2019-05,Antofagasta,893.4
+2019-05,Atacama,885.33
+2019-05,Coquimbo,886.08
+2019-05,Valparaíso,887.38
+2019-05,O'Higgins,893.84
+2019-05,Maule,850.73
+2019-05,Ñuble,838.38
+2019-05,Biobío,877.08
+2019-05,Araucanía,887.69
+2019-05,Los Ríos,897.36
+2019-05,Los Lagos,891
+2019-05,Aysén,925
+2019-05,Magallanes,904.09
+2019-06,Metropolitana,850.58
+2019-06,Arica y Parinacota,890.15
+2019-06,Tarapacá,880.42
+2019-06,Antofagasta,904.4
+2019-06,Atacama,896.5
+2019-06,Coquimbo,897.62
+2019-06,Valparaíso,898.13
+2019-06,O'Higgins,904.75
+2019-06,Maule,861.91
+2019-06,Ñuble,849.69
+2019-06,Biobío,888.08
+2019-06,Araucanía,898.81
+2019-06,Los Ríos,908.55
+2019-06,Los Lagos,901.71
+2019-06,Aysén,936.33
+2019-06,Magallanes,918
+2019-07,Metropolitana,845.44
+2019-07,Arica y Parinacota,871.15
+2019-07,Tarapacá,862.26
+2019-07,Antofagasta,885.6
+2019-07,Atacama,877.42
+2019-07,Coquimbo,878.62
+2019-07,Valparaíso,877.81
+2019-07,O'Higgins,887.3
+2019-07,Maule,842.91
+2019-07,Ñuble,830.69
+2019-07,Biobío,870.6
+2019-07,Araucanía,879.38
+2019-07,Los Ríos,889.55
+2019-07,Los Lagos,882.71
+2019-07,Aysén,917.17
+2019-07,Magallanes,900.18
+2019-08,Metropolitana,846.85
+2019-08,Arica y Parinacota,885.15
+2019-08,Tarapacá,877.63
+2019-08,Antofagasta,899.53
+2019-08,Atacama,891.67
+2019-08,Coquimbo,893.15
+2019-08,Valparaíso,888.75
+2019-08,O'Higgins,899.95
+2019-08,Maule,856.73
+2019-08,Ñuble,846.13
+2019-08,Biobío,884.72
+2019-08,Araucanía,893.46
+2019-08,Los Ríos,903.64
+2019-08,Los Lagos,896.71
+2019-08,Aysén,931.17
+2019-08,Magallanes,913.18
+2019-09,Metropolitana,841.2
+2019-09,Arica y Parinacota,867.31
+2019-09,Tarapacá,859.21
+2019-09,Antofagasta,881.33
+2019-09,Atacama,873.5
+2019-09,Coquimbo,875.46
+2019-09,Valparaíso,872.38
+2019-09,O'Higgins,882.25
+2019-09,Maule,838.73
+2019-09,Ñuble,828
+2019-09,Biobío,867.36
+2019-09,Araucanía,875.73
+2019-09,Los Ríos,885.64
+2019-09,Los Lagos,878.57
+2019-09,Aysén,913.33
+2019-09,Magallanes,895.5
+2019-10,Metropolitana,859.67
+2019-10,Arica y Parinacota,883.31
+2019-10,Tarapacá,875.16
+2019-10,Antofagasta,897.47
+2019-10,Atacama,889.5
+2019-10,Coquimbo,891.46
+2019-10,Valparaíso,888.69
+2019-10,O'Higgins,898.1
+2019-10,Maule,854.91
+2019-10,Ñuble,844.06
+2019-10,Biobío,884.68
+2019-10,Araucanía,890.92
+2019-10,Los Ríos,901.82
+2019-10,Los Lagos,895.71
+2019-10,Aysén,929.17
+2019-10,Magallanes,911
+2019-11,Metropolitana,869.46
+2019-11,Arica y Parinacota,895.31
+2019-11,Tarapacá,887.21
+2019-11,Antofagasta,909.53
+2019-11,Atacama,901.5
+2019-11,Coquimbo,903.31
+2019-11,Valparaíso,899.31
+2019-11,O'Higgins,910.6
+2019-11,Maule,866.27
+2019-11,Ñuble,856.06
+2019-11,Biobío,897.04
+2019-11,Araucanía,902.54
+2019-11,Los Ríos,912.18
+2019-11,Los Lagos,908
+2019-11,Aysén,941.17
+2019-11,Magallanes,923.64
+2019-12,Metropolitana,880.25
+2019-12,Arica y Parinacota,909.31
+2019-12,Tarapacá,901.06
+2019-12,Antofagasta,923.07
+2019-12,Atacama,915
+2019-12,Coquimbo,917
+2019-12,Valparaíso,911.94
+2019-12,O'Higgins,924.6
+2019-12,Maule,880.91
+2019-12,Ñuble,870.06
+2019-12,Biobío,910.55
+2019-12,Araucanía,916.07
+2019-12,Los Ríos,925.4
+2019-12,Los Lagos,922
+2019-12,Aysén,955.17
+2019-12,Magallanes,937.64
+2020-01,Metropolitana,892.08
+2020-01,Arica y Parinacota,919.46
+2020-01,Tarapacá,910.5
+2020-01,Antofagasta,933.2
+2020-01,Atacama,928.5
+2020-01,Coquimbo,928.75
+2020-01,Valparaíso,924.31
+2020-01,O'Higgins,934.5
+2020-01,Maule,891.82
+2020-01,Ñuble,880.75
+2020-01,Biobío,923.29
+2020-01,Araucanía,925.89
+2020-01,Los Ríos,935.73
+2020-01,Los Lagos,932.71
+2020-01,Aysén,968
+2020-01,Magallanes,948.55
+2020-02,Metropolitana,908.34
+2020-02,Arica y Parinacota,937.92
+2020-02,Tarapacá,929.31
+2020-02,Antofagasta,949.79
+2020-02,Atacama,944.55
+2020-02,Coquimbo,945.38
+2020-02,Valparaíso,940.63
+2020-02,O'Higgins,952.8
+2020-02,Maule,910.73
+2020-02,Ñuble,900.25
+2020-02,Biobío,940.58
+2020-02,Araucanía,942.74
+2020-02,Los Ríos,953
+2020-02,Los Lagos,949.86
+2020-02,Aysén,987.5
+2020-02,Magallanes,966.09
+2020-03,Metropolitana,898.55
+2020-03,Arica y Parinacota,929.15
+2020-03,Tarapacá,920.69
+2020-03,Antofagasta,942.36
+2020-03,Atacama,933.55
+2020-03,Coquimbo,934.77
+2020-03,Valparaíso,931
+2020-03,O'Higgins,943.58
+2020-03,Maule,899.64
+2020-03,Ñuble,889.82
+2020-03,Biobío,929.33
+2020-03,Araucanía,932.33
+2020-03,Los Ríos,942.36
+2020-03,Los Lagos,940
+2020-03,Aysén,977.33
+2020-03,Magallanes,956.45
+2020-04,Metropolitana,868.23
+2020-04,Arica y Parinacota,909.23
+2020-04,Tarapacá,901
+2020-04,Antofagasta,925.29
+2020-04,Atacama,914.82
+2020-04,Coquimbo,915.23
+2020-04,Valparaíso,912.25
+2020-04,O'Higgins,925.37
+2020-04,Maule,881.91
+2020-04,Ñuble,870.47
+2020-04,Biobío,910.04
+2020-04,Araucanía,913.41
+2020-04,Los Ríos,919.64
+2020-04,Los Lagos,920.43
+2020-04,Aysén,957.17
+2020-04,Magallanes,938.91
+2020-05,Metropolitana,845.15
+2020-05,Arica y Parinacota,887.62
+2020-05,Tarapacá,882.06
+2020-05,Antofagasta,902.07
+2020-05,Atacama,890.27
+2020-05,Coquimbo,891.85
+2020-05,Valparaíso,888.81
+2020-05,O'Higgins,902.89
+2020-05,Maule,858.36
+2020-05,Ñuble,850
+2020-05,Biobío,885.74
+2020-05,Araucanía,889.26
+2020-05,Los Ríos,898.64
+2020-05,Los Lagos,899.29
+2020-05,Aysén,938.17
+2020-05,Magallanes,915.45
+2020-06,Metropolitana,821.25
+2020-06,Arica y Parinacota,866.69
+2020-06,Tarapacá,861.56
+2020-06,Antofagasta,881.21
+2020-06,Atacama,869.36
+2020-06,Coquimbo,871
+2020-06,Valparaíso,864.94
+2020-06,O'Higgins,878.63
+2020-06,Maule,833.91
+2020-06,Ñuble,825.76
+2020-06,Biobío,861.61
+2020-06,Araucanía,864.33
+2020-06,Los Ríos,872.18
+2020-06,Los Lagos,876.43
+2020-06,Aysén,916.17
+2020-06,Magallanes,896.64
+2020-07,Metropolitana,790.89
+2020-07,Arica y Parinacota,840.38
+2020-07,Tarapacá,836.06
+2020-07,Antofagasta,853.29
+2020-07,Atacama,841.9
+2020-07,Coquimbo,843.15
+2020-07,Valparaíso,834.88
+2020-07,O'Higgins,849.1
+2020-07,Maule,804.09
+2020-07,Ñuble,797.29
+2020-07,Biobío,833.3
+2020-07,Araucanía,834.7
+2020-07,Los Ríos,842.18
+2020-07,Los Lagos,847.14
+2020-07,Aysén,888.17
+2020-07,Magallanes,869.36
+2020-08,Metropolitana,767.7
+2020-08,Arica y Parinacota,816
+2020-08,Tarapacá,814
+2020-08,Antofagasta,830
+2020-08,Atacama,817
+2020-08,Coquimbo,819
+2020-08,Valparaíso,812
+2020-08,O'Higgins,828
+2020-08,Maule,780
+2020-08,Ñuble,774
+2020-08,Biobío,808
+2020-08,Araucanía,811
+2020-08,Los Ríos,827
+2020-08,Los Lagos,823
+2020-08,Aysén,864
+2020-08,Magallanes,846
+2020-09,Metropolitana,767.64
+2020-09,Arica y Parinacota,804.38
+2020-09,Tarapacá,806.94
+2020-09,Antofagasta,824.15
+2020-09,Atacama,805.09
+2020-09,Coquimbo,807.42
+2020-09,Valparaíso,803.75
+2020-09,O'Higgins,825.05
+2020-09,Maule,770.09
+2020-09,Ñuble,765.65
+2020-09,Biobío,798.52
+2020-09,Araucanía,802.04
+2020-09,Los Ríos,814.55
+2020-09,Los Lagos,809.86
+2020-09,Aysén,853.17
+2020-09,Magallanes,840.27
+2020-10,Metropolitana,767.7
+2020-10,Arica y Parinacota,805.92
+2020-10,Tarapacá,810
+2020-10,Antofagasta,831.5
+2020-10,Atacama,807
+2020-10,Coquimbo,809.83
+2020-10,Valparaíso,805.75
+2020-10,O'Higgins,823.4
+2020-10,Maule,771.36
+2020-10,Ñuble,769.29
+2020-10,Biobío,800.13
+2020-10,Araucanía,804.37
+2020-10,Los Ríos,814.45
+2020-10,Los Lagos,811.86
+2020-10,Aysén,856.17
+2020-10,Magallanes,843.18
+2020-11,Metropolitana,780.28
+2020-11,Arica y Parinacota,819.77
+2020-11,Tarapacá,824.19
+2020-11,Antofagasta,845
+2020-11,Atacama,821
+2020-11,Coquimbo,823.67
+2020-11,Valparaíso,820
+2020-11,O'Higgins,836.58
+2020-11,Maule,784.73
+2020-11,Ñuble,784.94
+2020-11,Biobío,813.35
+2020-11,Araucanía,817.52
+2020-11,Los Ríos,827.91
+2020-11,Los Lagos,825.14
+2020-11,Aysén,869.17
+2020-11,Magallanes,856.82
+2020-12,Metropolitana,757.3
+2020-12,Arica y Parinacota,802.38
+2020-12,Tarapacá,806.88
+2020-12,Antofagasta,827.5
+2020-12,Atacama,803.64
+2020-12,Coquimbo,806.92
+2020-12,Valparaíso,799.8
+2020-12,O'Higgins,818.85
+2020-12,Maule,768.27
+2020-12,Ñuble,768.76
+2020-12,Biobío,796.09
+2020-12,Araucanía,801.15
+2020-12,Los Ríos,811.3
+2020-12,Los Lagos,807.86
+2020-12,Aysén,851.17
+2020-12,Magallanes,838.45
+2021-01,Metropolitana,776.09
+2021-01,Arica y Parinacota,823.85
+2021-01,Tarapacá,827.25
+2021-01,Antofagasta,848.5
+2021-01,Atacama,825.64
+2021-01,Coquimbo,827.33
+2021-01,Valparaíso,822.69
+2021-01,O'Higgins,841.85
+2021-01,Maule,792.64
+2021-01,Ñuble,790.24
+2021-01,Biobío,817.96
+2021-01,Araucanía,823.52
+2021-01,Los Ríos,835
+2021-01,Los Lagos,829.57
+2021-01,Aysén,872.5
+2021-01,Magallanes,867.73
+2021-02,Metropolitana,795.6
+2021-02,Arica y Parinacota,842
+2021-02,Tarapacá,846
+2021-02,Antofagasta,866
+2021-02,Atacama,843
+2021-02,Coquimbo,845
+2021-02,Valparaíso,841
+2021-02,O'Higgins,861
+2021-02,Maule,812
+2021-02,Ñuble,808
+2021-02,Biobío,837
+2021-02,Araucanía,841
+2021-02,Los Ríos,855
+2021-02,Los Lagos,847
+2021-02,Aysén,890
+2021-02,Magallanes,893
+2021-03,Metropolitana,818.9
+2021-03,Arica y Parinacota,863
+2021-03,Tarapacá,866
+2021-03,Antofagasta,886
+2021-03,Atacama,867
+2021-03,Coquimbo,866
+2021-03,Valparaíso,861
+2021-03,O'Higgins,882
+2021-03,Maule,836
+2021-03,Ñuble,831
+2021-03,Biobío,859
+2021-03,Araucanía,866
+2021-03,Los Ríos,877
+2021-03,Los Lagos,868
+2021-03,Aysén,912
+2021-03,Magallanes,916
+2021-04,Metropolitana,849.5
+2021-04,Arica y Parinacota,899.62
+2021-04,Tarapacá,900.88
+2021-04,Antofagasta,922.07
+2021-04,Atacama,904.45
+2021-04,Coquimbo,902.42
+2021-04,Valparaíso,897.88
+2021-04,O'Higgins,917.15
+2021-04,Maule,874.55
+2021-04,Ñuble,870.35
+2021-04,Biobío,895.77
+2021-04,Araucanía,903.59
+2021-04,Los Ríos,914.64
+2021-04,Los Lagos,904.71
+2021-04,Aysén,946
+2021-04,Magallanes,955
+2021-05,Metropolitana,874.35
+2021-05,Arica y Parinacota,925
+2021-05,Tarapacá,925
+2021-05,Antofagasta,947
+2021-05,Atacama,928
+2021-05,Coquimbo,926
+2021-05,Valparaíso,923
+2021-05,O'Higgins,940
+2021-05,Maule,900
+2021-05,Ñuble,900
+2021-05,Biobío,919
+2021-05,Araucanía,928
+2021-05,Los Ríos,939
+2021-05,Los Lagos,928
+2021-05,Aysén,970
+2021-05,Magallanes,979
+2021-06,Metropolitana,905.4
+2021-06,Arica y Parinacota,956
+2021-06,Tarapacá,954
+2021-06,Antofagasta,977
+2021-06,Atacama,960
+2021-06,Coquimbo,956
+2021-06,Valparaíso,954
+2021-06,O'Higgins,971
+2021-06,Maule,932
+2021-06,Ñuble,931
+2021-06,Biobío,950
+2021-06,Araucanía,962
+2021-06,Los Ríos,967
+2021-06,Los Lagos,958
+2021-06,Aysén,1000
+2021-06,Magallanes,1011
+2021-07,Metropolitana,929.6
+2021-07,Arica y Parinacota,980
+2021-07,Tarapacá,978
+2021-07,Antofagasta,1001
+2021-07,Atacama,984
+2021-07,Coquimbo,980
+2021-07,Valparaíso,978
+2021-07,O'Higgins,995
+2021-07,Maule,957
+2021-07,Ñuble,955
+2021-07,Biobío,974
+2021-07,Araucanía,985
+2021-07,Los Ríos,991
+2021-07,Los Lagos,982
+2021-07,Aysén,1024
+2021-07,Magallanes,1036
+2021-08,Metropolitana,954.43
+2021-08,Arica y Parinacota,1005.15
+2021-08,Tarapacá,1001.71
+2021-08,Antofagasta,1024.47
+2021-08,Atacama,1008.73
+2021-08,Coquimbo,1004.08
+2021-08,Valparaíso,1003.13
+2021-08,O'Higgins,1015.3
+2021-08,Maule,983.36
+2021-08,Ñuble,981.59
+2021-08,Biobío,999.45
+2021-08,Araucanía,1010
+2021-08,Los Ríos,1014.91
+2021-08,Los Lagos,1004.86
+2021-08,Aysén,1048.2
+2021-08,Magallanes,1063.18
+2021-09,Metropolitana,938.43
+2021-09,Arica y Parinacota,983
+2021-09,Tarapacá,978
+2021-09,Antofagasta,987
+2021-09,Atacama,987
+2021-09,Coquimbo,983
+2021-09,Valparaíso,981
+2021-09,O'Higgins,994
+2021-09,Maule,961
+2021-09,Ñuble,959
+2021-09,Biobío,978
+2021-09,Araucanía,989
+2021-09,Los Ríos,991
+2021-09,Los Lagos,982
+2021-09,Aysén,1024
+2021-09,Magallanes,1046
+2021-10,Metropolitana,961.57
+2021-10,Arica y Parinacota,1001.77
+2021-10,Tarapacá,993.94
+2021-10,Antofagasta,1002.6
+2021-10,Atacama,1007.18
+2021-10,Coquimbo,1001.5
+2021-10,Valparaíso,1000.25
+2021-10,O'Higgins,1011.26
+2021-10,Maule,982.27
+2021-10,Ñuble,979.82
+2021-10,Biobío,998.23
+2021-10,Araucanía,1008.33
+2021-10,Los Ríos,1009.09
+2021-10,Los Lagos,998.86
+2021-10,Aysén,1039.17
+2021-10,Magallanes,1067
+2021-11,Metropolitana,994.92
+2021-11,Arica y Parinacota,1030.92
+2021-11,Tarapacá,1021.71
+2021-11,Antofagasta,1028.6
+2021-11,Atacama,1037.82
+2021-11,Coquimbo,1030.58
+2021-11,Valparaíso,1029.19
+2021-11,O'Higgins,1042.06
+2021-11,Maule,1012.82
+2021-11,Ñuble,1006.71
+2021-11,Biobío,1026.14
+2021-11,Araucanía,1037.26
+2021-11,Los Ríos,1038.45
+2021-11,Los Lagos,1028.86
+2021-11,Aysén,1064
+2021-11,Magallanes,1093.45
+2021-12,Metropolitana,1021.58
+2021-12,Arica y Parinacota,1055.15
+2021-12,Tarapacá,1043.82
+2021-12,Antofagasta,1052.73
+2021-12,Atacama,1062
+2021-12,Coquimbo,1055.58
+2021-12,Valparaíso,1053.38
+2021-12,O'Higgins,1065.32
+2021-12,Maule,1037.18
+2021-12,Ñuble,1030.88
+2021-12,Biobío,1050.45
+2021-12,Araucanía,1061.93
+2021-12,Los Ríos,1064.27
+2021-12,Los Lagos,1053.43
+2021-12,Aysén,1072
+2021-12,Magallanes,1098.45
+2022-01,Metropolitana,1036.17
+2022-01,Arica y Parinacota,1068.85
+2022-01,Tarapacá,1056.76
+2022-01,Antofagasta,1066.53
+2022-01,Atacama,1075
+2022-01,Coquimbo,1069.83
+2022-01,Valparaíso,1069.19
+2022-01,O'Higgins,1078.65
+2022-01,Maule,1050.36
+2022-01,Ñuble,1044
+2022-01,Biobío,1064.32
+2022-01,Araucanía,1076.19
+2022-01,Los Ríos,1078
+2022-01,Los Lagos,1067
+2022-01,Aysén,1086
+2022-01,Magallanes,1105.64
+2022-02,Metropolitana,1057.17
+2022-02,Arica y Parinacota,1089.15
+2022-02,Tarapacá,1080.53
+2022-02,Antofagasta,1090.47
+2022-02,Atacama,1100.82
+2022-02,Coquimbo,1094
+2022-02,Valparaíso,1091.06
+2022-02,O'Higgins,1096.9
+2022-02,Maule,1071.45
+2022-02,Ñuble,1066.18
+2022-02,Biobío,1084.27
+2022-02,Araucanía,1096.12
+2022-02,Los Ríos,1100.36
+2022-02,Los Lagos,1089
+2022-02,Aysén,1102
+2022-02,Magallanes,1112.64
+2022-03,Metropolitana,1086.62
+2022-03,Arica y Parinacota,1114.15
+2022-03,Tarapacá,1105.88
+2022-03,Antofagasta,1115.8
+2022-03,Atacama,1126.36
+2022-03,Coquimbo,1119.67
+2022-03,Valparaíso,1111.94
+2022-03,O'Higgins,1122.26
+2022-03,Maule,1095.73
+2022-03,Ñuble,1090.47
+2022-03,Biobío,1111.18
+2022-03,Araucanía,1121.56
+2022-03,Los Ríos,1125.36
+2022-03,Los Lagos,1114
+2022-03,Aysén,1120
+2022-03,Magallanes,1124.18
+2022-04,Metropolitana,1114
+2022-04,Arica y Parinacota,1146.92
+2022-04,Tarapacá,1138.94
+2022-04,Antofagasta,1148.6
+2022-04,Atacama,1156.36
+2022-04,Coquimbo,1150.83
+2022-04,Valparaíso,1158.81
+2022-04,O'Higgins,1154
+2022-04,Maule,1130.18
+2022-04,Ñuble,1122.88
+2022-04,Biobío,1143.73
+2022-04,Araucanía,1154.69
+2022-04,Los Ríos,1157.27
+2022-04,Los Lagos,1147
+2022-04,Aysén,1149.5
+2022-04,Magallanes,1155.18
+2022-05,Metropolitana,1140.65
+2022-05,Arica y Parinacota,1181.92
+2022-05,Tarapacá,1173.82
+2022-05,Antofagasta,1183.47
+2022-05,Atacama,1191
+2022-05,Coquimbo,1187.25
+2022-05,Valparaíso,1174.5
+2022-05,O'Higgins,1187.47
+2022-05,Maule,1165.45
+2022-05,Ñuble,1158
+2022-05,Biobío,1178.73
+2022-05,Araucanía,1189.59
+2022-05,Los Ríos,1193.36
+2022-05,Los Lagos,1182
+2022-05,Aysén,1190
+2022-05,Magallanes,1190.36
+2022-06,Metropolitana,1173.9
+2022-06,Arica y Parinacota,1216.92
+2022-06,Tarapacá,1207.59
+2022-06,Antofagasta,1217
+2022-06,Atacama,1223.18
+2022-06,Coquimbo,1221.75
+2022-06,Valparaíso,1208.63
+2022-06,O'Higgins,1221.55
+2022-06,Maule,1199.55
+2022-06,Ñuble,1192
+2022-06,Biobío,1213.05
+2022-06,Araucanía,1224.63
+2022-06,Los Ríos,1226.45
+2022-06,Los Lagos,1217.57
+2022-06,Aysén,1225.17
+2022-06,Magallanes,1224.73
+2022-07,Metropolitana,1219
+2022-07,Arica y Parinacota,1263
+2022-07,Tarapacá,1254
+2022-07,Antofagasta,1263
+2022-07,Atacama,1269
+2022-07,Coquimbo,1267
+2022-07,Valparaíso,1253
+2022-07,O'Higgins,1266
+2022-07,Maule,1244
+2022-07,Ñuble,1236
+2022-07,Biobío,1257
+2022-07,Araucanía,1270
+2022-07,Los Ríos,1273
+2022-07,Los Lagos,1263
+2022-07,Aysén,1272
+2022-07,Magallanes,1272
+2022-08,Metropolitana,1273.17
+2022-08,Arica y Parinacota,1319.92
+2022-08,Tarapacá,1306.31
+2022-08,Antofagasta,1319.6
+2022-08,Atacama,1326
+2022-08,Coquimbo,1322.82
+2022-08,Valparaíso,1309.56
+2022-08,O'Higgins,1320.15
+2022-08,Maule,1303.55
+2022-08,Ñuble,1295.29
+2022-08,Biobío,1310.73
+2022-08,Araucanía,1328.22
+2022-08,Los Ríos,1330.36
+2022-08,Los Lagos,1321.43
+2022-08,Aysén,1331
+2022-08,Magallanes,1333
+2022-09,Metropolitana,1329.79
+2022-09,Arica y Parinacota,1367.69
+2022-09,Tarapacá,1354.69
+2022-09,Antofagasta,1370.07
+2022-09,Atacama,1375.73
+2022-09,Coquimbo,1371.1
+2022-09,Valparaíso,1357.69
+2022-09,O'Higgins,1369.15
+2022-09,Maule,1350.45
+2022-09,Ñuble,1341.88
+2022-09,Biobío,1359.09
+2022-09,Araucanía,1375.7
+2022-09,Los Ríos,1377.82
+2022-09,Los Lagos,1369.43
+2022-09,Aysén,1374.33
+2022-09,Magallanes,1380.64
+2022-10,Metropolitana,1341.38
+2022-10,Arica y Parinacota,1369.92
+2022-10,Tarapacá,1356.82
+2022-10,Antofagasta,1372.27
+2022-10,Atacama,1378.45
+2022-10,Coquimbo,1373.45
+2022-10,Valparaíso,1360.81
+2022-10,O'Higgins,1372.6
+2022-10,Maule,1356.3
+2022-10,Ñuble,1343.18
+2022-10,Biobío,1362.48
+2022-10,Araucanía,1378.44
+2022-10,Los Ríos,1380.09
+2022-10,Los Lagos,1371.43
+2022-10,Aysén,1385.5
+2022-10,Magallanes,1383.91
+2022-11,Metropolitana,1396.67
+2022-11,Arica y Parinacota,1421
+2022-11,Tarapacá,1405.12
+2022-11,Antofagasta,1423.13
+2022-11,Atacama,1429.55
+2022-11,Coquimbo,1424.36
+2022-11,Valparaíso,1410.69
+2022-11,O'Higgins,1422.65
+2022-11,Maule,1407.4
+2022-11,Ñuble,1394.06
+2022-11,Biobío,1409.38
+2022-11,Araucanía,1430.78
+2022-11,Los Ríos,1430.09
+2022-11,Los Lagos,1423.71
+2022-11,Aysén,1440
+2022-11,Magallanes,1437.09
+2022-12,Metropolitana,1406.44
+2022-12,Arica y Parinacota,1436.08
+2022-12,Tarapacá,1418.19
+2022-12,Antofagasta,1437.07
+2022-12,Atacama,1443.27
+2022-12,Coquimbo,1437.45
+2022-12,Valparaíso,1425.5
+2022-12,O'Higgins,1438.55
+2022-12,Maule,1420.4
+2022-12,Ñuble,1406.24
+2022-12,Biobío,1428.14
+2022-12,Araucanía,1443.81
+2022-12,Los Ríos,1446.45
+2022-12,Los Lagos,1436.71
+2022-12,Aysén,1452
+2022-12,Magallanes,1451
+2023-01,Metropolitana,1370.79
+2023-01,Arica y Parinacota,1402.08
+2023-01,Tarapacá,1384.65
+2023-01,Antofagasta,1402.6
+2023-01,Atacama,1409.45
+2023-01,Coquimbo,1403.64
+2023-01,Valparaíso,1392.31
+2023-01,O'Higgins,1405.4
+2023-01,Maule,1387.4
+2023-01,Ñuble,1375.18
+2023-01,Biobío,1394.15
+2023-01,Araucanía,1411.81
+2023-01,Los Ríos,1414.91
+2023-01,Los Lagos,1403.86
+2023-01,Aysén,1421
+2023-01,Magallanes,1414.73
+2023-02,Metropolitana,1298.32
+2023-02,Arica y Parinacota,1330.23
+2023-02,Tarapacá,1313.65
+2023-02,Antofagasta,1331.4
+2023-02,Atacama,1341.36
+2023-02,Coquimbo,1335.83
+2023-02,Valparaíso,1323.13
+2023-02,O'Higgins,1331.5
+2023-02,Maule,1314.82
+2023-02,Ñuble,1302.53
+2023-02,Biobío,1318.8
+2023-02,Araucanía,1339.74
+2023-02,Los Ríos,1344.91
+2023-02,Los Lagos,1335.71
+2023-02,Aysén,1348
+2023-02,Magallanes,1337.27
+2023-03,Metropolitana,1292.4
+2023-03,Arica y Parinacota,1325.85
+2023-03,Tarapacá,1308.18
+2023-03,Antofagasta,1326.73
+2023-03,Atacama,1335.1
+2023-03,Coquimbo,1329.45
+2023-03,Valparaíso,1317.87
+2023-03,O'Higgins,1328.55
+2023-03,Maule,1309.91
+2023-03,Ñuble,1297.65
+2023-03,Biobío,1314.35
+2023-03,Araucanía,1290.04
+2023-03,Los Ríos,1338.18
+2023-03,Los Lagos,1329.71
+2023-03,Aysén,1343.17
+2023-03,Magallanes,1330.55
+2023-04,Metropolitana,1282.71
+2023-04,Arica y Parinacota,1320.46
+2023-04,Tarapacá,1303.94
+2023-04,Antofagasta,1320.8
+2023-04,Atacama,1328.27
+2023-04,Coquimbo,1323.17
+2023-04,Valparaíso,1309.13
+2023-04,O'Higgins,1319.2
+2023-04,Maule,1298.27
+2023-04,Ñuble,1286.06
+2023-04,Biobío,1303.9
+2023-04,Araucanía,1323.93
+2023-04,Los Ríos,1331.64
+2023-04,Los Lagos,1322
+2023-04,Aysén,1343.67
+2023-04,Magallanes,1324
+2023-05,Metropolitana,1299.2
+2023-05,Arica y Parinacota,1348.38
+2023-05,Tarapacá,1332.65
+2023-05,Antofagasta,1350.87
+2023-05,Atacama,1354.55
+2023-05,Coquimbo,1353.08
+2023-05,Valparaíso,1340.25
+2023-05,O'Higgins,1348.58
+2023-05,Maule,1327
+2023-05,Ñuble,1313.24
+2023-05,Biobío,1333.95
+2023-05,Araucanía,1351.44
+2023-05,Los Ríos,1360.45
+2023-05,Los Lagos,1351
+2023-05,Aysén,1366
+2023-05,Magallanes,1353.09
+2023-06,Metropolitana,1250.8
+2023-06,Arica y Parinacota,1297.31
+2023-06,Tarapacá,1290.27
+2023-06,Antofagasta,1302.87
+2023-06,Atacama,1309.73
+2023-06,Coquimbo,1305.67
+2023-06,Valparaíso,1288.5
+2023-06,O'Higgins,1300
+2023-06,Maule,1280.18
+2023-06,Ñuble,1265.59
+2023-06,Biobío,1285.8
+2023-06,Araucanía,1307.85
+2023-06,Los Ríos,1311.09
+2023-06,Los Lagos,1302
+2023-06,Aysén,1317.33
+2023-06,Magallanes,1303.27
+2023-07,Metropolitana,1257.98
+2023-07,Arica y Parinacota,1305.08
+2023-07,Tarapacá,1294.85
+2023-07,Antofagasta,1311.73
+2023-07,Atacama,1312.36
+2023-07,Coquimbo,1311.42
+2023-07,Valparaíso,1294.56
+2023-07,O'Higgins,1304.1
+2023-07,Maule,1286.18
+2023-07,Ñuble,1272.5
+2023-07,Biobío,1290.05
+2023-07,Araucanía,1310.89
+2023-07,Los Ríos,1313.9
+2023-07,Los Lagos,1308
+2023-07,Aysén,1323
+2023-07,Magallanes,1307.64
+2023-08,Metropolitana,1286.55
+2023-08,Arica y Parinacota,1332.08
+2023-08,Tarapacá,1323.69
+2023-08,Antofagasta,1342.47
+2023-08,Atacama,1341.27
+2023-08,Coquimbo,1339.33
+2023-08,Valparaíso,1323.63
+2023-08,O'Higgins,1332.65
+2023-08,Maule,1316
+2023-08,Ñuble,1301.47
+2023-08,Biobío,1318.05
+2023-08,Araucanía,1337.85
+2023-08,Los Ríos,1343.09
+2023-08,Los Lagos,1336.71
+2023-08,Aysén,1341.33
+2023-08,Magallanes,1338
+2023-09,Metropolitana,1316.92
+2023-09,Arica y Parinacota,1337.23
+2023-09,Tarapacá,1332.62
+2023-09,Antofagasta,1355.6
+2023-09,Atacama,1346.73
+2023-09,Coquimbo,1347.58
+2023-09,Valparaíso,1330.63
+2023-09,O'Higgins,1342
+2023-09,Maule,1320.27
+2023-09,Ñuble,1305.41
+2023-09,Biobío,1325.4
+2023-09,Araucanía,1343.81
+2023-09,Los Ríos,1352.45
+2023-09,Los Lagos,1343.71
+2023-09,Aysén,1355.67
+2023-09,Magallanes,1347.91
+2023-10,Metropolitana,1347.82
+2023-10,Arica y Parinacota,1367.08
+2023-10,Tarapacá,1361.36
+2023-10,Antofagasta,1381.43
+2023-10,Atacama,1373.82
+2023-10,Coquimbo,1377.92
+2023-10,Valparaíso,1355.5
+2023-10,O'Higgins,1367.6
+2023-10,Maule,1350
+2023-10,Ñuble,1336
+2023-10,Biobío,1355.35
+2023-10,Araucanía,1373.04
+2023-10,Los Ríos,1379.27
+2023-10,Los Lagos,1371.57
+2023-10,Aysén,1382.83
+2023-10,Magallanes,1379.09
+2023-11,Metropolitana,1382.24
+2023-11,Arica y Parinacota,1415.23
+2023-11,Tarapacá,1409.08
+2023-11,Antofagasta,1429.85
+2023-11,Atacama,1422.82
+2023-11,Coquimbo,1425
+2023-11,Valparaíso,1402.62
+2023-11,O'Higgins,1416.5
+2023-11,Maule,1397.89
+2023-11,Ñuble,1382.53
+2023-11,Biobío,1403.08
+2023-11,Araucanía,1421.39
+2023-11,Los Ríos,1428.36
+2023-11,Los Lagos,1421
+2023-11,Aysén,1430.67
+2023-11,Magallanes,1432
+2023-12,Metropolitana,1373
+2023-12,Arica y Parinacota,1387.23
+2023-12,Tarapacá,1379
+2023-12,Antofagasta,1401.5
+2023-12,Atacama,1394.73
+2023-12,Coquimbo,1398.18
+2023-12,Valparaíso,1370.36
+2023-12,O'Higgins,1389.65
+2023-12,Maule,1371.33
+2023-12,Ñuble,1358.14
+2023-12,Biobío,1376
+2023-12,Araucanía,1394.09
+2023-12,Los Ríos,1400.36
+2023-12,Los Lagos,1393.17
+2023-12,Aysén,1404
+2023-12,Magallanes,1403
+2024-01,Metropolitana,1319.75
+2024-01,Arica y Parinacota,1336.92
+2024-01,Tarapacá,1337.21
+2024-01,Antofagasta,1349.29
+2024-01,Atacama,1344.45
+2024-01,Coquimbo,1348.27
+2024-01,Valparaíso,1328.73
+2024-01,O'Higgins,1342.18
+2024-01,Maule,1319.2
+2024-01,Ñuble,1308
+2024-01,Biobío,1323.94
+2024-01,Araucanía,1345.83
+2024-01,Los Ríos,1350.36
+2024-01,Los Lagos,1341.17
+2024-01,Aysén,1361
+2024-01,Magallanes,1355.45
+2024-02,Metropolitana,1313.76
+2024-02,Arica y Parinacota,1338.31
+2024-02,Tarapacá,1333.93
+2024-02,Antofagasta,1350.36
+2024-02,Atacama,1345.27
+2024-02,Coquimbo,1347.27
+2024-02,Valparaíso,1324.87
+2024-02,O'Higgins,1341.25
+2024-02,Maule,1315.5
+2024-02,Ñuble,1302.93
+2024-02,Biobío,1320.93
+2024-02,Araucanía,1339.56
+2024-02,Los Ríos,1347.91
+2024-02,Los Lagos,1340.29
+2024-02,Aysén,1359.17
+2024-02,Magallanes,1361
+2024-03,Metropolitana,1371.07
+2024-03,Arica y Parinacota,1397.75
+2024-03,Tarapacá,1392.25
+2024-03,Antofagasta,1379.31
+2024-03,Atacama,1403.55
+2024-03,Coquimbo,1404
+2024-03,Valparaíso,1380.93
+2024-03,O'Higgins,1397.69
+2024-03,Maule,1363
+2024-03,Ñuble,1360.29
+2024-03,Biobío,1375.81
+2024-03,Araucanía,1395.25
+2024-03,Los Ríos,1406.91
+2024-03,Los Lagos,1399.29
+2024-03,Aysén,1409
+2024-03,Magallanes,1421
+2024-04,Metropolitana,1402.02
+2024-04,Arica y Parinacota,1436.83
+2024-04,Tarapacá,1428
+2024-04,Antofagasta,1452.21
+2024-04,Atacama,1443.55
+2024-04,Coquimbo,1441.55
+2024-04,Valparaíso,1423.43
+2024-04,O'Higgins,1440.56
+2024-04,Maule,1405.2
+2024-04,Ñuble,1399.86
+2024-04,Biobío,1417.81
+2024-04,Araucanía,1435.76
+2024-04,Los Ríos,1444.36
+2024-04,Los Lagos,1440.29
+2024-04,Aysén,1456.17
+2024-04,Magallanes,1461.36
+2024-05,Metropolitana,1464.64
+2024-05,Arica y Parinacota,1511.33
+2024-05,Tarapacá,1506.25
+2024-05,Antofagasta,1523.86
+2024-05,Atacama,1517.45
+2024-05,Coquimbo,1518.55
+2024-05,Valparaíso,1500.87
+2024-05,O'Higgins,1512.56
+2024-05,Maule,1479.6
+2024-05,Ñuble,1473.21
+2024-05,Biobío,1488.41
+2024-05,Araucanía,1509.24
+2024-05,Los Ríos,1520
+2024-05,Los Lagos,1515.14
+2024-05,Aysén,1517.83
+2024-05,Magallanes,1529.73
+2024-06,Metropolitana,1437.35
+2024-06,Arica y Parinacota,1479.5
+2024-06,Tarapacá,1475.56
+2024-06,Antofagasta,1494.29
+2024-06,Atacama,1486.64
+2024-06,Coquimbo,1486.73
+2024-06,Valparaíso,1469.47
+2024-06,O'Higgins,1484.13
+2024-06,Maule,1448.33
+2024-06,Ñuble,1444.71
+2024-06,Biobío,1461.65
+2024-06,Araucanía,1480
+2024-06,Los Ríos,1490.91
+2024-06,Los Lagos,1483.43
+2024-06,Aysén,1500.33
+2024-06,Magallanes,1500.09
+2024-07,Metropolitana,1411.02
+2024-07,Arica y Parinacota,1452.5
+2024-07,Tarapacá,1447.13
+2024-07,Antofagasta,1466.86
+2024-07,Atacama,1458.91
+2024-07,Coquimbo,1460.18
+2024-07,Valparaíso,1441.4
+2024-07,O'Higgins,1456.47
+2024-07,Maule,1419.2
+2024-07,Ñuble,1414.86
+2024-07,Biobío,1432.88
+2024-07,Araucanía,1450.28
+2024-07,Los Ríos,1464.55
+2024-07,Los Lagos,1456.43
+2024-07,Aysén,1473.83
+2024-07,Magallanes,1472.73
+2024-08,Metropolitana,1385.27
+2024-08,Arica y Parinacota,1439
+2024-08,Tarapacá,1430.94
+2024-08,Antofagasta,1451.79
+2024-08,Atacama,1443.73
+2024-08,Coquimbo,1443.18
+2024-08,Valparaíso,1425.4
+2024-08,O'Higgins,1442
+2024-08,Maule,1404.89
+2024-08,Ñuble,1398.86
+2024-08,Biobío,1417.76
+2024-08,Araucanía,1434.84
+2024-08,Los Ríos,1448.55
+2024-08,Los Lagos,1439.86
+2024-08,Aysén,1460.33
+2024-08,Magallanes,1456
+2024-09,Metropolitana,1393.72
+2024-09,Arica y Parinacota,1435.08
+2024-09,Tarapacá,1426.38
+2024-09,Antofagasta,1446.57
+2024-09,Atacama,1438.18
+2024-09,Coquimbo,1438.64
+2024-09,Valparaíso,1420.33
+2024-09,O'Higgins,1437
+2024-09,Maule,1399.67
+2024-09,Ñuble,1393.71
+2024-09,Biobío,1413.24
+2024-09,Araucanía,1430.77
+2024-09,Los Ríos,1443.82
+2024-09,Los Lagos,1435.29
+2024-09,Aysén,1454
+2024-09,Magallanes,1450.18
+2024-10,Metropolitana,1337.67
+2024-10,Arica y Parinacota,1373.83
+2024-10,Tarapacá,1366.75
+2024-10,Antofagasta,1384.21
+2024-10,Atacama,1375.45
+2024-10,Coquimbo,1376
+2024-10,Valparaíso,1360.67
+2024-10,O'Higgins,1377.67
+2024-10,Maule,1341.44
+2024-10,Ñuble,1335.36
+2024-10,Biobío,1355.18
+2024-10,Araucanía,1373.96
+2024-10,Los Ríos,1383.27
+2024-10,Los Lagos,1375
+2024-10,Aysén,1391.5
+2024-10,Magallanes,1387.18
+2024-11,Metropolitana,1308.12
+2024-11,Arica y Parinacota,1351.5
+2024-11,Tarapacá,1343.06
+2024-11,Antofagasta,1364.14
+2024-11,Atacama,1354.73
+2024-11,Coquimbo,1356
+2024-11,Valparaíso,1338.4
+2024-11,O'Higgins,1357.47
+2024-11,Maule,1319.8
+2024-11,Ñuble,1313.64
+2024-11,Biobío,1334.65
+2024-11,Araucanía,1351.81
+2024-11,Los Ríos,1362.45
+2024-11,Los Lagos,1355
+2024-11,Aysén,1379.33
+2024-11,Magallanes,1371.27
+2024-12,Metropolitana,1280.12
+2024-12,Arica y Parinacota,1321.58
+2024-12,Tarapacá,1312.5
+2024-12,Antofagasta,1334.36
+2024-12,Atacama,1324.55
+2024-12,Coquimbo,1326
+2024-12,Valparaíso,1308.47
+2024-12,O'Higgins,1327.47
+2024-12,Maule,1291
+2024-12,Ñuble,1285.5
+2024-12,Biobío,1302.53
+2024-12,Araucanía,1320.2
+2024-12,Los Ríos,1333.73
+2024-12,Los Lagos,1325.43
+2024-12,Aysén,1347.17
+2024-12,Magallanes,1343.91
+2025-01,Metropolitana,1280.38
+2025-01,Arica y Parinacota,1349
+2025-01,Tarapacá,1340.19
+2025-01,Antofagasta,1362.29
+2025-01,Atacama,1354
+2025-01,Coquimbo,1356.89
+2025-01,Valparaíso,1309.2
+2025-01,O'Higgins,1326.75
+2025-01,Maule,1289.3
+2025-01,Ñuble,1285.29
+2025-01,Biobío,1299.6
+2025-01,Araucanía,1319.56
+2025-01,Los Ríos,1351.45
+2025-01,Los Lagos,1348.71
+2025-01,Aysén,1394
+2025-01,Magallanes,1379.64
+2025-02,Metropolitana,1337.62
+2025-02,Arica y Parinacota,1408
+2025-02,Tarapacá,1396.44
+2025-02,Antofagasta,1419.21
+2025-02,Atacama,1408.64
+2025-02,Coquimbo,1411.78
+2025-02,Valparaíso,1360.53
+2025-02,O'Higgins,1382.41
+2025-02,Maule,1346.3
+2025-02,Ñuble,1340
+2025-02,Biobío,1361.06
+2025-02,Araucanía,1372.57
+2025-02,Los Ríos,1405.55
+2025-02,Los Lagos,1406.43
+2025-02,Aysén,1447.67
+2025-02,Magallanes,1437.91
+2025-03,Metropolitana,1326.5
+2025-03,Arica y Parinacota,1392.25
+2025-03,Tarapacá,1383.63
+2025-03,Antofagasta,1405.64
+2025-03,Atacama,1396.1
+2025-03,Coquimbo,1399.75
+2025-03,Valparaíso,1349.27
+2025-03,O'Higgins,1366.94
+2025-03,Maule,1333.6
+2025-03,Ñuble,2191.64
+2025-03,Biobío,1348.65
+2025-03,Araucanía,1364.26
+2025-03,Los Ríos,1398.55
+2025-03,Los Lagos,1392
+2025-03,Aysén,1433.17
+2025-03,Magallanes,1422.27
+2025-04,Metropolitana,1296.02
+2025-04,Arica y Parinacota,1374.83
+2025-04,Tarapacá,1365.88
+2025-04,Antofagasta,1387.79
+2025-04,Atacama,1378.4
+2025-04,Coquimbo,1381.38
+2025-04,Valparaíso,1329.8
+2025-04,O'Higgins,1349.78
+2025-04,Maule,1317
+2025-04,Ñuble,1314.21
+2025-04,Biobío,1333.75
+2025-04,Araucanía,1346.43
+2025-04,Los Ríos,1379.45
+2025-04,Los Lagos,1375.29
+2025-04,Aysén,1415.67
+2025-04,Magallanes,1400.18
+2025-05,Metropolitana,1283.98
+2025-05,Arica y Parinacota,1365.67
+2025-05,Tarapacá,1357.13
+2025-05,Antofagasta,1380.57
+2025-05,Atacama,1369.2
+2025-05,Coquimbo,1372
+2025-05,Valparaíso,1319.2
+2025-05,O'Higgins,1342.11
+2025-05,Maule,1308
+2025-05,Ñuble,1304.21
+2025-05,Biobío,1325.56
+2025-05,Araucanía,1339.04
+2025-05,Los Ríos,1372.09
+2025-05,Los Lagos,1366.86
+2025-05,Aysén,1407.33
+2025-05,Magallanes,1395.09
+2025-06,Metropolitana,1281.1
+2025-06,Arica y Parinacota,1361.5
+2025-06,Tarapacá,1354.31
+2025-06,Antofagasta,1376.21
+2025-06,Atacama,1366
+2025-06,Coquimbo,1367.67
+2025-06,Valparaíso,1313.27
+2025-06,O'Higgins,1335.33
+2025-06,Maule,1304.5
+2025-06,Ñuble,1302
+2025-06,Biobío,1322.06
+2025-06,Araucanía,1335.61
+2025-06,Los Ríos,1367.64
+2025-06,Los Lagos,1362.57
+2025-06,Aysén,1402
+2025-06,Magallanes,1390
+2025-07,Metropolitana,1307.83
+2025-07,Arica y Parinacota,1387.5
+2025-07,Tarapacá,1381.06
+2025-07,Antofagasta,1402
+2025-07,Atacama,1393.09
+2025-07,Coquimbo,1394.6
+2025-07,Valparaíso,1339.4
+2025-07,O'Higgins,1362.28
+2025-07,Maule,1331.3
+2025-07,Ñuble,1328.43
+2025-07,Biobío,1346
+2025-07,Araucanía,1359.26
+2025-07,Los Ríos,1388.73
+2025-07,Los Lagos,1389.29
+2025-07,Aysén,1427
+2025-07,Magallanes,1416.27
+2025-08,Metropolitana,1282.31
+2025-08,Arica y Parinacota,1362.75
+2025-08,Tarapacá,1355.38
+2025-08,Antofagasta,1375.86
+2025-08,Atacama,1256.09
+2025-08,Coquimbo,1369.2
+2025-08,Valparaíso,1312.27
+2025-08,O'Higgins,1336.11
+2025-08,Maule,1304.7
+2025-08,Ñuble,1301
+2025-08,Biobío,1317.5
+2025-08,Araucanía,1333.83
+2025-08,Los Ríos,1367.45
+2025-08,Los Lagos,1362.57
+2025-08,Aysén,1401.83
+2025-08,Magallanes,1391.27
+2025-09,Metropolitana,1261.17
+2025-09,Arica y Parinacota,1339.67
+2025-09,Tarapacá,1331.94
+2025-09,Antofagasta,1352.86
+2025-09,Atacama,1343.91
+2025-09,Coquimbo,1346
+2025-09,Valparaíso,1287.6
+2025-09,O'Higgins,1311.94
+2025-09,Maule,1280.6
+2025-09,Ñuble,1278.21
+2025-09,Biobío,1294.25
+2025-09,Araucanía,1310.22
+2025-09,Los Ríos,1346.55
+2025-09,Los Lagos,1338.14
+2025-09,Aysén,1376.17
+2025-09,Magallanes,1368.36
+2025-10,Metropolitana,1283.55
+2025-10,Arica y Parinacota,1348.92
+2025-10,Tarapacá,1340.69
+2025-10,Antofagasta,1362.86
+2025-10,Atacama,1353.64
+2025-10,Coquimbo,1374.4
+2025-10,Valparaíso,1296.93
+2025-10,O'Higgins,1320.67
+2025-10,Maule,1289.4
+2025-10,Ñuble,1283.57
+2025-10,Biobío,1304.88
+2025-10,Araucanía,1320.08
+2025-10,Los Ríos,1353.91
+2025-10,Los Lagos,1348.14
+2025-10,Aysén,1390.5
+2025-10,Magallanes,1379.45
+2025-11,Metropolitana,1261.55
+2025-11,Arica y Parinacota,1330.42
+2025-11,Tarapacá,1322.31
+2025-11,Antofagasta,1345.64
+2025-11,Atacama,1330.82
+2025-11,Coquimbo,1331.1
+2025-11,Valparaíso,1274.47
+2025-11,O'Higgins,1299
+2025-11,Maule,1266.5
+2025-11,Ñuble,1263.86
+2025-11,Biobío,1281.94
+2025-11,Araucanía,1298.26
+2025-11,Los Ríos,1334.73
+2025-11,Los Lagos,1325.29
+2025-11,Aysén,1362.5
+2025-11,Magallanes,1356.64
+2025-12,Metropolitana,1270.02
+2025-12,Arica y Parinacota,1334.17
+2025-12,Tarapacá,1327.33
+2025-12,Antofagasta,1348.29
+2025-12,Atacama,1338.55
+2025-12,Coquimbo,1339.1
+2025-12,Valparaíso,1278.93
+2025-12,O'Higgins,1304.61
+2025-12,Maule,1274.2
+2025-12,Ñuble,1270
+2025-12,Biobío,1289.81
+2025-12,Araucanía,1305.39
+2025-12,Los Ríos,1340.64
+2025-12,Los Lagos,1333.29
+2025-12,Aysén,1368.17
+2025-12,Magallanes,1357.09
+2026-01,Metropolitana,1218.61
+2026-01,Arica y Parinacota,1291.58
+2026-01,Tarapacá,1292.13
+2026-01,Antofagasta,1310.21
+2026-01,Atacama,1300.36
+2026-01,Coquimbo,1297.1
+2026-01,Valparaíso,1234.5
+2026-01,O'Higgins,1267.33
+2026-01,Maule,1226.7
+2026-01,Ñuble,1228.57
+2026-01,Biobío,1247.69
+2026-01,Araucanía,1262.5
+2026-01,Los Ríos,1296.91
+2026-01,Los Lagos,1279
+2026-01,Aysén,1317.33
+2026-01,Magallanes,1315.91
+2026-02,Metropolitana,1193.71
+2026-02,Arica y Parinacota,1262.83
+2026-02,Tarapacá,1261.44
+2026-02,Antofagasta,1277.07
+2026-02,Atacama,1267.36
+2026-02,Coquimbo,1267.6
+2026-02,Valparaíso,1205.5
+2026-02,O'Higgins,1231.24
+2026-02,Maule,1199.3
+2026-02,Ñuble,1201
+2026-02,Biobío,1219.56
+2026-02,Araucanía,1233.25
+2026-02,Los Ríos,1253.73
+2026-02,Los Lagos,1247.29
+2026-02,Aysén,1264
+2026-02,Magallanes,1274.27
+2026-03,Metropolitana,1209.33
+2026-03,Arica y Parinacota,1278.67
+2026-03,Tarapacá,1271.75
+2026-03,Antofagasta,1293.36
+2026-03,Atacama,1283.55
+2026-03,Coquimbo,1281.6
+2026-03,Valparaíso,1220.93
+2026-03,O'Higgins,1247.59
+2026-03,Maule,1217.1
+2026-03,Ñuble,1212.71
+2026-03,Biobío,1230.4
+2026-03,Araucanía,1249.5
+2026-03,Los Ríos,1269.64
+2026-03,Los Lagos,1262.14
+2026-03,Aysén,1277.33
+2026-03,Magallanes,1287.73
+2026-04,Metropolitana,1621.51
+2026-04,Arica y Parinacota,1711.75
+2026-04,Tarapacá,1674.88
+2026-04,Antofagasta,1724.21
+2026-04,Atacama,1718.64
+2026-04,Coquimbo,1718.1
+2026-04,Valparaíso,1650.21
+2026-04,O'Higgins,1655.24
+2026-04,Maule,1645.9
+2026-04,Ñuble,1643.29
+2026-04,Biobío,1658.6
+2026-04,Araucanía,1677.04
+2026-04,Los Ríos,1699.36
+2026-04,Los Lagos,1692.57
+2026-04,Aysén,1718.5
+2026-04,Magallanes,1723.18
+2026-05,Metropolitana,1645.05
+2026-05,Arica y Parinacota,1732.83
+2026-05,Tarapacá,1723
+2026-05,Antofagasta,1744.43
+2026-05,Atacama,1738.55
+2026-05,Coquimbo,1738.4
+2026-05,Valparaíso,1672.21
+2026-05,O'Higgins,1701.65
+2026-05,Maule,1668
+2026-05,Ñuble,1664
+2026-05,Biobío,1681.8
+2026-05,Araucanía,1700.33
+2026-05,Los Ríos,1719.64
+2026-05,Los Lagos,1704.43
+2026-05,Aysén,1742.17
+2026-05,Magallanes,1743.27
+2026-06,Metropolitana,1644.66
+2026-06,Arica y Parinacota,1732.92
+2026-06,Tarapacá,1722.63
+2026-06,Antofagasta,1744.57
+2026-06,Atacama,1738.55
+2026-06,Coquimbo,1738.3
+2026-06,Valparaíso,1671.21
+2026-06,O'Higgins,1699.65
+2026-06,Maule,1667.9
+2026-06,Ñuble,1665.71
+2026-06,Biobío,1681.07
+2026-06,Araucanía,1700.13
+2026-06,Los Ríos,1719.91
+2026-06,Los Lagos,1704.43
+2026-06,Aysén,1751.5
+2026-06,Magallanes,1745.27
+2026-07,Metropolitana,1528.48
+2026-07,Arica y Parinacota,1634.33
+2026-07,Tarapacá,1641.31
+2026-07,Antofagasta,1647.5
+2026-07,Atacama,1639.91
+2026-07,Coquimbo,1640.3
+2026-07,Valparaíso,1565.71
+2026-07,O'Higgins,1594.88
+2026-07,Maule,1564.8
+2026-07,Ñuble,1546.21
+2026-07,Biobío,1577
+2026-07,Araucanía,1594.75
+2026-07,Los Ríos,1614.91
+2026-07,Los Lagos,1604.67
+2026-07,Aysén,1645.17
+2026-07,Magallanes,1647.73
+2026-08,Metropolitana,1467.93
+2026-08,Arica y Parinacota,1567.58
+2026-08,Tarapacá,1545.06
+2026-08,Antofagasta,1586.64
+2026-08,Atacama,1572.55
+2026-08,Coquimbo,1569.6
+2026-08,Valparaíso,1480.93
+2026-08,O'Higgins,1525.59
+2026-08,Maule,1497.5
+2026-08,Ñuble,1489.5
+2026-08,Biobío,1505.6
+2026-08,Araucanía,1521.58
+2026-08,Los Ríos,1538.55
+2026-08,Los Lagos,1549.5
+2026-08,Aysén,1570
+2026-08,Magallanes,1590.64
+2026-09,Metropolitana,1504.33
+2026-09,Arica y Parinacota,1591.42
+2026-09,Tarapacá,1581.38
+2026-09,Antofagasta,1609.14
+2026-09,Atacama,1598.55
+2026-09,Coquimbo,1596.2
+2026-09,Valparaíso,1516.57
+2026-09,O'Higgins,1551.18
+2026-09,Maule,1520.27
+2026-09,Ñuble,1516.93
+2026-09,Biobío,1532.93
+2026-09,Araucanía,1550.79
+2026-09,Los Ríos,1568.36
+2026-09,Los Lagos,1567.67
+2026-09,Aysén,1603
+2026-09,Magallanes,1595.91
