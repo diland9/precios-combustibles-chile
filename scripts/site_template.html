@@ -46,6 +46,17 @@
 
   .hist-note{ font-size:12px; color:var(--ink-muted); line-height:1.6; }
 
+  .entity-row{ display:flex; align-items:center; gap:9px; padding:6px 4px; cursor:pointer; border-radius:7px; }
+  .entity-row:hover{ background:var(--panel-2); }
+  .entity-row .dot{ width:11px; height:11px; border-radius:50%; flex:none; border:2px solid transparent; }
+  .entity-row.off .dot{ background:transparent !important; border-color:var(--ink-faint) !important; }
+  .entity-row .name{ font-size:12.5px; color:var(--ink); }
+  .entity-row.off .name{ color:var(--ink-faint); }
+
+  input[type="range"]{ -webkit-appearance:none; appearance:none; height:4px; background:var(--border); border-radius:2px; margin:8px 0; }
+  input[type="range"]::-webkit-slider-thumb{ -webkit-appearance:none; width:15px; height:15px; border-radius:50%; background:var(--teal); cursor:pointer; border:2px solid var(--bg); }
+  input[type="range"]::-moz-range-thumb{ width:15px; height:15px; border-radius:50%; background:var(--teal); cursor:pointer; border:2px solid var(--bg); }
+
   .panel{ background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:16px; }
   .panel + .panel{ margin-top:14px; }
 
@@ -112,6 +123,7 @@
   <div class="tabs">
     <button class="tab-btn active" id="tabMapa">Mapa de hoy</button>
     <button class="tab-btn" id="tabHistorico">Evolución histórica</button>
+    <button class="tab-btn" id="tabComparar">Comparar</button>
   </div>
 
   <div class="layout" id="viewMapa">
@@ -180,6 +192,36 @@
       <div class="panel-head"><div class="panel-eyebrow" id="histEyebrow">Evolución</div></div>
       <h2 id="histTitle" style="font-family:'Archivo',sans-serif; font-weight:800; font-size:19px; margin:3px 0 12px;">—</h2>
       <div class="chart-wrap" id="histChartWrap"></div>
+    </div>
+  </div>
+
+  <div class="layout" id="viewComparar" style="display:none; grid-template-columns: 300px 1fr;">
+    <div>
+      <div class="panel">
+        <label style="margin-top:0;">Comparar por</label>
+        <div class="fuel-row" id="cmpModoRow">
+          <div class="fuel-chip active" data-modo="combustibles">Combustibles (nacional)</div>
+          <div class="fuel-chip" data-modo="regiones">Regiones</div>
+        </div>
+
+        <label id="cmpFuelLabel" style="display:none;">Combustible (fijo, para comparar regiones)</label>
+        <select id="cmpFuelSelect" style="display:none;"></select>
+
+        <label id="cmpEntidadesLabel" style="margin-top:16px;">Líneas a mostrar</label>
+        <div id="cmpEntidadesList"></div>
+
+        <label>Desde</label>
+        <input type="range" id="cmpRangoDesde" min="0" max="100" value="0" style="width:100%;">
+        <label>Hasta</label>
+        <input type="range" id="cmpRangoHasta" min="0" max="100" value="100" style="width:100%;">
+        <div class="hist-note" id="cmpRangoLabel" style="margin-top:4px;"></div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head"><div class="panel-eyebrow">Evolución comparada &middot; estilo Our World in Data</div></div>
+      <h2 id="cmpTitle" style="font-family:'Archivo',sans-serif; font-weight:800; font-size:19px; margin:3px 0 12px;">Precio por litro, varios combustibles</h2>
+      <div class="chart-wrap" id="cmpChartWrap"></div>
     </div>
   </div>
 
@@ -366,18 +408,22 @@
   render();
 
   // ================= TABS =================
-  var tabMapa = document.getElementById('tabMapa'), tabHistorico = document.getElementById('tabHistorico');
-  var viewMapa = document.getElementById('viewMapa'), viewHistorico = document.getElementById('viewHistorico');
-  var historicoBuilt = false;
-  tabMapa.addEventListener('click', function(){
-    tabMapa.classList.add('active'); tabHistorico.classList.remove('active');
-    viewMapa.style.display = ''; viewHistorico.style.display = 'none';
-  });
-  tabHistorico.addEventListener('click', function(){
-    tabHistorico.classList.add('active'); tabMapa.classList.remove('active');
-    viewMapa.style.display = 'none'; viewHistorico.style.display = '';
-    if (!historicoBuilt) { historicoBuilt = true; initHistorico(); }
-  });
+  var tabMapa = document.getElementById('tabMapa'), tabHistorico = document.getElementById('tabHistorico'), tabComparar = document.getElementById('tabComparar');
+  var viewMapa = document.getElementById('viewMapa'), viewHistorico = document.getElementById('viewHistorico'), viewComparar = document.getElementById('viewComparar');
+  var historicoBuilt = false, compararBuilt = false;
+  function switchTab(which){
+    tabMapa.classList.toggle('active', which === 'mapa');
+    tabHistorico.classList.toggle('active', which === 'historico');
+    tabComparar.classList.toggle('active', which === 'comparar');
+    viewMapa.style.display = which === 'mapa' ? '' : 'none';
+    viewHistorico.style.display = which === 'historico' ? '' : 'none';
+    viewComparar.style.display = which === 'comparar' ? '' : 'none';
+    if (which === 'historico' && !historicoBuilt) { historicoBuilt = true; initHistorico(); }
+    if (which === 'comparar' && !compararBuilt) { compararBuilt = true; initComparar(); }
+  }
+  tabMapa.addEventListener('click', function(){ switchTab('mapa'); });
+  tabHistorico.addEventListener('click', function(){ switchTab('historico'); });
+  tabComparar.addEventListener('click', function(){ switchTab('comparar'); });
 
   // ================= HISTORICO =================
   function initHistorico(){
@@ -544,6 +590,202 @@
     }
 
     renderHistorico();
+  }
+
+  // ================= COMPARAR (estilo Our World in Data) =================
+  function initComparar(){
+    var PALETTE = ['#4FE3D2','#FF8A4C','#9B8CFF','#FFD166','#5CC8FF','#FF6B9D','#8BD17C','#C77DFF','#FFB454','#6EE7E7','#B0C4FF','#FF9EC4','#7FE0A0','#F2A6FF'];
+    var cState = { modo: 'combustibles', fuelFijo: 0, active: {} };
+
+    var modoRow = document.getElementById('cmpModoRow');
+    var fuelLabel = document.getElementById('cmpFuelLabel');
+    var fuelSelect = document.getElementById('cmpFuelSelect');
+    var entidadesLabel = document.getElementById('cmpEntidadesLabel');
+    var entidadesList = document.getElementById('cmpEntidadesList');
+    var rDesde = document.getElementById('cmpRangoDesde');
+    var rHasta = document.getElementById('cmpRangoHasta');
+    var rangoLabel = document.getElementById('cmpRangoLabel');
+    var cmpTitle = document.getElementById('cmpTitle');
+    var wrap = document.getElementById('cmpChartWrap');
+
+    DATA.combustibles.forEach(function(c, i){ var o = document.createElement('option'); o.value = i; o.textContent = c; fuelSelect.appendChild(o); });
+    fuelSelect.value = 0;
+
+    function pad2(n){ return n < 10 ? '0' + n : '' + n; }
+    function parseFecha(f){
+      var p = f.split('-');
+      if (f.length === 7) return Date.UTC(Number(p[0]), Number(p[1]) - 1, 15);
+      return Date.UTC(Number(p[0]), Number(p[1]) - 1, Number(p[2]));
+    }
+    var MESES = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+    function fmtFechaEje(t, mensual){
+      var d = new Date(t);
+      if (mensual) return MESES[d.getUTCMonth()] + '-' + d.getUTCFullYear();
+      return pad2(d.getUTCDate()) + '/' + pad2(d.getUTCMonth() + 1) + '/' + String(d.getUTCFullYear()).slice(2);
+    }
+    function fmtCLP(v){ return '$' + Math.round(v).toLocaleString('es-CL'); }
+
+    function entidades(){
+      if (cState.modo === 'combustibles') {
+        return DATA.combustibles.map(function(c, i){ return { key: 'f' + i, nombre: c, serie: DATA.histNacional[c] || [] }; });
+      }
+      var combustible = DATA.combustibles[cState.fuelFijo];
+      var out = [{ key: 'nacional', nombre: 'Nacional (promedio)', serie: DATA.histNacional[combustible] || [] }];
+      DATA.regiones.forEach(function(r, i){
+        var s = (DATA.histRegional[combustible] && DATA.histRegional[combustible][r]) || [];
+        out.push({ key: 'r' + i, nombre: r, serie: s });
+      });
+      return out;
+    }
+
+    function defaultActive(){
+      cState.active = {};
+      if (cState.modo === 'combustibles') {
+        (DATA.fuelesConHistoriaOficial || []).forEach(function(c){ var i = DATA.combustibles.indexOf(c); if (i >= 0) cState.active['f' + i] = true; });
+      } else {
+        cState.active.nacional = true; cState.active.r0 = true; cState.active.r1 = true; cState.active.r2 = true;
+      }
+    }
+    defaultActive();
+
+    modoRow.querySelectorAll('.fuel-chip').forEach(function(chip){
+      chip.addEventListener('click', function(){
+        cState.modo = chip.getAttribute('data-modo');
+        modoRow.querySelectorAll('.fuel-chip').forEach(function(c2){ c2.classList.toggle('active', c2 === chip); });
+        var esRegiones = cState.modo === 'regiones';
+        fuelLabel.style.display = esRegiones ? '' : 'none';
+        fuelSelect.style.display = esRegiones ? '' : 'none';
+        entidadesLabel.textContent = esRegiones ? 'Regiones a mostrar' : 'Líneas a mostrar';
+        defaultActive();
+        buildEntidadesList();
+        renderChart();
+      });
+    });
+
+    fuelSelect.addEventListener('change', function(){ cState.fuelFijo = Number(fuelSelect.value); buildEntidadesList(); renderChart(); });
+
+    function buildEntidadesList(){
+      var ents = entidades();
+      entidadesList.innerHTML = '';
+      ents.forEach(function(e, idx){
+        var color = PALETTE[idx % PALETTE.length];
+        var row = document.createElement('div');
+        row.className = 'entity-row' + (cState.active[e.key] ? '' : ' off');
+        row.innerHTML = '<span class="dot" style="background:' + color + '; border-color:' + color + ';"></span><span class="name">' + e.nombre + '</span>';
+        row.addEventListener('click', function(){
+          cState.active[e.key] = !cState.active[e.key];
+          row.classList.toggle('off', !cState.active[e.key]);
+          renderChart();
+        });
+        entidadesList.appendChild(row);
+      });
+    }
+    buildEntidadesList();
+
+    rDesde.addEventListener('input', function(){ if (Number(rDesde.value) > Number(rHasta.value)) rDesde.value = rHasta.value; renderChart(); });
+    rHasta.addEventListener('input', function(){ if (Number(rHasta.value) < Number(rDesde.value)) rHasta.value = rDesde.value; renderChart(); });
+
+    function renderChart(){
+      var ents = entidades();
+      var colorOf = {}; ents.forEach(function(e, i){ colorOf[e.key] = PALETTE[i % PALETTE.length]; });
+      var activos = ents.filter(function(e){ return cState.active[e.key] && e.serie.length; });
+
+      cmpTitle.textContent = cState.modo === 'combustibles'
+        ? 'Precio por litro, nacional — varios combustibles'
+        : 'Precio por litro de ' + DATA.combustibles[cState.fuelFijo] + ', por región';
+
+      if (!activos.length) {
+        wrap.innerHTML = '<div class="hist-note" style="padding:30px 0;">Elige al menos una línea en el panel de la izquierda.</div>';
+        rangoLabel.textContent = '';
+        return;
+      }
+
+      var allTimes = [];
+      activos.forEach(function(e){ e.serie.forEach(function(d){ allTimes.push(parseFecha(d[0])); }); });
+      var tMinAll = Math.min.apply(null, allTimes), tMaxAll = Math.max.apply(null, allTimes);
+      var desdeFrac = Number(rDesde.value) / 100, hastaFrac = Number(rHasta.value) / 100;
+      var tMin = tMinAll + (tMaxAll - tMinAll) * desdeFrac;
+      var tMax = tMinAll + (tMaxAll - tMinAll) * hastaFrac;
+      if (tMax <= tMin) tMax = tMin + 86400000;
+      rangoLabel.textContent = fmtFechaEje(tMin, true) + '  →  ' + fmtFechaEje(tMax, true);
+
+      var series = activos.map(function(e){
+        var pts = e.serie.map(function(d){ return [parseFecha(d[0]), d[1]]; }).filter(function(p){ return p[0] >= tMin && p[0] <= tMax; });
+        return { key: e.key, nombre: e.nombre, color: colorOf[e.key], pts: pts };
+      }).filter(function(s){ return s.pts.length; });
+
+      if (!series.length) { wrap.innerHTML = '<div class="hist-note" style="padding:30px 0;">Sin datos en el rango de tiempo elegido.</div>'; return; }
+
+      var W = 820, H = 420, padL = 46, padR = 148, padT = 16, padB = 28;
+      var innerW = W - padL - padR, innerH = H - padT - padB;
+      var allVals = [];
+      series.forEach(function(s){ s.pts.forEach(function(p){ allVals.push(p[1]); }); });
+      var maxY = Math.ceil(Math.max.apply(null, allVals) * 1.08 / 50) * 50 || 50;
+      var minY = 0;
+      function xAt(t){ return padL + ((t - tMin) / (tMax - tMin)) * innerW; }
+      function yAt(v){ return padT + innerH - ((v - minY) / (maxY - minY)) * innerH; }
+
+      // separa las etiquetas de fin de linea para que no se encimen (como en OWID)
+      var labelInfos = series.map(function(ser){
+        var last = ser.pts[ser.pts.length - 1];
+        return { ser: ser, lx: xAt(last[0]), ly: yAt(last[1]), y: yAt(last[1]) };
+      });
+      labelInfos.sort(function(a, b){ return a.y - b.y; });
+      var minGap = 13;
+      for (var gi = 1; gi < labelInfos.length; gi++) { if (labelInfos[gi].y < labelInfos[gi - 1].y + minGap) labelInfos[gi].y = labelInfos[gi - 1].y + minGap; }
+      for (var gj = labelInfos.length - 1; gj > 0; gj--) {
+        if (labelInfos[gj].y > H - padB) { labelInfos[gj].y = H - padB; labelInfos[gj - 1].y = Math.min(labelInfos[gj - 1].y, labelInfos[gj].y - minGap); }
+      }
+      var labelYByKey = {}; labelInfos.forEach(function(li){ labelYByKey[li.ser.key] = li.y; });
+
+      var s = [];
+      s.push('<svg viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="Comparacion de precios de combustibles">');
+      var ySteps = 5;
+      for (var si = 0; si <= ySteps; si++) {
+        var v = (maxY / ySteps) * si, y = yAt(v);
+        s.push('<line x1="' + padL + '" x2="' + (W - padR) + '" y1="' + y + '" y2="' + y + '" stroke="var(--border)" stroke-width="1"/>');
+        s.push('<text x="' + (padL - 8) + '" y="' + (y + 3) + '" text-anchor="end" font-size="10" fill="var(--ink-faint)">' + Math.round(v) + '</text>');
+      }
+      var nLabels = 6, mensual = (tMax - tMin) > 1000 * 60 * 60 * 24 * 365 * 3;
+      for (var li2 = 0; li2 <= nLabels; li2++) {
+        var t = tMin + (tMax - tMin) * (li2 / nLabels);
+        s.push('<text x="' + xAt(t) + '" y="' + (H - 8) + '" text-anchor="middle" font-size="9.5" fill="var(--ink-faint)">' + fmtFechaEje(t, mensual) + '</text>');
+      }
+      series.forEach(function(ser){
+        var pts = ser.pts.map(function(p){ return xAt(p[0]) + ',' + yAt(p[1]); }).join(' ');
+        s.push('<polyline points="' + pts + '" fill="none" stroke="' + ser.color + '" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>');
+        var last = ser.pts[ser.pts.length - 1];
+        var dx = xAt(last[0]), dy = yAt(last[1]);
+        s.push('<circle cx="' + dx + '" cy="' + dy + '" r="3" fill="' + ser.color + '"/>');
+        var ly = labelYByKey[ser.key];
+        if (Math.abs(ly - dy) > 2) s.push('<line x1="' + (dx + 4) + '" y1="' + dy + '" x2="' + (dx + 8) + '" y2="' + ly + '" stroke="' + ser.color + '" stroke-width="1" opacity="0.5"/>');
+        s.push('<text x="' + (dx + 9) + '" y="' + (ly + 4) + '" font-size="11.5" font-weight="700" fill="' + ser.color + '" font-family="Archivo,sans-serif">' + ser.nombre + '</text>');
+      });
+      s.push('<rect id="cmpHit" x="' + padL + '" y="' + padT + '" width="' + innerW + '" height="' + innerH + '" fill="transparent" style="cursor:crosshair"/>');
+      s.push('</svg><div class="tooltip" id="cmpTip"></div>');
+      wrap.innerHTML = s.join('');
+
+      var svgEl = wrap.querySelector('svg');
+      var cmpTip = document.getElementById('cmpTip');
+      var hitRect = document.getElementById('cmpHit');
+      hitRect.addEventListener('mousemove', function(ev){
+        var rect = svgEl.getBoundingClientRect();
+        var scaleX = W / rect.width;
+        var mx = (ev.clientX - rect.left) * scaleX;
+        var t = tMin + ((mx - padL) / innerW) * (tMax - tMin);
+        var wrapRect2 = wrap.getBoundingClientRect();
+        var px2 = (mx / W) * wrapRect2.width;
+        var lines = series.map(function(ser){
+          var nearest = ser.pts.reduce(function(best, p){ return Math.abs(p[0] - t) < Math.abs(best[0] - t) ? p : best; }, ser.pts[0]);
+          return '<div><span style="color:' + ser.color + ';">●</span> ' + ser.nombre + ': <b>' + fmtCLP(nearest[1]) + '</b></div>';
+        }).join('');
+        cmpTip.style.left = px2 + 'px'; cmpTip.style.top = '10px'; cmpTip.style.opacity = 1;
+        cmpTip.innerHTML = '<b>' + fmtFechaEje(t, true) + '</b>' + lines;
+      });
+      hitRect.addEventListener('mouseleave', function(){ cmpTip.style.opacity = 0; });
+    }
+
+    renderChart();
   }
 })();
 </script>
