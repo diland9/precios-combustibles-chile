@@ -588,7 +588,7 @@
       var titleParts = [combustible];
       if (hState.nivel === 'regional') titleParts.push(DATA.regiones[hState.regionIdx]);
       if (hState.nivel === 'comunal') titleParts.push(hState.comunaIdx >= 0 ? DATA.comunas[hState.comunaIdx] + ', ' + DATA.regiones[hState.regionIdx] : '(elige una comuna)');
-      document.getElementById('histTitle').textContent = titleParts.join(' — ');
+      document.getElementById('histTitle').textContent = titleParts.join(' — ') + ' (CLP $ por litro)';
       document.getElementById('histEyebrow').textContent = hState.nivel.charAt(0).toUpperCase() + hState.nivel.slice(1) + ' · evolución del precio';
 
       var noteBox = document.getElementById('histNoteBox');
@@ -618,7 +618,7 @@
       var serie = serieFull.filter(function(d){ var t = parseFecha(d[0]); return t >= tMin && t <= tMax; });
       if (!serie.length) { wrap.innerHTML = '<div class="hist-note" style="padding:30px 0;">Sin datos en el rango de tiempo elegido.</div>'; return; }
 
-      var W = 700, H = 700, padL = 54, padR = 20, padT = 20, padB = 34;
+      var W = 700, H = 700, padL = 64, padR = 26, padT = 26, padB = 64;
       var innerW = W - padL - padR, innerH = H - padT - padB;
       var values = serie.map(function(d){ return d[1]; }).filter(function(v){ return v != null; });
       var maxY = Math.ceil(Math.max.apply(null, values) * 1.08 / 50) * 50;
@@ -635,7 +635,7 @@
       for (var si = 0; si <= ySteps; si++) {
         var v = (maxY / ySteps) * si, y = yAt(v);
         s.push('<line x1="' + padL + '" x2="' + (W - padR) + '" y1="' + y + '" y2="' + y + '" stroke="var(--border)" stroke-width="1"/>');
-        s.push('<text x="' + (padL - 8) + '" y="' + (y + 3) + '" text-anchor="end" font-size="10" fill="var(--ink-faint)">' + Math.round(v) + '</text>');
+        s.push('<text x="' + (padL - 10) + '" y="' + (y + 4) + '" text-anchor="end" font-size="13" font-weight="600" fill="var(--ink-muted)">' + Math.round(v) + '</text>');
       }
       // marca el primer punto "diario" (de este monitor) si hay mezcla con historia mensual, dentro del rango visible
       var firstDaily = null;
@@ -650,7 +650,7 @@
       for (var li = 0; li <= nLabels; li++) {
         var t = tMin + (tMax - tMin) * (li / nLabels);
         var nearest = serie.reduce(function(best, d){ return Math.abs(parseFecha(d[0]) - t) < Math.abs(parseFecha(best[0]) - t) ? d : best; }, serie[0]);
-        s.push('<text x="' + xAt(t) + '" y="' + (H - 10) + '" text-anchor="middle" font-size="9.5" fill="var(--ink-faint)">' + fmtFecha(nearest[0]) + '</text>');
+        s.push('<text x="' + xAt(t) + '" y="' + (H - padB + 24) + '" text-anchor="middle" font-size="13" font-weight="600" fill="var(--ink-muted)">' + fmtFecha(nearest[0]) + '</text>');
       }
       var pts = serie.map(function(d){ return xAt(parseFecha(d[0])) + ',' + yAt(d[1]); }).join(' ');
       var areaPts = pts + ' ' + xAt(parseFecha(serie[serie.length - 1][0])) + ',' + yAt(0) + ' ' + xAt(parseFecha(serie[0][0])) + ',' + yAt(0);
@@ -659,7 +659,7 @@
       var last = serie[serie.length - 1];
       var lastX = xAt(parseFecha(last[0]));
       s.push('<circle cx="' + lastX + '" cy="' + yAt(last[1]) + '" r="3.4" fill="var(--teal)"/>');
-      s.push('<text x="' + (lastX - 6) + '" y="' + (yAt(last[1]) - 10) + '" text-anchor="end" font-weight="800" font-size="13" fill="var(--teal)" font-family="Archivo,sans-serif">' + fmtCLP(last[1]) + '</text>');
+      s.push('<text x="' + (lastX - 6) + '" y="' + (yAt(last[1]) - 12) + '" text-anchor="end" font-weight="800" font-size="16" fill="var(--teal)" font-family="Archivo,sans-serif">' + fmtCLP(last[1]) + '</text>');
       s.push('<rect id="histHit" x="' + padL + '" y="' + padT + '" width="' + innerW + '" height="' + innerH + '" fill="transparent" style="cursor:crosshair"/>');
       s.push('</svg><div class="tooltip" id="histTip"></div>');
       wrap.innerHTML = s.join('');
@@ -841,7 +841,7 @@
       for (var si = 0; si <= ySteps; si++) {
         var v = (maxY / ySteps) * si, y = yAt(v);
         s.push('<line x1="' + padL + '" x2="' + (W - padR) + '" y1="' + y + '" y2="' + y + '" stroke="var(--border)" stroke-width="1"/>');
-        s.push('<text x="' + (padL - 8) + '" y="' + (y + 3) + '" text-anchor="end" font-size="10" fill="var(--ink-faint)">' + Math.round(v) + '</text>');
+        s.push('<text x="' + (padL - 10) + '" y="' + (y + 4) + '" text-anchor="end" font-size="13" font-weight="600" fill="var(--ink-muted)">' + Math.round(v) + '</text>');
       }
       var nLabels = 6, mensual = (tMax - tMin) > 1000 * 60 * 60 * 24 * 365 * 3;
       for (var li2 = 0; li2 <= nLabels; li2++) {
