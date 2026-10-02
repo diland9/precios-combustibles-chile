@@ -4,6 +4,11 @@ Captura automática, diaria, del precio de los combustibles en todas las estacio
 servicio de Chile, para poder ver su evolución por **estación, operador, comuna y región**.
 Corre sola todos los días vía GitHub Actions — no requiere servidor ni mantención.
 
+**Buscador en vivo**: `docs/index.html` es un buscador + mapa de Chile (estilo oscuro,
+puntos con glow teal→naranjo según precio) que lee el snapshot del día. Se regenera solo
+en cada corrida del workflow. Para publicarlo como página web: Settings → Pages → Branch
+`main` → carpeta `/docs`.
+
 ## ¿De dónde salen los datos?
 
 De la API pública que usa el propio sitio oficial [bencinaenlinea.cl](https://www.bencinaenlinea.cl)

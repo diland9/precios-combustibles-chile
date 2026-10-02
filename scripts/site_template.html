@@ -1,0 +1,318 @@
+<title>Buscador de Bencina</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Public+Sans:wght@400;500;600;700&display=swap">
+<style>
+  :root{
+    color-scheme: dark;
+    --bg: #0A0F1A;
+    --panel: #111826;
+    --panel-2: #161F30;
+    --ink: #EAF2F2;
+    --ink-muted: #8CA0AC;
+    --ink-faint: #56626E;
+    --line: rgba(94,234,212,0.14);
+    --teal: #4FE3D2;
+    --teal-dim: rgba(79,227,210,0.16);
+    --orange: #FF8A4C;
+    --orange-dim: rgba(255,138,76,0.16);
+    --border: rgba(143,189,189,0.14);
+  }
+  *{box-sizing:border-box;}
+  html,body{height:100%;}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Public Sans",system-ui,-apple-system,sans-serif;
+    padding-inline:16px; padding-block:18px 24px;
+  }
+  .wrap{ max-width:1180px; margin:0 auto; }
+
+  header{ margin-bottom:18px; }
+  .kicker{ font-family:"Archivo",sans-serif; font-weight:800; font-size:11px; text-transform:uppercase; letter-spacing:0.12em; color:var(--teal); }
+  h1{ font-family:"Archivo",sans-serif; font-weight:800; font-size:clamp(22px,3.4vw,30px); margin:5px 0 4px; letter-spacing:-0.01em; }
+  .subtitle{ color:var(--ink-muted); font-size:13.5px; max-width:70ch; line-height:1.5; }
+
+  .layout{ display:grid; grid-template-columns: 340px 1fr; gap:16px; align-items:start; }
+  @media (max-width:860px){ .layout{ grid-template-columns:1fr; } }
+
+  .panel{ background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:16px; }
+  .panel + .panel{ margin-top:14px; }
+
+  label{ display:block; font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; color:var(--ink-faint); margin-bottom:5px; margin-top:12px; }
+  label:first-child{ margin-top:0; }
+  input[type="text"], select{
+    width:100%; background:var(--panel-2); border:1px solid var(--border); color:var(--ink);
+    border-radius:8px; padding:9px 10px; font-size:13.5px; font-family:inherit;
+  }
+  input[type="text"]:focus, select:focus{ outline:none; border-color:var(--teal); }
+
+  .fuel-row{ display:flex; flex-wrap:wrap; gap:6px; }
+  .fuel-chip{
+    font-size:11.5px; font-weight:700; padding:6px 10px; border-radius:999px; cursor:pointer;
+    background:var(--panel-2); border:1px solid var(--border); color:var(--ink-muted);
+    transition:all .12s ease;
+  }
+  .fuel-chip.active{ background:var(--teal-dim); border-color:var(--teal); color:var(--teal); }
+
+  .stat-row{ display:flex; justify-content:space-between; align-items:baseline; margin-top:14px; padding-top:12px; border-top:1px solid var(--border); }
+  .stat-row .n{ font-family:"Archivo",sans-serif; font-weight:800; font-size:22px; color:var(--ink); font-variant-numeric:tabular-nums; }
+  .stat-row .label{ font-size:11px; color:var(--ink-muted); }
+
+  .results{ max-height:420px; overflow-y:auto; margin-top:10px; }
+  .result-item{
+    padding:9px 10px; border-radius:8px; cursor:pointer; border:1px solid transparent;
+    display:flex; justify-content:space-between; gap:8px; align-items:center;
+  }
+  .result-item:hover, .result-item.sel{ background:var(--panel-2); border-color:var(--border); }
+  .result-item .ri-main{ min-width:0; }
+  .result-item .ri-marca{ font-size:12.5px; font-weight:700; color:var(--ink); }
+  .result-item .ri-dir{ font-size:11px; color:var(--ink-muted); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .result-item .ri-precio{ font-family:"Archivo",sans-serif; font-weight:800; font-size:14px; color:var(--teal); flex:none; font-variant-numeric:tabular-nums; }
+
+  .map-wrap{ position:relative; }
+  svg{ display:block; width:100%; height:auto; }
+  .region-path{ fill:#0D1420; stroke:var(--line); stroke-width:1; }
+  .dot{ cursor:pointer; }
+  .legend{ display:flex; align-items:center; gap:10px; font-size:11px; color:var(--ink-muted); margin-top:10px; flex-wrap:wrap; }
+  .legend .swatch{ width:10px; height:10px; border-radius:50%; display:inline-block; margin-right:4px; vertical-align:middle; }
+  .grad-bar{ width:120px; height:8px; border-radius:4px; background:linear-gradient(90deg, var(--teal), var(--orange)); display:inline-block; vertical-align:middle; }
+
+  .tooltip{
+    position:absolute; pointer-events:none; background:#06090F; border:1px solid var(--border);
+    color:var(--ink); font-size:12px; padding:8px 11px; border-radius:8px; line-height:1.5;
+    transform:translate(-50%, calc(-100% - 12px)); white-space:nowrap; opacity:0; transition:opacity .08s ease; z-index:6;
+  }
+  .tooltip b{ font-family:"Archivo",sans-serif; color:var(--teal); }
+
+  footer{ margin-top:22px; padding-top:14px; border-top:1px solid var(--border); color:var(--ink-faint); font-size:11px; line-height:1.7; }
+  footer a{ color:var(--teal); }
+
+  ::-webkit-scrollbar{ width:8px; }
+  ::-webkit-scrollbar-thumb{ background:var(--border); border-radius:4px; }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="kicker">Monitor de combustibles &middot; Chile</div>
+    <h1>Buscador de bencina</h1>
+    <p class="subtitle" id="subtitleText">Cargando...</p>
+  </header>
+
+  <div class="layout">
+    <div>
+      <div class="panel">
+        <label>Buscar (dirección, comuna, marca)</label>
+        <input type="text" id="searchText" placeholder="Ej: Las Condes, Copec, Alameda...">
+
+        <label>Combustible</label>
+        <div class="fuel-row" id="fuelRow"></div>
+
+        <label>Región</label>
+        <select id="regionSelect"><option value="">Todas</option></select>
+
+        <label>Comuna</label>
+        <select id="comunaSelect"><option value="">Todas</option></select>
+
+        <label>Operador</label>
+        <select id="marcaSelect"><option value="">Todos</option></select>
+
+        <div class="stat-row">
+          <div><div class="n" id="statN">-</div><div class="label">estaciones encontradas</div></div>
+          <div style="text-align:right;"><div class="n" id="statAvg">-</div><div class="label">precio promedio</div></div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <label style="margin-top:0;">Resultados</label>
+        <div class="results" id="resultsList"></div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="map-wrap" id="mapWrap"></div>
+      <div class="legend">
+        <span><span class="swatch" style="background:var(--ink-faint);"></span>sin stock de este combustible</span>
+        <span>más barato <span class="grad-bar"></span> más caro</span>
+        <span style="margin-left:auto;">Blanco = coincide con tu búsqueda</span>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    Datos: snapshot diario de <a href="https://github.com/diland9/precios-combustibles-chile" target="_blank" rel="noopener">precios-combustibles-chile</a>,
+    capturado desde la API pública de bencinaenlinea.cl (CNE/SEC). Fecha del snapshot: <span id="fechaSnapshot"></span>.
+    Precios fuera de rango razonable ya fueron descartados antes de llegar aquí.
+  </footer>
+</div>
+
+<script>
+(function(){
+  var DATA = __BUNDLE_JSON__;
+  // cada estacion viene como array: [id, marcaIdx, regionIdx, comunaIdx, direccion, x, y, [precios]]
+  var ID=0, MARCA=1, REGION=2, COMUNA=3, DIR=4, X=5, Y=6, PRECIOS=7;
+  var stationById = {};
+  DATA.stations.forEach(function(s){ stationById[s[ID]] = s; });
+
+  var state = { texto: '', fuelIdx: 0, regionIdx: -1, comunaIdx: -1, marcaIdx: -1, selId: null };
+
+  document.getElementById('fechaSnapshot').textContent = DATA.fecha || '—';
+  document.getElementById('subtitleText').textContent = DATA.stations.length.toLocaleString('es-CL') + ' estaciones a lo largo de Chile. Filtra por región, comuna, operador o combustible, o escribe una dirección.';
+
+  // ---------- controles ----------
+  var fuelRow = document.getElementById('fuelRow');
+  DATA.combustibles.forEach(function(c, i){
+    var chip = document.createElement('div');
+    chip.className = 'fuel-chip' + (i === state.fuelIdx ? ' active' : '');
+    chip.textContent = c;
+    chip.dataset.i = i;
+    chip.addEventListener('click', function(){
+      state.fuelIdx = i;
+      fuelRow.querySelectorAll('.fuel-chip').forEach(function(el){ el.classList.toggle('active', Number(el.dataset.i) === i); });
+      render();
+    });
+    fuelRow.appendChild(chip);
+  });
+
+  var regionSelect = document.getElementById('regionSelect');
+  DATA.regiones.forEach(function(r, i){ var o = document.createElement('option'); o.value = i; o.textContent = r; regionSelect.appendChild(o); });
+  var comunaSelect = document.getElementById('comunaSelect');
+  var marcaSelect = document.getElementById('marcaSelect');
+  DATA.marcas.forEach(function(m, i){ var o = document.createElement('option'); o.value = i; o.textContent = m; marcaSelect.appendChild(o); });
+
+  function updateComunaOptions(){
+    comunaSelect.innerHTML = '<option value="">Todas</option>';
+    var list = state.regionIdx >= 0 ? (DATA.comunasPorRegion[DATA.regiones[state.regionIdx]] || []) : [];
+    list.forEach(function(ci){ var o = document.createElement('option'); o.value = ci; o.textContent = DATA.comunas[ci]; comunaSelect.appendChild(o); });
+    comunaSelect.disabled = state.regionIdx < 0;
+  }
+  updateComunaOptions();
+
+  document.getElementById('searchText').addEventListener('input', function(e){ state.texto = e.target.value.toLowerCase(); render(); });
+  regionSelect.addEventListener('change', function(e){ state.regionIdx = e.target.value === '' ? -1 : Number(e.target.value); state.comunaIdx = -1; updateComunaOptions(); render(); });
+  comunaSelect.addEventListener('change', function(e){ state.comunaIdx = e.target.value === '' ? -1 : Number(e.target.value); render(); });
+  marcaSelect.addEventListener('change', function(e){ state.marcaIdx = e.target.value === '' ? -1 : Number(e.target.value); render(); });
+
+  // ---------- mapa (una sola vez) ----------
+  var W = DATA.canvasWidth, H = DATA.canvasHeight;
+  var svgParts = [];
+  svgParts.push('<svg viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="Mapa de estaciones de bencina en Chile">');
+  svgParts.push('<defs><filter id="glow" x="-200%" y="-200%" width="500%" height="500%"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>');
+  DATA.regionPaths.forEach(function(d){ svgParts.push('<path class="region-path" d="' + d + '" fill-rule="evenodd"/>'); });
+  svgParts.push('<g id="dotsLayer"></g>');
+  svgParts.push('</svg><div class="tooltip" id="tip"></div>');
+  document.getElementById('mapWrap').innerHTML = svgParts.join('');
+  var svg = document.getElementById('mapWrap').querySelector('svg');
+  var dotsLayer = document.getElementById('dotsLayer');
+  var tip = document.getElementById('tip');
+  var mapWrap = document.getElementById('mapWrap');
+
+  function fmtCLP(v){ return '$' + Math.round(v).toLocaleString('es-CL'); }
+
+  function hasActiveFilter(){ return !!(state.texto || state.regionIdx >= 0 || state.comunaIdx >= 0 || state.marcaIdx >= 0); }
+
+  function matches(st){
+    if (state.regionIdx >= 0 && st[REGION] !== state.regionIdx) return false;
+    if (state.comunaIdx >= 0 && st[COMUNA] !== state.comunaIdx) return false;
+    if (state.marcaIdx >= 0 && st[MARCA] !== state.marcaIdx) return false;
+    if (state.texto) {
+      var hay = (st[DIR] + ' ' + DATA.comunas[st[COMUNA]] + ' ' + DATA.regiones[st[REGION]] + ' ' + DATA.marcas[st[MARCA]]).toLowerCase();
+      if (hay.indexOf(state.texto) === -1) return false;
+    }
+    return true;
+  }
+
+  function colorForPrice(p, min, max){
+    if (p == null) return '#3A4552';
+    var t = max > min ? (p - min) / (max - min) : 0.5;
+    // interpola var(--teal) #4FE3D2 -> var(--orange) #FF8A4C
+    var c1 = [0x4F,0xE3,0xD2], c2 = [0xFF,0x8A,0x4C];
+    var rgb = c1.map(function(v,i){ return Math.round(v + (c2[i]-v)*t); });
+    return 'rgb(' + rgb.join(',') + ')';
+  }
+
+  var dotEls = {};
+  function buildDots(){
+    var html = [];
+    DATA.stations.forEach(function(st){
+      html.push('<circle class="dot" data-id="' + st[ID] + '" cx="' + st[X] + '" cy="' + st[Y] + '" r="2.6"/>');
+    });
+    dotsLayer.innerHTML = html.join('');
+    dotsLayer.querySelectorAll('.dot').forEach(function(el){
+      var id = el.getAttribute('data-id');
+      dotEls[id] = el;
+      el.addEventListener('mousemove', function(){ showTip(id); });
+      el.addEventListener('mouseleave', function(){ tip.style.opacity = 0; });
+      el.addEventListener('click', function(){ selectStation(id); });
+    });
+  }
+  buildDots();
+
+  function showTip(id){
+    var st = stationById[id];
+    if (!st) return;
+    var wrapRect = mapWrap.getBoundingClientRect();
+    var px = ((st[X] / W) * wrapRect.width);
+    var py = ((st[Y] / H) * wrapRect.height);
+    tip.style.left = px + 'px'; tip.style.top = py + 'px'; tip.style.opacity = 1;
+    var precio = st[PRECIOS][state.fuelIdx];
+    var fuelName = DATA.combustibles[state.fuelIdx];
+    tip.innerHTML = '<b>' + DATA.marcas[st[MARCA]] + '</b><br>' + st[DIR] + '<br>' + DATA.comunas[st[COMUNA]] + ', ' + DATA.regiones[st[REGION]] + '<br>' + fuelName + ': ' + (precio != null ? fmtCLP(precio) + '/L' : 'sin dato');
+  }
+
+  var resultsList = document.getElementById('resultsList');
+  var statN = document.getElementById('statN');
+  var statAvg = document.getElementById('statAvg');
+
+  function selectStation(id){ state.selId = id; render(); }
+
+  function render(){
+    var fi = state.fuelIdx;
+    var matchedAll = DATA.stations.filter(matches);
+    var withFuel = matchedAll.filter(function(s){ return s[PRECIOS][fi] != null; });
+    var prices = withFuel.map(function(s){ return s[PRECIOS][fi]; });
+    var min = prices.length ? Math.min.apply(null, prices) : 0;
+    var max = prices.length ? Math.max.apply(null, prices) : 0;
+    var avg = prices.length ? prices.reduce(function(a,b){return a+b;},0) / prices.length : null;
+
+    statN.textContent = matchedAll.length.toLocaleString('es-CL');
+    statAvg.textContent = avg != null ? fmtCLP(avg) : '—';
+
+    var matchedIds = {};
+    matchedAll.forEach(function(s){ matchedIds[s[ID]] = true; });
+    var activeFilter = hasActiveFilter();
+
+    DATA.stations.forEach(function(st){
+      var el = dotEls[st[ID]];
+      if (!el) return;
+      var isMatch = matchedIds[st[ID]];
+      var precio = st[PRECIOS][fi];
+      el.setAttribute('fill', colorForPrice(precio, min, max));
+      if (isMatch && precio != null) {
+        el.setAttribute('r', activeFilter ? 4.2 : 2.6);
+        el.setAttribute('stroke', activeFilter ? '#fff' : 'none');
+        el.setAttribute('stroke-width', 1.1);
+        el.setAttribute('opacity', 0.95);
+        el.setAttribute('filter', activeFilter ? 'url(#glow)' : '');
+      } else {
+        el.setAttribute('r', 2.2);
+        el.setAttribute('stroke', 'none');
+        el.setAttribute('opacity', isMatch ? 0.5 : 0.12);
+        el.setAttribute('filter', '');
+      }
+    });
+
+    var sorted = withFuel.slice().sort(function(a,b){ return a[PRECIOS][fi] - b[PRECIOS][fi]; }).slice(0, 80);
+    resultsList.innerHTML = sorted.map(function(st){
+      return '<div class="result-item" data-id="' + st[ID] + '">' +
+        '<div class="ri-main"><div class="ri-marca">' + DATA.marcas[st[MARCA]] + '</div><div class="ri-dir">' + st[DIR] + ', ' + DATA.comunas[st[COMUNA]] + '</div></div>' +
+        '<div class="ri-precio">' + fmtCLP(st[PRECIOS][fi]) + '</div></div>';
+    }).join('') || '<div style="color:var(--ink-faint); font-size:12.5px; padding:8px;">Sin resultados para este filtro.</div>';
+
+    resultsList.querySelectorAll('.result-item').forEach(function(el){
+      var id = el.getAttribute('data-id');
+      el.addEventListener('click', function(){ selectStation(id); });
+      el.addEventListener('mouseenter', function(){ showTip(id); });
+    });
+  }
+
+  render();
+})();
+</script>
