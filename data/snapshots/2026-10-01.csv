@@ -3825,9 +3825,9 @@ fecha,estacion_id,marca,region,comuna,direccion,latitud,longitud,combustible_cor
 2026-10-01,961,SHELL,Del Biobío,Tomé,Mariano Egaña 986,-36.611452101374105,-72.95681744813919,DI,Petroleo Diesel,1482.000,$/L,AutoServicio,2026-10-01 08:05:10
 2026-10-01,961,SHELL,Del Biobío,Tomé,Mariano Egaña 986,-36.611452101374105,-72.95681744813919,KE,Kerosene,1323.000,$/L,AutoServicio,2026-10-01 08:05:10
 2026-10-01,961,SHELL,Del Biobío,Tomé,Mariano Egaña 986,-36.611452101374105,-72.95681744813919,95,Gasolina 95,1556.000,$/L,AutoServicio,2026-10-01 08:05:10
-2026-10-01,974,Sin Bandera,Del Biobío,Arauco,Ruta 160 Km 65 Carampangue. Arauco 65,-37.262435,-73.2400211,93,Gasolina 93,1492.000,$/L,AutoServicio,2026-09-25 07:55:37
-2026-10-01,974,Sin Bandera,Del Biobío,Arauco,Ruta 160 Km 65 Carampangue. Arauco 65,-37.262435,-73.2400211,DI,Petroleo Diesel,1392.000,$/L,AutoServicio,2026-09-11 09:04:03
-2026-10-01,974,Sin Bandera,Del Biobío,Arauco,Ruta 160 Km 65 Carampangue. Arauco 65,-37.262435,-73.2400211,95,Gasolina 95,1524.000,$/L,AutoServicio,2026-09-25 07:55:37
+2026-10-01,974,Sin Bandera,Del Biobío,Arauco,Ruta 160 Km 65 Carampangue. Arauco 65,-37.262435,-73.2400211,93,Gasolina 93,1531.000,$/L,AutoServicio,2026-10-01 23:04:53
+2026-10-01,974,Sin Bandera,Del Biobío,Arauco,Ruta 160 Km 65 Carampangue. Arauco 65,-37.262435,-73.2400211,DI,Petroleo Diesel,1488.000,$/L,AutoServicio,2026-10-01 23:04:53
+2026-10-01,974,Sin Bandera,Del Biobío,Arauco,Ruta 160 Km 65 Carampangue. Arauco 65,-37.262435,-73.2400211,95,Gasolina 95,1563.000,$/L,AutoServicio,2026-10-01 23:04:53
 2026-10-01,975,SHELL,Del Biobío,Arauco,Ruta p20 lote 3 153,-37.245076163144795,-73.30573171605528,93,Gasolina 93,1531.000,$/L,AutoServicio,2026-10-01 08:20:54
 2026-10-01,975,SHELL,Del Biobío,Arauco,Ruta p20 lote 3 153,-37.245076163144795,-73.30573171605528,97,Gasolina 97,1596.000,$/L,AutoServicio,2026-10-01 08:20:54
 2026-10-01,975,SHELL,Del Biobío,Arauco,Ruta p20 lote 3 153,-37.245076163144795,-73.30573171605528,DI,Petroleo Diesel,1487.000,$/L,AutoServicio,2026-10-01 08:05:10
