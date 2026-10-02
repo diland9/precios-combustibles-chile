@@ -53,6 +53,47 @@ const nacionalRows = Object.entries(porFecha).sort(([a], [b]) => a < b ? -1 : 1)
   Fuente: d.fuente
 }));
 
+// ---------- Nacional anual (para graficar en Canva con un eje X limpio) ----------
+// Un punto por año (el de julio, como representante del año) desde 1994 hasta el
+// ultimo año completo; para 2026 (año en curso) se deja el detalle mensual completo
+// en vez de un solo punto, para no perder la transicion reciente.
+const nacionalPorFecha = {};
+nacionalRows.forEach(r => { nacionalPorFecha[r.Fecha] = r; });
+
+const ULTIMO_ANIO_COMPLETO = 2025;
+const anualRows = [];
+for (let y = 1994; y <= ULTIMO_ANIO_COMPLETO; y++) {
+  const r = nacionalPorFecha[y + '-07'];
+  anualRows.push({
+    Fecha: String(y),
+    Precio_promedio_CLP_L: r ? r.Precio_promedio_CLP_L : null,
+    Fuente: r ? r.Fuente : 'Sin dato de julio ese año'
+  });
+}
+// 2026 en curso: un punto por cada mes con dato (enero en adelante), para mostrar el detalle reciente
+Object.keys(nacionalPorFecha).filter(f => f.startsWith('2026-') && f.length === 7).sort().forEach(f => {
+  const r = nacionalPorFecha[f];
+  anualRows.push({ Fecha: f, Precio_promedio_CLP_L: r.Precio_promedio_CLP_L, Fuente: r.Fuente });
+});
+// si ya hay monitoreo diario de octubre 2026 (o mas), se resume en un solo punto "2026-10" (mismo
+// nivel de detalle que el resto: un punto por mes), promediando los dias capturados ese mes
+const diasOctEnAdelante = Object.keys(nacionalPorFecha).filter(f => f.length === 10 && f >= '2026-10-01');
+if (diasOctEnAdelante.length) {
+  const porMes = {};
+  diasOctEnAdelante.forEach(f => {
+    const mes = f.slice(0, 7);
+    (porMes[mes] = porMes[mes] || []).push(nacionalPorFecha[f].Precio_promedio_CLP_L);
+  });
+  Object.keys(porMes).sort().forEach(mes => {
+    const vals = porMes[mes];
+    anualRows.push({
+      Fecha: mes,
+      Precio_promedio_CLP_L: Math.round((vals.reduce((a, b) => a + b, 0) / vals.length) * 100) / 100,
+      Fuente: 'Monitoreo diario propio (bencinaenlinea.cl) — promedio de ' + vals.length + ' día(s) capturado(s) ese mes'
+    });
+  });
+}
+
 // ---------- Metodologia ----------
 const metodologia = [
   ['Kerosene (doméstico) — evolución histórica del precio, Chile'],
@@ -75,12 +116,18 @@ const metodologia = [
   ['Valores', 'CLP $/litro, nominales (no ajustados por inflación), sin IVA especificado por la fuente.']
 ];
 
+metodologia.push(
+  [''],
+  ['Hoja "Nacional anual (jul)"', 'Pensada para graficar directo en Canva con un eje X limpio: un punto por año (1994-' + ULTIMO_ANIO_COMPLETO + '), tomando el valor de julio de cada año como representante. Para 2026 (año en curso) se deja el detalle mes a mes en vez de un solo punto, para no perder la transición reciente hacia el monitoreo diario.']
+);
+
 const wb = XLSX.utils.book_new();
 XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(nacionalRows), 'Nacional');
+XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(anualRows), 'Nacional anual (jul)');
 XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(regionalRows), 'Regional');
 XLSX.utils.book_append_sheet(wb, XLSX.utils.aoa_to_sheet(metodologia), 'Fuente y metodologia');
 
-const outPath = path.join(ROOT, '..', 'Kerosene_Evolucion_Historica_Chile.xlsx');
+const outPath = path.join(ROOT, '..', '..', 'Kerosene_Evolucion_Historica_Chile.xlsx');
 XLSX.writeFile(wb, outPath);
 console.log('Escrito:', outPath);
-console.log('Nacional:', nacionalRows.length, 'filas | Regional:', regionalRows.length, 'filas');
+console.log('Nacional:', nacionalRows.length, 'filas | Nacional anual:', anualRows.length, 'filas | Regional:', regionalRows.length, 'filas');

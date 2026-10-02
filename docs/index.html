@@ -41,8 +41,16 @@
   }
   .tab-btn.active{ background:var(--teal-dim); border-color:var(--teal); color:var(--teal); }
 
-  .panel-head{ border-top:2px solid var(--teal); padding-top:8px; margin-bottom:2px; }
+  .panel-head{ border-top:2px solid var(--teal); padding-top:8px; margin-bottom:2px; display:flex; justify-content:space-between; align-items:flex-end; gap:10px; flex-wrap:wrap; }
   .panel-eyebrow{ font-family:"Archivo",sans-serif; font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:var(--ink-muted); }
+
+  .chart-toolbar{ display:flex; gap:6px; }
+  .chart-toolbar button{
+    font-family:"Archivo",sans-serif; font-size:10.5px; font-weight:700; letter-spacing:0.03em; text-transform:uppercase;
+    background:var(--panel-2); border:1px solid var(--border); color:var(--ink-muted);
+    padding:5px 10px; border-radius:7px; cursor:pointer;
+  }
+  .chart-toolbar button:hover{ border-color:var(--teal); color:var(--teal); }
 
   .hist-note{ font-size:12px; color:var(--ink-muted); line-height:1.6; }
 
@@ -92,6 +100,7 @@
   .result-item .ri-precio{ font-family:"Archivo",sans-serif; font-weight:800; font-size:14px; color:var(--teal); flex:none; font-variant-numeric:tabular-nums; }
 
   .map-wrap{ position:relative; }
+  .chart-wrap{ position:relative; max-width:620px; }
   svg{ display:block; width:100%; height:auto; }
   .region-path{ fill:#0D1420; stroke:var(--line); stroke-width:1; }
   .dot{ cursor:pointer; }
@@ -184,12 +193,21 @@
 
         <label id="histComunaLabel" style="display:none;">Comuna</label>
         <select id="histComunaSelect" style="display:none;"></select>
+
+        <label>Desde</label>
+        <input type="range" id="histRangoDesde" min="0" max="100" value="0" style="width:100%;">
+        <label>Hasta</label>
+        <input type="range" id="histRangoHasta" min="0" max="100" value="100" style="width:100%;">
+        <div class="hist-note" id="histRangoLabel" style="margin-top:4px;"></div>
       </div>
       <div class="panel" id="histNoteBox" style="display:none;"></div>
     </div>
 
     <div class="panel">
-      <div class="panel-head"><div class="panel-eyebrow" id="histEyebrow">Evolución</div></div>
+      <div class="panel-head">
+        <div class="panel-eyebrow" id="histEyebrow">Evolución</div>
+        <div class="chart-toolbar"><button id="histExportSvg">SVG</button><button id="histExportPng">PNG</button></div>
+      </div>
       <h2 id="histTitle" style="font-family:'Archivo',sans-serif; font-weight:800; font-size:19px; margin:3px 0 12px;">—</h2>
       <div class="chart-wrap" id="histChartWrap"></div>
     </div>
@@ -219,7 +237,10 @@
     </div>
 
     <div class="panel">
-      <div class="panel-head"><div class="panel-eyebrow">Evolución comparada &middot; estilo Our World in Data</div></div>
+      <div class="panel-head">
+        <div class="panel-eyebrow">Evolución comparada</div>
+        <div class="chart-toolbar"><button id="cmpExportSvg">SVG</button><button id="cmpExportPng">PNG</button></div>
+      </div>
       <h2 id="cmpTitle" style="font-family:'Archivo',sans-serif; font-weight:800; font-size:19px; margin:3px 0 12px;">Precio por litro, varios combustibles</h2>
       <div class="chart-wrap" id="cmpChartWrap"></div>
     </div>
@@ -407,6 +428,50 @@
 
   render();
 
+  // ================= EXPORTAR GRAFICOS (SVG/PNG) =================
+  // Los graficos embeben sus propias variables CSS (--teal, --border, etc.) en un <style>
+  // interno, para que el SVG exportado se vea igual aunque se abra fuera de esta pagina.
+  var CHART_VARS = '<style>:root{--teal:#4FE3D2;--orange:#FF8A4C;--border:rgba(143,189,189,0.14);' +
+    '--ink:#EAF2F2;--ink-muted:#8CA0AC;--ink-faint:#56626E;--panel:#111826;}</style>';
+
+  function downloadBlob(blob, filename) {
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url; a.download = filename;
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    setTimeout(function(){ URL.revokeObjectURL(url); }, 1500);
+  }
+  function serializeSvg(svgEl) {
+    var clone = svgEl.cloneNode(true);
+    clone.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+    return new XMLSerializer().serializeToString(clone);
+  }
+  function exportChartSvg(wrap, filename) {
+    var svgEl = wrap.querySelector('svg');
+    if (!svgEl) return;
+    var xml = '<?xml version="1.0" standalone="no"?>\r\n' + serializeSvg(svgEl);
+    downloadBlob(new Blob([xml], { type: 'image/svg+xml;charset=utf-8' }), filename);
+  }
+  function exportChartPng(wrap, filename) {
+    var svgEl = wrap.querySelector('svg');
+    if (!svgEl) return;
+    var vb = svgEl.getAttribute('viewBox').split(/\s+/).map(Number);
+    var scale = 2.5;
+    var xml = serializeSvg(svgEl);
+    var svgUrl = URL.createObjectURL(new Blob([xml], { type: 'image/svg+xml;charset=utf-8' }));
+    var img = new Image();
+    img.onload = function(){
+      var canvas = document.createElement('canvas');
+      canvas.width = vb[2] * scale; canvas.height = vb[3] * scale;
+      var ctx = canvas.getContext('2d');
+      ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+      URL.revokeObjectURL(svgUrl);
+      canvas.toBlob(function(blob){ downloadBlob(blob, filename); }, 'image/png');
+    };
+    img.onerror = function(){ URL.revokeObjectURL(svgUrl); };
+    img.src = svgUrl;
+  }
+
   // ================= TABS =================
   var tabMapa = document.getElementById('tabMapa'), tabHistorico = document.getElementById('tabHistorico'), tabComparar = document.getElementById('tabComparar');
   var viewMapa = document.getElementById('viewMapa'), viewHistorico = document.getElementById('viewHistorico'), viewComparar = document.getElementById('viewComparar');
@@ -428,6 +493,9 @@
   // ================= HISTORICO =================
   function initHistorico(){
     var hState = { nivel: 'nacional', fuelIdx: 0, regionIdx: -1, comunaIdx: -1 };
+    var histRangoDesde = document.getElementById('histRangoDesde');
+    var histRangoHasta = document.getElementById('histRangoHasta');
+    var histRangoLabel = document.getElementById('histRangoLabel');
     var FUELES_CON_HISTORIA = DATA.fuelesConHistoriaOficial || [];
 
     var nivelRow = document.getElementById('nivelRow');
@@ -481,6 +549,12 @@
     histRegionSelect.addEventListener('change', function(e){ hState.regionIdx = Number(e.target.value); hState.comunaIdx = -1; updateHistComunaOptions(); renderHistorico(); });
     histComunaSelect.addEventListener('change', function(e){ hState.comunaIdx = Number(e.target.value); renderHistorico(); });
 
+    histRangoDesde.addEventListener('input', function(){ if (Number(histRangoDesde.value) > Number(histRangoHasta.value)) histRangoDesde.value = histRangoHasta.value; renderHistorico(); });
+    histRangoHasta.addEventListener('input', function(){ if (Number(histRangoHasta.value) < Number(histRangoDesde.value)) histRangoHasta.value = histRangoDesde.value; renderHistorico(); });
+
+    document.getElementById('histExportSvg').addEventListener('click', function(){ exportChartSvg(document.getElementById('histChartWrap'), 'evolucion_' + DATA.combustibles[hState.fuelIdx].toLowerCase().replace(/\s+/g, '_') + '.svg'); });
+    document.getElementById('histExportPng').addEventListener('click', function(){ exportChartPng(document.getElementById('histChartWrap'), 'evolucion_' + DATA.combustibles[hState.fuelIdx].toLowerCase().replace(/\s+/g, '_') + '.png'); });
+
     function getSerie(){
       var combustible = DATA.combustibles[hState.fuelIdx];
       if (hState.nivel === 'nacional') {
@@ -498,9 +572,15 @@
     }
 
     function fmtCLP(v){ return '$' + Math.round(v).toLocaleString('es-CL'); }
+    var MESES = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
     function fmtFecha(f){
-      if (f.length === 7) { var p = f.split('-'); var MESES = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic']; return MESES[parseInt(p[1], 10) - 1] + '-' + p[0]; }
+      if (f.length === 7) { var p = f.split('-'); return MESES[parseInt(p[1], 10) - 1] + '-' + p[0]; }
       var p2 = f.split('-'); return p2[2] + '/' + p2[1] + '/' + p2[0].slice(2);
+    }
+    function parseFecha(f){
+      var p = f.split('-');
+      if (f.length === 7) return Date.UTC(Number(p[0]), Number(p[1]) - 1, 15);
+      return Date.UTC(Number(p[0]), Number(p[1]) - 1, Number(p[2]));
     }
 
     function renderHistorico(){
@@ -524,49 +604,62 @@
 
       var wrap = document.getElementById('histChartWrap');
       var data = getSerie();
-      var serie = data.serie;
-      if (hState.nivel === 'comunal' && hState.comunaIdx < 0) { wrap.innerHTML = '<div class="hist-note" style="padding:30px 0;">Elige una comuna para ver su evolución.</div>'; return; }
-      if (!serie.length) { wrap.innerHTML = '<div class="hist-note" style="padding:30px 0;">Sin datos todavía para esta combinación.</div>'; return; }
+      var serieFull = data.serie;
+      if (hState.nivel === 'comunal' && hState.comunaIdx < 0) { wrap.innerHTML = '<div class="hist-note" style="padding:30px 0;">Elige una comuna para ver su evolución.</div>'; histRangoLabel.textContent = ''; return; }
+      if (!serieFull.length) { wrap.innerHTML = '<div class="hist-note" style="padding:30px 0;">Sin datos todavía para esta combinación.</div>'; histRangoLabel.textContent = ''; return; }
 
-      var W = 760, H = 320, padL = 46, padR = 14, padT = 16, padB = 26;
+      var tMinAll = parseFecha(serieFull[0][0]), tMaxAll = parseFecha(serieFull[serieFull.length - 1][0]);
+      var desdeFrac = Number(histRangoDesde.value) / 100, hastaFrac = Number(histRangoHasta.value) / 100;
+      var tMin = tMinAll + (tMaxAll - tMinAll) * desdeFrac;
+      var tMax = tMinAll + (tMaxAll - tMinAll) * hastaFrac;
+      if (tMax <= tMin) tMax = tMin + 86400000;
+      histRangoLabel.textContent = fmtFecha(new Date(tMin).toISOString().slice(0, 7)) + '  →  ' + fmtFecha(new Date(tMax).toISOString().slice(0, 7));
+
+      var serie = serieFull.filter(function(d){ var t = parseFecha(d[0]); return t >= tMin && t <= tMax; });
+      if (!serie.length) { wrap.innerHTML = '<div class="hist-note" style="padding:30px 0;">Sin datos en el rango de tiempo elegido.</div>'; return; }
+
+      var W = 700, H = 700, padL = 54, padR = 20, padT = 20, padB = 34;
       var innerW = W - padL - padR, innerH = H - padT - padB;
       var values = serie.map(function(d){ return d[1]; }).filter(function(v){ return v != null; });
       var maxY = Math.ceil(Math.max.apply(null, values) * 1.08 / 50) * 50;
       var minY = 0;
-      function xAt(i){ return padL + (serie.length > 1 ? (i / (serie.length - 1)) * innerW : innerW / 2); }
+      function xAt(t){ return padL + ((t - tMin) / (tMax - tMin)) * innerW; }
       function yAt(v){ return padT + innerH - ((v - minY) / (maxY - minY)) * innerH; }
 
       var s = [];
       s.push('<svg viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="Evolucion de precio">');
+      s.push(CHART_VARS);
+      s.push('<rect x="0" y="0" width="' + W + '" height="' + H + '" fill="var(--panel)"/>');
       s.push('<defs><linearGradient id="hgrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="var(--teal)" stop-opacity="0.25"/><stop offset="100%" stop-color="var(--teal)" stop-opacity="0"/></linearGradient></defs>');
-      var ySteps = 4;
+      var ySteps = 5;
       for (var si = 0; si <= ySteps; si++) {
         var v = (maxY / ySteps) * si, y = yAt(v);
         s.push('<line x1="' + padL + '" x2="' + (W - padR) + '" y1="' + y + '" y2="' + y + '" stroke="var(--border)" stroke-width="1"/>');
         s.push('<text x="' + (padL - 8) + '" y="' + (y + 3) + '" text-anchor="end" font-size="10" fill="var(--ink-faint)">' + Math.round(v) + '</text>');
       }
-      // marca el primer punto "diario" (de este monitor) si hay mezcla con historia mensual
-      var firstDailyIdx = -1;
-      for (var k = 0; k < serie.length; k++) { if (serie[k][0].length === 10) { firstDailyIdx = k; break; } }
-      if (firstDailyIdx > 0) {
-        var mx = xAt(firstDailyIdx);
+      // marca el primer punto "diario" (de este monitor) si hay mezcla con historia mensual, dentro del rango visible
+      var firstDaily = null;
+      for (var k = 0; k < serie.length; k++) { if (serie[k][0].length === 10) { firstDaily = serie[k][0]; break; } }
+      if (firstDaily) {
+        var mx = xAt(parseFecha(firstDaily));
         s.push('<line x1="' + mx + '" x2="' + mx + '" y1="' + padT + '" y2="' + (H - padB) + '" stroke="var(--orange)" stroke-width="1" stroke-dasharray="3 3" opacity="0.6"/>');
         s.push('<text x="' + mx + '" y="' + (padT + 11) + '" text-anchor="middle" font-size="9.5" fill="var(--orange)" font-weight="700">INICIO MONITOREO DIARIO</text>');
       }
-      // eje x: unas pocas etiquetas repartidas
-      var nLabels = Math.min(7, serie.length);
-      for (var li = 0; li < nLabels; li++) {
-        var pointIdx = Math.round((li / Math.max(1, nLabels - 1)) * (serie.length - 1));
-        var lx = xAt(pointIdx);
-        s.push('<text x="' + lx + '" y="' + (H - 8) + '" text-anchor="middle" font-size="9.5" fill="var(--ink-faint)">' + fmtFecha(serie[pointIdx][0]) + '</text>');
+      // eje x: unas pocas etiquetas repartidas en el tiempo (no por indice)
+      var nLabels = 6;
+      for (var li = 0; li <= nLabels; li++) {
+        var t = tMin + (tMax - tMin) * (li / nLabels);
+        var nearest = serie.reduce(function(best, d){ return Math.abs(parseFecha(d[0]) - t) < Math.abs(parseFecha(best[0]) - t) ? d : best; }, serie[0]);
+        s.push('<text x="' + xAt(t) + '" y="' + (H - 10) + '" text-anchor="middle" font-size="9.5" fill="var(--ink-faint)">' + fmtFecha(nearest[0]) + '</text>');
       }
-      var pts = serie.map(function(d, i){ return xAt(i) + ',' + yAt(d[1]); }).join(' ');
-      var areaPts = pts + ' ' + xAt(serie.length - 1) + ',' + yAt(0) + ' ' + xAt(0) + ',' + yAt(0);
+      var pts = serie.map(function(d){ return xAt(parseFecha(d[0])) + ',' + yAt(d[1]); }).join(' ');
+      var areaPts = pts + ' ' + xAt(parseFecha(serie[serie.length - 1][0])) + ',' + yAt(0) + ' ' + xAt(parseFecha(serie[0][0])) + ',' + yAt(0);
       s.push('<polygon points="' + areaPts + '" fill="url(#hgrad)"/>');
       s.push('<polyline points="' + pts + '" fill="none" stroke="var(--teal)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>');
       var last = serie[serie.length - 1];
-      s.push('<circle cx="' + xAt(serie.length - 1) + '" cy="' + yAt(last[1]) + '" r="3.4" fill="var(--teal)"/>');
-      s.push('<text x="' + (xAt(serie.length - 1) - 6) + '" y="' + (yAt(last[1]) - 10) + '" text-anchor="end" font-weight="800" font-size="13" fill="var(--teal)" font-family="Archivo,sans-serif">' + fmtCLP(last[1]) + '</text>');
+      var lastX = xAt(parseFecha(last[0]));
+      s.push('<circle cx="' + lastX + '" cy="' + yAt(last[1]) + '" r="3.4" fill="var(--teal)"/>');
+      s.push('<text x="' + (lastX - 6) + '" y="' + (yAt(last[1]) - 10) + '" text-anchor="end" font-weight="800" font-size="13" fill="var(--teal)" font-family="Archivo,sans-serif">' + fmtCLP(last[1]) + '</text>');
       s.push('<rect id="histHit" x="' + padL + '" y="' + padT + '" width="' + innerW + '" height="' + innerH + '" fill="transparent" style="cursor:crosshair"/>');
       s.push('</svg><div class="tooltip" id="histTip"></div>');
       wrap.innerHTML = s.join('');
@@ -578,11 +671,10 @@
         var rect = svgEl.getBoundingClientRect();
         var scaleX = W / rect.width;
         var mx2 = (ev.clientX - rect.left) * scaleX;
-        var i = Math.round(((mx2 - padL) / innerW) * (serie.length - 1));
-        i = Math.max(0, Math.min(serie.length - 1, i));
-        var d = serie[i];
+        var t = tMin + ((mx2 - padL) / innerW) * (tMax - tMin);
+        var d = serie.reduce(function(best, p){ return Math.abs(parseFecha(p[0]) - t) < Math.abs(parseFecha(best[0]) - t) ? p : best; }, serie[0]);
         var wrapRect2 = wrap.getBoundingClientRect();
-        var px2 = (xAt(i) / W) * wrapRect2.width, py2 = (yAt(d[1]) / H) * wrapRect2.height;
+        var px2 = (xAt(parseFecha(d[0])) / W) * wrapRect2.width, py2 = (yAt(d[1]) / H) * wrapRect2.height;
         histTip.style.left = px2 + 'px'; histTip.style.top = py2 + 'px'; histTip.style.opacity = 1;
         histTip.innerHTML = '<b>' + fmtFecha(d[0]) + '</b> &middot; ' + fmtCLP(d[1]);
       });
@@ -592,7 +684,7 @@
     renderHistorico();
   }
 
-  // ================= COMPARAR (estilo Our World in Data) =================
+  // ================= COMPARAR =================
   function initComparar(){
     var PALETTE = ['#4FE3D2','#FF8A4C','#9B8CFF','#FFD166','#5CC8FF','#FF6B9D','#8BD17C','#C77DFF','#FFB454','#6EE7E7','#B0C4FF','#FF9EC4','#7FE0A0','#F2A6FF'];
     var cState = { modo: 'combustibles', fuelFijo: 0, active: {} };
@@ -685,6 +777,9 @@
     rDesde.addEventListener('input', function(){ if (Number(rDesde.value) > Number(rHasta.value)) rDesde.value = rHasta.value; renderChart(); });
     rHasta.addEventListener('input', function(){ if (Number(rHasta.value) < Number(rDesde.value)) rHasta.value = rDesde.value; renderChart(); });
 
+    document.getElementById('cmpExportSvg').addEventListener('click', function(){ exportChartSvg(wrap, 'comparacion_combustibles.svg'); });
+    document.getElementById('cmpExportPng').addEventListener('click', function(){ exportChartPng(wrap, 'comparacion_combustibles.png'); });
+
     function renderChart(){
       var ents = entidades();
       var colorOf = {}; ents.forEach(function(e, i){ colorOf[e.key] = PALETTE[i % PALETTE.length]; });
@@ -716,7 +811,7 @@
 
       if (!series.length) { wrap.innerHTML = '<div class="hist-note" style="padding:30px 0;">Sin datos en el rango de tiempo elegido.</div>'; return; }
 
-      var W = 820, H = 420, padL = 46, padR = 148, padT = 16, padB = 28;
+      var W = 760, H = 760, padL = 50, padR = 190, padT = 20, padB = 34;
       var innerW = W - padL - padR, innerH = H - padT - padB;
       var allVals = [];
       series.forEach(function(s){ s.pts.forEach(function(p){ allVals.push(p[1]); }); });
@@ -740,6 +835,8 @@
 
       var s = [];
       s.push('<svg viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="Comparacion de precios de combustibles">');
+      s.push(CHART_VARS);
+      s.push('<rect x="0" y="0" width="' + W + '" height="' + H + '" fill="var(--panel)"/>');
       var ySteps = 5;
       for (var si = 0; si <= ySteps; si++) {
         var v = (maxY / ySteps) * si, y = yAt(v);
