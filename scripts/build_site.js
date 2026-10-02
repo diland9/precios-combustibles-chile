@@ -70,10 +70,80 @@ const stationsOut = stationList.map(e => {
   return [e.id, marcaIdx[e.marca], regionIdx[e.region], comunaIdx[e.comuna], e.direccion, Math.round(x * 10) / 10, Math.round(y * 10) / 10, p];
 });
 
+// ---------- historico: oficial CNE (1994-2026, mensual, 5 combustibles) + diario propio ----------
+const HIST_FUEL_FILE = { 'Gasolina 93': 'gasolina_93', 'Gasolina 95': 'gasolina_95', 'Gasolina 97': 'gasolina_97', 'Diésel': 'diesel', 'Kerosene': 'kerosene' };
+// nombre corto (como viene en la planilla historica de la CNE) -> nombre tal como lo entrega
+// la API en vivo de bencinaenlinea (son organismos/fuentes distintas, usan redacciones distintas)
+const REGION_ALIAS = {
+  'Antofagasta': 'Antofagasta', 'Araucanía': 'De la Araucanía', 'Arica y Parinacota': 'Arica y Parinacota',
+  'Atacama': 'Atacama', 'Aysén': 'Aysén del Gral. Carlos Ibáñez del Campo', 'Biobío': 'Del Biobío',
+  'Coquimbo': 'Coquimbo', 'Los Lagos': 'De los Lagos', 'Los Ríos': 'De los Ríos',
+  'Magallanes': 'Magallanes y de la Antártica Chilena', 'Maule': 'Del Maule', 'Metropolitana': 'Metropolitana de Santiago',
+  "O'Higgins": 'Del Libertador Gral. Bernardo O’Higgins', 'Tarapacá': 'Tarapacá', 'Valparaíso': 'Valparaíso', 'Ñuble': 'Ñuble'
+};
+const HIST_DIR = path.join(__dirname, '..', 'data', 'historico_oficial_regional');
+
+function readSimpleCsv(filePath) {
+  if (!fs.existsSync(filePath)) return [];
+  const t = fs.readFileSync(filePath, 'utf8').split(/\r?\n/).filter(l => l.length);
+  const h = parseCsvLine(t[0]);
+  return t.slice(1).map(l => { const p = parseCsvLine(l); const o = {}; h.forEach((c, i) => o[c] = p[i]); return o; });
+}
+
+// Por combustible, todas las regiones comparten la MISMA grilla de fechas (mensual 1994+,
+// luego diaria desde que arranco el monitor) -> se guarda una sola vez por combustible
+// {fechas:[...], nacional:[valores], porRegion:{region:[valores]}} en vez de repetir cada
+// fecha 16 veces (ahorra ~650KB).
+const histNacional = {}, histRegional = {};
+Object.entries(HIST_FUEL_FILE).forEach(([combustible, file]) => {
+  const rows = readSimpleCsv(path.join(HIST_DIR, file + '.csv'));
+  const porMes = {}; // fecha -> {regionLive: precio}
+  rows.forEach(r => {
+    const liveRegion = REGION_ALIAS[r.region];
+    if (!liveRegion) return;
+    porMes[r.fecha] = porMes[r.fecha] || {};
+    porMes[r.fecha][liveRegion] = parseFloat(r.precio_clp_litro);
+  });
+  histNacional[combustible] = Object.entries(porMes).sort(([a], [b]) => a.localeCompare(b)).map(([f, vals]) => {
+    const arr = Object.values(vals);
+    return [f, Math.round((arr.reduce((a, b) => a + b, 0) / arr.length) * 100) / 100];
+  });
+  histRegional[combustible] = {};
+  Object.keys(REGION_ALIAS).forEach(shortName => {
+    const liveRegion = REGION_ALIAS[shortName];
+    const serie = Object.entries(porMes).filter(([, vals]) => vals[liveRegion] != null).sort(([a], [b]) => a.localeCompare(b)).map(([f, vals]) => [f, vals[liveRegion]]);
+    if (serie.length) histRegional[combustible][liveRegion] = serie;
+  });
+});
+
+const nacionalDiario = readSimpleCsv(path.join(__dirname, '..', 'data', 'aggregates', 'nacional_diario.csv'));
+FUEL_ORDER.forEach(combustible => {
+  const rows = nacionalDiario.filter(r => r.combustible === combustible);
+  if (!rows.length) return;
+  histNacional[combustible] = (histNacional[combustible] || []).concat(rows.map(r => [r.fecha, parseFloat(r.precio_promedio)]));
+});
+
+const regionalDiario = readSimpleCsv(path.join(__dirname, '..', 'data', 'aggregates', 'regional_diario.csv'));
+FUEL_ORDER.forEach(combustible => {
+  regiones.forEach(region => {
+    const rows = regionalDiario.filter(r => r.combustible === combustible && r.region === region);
+    if (!rows.length) return;
+    histRegional[combustible] = histRegional[combustible] || {};
+    histRegional[combustible][region] = (histRegional[combustible][region] || []).concat(rows.map(r => [r.fecha, parseFloat(r.precio_promedio)]));
+  });
+});
+
+// comunal: solo lo que el propio monitor ha ido juntando (no hay respaldo historico oficial a nivel comunal)
+const comunalDiarioRows = readSimpleCsv(path.join(__dirname, '..', 'data', 'aggregates', 'comunal_diario.csv'))
+  .map(r => [r.fecha, regionIdx[r.region], comunaIdx[r.comuna], r.combustible, parseFloat(r.precio_promedio)])
+  .filter(r => r[1] !== undefined && r[2] !== undefined);
+
 const bundle = {
   fecha: lines[1] ? parseCsvLine(lines[1])[idx.fecha] : null,
   canvasWidth: Math.round(canvasWidth), canvasHeight: Math.round(canvasHeight),
-  regionPaths, stations: stationsOut, regiones, comunas, comunasPorRegion, marcas, combustibles: FUEL_ORDER
+  regionPaths, stations: stationsOut, regiones, comunas, comunasPorRegion, marcas, combustibles: FUEL_ORDER,
+  histNacional, histRegional, comunalDiarioRows,
+  fuelesConHistoriaOficial: Object.keys(HIST_FUEL_FILE)
 };
 
 const templatePath = path.join(__dirname, 'site_template.html');

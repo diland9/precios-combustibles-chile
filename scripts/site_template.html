@@ -33,6 +33,19 @@
   .layout{ display:grid; grid-template-columns: 340px 1fr; gap:16px; align-items:start; }
   @media (max-width:860px){ .layout{ grid-template-columns:1fr; } }
 
+  .tabs{ display:flex; gap:8px; margin-bottom:16px; }
+  .tab-btn{
+    font-family:"Archivo",sans-serif; font-weight:700; font-size:13px; cursor:pointer;
+    background:var(--panel); border:1px solid var(--border); color:var(--ink-muted);
+    padding:9px 16px; border-radius:9px;
+  }
+  .tab-btn.active{ background:var(--teal-dim); border-color:var(--teal); color:var(--teal); }
+
+  .panel-head{ border-top:2px solid var(--teal); padding-top:8px; margin-bottom:2px; }
+  .panel-eyebrow{ font-family:"Archivo",sans-serif; font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:var(--ink-muted); }
+
+  .hist-note{ font-size:12px; color:var(--ink-muted); line-height:1.6; }
+
   .panel{ background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:16px; }
   .panel + .panel{ margin-top:14px; }
 
@@ -96,7 +109,12 @@
     <p class="subtitle" id="subtitleText">Cargando...</p>
   </header>
 
-  <div class="layout">
+  <div class="tabs">
+    <button class="tab-btn active" id="tabMapa">Mapa de hoy</button>
+    <button class="tab-btn" id="tabHistorico">Evolución histórica</button>
+  </div>
+
+  <div class="layout" id="viewMapa">
     <div>
       <div class="panel">
         <label>Buscar (dirección, comuna, marca)</label>
@@ -136,10 +154,42 @@
     </div>
   </div>
 
+  <div class="layout" id="viewHistorico" style="display:none;">
+    <div>
+      <div class="panel">
+        <label style="margin-top:0;">Nivel</label>
+        <div class="fuel-row" id="nivelRow">
+          <div class="fuel-chip active" data-nivel="nacional">Nacional</div>
+          <div class="fuel-chip" data-nivel="regional">Regional</div>
+          <div class="fuel-chip" data-nivel="comunal">Comunal</div>
+        </div>
+
+        <label>Combustible</label>
+        <div class="fuel-row" id="histFuelRow"></div>
+
+        <label id="histRegionLabel" style="display:none;">Región</label>
+        <select id="histRegionSelect" style="display:none;"></select>
+
+        <label id="histComunaLabel" style="display:none;">Comuna</label>
+        <select id="histComunaSelect" style="display:none;"></select>
+      </div>
+      <div class="panel" id="histNoteBox" style="display:none;"></div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head"><div class="panel-eyebrow" id="histEyebrow">Evolución</div></div>
+      <h2 id="histTitle" style="font-family:'Archivo',sans-serif; font-weight:800; font-size:19px; margin:3px 0 12px;">—</h2>
+      <div class="chart-wrap" id="histChartWrap"></div>
+    </div>
+  </div>
+
   <footer>
     Datos: snapshot diario de <a href="https://github.com/diland9/precios-combustibles-chile" target="_blank" rel="noopener">precios-combustibles-chile</a>,
     capturado desde la API pública de bencinaenlinea.cl (CNE/SEC). Fecha del snapshot: <span id="fechaSnapshot"></span>.
-    Precios fuera de rango razonable ya fueron descartados antes de llegar aquí.
+    Precios fuera de rango razonable ya fueron descartados antes de llegar aquí. La evolución histórica nacional y regional
+    combina la serie oficial mensual de la CNE (1994 en adelante, 5 combustibles) con el monitoreo diario propio desde
+    que este proyecto arrancó; la comunal solo tiene el monitoreo diario propio (no existe respaldo histórico oficial a
+    ese nivel de detalle).
   </footer>
 </div>
 
@@ -314,5 +364,186 @@
   }
 
   render();
+
+  // ================= TABS =================
+  var tabMapa = document.getElementById('tabMapa'), tabHistorico = document.getElementById('tabHistorico');
+  var viewMapa = document.getElementById('viewMapa'), viewHistorico = document.getElementById('viewHistorico');
+  var historicoBuilt = false;
+  tabMapa.addEventListener('click', function(){
+    tabMapa.classList.add('active'); tabHistorico.classList.remove('active');
+    viewMapa.style.display = ''; viewHistorico.style.display = 'none';
+  });
+  tabHistorico.addEventListener('click', function(){
+    tabHistorico.classList.add('active'); tabMapa.classList.remove('active');
+    viewMapa.style.display = 'none'; viewHistorico.style.display = '';
+    if (!historicoBuilt) { historicoBuilt = true; initHistorico(); }
+  });
+
+  // ================= HISTORICO =================
+  function initHistorico(){
+    var hState = { nivel: 'nacional', fuelIdx: 0, regionIdx: -1, comunaIdx: -1 };
+    var FUELES_CON_HISTORIA = DATA.fuelesConHistoriaOficial || [];
+
+    var nivelRow = document.getElementById('nivelRow');
+    nivelRow.querySelectorAll('.fuel-chip').forEach(function(el){
+      el.addEventListener('click', function(){
+        hState.nivel = el.getAttribute('data-nivel');
+        nivelRow.querySelectorAll('.fuel-chip').forEach(function(e2){ e2.classList.toggle('active', e2 === el); });
+        hState.regionIdx = hState.nivel === 'nacional' ? -1 : (hState.regionIdx >= 0 ? hState.regionIdx : 0);
+        hState.comunaIdx = hState.nivel === 'comunal' ? (hState.comunaIdx >= 0 ? hState.comunaIdx : -1) : -1;
+        syncHistControls();
+        renderHistorico();
+      });
+    });
+
+    var histFuelRow = document.getElementById('histFuelRow');
+    DATA.combustibles.forEach(function(c, i){
+      var chip = document.createElement('div');
+      chip.className = 'fuel-chip' + (i === 0 ? ' active' : '');
+      chip.textContent = c;
+      chip.addEventListener('click', function(){
+        hState.fuelIdx = i;
+        histFuelRow.querySelectorAll('.fuel-chip').forEach(function(e2){ e2.classList.toggle('active', e2 === chip); });
+        renderHistorico();
+      });
+      histFuelRow.appendChild(chip);
+    });
+
+    var histRegionSelect = document.getElementById('histRegionSelect');
+    DATA.regiones.forEach(function(r, i){ var o = document.createElement('option'); o.value = i; o.textContent = r; histRegionSelect.appendChild(o); });
+    var histComunaSelect = document.getElementById('histComunaSelect');
+
+    function updateHistComunaOptions(){
+      histComunaSelect.innerHTML = '';
+      var list = hState.regionIdx >= 0 ? (DATA.comunasPorRegion[DATA.regiones[hState.regionIdx]] || []) : [];
+      list.forEach(function(ci){ var o = document.createElement('option'); o.value = ci; o.textContent = DATA.comunas[ci]; histComunaSelect.appendChild(o); });
+      if (list.length) hState.comunaIdx = Number(histComunaSelect.value);
+    }
+
+    function syncHistControls(){
+      var showRegion = hState.nivel !== 'nacional';
+      var showComuna = hState.nivel === 'comunal';
+      document.getElementById('histRegionLabel').style.display = showRegion ? '' : 'none';
+      histRegionSelect.style.display = showRegion ? '' : 'none';
+      document.getElementById('histComunaLabel').style.display = showComuna ? '' : 'none';
+      histComunaSelect.style.display = showComuna ? '' : 'none';
+      if (showRegion) { histRegionSelect.value = hState.regionIdx >= 0 ? hState.regionIdx : 0; hState.regionIdx = Number(histRegionSelect.value); }
+      if (showComuna) updateHistComunaOptions();
+    }
+    syncHistControls();
+
+    histRegionSelect.addEventListener('change', function(e){ hState.regionIdx = Number(e.target.value); hState.comunaIdx = -1; updateHistComunaOptions(); renderHistorico(); });
+    histComunaSelect.addEventListener('change', function(e){ hState.comunaIdx = Number(e.target.value); renderHistorico(); });
+
+    function getSerie(){
+      var combustible = DATA.combustibles[hState.fuelIdx];
+      if (hState.nivel === 'nacional') {
+        return { serie: DATA.histNacional[combustible] || [], tieneHistoria: FUELES_CON_HISTORIA.indexOf(combustible) !== -1 };
+      }
+      if (hState.nivel === 'regional') {
+        var region = DATA.regiones[hState.regionIdx];
+        var s = (DATA.histRegional[combustible] && DATA.histRegional[combustible][region]) || [];
+        return { serie: s, tieneHistoria: FUELES_CON_HISTORIA.indexOf(combustible) !== -1 };
+      }
+      // comunal
+      var rows = DATA.comunalDiarioRows.filter(function(r){ return r[1] === hState.regionIdx && r[2] === hState.comunaIdx && r[3] === combustible; });
+      rows.sort(function(a, b){ return a[0] < b[0] ? -1 : 1; });
+      return { serie: rows.map(function(r){ return [r[0], r[4]]; }), tieneHistoria: false };
+    }
+
+    function fmtCLP(v){ return '$' + Math.round(v).toLocaleString('es-CL'); }
+    function fmtFecha(f){
+      if (f.length === 7) { var p = f.split('-'); var MESES = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic']; return MESES[parseInt(p[1], 10) - 1] + '-' + p[0]; }
+      var p2 = f.split('-'); return p2[2] + '/' + p2[1] + '/' + p2[0].slice(2);
+    }
+
+    function renderHistorico(){
+      var combustible = DATA.combustibles[hState.fuelIdx];
+      var titleParts = [combustible];
+      if (hState.nivel === 'regional') titleParts.push(DATA.regiones[hState.regionIdx]);
+      if (hState.nivel === 'comunal') titleParts.push(hState.comunaIdx >= 0 ? DATA.comunas[hState.comunaIdx] + ', ' + DATA.regiones[hState.regionIdx] : '(elige una comuna)');
+      document.getElementById('histTitle').textContent = titleParts.join(' — ');
+      document.getElementById('histEyebrow').textContent = hState.nivel.charAt(0).toUpperCase() + hState.nivel.slice(1) + ' · evolución del precio';
+
+      var noteBox = document.getElementById('histNoteBox');
+      if (hState.nivel === 'comunal') {
+        noteBox.style.display = '';
+        noteBox.innerHTML = '<div class="hist-note">Nivel comunal: solo se muestra lo que este monitor ha ido capturando día a día desde que arrancó — no existe una serie histórica oficial a nivel de comuna. Para historia más larga, usa Nacional o Regional (esos sí combinan con la serie oficial de la CNE desde 1994 para 93/95/97/Diésel/Kerosene).</div>';
+      } else if (FUELES_CON_HISTORIA.indexOf(combustible) === -1) {
+        noteBox.style.display = '';
+        noteBox.innerHTML = '<div class="hist-note">' + combustible + ' no tiene serie histórica oficial de la CNE (esa planilla solo cubre Gasolina 93/95/97, Diésel y Kerosene) — acá solo se ve el monitoreo diario propio desde que arrancó este proyecto.</div>';
+      } else {
+        noteBox.style.display = 'none';
+      }
+
+      var wrap = document.getElementById('histChartWrap');
+      var data = getSerie();
+      var serie = data.serie;
+      if (hState.nivel === 'comunal' && hState.comunaIdx < 0) { wrap.innerHTML = '<div class="hist-note" style="padding:30px 0;">Elige una comuna para ver su evolución.</div>'; return; }
+      if (!serie.length) { wrap.innerHTML = '<div class="hist-note" style="padding:30px 0;">Sin datos todavía para esta combinación.</div>'; return; }
+
+      var W = 760, H = 320, padL = 46, padR = 14, padT = 16, padB = 26;
+      var innerW = W - padL - padR, innerH = H - padT - padB;
+      var values = serie.map(function(d){ return d[1]; }).filter(function(v){ return v != null; });
+      var maxY = Math.ceil(Math.max.apply(null, values) * 1.08 / 50) * 50;
+      var minY = 0;
+      function xAt(i){ return padL + (serie.length > 1 ? (i / (serie.length - 1)) * innerW : innerW / 2); }
+      function yAt(v){ return padT + innerH - ((v - minY) / (maxY - minY)) * innerH; }
+
+      var s = [];
+      s.push('<svg viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="Evolucion de precio">');
+      s.push('<defs><linearGradient id="hgrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="var(--teal)" stop-opacity="0.25"/><stop offset="100%" stop-color="var(--teal)" stop-opacity="0"/></linearGradient></defs>');
+      var ySteps = 4;
+      for (var si = 0; si <= ySteps; si++) {
+        var v = (maxY / ySteps) * si, y = yAt(v);
+        s.push('<line x1="' + padL + '" x2="' + (W - padR) + '" y1="' + y + '" y2="' + y + '" stroke="var(--border)" stroke-width="1"/>');
+        s.push('<text x="' + (padL - 8) + '" y="' + (y + 3) + '" text-anchor="end" font-size="10" fill="var(--ink-faint)">' + Math.round(v) + '</text>');
+      }
+      // marca el primer punto "diario" (de este monitor) si hay mezcla con historia mensual
+      var firstDailyIdx = -1;
+      for (var k = 0; k < serie.length; k++) { if (serie[k][0].length === 10) { firstDailyIdx = k; break; } }
+      if (firstDailyIdx > 0) {
+        var mx = xAt(firstDailyIdx);
+        s.push('<line x1="' + mx + '" x2="' + mx + '" y1="' + padT + '" y2="' + (H - padB) + '" stroke="var(--orange)" stroke-width="1" stroke-dasharray="3 3" opacity="0.6"/>');
+        s.push('<text x="' + mx + '" y="' + (padT + 11) + '" text-anchor="middle" font-size="9.5" fill="var(--orange)" font-weight="700">INICIO MONITOREO DIARIO</text>');
+      }
+      // eje x: unas pocas etiquetas repartidas
+      var nLabels = Math.min(7, serie.length);
+      for (var li = 0; li < nLabels; li++) {
+        var pointIdx = Math.round((li / Math.max(1, nLabels - 1)) * (serie.length - 1));
+        var lx = xAt(pointIdx);
+        s.push('<text x="' + lx + '" y="' + (H - 8) + '" text-anchor="middle" font-size="9.5" fill="var(--ink-faint)">' + fmtFecha(serie[pointIdx][0]) + '</text>');
+      }
+      var pts = serie.map(function(d, i){ return xAt(i) + ',' + yAt(d[1]); }).join(' ');
+      var areaPts = pts + ' ' + xAt(serie.length - 1) + ',' + yAt(0) + ' ' + xAt(0) + ',' + yAt(0);
+      s.push('<polygon points="' + areaPts + '" fill="url(#hgrad)"/>');
+      s.push('<polyline points="' + pts + '" fill="none" stroke="var(--teal)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>');
+      var last = serie[serie.length - 1];
+      s.push('<circle cx="' + xAt(serie.length - 1) + '" cy="' + yAt(last[1]) + '" r="3.4" fill="var(--teal)"/>');
+      s.push('<text x="' + (xAt(serie.length - 1) - 6) + '" y="' + (yAt(last[1]) - 10) + '" text-anchor="end" font-weight="800" font-size="13" fill="var(--teal)" font-family="Archivo,sans-serif">' + fmtCLP(last[1]) + '</text>');
+      s.push('<rect id="histHit" x="' + padL + '" y="' + padT + '" width="' + innerW + '" height="' + innerH + '" fill="transparent" style="cursor:crosshair"/>');
+      s.push('</svg><div class="tooltip" id="histTip"></div>');
+      wrap.innerHTML = s.join('');
+
+      var svgEl = wrap.querySelector('svg');
+      var histTip = document.getElementById('histTip');
+      var hitRect = document.getElementById('histHit');
+      hitRect.addEventListener('mousemove', function(ev){
+        var rect = svgEl.getBoundingClientRect();
+        var scaleX = W / rect.width;
+        var mx2 = (ev.clientX - rect.left) * scaleX;
+        var i = Math.round(((mx2 - padL) / innerW) * (serie.length - 1));
+        i = Math.max(0, Math.min(serie.length - 1, i));
+        var d = serie[i];
+        var wrapRect2 = wrap.getBoundingClientRect();
+        var px2 = (xAt(i) / W) * wrapRect2.width, py2 = (yAt(d[1]) / H) * wrapRect2.height;
+        histTip.style.left = px2 + 'px'; histTip.style.top = py2 + 'px'; histTip.style.opacity = 1;
+        histTip.innerHTML = '<b>' + fmtFecha(d[0]) + '</b> &middot; ' + fmtCLP(d[1]);
+      });
+      hitRect.addEventListener('mouseleave', function(){ histTip.style.opacity = 0; });
+    }
+
+    renderHistorico();
+  }
 })();
 </script>
