@@ -7509,3 +7509,1505 @@ fecha,region,comuna,combustible,precio_promedio,precio_min,precio_max,n_registro
 2026-10-02,Ñuble,San Nicolás,Gasolina 95,1550,1550,1550,1
 2026-10-02,Ñuble,San Nicolás,Kerosene,1327,1327,1327,1
 2026-10-02,Ñuble,San Nicolás,Diésel,1472,1472,1472,1
+2026-10-03,Tarapacá,Alto Hospicio,GLP,819,819,819,1
+2026-10-03,Tarapacá,Iquique,Gasolina 93,1576.24,1533,1586,21
+2026-10-03,Tarapacá,Iquique,Gasolina 97,1631.71,1590,1643,21
+2026-10-03,Tarapacá,Iquique,Diésel,1486.41,1395,1508,22
+2026-10-03,Tarapacá,Iquique,Gasolina 95,1601.24,1558,1611,21
+2026-10-03,Tarapacá,Alto Hospicio,Gasolina 93,1574.2,1531,1585,5
+2026-10-03,Tarapacá,Alto Hospicio,Gasolina 97,1632.4,1591,1643,5
+2026-10-03,Tarapacá,Alto Hospicio,Diésel,1468.86,1320,1510,7
+2026-10-03,Tarapacá,Alto Hospicio,Gasolina 95,1600.2,1557,1611,5
+2026-10-03,Tarapacá,Alto Hospicio,Kerosene,1369.5,1228,1511,2
+2026-10-03,Tarapacá,Pica,Gasolina 93,1602,1602,1602,1
+2026-10-03,Tarapacá,Pica,Gasolina 97,1649,1649,1649,1
+2026-10-03,Tarapacá,Pica,Diésel,1554,1554,1554,1
+2026-10-03,Tarapacá,Pica,Gasolina 95,1628,1628,1628,1
+2026-10-03,Tarapacá,Pozo Almonte,Gasolina 93,1599,1599,1599,2
+2026-10-03,Tarapacá,Pozo Almonte,Gasolina 97,1646,1646,1646,2
+2026-10-03,Tarapacá,Pozo Almonte,Diésel,1552,1552,1552,3
+2026-10-03,Tarapacá,Pozo Almonte,Gasolina 95,1625,1625,1625,2
+2026-10-03,Antofagasta,Antofagasta,GLP,728,728,728,1
+2026-10-03,Antofagasta,Antofagasta,Gasolina 93,1601.1,1551,1608,31
+2026-10-03,Antofagasta,Antofagasta,Gasolina 97,1662.06,1614,1670,31
+2026-10-03,Antofagasta,Antofagasta,Diésel,1550.58,1375,1567,31
+2026-10-03,Antofagasta,Antofagasta,Kerosene,1494.67,1494,1495,3
+2026-10-03,Antofagasta,Antofagasta,Gasolina 95,1634.1,1585,1641,31
+2026-10-03,Antofagasta,Taltal,Gasolina 93,1598.33,1594,1601,3
+2026-10-03,Antofagasta,Taltal,Gasolina 97,1658,1658,1658,3
+2026-10-03,Antofagasta,Taltal,Diésel,1567.67,1566,1571,3
+2026-10-03,Antofagasta,Taltal,Kerosene,1439,1439,1439,1
+2026-10-03,Antofagasta,Taltal,Gasolina 95,1628.33,1625,1630,3
+2026-10-03,Antofagasta,Calama,Gasolina 93,1612.36,1599,1614,11
+2026-10-03,Antofagasta,Calama,Gasolina 97,1665.55,1652,1667,11
+2026-10-03,Antofagasta,Calama,Diésel,1573.45,1560,1575,11
+2026-10-03,Antofagasta,Calama,Kerosene,1493.67,1480,1501,3
+2026-10-03,Antofagasta,Calama,Gasolina 95,1638.55,1625,1640,11
+2026-10-03,Antofagasta,San Pedro de Atacama,Gasolina 93,1615,1615,1615,1
+2026-10-03,Antofagasta,San Pedro de Atacama,Gasolina 97,1669,1669,1669,1
+2026-10-03,Antofagasta,San Pedro de Atacama,Diésel,1582,1582,1582,1
+2026-10-03,Antofagasta,San Pedro de Atacama,Kerosene,1495,1495,1495,1
+2026-10-03,Antofagasta,San Pedro de Atacama,Gasolina 95,1642,1642,1642,1
+2026-10-03,Antofagasta,Tocopilla,Gasolina 93,1606,1606,1606,3
+2026-10-03,Antofagasta,Tocopilla,Gasolina 97,1669,1669,1669,3
+2026-10-03,Antofagasta,Tocopilla,Diésel,1568,1568,1568,3
+2026-10-03,Antofagasta,Tocopilla,Kerosene,1532,1532,1532,1
+2026-10-03,Antofagasta,Tocopilla,Gasolina 95,1637,1637,1637,3
+2026-10-03,Antofagasta,María Elena,Gasolina 93,1608,1608,1608,1
+2026-10-03,Antofagasta,María Elena,Gasolina 97,1671,1671,1671,1
+2026-10-03,Antofagasta,María Elena,Diésel,1570,1570,1570,1
+2026-10-03,Antofagasta,María Elena,Gasolina 95,1639,1639,1639,1
+2026-10-03,Antofagasta,Mejillones,Gasolina 93,1543.5,1522,1565,2
+2026-10-03,Antofagasta,Mejillones,Gasolina 97,1598,1578,1618,2
+2026-10-03,Antofagasta,Mejillones,Diésel,1374,1280,1468,2
+2026-10-03,Antofagasta,Mejillones,Gasolina 95,1575,1554,1596,2
+2026-10-03,Atacama,Copiapó,GLP,744,744,744,1
+2026-10-03,Atacama,Copiapó,Gasolina 93,1586.7,1571,1589,20
+2026-10-03,Atacama,Copiapó,Gasolina 97,1653.1,1636,1663,20
+2026-10-03,Atacama,Copiapó,Diésel,1558.6,1541,1568,20
+2026-10-03,Atacama,Copiapó,Gasolina 95,1619.6,1602,1623,20
+2026-10-03,Atacama,Copiapó,Kerosene,1391.67,1391,1393,3
+2026-10-03,Atacama,Caldera,Gasolina 93,1592,1592,1592,1
+2026-10-03,Atacama,Caldera,Gasolina 97,1661,1661,1661,2
+2026-10-03,Atacama,Caldera,Diésel,1564,1564,1564,2
+2026-10-03,Atacama,Caldera,Gasolina 95,1627,1627,1627,2
+2026-10-03,Atacama,Tierra Amarilla,Gasolina 93,1587,1587,1587,1
+2026-10-03,Atacama,Tierra Amarilla,Gasolina 97,1654,1654,1654,1
+2026-10-03,Atacama,Tierra Amarilla,Diésel,1556,1556,1556,1
+2026-10-03,Atacama,Tierra Amarilla,Gasolina 95,1619,1619,1619,1
+2026-10-03,Atacama,Chañaral,Gasolina 93,1591.5,1590,1592,4
+2026-10-03,Atacama,Chañaral,Gasolina 97,1655.5,1654,1656,4
+2026-10-03,Atacama,Chañaral,Diésel,1564,1564,1564,4
+2026-10-03,Atacama,Chañaral,Gasolina 95,1625.5,1624,1626,4
+2026-10-03,Atacama,Diego de Almagro,Gasolina 93,1585.33,1584,1586,3
+2026-10-03,Atacama,Diego de Almagro,Gasolina 97,1662.5,1661,1664,2
+2026-10-03,Atacama,Diego de Almagro,Diésel,1559.67,1559,1560,3
+2026-10-03,Atacama,Diego de Almagro,Kerosene,1419,1419,1419,2
+2026-10-03,Atacama,Diego de Almagro,Gasolina 95,1619.33,1618,1620,3
+2026-10-03,Atacama,Vallenar,Gasolina 93,1598.44,1554,1623,9
+2026-10-03,Atacama,Vallenar,Gasolina 97,1661.25,1622,1668,8
+2026-10-03,Atacama,Vallenar,Diésel,1549.44,1381,1589,9
+2026-10-03,Atacama,Vallenar,Gasolina 95,1630.67,1588,1655,9
+2026-10-03,Atacama,Vallenar,Kerosene,1368.5,1368,1369,2
+2026-10-03,Atacama,Huasco,Gasolina 93,1602,1602,1602,2
+2026-10-03,Atacama,Huasco,Gasolina 97,1670,1670,1670,2
+2026-10-03,Atacama,Huasco,Diésel,1567,1567,1567,2
+2026-10-03,Atacama,Huasco,Gasolina 95,1637,1637,1637,2
+2026-10-03,Coquimbo,La Serena,GLP,728,728,728,1
+2026-10-03,Coquimbo,Coquimbo,GLP,729,729,729,1
+2026-10-03,Coquimbo,Ovalle,GLP,729,729,729,1
+2026-10-03,Coquimbo,La Serena,Gasolina 93,1577.03,1524,1587,32
+2026-10-03,Coquimbo,La Serena,Gasolina 97,1648,1595,1661,30
+2026-10-03,Coquimbo,La Serena,Diésel,1541.88,1438,1563,32
+2026-10-03,Coquimbo,La Serena,Gasolina 95,1613.19,1560,1624,31
+2026-10-03,Coquimbo,La Serena,Kerosene,1379.7,1377,1385,10
+2026-10-03,Coquimbo,Coquimbo,Gasolina 93,1575.08,1524,1587,26
+2026-10-03,Coquimbo,Coquimbo,Gasolina 97,1647.65,1598,1661,23
+2026-10-03,Coquimbo,Coquimbo,Diésel,1540.69,1363,1563,26
+2026-10-03,Coquimbo,Coquimbo,Kerosene,1379,1379,1379,6
+2026-10-03,Coquimbo,Coquimbo,Gasolina 95,1611.96,1561,1624,23
+2026-10-03,Coquimbo,Andacollo,Gasolina 93,1542,1542,1542,1
+2026-10-03,Coquimbo,Andacollo,Gasolina 97,1621,1621,1621,1
+2026-10-03,Coquimbo,Andacollo,Diésel,1450,1450,1450,1
+2026-10-03,Coquimbo,Andacollo,Kerosene,1081,1081,1081,1
+2026-10-03,Coquimbo,Andacollo,Gasolina 95,1558,1558,1558,1
+2026-10-03,Coquimbo,Vicuña,Gasolina 93,1592.67,1591,1596,3
+2026-10-03,Coquimbo,Vicuña,Gasolina 97,1665.67,1664,1669,3
+2026-10-03,Coquimbo,Vicuña,Diésel,1561.67,1560,1565,3
+2026-10-03,Coquimbo,Vicuña,Kerosene,1380,1380,1380,2
+2026-10-03,Coquimbo,Vicuña,Gasolina 95,1628.67,1627,1632,3
+2026-10-03,Coquimbo,Illapel,Gasolina 93,1529,1529,1529,3
+2026-10-03,Coquimbo,Illapel,Gasolina 97,1609.33,1609,1610,3
+2026-10-03,Coquimbo,Illapel,Diésel,1508,1508,1508,3
+2026-10-03,Coquimbo,Illapel,Kerosene,1350,1350,1350,1
+2026-10-03,Coquimbo,Illapel,Gasolina 95,1569.33,1569,1570,3
+2026-10-03,Coquimbo,Los Vilos,Gasolina 93,1526.14,1495,1532,7
+2026-10-03,Coquimbo,Los Vilos,Gasolina 97,1608.86,1576,1615,7
+2026-10-03,Coquimbo,Los Vilos,Diésel,1489.86,1409,1504,7
+2026-10-03,Coquimbo,Los Vilos,Gasolina 95,1567.14,1536,1573,7
+2026-10-03,Coquimbo,Los Vilos,Kerosene,1315,1315,1315,1
+2026-10-03,Coquimbo,Salamanca,Diésel,1443.67,1412,1507,3
+2026-10-03,Coquimbo,Salamanca,Gasolina 93,1514.5,1495,1534,2
+2026-10-03,Coquimbo,Salamanca,Gasolina 97,1594.5,1575,1614,2
+2026-10-03,Coquimbo,Salamanca,Kerosene,1088,1088,1088,1
+2026-10-03,Coquimbo,Salamanca,Gasolina 95,1553.5,1534,1573,2
+2026-10-03,Coquimbo,Ovalle,Gasolina 93,1569.53,1554,1587,15
+2026-10-03,Coquimbo,Ovalle,Gasolina 97,1633.86,1618,1661,14
+2026-10-03,Coquimbo,Ovalle,Diésel,1543.67,1529,1563,15
+2026-10-03,Coquimbo,Ovalle,Kerosene,1372.5,1371,1373,4
+2026-10-03,Coquimbo,Ovalle,Gasolina 95,1603.2,1588,1624,15
+2026-10-03,Coquimbo,Combarbalá,Gasolina 93,1569,1569,1569,1
+2026-10-03,Coquimbo,Combarbalá,Gasolina 97,1633,1633,1633,1
+2026-10-03,Coquimbo,Combarbalá,Diésel,1545,1545,1545,1
+2026-10-03,Coquimbo,Combarbalá,Kerosene,1380,1380,1380,1
+2026-10-03,Coquimbo,Combarbalá,Gasolina 95,1603,1603,1603,1
+2026-10-03,Coquimbo,Canela,Gasolina 93,1577.5,1532,1623,2
+2026-10-03,Coquimbo,Canela,Diésel,1532.5,1514,1551,2
+2026-10-03,Coquimbo,Canela,Gasolina 95,1614.5,1573,1656,2
+2026-10-03,Coquimbo,Monte Patria,Gasolina 93,1589,1589,1589,1
+2026-10-03,Coquimbo,Monte Patria,Gasolina 97,1652,1652,1652,1
+2026-10-03,Coquimbo,Monte Patria,Diésel,1564,1564,1564,1
+2026-10-03,Coquimbo,Monte Patria,Gasolina 95,1623,1623,1623,1
+2026-10-03,Coquimbo,Canela,Gasolina 97,1616,1616,1616,1
+2026-10-03,Coquimbo,Punitaqui,Gasolina 93,1569,1569,1569,1
+2026-10-03,Coquimbo,Punitaqui,Gasolina 97,1633,1633,1633,1
+2026-10-03,Coquimbo,Punitaqui,Diésel,1544,1544,1544,1
+2026-10-03,Coquimbo,Punitaqui,Gasolina 95,1603,1603,1603,1
+2026-10-03,Valparaíso,Valparaíso,GLP,699,699,699,1
+2026-10-03,Valparaíso,Limache,Gasolina 93,1512.09,1468,1524,11
+2026-10-03,Valparaíso,Limache,Diésel,1465.55,1376,1488,11
+2026-10-03,Valparaíso,Limache,Kerosene,1288.4,1064,1346,5
+2026-10-03,Valparaíso,Limache,Gasolina 95,1554.64,1510,1566,11
+2026-10-03,Valparaíso,Limache,Gasolina 97,1594,1549,1605,11
+2026-10-03,Valparaíso,Valparaíso,Gasolina 93,1475.71,1416,1524,31
+2026-10-03,Valparaíso,Valparaíso,Gasolina 97,1579.18,1548,1611,28
+2026-10-03,Valparaíso,Valparaíso,Diésel,1471.94,1358,1497,32
+2026-10-03,Valparaíso,Valparaíso,Gasolina 95,1525.06,1469,1569,31
+2026-10-03,Valparaíso,Valparaíso,Kerosene,1314,1035,1374,14
+2026-10-03,Valparaíso,Casablanca,Gasolina 93,1507.5,1490,1525,2
+2026-10-03,Valparaíso,Casablanca,Gasolina 97,1594.5,1577,1612,2
+2026-10-03,Valparaíso,Casablanca,Diésel,1454.5,1409,1500,2
+2026-10-03,Valparaíso,Casablanca,Kerosene,1347,1347,1347,1
+2026-10-03,Valparaíso,Casablanca,Gasolina 95,1552.5,1535,1570,2
+2026-10-03,Valparaíso,Concón,Gasolina 93,1492.25,1479,1518,8
+2026-10-03,Valparaíso,Concón,Gasolina 97,1598.75,1586,1609,8
+2026-10-03,Valparaíso,Concón,Diésel,1486.75,1480,1498,8
+2026-10-03,Valparaíso,Concón,Kerosene,1344.8,1338,1348,5
+2026-10-03,Valparaíso,Concón,Gasolina 95,1558.75,1547,1569,8
+2026-10-03,Valparaíso,Puchuncaví,Gasolina 93,1525,1522,1526,4
+2026-10-03,Valparaíso,Puchuncaví,Gasolina 97,1609,1606,1610,4
+2026-10-03,Valparaíso,Puchuncaví,Diésel,1488.5,1480,1499,4
+2026-10-03,Valparaíso,Puchuncaví,Kerosene,1345.5,1344,1347,2
+2026-10-03,Valparaíso,Puchuncaví,Gasolina 95,1567,1564,1568,4
+2026-10-03,Valparaíso,Quilpué,Gasolina 93,1503.18,1398,1514,17
+2026-10-03,Valparaíso,Quilpué,Gasolina 97,1594,1494,1608,13
+2026-10-03,Valparaíso,Quilpué,Diésel,1469.18,1184,1495,17
+2026-10-03,Valparaíso,Quilpué,Kerosene,1261.36,1014,1348,11
+2026-10-03,Valparaíso,Quilpué,Gasolina 95,1553.24,1449,1564,17
+2026-10-03,Valparaíso,Quintero,Gasolina 93,1506,1506,1506,4
+2026-10-03,Valparaíso,Quintero,Gasolina 97,1593.5,1593,1594,4
+2026-10-03,Valparaíso,Quintero,Diésel,1481,1475,1483,4
+2026-10-03,Valparaíso,Quintero,Kerosene,1341.5,1334,1344,4
+2026-10-03,Valparaíso,Quintero,Gasolina 95,1549.5,1549,1550,4
+2026-10-03,Valparaíso,Villa Alemana,Gasolina 93,1514,1514,1514,9
+2026-10-03,Valparaíso,Villa Alemana,Gasolina 97,1608,1608,1608,6
+2026-10-03,Valparaíso,Villa Alemana,Diésel,1495,1495,1495,9
+2026-10-03,Valparaíso,Villa Alemana,Kerosene,1344.33,1331,1348,9
+2026-10-03,Valparaíso,Villa Alemana,Gasolina 95,1564,1564,1564,9
+2026-10-03,Valparaíso,Viña del Mar,Gasolina 93,1508.52,1474,1518,29
+2026-10-03,Valparaíso,Viña del Mar,Gasolina 95,1552.38,1518,1562,29
+2026-10-03,Valparaíso,Viña del Mar,Gasolina 97,1597.41,1561,1606,29
+2026-10-03,Valparaíso,Viña del Mar,Diésel,1476.45,1380,1498,29
+2026-10-03,Valparaíso,Viña del Mar,Kerosene,1330.53,1055,1348,19
+2026-10-03,Valparaíso,Viña del Mar,GLP,687,687,687,1
+2026-10-03,Valparaíso,Quillota,Gasolina 93,1515.33,1505,1521,15
+2026-10-03,Valparaíso,Quillota,Gasolina 97,1601.29,1590,1607,14
+2026-10-03,Valparaíso,Quillota,Diésel,1481,1470,1485,15
+2026-10-03,Valparaíso,Quillota,Kerosene,1306.33,1301,1311,6
+2026-10-03,Valparaíso,Quillota,Gasolina 95,1558.2,1548,1564,15
+2026-10-03,Valparaíso,Los Andes,Gasolina 93,1527.27,1518,1531,11
+2026-10-03,Valparaíso,Los Andes,Gasolina 97,1605.8,1598,1611,10
+2026-10-03,Valparaíso,Los Andes,Diésel,1503.64,1486,1594,11
+2026-10-03,Valparaíso,Los Andes,Kerosene,1356.57,1350,1361,7
+2026-10-03,Valparaíso,Los Andes,Gasolina 95,1568.3,1559,1575,10
+2026-10-03,Valparaíso,Calle Larga,Gasolina 93,1526,1526,1526,1
+2026-10-03,Valparaíso,Calle Larga,Gasolina 97,1606,1606,1606,1
+2026-10-03,Valparaíso,Calle Larga,Diésel,1494,1494,1494,1
+2026-10-03,Valparaíso,Calle Larga,Kerosene,1361,1361,1361,1
+2026-10-03,Valparaíso,Calle Larga,Gasolina 95,1567,1567,1567,1
+2026-10-03,Valparaíso,San Esteban,Gasolina 93,1530,1530,1530,2
+2026-10-03,Valparaíso,San Esteban,Gasolina 97,1608,1608,1608,2
+2026-10-03,Valparaíso,San Esteban,Diésel,1498,1498,1498,2
+2026-10-03,Valparaíso,San Esteban,Kerosene,1361,1361,1361,2
+2026-10-03,Valparaíso,San Esteban,Gasolina 95,1572,1572,1572,2
+2026-10-03,Valparaíso,La Ligua,Kerosene,1356,1356,1356,2
+2026-10-03,Valparaíso,La Ligua,Diésel,1496,1496,1496,3
+2026-10-03,Valparaíso,La Ligua,Gasolina 93,1523,1523,1523,3
+2026-10-03,Valparaíso,La Ligua,Gasolina 95,1567,1567,1567,3
+2026-10-03,Valparaíso,La Ligua,Gasolina 97,1610,1610,1610,3
+2026-10-03,Valparaíso,Cabildo,Gasolina 93,1519,1519,1519,2
+2026-10-03,Valparaíso,Cabildo,Gasolina 97,1606,1606,1606,2
+2026-10-03,Valparaíso,Cabildo,Diésel,1497,1497,1497,2
+2026-10-03,Valparaíso,Cabildo,Kerosene,1358,1358,1358,1
+2026-10-03,Valparaíso,Cabildo,Gasolina 95,1563,1563,1563,2
+2026-10-03,Valparaíso,Papudo,Gasolina 93,1506,1506,1506,2
+2026-10-03,Valparaíso,Papudo,Gasolina 97,1586,1586,1586,2
+2026-10-03,Valparaíso,Papudo,Diésel,1497,1497,1497,2
+2026-10-03,Valparaíso,Papudo,Kerosene,1347,1347,1347,1
+2026-10-03,Valparaíso,Papudo,Gasolina 95,1555,1555,1555,2
+2026-10-03,Valparaíso,Petorca,Gasolina 93,1520,1520,1520,1
+2026-10-03,Valparaíso,Petorca,Gasolina 97,1607,1607,1607,1
+2026-10-03,Valparaíso,Petorca,Diésel,1497,1497,1497,1
+2026-10-03,Valparaíso,Petorca,Kerosene,1330,1330,1330,1
+2026-10-03,Valparaíso,Petorca,Gasolina 95,1564,1564,1564,1
+2026-10-03,Valparaíso,Zapallar,Gasolina 93,1488,1488,1488,1
+2026-10-03,Valparaíso,Zapallar,Gasolina 97,1572,1572,1572,1
+2026-10-03,Valparaíso,Zapallar,Diésel,1410,1410,1410,1
+2026-10-03,Valparaíso,Zapallar,Kerosene,1060,1060,1060,1
+2026-10-03,Valparaíso,Zapallar,Gasolina 95,1530,1530,1530,1
+2026-10-03,Valparaíso,Calera,Gasolina 93,1453.67,1443,1459,6
+2026-10-03,Valparaíso,Calera,Gasolina 97,1542.6,1535,1545,5
+2026-10-03,Valparaíso,Calera,Diésel,1480,1471,1488,6
+2026-10-03,Valparaíso,Calera,Kerosene,1350,1350,1350,3
+2026-10-03,Valparaíso,Calera,Gasolina 95,1498.6,1491,1501,5
+2026-10-03,Valparaíso,Hijuelas,Gasolina 93,1529,1529,1529,3
+2026-10-03,Valparaíso,Hijuelas,Gasolina 97,1605,1605,1605,2
+2026-10-03,Valparaíso,Hijuelas,Diésel,1507.33,1504,1514,3
+2026-10-03,Valparaíso,Hijuelas,Gasolina 95,1567,1565,1568,3
+2026-10-03,Valparaíso,La Cruz,Gasolina 93,1519,1519,1519,1
+2026-10-03,Valparaíso,La Cruz,Gasolina 97,1603,1603,1603,1
+2026-10-03,Valparaíso,La Cruz,Diésel,1479,1479,1479,1
+2026-10-03,Valparaíso,La Cruz,Kerosene,1322,1322,1322,1
+2026-10-03,Valparaíso,La Cruz,Gasolina 95,1561,1561,1561,1
+2026-10-03,Valparaíso,Nogales,Gasolina 93,1505,1481,1529,2
+2026-10-03,Valparaíso,Nogales,Gasolina 97,1581,1557,1605,2
+2026-10-03,Valparaíso,Nogales,Diésel,1449,1394,1504,2
+2026-10-03,Valparaíso,Nogales,Kerosene,1062,1062,1062,1
+2026-10-03,Valparaíso,Nogales,Gasolina 95,1544,1520,1568,2
+2026-10-03,Valparaíso,Olmué,Gasolina 93,1524,1524,1524,2
+2026-10-03,Valparaíso,Olmué,Gasolina 97,1605,1605,1605,2
+2026-10-03,Valparaíso,Olmué,Diésel,1488,1488,1488,2
+2026-10-03,Valparaíso,Olmué,Kerosene,1343,1340,1346,2
+2026-10-03,Valparaíso,Olmué,Gasolina 95,1566,1566,1566,2
+2026-10-03,Valparaíso,San Antonio,Gasolina 93,1527.2,1519,1530,10
+2026-10-03,Valparaíso,San Antonio,Gasolina 97,1608.2,1600,1611,10
+2026-10-03,Valparaíso,San Antonio,Diésel,1502.36,1495,1505,11
+2026-10-03,Valparaíso,San Antonio,Gasolina 95,1567.45,1559,1570,11
+2026-10-03,Valparaíso,San Antonio,Kerosene,1341.25,1341,1342,4
+2026-10-03,Valparaíso,Algarrobo,Gasolina 93,1534,1528,1540,2
+2026-10-03,Valparaíso,Algarrobo,Gasolina 97,1618,1611,1625,2
+2026-10-03,Valparaíso,Algarrobo,Diésel,1499.5,1495,1504,2
+2026-10-03,Valparaíso,Algarrobo,Kerosene,1352,1352,1352,1
+2026-10-03,Valparaíso,Algarrobo,Gasolina 95,1575.5,1569,1582,2
+2026-10-03,Valparaíso,Cartagena,Gasolina 93,1528,1528,1528,2
+2026-10-03,Valparaíso,Cartagena,Gasolina 97,1609,1609,1609,2
+2026-10-03,Valparaíso,Cartagena,Diésel,1504,1503,1505,2
+2026-10-03,Valparaíso,Cartagena,Kerosene,1351,1351,1351,1
+2026-10-03,Valparaíso,Cartagena,Gasolina 95,1568,1568,1568,2
+2026-10-03,Valparaíso,El Quisco,Gasolina 93,1530.5,1528,1533,2
+2026-10-03,Valparaíso,El Quisco,Gasolina 97,1613.5,1611,1616,2
+2026-10-03,Valparaíso,El Quisco,Diésel,1506.5,1504,1509,2
+2026-10-03,Valparaíso,El Quisco,Kerosene,1350,1350,1350,2
+2026-10-03,Valparaíso,El Quisco,Gasolina 95,1571.5,1569,1574,2
+2026-10-03,Valparaíso,Santo Domingo,Gasolina 93,1526,1526,1526,2
+2026-10-03,Valparaíso,Santo Domingo,Gasolina 97,1606.5,1606,1607,2
+2026-10-03,Valparaíso,Santo Domingo,Diésel,1503,1503,1503,2
+2026-10-03,Valparaíso,Santo Domingo,Kerosene,1356,1356,1356,1
+2026-10-03,Valparaíso,Santo Domingo,Gasolina 95,1565.5,1565,1566,2
+2026-10-03,Valparaíso,San Felipe,Gasolina 93,1524.77,1490,1529,13
+2026-10-03,Valparaíso,San Felipe,Gasolina 97,1606.92,1572,1611,13
+2026-10-03,Valparaíso,San Felipe,Diésel,1488.77,1402,1497,13
+2026-10-03,Valparaíso,San Felipe,Gasolina 95,1566.92,1532,1571,13
+2026-10-03,Valparaíso,San Felipe,Kerosene,1315.29,1076,1360,7
+2026-10-03,Valparaíso,Catemu,Gasolina 93,1482,1482,1482,1
+2026-10-03,Valparaíso,Catemu,Gasolina 97,1556,1556,1556,1
+2026-10-03,Valparaíso,Catemu,Diésel,1398,1398,1398,1
+2026-10-03,Valparaíso,Catemu,Kerosene,1060,1060,1060,1
+2026-10-03,Valparaíso,Catemu,Gasolina 95,1519,1519,1519,1
+2026-10-03,Valparaíso,Llaillay,Gasolina 93,1537.5,1513,1596,4
+2026-10-03,Valparaíso,Llaillay,Gasolina 97,1592.67,1587,1604,3
+2026-10-03,Valparaíso,Llaillay,Diésel,1507.25,1485,1555,4
+2026-10-03,Valparaíso,Llaillay,Gasolina 95,1576.5,1550,1639,4
+2026-10-03,Valparaíso,Llaillay,Kerosene,1213.5,1079,1348,2
+2026-10-03,Valparaíso,Santa María,Gasolina 93,1527,1527,1527,1
+2026-10-03,Valparaíso,Santa María,Gasolina 97,1609,1609,1609,1
+2026-10-03,Valparaíso,Santa María,Diésel,1495,1495,1495,1
+2026-10-03,Valparaíso,Santa María,Kerosene,1360,1360,1360,1
+2026-10-03,Valparaíso,Santa María,Gasolina 95,1569,1569,1569,1
+2026-10-03,Valparaíso,Quilpué,GLP,588,588,588,1
+2026-10-03,Valparaíso,Isla de Pascua,Gasolina 93,1812,1812,1812,2
+2026-10-03,Valparaíso,Isla de Pascua,Diésel,1743,1743,1743,2
+2026-10-03,Valparaíso,Rinconada,Gasolina 93,1529,1529,1529,1
+2026-10-03,Valparaíso,Rinconada,Gasolina 97,1611,1611,1611,1
+2026-10-03,Valparaíso,Rinconada,Diésel,1503,1503,1503,1
+2026-10-03,Valparaíso,Rinconada,Kerosene,1360,1360,1360,1
+2026-10-03,Valparaíso,Rinconada,Gasolina 95,1571,1571,1571,1
+2026-10-03,Valparaíso,San Antonio,GLP,674,644,704,2
+2026-10-03,Valparaíso,Putaendo,Gasolina 93,1532,1532,1532,1
+2026-10-03,Valparaíso,Putaendo,Gasolina 97,1614,1614,1614,1
+2026-10-03,Valparaíso,Putaendo,Diésel,1500,1500,1500,1
+2026-10-03,Valparaíso,Putaendo,Kerosene,1359,1359,1359,1
+2026-10-03,Valparaíso,Putaendo,Gasolina 95,1574,1574,1574,1
+2026-10-03,Valparaíso,Panquehue,Gasolina 93,1521,1521,1521,1
+2026-10-03,Valparaíso,Panquehue,Gasolina 97,1595,1595,1595,1
+2026-10-03,Valparaíso,Panquehue,Diésel,1497,1497,1497,1
+2026-10-03,Valparaíso,Panquehue,Gasolina 95,1558,1558,1558,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Rancagua,GLP,580,541,605,3
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Rengo,GLP,615,589,641,2
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Rancagua,Gasolina 93,1539.47,1477,1553,30
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Rancagua,Gasolina 97,1597.67,1537,1611,30
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Rancagua,Diésel,1503.55,1328,1536,31
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Rancagua,Kerosene,1331.09,1095,1393,23
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Rancagua,Gasolina 95,1568.32,1508,1582,31
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Olivar,Kerosene,1243.5,1108,1379,2
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Olivar,Gasolina 93,1566.33,1516,1631,3
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Olivar,Gasolina 95,1598,1545,1667,3
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Olivar,Gasolina 97,1659.5,1614,1705,2
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Olivar,Diésel,1524.67,1435,1606,3
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Coltauco,Gasolina 93,1548,1548,1548,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Coltauco,Gasolina 97,1612,1612,1612,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Coltauco,Diésel,1526,1526,1526,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Coltauco,Kerosene,1379,1379,1379,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Coltauco,Gasolina 95,1581,1581,1581,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Doñihue,Gasolina 93,1548,1548,1548,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Doñihue,Gasolina 97,1612,1612,1612,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Doñihue,Diésel,1526,1526,1526,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Doñihue,Kerosene,1379,1379,1379,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Doñihue,Gasolina 95,1581,1581,1581,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Graneros,Gasolina 93,1541.5,1540,1543,2
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Graneros,Gasolina 97,1608,1608,1608,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Graneros,Diésel,1507.5,1501,1514,2
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Graneros,Kerosene,1338,1328,1348,2
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Graneros,Gasolina 95,1572.5,1571,1574,2
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Las Cabras,Gasolina 93,1540.8,1490,1559,5
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Las Cabras,Gasolina 97,1590.33,1553,1609,3
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Las Cabras,Diésel,1479,1340,1526,4
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Las Cabras,Kerosene,1277.67,1087,1373,3
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Las Cabras,Gasolina 95,1461.5,1246,1587,6
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Machalí,Gasolina 93,1552,1552,1552,2
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Machalí,Gasolina 97,1608,1608,1608,2
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Machalí,Diésel,1471.67,1353,1531,3
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Machalí,Kerosene,1287.67,1100,1382,3
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Machalí,Gasolina 95,1562.67,1526,1581,3
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Malloa,Gasolina 93,1543,1543,1543,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Malloa,Gasolina 97,1615,1615,1615,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Malloa,Diésel,1528,1528,1528,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Malloa,Kerosene,1363,1363,1363,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Malloa,Gasolina 95,1581,1581,1581,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Mostazal,Gasolina 93,1561,1552,1567,5
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Mostazal,Gasolina 97,1617,1608,1623,5
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Mostazal,Diésel,1523,1514,1529,5
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Mostazal,Gasolina 95,1590,1581,1596,5
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Peumo,Gasolina 93,1529,1503,1542,3
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Peumo,Gasolina 97,1588.67,1563,1602,3
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Peumo,Diésel,1477.33,1414,1509,3
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Peumo,Gasolina 95,1560.67,1535,1574,3
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Pichidegua,Gasolina 93,1551.5,1544,1559,2
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Pichidegua,Gasolina 97,1605,1605,1605,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Pichidegua,Diésel,1524.33,1521,1526,3
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Pichidegua,Kerosene,1382,1382,1382,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Pichidegua,Gasolina 95,1583.33,1576,1587,3
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Quinta de Tilcoco,Gasolina 93,1545,1545,1545,3
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Quinta de Tilcoco,Gasolina 97,1606,1606,1606,2
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Quinta de Tilcoco,Diésel,1523,1523,1523,2
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Quinta de Tilcoco,Gasolina 95,1580,1580,1580,2
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Quinta de Tilcoco,Kerosene,1364,1364,1364,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Rengo,Gasolina 93,1537,1504,1552,10
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Rengo,Gasolina 97,1603.75,1571,1615,8
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Rengo,Diésel,1507.11,1433,1529,9
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Rengo,Kerosene,1287.5,1090,1376,6
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Rengo,Gasolina 95,1573,1542,1585,9
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Requínoa,Gasolina 93,1548,1539,1566,4
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Requínoa,Gasolina 97,1608.67,1602,1612,3
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Requínoa,Diésel,1520.75,1518,1529,4
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Requínoa,Gasolina 95,1573.25,1563,1591,4
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Requínoa,Kerosene,1376,1374,1377,3
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,San Vicente,Gasolina 93,1525.33,1507,1546,6
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,San Vicente,Gasolina 97,1585.5,1566,1605,4
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,San Vicente,Diésel,1470.83,1425,1520,6
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,San Vicente,Kerosene,1264.67,1082,1356,3
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,San Vicente,Gasolina 95,1558.33,1540,1579,6
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Pichilemu,Gasolina 93,1521.5,1521,1523,4
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Pichilemu,Gasolina 97,1587.67,1587,1588,3
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Pichilemu,Diésel,1518.5,1518,1520,4
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Pichilemu,Kerosene,1357,1349,1361,3
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Pichilemu,Gasolina 95,1544.25,1543,1546,4
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Litueche,Gasolina 93,1534,1532,1538,3
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Litueche,Gasolina 97,1600,1598,1604,3
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Litueche,Diésel,1499,1499,1499,3
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Litueche,Gasolina 95,1566,1564,1570,3
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,San Fernando,Gasolina 93,1525.58,1461,1552,12
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,San Fernando,Gasolina 97,1596.44,1517,1610,9
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,San Fernando,Diésel,1484.75,1231,1529,12
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,San Fernando,Gasolina 95,1560.58,1492,1585,12
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,San Fernando,Kerosene,1368.57,1357,1372,7
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Chépica,Gasolina 93,1533,1533,1533,2
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Chépica,Gasolina 97,1610,1610,1610,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Chépica,Diésel,1507,1507,1507,2
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Chépica,Kerosene,1379,1379,1379,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Chépica,Gasolina 95,1568,1568,1568,2
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Chimbarongo,Gasolina 93,1547.2,1536,1552,5
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Chimbarongo,Gasolina 97,1612.33,1607,1615,3
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Chimbarongo,Diésel,1525,1518,1530,5
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Chimbarongo,Gasolina 95,1579.6,1568,1585,5
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Lolol,Gasolina 93,1515,1497,1533,2
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Lolol,Gasolina 97,1610,1610,1610,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Lolol,Diésel,1460.5,1413,1508,2
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Lolol,Gasolina 95,1550,1532,1568,2
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Nancagua,Gasolina 93,1514.67,1514,1516,3
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Nancagua,Gasolina 97,1647,1647,1647,2
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Nancagua,Diésel,1475.33,1472,1477,3
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Nancagua,Gasolina 95,1546,1545,1548,3
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Peralillo,Gasolina 93,1517.33,1508,1522,3
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Peralillo,Gasolina 97,1603,1597,1609,2
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Peralillo,Diésel,1480.33,1475,1483,3
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Peralillo,Gasolina 95,1553.67,1545,1558,3
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Santa Cruz,Kerosene,1375,1375,1375,6
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Santa Cruz,Gasolina 93,1530.5,1518,1533,6
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Santa Cruz,Gasolina 95,1565.5,1553,1568,6
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Santa Cruz,Diésel,1505.5,1493,1508,6
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Santa Cruz,Gasolina 97,1607.5,1595,1610,6
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Codegua,Gasolina 93,1504,1504,1504,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Codegua,Diésel,1419,1419,1419,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Codegua,Kerosene,1062,1062,1062,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Codegua,Gasolina 95,1535,1535,1535,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Codegua,Gasolina 97,1569,1569,1569,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Peumo,Kerosene,1101,1101,1101,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,La Estrella,Gasolina 93,1605,1605,1605,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,La Estrella,Diésel,1565,1565,1565,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,La Estrella,Kerosene,1300,1300,1300,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,La Estrella,Gasolina 95,1640,1640,1640,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Navidad,Gasolina 93,1532,1532,1532,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Navidad,Gasolina 97,1598,1598,1598,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Navidad,Diésel,1499,1499,1499,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Navidad,Gasolina 95,1564,1564,1564,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Paredones,Gasolina 93,1550.5,1533,1568,2
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Paredones,Diésel,1513.5,1508,1519,2
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Paredones,Gasolina 95,1585.5,1568,1603,2
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Chimbarongo,Kerosene,1382,1382,1382,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Palmilla,Gasolina 93,1535,1535,1535,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Palmilla,Gasolina 97,1610,1610,1610,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Palmilla,Diésel,1509,1509,1509,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Palmilla,Gasolina 95,1570,1570,1570,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Peralillo,Kerosene,1375,1375,1375,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Placilla,Gasolina 93,1510,1510,1510,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Placilla,Diésel,1473,1473,1473,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Placilla,Kerosene,1080,1080,1080,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Placilla,Gasolina 95,1541,1541,1541,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Marchihue,Gasolina 93,1534,1534,1534,2
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Marchihue,Gasolina 97,1609,1609,1609,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Marchihue,Diésel,1500.5,1500,1501,2
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Marchihue,Kerosene,1580,1580,1580,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Marchihue,Gasolina 95,1565,1565,1565,2
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Paredones,Gasolina 97,1610,1610,1610,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Mostazal,Kerosene,1383,1383,1383,1
+2026-10-03,Del Libertador Gral. Bernardo O’Higgins,Nancagua,Kerosene,1379,1379,1379,1
+2026-10-03,Del Maule,Curicó,GLP,626.33,585,669,3
+2026-10-03,Del Maule,Linares,GLP,629,629,629,1
+2026-10-03,Del Maule,Talca,GLP,619.67,590,637,3
+2026-10-03,Del Maule,San Clemente,Gasolina 93,1474,1455,1520,4
+2026-10-03,Del Maule,San Clemente,Gasolina 97,1589,1588,1590,2
+2026-10-03,Del Maule,San Clemente,Diésel,1481.25,1473,1493,4
+2026-10-03,Del Maule,San Clemente,Gasolina 95,1511.75,1490,1570,4
+2026-10-03,Del Maule,Talca,Gasolina 93,1507.93,1472,1516,41
+2026-10-03,Del Maule,Talca,Gasolina 97,1571.84,1536,1588,32
+2026-10-03,Del Maule,Talca,Diésel,1468.29,1376,1492,41
+2026-10-03,Del Maule,Talca,Kerosene,1334.6,1078,1363,30
+2026-10-03,Del Maule,Talca,Gasolina 95,1536.29,1499,1554,41
+2026-10-03,Del Maule,Constitución,Gasolina 93,1548.8,1547,1550,5
+2026-10-03,Del Maule,Constitución,Gasolina 97,1612,1612,1612,3
+2026-10-03,Del Maule,Constitución,Diésel,1497.8,1496,1499,5
+2026-10-03,Del Maule,Constitución,Kerosene,1232.5,1095,1370,2
+2026-10-03,Del Maule,Constitución,Gasolina 95,1579.6,1577,1581,5
+2026-10-03,Del Maule,Maule,Gasolina 93,1542,1542,1542,1
+2026-10-03,Del Maule,Maule,Gasolina 97,1611,1611,1611,1
+2026-10-03,Del Maule,Maule,Diésel,1492,1492,1492,1
+2026-10-03,Del Maule,Maule,Gasolina 95,1571,1571,1571,1
+2026-10-03,Del Maule,San Rafael,Gasolina 93,1538.75,1527,1544,4
+2026-10-03,Del Maule,San Rafael,Gasolina 97,1606,1596,1611,3
+2026-10-03,Del Maule,San Rafael,Diésel,1484.25,1471,1494,4
+2026-10-03,Del Maule,San Rafael,Gasolina 95,1568,1556,1574,4
+2026-10-03,Del Maule,Cauquenes,Gasolina 93,1497.57,1467,1504,7
+2026-10-03,Del Maule,Cauquenes,Gasolina 97,1594,1593,1595,4
+2026-10-03,Del Maule,Cauquenes,Diésel,1452.57,1372,1467,7
+2026-10-03,Del Maule,Cauquenes,Kerosene,1301,1074,1360,5
+2026-10-03,Del Maule,Cauquenes,Gasolina 95,1537.14,1507,1543,7
+2026-10-03,Del Maule,Curicó,Gasolina 93,1549.5,1514,1554,14
+2026-10-03,Del Maule,Curicó,Gasolina 97,1607.46,1571,1615,13
+2026-10-03,Del Maule,Curicó,Diésel,1522.67,1434,1531,15
+2026-10-03,Del Maule,Curicó,Kerosene,1316.6,1088,1375,10
+2026-10-03,Del Maule,Curicó,Gasolina 95,1577.29,1540,1585,14
+2026-10-03,Del Maule,Hualañé,Gasolina 93,1559,1559,1559,2
+2026-10-03,Del Maule,Hualañé,Gasolina 97,1621,1621,1621,2
+2026-10-03,Del Maule,Hualañé,Diésel,1537,1537,1537,2
+2026-10-03,Del Maule,Hualañé,Kerosene,1382,1382,1382,2
+2026-10-03,Del Maule,Hualañé,Gasolina 95,1592,1592,1592,2
+2026-10-03,Del Maule,Licantén,Gasolina 93,1561,1557,1565,2
+2026-10-03,Del Maule,Licantén,Gasolina 97,1619,1619,1619,1
+2026-10-03,Del Maule,Licantén,Diésel,1539,1535,1543,2
+2026-10-03,Del Maule,Licantén,Gasolina 95,1590,1590,1590,1
+2026-10-03,Del Maule,Molina,Gasolina 93,1497.5,1496,1498,8
+2026-10-03,Del Maule,Molina,Gasolina 97,1611.6,1611,1614,5
+2026-10-03,Del Maule,Molina,Diésel,1466.5,1459,1481,8
+2026-10-03,Del Maule,Molina,Kerosene,1300.5,1240,1388,6
+2026-10-03,Del Maule,Molina,Gasolina 95,1537.88,1537,1538,8
+2026-10-03,Del Maule,Sagrada Familia,Gasolina 93,1550,1548,1552,4
+2026-10-03,Del Maule,Sagrada Familia,Gasolina 97,1613.33,1610,1615,3
+2026-10-03,Del Maule,Sagrada Familia,Diésel,1511.5,1494,1529,4
+2026-10-03,Del Maule,Sagrada Familia,Gasolina 95,1580,1575,1585,4
+2026-10-03,Del Maule,Teno,Gasolina 93,1546.6,1537,1552,5
+2026-10-03,Del Maule,Teno,Gasolina 97,1614.33,1613,1615,3
+2026-10-03,Del Maule,Teno,Diésel,1505.2,1430,1529,5
+2026-10-03,Del Maule,Teno,Kerosene,1383,1383,1383,1
+2026-10-03,Del Maule,Teno,Gasolina 95,1579.2,1572,1585,5
+2026-10-03,Del Maule,Linares,Gasolina 93,1507.06,1505,1516,17
+2026-10-03,Del Maule,Linares,Gasolina 97,1589.22,1587,1597,9
+2026-10-03,Del Maule,Linares,Diésel,1470.56,1468,1479,18
+2026-10-03,Del Maule,Linares,Kerosene,1352,1305,1362,14
+2026-10-03,Del Maule,Linares,Gasolina 95,1545.83,1544,1555,18
+2026-10-03,Del Maule,Colbún,Gasolina 93,1539,1539,1539,3
+2026-10-03,Del Maule,Colbún,Gasolina 97,1586,1586,1586,1
+2026-10-03,Del Maule,Colbún,Diésel,1484,1484,1484,3
+2026-10-03,Del Maule,Colbún,Gasolina 95,1566,1566,1566,3
+2026-10-03,Del Maule,Colbún,Kerosene,1368,1368,1368,2
+2026-10-03,Del Maule,Parral,Gasolina 93,1517.58,1506,1534,12
+2026-10-03,Del Maule,Parral,Gasolina 97,1589.5,1578,1601,8
+2026-10-03,Del Maule,Parral,Diésel,1491.67,1485,1499,12
+2026-10-03,Del Maule,Parral,Gasolina 95,1550.83,1537,1569,12
+2026-10-03,Del Maule,Parral,Kerosene,1311.67,1270,1324,6
+2026-10-03,Del Maule,Retiro,Gasolina 93,1527.33,1511,1537,3
+2026-10-03,Del Maule,Retiro,Gasolina 97,1595.67,1581,1605,3
+2026-10-03,Del Maule,Retiro,Diésel,1494.67,1487,1499,3
+2026-10-03,Del Maule,Retiro,Gasolina 95,1560.33,1541,1571,3
+2026-10-03,Del Maule,San Javier,Gasolina 93,1524.88,1518,1542,8
+2026-10-03,Del Maule,San Javier,Gasolina 97,1591.83,1586,1611,6
+2026-10-03,Del Maule,San Javier,Diésel,1476.89,1458,1486,9
+2026-10-03,Del Maule,San Javier,Kerosene,1353,1320,1364,4
+2026-10-03,Del Maule,San Javier,Gasolina 95,1556.88,1551,1571,8
+2026-10-03,Del Maule,Villa Alegre,Gasolina 93,1524.33,1487,1556,3
+2026-10-03,Del Maule,Villa Alegre,Gasolina 97,1602,1602,1602,1
+2026-10-03,Del Maule,Villa Alegre,Diésel,1461,1394,1499,3
+2026-10-03,Del Maule,Villa Alegre,Kerosene,1194.5,1045,1344,2
+2026-10-03,Del Maule,Villa Alegre,Gasolina 95,1565.33,1527,1599,3
+2026-10-03,Del Maule,San Rafael,Kerosene,1364,1364,1364,1
+2026-10-03,Del Maule,San Clemente,Kerosene,1343.5,1324,1363,2
+2026-10-03,Del Maule,Rauco,Gasolina 93,1557,1553,1561,2
+2026-10-03,Del Maule,Rauco,Diésel,1529.5,1529,1530,2
+2026-10-03,Del Maule,Rauco,Kerosene,1336,1336,1336,1
+2026-10-03,Del Maule,Rauco,Gasolina 95,1582,1578,1586,2
+2026-10-03,Del Maule,Longaví,Gasolina 93,1564,1514,1591,4
+2026-10-03,Del Maule,Longaví,Diésel,1494,1471,1532,4
+2026-10-03,Del Maule,Longaví,Gasolina 95,1593.25,1541,1614,4
+2026-10-03,Del Maule,Curepto,Gasolina 93,1581.67,1556,1633,3
+2026-10-03,Del Maule,Curepto,Diésel,1522.67,1496,1536,3
+2026-10-03,Del Maule,Curepto,Gasolina 95,1614.67,1587,1670,3
+2026-10-03,Del Maule,Empedrado,Gasolina 93,1549,1549,1549,1
+2026-10-03,Del Maule,Empedrado,Gasolina 97,1612,1612,1612,1
+2026-10-03,Del Maule,Empedrado,Diésel,1498,1498,1498,1
+2026-10-03,Del Maule,Empedrado,Gasolina 95,1580,1580,1580,1
+2026-10-03,Del Maule,Río Claro,Gasolina 93,1580,1580,1580,1
+2026-10-03,Del Maule,Río Claro,Diésel,1530,1530,1530,1
+2026-10-03,Del Maule,Vichuquén,Gasolina 93,1506,1470,1542,2
+2026-10-03,Del Maule,Vichuquén,Diésel,1369.5,1220,1519,2
+2026-10-03,Del Maule,Vichuquén,Gasolina 95,1537.5,1495,1580,2
+2026-10-03,Del Maule,Chanco,Gasolina 93,1494,1476,1512,2
+2026-10-03,Del Maule,Chanco,Diésel,1423.5,1377,1470,2
+2026-10-03,Del Maule,Chanco,Gasolina 95,1534,1517,1551,2
+2026-10-03,Del Maule,Pelluhue,Gasolina 93,1479.33,1453,1493,3
+2026-10-03,Del Maule,Pelluhue,Gasolina 97,1584.5,1584,1585,2
+2026-10-03,Del Maule,Pelluhue,Diésel,1440.33,1376,1473,3
+2026-10-03,Del Maule,Pelluhue,Kerosene,1269.33,1080,1364,3
+2026-10-03,Del Maule,Pelluhue,Gasolina 95,1518.33,1492,1532,3
+2026-10-03,Del Maule,Retiro,Kerosene,1407.5,1335,1480,2
+2026-10-03,Del Maule,Romeral,Gasolina 93,1547.67,1537,1554,3
+2026-10-03,Del Maule,Romeral,Gasolina 97,1607,1600,1615,3
+2026-10-03,Del Maule,Romeral,Diésel,1524.67,1514,1531,3
+2026-10-03,Del Maule,Romeral,Gasolina 95,1577.67,1570,1585,3
+2026-10-03,Del Maule,Pencahue,Gasolina 93,1512,1512,1512,1
+2026-10-03,Del Maule,Pencahue,Diésel,1474,1474,1474,1
+2026-10-03,Del Maule,Pencahue,Gasolina 95,1545,1545,1545,1
+2026-10-03,Del Maule,Longaví,Gasolina 97,1630,1630,1630,1
+2026-10-03,Del Maule,Yerbas Buenas,Gasolina 93,1506,1506,1506,1
+2026-10-03,Del Maule,Yerbas Buenas,Diésel,1470,1470,1470,1
+2026-10-03,Del Maule,Yerbas Buenas,Kerosene,1354,1354,1354,1
+2026-10-03,Del Maule,Yerbas Buenas,Gasolina 95,1546,1546,1546,1
+2026-10-03,Del Maule,Pelarco,Gasolina 93,1504,1504,1504,1
+2026-10-03,Del Maule,Pelarco,Gasolina 95,1536,1536,1536,1
+2026-10-03,Del Maule,Pelarco,Diésel,1495,1495,1495,1
+2026-10-03,Del Maule,Pelarco,Kerosene,1366,1366,1366,1
+2026-10-03,Del Maule,Curepto,Kerosene,1100,1100,1100,1
+2026-10-03,Del Biobío,Los Ángeles,GLP,654.5,615,694,2
+2026-10-03,Del Biobío,Coronel,GLP,709,709,709,1
+2026-10-03,Del Biobío,Concepción,Kerosene,1317.04,1058,1350,24
+2026-10-03,Del Biobío,Concepción,Gasolina 93,1511.43,1491,1530,37
+2026-10-03,Del Biobío,Concepción,Gasolina 95,1546.32,1532,1563,37
+2026-10-03,Del Biobío,Concepción,Gasolina 97,1582.49,1570,1611,35
+2026-10-03,Del Biobío,Concepción,Diésel,1478.65,1457,1494,37
+2026-10-03,Del Biobío,Chiguayante,Gasolina 93,1509,1497,1512,5
+2026-10-03,Del Biobío,Chiguayante,Gasolina 95,1540,1528,1543,5
+2026-10-03,Del Biobío,Chiguayante,Diésel,1480.4,1470,1483,5
+2026-10-03,Del Biobío,Chiguayante,Gasolina 97,1583,1583,1583,4
+2026-10-03,Del Biobío,Chiguayante,Kerosene,1342,1342,1342,4
+2026-10-03,Del Biobío,San Pedro de la Paz,Gasolina 93,1516,1509,1519,10
+2026-10-03,Del Biobío,San Pedro de la Paz,Gasolina 97,1586.4,1578,1595,10
+2026-10-03,Del Biobío,San Pedro de la Paz,Diésel,1486.8,1481,1491,10
+2026-10-03,Del Biobío,San Pedro de la Paz,Kerosene,1345.67,1344,1349,6
+2026-10-03,Del Biobío,San Pedro de la Paz,Gasolina 95,1554.6,1547,1560,10
+2026-10-03,Del Biobío,Concepción,GLP,690,690,690,1
+2026-10-03,Del Biobío,Penco,Gasolina 93,1525.83,1523,1528,6
+2026-10-03,Del Biobío,Penco,Gasolina 97,1588.83,1585,1593,6
+2026-10-03,Del Biobío,Penco,Diésel,1487.17,1484,1490,6
+2026-10-03,Del Biobío,Penco,Gasolina 95,1556.33,1552,1560,6
+2026-10-03,Del Biobío,Coronel,Gasolina 93,1517.67,1517,1519,9
+2026-10-03,Del Biobío,Coronel,Gasolina 97,1593.67,1592,1598,9
+2026-10-03,Del Biobío,Coronel,Diésel,1487.78,1487,1490,9
+2026-10-03,Del Biobío,Coronel,Kerosene,1335.57,1325,1349,7
+2026-10-03,Del Biobío,Coronel,Gasolina 95,1558.22,1557,1560,9
+2026-10-03,Del Biobío,Florida,Gasolina 93,1525,1525,1525,1
+2026-10-03,Del Biobío,Florida,Gasolina 97,1588,1588,1588,1
+2026-10-03,Del Biobío,Florida,Diésel,1490,1490,1490,1
+2026-10-03,Del Biobío,Florida,Kerosene,1323,1323,1323,1
+2026-10-03,Del Biobío,Florida,Gasolina 95,1557,1557,1557,1
+2026-10-03,Del Biobío,Lota,Gasolina 93,1507.75,1507,1508,4
+2026-10-03,Del Biobío,Lota,Gasolina 97,1588.25,1587,1589,4
+2026-10-03,Del Biobío,Lota,Diésel,1480.5,1480,1481,4
+2026-10-03,Del Biobío,Lota,Kerosene,1377,1377,1377,2
+2026-10-03,Del Biobío,Lota,Gasolina 95,1547,1547,1547,4
+2026-10-03,Del Biobío,Penco,Kerosene,1310.33,1307,1314,3
+2026-10-03,Del Biobío,Hualpén,Gasolina 93,1497,1491,1499,4
+2026-10-03,Del Biobío,Hualpén,Gasolina 97,1576.5,1573,1581,4
+2026-10-03,Del Biobío,Hualpén,Diésel,1476.75,1471,1479,4
+2026-10-03,Del Biobío,Hualpén,Kerosene,1325.67,1325,1327,3
+2026-10-03,Del Biobío,Hualpén,Gasolina 95,1537,1532,1540,4
+2026-10-03,Del Biobío,Talcahuano,Gasolina 93,1493.5,1387,1525,18
+2026-10-03,Del Biobío,Talcahuano,Gasolina 97,1570.81,1466,1589,16
+2026-10-03,Del Biobío,Talcahuano,Diésel,1458,1160,1490,18
+2026-10-03,Del Biobío,Talcahuano,Kerosene,1314.78,1300,1345,9
+2026-10-03,Del Biobío,Talcahuano,Gasolina 95,1532.33,1425,1557,18
+2026-10-03,Del Biobío,Tomé,Gasolina 93,1525,1525,1525,4
+2026-10-03,Del Biobío,Tomé,Gasolina 97,1583,1583,1583,4
+2026-10-03,Del Biobío,Tomé,Diésel,1483,1483,1483,4
+2026-10-03,Del Biobío,Tomé,Kerosene,1330.25,1330,1331,4
+2026-10-03,Del Biobío,Tomé,Gasolina 95,1556,1556,1556,4
+2026-10-03,Del Biobío,Lebu,Gasolina 93,1531,1531,1531,2
+2026-10-03,Del Biobío,Lebu,Gasolina 97,1602,1602,1602,2
+2026-10-03,Del Biobío,Lebu,Diésel,1496.5,1496,1497,2
+2026-10-03,Del Biobío,Lebu,Kerosene,1361,1361,1361,1
+2026-10-03,Del Biobío,Lebu,Gasolina 95,1567,1567,1567,2
+2026-10-03,Del Biobío,Arauco,Gasolina 93,1526.17,1492,1541,6
+2026-10-03,Del Biobío,Arauco,Gasolina 97,1586.25,1557,1596,4
+2026-10-03,Del Biobío,Arauco,Diésel,1472.67,1392,1493,6
+2026-10-03,Del Biobío,Arauco,Kerosene,1253.33,1064,1348,3
+2026-10-03,Del Biobío,Arauco,Gasolina 95,1558.17,1524,1573,6
+2026-10-03,Del Biobío,Cañete,Gasolina 93,1536,1536,1536,5
+2026-10-03,Del Biobío,Cañete,Gasolina 97,1604,1604,1604,5
+2026-10-03,Del Biobío,Cañete,Diésel,1505,1505,1505,5
+2026-10-03,Del Biobío,Cañete,Kerosene,1360,1360,1360,2
+2026-10-03,Del Biobío,Cañete,Gasolina 95,1571,1571,1571,5
+2026-10-03,Del Biobío,Contulmo,Gasolina 93,1534,1534,1534,1
+2026-10-03,Del Biobío,Contulmo,Gasolina 97,1606,1606,1606,1
+2026-10-03,Del Biobío,Contulmo,Diésel,1505,1505,1505,1
+2026-10-03,Del Biobío,Contulmo,Gasolina 95,1571,1571,1571,1
+2026-10-03,Del Biobío,Curanilahue,Gasolina 93,1535,1535,1535,2
+2026-10-03,Del Biobío,Curanilahue,Gasolina 97,1602,1602,1602,2
+2026-10-03,Del Biobío,Curanilahue,Diésel,1503,1503,1503,2
+2026-10-03,Del Biobío,Curanilahue,Gasolina 95,1568,1568,1568,2
+2026-10-03,Del Biobío,Los Álamos,Gasolina 93,1536,1536,1536,2
+2026-10-03,Del Biobío,Los Álamos,Gasolina 97,1601,1601,1601,2
+2026-10-03,Del Biobío,Los Álamos,Diésel,1504,1504,1504,2
+2026-10-03,Del Biobío,Los Álamos,Gasolina 95,1571,1571,1571,2
+2026-10-03,Del Biobío,Los Álamos,Kerosene,1355,1355,1355,1
+2026-10-03,Del Biobío,Tirúa,Gasolina 93,1548,1548,1548,2
+2026-10-03,Del Biobío,Tirúa,Gasolina 97,1602,1602,1602,2
+2026-10-03,Del Biobío,Tirúa,Diésel,1511,1511,1511,2
+2026-10-03,Del Biobío,Tirúa,Gasolina 95,1574,1574,1574,2
+2026-10-03,Del Biobío,Los Ángeles,Gasolina 93,1493.94,1452,1535,32
+2026-10-03,Del Biobío,Los Ángeles,Gasolina 97,1558.38,1518,1610,29
+2026-10-03,Del Biobío,Los Ángeles,Diésel,1465.18,1379,1510,34
+2026-10-03,Del Biobío,Los Ángeles,Kerosene,1274.94,1039,1342,17
+2026-10-03,Del Biobío,Los Ángeles,Gasolina 95,1527.16,1483,1562,31
+2026-10-03,Del Biobío,Cabrero,Gasolina 93,1474.13,1192,1528,8
+2026-10-03,Del Biobío,Cabrero,Gasolina 97,1610,1610,1610,3
+2026-10-03,Del Biobío,Cabrero,Diésel,1383.38,913,1479,8
+2026-10-03,Del Biobío,Cabrero,Gasolina 95,1504.29,1221,1560,7
+2026-10-03,Del Biobío,Cabrero,Kerosene,1351,1351,1351,1
+2026-10-03,Del Biobío,Laja,Gasolina 93,1528,1528,1528,3
+2026-10-03,Del Biobío,Laja,Gasolina 97,1593,1593,1593,2
+2026-10-03,Del Biobío,Laja,Diésel,1499,1499,1499,3
+2026-10-03,Del Biobío,Laja,Kerosene,1324,1324,1324,1
+2026-10-03,Del Biobío,Laja,Gasolina 95,1557,1557,1557,3
+2026-10-03,Del Biobío,Mulchén,Gasolina 93,1533.67,1533,1535,3
+2026-10-03,Del Biobío,Mulchén,Gasolina 97,1592,1592,1592,3
+2026-10-03,Del Biobío,Mulchén,Diésel,1502.67,1502,1504,3
+2026-10-03,Del Biobío,Mulchén,Kerosene,1357,1357,1357,1
+2026-10-03,Del Biobío,Mulchén,Gasolina 95,1562.67,1562,1564,3
+2026-10-03,Del Biobío,Nacimiento,Gasolina 93,1539,1539,1539,3
+2026-10-03,Del Biobío,Nacimiento,Gasolina 97,1588,1588,1588,3
+2026-10-03,Del Biobío,Nacimiento,Diésel,1504,1504,1504,3
+2026-10-03,Del Biobío,Nacimiento,Kerosene,1328,1328,1328,1
+2026-10-03,Del Biobío,Nacimiento,Gasolina 95,1567,1567,1567,3
+2026-10-03,Del Biobío,Santa Bárbara,Gasolina 93,1534.5,1533,1536,2
+2026-10-03,Del Biobío,Santa Bárbara,Gasolina 97,1589,1587,1591,2
+2026-10-03,Del Biobío,Santa Bárbara,Diésel,1499,1499,1499,2
+2026-10-03,Del Biobío,Santa Bárbara,Kerosene,1324,1324,1324,2
+2026-10-03,Del Biobío,Santa Bárbara,Gasolina 95,1563.5,1562,1565,2
+2026-10-03,Del Biobío,Tucapel,Gasolina 93,1521,1521,1521,2
+2026-10-03,Del Biobío,Tucapel,Gasolina 97,1588,1588,1588,2
+2026-10-03,Del Biobío,Tucapel,Diésel,1485,1485,1485,2
+2026-10-03,Del Biobío,Tucapel,Gasolina 95,1555,1555,1555,2
+2026-10-03,Del Biobío,Yumbel,Gasolina 93,1532,1532,1532,2
+2026-10-03,Del Biobío,Yumbel,Gasolina 97,1598,1598,1598,1
+2026-10-03,Del Biobío,Yumbel,Diésel,1483.5,1483,1484,2
+2026-10-03,Del Biobío,Yumbel,Kerosene,1348,1348,1348,1
+2026-10-03,Del Biobío,Yumbel,Gasolina 95,1556,1556,1556,2
+2026-10-03,Del Biobío,Hualqui,Diésel,1296.5,1292,1301,2
+2026-10-03,Del Biobío,Hualqui,Gasolina 95,1500,1484,1516,2
+2026-10-03,Del Biobío,Antuco,Gasolina 93,1559,1559,1559,1
+2026-10-03,Del Biobío,Antuco,Gasolina 95,1573,1573,1573,1
+2026-10-03,Del Biobío,Antuco,Diésel,1466,1466,1466,1
+2026-10-03,Del Biobío,Santa Juana,Gasolina 93,1518,1518,1518,2
+2026-10-03,Del Biobío,Santa Juana,Gasolina 97,1591,1591,1591,2
+2026-10-03,Del Biobío,Santa Juana,Diésel,1485.5,1485,1486,2
+2026-10-03,Del Biobío,Santa Juana,Kerosene,1328,1328,1328,2
+2026-10-03,Del Biobío,Santa Juana,Gasolina 95,1559,1559,1559,2
+2026-10-03,Del Biobío,Hualqui,Gasolina 93,1481,1481,1481,1
+2026-10-03,Del Biobío,Hualqui,Gasolina 97,1549,1549,1549,1
+2026-10-03,Del Biobío,Curanilahue,Kerosene,1198,1198,1198,1
+2026-10-03,Del Biobío,Quilleco,Gasolina 93,1466,1466,1466,1
+2026-10-03,Del Biobío,Quilleco,Gasolina 95,1498,1498,1498,1
+2026-10-03,Del Biobío,Quilleco,Diésel,1386,1386,1386,1
+2026-10-03,De la Araucanía,Temuco,GLP,638.5,601,676,2
+2026-10-03,De la Araucanía,Angol,GLP,699,699,699,1
+2026-10-03,De la Araucanía,Temuco,Gasolina 93,1526.42,1188,1547,43
+2026-10-03,De la Araucanía,Temuco,Gasolina 97,1589.35,1230,1609,40
+2026-10-03,De la Araucanía,Temuco,Diésel,1486.02,965,1517,43
+2026-10-03,De la Araucanía,Temuco,Gasolina 95,1559.07,1210,1580,43
+2026-10-03,De la Araucanía,Temuco,Kerosene,1321.5,1058,1371,28
+2026-10-03,De la Araucanía,Carahue,Gasolina 93,1522,1486,1550,4
+2026-10-03,De la Araucanía,Carahue,Gasolina 97,1595.75,1560,1623,4
+2026-10-03,De la Araucanía,Carahue,Diésel,1482.5,1406,1522,4
+2026-10-03,De la Araucanía,Carahue,Gasolina 95,1562,1527,1587,4
+2026-10-03,De la Araucanía,Cunco,Gasolina 93,1552.5,1546,1568,4
+2026-10-03,De la Araucanía,Cunco,Gasolina 97,1617.5,1613,1625,4
+2026-10-03,De la Araucanía,Cunco,Diésel,1520.5,1518,1524,4
+2026-10-03,De la Araucanía,Cunco,Kerosene,1373,1373,1373,1
+2026-10-03,De la Araucanía,Cunco,Gasolina 95,1586.75,1581,1598,4
+2026-10-03,De la Araucanía,Freire,Gasolina 93,1551,1550,1552,2
+2026-10-03,De la Araucanía,Freire,Gasolina 97,1612,1611,1613,2
+2026-10-03,De la Araucanía,Freire,Diésel,1519,1518,1520,2
+2026-10-03,De la Araucanía,Freire,Gasolina 95,1583,1582,1584,2
+2026-10-03,De la Araucanía,Galvarino,Gasolina 93,1562,1562,1562,2
+2026-10-03,De la Araucanía,Galvarino,Gasolina 97,1613,1613,1613,2
+2026-10-03,De la Araucanía,Galvarino,Diésel,1511,1511,1511,2
+2026-10-03,De la Araucanía,Galvarino,Gasolina 95,1586,1586,1586,2
+2026-10-03,De la Araucanía,Gorbea,Gasolina 93,1546,1546,1546,2
+2026-10-03,De la Araucanía,Gorbea,Gasolina 97,1609,1609,1609,2
+2026-10-03,De la Araucanía,Gorbea,Diésel,1511,1511,1511,2
+2026-10-03,De la Araucanía,Gorbea,Kerosene,1367,1367,1367,1
+2026-10-03,De la Araucanía,Gorbea,Gasolina 95,1574,1574,1574,2
+2026-10-03,De la Araucanía,Lautaro,Gasolina 93,1542,1540,1544,5
+2026-10-03,De la Araucanía,Lautaro,Gasolina 97,1604.2,1603,1605,5
+2026-10-03,De la Araucanía,Lautaro,Diésel,1503.2,1499,1506,5
+2026-10-03,De la Araucanía,Lautaro,Kerosene,1371,1371,1371,2
+2026-10-03,De la Araucanía,Lautaro,Gasolina 95,1576.6,1574,1578,5
+2026-10-03,De la Araucanía,Loncoche,Gasolina 93,1579,1557,1606,4
+2026-10-03,De la Araucanía,Loncoche,Gasolina 97,1634.67,1633,1638,3
+2026-10-03,De la Araucanía,Loncoche,Diésel,1529,1504,1548,4
+2026-10-03,De la Araucanía,Loncoche,Kerosene,1255.5,1118,1393,2
+2026-10-03,De la Araucanía,Loncoche,Gasolina 95,1606.5,1587,1630,4
+2026-10-03,De la Araucanía,Nueva Imperial,Gasolina 93,1547.33,1546,1550,3
+2026-10-03,De la Araucanía,Nueva Imperial,Gasolina 97,1619,1618,1621,3
+2026-10-03,De la Araucanía,Nueva Imperial,Diésel,1512.67,1512,1514,3
+2026-10-03,De la Araucanía,Nueva Imperial,Kerosene,1377,1376,1379,3
+2026-10-03,De la Araucanía,Nueva Imperial,Gasolina 95,1583,1582,1585,3
+2026-10-03,De la Araucanía,Perquenco,Gasolina 93,1533,1524,1539,3
+2026-10-03,De la Araucanía,Perquenco,Gasolina 97,1595.67,1587,1602,3
+2026-10-03,De la Araucanía,Perquenco,Diésel,1493,1483,1498,3
+2026-10-03,De la Araucanía,Perquenco,Gasolina 95,1567,1558,1573,3
+2026-10-03,De la Araucanía,Pitrufquén,Gasolina 93,1526,1506,1546,2
+2026-10-03,De la Araucanía,Pitrufquén,Gasolina 97,1575,1555,1595,2
+2026-10-03,De la Araucanía,Pitrufquén,Diésel,1468,1420,1516,2
+2026-10-03,De la Araucanía,Pitrufquén,Kerosene,1363,1363,1363,1
+2026-10-03,De la Araucanía,Pitrufquén,Gasolina 95,1551,1531,1571,2
+2026-10-03,De la Araucanía,Pucón,Gasolina 93,1554,1554,1554,5
+2026-10-03,De la Araucanía,Pucón,Gasolina 97,1615,1615,1615,5
+2026-10-03,De la Araucanía,Pucón,Diésel,1522,1522,1522,5
+2026-10-03,De la Araucanía,Pucón,Kerosene,1380.67,1380,1381,3
+2026-10-03,De la Araucanía,Pucón,Gasolina 95,1526.33,1233,1585,6
+2026-10-03,De la Araucanía,Vilcún,Gasolina 93,1544.5,1540,1549,2
+2026-10-03,De la Araucanía,Vilcún,Gasolina 97,1606,1603,1609,2
+2026-10-03,De la Araucanía,Vilcún,Diésel,1515,1510,1520,2
+2026-10-03,De la Araucanía,Vilcún,Gasolina 95,1576.5,1574,1579,2
+2026-10-03,De la Araucanía,Villarrica,Gasolina 93,1549.73,1535,1556,15
+2026-10-03,De la Araucanía,Villarrica,Gasolina 97,1600.73,1584,1618,15
+2026-10-03,De la Araucanía,Villarrica,Diésel,1518.53,1504,1523,15
+2026-10-03,De la Araucanía,Villarrica,Gasolina 95,1578.47,1564,1587,15
+2026-10-03,De la Araucanía,Villarrica,Kerosene,1374.55,1366,1386,11
+2026-10-03,De la Araucanía,Angol,Gasolina 93,1518.5,1506,1521,8
+2026-10-03,De la Araucanía,Angol,Gasolina 97,1600.43,1587,1603,7
+2026-10-03,De la Araucanía,Angol,Diésel,1478.5,1466,1481,8
+2026-10-03,De la Araucanía,Angol,Kerosene,1337.2,1310,1349,5
+2026-10-03,De la Araucanía,Angol,Gasolina 95,1552.13,1539,1555,8
+2026-10-03,De la Araucanía,Collipulli,Gasolina 93,1543.5,1521,1553,4
+2026-10-03,De la Araucanía,Collipulli,Gasolina 97,1603,1602,1605,4
+2026-10-03,De la Araucanía,Collipulli,Diésel,1495.25,1481,1500,4
+2026-10-03,De la Araucanía,Collipulli,Kerosene,1364,1364,1364,1
+2026-10-03,De la Araucanía,Collipulli,Gasolina 95,1571.5,1555,1579,4
+2026-10-03,De la Araucanía,Curacautín,Gasolina 93,1525,1525,1525,3
+2026-10-03,De la Araucanía,Curacautín,Gasolina 97,1606,1606,1606,3
+2026-10-03,De la Araucanía,Curacautín,Diésel,1478,1478,1478,3
+2026-10-03,De la Araucanía,Curacautín,Kerosene,1347,1347,1347,2
+2026-10-03,De la Araucanía,Curacautín,Gasolina 95,1560,1560,1560,3
+2026-10-03,De la Araucanía,Lonquimay,Gasolina 93,1553,1553,1553,1
+2026-10-03,De la Araucanía,Lonquimay,Gasolina 97,1605,1605,1605,1
+2026-10-03,De la Araucanía,Lonquimay,Diésel,1523,1523,1523,1
+2026-10-03,De la Araucanía,Lonquimay,Kerosene,1363,1363,1363,1
+2026-10-03,De la Araucanía,Lonquimay,Gasolina 95,1577,1577,1577,1
+2026-10-03,De la Araucanía,Lumaco,Gasolina 93,1534.33,1529,1545,3
+2026-10-03,De la Araucanía,Lumaco,Gasolina 97,1574,1574,1574,2
+2026-10-03,De la Araucanía,Lumaco,Diésel,1510.67,1506,1520,3
+2026-10-03,De la Araucanía,Lumaco,Kerosene,1365,1365,1365,1
+2026-10-03,De la Araucanía,Lumaco,Gasolina 95,1557,1549,1573,3
+2026-10-03,De la Araucanía,Purén,Gasolina 93,1534,1534,1534,2
+2026-10-03,De la Araucanía,Purén,Gasolina 97,1606,1606,1606,1
+2026-10-03,De la Araucanía,Purén,Diésel,1505,1505,1505,2
+2026-10-03,De la Araucanía,Purén,Kerosene,1380,1380,1380,1
+2026-10-03,De la Araucanía,Purén,Gasolina 95,1571,1571,1571,2
+2026-10-03,De la Araucanía,Renaico,Gasolina 93,1536,1521,1551,2
+2026-10-03,De la Araucanía,Renaico,Diésel,1500,1481,1519,2
+2026-10-03,De la Araucanía,Renaico,Gasolina 95,1571.5,1555,1588,2
+2026-10-03,De la Araucanía,Traiguén,Gasolina 93,1542,1542,1542,3
+2026-10-03,De la Araucanía,Traiguén,Gasolina 97,1598,1598,1598,3
+2026-10-03,De la Araucanía,Traiguén,Diésel,1515,1515,1515,3
+2026-10-03,De la Araucanía,Traiguén,Gasolina 95,1566,1566,1566,3
+2026-10-03,De la Araucanía,Victoria,Gasolina 93,1516.17,1504,1539,6
+2026-10-03,De la Araucanía,Victoria,Gasolina 97,1596.6,1593,1602,5
+2026-10-03,De la Araucanía,Victoria,Diésel,1480.83,1470,1498,6
+2026-10-03,De la Araucanía,Victoria,Kerosene,1356,1356,1356,3
+2026-10-03,De la Araucanía,Victoria,Gasolina 95,1548.67,1535,1573,6
+2026-10-03,De la Araucanía,Carahue,Kerosene,1385.5,1376,1395,2
+2026-10-03,De la Araucanía,Melipeuco,Gasolina 93,1589,1589,1589,2
+2026-10-03,De la Araucanía,Melipeuco,Diésel,1446,1446,1446,2
+2026-10-03,De la Araucanía,Melipeuco,Gasolina 95,1617,1617,1617,2
+2026-10-03,De la Araucanía,Melipeuco,Gasolina 97,1665,1665,1665,1
+2026-10-03,De la Araucanía,Padre las Casas,Gasolina 93,1539,1538,1540,5
+2026-10-03,De la Araucanía,Padre las Casas,Gasolina 97,1604.2,1602,1606,5
+2026-10-03,De la Araucanía,Padre las Casas,Diésel,1510.4,1509,1512,5
+2026-10-03,De la Araucanía,Padre las Casas,Kerosene,1370.5,1370,1372,4
+2026-10-03,De la Araucanía,Padre las Casas,Gasolina 95,1574.4,1573,1576,5
+2026-10-03,De la Araucanía,Saavedra,Gasolina 93,1556,1556,1556,2
+2026-10-03,De la Araucanía,Saavedra,Gasolina 97,1626,1625,1627,2
+2026-10-03,De la Araucanía,Saavedra,Diésel,1520.5,1520,1521,2
+2026-10-03,De la Araucanía,Saavedra,Kerosene,1395,1395,1395,1
+2026-10-03,De la Araucanía,Saavedra,Gasolina 95,1592.5,1592,1593,2
+2026-10-03,De la Araucanía,Teodoro Schmidt,Gasolina 93,1556.33,1544,1568,3
+2026-10-03,De la Araucanía,Teodoro Schmidt,Gasolina 97,1617.5,1612,1623,2
+2026-10-03,De la Araucanía,Teodoro Schmidt,Diésel,1470,1366,1524,3
+2026-10-03,De la Araucanía,Teodoro Schmidt,Kerosene,1103,1103,1103,1
+2026-10-03,De la Araucanía,Teodoro Schmidt,Gasolina 95,1590.33,1581,1598,3
+2026-10-03,De la Araucanía,Toltén,Gasolina 93,1558.5,1556,1561,2
+2026-10-03,De la Araucanía,Toltén,Gasolina 97,1627,1627,1627,1
+2026-10-03,De la Araucanía,Toltén,Diésel,1520.5,1519,1522,2
+2026-10-03,De la Araucanía,Toltén,Kerosene,1388,1387,1389,2
+2026-10-03,De la Araucanía,Toltén,Gasolina 95,1592.5,1590,1595,2
+2026-10-03,De la Araucanía,Los Sauces,Gasolina 93,1523,1520,1526,2
+2026-10-03,De la Araucanía,Los Sauces,Diésel,1487.5,1487,1488,2
+2026-10-03,De la Araucanía,Los Sauces,Gasolina 95,1556,1553,1559,2
+2026-10-03,De la Araucanía,Los Sauces,Gasolina 97,1611,1611,1611,1
+2026-10-03,De la Araucanía,Traiguén,Kerosene,1361,1361,1361,1
+2026-10-03,De la Araucanía,Curarrehue,Gasolina 93,1644,1644,1644,1
+2026-10-03,De la Araucanía,Curarrehue,Gasolina 97,1705,1705,1705,1
+2026-10-03,De la Araucanía,Curarrehue,Diésel,1612,1612,1612,1
+2026-10-03,De la Araucanía,Curarrehue,Gasolina 95,1675,1675,1675,1
+2026-10-03,De la Araucanía,Cholchol,Gasolina 93,1625,1625,1625,1
+2026-10-03,De la Araucanía,Cholchol,Diésel,1602,1602,1602,1
+2026-10-03,De la Araucanía,Cholchol,Gasolina 95,1655,1655,1655,1
+2026-10-03,De la Araucanía,Cholchol,Kerosene,1382,1382,1382,1
+2026-10-03,De la Araucanía,Renaico,Gasolina 97,1603,1603,1603,1
+2026-10-03,De los Lagos,Puerto Montt,GLP,729,729,729,1
+2026-10-03,De los Lagos,Osorno,GLP,786.5,716,857,2
+2026-10-03,De los Lagos,Puerto Montt,Gasolina 93,1559.27,1524,1571,41
+2026-10-03,De los Lagos,Puerto Montt,Gasolina 97,1613.24,1579,1624,41
+2026-10-03,De los Lagos,Puerto Montt,Diésel,1530.05,1439,1543,41
+2026-10-03,De los Lagos,Puerto Montt,Kerosene,1375.96,1108,1396,25
+2026-10-03,De los Lagos,Puerto Montt,Gasolina 95,1585.15,1551,1598,41
+2026-10-03,De los Lagos,Calbuco,Gasolina 93,1568,1568,1568,2
+2026-10-03,De los Lagos,Calbuco,Gasolina 97,1621,1621,1621,2
+2026-10-03,De los Lagos,Calbuco,Diésel,1535,1535,1535,2
+2026-10-03,De los Lagos,Calbuco,Kerosene,1393,1393,1393,2
+2026-10-03,De los Lagos,Calbuco,Gasolina 95,1594,1594,1594,2
+2026-10-03,De los Lagos,Fresia,Gasolina 93,1567,1567,1567,2
+2026-10-03,De los Lagos,Fresia,Gasolina 97,1629,1629,1629,2
+2026-10-03,De los Lagos,Fresia,Diésel,1534,1534,1534,2
+2026-10-03,De los Lagos,Fresia,Gasolina 95,1597,1597,1597,2
+2026-10-03,De los Lagos,Frutillar,Gasolina 93,1567,1564,1573,3
+2026-10-03,De los Lagos,Frutillar,Gasolina 97,1625,1625,1625,3
+2026-10-03,De los Lagos,Frutillar,Diésel,1536,1535,1538,3
+2026-10-03,De los Lagos,Frutillar,Kerosene,1398,1398,1398,2
+2026-10-03,De los Lagos,Frutillar,Gasolina 95,1596,1596,1596,3
+2026-10-03,De los Lagos,Los Muermos,Gasolina 93,1570,1570,1570,2
+2026-10-03,De los Lagos,Los Muermos,Gasolina 97,1625,1625,1625,2
+2026-10-03,De los Lagos,Los Muermos,Diésel,1538,1538,1538,2
+2026-10-03,De los Lagos,Los Muermos,Kerosene,1394,1394,1394,1
+2026-10-03,De los Lagos,Los Muermos,Gasolina 95,1596,1596,1596,2
+2026-10-03,De los Lagos,Llanquihue,Gasolina 93,1573,1573,1573,2
+2026-10-03,De los Lagos,Llanquihue,Gasolina 97,1632,1632,1632,2
+2026-10-03,De los Lagos,Llanquihue,Diésel,1540,1540,1540,2
+2026-10-03,De los Lagos,Llanquihue,Kerosene,1396,1396,1396,2
+2026-10-03,De los Lagos,Llanquihue,Gasolina 95,1601,1601,1601,2
+2026-10-03,De los Lagos,Maullín,Gasolina 93,1570,1570,1570,1
+2026-10-03,De los Lagos,Maullín,Gasolina 97,1630,1630,1630,1
+2026-10-03,De los Lagos,Maullín,Diésel,1537,1537,1537,1
+2026-10-03,De los Lagos,Maullín,Gasolina 95,1602,1602,1602,1
+2026-10-03,De los Lagos,Puerto Varas,Gasolina 93,1573.2,1564,1590,10
+2026-10-03,De los Lagos,Puerto Varas,Gasolina 97,1623.44,1615,1631,9
+2026-10-03,De los Lagos,Puerto Varas,Diésel,1540.56,1537,1546,9
+2026-10-03,De los Lagos,Puerto Varas,Kerosene,1394.33,1386,1396,6
+2026-10-03,De los Lagos,Puerto Varas,Gasolina 95,1597.78,1590,1601,9
+2026-10-03,De los Lagos,Castro,Gasolina 93,1584.75,1570,1590,8
+2026-10-03,De los Lagos,Castro,Gasolina 97,1640.75,1626,1646,8
+2026-10-03,De los Lagos,Castro,Diésel,1551.13,1538,1553,8
+2026-10-03,De los Lagos,Castro,Kerosene,1362.67,1124,1416,6
+2026-10-03,De los Lagos,Castro,Gasolina 95,1615.5,1601,1621,8
+2026-10-03,De los Lagos,Ancud,Gasolina 93,1578.5,1578,1579,4
+2026-10-03,De los Lagos,Ancud,Gasolina 97,1634,1633,1635,4
+2026-10-03,De los Lagos,Ancud,Diésel,1534.5,1534,1535,4
+2026-10-03,De los Lagos,Ancud,Kerosene,1415,1415,1415,3
+2026-10-03,De los Lagos,Ancud,Gasolina 95,1609,1608,1610,4
+2026-10-03,De los Lagos,Chonchi,Gasolina 93,1582.5,1582,1583,2
+2026-10-03,De los Lagos,Chonchi,Gasolina 97,1639,1638,1640,2
+2026-10-03,De los Lagos,Chonchi,Diésel,1550.5,1550,1551,2
+2026-10-03,De los Lagos,Chonchi,Kerosene,1422,1422,1422,1
+2026-10-03,De los Lagos,Chonchi,Gasolina 95,1613,1612,1614,2
+2026-10-03,De los Lagos,Dalcahue,Gasolina 93,1597,1586,1618,3
+2026-10-03,De los Lagos,Dalcahue,Gasolina 97,1645.5,1644,1647,2
+2026-10-03,De los Lagos,Dalcahue,Diésel,1564.33,1554,1584,3
+2026-10-03,De los Lagos,Dalcahue,Kerosene,1420,1420,1420,1
+2026-10-03,De los Lagos,Dalcahue,Gasolina 95,1632.33,1618,1660,3
+2026-10-03,De los Lagos,Quellón,Gasolina 93,1577,1576,1578,4
+2026-10-03,De los Lagos,Quellón,Gasolina 97,1634.5,1633,1636,4
+2026-10-03,De los Lagos,Quellón,Diésel,1556.25,1556,1557,4
+2026-10-03,De los Lagos,Quellón,Kerosene,1442.33,1440,1447,3
+2026-10-03,De los Lagos,Quellón,Gasolina 95,1600.5,1599,1602,4
+2026-10-03,De los Lagos,Osorno,Gasolina 93,1566.81,1555,1576,26
+2026-10-03,De los Lagos,Osorno,Gasolina 97,1625.69,1613,1634,26
+2026-10-03,De los Lagos,Osorno,Diésel,1533.54,1522,1540,26
+2026-10-03,De los Lagos,Osorno,Kerosene,1392.4,1382,1397,15
+2026-10-03,De los Lagos,Osorno,Gasolina 95,1596.65,1584,1604,26
+2026-10-03,De los Lagos,Purranque,Gasolina 93,1560.33,1534,1574,3
+2026-10-03,De los Lagos,Purranque,Gasolina 97,1621,1595,1635,3
+2026-10-03,De los Lagos,Purranque,Diésel,1506.67,1443,1539,3
+2026-10-03,De los Lagos,Purranque,Kerosene,1254,1117,1391,2
+2026-10-03,De los Lagos,Purranque,Gasolina 95,1591,1565,1605,3
+2026-10-03,De los Lagos,Río Negro,Gasolina 93,1534,1534,1534,1
+2026-10-03,De los Lagos,Río Negro,Gasolina 97,1595,1595,1595,1
+2026-10-03,De los Lagos,Río Negro,Diésel,1443,1443,1443,1
+2026-10-03,De los Lagos,Río Negro,Kerosene,1116,1116,1116,1
+2026-10-03,De los Lagos,Río Negro,Gasolina 95,1565,1565,1565,1
+2026-10-03,De los Lagos,San Pablo,Gasolina 93,1565.75,1541,1576,4
+2026-10-03,De los Lagos,San Pablo,Gasolina 95,1593.75,1569,1604,4
+2026-10-03,De los Lagos,San Pablo,Gasolina 97,1623.75,1599,1634,4
+2026-10-03,De los Lagos,San Pablo,Diésel,1515.75,1449,1540,4
+2026-10-03,De los Lagos,Chaitén,Gasolina 93,1747,1747,1747,1
+2026-10-03,De los Lagos,Chaitén,Gasolina 97,1827,1827,1827,1
+2026-10-03,De los Lagos,Chaitén,Diésel,1763,1763,1763,2
+2026-10-03,De los Lagos,Chaitén,Kerosene,1488,1488,1488,1
+2026-10-03,De los Lagos,Chaitén,Gasolina 95,1782,1782,1782,2
+2026-10-03,De los Lagos,Hualaihué,Gasolina 93,1636,1636,1636,1
+2026-10-03,De los Lagos,Hualaihué,Gasolina 97,1683,1683,1683,1
+2026-10-03,De los Lagos,Hualaihué,Diésel,1603,1603,1603,1
+2026-10-03,De los Lagos,Hualaihué,Kerosene,1406,1406,1406,1
+2026-10-03,De los Lagos,Hualaihué,Gasolina 95,1656,1656,1656,1
+2026-10-03,De los Lagos,Palena,Diésel,1754,1754,1754,1
+2026-10-03,De los Lagos,Palena,Gasolina 95,1757,1757,1757,1
+2026-10-03,De los Lagos,San Pablo,Kerosene,1393,1393,1393,1
+2026-10-03,De los Lagos,Puqueldón,Gasolina 93,1771,1771,1771,1
+2026-10-03,De los Lagos,Puqueldón,Diésel,1737,1737,1737,1
+2026-10-03,De los Lagos,Puqueldón,Gasolina 97,1825,1825,1825,1
+2026-10-03,De los Lagos,Puqueldón,Gasolina 95,1797,1797,1797,1
+2026-10-03,De los Lagos,Quinchao,Gasolina 93,1645.5,1645,1646,2
+2026-10-03,De los Lagos,Quinchao,Diésel,1597.5,1597,1598,2
+2026-10-03,De los Lagos,Quinchao,Kerosene,1585.5,1585,1586,2
+2026-10-03,De los Lagos,Quinchao,Gasolina 95,1671.5,1671,1672,2
+2026-10-03,De los Lagos,Quinchao,Gasolina 97,1699,1699,1699,1
+2026-10-03,De los Lagos,Futaleufú,Diésel,1742,1742,1742,1
+2026-10-03,De los Lagos,Futaleufú,Gasolina 95,1760,1760,1760,1
+2026-10-03,De los Lagos,Quemchi,Gasolina 93,1603,1603,1603,1
+2026-10-03,De los Lagos,Quemchi,Gasolina 97,1658,1658,1658,1
+2026-10-03,De los Lagos,Quemchi,Diésel,1574,1574,1574,1
+2026-10-03,De los Lagos,Quemchi,Gasolina 95,1629,1629,1629,1
+2026-10-03,De los Lagos,Puerto Octay,Gasolina 93,1605,1605,1605,1
+2026-10-03,De los Lagos,Puerto Octay,Gasolina 97,1651,1651,1651,1
+2026-10-03,De los Lagos,Puerto Octay,Diésel,1552,1552,1552,1
+2026-10-03,De los Lagos,Puerto Octay,Gasolina 95,1629,1629,1629,1
+2026-10-03,De los Lagos,Puyehue,Gasolina 93,1572,1572,1572,2
+2026-10-03,De los Lagos,Puyehue,Gasolina 95,1600,1600,1600,2
+2026-10-03,De los Lagos,Puyehue,Gasolina 97,1628,1628,1628,2
+2026-10-03,De los Lagos,Puyehue,Diésel,1541,1541,1541,2
+2026-10-03,De los Lagos,Puyehue,Kerosene,1382,1382,1382,1
+2026-10-03,Aysén del Gral. Carlos Ibáñez del Campo,Coihaique,Gasolina 93,1588.57,1588,1589,7
+2026-10-03,Aysén del Gral. Carlos Ibáñez del Campo,Coihaique,Gasolina 97,1662,1656,1665,7
+2026-10-03,Aysén del Gral. Carlos Ibáñez del Campo,Coihaique,Diésel,1601.14,1600,1602,7
+2026-10-03,Aysén del Gral. Carlos Ibáñez del Campo,Coihaique,Kerosene,1443,1434,1458,7
+2026-10-03,Aysén del Gral. Carlos Ibáñez del Campo,Coihaique,Gasolina 95,1629.14,1626,1630,7
+2026-10-03,Aysén del Gral. Carlos Ibáñez del Campo,Cisnes,Gasolina 93,1633.67,1617,1667,3
+2026-10-03,Aysén del Gral. Carlos Ibáñez del Campo,Cisnes,Gasolina 97,1688.67,1673,1720,3
+2026-10-03,Aysén del Gral. Carlos Ibáñez del Campo,Cisnes,Diésel,1674.75,1668,1689,4
+2026-10-03,Aysén del Gral. Carlos Ibáñez del Campo,Cisnes,Gasolina 95,1653.67,1632,1697,3
+2026-10-03,Aysén del Gral. Carlos Ibáñez del Campo,Cisnes,Kerosene,1496,1495,1498,3
+2026-10-03,Aysén del Gral. Carlos Ibáñez del Campo,Río Ibáñez,Gasolina 93,1653.5,1636,1671,2
+2026-10-03,Aysén del Gral. Carlos Ibáñez del Campo,Río Ibáñez,Gasolina 97,1714.5,1706,1723,2
+2026-10-03,Aysén del Gral. Carlos Ibáñez del Campo,Río Ibáñez,Diésel,1685.5,1682,1689,2
+2026-10-03,Aysén del Gral. Carlos Ibáñez del Campo,Río Ibáñez,Gasolina 95,1687,1677,1697,2
+2026-10-03,Aysén del Gral. Carlos Ibáñez del Campo,Río Ibáñez,Kerosene,1500,1486,1514,2
+2026-10-03,Aysén del Gral. Carlos Ibáñez del Campo,Aysén,Gasolina 93,1600.75,1584,1645,4
+2026-10-03,Aysén del Gral. Carlos Ibáñez del Campo,Aysén,Gasolina 97,1670.75,1654,1715,4
+2026-10-03,Aysén del Gral. Carlos Ibáñez del Campo,Aysén,Diésel,1600.25,1580,1653,4
+2026-10-03,Aysén del Gral. Carlos Ibáñez del Campo,Aysén,Kerosene,1433,1433,1433,2
+2026-10-03,Aysén del Gral. Carlos Ibáñez del Campo,Aysén,Gasolina 95,1634.5,1618,1678,4
+2026-10-03,Aysén del Gral. Carlos Ibáñez del Campo,O’Higgins,Diésel,1802,1802,1802,1
+2026-10-03,Aysén del Gral. Carlos Ibáñez del Campo,O’Higgins,Gasolina 95,1801,1801,1801,1
+2026-10-03,Aysén del Gral. Carlos Ibáñez del Campo,Cochrane,Gasolina 93,1714,1714,1714,1
+2026-10-03,Aysén del Gral. Carlos Ibáñez del Campo,Cochrane,Gasolina 97,1789,1789,1789,1
+2026-10-03,Aysén del Gral. Carlos Ibáñez del Campo,Cochrane,Diésel,1735,1735,1735,1
+2026-10-03,Aysén del Gral. Carlos Ibáñez del Campo,Cochrane,Kerosene,1503,1503,1503,1
+2026-10-03,Aysén del Gral. Carlos Ibáñez del Campo,Cochrane,Gasolina 95,1750,1750,1750,1
+2026-10-03,Aysén del Gral. Carlos Ibáñez del Campo,Tortel,Gasolina 93,1749,1749,1749,1
+2026-10-03,Aysén del Gral. Carlos Ibáñez del Campo,Tortel,Diésel,1774,1774,1774,1
+2026-10-03,Aysén del Gral. Carlos Ibáñez del Campo,Chile Chico,Gasolina 93,1677.33,1676,1680,3
+2026-10-03,Aysén del Gral. Carlos Ibáñez del Campo,Chile Chico,Gasolina 97,1750,1750,1750,2
+2026-10-03,Aysén del Gral. Carlos Ibáñez del Campo,Chile Chico,Diésel,1695.67,1691,1705,3
+2026-10-03,Aysén del Gral. Carlos Ibáñez del Campo,Chile Chico,Kerosene,1514,1514,1514,2
+2026-10-03,Aysén del Gral. Carlos Ibáñez del Campo,Chile Chico,Gasolina 95,1714.33,1712,1719,3
+2026-10-03,Magallanes y de la Antártica Chilena,Punta Arenas,GNC,404.5,402,407,4
+2026-10-03,Magallanes y de la Antártica Chilena,San Gregorio,Gasolina 93,1593,1586,1600,2
+2026-10-03,Magallanes y de la Antártica Chilena,San Gregorio,Diésel,1561.5,1552,1571,2
+2026-10-03,Magallanes y de la Antártica Chilena,Cabo de Hornos,Gasolina 93,1801,1801,1801,1
+2026-10-03,Magallanes y de la Antártica Chilena,Cabo de Hornos,Diésel,1736,1736,1736,1
+2026-10-03,Magallanes y de la Antártica Chilena,Porvenir,Gasolina 93,1591,1591,1591,1
+2026-10-03,Magallanes y de la Antártica Chilena,Porvenir,Gasolina 97,1690,1690,1690,1
+2026-10-03,Magallanes y de la Antártica Chilena,Porvenir,Diésel,1607,1607,1607,1
+2026-10-03,Magallanes y de la Antártica Chilena,Porvenir,Gasolina 95,1647,1647,1647,1
+2026-10-03,Magallanes y de la Antártica Chilena,Punta Arenas,Gasolina 93,1573.72,1555,1635,18
+2026-10-03,Magallanes y de la Antártica Chilena,Punta Arenas,Gasolina 97,1656.17,1638,1732,18
+2026-10-03,Magallanes y de la Antártica Chilena,Punta Arenas,Diésel,1607.72,1557,1619,18
+2026-10-03,Magallanes y de la Antártica Chilena,Punta Arenas,Gasolina 95,1614.39,1596,1683,18
+2026-10-03,Magallanes y de la Antártica Chilena,Primavera,Gasolina 93,1744.67,1714,1766,3
+2026-10-03,Magallanes y de la Antártica Chilena,Primavera,Diésel,1661,1614,1709,3
+2026-10-03,Magallanes y de la Antártica Chilena,Natales,Gasolina 93,1605.25,1605,1606,4
+2026-10-03,Magallanes y de la Antártica Chilena,Natales,Gasolina 97,1685,1684,1686,4
+2026-10-03,Magallanes y de la Antártica Chilena,Natales,Diésel,1636.25,1636,1637,4
+2026-10-03,Magallanes y de la Antártica Chilena,Natales,Gasolina 95,1646,1646,1646,4
+2026-10-03,Magallanes y de la Antártica Chilena,Punta Arenas,GLP,469,469,469,1
+2026-10-03,Magallanes y de la Antártica Chilena,Laguna Blanca,Gasolina 93,1581,1581,1581,1
+2026-10-03,Magallanes y de la Antártica Chilena,Laguna Blanca,Gasolina 97,1662,1662,1662,1
+2026-10-03,Magallanes y de la Antártica Chilena,Laguna Blanca,Diésel,1619,1619,1619,1
+2026-10-03,Magallanes y de la Antártica Chilena,Laguna Blanca,Gasolina 95,1621,1621,1621,1
+2026-10-03,Magallanes y de la Antártica Chilena,Natales,GNC,513,513,513,1
+2026-10-03,Metropolitana de Santiago,El Bosque,GLP,617,565,669,2
+2026-10-03,Metropolitana de Santiago,Quinta Normal,GLP,599,599,599,1
+2026-10-03,Metropolitana de Santiago,Puente Alto,GLP,611.67,565,679,3
+2026-10-03,Metropolitana de Santiago,Santiago Centro,GNC,906,906,906,1
+2026-10-03,Metropolitana de Santiago,Santiago Centro,GLP,679,679,679,1
+2026-10-03,Metropolitana de Santiago,La Reina,GLP,679,679,679,1
+2026-10-03,Metropolitana de Santiago,San Miguel,GNC,899,899,899,1
+2026-10-03,Metropolitana de Santiago,San Miguel,GLP,679,679,679,1
+2026-10-03,Metropolitana de Santiago,Puente Alto,GNC,914,914,914,1
+2026-10-03,Metropolitana de Santiago,Santiago Centro,Gasolina 93,1489.97,1448,1506,29
+2026-10-03,Metropolitana de Santiago,Santiago Centro,Gasolina 97,1584.39,1530,1622,28
+2026-10-03,Metropolitana de Santiago,Santiago Centro,Diésel,1459.47,1297,1494,30
+2026-10-03,Metropolitana de Santiago,Santiago Centro,Kerosene,1344.05,1084,1364,20
+2026-10-03,Metropolitana de Santiago,Santiago Centro,Gasolina 95,1530.45,1454,1563,29
+2026-10-03,Metropolitana de Santiago,Ñuñoa,Gasolina 93,1479.56,1393,1541,25
+2026-10-03,Metropolitana de Santiago,Ñuñoa,Gasolina 97,1575.22,1514,1629,23
+2026-10-03,Metropolitana de Santiago,Ñuñoa,Diésel,1458.29,1350,1501,24
+2026-10-03,Metropolitana de Santiago,Ñuñoa,Kerosene,1301.95,1055,1359,19
+2026-10-03,Metropolitana de Santiago,Ñuñoa,Gasolina 95,1526.68,1445,1574,25
+2026-10-03,Metropolitana de Santiago,Cerrillos,Kerosene,1261.83,1080,1348,6
+2026-10-03,Metropolitana de Santiago,Cerrillos,Gasolina 93,1459.4,1375,1501,10
+2026-10-03,Metropolitana de Santiago,Cerrillos,Gasolina 95,1493.5,1415,1546,10
+2026-10-03,Metropolitana de Santiago,Cerrillos,Gasolina 97,1551.89,1487,1589,9
+2026-10-03,Metropolitana de Santiago,Cerrillos,Diésel,1397.8,1249,1474,10
+2026-10-03,Metropolitana de Santiago,Conchalí,Gasolina 93,1485.8,1467,1501,10
+2026-10-03,Metropolitana de Santiago,Conchalí,Gasolina 97,1578.89,1560,1627,9
+2026-10-03,Metropolitana de Santiago,Conchalí,Diésel,1452.5,1436,1463,10
+2026-10-03,Metropolitana de Santiago,Conchalí,Kerosene,1276.67,1098,1359,6
+2026-10-03,Metropolitana de Santiago,Conchalí,Gasolina 95,1534.7,1515,1559,10
+2026-10-03,Metropolitana de Santiago,El Bosque,Gasolina 93,1471.25,1433,1492,8
+2026-10-03,Metropolitana de Santiago,El Bosque,Gasolina 97,1570.5,1525,1591,6
+2026-10-03,Metropolitana de Santiago,El Bosque,Diésel,1435.63,1348,1458,8
+2026-10-03,Metropolitana de Santiago,El Bosque,Kerosene,1254.2,1077,1371,5
+2026-10-03,Metropolitana de Santiago,El Bosque,Gasolina 95,1523.75,1486,1549,8
+2026-10-03,Metropolitana de Santiago,Estación Central,Gasolina 93,1448,1432,1482,13
+2026-10-03,Metropolitana de Santiago,Estación Central,Gasolina 97,1530.46,1514,1567,13
+2026-10-03,Metropolitana de Santiago,Estación Central,Diésel,1462.15,1437,1485,13
+2026-10-03,Metropolitana de Santiago,Estación Central,Kerosene,1301.44,1117,1364,9
+2026-10-03,Metropolitana de Santiago,Estación Central,Gasolina 95,1489.85,1474,1523,13
+2026-10-03,Metropolitana de Santiago,Huechuraba,Gasolina 93,1493.67,1466,1512,12
+2026-10-03,Metropolitana de Santiago,Huechuraba,Gasolina 97,1615.83,1593,1628,12
+2026-10-03,Metropolitana de Santiago,Huechuraba,Diésel,1450,1440,1455,12
+2026-10-03,Metropolitana de Santiago,Huechuraba,Kerosene,1356.29,1348,1361,7
+2026-10-03,Metropolitana de Santiago,Huechuraba,Gasolina 95,1549.67,1522,1568,12
+2026-10-03,Metropolitana de Santiago,Independencia,Kerosene,1360.4,1350,1364,10
+2026-10-03,Metropolitana de Santiago,Independencia,Gasolina 93,1486.92,1469,1498,12
+2026-10-03,Metropolitana de Santiago,Independencia,Gasolina 95,1528.67,1515,1541,12
+2026-10-03,Metropolitana de Santiago,Independencia,Gasolina 97,1572.17,1559,1583,12
+2026-10-03,Metropolitana de Santiago,Independencia,Diésel,1448.75,1437,1456,12
+2026-10-03,Metropolitana de Santiago,La Cisterna,Gasolina 93,1491.29,1489,1492,7
+2026-10-03,Metropolitana de Santiago,La Cisterna,Gasolina 97,1591,1591,1591,5
+2026-10-03,Metropolitana de Santiago,La Cisterna,Diésel,1462.29,1447,1507,7
+2026-10-03,Metropolitana de Santiago,La Cisterna,Kerosene,1359.2,1352,1361,5
+2026-10-03,Metropolitana de Santiago,La Cisterna,Gasolina 95,1546.57,1539,1549,7
+2026-10-03,Metropolitana de Santiago,La Florida,Gasolina 93,1478.44,1385,1510,25
+2026-10-03,Metropolitana de Santiago,La Florida,Gasolina 97,1592.71,1506,1631,24
+2026-10-03,Metropolitana de Santiago,La Florida,Diésel,1430.76,1177,1474,25
+2026-10-03,Metropolitana de Santiago,La Florida,Kerosene,1314.94,1082,1372,17
+2026-10-03,Metropolitana de Santiago,La Florida,Gasolina 95,1530.52,1449,1574,25
+2026-10-03,Metropolitana de Santiago,La Granja,Diésel,1451,1435,1458,5
+2026-10-03,Metropolitana de Santiago,La Granja,Kerosene,1360,1358,1361,3
+2026-10-03,Metropolitana de Santiago,La Granja,Gasolina 93,1470.75,1465,1484,4
+2026-10-03,Metropolitana de Santiago,La Granja,Gasolina 95,1526.25,1519,1541,4
+2026-10-03,Metropolitana de Santiago,La Granja,Gasolina 97,1569.75,1560,1587,4
+2026-10-03,Metropolitana de Santiago,La Pintana,Gasolina 93,1472,1456,1493,6
+2026-10-03,Metropolitana de Santiago,La Pintana,Gasolina 97,1554.8,1535,1572,5
+2026-10-03,Metropolitana de Santiago,La Pintana,Diésel,1414,1347,1462,6
+2026-10-03,Metropolitana de Santiago,La Pintana,Kerosene,1219.5,1069,1364,6
+2026-10-03,Metropolitana de Santiago,La Pintana,Gasolina 95,1522.17,1504,1541,6
+2026-10-03,Metropolitana de Santiago,La Reina,Gasolina 93,1519.6,1492,1541,10
+2026-10-03,Metropolitana de Santiago,La Reina,Gasolina 97,1610.8,1597,1630,10
+2026-10-03,Metropolitana de Santiago,La Reina,Diésel,1486.6,1461,1501,10
+2026-10-03,Metropolitana de Santiago,La Reina,Kerosene,1324.14,1113,1364,7
+2026-10-03,Metropolitana de Santiago,La Reina,Gasolina 95,1563.8,1548,1574,10
+2026-10-03,Metropolitana de Santiago,Las Condes,Gasolina 93,1543.54,1510,1554,26
+2026-10-03,Metropolitana de Santiago,Las Condes,Gasolina 97,1639.15,1606,1653,26
+2026-10-03,Metropolitana de Santiago,Las Condes,Diésel,1503.12,1415,1515,26
+2026-10-03,Metropolitana de Santiago,Las Condes,Kerosene,1312.06,1074,1364,16
+2026-10-03,Metropolitana de Santiago,Las Condes,Gasolina 95,1590.92,1560,1603,26
+2026-10-03,Metropolitana de Santiago,Lo Barnechea,Gasolina 93,1547.88,1538,1554,17
+2026-10-03,Metropolitana de Santiago,Lo Barnechea,Gasolina 97,1646.88,1637,1653,17
+2026-10-03,Metropolitana de Santiago,Lo Barnechea,Diésel,1509.29,1499,1515,17
+2026-10-03,Metropolitana de Santiago,Lo Barnechea,Kerosene,1359.6,1353,1364,10
+2026-10-03,Metropolitana de Santiago,Lo Barnechea,Gasolina 95,1596.88,1587,1603,17
+2026-10-03,Metropolitana de Santiago,Lo Espejo,Gasolina 93,1496.67,1437,1534,3
+2026-10-03,Metropolitana de Santiago,Lo Espejo,Gasolina 97,1590,1519,1633,3
+2026-10-03,Metropolitana de Santiago,Lo Espejo,Diésel,1442.67,1435,1454,3
+2026-10-03,Metropolitana de Santiago,Lo Espejo,Kerosene,1337,1334,1340,2
+2026-10-03,Metropolitana de Santiago,Lo Espejo,Gasolina 95,1543,1478,1583,3
+2026-10-03,Metropolitana de Santiago,Macul,Gasolina 93,1473.5,1460,1489,10
+2026-10-03,Metropolitana de Santiago,Macul,Gasolina 97,1577,1566,1591,9
+2026-10-03,Metropolitana de Santiago,Macul,Diésel,1460,1447,1472,10
+2026-10-03,Metropolitana de Santiago,Macul,Kerosene,1351.13,1339,1360,8
+2026-10-03,Metropolitana de Santiago,Macul,Gasolina 95,1525.2,1514,1539,10
+2026-10-03,Metropolitana de Santiago,Maipú,Gasolina 93,1459.73,1334,1537,37
+2026-10-03,Metropolitana de Santiago,Maipú,Gasolina 97,1535.74,1414,1581,34
+2026-10-03,Metropolitana de Santiago,Maipú,Diésel,1431.65,1153,1487,37
+2026-10-03,Metropolitana de Santiago,Maipú,Kerosene,1292.23,1080,1364,22
+2026-10-03,Metropolitana de Santiago,Maipú,Gasolina 95,1499.81,1389,1598,37
+2026-10-03,Metropolitana de Santiago,Pedro Aguirre Cerda,Gasolina 93,1503.14,1487,1534,7
+2026-10-03,Metropolitana de Santiago,Pedro Aguirre Cerda,Gasolina 97,1597.71,1567,1633,7
+2026-10-03,Metropolitana de Santiago,Pedro Aguirre Cerda,Diésel,1462.71,1439,1472,7
+2026-10-03,Metropolitana de Santiago,Pedro Aguirre Cerda,Kerosene,1305.6,1129,1364,5
+2026-10-03,Metropolitana de Santiago,Pedro Aguirre Cerda,Gasolina 95,1547.14,1519,1583,7
+2026-10-03,Metropolitana de Santiago,Peñalolén,Diésel,1472.5,1452,1497,20
+2026-10-03,Metropolitana de Santiago,Peñalolén,Kerosene,1355.54,1348,1369,13
+2026-10-03,Metropolitana de Santiago,Peñalolén,Gasolina 93,1499.63,1481,1508,19
+2026-10-03,Metropolitana de Santiago,Peñalolén,Gasolina 95,1555.74,1538,1563,19
+2026-10-03,Metropolitana de Santiago,Peñalolén,Gasolina 97,1621.65,1602,1630,17
+2026-10-03,Metropolitana de Santiago,Providencia,Gasolina 93,1505.73,1463,1538,26
+2026-10-03,Metropolitana de Santiago,Providencia,Gasolina 97,1597.8,1565,1606,25
+2026-10-03,Metropolitana de Santiago,Providencia,Diésel,1479.41,1297,1495,27
+2026-10-03,Metropolitana de Santiago,Providencia,Gasolina 95,1539.59,1452,1572,27
+2026-10-03,Metropolitana de Santiago,Providencia,Kerosene,1343.21,1159,1359,14
+2026-10-03,Metropolitana de Santiago,Pudahuel,Gasolina 93,1529.63,1474,1560,8
+2026-10-03,Metropolitana de Santiago,Pudahuel,Gasolina 97,1612.88,1547,1656,8
+2026-10-03,Metropolitana de Santiago,Pudahuel,Diésel,1493.13,1452,1519,8
+2026-10-03,Metropolitana de Santiago,Pudahuel,Kerosene,1347,1320,1364,4
+2026-10-03,Metropolitana de Santiago,Pudahuel,Gasolina 95,1569.5,1511,1608,8
+2026-10-03,Metropolitana de Santiago,Quilicura,Gasolina 93,1511.33,1490,1535,15
+2026-10-03,Metropolitana de Santiago,Quilicura,Gasolina 97,1588.57,1566,1615,14
+2026-10-03,Metropolitana de Santiago,Quilicura,Diésel,1451.75,1439,1467,16
+2026-10-03,Metropolitana de Santiago,Quilicura,Kerosene,1335.55,1090,1364,11
+2026-10-03,Metropolitana de Santiago,Quilicura,Gasolina 95,1554.33,1537,1571,15
+2026-10-03,Metropolitana de Santiago,Quinta Normal,Gasolina 93,1457.79,1426,1484,14
+2026-10-03,Metropolitana de Santiago,Quinta Normal,Gasolina 97,1537.46,1508,1567,13
+2026-10-03,Metropolitana de Santiago,Quinta Normal,Diésel,1453.87,1434,1477,15
+2026-10-03,Metropolitana de Santiago,Quinta Normal,Gasolina 95,1494.71,1467,1517,14
+2026-10-03,Metropolitana de Santiago,Quinta Normal,Kerosene,1351.91,1330,1391,11
+2026-10-03,Metropolitana de Santiago,Recoleta,Gasolina 93,1463.83,1416,1488,12
+2026-10-03,Metropolitana de Santiago,Recoleta,Gasolina 97,1556.8,1539,1576,10
+2026-10-03,Metropolitana de Santiago,Recoleta,Diésel,1452.58,1366,1466,12
+2026-10-03,Metropolitana de Santiago,Recoleta,Kerosene,1295.11,1077,1359,9
+2026-10-03,Metropolitana de Santiago,Recoleta,Gasolina 95,1513.92,1470,1531,12
+2026-10-03,Metropolitana de Santiago,Renca,Gasolina 93,1502.29,1494,1534,7
+2026-10-03,Metropolitana de Santiago,Renca,Gasolina 97,1595.6,1583,1613,5
+2026-10-03,Metropolitana de Santiago,Renca,Diésel,1452.29,1448,1455,7
+2026-10-03,Metropolitana de Santiago,Renca,Gasolina 95,1539.71,1529,1570,7
+2026-10-03,Metropolitana de Santiago,San Joaquín,Gasolina 93,1481,1449,1498,10
+2026-10-03,Metropolitana de Santiago,San Joaquín,Gasolina 97,1588.5,1556,1610,10
+2026-10-03,Metropolitana de Santiago,San Joaquín,Diésel,1453.1,1371,1472,10
+2026-10-03,Metropolitana de Santiago,San Joaquín,Kerosene,1327.67,1086,1364,9
+2026-10-03,Metropolitana de Santiago,San Joaquín,Gasolina 95,1534.9,1499,1555,10
+2026-10-03,Metropolitana de Santiago,San Miguel,Gasolina 93,1493,1482,1499,6
+2026-10-03,Metropolitana de Santiago,San Miguel,Gasolina 97,1600,1586,1611,6
+2026-10-03,Metropolitana de Santiago,San Miguel,Diésel,1464.67,1448,1483,6
+2026-10-03,Metropolitana de Santiago,San Miguel,Kerosene,1278.33,1129,1366,6
+2026-10-03,Metropolitana de Santiago,San Miguel,Gasolina 95,1550.33,1539,1558,6
+2026-10-03,Metropolitana de Santiago,San Ramón,Gasolina 93,1467.6,1455,1480,5
+2026-10-03,Metropolitana de Santiago,San Ramón,Gasolina 97,1565.75,1560,1575,4
+2026-10-03,Metropolitana de Santiago,San Ramón,Diésel,1459.4,1454,1469,5
+2026-10-03,Metropolitana de Santiago,San Ramón,Kerosene,1356.33,1354,1361,3
+2026-10-03,Metropolitana de Santiago,San Ramón,Gasolina 95,1521.6,1509,1534,5
+2026-10-03,Metropolitana de Santiago,Vitacura,Gasolina 93,1542.05,1508,1553,21
+2026-10-03,Metropolitana de Santiago,Vitacura,Gasolina 97,1624.86,1277,1652,22
+2026-10-03,Metropolitana de Santiago,Vitacura,Diésel,1496.95,1418,1515,21
+2026-10-03,Metropolitana de Santiago,Vitacura,Kerosene,1329.58,1075,1364,12
+2026-10-03,Metropolitana de Santiago,Vitacura,Gasolina 95,1591.62,1556,1602,21
+2026-10-03,Metropolitana de Santiago,Puente Alto,Gasolina 93,1479.24,1450,1524,29
+2026-10-03,Metropolitana de Santiago,Puente Alto,Gasolina 97,1602.48,1566,1637,27
+2026-10-03,Metropolitana de Santiago,Puente Alto,Diésel,1411.87,1297,1472,30
+2026-10-03,Metropolitana de Santiago,Puente Alto,Kerosene,1357.82,1340,1364,22
+2026-10-03,Metropolitana de Santiago,Puente Alto,Gasolina 95,1515.93,1454,1583,30
+2026-10-03,Metropolitana de Santiago,Pirque,Gasolina 93,1523,1523,1523,2
+2026-10-03,Metropolitana de Santiago,Pirque,Gasolina 97,1636,1636,1636,2
+2026-10-03,Metropolitana de Santiago,Pirque,Diésel,1481,1480,1482,2
+2026-10-03,Metropolitana de Santiago,Pirque,Kerosene,1364,1364,1364,1
+2026-10-03,Metropolitana de Santiago,Pirque,Gasolina 95,1582,1582,1582,2
+2026-10-03,Metropolitana de Santiago,San José de Maipo,Gasolina 93,1507.5,1492,1523,2
+2026-10-03,Metropolitana de Santiago,San José de Maipo,Gasolina 97,1638,1638,1638,2
+2026-10-03,Metropolitana de Santiago,San José de Maipo,Diésel,1444.5,1407,1482,2
+2026-10-03,Metropolitana de Santiago,San José de Maipo,Kerosene,1352,1352,1352,2
+2026-10-03,Metropolitana de Santiago,San José de Maipo,Gasolina 95,1537.5,1493,1582,2
+2026-10-03,Metropolitana de Santiago,Colina,Gasolina 93,1539.2,1417,1559,20
+2026-10-03,Metropolitana de Santiago,Colina,Gasolina 97,1638.95,1516,1658,20
+2026-10-03,Metropolitana de Santiago,Colina,Diésel,1479.85,1208,1517,20
+2026-10-03,Metropolitana de Santiago,Colina,Kerosene,1304.31,1086,1364,13
+2026-10-03,Metropolitana de Santiago,Colina,Gasolina 95,1588.8,1466,1608,20
+2026-10-03,Metropolitana de Santiago,Lampa,Gasolina 93,1528.44,1505,1535,9
+2026-10-03,Metropolitana de Santiago,Lampa,Gasolina 97,1622,1595,1635,7
+2026-10-03,Metropolitana de Santiago,Lampa,Diésel,1484.11,1468,1488,9
+2026-10-03,Metropolitana de Santiago,Lampa,Kerosene,1361,1355,1364,6
+2026-10-03,Metropolitana de Santiago,Lampa,Gasolina 95,1579.33,1559,1589,9
+2026-10-03,Metropolitana de Santiago,Tiltil,Gasolina 93,1522,1522,1522,2
+2026-10-03,Metropolitana de Santiago,Tiltil,Gasolina 97,1605,1605,1605,1
+2026-10-03,Metropolitana de Santiago,Tiltil,Diésel,1485,1485,1485,2
+2026-10-03,Metropolitana de Santiago,Tiltil,Kerosene,1370,1370,1370,1
+2026-10-03,Metropolitana de Santiago,Tiltil,Gasolina 95,1567,1567,1567,2
+2026-10-03,Metropolitana de Santiago,San Bernardo,Gasolina 93,1486.74,1399,1554,35
+2026-10-03,Metropolitana de Santiago,San Bernardo,Gasolina 97,1580.59,1481,1653,34
+2026-10-03,Metropolitana de Santiago,San Bernardo,Diésel,1439.22,1227,1514,36
+2026-10-03,Metropolitana de Santiago,San Bernardo,Kerosene,1326.2,1060,1362,20
+2026-10-03,Metropolitana de Santiago,San Bernardo,Gasolina 95,1537.26,1440,1603,35
+2026-10-03,Metropolitana de Santiago,Buin,Gasolina 93,1539.7,1478,1553,10
+2026-10-03,Metropolitana de Santiago,Buin,Gasolina 97,1638.8,1577,1653,10
+2026-10-03,Metropolitana de Santiago,Buin,Diésel,1487.7,1326,1512,10
+2026-10-03,Metropolitana de Santiago,Buin,Kerosene,1312,1083,1365,6
+2026-10-03,Metropolitana de Santiago,Buin,Gasolina 95,1588.8,1527,1603,10
+2026-10-03,Metropolitana de Santiago,Calera de Tango,Gasolina 93,1523.2,1511,1527,5
+2026-10-03,Metropolitana de Santiago,Calera de Tango,Gasolina 97,1591.2,1579,1595,5
+2026-10-03,Metropolitana de Santiago,Calera de Tango,Diésel,1472,1460,1475,5
+2026-10-03,Metropolitana de Santiago,Calera de Tango,Kerosene,1352.5,1348,1357,4
+2026-10-03,Metropolitana de Santiago,Calera de Tango,Gasolina 95,1558.2,1546,1562,5
+2026-10-03,Metropolitana de Santiago,Paine,Kerosene,1361.6,1351,1370,5
+2026-10-03,Metropolitana de Santiago,Paine,Gasolina 93,1549.33,1533,1553,6
+2026-10-03,Metropolitana de Santiago,Paine,Gasolina 95,1598.5,1582,1602,6
+2026-10-03,Metropolitana de Santiago,Paine,Gasolina 97,1648.4,1631,1655,5
+2026-10-03,Metropolitana de Santiago,Paine,Diésel,1509,1493,1513,6
+2026-10-03,Metropolitana de Santiago,Melipilla,Gasolina 93,1551.73,1532,1607,11
+2026-10-03,Metropolitana de Santiago,Melipilla,Gasolina 97,1647.6,1627,1707,10
+2026-10-03,Metropolitana de Santiago,Melipilla,Diésel,1492.91,1459,1498,11
+2026-10-03,Metropolitana de Santiago,Melipilla,Kerosene,1282.14,1075,1368,7
+2026-10-03,Metropolitana de Santiago,Melipilla,Gasolina 95,1602.45,1577,1659,11
+2026-10-03,Metropolitana de Santiago,Curacaví,Gasolina 93,1529.8,1527,1533,5
+2026-10-03,Metropolitana de Santiago,Curacaví,Gasolina 97,1617,1614,1620,5
+2026-10-03,Metropolitana de Santiago,Curacaví,Diésel,1501.4,1497,1503,5
+2026-10-03,Metropolitana de Santiago,Curacaví,Gasolina 95,1574.8,1572,1578,5
+2026-10-03,Metropolitana de Santiago,María Pinto,Gasolina 93,1554,1554,1554,1
+2026-10-03,Metropolitana de Santiago,María Pinto,Gasolina 97,1642,1642,1642,1
+2026-10-03,Metropolitana de Santiago,María Pinto,Diésel,1498,1498,1498,1
+2026-10-03,Metropolitana de Santiago,María Pinto,Kerosene,1360,1360,1360,1
+2026-10-03,Metropolitana de Santiago,María Pinto,Gasolina 95,1600,1600,1600,1
+2026-10-03,Metropolitana de Santiago,Talagante,Gasolina 93,1531,1516,1538,8
+2026-10-03,Metropolitana de Santiago,Talagante,Gasolina 97,1630.75,1567,1644,8
+2026-10-03,Metropolitana de Santiago,Talagante,Diésel,1495.5,1493,1499,8
+2026-10-03,Metropolitana de Santiago,Talagante,Gasolina 95,1577,1546,1587,8
+2026-10-03,Metropolitana de Santiago,Talagante,Kerosene,1370.83,1350,1422,6
+2026-10-03,Metropolitana de Santiago,El Monte,Gasolina 93,1498.25,1487,1502,4
+2026-10-03,Metropolitana de Santiago,El Monte,Gasolina 97,1604.25,1593,1608,4
+2026-10-03,Metropolitana de Santiago,El Monte,Diésel,1453.25,1442,1457,4
+2026-10-03,Metropolitana de Santiago,El Monte,Kerosene,1356,1356,1356,3
+2026-10-03,Metropolitana de Santiago,El Monte,Gasolina 95,1550.25,1539,1554,4
+2026-10-03,Metropolitana de Santiago,Isla de Maipo,Gasolina 93,1540.75,1531,1546,4
+2026-10-03,Metropolitana de Santiago,Isla de Maipo,Gasolina 97,1648.33,1639,1654,3
+2026-10-03,Metropolitana de Santiago,Isla de Maipo,Diésel,1502.75,1493,1508,4
+2026-10-03,Metropolitana de Santiago,Isla de Maipo,Kerosene,1367.33,1366,1370,3
+2026-10-03,Metropolitana de Santiago,Isla de Maipo,Gasolina 95,1588.75,1579,1594,4
+2026-10-03,Metropolitana de Santiago,Padre Hurtado,Gasolina 93,1480,1444,1489,5
+2026-10-03,Metropolitana de Santiago,Padre Hurtado,Gasolina 97,1575,1575,1575,4
+2026-10-03,Metropolitana de Santiago,Padre Hurtado,Diésel,1461.2,1357,1488,5
+2026-10-03,Metropolitana de Santiago,Padre Hurtado,Kerosene,1292.6,1065,1352,5
+2026-10-03,Metropolitana de Santiago,Padre Hurtado,Gasolina 95,1515,1479,1524,5
+2026-10-03,Metropolitana de Santiago,Peñaflor,Gasolina 93,1483.44,1430,1516,9
+2026-10-03,Metropolitana de Santiago,Peñaflor,Gasolina 97,1566.63,1528,1576,8
+2026-10-03,Metropolitana de Santiago,Peñaflor,Diésel,1430.7,1290,1496,10
+2026-10-03,Metropolitana de Santiago,Peñaflor,Kerosene,1280.43,1075,1369,7
+2026-10-03,Metropolitana de Santiago,Peñaflor,Gasolina 95,1497.1,1420,1546,10
+2026-10-03,Metropolitana de Santiago,Cerro Navia,Gasolina 93,1479,1473,1484,3
+2026-10-03,Metropolitana de Santiago,Cerro Navia,Diésel,1460,1446,1471,3
+2026-10-03,Metropolitana de Santiago,Cerro Navia,Kerosene,1326,1320,1332,2
+2026-10-03,Metropolitana de Santiago,Cerro Navia,Gasolina 95,1512,1509,1517,3
+2026-10-03,Metropolitana de Santiago,Conchalí,GLP,619,569,669,2
+2026-10-03,Metropolitana de Santiago,La Cisterna,GLP,679,679,679,1
+2026-10-03,Metropolitana de Santiago,Maipú,GNC,909,909,909,1
+2026-10-03,Metropolitana de Santiago,Maipú,GLP,679,679,679,1
+2026-10-03,Metropolitana de Santiago,Renca,Kerosene,1300.2,1070,1362,5
+2026-10-03,Metropolitana de Santiago,Alhué,Gasolina 93,1526,1526,1526,1
+2026-10-03,Metropolitana de Santiago,Alhué,Gasolina 97,1634,1634,1634,1
+2026-10-03,Metropolitana de Santiago,Alhué,Diésel,1421,1421,1421,1
+2026-10-03,Metropolitana de Santiago,Alhué,Gasolina 95,1580,1580,1580,1
+2026-10-03,Metropolitana de Santiago,Lo Prado,Gasolina 93,1487.67,1479,1494,3
+2026-10-03,Metropolitana de Santiago,Lo Prado,Gasolina 97,1541.67,1533,1548,3
+2026-10-03,Metropolitana de Santiago,Lo Prado,Diésel,1446,1437,1452,3
+2026-10-03,Metropolitana de Santiago,Lo Prado,Kerosene,1360.5,1341,1380,2
+2026-10-03,Metropolitana de Santiago,Lo Prado,Gasolina 95,1508.67,1500,1515,3
+2026-10-03,Metropolitana de Santiago,Cerro Navia,Gasolina 97,1562.5,1558,1567,2
+2026-10-03,Metropolitana de Santiago,Cerrillos,GNC,1091,1091,1091,1
+2026-10-03,Metropolitana de Santiago,Ñuñoa,GLP,616.5,575,658,2
+2026-10-03,Metropolitana de Santiago,San Bernardo,GLP,667,667,667,1
+2026-10-03,Metropolitana de Santiago,Curacaví,Kerosene,1366,1343,1389,2
+2026-10-03,Metropolitana de Santiago,San Pedro,Gasolina 93,1554,1554,1554,1
+2026-10-03,Metropolitana de Santiago,San Pedro,Gasolina 95,1606,1606,1606,1
+2026-10-03,Metropolitana de Santiago,San Pedro,Gasolina 97,1649,1649,1649,1
+2026-10-03,Metropolitana de Santiago,San Pedro,Kerosene,1368,1368,1368,1
+2026-10-03,Metropolitana de Santiago,San Pedro,Diésel,1504,1504,1504,1
+2026-10-03,De los Ríos,Valdivia,GLP,749,749,749,1
+2026-10-03,De los Ríos,Valdivia,Gasolina 93,1558.83,1522,1567,18
+2026-10-03,De los Ríos,Valdivia,Gasolina 97,1620.94,1585,1629,18
+2026-10-03,De los Ríos,Valdivia,Diésel,1527.5,1440,1542,20
+2026-10-03,De los Ríos,Valdivia,Kerosene,1349.85,1077,1391,13
+2026-10-03,De los Ríos,Valdivia,Gasolina 95,1594.26,1561,1603,19
+2026-10-03,De los Ríos,Lanco,Gasolina 93,1566,1560,1576,3
+2026-10-03,De los Ríos,Lanco,Gasolina 97,1634.5,1634,1635,2
+2026-10-03,De los Ríos,Lanco,Diésel,1510.67,1508,1514,3
+2026-10-03,De los Ríos,Lanco,Kerosene,1389.5,1389,1390,2
+2026-10-03,De los Ríos,Lanco,Gasolina 95,1596.67,1590,1608,3
+2026-10-03,De los Ríos,Los Lagos,Gasolina 93,1562,1562,1562,3
+2026-10-03,De los Ríos,Los Lagos,Gasolina 97,1630,1630,1630,3
+2026-10-03,De los Ríos,Los Lagos,Diésel,1510.5,1509,1515,4
+2026-10-03,De los Ríos,Los Lagos,Kerosene,1387,1387,1387,2
+2026-10-03,De los Ríos,Los Lagos,Gasolina 95,1592,1592,1592,3
+2026-10-03,De los Ríos,Máfil,Gasolina 93,1575,1575,1575,1
+2026-10-03,De los Ríos,Máfil,Gasolina 97,1631,1631,1631,1
+2026-10-03,De los Ríos,Máfil,Diésel,1542,1542,1542,1
+2026-10-03,De los Ríos,Máfil,Gasolina 95,1606,1606,1606,1
+2026-10-03,De los Ríos,Mariquina,Gasolina 93,1565.33,1557,1579,3
+2026-10-03,De los Ríos,Mariquina,Gasolina 97,1635.67,1633,1639,3
+2026-10-03,De los Ríos,Mariquina,Diésel,1521.33,1504,1552,3
+2026-10-03,De los Ríos,Mariquina,Gasolina 95,1596.33,1587,1612,3
+2026-10-03,De los Ríos,Paillaco,Gasolina 93,1564.8,1562,1575,5
+2026-10-03,De los Ríos,Paillaco,Gasolina 97,1629.25,1629,1630,4
+2026-10-03,De los Ríos,Paillaco,Diésel,1514,1509,1532,5
+2026-10-03,De los Ríos,Paillaco,Kerosene,1376,1376,1376,2
+2026-10-03,De los Ríos,Paillaco,Gasolina 95,1594.4,1592,1603,5
+2026-10-03,De los Ríos,Panguipulli,Gasolina 93,1617.6,1556,1793,5
+2026-10-03,De los Ríos,Panguipulli,Gasolina 97,1631,1620,1636,4
+2026-10-03,De los Ríos,Panguipulli,Diésel,1567,1522,1679,5
+2026-10-03,De los Ríos,Panguipulli,Kerosene,1394,1394,1394,2
+2026-10-03,De los Ríos,Panguipulli,Gasolina 95,1646.6,1587,1819,5
+2026-10-03,De los Ríos,Futrono,Gasolina 93,1583,1575,1596,3
+2026-10-03,De los Ríos,Futrono,Gasolina 97,1641,1633,1649,2
+2026-10-03,De los Ríos,Futrono,Diésel,1538,1532,1541,3
+2026-10-03,De los Ríos,Futrono,Kerosene,1403,1403,1403,1
+2026-10-03,De los Ríos,Futrono,Gasolina 95,1610.33,1603,1623,3
+2026-10-03,De los Ríos,La Unión,Gasolina 93,1571.67,1569,1576,6
+2026-10-03,De los Ríos,La Unión,Gasolina 97,1630.67,1627,1634,6
+2026-10-03,De los Ríos,La Unión,Diésel,1536.83,1532,1540,6
+2026-10-03,De los Ríos,La Unión,Gasolina 95,1601.17,1600,1604,6
+2026-10-03,De los Ríos,La Unión,Kerosene,1391,1391,1391,3
+2026-10-03,De los Ríos,Río Bueno,Gasolina 93,1571.25,1570,1575,4
+2026-10-03,De los Ríos,Río Bueno,Gasolina 97,1628,1628,1628,3
+2026-10-03,De los Ríos,Río Bueno,Diésel,1535,1532,1536,4
+2026-10-03,De los Ríos,Río Bueno,Kerosene,1380.5,1376,1385,2
+2026-10-03,De los Ríos,Río Bueno,Gasolina 95,1601.5,1601,1603,4
+2026-10-03,De los Ríos,Corral,Diésel,1574,1574,1574,1
+2026-10-03,De los Ríos,Corral,Gasolina 95,1634,1634,1634,1
+2026-10-03,De los Ríos,Mariquina,Kerosene,1389,1389,1389,1
+2026-10-03,De los Ríos,Lago Ranco,Gasolina 93,1587,1587,1587,1
+2026-10-03,De los Ríos,Lago Ranco,Gasolina 97,1647,1647,1647,1
+2026-10-03,De los Ríos,Lago Ranco,Diésel,1553,1553,1553,1
+2026-10-03,De los Ríos,Lago Ranco,Kerosene,1391,1391,1391,1
+2026-10-03,De los Ríos,Lago Ranco,Gasolina 95,1620,1620,1620,1
+2026-10-03,Arica y Parinacota,Arica,GLP,600.67,586,628,3
+2026-10-03,Arica y Parinacota,Arica,Gasolina 93,1592.79,1584,1597,14
+2026-10-03,Arica y Parinacota,Arica,Gasolina 97,1648.71,1640,1653,14
+2026-10-03,Arica y Parinacota,Arica,Diésel,1546.24,1505,1560,21
+2026-10-03,Arica y Parinacota,Arica,Gasolina 95,1618.81,1596,1625,16
+2026-10-03,Arica y Parinacota,Arica,Kerosene,1233,1233,1233,1
+2026-10-03,Ñuble,Chillán,GLP,684,684,684,1
+2026-10-03,Ñuble,Chillán,Gasolina 93,1496,1462,1515,29
+2026-10-03,Ñuble,Chillán,Gasolina 97,1566.27,1532,1575,22
+2026-10-03,Ñuble,Chillán,Diésel,1447.69,1073,1479,29
+2026-10-03,Ñuble,Chillán,Kerosene,1318.1,1060,1376,20
+2026-10-03,Ñuble,Chillán,Gasolina 95,1533.45,1498,1551,29
+2026-10-03,Ñuble,Chillán Viejo,Gasolina 93,1519.5,1499,1536,6
+2026-10-03,Ñuble,Chillán Viejo,Gasolina 97,1584.6,1575,1591,5
+2026-10-03,Ñuble,Chillán Viejo,Diésel,1487.83,1463,1506,6
+2026-10-03,Ñuble,Chillán Viejo,Gasolina 95,1549.83,1528,1563,6
+2026-10-03,Ñuble,Bulnes,Gasolina 93,1508,1434,1528,6
+2026-10-03,Ñuble,Bulnes,Gasolina 97,1582,1582,1582,4
+2026-10-03,Ñuble,Bulnes,Diésel,1433.5,1194,1487,6
+2026-10-03,Ñuble,Bulnes,Kerosene,1351.5,1350,1352,4
+2026-10-03,Ñuble,Bulnes,Gasolina 95,1536,1462,1555,6
+2026-10-03,Ñuble,Cobquecura,Gasolina 93,1540,1540,1540,1
+2026-10-03,Ñuble,Cobquecura,Gasolina 97,1602,1602,1602,1
+2026-10-03,Ñuble,Cobquecura,Diésel,1500,1500,1500,1
+2026-10-03,Ñuble,Cobquecura,Kerosene,1373,1373,1373,1
+2026-10-03,Ñuble,Cobquecura,Gasolina 95,1570,1570,1570,1
+2026-10-03,Ñuble,Coelemu,Gasolina 93,1529,1529,1529,2
+2026-10-03,Ñuble,Coelemu,Gasolina 97,1594,1594,1594,2
+2026-10-03,Ñuble,Coelemu,Diésel,1499,1498,1500,2
+2026-10-03,Ñuble,Coelemu,Kerosene,1353,1353,1353,1
+2026-10-03,Ñuble,Coelemu,Gasolina 95,1559,1559,1559,2
+2026-10-03,Ñuble,Coihueco,Gasolina 93,1534,1534,1534,2
+2026-10-03,Ñuble,Coihueco,Gasolina 97,1591,1591,1591,2
+2026-10-03,Ñuble,Coihueco,Diésel,1489,1489,1489,2
+2026-10-03,Ñuble,Coihueco,Kerosene,1355,1355,1355,1
+2026-10-03,Ñuble,Coihueco,Gasolina 95,1562,1562,1562,2
+2026-10-03,Ñuble,El Carmen,Gasolina 93,1516,1516,1516,1
+2026-10-03,Ñuble,El Carmen,Gasolina 97,1579,1579,1579,1
+2026-10-03,Ñuble,El Carmen,Diésel,1471,1471,1471,1
+2026-10-03,Ñuble,El Carmen,Kerosene,1356,1356,1356,1
+2026-10-03,Ñuble,El Carmen,Gasolina 95,1545,1545,1545,1
+2026-10-03,Ñuble,Pemuco,Gasolina 93,1516,1516,1516,2
+2026-10-03,Ñuble,Pemuco,Gasolina 97,1579,1579,1579,1
+2026-10-03,Ñuble,Pemuco,Diésel,1476,1476,1476,2
+2026-10-03,Ñuble,Pemuco,Gasolina 95,1545,1545,1545,2
+2026-10-03,Ñuble,Pinto,Gasolina 93,1508.25,1507,1512,4
+2026-10-03,Ñuble,Pinto,Gasolina 97,1578.25,1577,1582,4
+2026-10-03,Ñuble,Pinto,Diésel,1489.5,1487,1497,4
+2026-10-03,Ñuble,Pinto,Gasolina 95,1553.25,1552,1557,4
+2026-10-03,Ñuble,Quirihue,Gasolina 93,1534,1534,1534,2
+2026-10-03,Ñuble,Quirihue,Gasolina 97,1596,1596,1596,2
+2026-10-03,Ñuble,Quirihue,Diésel,1497,1497,1497,2
+2026-10-03,Ñuble,Quirihue,Kerosene,1332,1332,1332,1
+2026-10-03,Ñuble,Quirihue,Gasolina 95,1564,1564,1564,2
+2026-10-03,Ñuble,San Carlos,Gasolina 93,1517,1496,1534,8
+2026-10-03,Ñuble,San Carlos,Gasolina 97,1585.29,1564,1600,7
+2026-10-03,Ñuble,San Carlos,Diésel,1478.75,1455,1497,8
+2026-10-03,Ñuble,San Carlos,Gasolina 95,1551.38,1532,1568,8
+2026-10-03,Ñuble,San Carlos,Kerosene,1337.67,1335,1340,3
+2026-10-03,Ñuble,Yungay,Gasolina 93,1526,1515,1559,4
+2026-10-03,Ñuble,Yungay,Gasolina 97,1583,1583,1583,2
+2026-10-03,Ñuble,Yungay,Diésel,1501.75,1492,1524,4
+2026-10-03,Ñuble,Yungay,Kerosene,1357,1357,1357,1
+2026-10-03,Ñuble,Yungay,Gasolina 95,1556.25,1546,1587,4
+2026-10-03,Ñuble,Chillán Viejo,Kerosene,1328.5,1314,1343,2
+2026-10-03,Ñuble,Ninhue,Gasolina 93,1516,1516,1516,1
+2026-10-03,Ñuble,Ninhue,Gasolina 97,1597,1597,1597,1
+2026-10-03,Ñuble,Ninhue,Diésel,1484,1484,1484,1
+2026-10-03,Ñuble,Ninhue,Gasolina 95,1564,1564,1564,1
+2026-10-03,Ñuble,Ñiquén,Gasolina 93,1547,1547,1547,1
+2026-10-03,Ñuble,Ñiquén,Diésel,1492,1492,1492,1
+2026-10-03,Ñuble,Ñiquén,Kerosene,1332,1332,1332,1
+2026-10-03,Ñuble,Ñiquén,Gasolina 95,1578,1578,1578,1
+2026-10-03,Ñuble,Pinto,Kerosene,1355,1355,1355,1
+2026-10-03,Ñuble,Quillón,Gasolina 93,1516.67,1516,1517,3
+2026-10-03,Ñuble,Quillón,Diésel,1501.67,1501,1502,3
+2026-10-03,Ñuble,Quillón,Kerosene,1324,1324,1324,3
+2026-10-03,Ñuble,Quillón,Gasolina 95,1556.67,1556,1557,3
+2026-10-03,Ñuble,Ránquil,Gasolina 93,1536,1536,1536,1
+2026-10-03,Ñuble,Ránquil,Gasolina 97,1591,1591,1591,1
+2026-10-03,Ñuble,Ránquil,Diésel,1506,1506,1506,1
+2026-10-03,Ñuble,Ránquil,Gasolina 95,1563,1563,1563,1
+2026-10-03,Ñuble,San Fabián,Gasolina 93,1514,1514,1514,1
+2026-10-03,Ñuble,San Fabián,Diésel,1477,1477,1477,1
+2026-10-03,Ñuble,San Fabián,Gasolina 95,1553,1553,1553,1
+2026-10-03,Ñuble,San Fabián,Gasolina 97,1582,1582,1582,1
+2026-10-03,Ñuble,San Ignacio,Gasolina 93,1515,1500,1530,2
+2026-10-03,Ñuble,San Ignacio,Diésel,1473.5,1467,1480,2
+2026-10-03,Ñuble,San Ignacio,Gasolina 95,1551,1532,1570,2
+2026-10-03,Ñuble,San Ignacio,Kerosene,1350,1350,1350,1
+2026-10-03,Ñuble,Quillón,Gasolina 97,1605,1605,1605,2
+2026-10-03,Ñuble,San Nicolás,Gasolina 93,1501,1501,1501,1
+2026-10-03,Ñuble,San Nicolás,Gasolina 95,1550,1550,1550,1
+2026-10-03,Ñuble,San Nicolás,Kerosene,1327,1327,1327,1
+2026-10-03,Ñuble,San Nicolás,Diésel,1472,1472,1472,1
