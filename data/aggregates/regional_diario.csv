@@ -671,3 +671,99 @@ fecha,region,combustible,precio_promedio,precio_min,precio_max,n_registros
 2026-10-04,Ñuble,Diésel,1473.78,1194,1524,77
 2026-10-04,Ñuble,Kerosene,1330.45,1060,1373,42
 2026-10-04,Ñuble,Gasolina 95,1545.82,1462,1587,77
+2026-10-05,Tarapacá,GLP,819,819,819,1
+2026-10-05,Tarapacá,Gasolina 93,1579.52,1533,1601,29
+2026-10-05,Tarapacá,Gasolina 97,1635.07,1590,1648,29
+2026-10-05,Tarapacá,Diésel,1495.55,1395,1554,33
+2026-10-05,Tarapacá,Gasolina 95,1605.28,1558,1627,29
+2026-10-05,Tarapacá,Kerosene,1511.5,1511,1512,2
+2026-10-05,Antofagasta,GLP,728,728,728,1
+2026-10-05,Antofagasta,Gasolina 93,1601.81,1522,1615,52
+2026-10-05,Antofagasta,Gasolina 97,1660.83,1578,1671,52
+2026-10-05,Antofagasta,Diésel,1551.56,1280,1582,52
+2026-10-05,Antofagasta,Kerosene,1492.33,1439,1532,9
+2026-10-05,Antofagasta,Gasolina 95,1632.87,1554,1642,52
+2026-10-05,Atacama,GLP,744,744,744,1
+2026-10-05,Atacama,Gasolina 93,1590.48,1554,1623,40
+2026-10-05,Atacama,Gasolina 97,1656.67,1622,1670,39
+2026-10-05,Atacama,Diésel,1557.83,1381,1589,41
+2026-10-05,Atacama,Gasolina 95,1623.63,1588,1655,41
+2026-10-05,Atacama,Kerosene,1392.86,1368,1419,7
+2026-10-05,Coquimbo,GLP,728.67,728,729,3
+2026-10-05,Coquimbo,Gasolina 93,1569.89,1495,1623,94
+2026-10-05,Coquimbo,Gasolina 97,1640.87,1575,1669,87
+2026-10-05,Coquimbo,Diésel,1536.61,1363,1565,95
+2026-10-05,Coquimbo,Gasolina 95,1605.91,1534,1656,90
+2026-10-05,Coquimbo,Kerosene,1363.67,1088,1385,27
+2026-10-05,Valparaíso,GLP,664.4,588,704,5
+2026-10-05,Valparaíso,Gasolina 93,1511.32,1398,1812,209
+2026-10-05,Valparaíso,Diésel,1486.9,1184,1743,211
+2026-10-05,Valparaíso,Kerosene,1326.8,1014,1374,121
+2026-10-05,Valparaíso,Gasolina 95,1553.97,1449,1639,206
+2026-10-05,Valparaíso,Gasolina 97,1596.9,1494,1625,192
+2026-10-05,Del Libertador Gral. Bernardo O’Higgins,GLP,594,541,641,5
+2026-10-05,Del Libertador Gral. Bernardo O’Higgins,Gasolina 93,1539.61,1461,1631,127
+2026-10-05,Del Libertador Gral. Bernardo O’Higgins,Gasolina 97,1605.72,1517,1705,102
+2026-10-05,Del Libertador Gral. Bernardo O’Higgins,Diésel,1506.15,1231,1606,127
+2026-10-05,Del Libertador Gral. Bernardo O’Higgins,Kerosene,1348.63,1062,1580,76
+2026-10-05,Del Libertador Gral. Bernardo O’Higgins,Gasolina 95,1565.81,1246,1667,129
+2026-10-05,Del Maule,GLP,621.67,585,669,6
+2026-10-05,Del Maule,Gasolina 93,1522.27,1453,1633,167
+2026-10-05,Del Maule,Gasolina 97,1593.13,1559,1630,107
+2026-10-05,Del Maule,Diésel,1483.61,1220,1543,170
+2026-10-05,Del Maule,Gasolina 95,1554.05,1490,1670,166
+2026-10-05,Del Maule,Kerosene,1331.86,1045,1480,96
+2026-10-05,Del Biobío,GLP,677,615,709,4
+2026-10-05,Del Biobío,Kerosene,1318.59,1039,1377,97
+2026-10-05,Del Biobío,Gasolina 93,1510.25,1192,1597,178
+2026-10-05,Del Biobío,Gasolina 95,1544.52,1221,1611,177
+2026-10-05,Del Biobío,Gasolina 97,1581.21,1466,1611,159
+2026-10-05,Del Biobío,Diésel,1472.97,913,1561,181
+2026-10-05,De la Araucanía,GLP,658.67,601,699,3
+2026-10-05,De la Araucanía,Gasolina 93,1539.05,1188,1644,146
+2026-10-05,De la Araucanía,Gasolina 97,1601.72,1230,1705,132
+2026-10-05,De la Araucanía,Diésel,1499.52,965,1612,146
+2026-10-05,De la Araucanía,Gasolina 95,1568.61,1210,1675,147
+2026-10-05,De la Araucanía,Kerosene,1349.29,1058,1395,78
+2026-10-05,De los Lagos,GLP,767.33,716,857,3
+2026-10-05,De los Lagos,Gasolina 93,1574.13,1541,1771,127
+2026-10-05,De los Lagos,Gasolina 97,1629.16,1595,1827,124
+2026-10-05,De los Lagos,Diésel,1547.64,1449,1763,129
+2026-10-05,De los Lagos,Kerosene,1399.04,1124,1586,75
+2026-10-05,De los Lagos,Gasolina 95,1605.71,1566,1797,129
+2026-10-05,Aysén del Gral. Carlos Ibáñez del Campo,Gasolina 93,1629.81,1584,1749,21
+2026-10-05,Aysén del Gral. Carlos Ibáñez del Campo,Gasolina 97,1689.68,1654,1789,19
+2026-10-05,Aysén del Gral. Carlos Ibáñez del Campo,Diésel,1655.61,1580,1802,23
+2026-10-05,Aysén del Gral. Carlos Ibáñez del Campo,Kerosene,1470.47,1433,1514,17
+2026-10-05,Aysén del Gral. Carlos Ibáñez del Campo,Gasolina 95,1665.43,1618,1801,21
+2026-10-05,Magallanes y de la Antártica Chilena,GNC,426.2,402,513,5
+2026-10-05,Magallanes y de la Antártica Chilena,Gasolina 93,1604.67,1554,1801,30
+2026-10-05,Magallanes y de la Antártica Chilena,Diésel,1618.37,1552,1736,30
+2026-10-05,Magallanes y de la Antártica Chilena,Gasolina 97,1662.5,1636,1732,24
+2026-10-05,Magallanes y de la Antártica Chilena,Gasolina 95,1621.13,1594,1683,24
+2026-10-05,Magallanes y de la Antártica Chilena,GLP,469,469,469,1
+2026-10-05,Metropolitana de Santiago,GLP,637.56,565,679,16
+2026-10-05,Metropolitana de Santiago,GNC,943.8,899,1091,5
+2026-10-05,Metropolitana de Santiago,Gasolina 93,1498.72,1334,1607,589
+2026-10-05,Metropolitana de Santiago,Gasolina 97,1595.07,1277,1707,553
+2026-10-05,Metropolitana de Santiago,Diésel,1462.65,1153,1519,597
+2026-10-05,Metropolitana de Santiago,Kerosene,1332.81,1065,1457,399
+2026-10-05,Metropolitana de Santiago,Gasolina 95,1544.09,1389,1659,592
+2026-10-05,De los Ríos,GLP,749,749,749,1
+2026-10-05,De los Ríos,Gasolina 93,1571.35,1545,1793,52
+2026-10-05,De los Ríos,Gasolina 97,1628.72,1608,1649,47
+2026-10-05,De los Ríos,Diésel,1532.59,1504,1679,56
+2026-10-05,De los Ríos,Kerosene,1381.1,1351,1403,29
+2026-10-05,De los Ríos,Gasolina 95,1603.5,1584,1819,54
+2026-10-05,Arica y Parinacota,GLP,600.67,586,628,3
+2026-10-05,Arica y Parinacota,Gasolina 93,1591.64,1576,1597,14
+2026-10-05,Arica y Parinacota,Gasolina 97,1647.36,1632,1653,14
+2026-10-05,Arica y Parinacota,Diésel,1546.19,1505,1560,21
+2026-10-05,Arica y Parinacota,Gasolina 95,1618,1596,1625,16
+2026-10-05,Arica y Parinacota,Kerosene,1233,1233,1233,1
+2026-10-05,Ñuble,GLP,684,684,684,1
+2026-10-05,Ñuble,Gasolina 93,1510.87,1434,1559,77
+2026-10-05,Ñuble,Gasolina 97,1579.76,1539,1605,58
+2026-10-05,Ñuble,Diésel,1473.73,1194,1524,77
+2026-10-05,Ñuble,Kerosene,1330.45,1060,1373,42
+2026-10-05,Ñuble,Gasolina 95,1545.82,1462,1587,77
