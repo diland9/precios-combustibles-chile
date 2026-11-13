@@ -1,0 +1,78 @@
+/* Sistema visual de dilandcastro.com: fondo "paper", paneles redondeados navy/negro, ámbar #fcc400,
+   Bricolage Grotesque (títulos) + Inter (texto). Compartido por Terminal, Territorial y Buscador. */
+:root{
+  --amber:#fcc400;--amber2:#fca311;--yellow:#ffd60a;
+  --black:#020812;--navy:#021f45;--navy2:#0a1a30;--blue:#003366;
+  --paper:#eef1f5;--card:#f3f5f8;--ink:#07111f;--line:#d5dce6;--mu:#5c6879;--mud:#9aa7ba;
+  --up:#d9480f;--dn:#168a52;
+  --fd:"Bricolage Grotesque",system-ui,sans-serif;--fb:"Inter",system-ui,sans-serif;--max:1240px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--fb);color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;font-variant-numeric:tabular-nums}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--fd);font-weight:600;letter-spacing:-.03em;line-height:1.04;margin:0}
+h1{font-size:clamp(2.3rem,5.6vw,4.6rem);letter-spacing:-.04em;color:#fff}
+h1 em,h2 em{font-style:normal;color:var(--amber)}
+h2{font-size:clamp(1.7rem,3.4vw,2.6rem)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 clamp(16px,3vw,32px)}
+
+/* cabecera */
+header.site{position:sticky;top:0;z-index:60;background:rgba(2,8,18,.78);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)}
+header.site .in{display:flex;align-items:center;gap:18px;height:56px}
+.brand{display:flex;align-items:center;gap:8px;font-family:var(--fd);font-weight:600;font-size:1.25rem;color:#fff;letter-spacing:-.03em;white-space:nowrap}
+.brand .bolt{width:15px;height:15px;color:var(--amber)}
+.brand img{width:26px;height:26px;border-radius:50%;object-fit:cover}
+.brand b{color:var(--amber);font-weight:600}
+.where{font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--mud);padding-left:14px;border-left:1px solid rgba(255,255,255,.15);white-space:nowrap;transition:color .2s}
+.where:hover{color:var(--amber)}
+nav.main{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap}
+nav.main a{color:#c9d3e2;font-size:.8rem;font-weight:500;padding:7px 12px;border-radius:8px;white-space:nowrap}
+nav.main a:hover{color:#fff;background:rgba(255,255,255,.08)}
+nav.main a.on{color:#1a1400;background:var(--amber);font-weight:600}
+nav.main a.ext{color:var(--amber)}
+
+/* etiquetas, botones, paneles */
+.lab{display:inline-flex;align-items:center;gap:.5rem;font-size:.7rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--mu)}
+.dark .lab,.hero .lab{color:var(--mud)}
+.lab .dot{width:7px;height:7px;border-radius:50%;background:var(--amber);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(252,196,0,.55)}70%{box-shadow:0 0 0 8px rgba(252,196,0,0)}100%{box-shadow:0 0 0 0 rgba(252,196,0,0)}}
+.btn{display:inline-flex;align-items:center;gap:.6rem;padding:.95rem 1.3rem;border-radius:8px;font:600 .72rem/1 var(--fb);letter-spacing:.12em;text-transform:uppercase;border:0;cursor:pointer;transition:transform .2s,background .2s,color .2s}
+.btn i{font-style:normal;opacity:.75;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}.btn:hover i{transform:translateX(3px)}
+.btn.amber{background:var(--amber);color:#1a1400}.btn.amber:hover{background:var(--yellow)}
+.btn.dark{background:#1a2638;color:#d6deea}.btn.dark:hover{background:#25344b;color:#fff}
+.btn.sm{padding:.7rem .9rem;font-size:.66rem}
+.panel{margin:12px;border-radius:44px;position:relative;overflow:hidden}
+.panel.dark{background:radial-gradient(90% 70% at 85% 0%,rgba(0,51,102,.55),transparent 60%),var(--black);color:#fff}
+.panel.amber{background:linear-gradient(135deg,var(--amber),var(--yellow));color:#1a1400}
+.hero{padding:clamp(3rem,7vw,5.5rem) 0 clamp(3.5rem,7vw,5.5rem)}
+.hero::after{content:"";position:absolute;left:50%;bottom:-1px;width:120px;height:34px;transform:translateX(-50%);background:var(--paper);border-radius:22px 22px 0 0}
+.hero p.lead{font-size:clamp(1.05rem,1.7vw,1.35rem);line-height:1.5;color:#e1e8f2;max-width:62ch;margin:1.1rem 0 0}
+.hero .btns{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:2rem}
+.hero .facts{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:2.2rem}
+.pillab{display:inline-flex;align-items:center;gap:.5rem;background:rgba(255,255,255,.09);border-radius:6px;padding:.5rem .8rem;font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#e5ebf4}
+.pillab b{color:var(--amber);font-weight:700}
+.section{padding:3.2rem 0}
+.sec-h{max-width:760px;margin-bottom:1.6rem}
+.sec-h h2{margin:.6rem 0 .6rem}
+.sec-h p{color:var(--mu);font-size:1.02rem;margin:0}
+.dark .sec-h p{color:#b3bfd0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;color:var(--ink)}
+
+/* pie */
+footer.site{background:var(--black);color:#fff;padding:3.2rem 0 2.6rem;margin-top:12px}
+footer.site .in{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:2rem}
+footer.site p{color:var(--mud);font-size:.9rem;margin:.7rem 0 0;max-width:340px}
+footer.site .col{display:grid;gap:.55rem;align-content:start}
+footer.site .col b{font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:#fff}
+footer.site .col a{color:var(--mud);font-size:.9rem}
+footer.site .col a:hover{color:var(--amber)}
+footer.site .legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding-top:1.2rem;color:var(--mud);font-size:.78rem}
+@media(max-width:860px){
+  .where{display:none}
+  header.site .in{height:auto;padding:8px 0;flex-wrap:wrap;gap:6px 14px}
+  nav.main{margin-left:0;flex:1 0 100%}
+  footer.site .in{grid-template-columns:1fr}
+}
+@media(max-width:720px){.panel{border-radius:30px;margin:8px}}

@@ -1,260 +1,290 @@
-<title>Buscador de Bencina</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Public+Sans:wght@400;500;600;700&display=swap">
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Evolución del precio de los combustibles en Chile · Plataformas digitales</title>
+<meta name="description" content="Evolución del precio de la bencina, el diésel, el kerosene y el gas en Chile desde 1994, con detalle por región, comuna y operador. Elaboración propia de dilandcastro.com a partir de datos de la CNE y la SEC.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Inter:wght@400;500;600;700&display=swap"><link rel="icon" href="https://dilandcastro.com/assets/icon-192.png">
 <style>
-  :root{
-    color-scheme: dark;
-    --bg: #0A0F1A;
-    --panel: #111826;
-    --panel-2: #161F30;
-    --ink: #EAF2F2;
-    --ink-muted: #8CA0AC;
-    --ink-faint: #56626E;
-    --line: rgba(94,234,212,0.14);
-    --teal: #4FE3D2;
-    --teal-dim: rgba(79,227,210,0.16);
-    --orange: #FF8A4C;
-    --orange-dim: rgba(255,138,76,0.16);
-    --border: rgba(143,189,189,0.14);
-  }
-  *{box-sizing:border-box;}
-  html,body{height:100%;}
-  body{
-    margin:0; background:var(--bg); color:var(--ink);
-    font-family:"Public Sans",system-ui,-apple-system,sans-serif;
-    padding-inline:16px; padding-block:18px 24px;
-  }
-  .wrap{ max-width:1180px; margin:0 auto; }
+/* Sistema visual de dilandcastro.com: fondo "paper", paneles redondeados navy/negro, ámbar #fcc400,
+   Bricolage Grotesque (títulos) + Inter (texto). Compartido por Terminal, Territorial y Buscador. */
+:root{
+  --amber:#fcc400;--amber2:#fca311;--yellow:#ffd60a;
+  --black:#020812;--navy:#021f45;--navy2:#0a1a30;--blue:#003366;
+  --paper:#eef1f5;--card:#f3f5f8;--ink:#07111f;--line:#d5dce6;--mu:#5c6879;--mud:#9aa7ba;
+  --up:#d9480f;--dn:#168a52;
+  --fd:"Bricolage Grotesque",system-ui,sans-serif;--fb:"Inter",system-ui,sans-serif;--max:1240px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--fb);color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;font-variant-numeric:tabular-nums}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--fd);font-weight:600;letter-spacing:-.03em;line-height:1.04;margin:0}
+h1{font-size:clamp(2.3rem,5.6vw,4.6rem);letter-spacing:-.04em;color:#fff}
+h1 em,h2 em{font-style:normal;color:var(--amber)}
+h2{font-size:clamp(1.7rem,3.4vw,2.6rem)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 clamp(16px,3vw,32px)}
 
-  header{ margin-bottom:18px; }
-  .kicker{ font-family:"Archivo",sans-serif; font-weight:800; font-size:11px; text-transform:uppercase; letter-spacing:0.12em; color:var(--teal); }
-  h1{ font-family:"Archivo",sans-serif; font-weight:800; font-size:clamp(22px,3.4vw,30px); margin:5px 0 4px; letter-spacing:-0.01em; }
-  .subtitle{ color:var(--ink-muted); font-size:13.5px; max-width:70ch; line-height:1.5; }
+/* cabecera */
+header.site{position:sticky;top:0;z-index:60;background:rgba(2,8,18,.78);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)}
+header.site .in{display:flex;align-items:center;gap:18px;height:56px}
+.brand{display:flex;align-items:center;gap:8px;font-family:var(--fd);font-weight:600;font-size:1.25rem;color:#fff;letter-spacing:-.03em;white-space:nowrap}
+.brand .bolt{width:15px;height:15px;color:var(--amber)}
+.brand img{width:26px;height:26px;border-radius:50%;object-fit:cover}
+.brand b{color:var(--amber);font-weight:600}
+.where{font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--mud);padding-left:14px;border-left:1px solid rgba(255,255,255,.15);white-space:nowrap;transition:color .2s}
+.where:hover{color:var(--amber)}
+nav.main{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap}
+nav.main a{color:#c9d3e2;font-size:.8rem;font-weight:500;padding:7px 12px;border-radius:8px;white-space:nowrap}
+nav.main a:hover{color:#fff;background:rgba(255,255,255,.08)}
+nav.main a.on{color:#1a1400;background:var(--amber);font-weight:600}
+nav.main a.ext{color:var(--amber)}
 
-  .layout{ display:grid; grid-template-columns: 340px 1fr; gap:16px; align-items:start; }
-  @media (max-width:860px){ .layout{ grid-template-columns:1fr; } }
+/* etiquetas, botones, paneles */
+.lab{display:inline-flex;align-items:center;gap:.5rem;font-size:.7rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--mu)}
+.dark .lab,.hero .lab{color:var(--mud)}
+.lab .dot{width:7px;height:7px;border-radius:50%;background:var(--amber);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(252,196,0,.55)}70%{box-shadow:0 0 0 8px rgba(252,196,0,0)}100%{box-shadow:0 0 0 0 rgba(252,196,0,0)}}
+.btn{display:inline-flex;align-items:center;gap:.6rem;padding:.95rem 1.3rem;border-radius:8px;font:600 .72rem/1 var(--fb);letter-spacing:.12em;text-transform:uppercase;border:0;cursor:pointer;transition:transform .2s,background .2s,color .2s}
+.btn i{font-style:normal;opacity:.75;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}.btn:hover i{transform:translateX(3px)}
+.btn.amber{background:var(--amber);color:#1a1400}.btn.amber:hover{background:var(--yellow)}
+.btn.dark{background:#1a2638;color:#d6deea}.btn.dark:hover{background:#25344b;color:#fff}
+.btn.sm{padding:.7rem .9rem;font-size:.66rem}
+.panel{margin:12px;border-radius:44px;position:relative;overflow:hidden}
+.panel.dark{background:radial-gradient(90% 70% at 85% 0%,rgba(0,51,102,.55),transparent 60%),var(--black);color:#fff}
+.panel.amber{background:linear-gradient(135deg,var(--amber),var(--yellow));color:#1a1400}
+.hero{padding:clamp(3rem,7vw,5.5rem) 0 clamp(3.5rem,7vw,5.5rem)}
+.hero::after{content:"";position:absolute;left:50%;bottom:-1px;width:120px;height:34px;transform:translateX(-50%);background:var(--paper);border-radius:22px 22px 0 0}
+.hero p.lead{font-size:clamp(1.05rem,1.7vw,1.35rem);line-height:1.5;color:#e1e8f2;max-width:62ch;margin:1.1rem 0 0}
+.hero .btns{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:2rem}
+.hero .facts{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:2.2rem}
+.pillab{display:inline-flex;align-items:center;gap:.5rem;background:rgba(255,255,255,.09);border-radius:6px;padding:.5rem .8rem;font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#e5ebf4}
+.pillab b{color:var(--amber);font-weight:700}
+.section{padding:3.2rem 0}
+.sec-h{max-width:760px;margin-bottom:1.6rem}
+.sec-h h2{margin:.6rem 0 .6rem}
+.sec-h p{color:var(--mu);font-size:1.02rem;margin:0}
+.dark .sec-h p{color:#b3bfd0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;color:var(--ink)}
 
-  .tabs{ display:flex; gap:8px; margin-bottom:16px; }
-  .tab-btn{
-    font-family:"Archivo",sans-serif; font-weight:700; font-size:13px; cursor:pointer;
-    background:var(--panel); border:1px solid var(--border); color:var(--ink-muted);
-    padding:9px 16px; border-radius:9px;
-  }
-  .tab-btn.active{ background:var(--teal-dim); border-color:var(--teal); color:var(--teal); }
+/* pie */
+footer.site{background:var(--black);color:#fff;padding:3.2rem 0 2.6rem;margin-top:12px}
+footer.site .in{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:2rem}
+footer.site p{color:var(--mud);font-size:.9rem;margin:.7rem 0 0;max-width:340px}
+footer.site .col{display:grid;gap:.55rem;align-content:start}
+footer.site .col b{font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:#fff}
+footer.site .col a{color:var(--mud);font-size:.9rem}
+footer.site .col a:hover{color:var(--amber)}
+footer.site .legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding-top:1.2rem;color:var(--mud);font-size:.78rem}
+@media(max-width:860px){
+  .where{display:none}
+  header.site .in{height:auto;padding:8px 0;flex-wrap:wrap;gap:6px 14px}
+  nav.main{margin-left:0;flex:1 0 100%}
+  footer.site .in{grid-template-columns:1fr}
+}
+@media(max-width:720px){.panel{border-radius:30px;margin:8px}}
 
-  .panel-head{ border-top:2px solid var(--teal); padding-top:8px; margin-bottom:2px; display:flex; justify-content:space-between; align-items:flex-end; gap:10px; flex-wrap:wrap; }
-  .panel-eyebrow{ font-family:"Archivo",sans-serif; font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:var(--ink-muted); }
+.mono{font-variant-numeric:tabular-nums}
+.up{color:var(--up)}.dn{color:var(--dn)}.fl{color:var(--mu)}
+.dark .up{color:#ff9a6b}.dark .dn{color:#5fe0a0}.dark .fl{color:var(--mud)}
 
-  .chart-toolbar{ display:flex; gap:6px; }
-  .chart-toolbar button{
-    font-family:"Archivo",sans-serif; font-size:10.5px; font-weight:700; letter-spacing:0.03em; text-transform:uppercase;
-    background:var(--panel-2); border:1px solid var(--border); color:var(--ink-muted);
-    padding:5px 10px; border-radius:7px; cursor:pointer;
-  }
-  .chart-toolbar button:hover{ border-color:var(--teal); color:var(--teal); }
+/* ---- portada con la evolución ---- */
+.hero{padding:clamp(2.6rem,5vw,4rem) 0 clamp(3.4rem,6vw,4.6rem)}
+.hero-head{display:grid;grid-template-columns:1fr auto;gap:1.2rem 2rem;align-items:end;margin-bottom:1.8rem}
+.hero h1{margin-top:.9rem;max-width:17ch;font-size:clamp(2.2rem,5vw,4.2rem)}
+.hero .open{display:flex;flex-direction:column;gap:.6rem;min-width:260px}
+.hero .open .btn{justify-content:space-between}
+.hero .facts{margin-top:1.4rem}
+.chartcard{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:26px;padding:clamp(1rem,2.2vw,1.6rem)}
+.chartcard h2{font-size:clamp(1.25rem,2.4vw,1.75rem);margin-bottom:.9rem;letter-spacing:-.025em}
+.chartcard h2 em{color:var(--amber)}
+.row{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;margin-bottom:1rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:transparent;border:1px solid rgba(255,255,255,.22);color:#dbe4f0;padding:.5rem .9rem;border-radius:999px;font:500 .8rem var(--fb);cursor:pointer;display:flex;align-items:center;gap:8px;transition:background .2s,border-color .2s}
+.chip i{width:9px;height:9px;border-radius:50%;background:var(--c,#fff);display:inline-block;opacity:.4}
+.chip:hover{background:rgba(255,255,255,.07)}
+.chip[aria-pressed=true]{border-color:var(--c,var(--amber));color:#fff;background:rgba(255,255,255,.08)}
+.chip[aria-pressed=true] i{opacity:1}
+.seg{display:inline-flex;background:rgba(255,255,255,.08);border-radius:10px;padding:3px;gap:2px;flex-wrap:wrap}
+.seg button{background:transparent;border:0;color:#c3cedd;padding:.45rem .85rem;border-radius:8px;font:600 .78rem var(--fb);cursor:pointer;letter-spacing:.02em}
+.seg button:hover{color:#fff}
+.seg button[aria-pressed=true]{background:var(--amber);color:#1a1400}
+.seg.light{background:#e1e7ef}.seg.light button{color:var(--mu)}.seg.light button:hover{color:var(--ink)}
+.seg.light button[aria-pressed=true]{background:var(--navy);color:#fff}
+.chartbox{position:relative;border:1px solid rgba(255,255,255,.1);background:rgba(2,8,18,.35);border-radius:18px;height:400px}
+.chartbox svg{width:100%;height:100%;display:block}
+.xh{position:absolute;pointer-events:none;background:#f3f5f8;color:var(--ink);border-radius:12px;padding:8px 11px;font-size:.78rem;display:none;z-index:4;min-width:170px;box-shadow:0 10px 30px rgba(0,0,0,.4)}
+.xh .dd{font-weight:700;margin-bottom:4px}
+.xh div.r{display:flex;justify-content:space-between;gap:14px}
+.note{margin-top:.9rem;font-size:.8rem;color:var(--mud);max-width:95ch}
+.note a{color:var(--amber);border-bottom:1px solid rgba(252,196,0,.4)}
+.note a:hover{border-bottom-color:var(--amber)}
 
-  .hist-note{ font-size:12px; color:var(--ink-muted); line-height:1.6; }
+/* ---- tablero en una sola hilera ---- */
+.tiles{display:flex;gap:10px;overflow-x:auto;padding:4px 2px 10px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.tile{flex:1 0 150px;scroll-snap-align:start;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:.95rem .95rem .8rem;text-align:left;cursor:pointer;font:inherit;color:var(--ink);transition:transform .2s,box-shadow .2s,border-color .2s}
+.tile:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(2,31,69,.10)}
+.tile.on{border-color:var(--amber);box-shadow:0 0 0 2px var(--amber)}
+.tile .n{font-size:.64rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--mu);white-space:nowrap}
+.tile .p{font-family:var(--fd);font-weight:600;font-size:1.95rem;letter-spacing:-.04em;line-height:1.1;margin:.25rem 0 .55rem;white-space:nowrap}
+.tile .u{font:500 .68rem var(--fb);color:var(--mu);margin-left:4px;letter-spacing:0}
+.tile .cap{font-size:.6rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--mud);margin-bottom:.3rem}
+.tile .d{display:grid;grid-template-columns:1fr auto;gap:4px 6px;align-items:center;font-size:.72rem}
+.tile .d>span:nth-child(odd){color:var(--mu)}
+.pc{display:inline-block;padding:.12rem .42rem;border-radius:6px;font-weight:700;font-size:.68rem;white-space:nowrap}
+.pc.up{background:#fde8e4;color:#c2310f}
+.pc.dn{background:#e1f5ea;color:#127a47}
+.pc.fl{background:#e9edf3;color:var(--mu)}
+.tile svg.sp{display:block;width:100%;height:auto;margin-top:.55rem}
+.tile .src{font-size:.62rem;color:var(--mud);margin-top:.15rem}
+.legend-dl{display:flex;gap:14px;flex-wrap:wrap;font-size:.74rem;color:var(--mu);margin-top:.7rem}
+.legend-dl .pc{margin-right:5px}
 
-  .entity-row{ display:flex; align-items:center; gap:9px; padding:6px 4px; cursor:pointer; border-radius:7px; }
-  .entity-row:hover{ background:var(--panel-2); }
-  .entity-row .dot{ width:11px; height:11px; border-radius:50%; flex:none; border:2px solid transparent; }
-  .entity-row.off .dot{ background:transparent !important; border-color:var(--ink-faint) !important; }
-  .entity-row .name{ font-size:12.5px; color:var(--ink); }
-  .entity-row.off .name{ color:var(--ink-faint); }
+/* ---- abrir las herramientas ---- */
+.tools2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.tool{background:var(--card);color:var(--ink);border-radius:26px;padding:1.4rem;display:grid;grid-template-columns:120px 1fr;gap:1.2rem;align-items:center}
+.tool .pv{background:var(--navy2);border-radius:18px;height:170px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.tool .pv svg{height:100%;width:auto}
+.tool h3{font-size:1.5rem;margin-bottom:.4rem}
+.tool p{margin:0 0 1rem;color:var(--mu);font-size:.9rem;line-height:1.5}
+.tool .btn{width:100%;justify-content:space-between}
 
-  input[type="range"]{ -webkit-appearance:none; appearance:none; height:4px; background:var(--border); border-radius:2px; margin:8px 0; }
-  input[type="range"]::-webkit-slider-thumb{ -webkit-appearance:none; width:15px; height:15px; border-radius:50%; background:var(--teal); cursor:pointer; border:2px solid var(--bg); }
-  input[type="range"]::-moz-range-thumb{ width:15px; height:15px; border-radius:50%; background:var(--teal); cursor:pointer; border:2px solid var(--bg); }
+/* ---- tablas ---- */
+.grid1{display:grid;grid-template-columns:1fr;gap:14px}
+.card.pad{padding:1.1rem 1.2rem 1rem}
+.card h3{font-size:1.15rem;margin-bottom:.7rem}
+table{width:100%;border-collapse:collapse;font-size:.88rem}
+th{font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mu);font-weight:600;text-align:right;padding:6px 6px;border-bottom:1px solid var(--line)}
+th:first-child,td:first-child{text-align:left}
+td{padding:8px 6px;border-bottom:1px solid #e3e8ef;text-align:right;white-space:nowrap}
+tr:last-child td{border-bottom:0}
+td.nm{font-weight:600}
+tr.hi td{background:#fff6cc}
+.regcard{display:grid;grid-template-columns:150px 1fr;gap:1.2rem;align-items:start}
+.regmapbox{position:sticky;top:76px}
+.regmap{display:block;width:100%;height:auto}
+.regmap path{stroke:#f3f5f8;stroke-width:6;transition:fill .25s;cursor:pointer}
+.regmap path.hl{stroke:var(--amber);stroke-width:30}
+.rampbar{height:8px;border-radius:4px;background:linear-gradient(90deg,#dbe6f4,#021f45);margin-top:.7rem}
+.rampcap{display:flex;justify-content:space-between;font-size:.62rem;color:var(--mu);margin-top:.25rem;letter-spacing:.04em}
+.lg{position:relative;display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:#e1e7ef;color:var(--navy);font:700 .6rem var(--fb);letter-spacing:.02em;margin-right:10px;vertical-align:middle;overflow:hidden;flex:none;border:1px solid var(--line)}
+.lg img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff;padding:2px;border-radius:50%}
+.ext{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.ext td.ad{white-space:normal;text-align:left;color:var(--mu);font-size:.8rem;line-height:1.35}
+.ext td.ad b{color:var(--ink)}
+.ext td.pr{font-family:var(--fd);font-weight:600;font-size:1.15rem;letter-spacing:-.02em;width:1%;padding-right:14px}
+.small{font-size:.78rem;color:var(--mu);margin:.8rem 0 0}
 
-  .panel{ background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:16px; }
-  .panel + .panel{ margin-top:14px; }
-
-  label{ display:block; font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; color:var(--ink-faint); margin-bottom:5px; margin-top:12px; }
-  label:first-child{ margin-top:0; }
-  input[type="text"], select{
-    width:100%; background:var(--panel-2); border:1px solid var(--border); color:var(--ink);
-    border-radius:8px; padding:9px 10px; font-size:13.5px; font-family:inherit;
-  }
-  input[type="text"]:focus, select:focus{ outline:none; border-color:var(--teal); }
-
-  .fuel-row{ display:flex; flex-wrap:wrap; gap:6px; }
-  .fuel-chip{
-    font-size:11.5px; font-weight:700; padding:6px 10px; border-radius:999px; cursor:pointer;
-    background:var(--panel-2); border:1px solid var(--border); color:var(--ink-muted);
-    transition:all .12s ease;
-  }
-  .fuel-chip.active{ background:var(--teal-dim); border-color:var(--teal); color:var(--teal); }
-
-  .stat-row{ display:flex; justify-content:space-between; align-items:baseline; margin-top:14px; padding-top:12px; border-top:1px solid var(--border); }
-  .stat-row .n{ font-family:"Archivo",sans-serif; font-weight:800; font-size:22px; color:var(--ink); font-variant-numeric:tabular-nums; }
-  .stat-row .label{ font-size:11px; color:var(--ink-muted); }
-
-  .results{ max-height:420px; overflow-y:auto; margin-top:10px; }
-  .result-item{
-    padding:9px 10px; border-radius:8px; cursor:pointer; border:1px solid transparent;
-    display:flex; justify-content:space-between; gap:8px; align-items:center;
-  }
-  .result-item:hover, .result-item.sel{ background:var(--panel-2); border-color:var(--border); }
-  .result-item .ri-main{ min-width:0; }
-  .result-item .ri-marca{ font-size:12.5px; font-weight:700; color:var(--ink); }
-  .result-item .ri-dir{ font-size:11px; color:var(--ink-muted); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
-  .result-item .ri-precio{ font-family:"Archivo",sans-serif; font-weight:800; font-size:14px; color:var(--teal); flex:none; font-variant-numeric:tabular-nums; }
-
-  .map-wrap{ position:relative; }
-  .chart-wrap{ position:relative; max-width:620px; }
-  svg{ display:block; width:100%; height:auto; }
-  .region-path{ fill:#0D1420; stroke:var(--line); stroke-width:1; }
-  .dot{ cursor:pointer; }
-  .legend{ display:flex; align-items:center; gap:10px; font-size:11px; color:var(--ink-muted); margin-top:10px; flex-wrap:wrap; }
-  .legend .swatch{ width:10px; height:10px; border-radius:50%; display:inline-block; margin-right:4px; vertical-align:middle; }
-  .grad-bar{ width:120px; height:8px; border-radius:4px; background:linear-gradient(90deg, var(--teal), var(--orange)); display:inline-block; vertical-align:middle; }
-
-  .tooltip{
-    position:absolute; pointer-events:none; background:#06090F; border:1px solid var(--border);
-    color:var(--ink); font-size:12px; padding:8px 11px; border-radius:8px; line-height:1.5;
-    transform:translate(-50%, calc(-100% - 12px)); white-space:nowrap; opacity:0; transition:opacity .08s ease; z-index:6;
-  }
-  .tooltip b{ font-family:"Archivo",sans-serif; color:var(--teal); }
-
-  footer{ margin-top:22px; padding-top:14px; border-top:1px solid var(--border); color:var(--ink-faint); font-size:11px; line-height:1.7; }
-  footer a{ color:var(--teal); }
-
-  ::-webkit-scrollbar{ width:8px; }
-  ::-webkit-scrollbar-thumb{ background:var(--border); border-radius:4px; }
+/* ---- cobertura y cita ---- */
+.cov{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.cov .card{padding:1.2rem}
+.cov .k{font-size:.66rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--mu)}
+.cov .v{font-family:var(--fd);font-weight:600;font-size:1.5rem;letter-spacing:-.03em;margin:.3rem 0 .4rem;line-height:1.15}
+.cov p{margin:0;color:var(--mu);font-size:.88rem}
+.cov .card.no{background:transparent;border-style:dashed}
+.cite{display:grid;grid-template-columns:1fr auto;gap:1rem 1.5rem;align-items:center;padding:1.3rem 1.5rem}
+.cite .ct{margin:.4rem 0 0;font-size:1rem;line-height:1.55}
+.cite .ct a{color:var(--navy);font-weight:600;border-bottom:2px solid var(--amber)}
+@media(max-width:980px){.hero-head{grid-template-columns:1fr}.hero .open{flex-direction:row;flex-wrap:wrap}.hero .open .btn{flex:1 1 230px}.tools2{grid-template-columns:1fr}.regcard{grid-template-columns:1fr}.regmapbox{position:static;max-width:120px}.ext{grid-template-columns:1fr}.cite{grid-template-columns:1fr}.chartbox{height:340px}}
+@media(max-width:560px){.tool{grid-template-columns:1fr}.tool .pv{height:120px}}
 </style>
+</head>
+<body>
+<header class="site"><div class="wrap in">
+  <a class="brand" href="https://dilandcastro.com" aria-label="Diland Castro"><svg class="bolt" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 2 4.8 13.4h5.9L9.6 22l9.6-12.2h-6z" fill="currentColor"/></svg><img src="https://dilandcastro.com/assets/logo.png" alt="" width="26" height="26"><span>diland<b>castro</b></span></a>
+  <a class="where" href="https://dilandcastro.com/#plataformas" title="Volver a Plataformas digitales">‹ Plataformas digitales</a>
+  <nav class="main" aria-label="Principal">
+    <a href="index.html" class="on" aria-current="page">Resumen</a>
+    <a href="territorial.html" >Territorial</a>
+    <a href="buscador.html" >Estaciones</a>
+    <a class="ext" href="https://dilandcastro.com">dilandcastro.com ↗</a>
+  </nav>
+</div></header>
 
-<div class="wrap">
-  <header>
-    <div class="kicker">Monitor de combustibles &middot; Chile</div>
-    <h1>Buscador de bencina</h1>
-    <p class="subtitle" id="subtitleText">Cargando...</p>
-  </header>
 
-  <div class="tabs">
-    <button class="tab-btn active" id="tabMapa">Mapa de hoy</button>
-    <button class="tab-btn" id="tabHistorico">Evolución histórica</button>
-    <button class="tab-btn" id="tabComparar">Comparar</button>
+<section class="panel dark hero">
+  <div class="wrap">
+    <div class="hero-head">
+      <div>
+        <span class="lab"><span class="dot"></span>Plataformas digitales · Monitor diario</span>
+        <h1>Evolución del <em>precio de los combustibles</em></h1>
+        <p class="lead">Cuánto cuesta cargar bencina, diésel, kerosene y gas en Chile, desde 1994 hasta hoy. Datos oficiales de la CNE y la SEC.</p>
+      </div>
+      <div class="open">
+        <a class="btn amber" href="territorial.html">Abrir mapa territorial <i>→</i></a>
+        <a class="btn dark" href="buscador.html">Abrir buscador de estaciones <i>→</i></a>
+      </div>
+    </div>
+
+    <div class="chartcard">
+      <h2>Evolución <em>histórica</em> de los precios de los combustibles</h2>
+      <div class="row"><div class="chips" id="cfuels" role="group" aria-label="Combustibles del gráfico"></div><div class="seg" id="ranges" role="group" aria-label="Rango"></div></div>
+      <div class="chartbox" id="cbox"><svg id="chart" role="img" aria-label="Evolución histórica de los precios de los combustibles"></svg><div class="xh" id="xh"></div></div>
+      <div class="note">Elaboración propia (<a href="https://www.dilandcastro.com">www.dilandcastro.com</a>) a partir de los datos de la CNE y SEC.</div>
+    </div>
+    <div class="facts" id="facts"></div>
   </div>
+</section>
 
-  <div class="layout" id="viewMapa">
-    <div>
-      <div class="panel">
-        <label>Buscar (dirección, comuna, marca)</label>
-        <input type="text" id="searchText" placeholder="Ej: Las Condes, Copec, Alameda...">
+<main>
+  <section class="section"><div class="wrap">
+    <div class="sec-h"><span class="lab">Hoy</span><h2>Precio promedio <em style="color:var(--navy)">nacional</em></h2><p>Toca un combustible para ver su detalle más abajo.</p></div>
+    <div class="tiles" id="tiles"></div>
+    <div class="legend-dl"><span><span class="pc up">▲ sube</span>aumento de precio</span><span><span class="pc dn">▼ baja</span>descenso de precio</span><span>La línea muestra los días con precio diario desde el 1 de octubre de 2026.</span></div>
+  </div></section>
 
-        <label>Combustible</label>
-        <div class="fuel-row" id="fuelRow"></div>
+  <section class="section" style="padding-top:.4rem"><div class="wrap">
+    <div class="panel dark" style="margin:0;padding:2rem clamp(1rem,3vw,2rem)">
+      <div class="sec-h" style="margin-bottom:1.2rem"><span class="lab">Herramientas</span><h2>Abre los mapas y <em>dashboards</em></h2><p>Explora el precio en cada región y comuna, o encuentra la estación más barata cerca de ti.</p></div>
+      <div class="tools2" id="tools2"></div>
+    </div>
+  </div></section>
 
-        <label>Región</label>
-        <select id="regionSelect"><option value="">Todas</option></select>
-
-        <label>Comuna</label>
-        <select id="comunaSelect"><option value="">Todas</option></select>
-
-        <label>Operador</label>
-        <select id="marcaSelect"><option value="">Todos</option></select>
-
-        <div class="stat-row">
-          <div><div class="n" id="statN">-</div><div class="label">estaciones encontradas</div></div>
-          <div style="text-align:right;"><div class="n" id="statAvg">-</div><div class="label">precio promedio</div></div>
+  <section class="section"><div class="wrap">
+    <div class="sec-h"><span class="lab">Detalle</span><h2>Dónde y con quién es más <em style="color:var(--navy)">caro</em></h2></div>
+    <div class="row"><div class="seg light" id="focus" role="group" aria-label="Combustible del detalle"></div></div>
+    <div class="grid1">
+      <div class="card pad"><h3>Por región</h3>
+        <div class="regcard">
+          <div class="regmapbox"><svg class="regmap" id="regmap" role="img" aria-label="Mapa de Chile con el precio por región"></svg><div class="rampbar"></div><div class="rampcap"><span>más barata</span><span>más cara</span></div></div>
+          <table class="mono" id="treg"></table>
         </div>
       </div>
-
-      <div class="panel">
-        <label style="margin-top:0;">Resultados</label>
-        <div class="results" id="resultsList"></div>
-      </div>
+      <div class="card pad"><h3>Por operador</h3><table class="mono" id="tmar"></table>
+        <p class="small">«Sin bandera» agrupa estaciones sin marca informada. Incluye operadores regionales de la lista oficial de la CNE.</p></div>
     </div>
+  </div></section>
 
-    <div class="panel">
-      <div class="map-wrap" id="mapWrap"></div>
-      <div class="legend">
-        <span><span class="swatch" style="background:var(--ink-faint);"></span>sin stock de este combustible</span>
-        <span>más barato <span class="grad-bar"></span> más caro</span>
-        <span style="margin-left:auto;">Blanco = coincide con tu búsqueda</span>
-      </div>
+  <section class="section" style="padding-top:0"><div class="wrap">
+    <div class="sec-h"><span class="lab">Estaciones</span><h2>Las más baratas y las más caras</h2><p>Del combustible elegido arriba, según el último precio informado.</p></div>
+    <div class="ext"><div class="card pad"><h3>Más baratas</h3><table class="mono" id="tbar"></table></div><div class="card pad"><h3>Más caras</h3><table class="mono" id="tcar"></table></div></div>
+  </div></section>
+
+  <section class="section" style="padding-top:0"><div class="wrap">
+    <div class="sec-h"><span class="lab">Cobertura</span><h2>Qué datos hay y <em style="color:var(--navy)">hasta cuándo</em></h2></div>
+    <div class="cov" id="cov"></div>
+    <p class="small" id="metodo"></p>
+  </div></section>
+
+  <section class="section" style="padding-top:0"><div class="wrap">
+    <div class="card cite">
+      <div><span class="lab">Cómo citar</span><p class="ct" id="citeHtml"></p></div>
+      <button class="btn dark" id="copyCite" type="button">Copiar cita <i>⧉</i></button>
     </div>
+  </div></section>
+</main>
+<footer class="site"><div class="wrap in">
+  <div>
+    <a class="brand" href="https://dilandcastro.com"><svg class="bolt" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 2 4.8 13.4h5.9L9.6 22l9.6-12.2h-6z" fill="currentColor"/></svg><span>diland<b>castro</b></span></a>
+    <p>Plataformas digitales: monitor de precios de combustibles en Chile con datos oficiales de la CNE y la SEC, actualizado todos los días.</p>
   </div>
+  <div class="col"><b>Esta herramienta</b><a href="index.html">Resumen</a><a href="territorial.html">Territorial</a><a href="buscador.html">Buscador de estaciones</a></div>
+  <div class="col"><b>Diland Castro</b><a href="https://dilandcastro.com/#plataformas">Plataformas digitales</a><a href="https://dilandcastro.com">dilandcastro.com</a><a href="mailto:diland@ug.uchile.cl?subject=Consulta%20desde%20precios%20de%20combustibles">Escríbeme</a></div>
+  <div class="legal">Elaboración propia (<a href="https://www.dilandcastro.com" style="color:var(--amber)">www.dilandcastro.com</a>) a partir de datos de la Comisión Nacional de Energía (CNE) y la Superintendencia de Electricidad y Combustibles (SEC). Favor citar la fuente.</div>
+</div></footer>
 
-  <div class="layout" id="viewHistorico" style="display:none;">
-    <div>
-      <div class="panel">
-        <label style="margin-top:0;">Nivel</label>
-        <div class="fuel-row" id="nivelRow">
-          <div class="fuel-chip active" data-nivel="nacional">Nacional</div>
-          <div class="fuel-chip" data-nivel="regional">Regional</div>
-          <div class="fuel-chip" data-nivel="comunal">Comunal</div>
-        </div>
-
-        <label>Combustible</label>
-        <div class="fuel-row" id="histFuelRow"></div>
-
-        <label id="histRegionLabel" style="display:none;">Región</label>
-        <select id="histRegionSelect" style="display:none;"></select>
-
-        <label id="histComunaLabel" style="display:none;">Comuna</label>
-        <select id="histComunaSelect" style="display:none;"></select>
-
-        <label>Desde</label>
-        <input type="range" id="histRangoDesde" min="0" max="100" value="0" style="width:100%;">
-        <label>Hasta</label>
-        <input type="range" id="histRangoHasta" min="0" max="100" value="100" style="width:100%;">
-        <div class="hist-note" id="histRangoLabel" style="margin-top:4px;"></div>
-      </div>
-      <div class="panel" id="histNoteBox" style="display:none;"></div>
-    </div>
-
-    <div class="panel">
-      <div class="panel-head">
-        <div class="panel-eyebrow" id="histEyebrow">Evolución</div>
-        <div class="chart-toolbar"><button id="histExportSvg">SVG</button><button id="histExportPng">PNG</button></div>
-      </div>
-      <h2 id="histTitle" style="font-family:'Archivo',sans-serif; font-weight:800; font-size:19px; margin:3px 0 12px;">—</h2>
-      <div class="chart-wrap" id="histChartWrap"></div>
-    </div>
-  </div>
-
-  <div class="layout" id="viewComparar" style="display:none; grid-template-columns: 300px 1fr;">
-    <div>
-      <div class="panel">
-        <label style="margin-top:0;">Comparar por</label>
-        <div class="fuel-row" id="cmpModoRow">
-          <div class="fuel-chip active" data-modo="combustibles">Combustibles (nacional)</div>
-          <div class="fuel-chip" data-modo="regiones">Regiones</div>
-        </div>
-
-        <label id="cmpFuelLabel" style="display:none;">Combustible (fijo, para comparar regiones)</label>
-        <select id="cmpFuelSelect" style="display:none;"></select>
-
-        <label id="cmpEntidadesLabel" style="margin-top:16px;">Líneas a mostrar</label>
-        <div id="cmpEntidadesList"></div>
-
-        <label>Desde</label>
-        <input type="range" id="cmpRangoDesde" min="0" max="100" value="0" style="width:100%;">
-        <label>Hasta</label>
-        <input type="range" id="cmpRangoHasta" min="0" max="100" value="100" style="width:100%;">
-        <div class="hist-note" id="cmpRangoLabel" style="margin-top:4px;"></div>
-      </div>
-    </div>
-
-    <div class="panel">
-      <div class="panel-head">
-        <div class="panel-eyebrow">Evolución comparada</div>
-        <div class="chart-toolbar"><button id="cmpExportSvg">SVG</button><button id="cmpExportPng">PNG</button></div>
-      </div>
-      <h2 id="cmpTitle" style="font-family:'Archivo',sans-serif; font-weight:800; font-size:19px; margin:3px 0 12px;">Precio por litro, varios combustibles</h2>
-      <div class="chart-wrap" id="cmpChartWrap"></div>
-    </div>
-  </div>
-
-  <footer>
-    Datos: snapshot diario de <a href="https://github.com/diland9/precios-combustibles-chile" target="_blank" rel="noopener">precios-combustibles-chile</a>,
-    capturado desde la API pública de bencinaenlinea.cl (CNE/SEC). Fecha del snapshot: <span id="fechaSnapshot"></span>.
-    Precios fuera de rango razonable ya fueron descartados antes de llegar aquí. La evolución histórica nacional y regional
-    combina la serie oficial mensual de la CNE (1994 en adelante, 5 combustibles) con el monitoreo diario propio desde
-    que este proyecto arrancó; la comunal solo tiene el monitoreo diario propio (no existe respaldo histórico oficial a
-    ese nivel de detalle).
-  </footer>
-</div>
 
 <script>
 (function(){
@@ -264,625 +294,133 @@
   var stationById = {};
   DATA.stations.forEach(function(s){ stationById[s[ID]] = s; });
 
-  var state = { texto: '', fuelIdx: 0, regionIdx: -1, comunaIdx: -1, marcaIdx: -1, selId: null };
+/* ---------------- portada */
+$('facts').innerHTML = '<span class="pillab">Último dato <b>' + dLabel(lastDay) + '</b></span><span class="pillab"><b>' + nf0.format(C.estaciones) + '</b> estaciones</span><span class="pillab">Historia desde <b>' + T[0].slice(0,4) + '</b></span>';
 
-  document.getElementById('fechaSnapshot').textContent = DATA.fecha || '—';
-  document.getElementById('subtitleText').textContent = DATA.stations.length.toLocaleString('es-CL') + ' estaciones a lo largo de Chile. Filtra por región, comuna, operador o combustible, o escribe una dirección.';
-
-  // ---------- controles ----------
-  var fuelRow = document.getElementById('fuelRow');
-  DATA.combustibles.forEach(function(c, i){
-    var chip = document.createElement('div');
-    chip.className = 'fuel-chip' + (i === state.fuelIdx ? ' active' : '');
-    chip.textContent = c;
-    chip.dataset.i = i;
-    chip.addEventListener('click', function(){
-      state.fuelIdx = i;
-      fuelRow.querySelectorAll('.fuel-chip').forEach(function(el){ el.classList.toggle('active', Number(el.dataset.i) === i); });
-      render();
-    });
-    fuelRow.appendChild(chip);
+/* ---------------- tablero: una sola hilera, rojo sube / verde baja, con eje x */
+let focus = 0, range = '1A', sel = new Set([0, 3]);
+function tiles() {
+  const host = $('tiles'); host.innerHTML = '';
+  fuels.forEach((n, f) => {
+    const a = NS[f], t = lastIdx(a); if (t < nM) return;
+    const v = a[t], p1 = prevIdx(a, t, nM), ref30 = (() => { const target = new Date(ms(T[t]) - 30*864e5).toISOString().slice(0,10); let k = -1; for (let i = nM; i <= t; i++) if (a[i] != null && T[i] <= target) k = i; return k >= 0 ? k : a.findIndex((x, i) => i >= nM && x != null); })();
+    const jan = monthlyRef('2026-01');
+    const idx = []; for (let i = nM; i <= LAST; i++) if (a[i] != null) idx.push(i);
+    const vals = idx.map(i => a[i]), lo = Math.min(...vals), hi = Math.max(...vals), sp = (hi - lo) || 1;
+    const w = 160, h = 58, x0 = 3, x1 = w - 3, yb = 38, yt = 5;
+    const X = k => x0 + (k / Math.max(1, idx.length - 1)) * (x1 - x0), Y = x => yb - 4 - ((x - lo) / sp) * (yb - 4 - yt);
+    const pts = vals.map((x, k) => X(k).toFixed(1) + ',' + Y(x).toFixed(1)).join(' ');
+    const axis = '<line x1="' + x0 + '" y1="' + yb + '" x2="' + x1 + '" y2="' + yb + '" stroke="#cfd6e1" stroke-width="1"/><line x1="' + x0 + '" y1="' + yb + '" x2="' + x0 + '" y2="' + (yb + 3) + '" stroke="#9aa7ba"/><line x1="' + x1 + '" y1="' + yb + '" x2="' + x1 + '" y2="' + (yb + 3) + '" stroke="#9aa7ba"/>'
+      + '<text x="' + x0 + '" y="' + (yb + 14) + '" font-size="8.5" fill="#5c6879" font-family="Inter,system-ui,sans-serif">' + dShort(T[idx[0]]) + '</text><text x="' + x1 + '" y="' + (yb + 14) + '" font-size="8.5" fill="#5c6879" text-anchor="end" font-family="Inter,system-ui,sans-serif">' + dShort(T[idx[idx.length - 1]]) + '</text>';
+    const b = document.createElement('button'); b.className = 'tile' + (f === focus ? ' on' : ''); b.dataset.f = f;
+    b.innerHTML = '<div class="n">' + n + '</div><div class="p mono">' + P(v) + '<span class="u">' + UNIT[f] + '</span></div><div class="cap">Variación vs.</div>'
+      + '<div class="d mono"><span>ayer</span>' + dl(v, p1 >= 0 ? a[p1] : null, 1) + '<span>' + (T[ref30] === T[nM] ? dShort(T[nM]) : '30 días') + '</span>' + dl(v, ref30 >= 0 ? a[ref30] : null, 1)
+      + (jan >= 0 && a[jan] != null ? '<span>ene 2026</span>' + dl(v, a[jan], 1) : '') + '</div>'
+      + '<svg class="sp" viewBox="0 0 ' + w + ' ' + h + '" role="img" aria-label="Precio diario de ' + n + '">' + axis + '<polyline fill="none" stroke="' + COLL[f] + '" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="' + pts + '"/><circle cx="' + X(idx.length - 1).toFixed(1) + '" cy="' + Y(vals[vals.length - 1]).toFixed(1) + '" r="2.6" fill="' + COLL[f] + '"/></svg>';
+    b.onclick = () => { focus = f; sel.add(f); all(); document.getElementById('focus').scrollIntoView({ behavior: 'smooth', block: 'center' }); };
+    host.append(b);
   });
+}
 
-  var regionSelect = document.getElementById('regionSelect');
-  DATA.regiones.forEach(function(r, i){ var o = document.createElement('option'); o.value = i; o.textContent = r; regionSelect.appendChild(o); });
-  var comunaSelect = document.getElementById('comunaSelect');
-  var marcaSelect = document.getElementById('marcaSelect');
-  DATA.marcas.forEach(function(m, i){ var o = document.createElement('option'); o.value = i; o.textContent = m; marcaSelect.appendChild(o); });
-
-  function updateComunaOptions(){
-    comunaSelect.innerHTML = '<option value="">Todas</option>';
-    var list = state.regionIdx >= 0 ? (DATA.comunasPorRegion[DATA.regiones[state.regionIdx]] || []) : [];
-    list.forEach(function(ci){ var o = document.createElement('option'); o.value = ci; o.textContent = DATA.comunas[ci]; comunaSelect.appendChild(o); });
-    comunaSelect.disabled = state.regionIdx < 0;
+/* ---------------- gráfico SVG con eje de tiempo real */
+const RANGES = [['1M',30],['3M',91],['6M',182],['1A',365],['5A',1826],['10A',3652],['MAX',null]];
+function chartFuels() {
+  const host = $('cfuels'); host.innerHTML = '';
+  fuels.forEach((n, f) => { const b = document.createElement('button'); b.className = 'chip'; b.style.setProperty('--c', COL[f]); b.innerHTML = '<i></i>' + n; b.setAttribute('aria-pressed', sel.has(f));
+    b.onclick = () => { if (sel.has(f)) { if (sel.size > 1) sel.delete(f); } else sel.add(f); all(); }; host.append(b); });
+  const r = $('ranges'); r.innerHTML = ''; RANGES.forEach(([k]) => { const b = document.createElement('button'); b.textContent = k; b.setAttribute('aria-pressed', k === range); b.onclick = () => { range = k; all(); }; r.append(b); });
+}
+function seriesPts(f) { const out = []; for (let i = 0; i < NT; i++) if (NS[f][i] != null) out.push([ms(T[i]), NS[f][i], T[i]]); return out; }
+const ns = 'http://www.w3.org/2000/svg';
+function niceTicks(lo, hi, n = 5) { const raw = (hi - lo) / n, mag = Math.pow(10, Math.floor(Math.log10(raw))), nr = raw / mag, step = (nr < 1.5 ? 1 : nr < 3 ? 2 : nr < 7 ? 5 : 10) * mag, out = []; for (let v = Math.ceil(lo / step) * step; v <= hi + 1e-9; v += step) out.push(Math.round(v * 1e6) / 1e6); return out; }
+const MEPCO = Date.UTC(2026, 2, 22);   // 22 de marzo de 2026
+function drawChart() {
+  const svg = $('chart'), box = $('cbox'), Wd = box.clientWidth, Hd = box.clientHeight, m = { l: 62, r: 16, t: 20, b: 30 };
+  svg.setAttribute('viewBox', '0 0 ' + Wd + ' ' + Hd); svg.innerHTML = '';
+  const t1 = ms(T[LAST]), spec = RANGES.find(r => r[0] === range)[1], t0 = spec ? t1 - spec * 864e5 : ms(T[0]);
+  const list = [...sel].sort((a, b) => a - b).map(f => ({ f, pts: seriesPts(f).filter(p => p[0] >= t0 - (range === 'MAX' ? 0 : 45 * 864e5) && p[0] <= t1) }));
+  const vals = list.flatMap(s => s.pts.filter(p => p[0] >= t0).map(p => p[1])); if (!vals.length) { svg.innerHTML = '<text x="20" y="40" fill="#9aa7ba">Sin datos en este rango</text>'; return; }
+  let lo = Math.min(...vals), hi = Math.max(...vals); const pad = (hi - lo) * .08 || hi * .02; lo -= pad; hi += pad; if (lo < 0) lo = 0;
+  const X = t => m.l + (t - t0) / (t1 - t0 || 1) * (Wd - m.l - m.r), Y = v => m.t + (1 - (v - lo) / (hi - lo)) * (Hd - m.t - m.b);
+  const el = (tag, at, txt) => { const e = document.createElementNS(ns, tag); for (const k in at) e.setAttribute(k, at[k]); if (txt != null) e.textContent = txt; svg.append(e); return e; };
+  const FONT = 'Inter,system-ui,sans-serif';
+  for (const v of niceTicks(lo, hi)) { const y = Y(v); el('line', { x1: m.l, x2: Wd - m.r, y1: y, y2: y, stroke: 'rgba(255,255,255,.08)' }); el('text', { x: m.l - 10, y: y + 4, 'text-anchor': 'end', fill: '#9aa7ba', 'font-size': 11, 'font-family': FONT }, P(v)); }
+  const span = (t1 - t0) / 864e5, ticks = []; const d0 = new Date(t0), d1 = new Date(t1);
+  if (span > 2200) { for (let y = d0.getUTCFullYear() + 1; y <= d1.getUTCFullYear(); y += span > 6000 ? 5 : 2) ticks.push([Date.UTC(y, 0, 1), String(y)]); }
+  else if (span > 500) { for (let y = d0.getUTCFullYear(); y <= d1.getUTCFullYear(); y++) for (const mo of [0, 6]) { const t = Date.UTC(y, mo, 1); if (t >= t0 && t <= t1) ticks.push([t, MES[mo] + ' ' + y]); } }
+  else if (span > 100) { for (let y = d0.getUTCFullYear(); y <= d1.getUTCFullYear(); y++) for (let mo = 0; mo < 12; mo++) { const t = Date.UTC(y, mo, 1); if (t >= t0 && t <= t1) ticks.push([t, MES[mo] + ' ' + String(y).slice(2)]); } }
+  else { const step = span > 40 ? 7 : span > 14 ? 3 : 2; for (let t = t0; t <= t1; t += step * 864e5) { const d = new Date(t); ticks.push([t, d.getUTCDate() + ' ' + MES[d.getUTCMonth()]]); } }
+  ticks.forEach(([t, lab]) => { const x = X(t); el('line', { x1: x, x2: x, y1: m.t, y2: Hd - m.b, stroke: 'rgba(255,255,255,.05)' }); el('text', { x, y: Hd - 9, 'text-anchor': 'middle', fill: '#9aa7ba', 'font-size': 11, 'font-family': FONT }, lab); });
+  // hito: modificación del MEPCO (22 de marzo de 2026)
+  if (MEPCO > t0 && MEPCO < t1) {
+    const x = X(MEPCO); el('line', { x1: x, x2: x, y1: m.t, y2: Hd - m.b, stroke: '#fcc400', 'stroke-dasharray': '4 4', 'stroke-opacity': .85, 'stroke-width': 1.4 });
+    const left = x > Wd * .72, tx = left ? x - 8 : x + 8, anchor = left ? 'end' : 'start';
+    el('text', { x: tx, y: m.t + 11, fill: '#fcc400', 'font-size': 11, 'font-weight': 700, 'font-family': FONT, 'text-anchor': anchor }, 'Modificación MEPCO');
+    el('text', { x: tx, y: m.t + 25, fill: '#9aa7ba', 'font-size': 10, 'font-family': FONT, 'text-anchor': anchor }, '22 mar 2026');
   }
-  updateComunaOptions();
+  list.forEach(s => { const pts = s.pts; if (pts.length < 2) return; el('polyline', { fill: 'none', stroke: COL[s.f], 'stroke-width': 2, 'stroke-linejoin': 'round', 'stroke-linecap': 'round', points: pts.map(p => X(p[0]).toFixed(1) + ',' + Y(p[1]).toFixed(1)).join(' ') });
+    const q = pts[pts.length - 1]; el('circle', { cx: X(q[0]), cy: Y(q[1]), r: 4, fill: COL[s.f], stroke: '#020812', 'stroke-width': 2 }); el('text', { x: X(q[0]) - 10, y: Y(q[1]) - 9, 'text-anchor': 'end', fill: COL[s.f], 'font-size': 12, 'font-weight': 700, 'font-family': FONT }, P(q[1])); });
+  const vl = el('line', { y1: m.t, y2: Hd - m.b, stroke: '#fff', 'stroke-opacity': .35, visibility: 'hidden' });
+  svg.onmousemove = e => {
+    const r = svg.getBoundingClientRect(), x = (e.clientX - r.left) * (Wd / r.width), t = t0 + (x - m.l) / (Wd - m.l - m.r) * (t1 - t0); if (x < m.l || x > Wd - m.r) { hideX(); return; }
+    let rows = '', dstr = '', px = 0;
+    list.forEach(s => { let best = null; s.pts.forEach(p => { if (p[0] >= t0 && (best == null || Math.abs(p[0] - t) < Math.abs(best[0] - t))) best = p; }); if (best) { dstr = dstr || dLabel(best[2]) + (best[2].length === 7 ? ' · promedio mensual' : ''); px = X(best[0]); rows += '<div class="r"><span style="color:' + COLL[s.f] + ';font-weight:600">' + fuels[s.f] + '</span><b>' + P(best[1]) + '</b></div>'; } });
+    vl.setAttribute('x1', px); vl.setAttribute('x2', px); vl.setAttribute('visibility', 'visible');
+    const xh = $('xh'); xh.innerHTML = '<div class="dd">' + dstr + '</div>' + rows; xh.style.display = 'block'; const w = xh.offsetWidth; xh.style.left = Math.min(Wd - w - 8, Math.max(8, px + 14)) + 'px'; xh.style.top = '44px';
+  };
+  svg.onmouseleave = hideX; function hideX() { vl.setAttribute('visibility', 'hidden'); $('xh').style.display = 'none'; }
+}
 
-  document.getElementById('searchText').addEventListener('input', function(e){ state.texto = e.target.value.toLowerCase(); render(); });
-  regionSelect.addEventListener('change', function(e){ state.regionIdx = e.target.value === '' ? -1 : Number(e.target.value); state.comunaIdx = -1; updateComunaOptions(); render(); });
-  comunaSelect.addEventListener('change', function(e){ state.comunaIdx = e.target.value === '' ? -1 : Number(e.target.value); render(); });
-  marcaSelect.addEventListener('change', function(e){ state.marcaIdx = e.target.value === '' ? -1 : Number(e.target.value); render(); });
+/* ---------------- detalle: regiones (tabla + mapa sobrio) y operadores (con logo) */
+const RAMP = (u) => { const a = [219, 230, 244], b = [2, 31, 69]; return 'rgb(' + a.map((c, i) => Math.round(c + (b[i] - c) * u)).join(',') + ')'; };
+(function initMap() { const g = $('regmap'); g.setAttribute('viewBox', '0 0 ' + W + ' ' + H); g.innerHTML = geoRegSmall.map(r => '<path d="' + r.d + '" data-i="' + r.i + '"></path>').join(''); })();
+function hl(i, on) { document.querySelectorAll('[data-i="' + i + '"]').forEach(e => e.classList.toggle(e.tagName === 'tr' || e.tagName === 'TR' ? 'hi' : 'hl', on)); }
+function wireHover() { document.querySelectorAll('#treg tr[data-i], #regmap path').forEach(e => { e.onmouseenter = () => hl(e.dataset.i, true); e.onmouseleave = () => hl(e.dataset.i, false); }); }
+const ini = s => s.replace(/[^A-Za-zÁÉÍÓÚÑáéíóúñ ]/g, '').trim().split(/\s+/).slice(0, 2).map(w => w[0]).join('').toUpperCase();
+function focusBar() { const h = $('focus'); h.innerHTML = ''; fuels.forEach((n, f) => { if (!fuelsWithData[f] || lastIdx(NS[f]) < nM) return; const b = document.createElement('button'); b.textContent = n; b.setAttribute('aria-pressed', f === focus); b.onclick = () => { focus = f; all(); }; h.append(b); }); }
+function details() {
+  const f = focus, a = RS[f], t = LAST, ref = nM;
+  const rows = regs.map((r, i) => { const v = a[i][t], first = a[i].findIndex((x, k) => k >= ref && x != null), jan = a[i][monthlyRef('2026-01')]; return { i, n: r.n, v, d30: first >= 0 ? a[i][first] : null, jan }; }).filter(r => r.v != null).sort((x, y) => y.v - x.v);
+  const hi = Math.max(...rows.map(r => r.v)), lo = Math.min(...rows.map(r => r.v));
+  $('treg').innerHTML = '<tr><th>Región</th><th>Hoy</th><th>vs ' + dLabel(T[nM]) + '</th><th>vs ene 2026</th></tr>' + rows.map(r => '<tr data-i="' + r.i + '"><td class="nm">' + r.n + '</td><td><b>' + P(r.v) + '</b></td><td>' + dl(r.v, r.d30, 1) + '</td><td>' + dl(r.v, r.jan, 1) + '</td></tr>').join('');
+  const byI = {}; rows.forEach(r => byI[r.i] = r.v);
+  document.querySelectorAll('#regmap path').forEach(p => { const v = byI[p.dataset.i]; p.style.fill = v == null ? '#e9edf3' : RAMP((v - lo) / ((hi - lo) || 1)); });
+  const mk = marcas.filter(m => OSN[f][m] > 0 && OS[f][m]).map(m => { const arr = OS[f][m]; const dIdx = arr.map((x, i) => x != null ? i : -1).filter(i => i >= 0); const li = dIdx[dIdx.length - 1], fi = dIdx[0]; return { m, v: arr[li], n: OSN[f][m], first: arr[fi] }; }).sort((x, y) => y.n - x.n);
+  $('tmar').innerHTML = '<tr><th>Operador</th><th>Promedio</th><th>Estaciones</th><th>vs ' + dLabel(T[nM]) + '</th></tr>' + mk.map(r => '<tr><td class="nm"><span class="lg"><b>' + ini(r.m) + '</b>' + (LOGOS[r.m] ? '<img src="' + encodeURI(LOGOS[r.m]) + '" alt="" loading="lazy" decoding="async" onerror="this.remove()">' : '') + '</span>' + r.m + '</td><td><b>' + P(r.v) + '</b></td><td>' + nf0.format(r.n) + '</td><td>' + dl(r.v, r.first, 1) + '</td></tr>').join('');
+  const e = extremos[f], tr = x => '<tr><td class="pr">' + P(x.p) + '</td><td class="ad"><b>' + x.m + '</b> · ' + x.c + ', ' + x.r + '<br>' + x.d + '</td></tr>';
+  $('tbar').innerHTML = e.barato.map(tr).join(''); $('tcar').innerHTML = e.caro.map(tr).join('');
+  wireHover();
+}
 
-  // ---------- mapa (una sola vez) ----------
-  var W = DATA.canvasWidth, H = DATA.canvasHeight;
-  var svgParts = [];
-  svgParts.push('<svg viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="Mapa de estaciones de bencina en Chile">');
-  svgParts.push('<defs><filter id="glow" x="-200%" y="-200%" width="500%" height="500%"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>');
-  DATA.regionPaths.forEach(function(d){ svgParts.push('<path class="region-path" d="' + d + '" fill-rule="evenodd"/>'); });
-  svgParts.push('<g id="dotsLayer"></g>');
-  svgParts.push('</svg><div class="tooltip" id="tip"></div>');
-  document.getElementById('mapWrap').innerHTML = svgParts.join('');
-  var svg = document.getElementById('mapWrap').querySelector('svg');
-  var dotsLayer = document.getElementById('dotsLayer');
-  var tip = document.getElementById('tip');
-  var mapWrap = document.getElementById('mapWrap');
+/* ---------------- abrir herramientas */
+function tools2() {
+  // miniatura del mapa: mismo mapa de regiones, coloreado con el precio de la Gasolina 93 de hoy
+  const f = 0, t = lastIdx(RS[0][0]); const v = regs.map((_, i) => RS[f][i][t]); const ok = v.filter(x => x != null), lo = Math.min(...ok), hi = Math.max(...ok);
+  const ramp = u => { const S = [[31,122,140],[252,196,0],[228,87,46]], k = Math.min(1, Math.floor(u * 2)), fr = u * 2 - k, a = S[k], b = S[Math.min(2, k + 1)]; return 'rgb(' + a.map((c, i) => Math.round(c + (b[i] - c) * fr)).join(',') + ')'; };
+  const mini = '<svg viewBox="0 0 ' + W + ' ' + H + '" aria-hidden="true">' + geoRegSmall.map(r => '<path d="' + r.d + '" fill="' + (v[r.i] == null ? '#22314b' : ramp((v[r.i] - lo) / ((hi - lo) || 1))) + '" stroke="#0a1a30" stroke-width="8"/>').join('') + '</svg>';
+  const lupa = '<svg viewBox="0 0 64 64" width="84" height="84" fill="none" stroke="#fcc400" stroke-width="3.4" stroke-linecap="round" aria-hidden="true"><circle cx="27" cy="27" r="14"/><path d="M38 38l14 14"/><path d="M27 20v14M20 27h14" stroke="#4aa3ff"/></svg>';
+  $('tools2').innerHTML = '<div class="tool"><div class="pv">' + mini + '</div><div><h3>Mapa territorial</h3><p>Precio por región y comuna, con línea de tiempo de 1994 a hoy y fichas para comparar territorios.</p><a class="btn amber" href="territorial.html">Abrir el mapa <i>→</i></a></div></div>'
+    + '<div class="tool"><div class="pv">' + lupa + '</div><div><h3>Buscador de estaciones</h3><p>Encuentra la estación más barata: filtra por región, comuna, operador y combustible.</p><a class="btn amber" href="buscador.html">Abrir el buscador <i>→</i></a></div></div>';
+}
 
-  function fmtCLP(v){ return '$' + Math.round(v).toLocaleString('es-CL'); }
+/* ---------------- cobertura y cita */
+function coverage() {
+  const card = (k, v, p, cls) => '<div class="card ' + (cls || '') + '"><div class="k">' + k + '</div><div class="v">' + v + '</div><p>' + p + '</p></div>';
+  $('cov').innerHTML = card('Mensual · por región', dLabel(T[0]) + ' → ' + dLabel(T[nM - 1]), 'Gasolina 93, 95 y 97, diésel y kerosene en las 16 regiones. Serie oficial de la CNE, completa y sin meses faltantes.')
+    + card('Diario · por estación', 'Desde ' + dLabel(T[nM]), nf0.format(C.estaciones) + ' estaciones y los 7 combustibles, incluidos GLP y GNC. Se actualiza todos los días.')
+    + card('Por comuna', 'Desde ' + dLabel(T[nM]), C.comunasConDato + ' de ' + C.comunasTotal + ' comunas tienen estaciones con precio informado.')
+    + card('Antes de ' + dLabel(T[nM]), 'Sin detalle', 'No hay precio por estación, por comuna ni por día: la fuente solo entrega el precio de hoy y esa historia no se puede reconstruir.', 'no');
+  $('metodo').textContent = 'Nota metodológica: hasta ' + dLabel(T[nM - 1]) + ' el gráfico usa el promedio simple de las 16 regiones (CNE, mensual); desde el ' + dLabel(T[nM]) + ', el promedio de todas las estaciones (diario). El empalme entre ambos tramos es aproximado.';
+  const yr = lastDay.slice(0, 4);
+  $('citeHtml').innerHTML = 'Favor citar como: Castro, D. (' + yr + '). <i>Evolución del precio de los combustibles en Chile</i>. Elaboración propia a partir de datos de la CNE y la SEC. <a href="https://www.dilandcastro.com">www.dilandcastro.com</a>';
+  $('copyCite').onclick = () => { const txt = 'Castro, D. (' + yr + '). Evolución del precio de los combustibles en Chile. Elaboración propia a partir de datos de la CNE y la SEC. www.dilandcastro.com';
+    const ok = () => { $('copyCite').innerHTML = 'Copiada ✓'; setTimeout(() => { $('copyCite').innerHTML = 'Copiar cita <i>⧉</i>'; }, 1800); };
+    if (navigator.clipboard) navigator.clipboard.writeText(txt).then(ok, ok); else ok(); };
+}
 
-  function hasActiveFilter(){ return !!(state.texto || state.regionIdx >= 0 || state.comunaIdx >= 0 || state.marcaIdx >= 0); }
-
-  function matches(st){
-    if (state.regionIdx >= 0 && st[REGION] !== state.regionIdx) return false;
-    if (state.comunaIdx >= 0 && st[COMUNA] !== state.comunaIdx) return false;
-    if (state.marcaIdx >= 0 && st[MARCA] !== state.marcaIdx) return false;
-    if (state.texto) {
-      var hay = (st[DIR] + ' ' + DATA.comunas[st[COMUNA]] + ' ' + DATA.regiones[st[REGION]] + ' ' + DATA.marcas[st[MARCA]]).toLowerCase();
-      if (hay.indexOf(state.texto) === -1) return false;
-    }
-    return true;
-  }
-
-  function colorForPrice(p, min, max){
-    if (p == null) return '#3A4552';
-    var t = max > min ? (p - min) / (max - min) : 0.5;
-    // interpola var(--teal) #4FE3D2 -> var(--orange) #FF8A4C
-    var c1 = [0x4F,0xE3,0xD2], c2 = [0xFF,0x8A,0x4C];
-    var rgb = c1.map(function(v,i){ return Math.round(v + (c2[i]-v)*t); });
-    return 'rgb(' + rgb.join(',') + ')';
-  }
-
-  var dotEls = {};
-  function buildDots(){
-    var html = [];
-    DATA.stations.forEach(function(st){
-      html.push('<circle class="dot" data-id="' + st[ID] + '" cx="' + st[X] + '" cy="' + st[Y] + '" r="2.6"/>');
-    });
-    dotsLayer.innerHTML = html.join('');
-    dotsLayer.querySelectorAll('.dot').forEach(function(el){
-      var id = el.getAttribute('data-id');
-      dotEls[id] = el;
-      el.addEventListener('mousemove', function(){ showTip(id); });
-      el.addEventListener('mouseleave', function(){ tip.style.opacity = 0; });
-      el.addEventListener('click', function(){ selectStation(id); });
-    });
-  }
-  buildDots();
-
-  function showTip(id){
-    var st = stationById[id];
-    if (!st) return;
-    var wrapRect = mapWrap.getBoundingClientRect();
-    var px = ((st[X] / W) * wrapRect.width);
-    var py = ((st[Y] / H) * wrapRect.height);
-    tip.style.left = px + 'px'; tip.style.top = py + 'px'; tip.style.opacity = 1;
-    var precio = st[PRECIOS][state.fuelIdx];
-    var fuelName = DATA.combustibles[state.fuelIdx];
-    tip.innerHTML = '<b>' + DATA.marcas[st[MARCA]] + '</b><br>' + st[DIR] + '<br>' + DATA.comunas[st[COMUNA]] + ', ' + DATA.regiones[st[REGION]] + '<br>' + fuelName + ': ' + (precio != null ? fmtCLP(precio) + '/L' : 'sin dato');
-  }
-
-  var resultsList = document.getElementById('resultsList');
-  var statN = document.getElementById('statN');
-  var statAvg = document.getElementById('statAvg');
-
-  function selectStation(id){ state.selId = id; render(); }
-
-  function render(){
-    var fi = state.fuelIdx;
-    var matchedAll = DATA.stations.filter(matches);
-    var withFuel = matchedAll.filter(function(s){ return s[PRECIOS][fi] != null; });
-    var prices = withFuel.map(function(s){ return s[PRECIOS][fi]; });
-    var min = prices.length ? Math.min.apply(null, prices) : 0;
-    var max = prices.length ? Math.max.apply(null, prices) : 0;
-    var avg = prices.length ? prices.reduce(function(a,b){return a+b;},0) / prices.length : null;
-
-    statN.textContent = matchedAll.length.toLocaleString('es-CL');
-    statAvg.textContent = avg != null ? fmtCLP(avg) : '—';
-
-    var matchedIds = {};
-    matchedAll.forEach(function(s){ matchedIds[s[ID]] = true; });
-    var activeFilter = hasActiveFilter();
-
-    DATA.stations.forEach(function(st){
-      var el = dotEls[st[ID]];
-      if (!el) return;
-      var isMatch = matchedIds[st[ID]];
-      var precio = st[PRECIOS][fi];
-      el.setAttribute('fill', colorForPrice(precio, min, max));
-      if (isMatch && precio != null) {
-        el.setAttribute('r', activeFilter ? 4.2 : 2.6);
-        el.setAttribute('stroke', activeFilter ? '#fff' : 'none');
-        el.setAttribute('stroke-width', 1.1);
-        el.setAttribute('opacity', 0.95);
-        el.setAttribute('filter', activeFilter ? 'url(#glow)' : '');
-      } else {
-        el.setAttribute('r', 2.2);
-        el.setAttribute('stroke', 'none');
-        el.setAttribute('opacity', isMatch ? 0.5 : 0.12);
-        el.setAttribute('filter', '');
-      }
-    });
-
-    var sorted = withFuel.slice().sort(function(a,b){ return a[PRECIOS][fi] - b[PRECIOS][fi]; }).slice(0, 80);
-    resultsList.innerHTML = sorted.map(function(st){
-      return '<div class="result-item" data-id="' + st[ID] + '">' +
-        '<div class="ri-main"><div class="ri-marca">' + DATA.marcas[st[MARCA]] + '</div><div class="ri-dir">' + st[DIR] + ', ' + DATA.comunas[st[COMUNA]] + '</div></div>' +
-        '<div class="ri-precio">' + fmtCLP(st[PRECIOS][fi]) + '</div></div>';
-    }).join('') || '<div style="color:var(--ink-faint); font-size:12.5px; padding:8px;">Sin resultados para este filtro.</div>';
-
-    resultsList.querySelectorAll('.result-item').forEach(function(el){
-      var id = el.getAttribute('data-id');
-      el.addEventListener('click', function(){ selectStation(id); });
-      el.addEventListener('mouseenter', function(){ showTip(id); });
-    });
-  }
-
-  render();
-
-  // ================= EXPORTAR GRAFICOS (SVG/PNG) =================
-  // Los graficos embeben sus propias variables CSS (--teal, --border, etc.) en un <style>
-  // interno, para que el SVG exportado se vea igual aunque se abra fuera de esta pagina.
-  var CHART_VARS = '<style>:root{--teal:#4FE3D2;--orange:#FF8A4C;--border:rgba(143,189,189,0.14);' +
-    '--ink:#EAF2F2;--ink-muted:#8CA0AC;--ink-faint:#56626E;--panel:#111826;}</style>';
-
-  function downloadBlob(blob, filename) {
-    var url = URL.createObjectURL(blob);
-    var a = document.createElement('a');
-    a.href = url; a.download = filename;
-    document.body.appendChild(a); a.click(); document.body.removeChild(a);
-    setTimeout(function(){ URL.revokeObjectURL(url); }, 1500);
-  }
-  function serializeSvg(svgEl) {
-    var clone = svgEl.cloneNode(true);
-    clone.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
-    return new XMLSerializer().serializeToString(clone);
-  }
-  function exportChartSvg(wrap, filename) {
-    var svgEl = wrap.querySelector('svg');
-    if (!svgEl) return;
-    var xml = '<?xml version="1.0" standalone="no"?>\r\n' + serializeSvg(svgEl);
-    downloadBlob(new Blob([xml], { type: 'image/svg+xml;charset=utf-8' }), filename);
-  }
-  function exportChartPng(wrap, filename) {
-    var svgEl = wrap.querySelector('svg');
-    if (!svgEl) return;
-    var vb = svgEl.getAttribute('viewBox').split(/\s+/).map(Number);
-    var scale = 2.5;
-    var xml = serializeSvg(svgEl);
-    var svgUrl = URL.createObjectURL(new Blob([xml], { type: 'image/svg+xml;charset=utf-8' }));
-    var img = new Image();
-    img.onload = function(){
-      var canvas = document.createElement('canvas');
-      canvas.width = vb[2] * scale; canvas.height = vb[3] * scale;
-      var ctx = canvas.getContext('2d');
-      ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-      URL.revokeObjectURL(svgUrl);
-      canvas.toBlob(function(blob){ downloadBlob(blob, filename); }, 'image/png');
-    };
-    img.onerror = function(){ URL.revokeObjectURL(svgUrl); };
-    img.src = svgUrl;
-  }
-
-  // ================= TABS =================
-  var tabMapa = document.getElementById('tabMapa'), tabHistorico = document.getElementById('tabHistorico'), tabComparar = document.getElementById('tabComparar');
-  var viewMapa = document.getElementById('viewMapa'), viewHistorico = document.getElementById('viewHistorico'), viewComparar = document.getElementById('viewComparar');
-  var historicoBuilt = false, compararBuilt = false;
-  function switchTab(which){
-    tabMapa.classList.toggle('active', which === 'mapa');
-    tabHistorico.classList.toggle('active', which === 'historico');
-    tabComparar.classList.toggle('active', which === 'comparar');
-    viewMapa.style.display = which === 'mapa' ? '' : 'none';
-    viewHistorico.style.display = which === 'historico' ? '' : 'none';
-    viewComparar.style.display = which === 'comparar' ? '' : 'none';
-    if (which === 'historico' && !historicoBuilt) { historicoBuilt = true; initHistorico(); }
-    if (which === 'comparar' && !compararBuilt) { compararBuilt = true; initComparar(); }
-  }
-  tabMapa.addEventListener('click', function(){ switchTab('mapa'); });
-  tabHistorico.addEventListener('click', function(){ switchTab('historico'); });
-  tabComparar.addEventListener('click', function(){ switchTab('comparar'); });
-
-  // ================= HISTORICO =================
-  function initHistorico(){
-    var hState = { nivel: 'nacional', fuelIdx: 0, regionIdx: -1, comunaIdx: -1 };
-    var histRangoDesde = document.getElementById('histRangoDesde');
-    var histRangoHasta = document.getElementById('histRangoHasta');
-    var histRangoLabel = document.getElementById('histRangoLabel');
-    var FUELES_CON_HISTORIA = DATA.fuelesConHistoriaOficial || [];
-
-    var nivelRow = document.getElementById('nivelRow');
-    nivelRow.querySelectorAll('.fuel-chip').forEach(function(el){
-      el.addEventListener('click', function(){
-        hState.nivel = el.getAttribute('data-nivel');
-        nivelRow.querySelectorAll('.fuel-chip').forEach(function(e2){ e2.classList.toggle('active', e2 === el); });
-        hState.regionIdx = hState.nivel === 'nacional' ? -1 : (hState.regionIdx >= 0 ? hState.regionIdx : 0);
-        hState.comunaIdx = hState.nivel === 'comunal' ? (hState.comunaIdx >= 0 ? hState.comunaIdx : -1) : -1;
-        syncHistControls();
-        renderHistorico();
-      });
-    });
-
-    var histFuelRow = document.getElementById('histFuelRow');
-    DATA.combustibles.forEach(function(c, i){
-      var chip = document.createElement('div');
-      chip.className = 'fuel-chip' + (i === 0 ? ' active' : '');
-      chip.textContent = c;
-      chip.addEventListener('click', function(){
-        hState.fuelIdx = i;
-        histFuelRow.querySelectorAll('.fuel-chip').forEach(function(e2){ e2.classList.toggle('active', e2 === chip); });
-        renderHistorico();
-      });
-      histFuelRow.appendChild(chip);
-    });
-
-    var histRegionSelect = document.getElementById('histRegionSelect');
-    DATA.regiones.forEach(function(r, i){ var o = document.createElement('option'); o.value = i; o.textContent = r; histRegionSelect.appendChild(o); });
-    var histComunaSelect = document.getElementById('histComunaSelect');
-
-    function updateHistComunaOptions(){
-      histComunaSelect.innerHTML = '';
-      var list = hState.regionIdx >= 0 ? (DATA.comunasPorRegion[DATA.regiones[hState.regionIdx]] || []) : [];
-      list.forEach(function(ci){ var o = document.createElement('option'); o.value = ci; o.textContent = DATA.comunas[ci]; histComunaSelect.appendChild(o); });
-      if (list.length) hState.comunaIdx = Number(histComunaSelect.value);
-    }
-
-    function syncHistControls(){
-      var showRegion = hState.nivel !== 'nacional';
-      var showComuna = hState.nivel === 'comunal';
-      document.getElementById('histRegionLabel').style.display = showRegion ? '' : 'none';
-      histRegionSelect.style.display = showRegion ? '' : 'none';
-      document.getElementById('histComunaLabel').style.display = showComuna ? '' : 'none';
-      histComunaSelect.style.display = showComuna ? '' : 'none';
-      if (showRegion) { histRegionSelect.value = hState.regionIdx >= 0 ? hState.regionIdx : 0; hState.regionIdx = Number(histRegionSelect.value); }
-      if (showComuna) updateHistComunaOptions();
-    }
-    syncHistControls();
-
-    histRegionSelect.addEventListener('change', function(e){ hState.regionIdx = Number(e.target.value); hState.comunaIdx = -1; updateHistComunaOptions(); renderHistorico(); });
-    histComunaSelect.addEventListener('change', function(e){ hState.comunaIdx = Number(e.target.value); renderHistorico(); });
-
-    histRangoDesde.addEventListener('input', function(){ if (Number(histRangoDesde.value) > Number(histRangoHasta.value)) histRangoDesde.value = histRangoHasta.value; renderHistorico(); });
-    histRangoHasta.addEventListener('input', function(){ if (Number(histRangoHasta.value) < Number(histRangoDesde.value)) histRangoHasta.value = histRangoDesde.value; renderHistorico(); });
-
-    document.getElementById('histExportSvg').addEventListener('click', function(){ exportChartSvg(document.getElementById('histChartWrap'), 'evolucion_' + DATA.combustibles[hState.fuelIdx].toLowerCase().replace(/\s+/g, '_') + '.svg'); });
-    document.getElementById('histExportPng').addEventListener('click', function(){ exportChartPng(document.getElementById('histChartWrap'), 'evolucion_' + DATA.combustibles[hState.fuelIdx].toLowerCase().replace(/\s+/g, '_') + '.png'); });
-
-    function getSerie(){
-      var combustible = DATA.combustibles[hState.fuelIdx];
-      if (hState.nivel === 'nacional') {
-        return { serie: DATA.histNacional[combustible] || [], tieneHistoria: FUELES_CON_HISTORIA.indexOf(combustible) !== -1 };
-      }
-      if (hState.nivel === 'regional') {
-        var region = DATA.regiones[hState.regionIdx];
-        var s = (DATA.histRegional[combustible] && DATA.histRegional[combustible][region]) || [];
-        return { serie: s, tieneHistoria: FUELES_CON_HISTORIA.indexOf(combustible) !== -1 };
-      }
-      // comunal
-      var rows = DATA.comunalDiarioRows.filter(function(r){ return r[1] === hState.regionIdx && r[2] === hState.comunaIdx && r[3] === combustible; });
-      rows.sort(function(a, b){ return a[0] < b[0] ? -1 : 1; });
-      return { serie: rows.map(function(r){ return [r[0], r[4]]; }), tieneHistoria: false };
-    }
-
-    function fmtCLP(v){ return '$' + Math.round(v).toLocaleString('es-CL'); }
-    var MESES = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
-    function fmtFecha(f){
-      if (f.length === 7) { var p = f.split('-'); return MESES[parseInt(p[1], 10) - 1] + '-' + p[0]; }
-      var p2 = f.split('-'); return p2[2] + '/' + p2[1] + '/' + p2[0].slice(2);
-    }
-    function parseFecha(f){
-      var p = f.split('-');
-      if (f.length === 7) return Date.UTC(Number(p[0]), Number(p[1]) - 1, 15);
-      return Date.UTC(Number(p[0]), Number(p[1]) - 1, Number(p[2]));
-    }
-
-    function renderHistorico(){
-      var combustible = DATA.combustibles[hState.fuelIdx];
-      var titleParts = [combustible];
-      if (hState.nivel === 'regional') titleParts.push(DATA.regiones[hState.regionIdx]);
-      if (hState.nivel === 'comunal') titleParts.push(hState.comunaIdx >= 0 ? DATA.comunas[hState.comunaIdx] + ', ' + DATA.regiones[hState.regionIdx] : '(elige una comuna)');
-      document.getElementById('histTitle').textContent = titleParts.join(' — ') + ' (CLP $ por litro)';
-      document.getElementById('histEyebrow').textContent = hState.nivel.charAt(0).toUpperCase() + hState.nivel.slice(1) + ' · evolución del precio';
-
-      var noteBox = document.getElementById('histNoteBox');
-      if (hState.nivel === 'comunal') {
-        noteBox.style.display = '';
-        noteBox.innerHTML = '<div class="hist-note">Nivel comunal: solo se muestra lo que este monitor ha ido capturando día a día desde que arrancó — no existe una serie histórica oficial a nivel de comuna. Para historia más larga, usa Nacional o Regional (esos sí combinan con la serie oficial de la CNE desde 1994 para 93/95/97/Diésel/Kerosene).</div>';
-      } else if (FUELES_CON_HISTORIA.indexOf(combustible) === -1) {
-        noteBox.style.display = '';
-        noteBox.innerHTML = '<div class="hist-note">' + combustible + ' no tiene serie histórica oficial de la CNE (esa planilla solo cubre Gasolina 93/95/97, Diésel y Kerosene) — acá solo se ve el monitoreo diario propio desde que arrancó este proyecto.</div>';
-      } else {
-        noteBox.style.display = 'none';
-      }
-
-      var wrap = document.getElementById('histChartWrap');
-      var data = getSerie();
-      var serieFull = data.serie;
-      if (hState.nivel === 'comunal' && hState.comunaIdx < 0) { wrap.innerHTML = '<div class="hist-note" style="padding:30px 0;">Elige una comuna para ver su evolución.</div>'; histRangoLabel.textContent = ''; return; }
-      if (!serieFull.length) { wrap.innerHTML = '<div class="hist-note" style="padding:30px 0;">Sin datos todavía para esta combinación.</div>'; histRangoLabel.textContent = ''; return; }
-
-      var tMinAll = parseFecha(serieFull[0][0]), tMaxAll = parseFecha(serieFull[serieFull.length - 1][0]);
-      var desdeFrac = Number(histRangoDesde.value) / 100, hastaFrac = Number(histRangoHasta.value) / 100;
-      var tMin = tMinAll + (tMaxAll - tMinAll) * desdeFrac;
-      var tMax = tMinAll + (tMaxAll - tMinAll) * hastaFrac;
-      if (tMax <= tMin) tMax = tMin + 86400000;
-      histRangoLabel.textContent = fmtFecha(new Date(tMin).toISOString().slice(0, 7)) + '  →  ' + fmtFecha(new Date(tMax).toISOString().slice(0, 7));
-
-      var serie = serieFull.filter(function(d){ var t = parseFecha(d[0]); return t >= tMin && t <= tMax; });
-      if (!serie.length) { wrap.innerHTML = '<div class="hist-note" style="padding:30px 0;">Sin datos en el rango de tiempo elegido.</div>'; return; }
-
-      var W = 700, H = 700, padL = 64, padR = 26, padT = 26, padB = 64;
-      var innerW = W - padL - padR, innerH = H - padT - padB;
-      var values = serie.map(function(d){ return d[1]; }).filter(function(v){ return v != null; });
-      var maxY = Math.ceil(Math.max.apply(null, values) * 1.08 / 50) * 50;
-      var minY = 0;
-      function xAt(t){ return padL + ((t - tMin) / (tMax - tMin)) * innerW; }
-      function yAt(v){ return padT + innerH - ((v - minY) / (maxY - minY)) * innerH; }
-
-      var s = [];
-      s.push('<svg viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="Evolucion de precio">');
-      s.push(CHART_VARS);
-      s.push('<rect x="0" y="0" width="' + W + '" height="' + H + '" fill="var(--panel)"/>');
-      s.push('<defs><linearGradient id="hgrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="var(--teal)" stop-opacity="0.25"/><stop offset="100%" stop-color="var(--teal)" stop-opacity="0"/></linearGradient></defs>');
-      var ySteps = 5;
-      for (var si = 0; si <= ySteps; si++) {
-        var v = (maxY / ySteps) * si, y = yAt(v);
-        s.push('<line x1="' + padL + '" x2="' + (W - padR) + '" y1="' + y + '" y2="' + y + '" stroke="var(--border)" stroke-width="1"/>');
-        s.push('<text x="' + (padL - 10) + '" y="' + (y + 4) + '" text-anchor="end" font-size="13" font-weight="600" fill="var(--ink-muted)">' + Math.round(v) + '</text>');
-      }
-      // marca el primer punto "diario" (de este monitor) si hay mezcla con historia mensual, dentro del rango visible
-      var firstDaily = null;
-      for (var k = 0; k < serie.length; k++) { if (serie[k][0].length === 10) { firstDaily = serie[k][0]; break; } }
-      if (firstDaily) {
-        var mx = xAt(parseFecha(firstDaily));
-        s.push('<line x1="' + mx + '" x2="' + mx + '" y1="' + padT + '" y2="' + (H - padB) + '" stroke="var(--orange)" stroke-width="1" stroke-dasharray="3 3" opacity="0.6"/>');
-        s.push('<text x="' + mx + '" y="' + (padT + 11) + '" text-anchor="middle" font-size="9.5" fill="var(--orange)" font-weight="700">INICIO MONITOREO DIARIO</text>');
-      }
-      // eje x: unas pocas etiquetas repartidas en el tiempo (no por indice)
-      var nLabels = 6;
-      for (var li = 0; li <= nLabels; li++) {
-        var t = tMin + (tMax - tMin) * (li / nLabels);
-        var nearest = serie.reduce(function(best, d){ return Math.abs(parseFecha(d[0]) - t) < Math.abs(parseFecha(best[0]) - t) ? d : best; }, serie[0]);
-        s.push('<text x="' + xAt(t) + '" y="' + (H - padB + 24) + '" text-anchor="middle" font-size="13" font-weight="600" fill="var(--ink-muted)">' + fmtFecha(nearest[0]) + '</text>');
-      }
-      var pts = serie.map(function(d){ return xAt(parseFecha(d[0])) + ',' + yAt(d[1]); }).join(' ');
-      var areaPts = pts + ' ' + xAt(parseFecha(serie[serie.length - 1][0])) + ',' + yAt(0) + ' ' + xAt(parseFecha(serie[0][0])) + ',' + yAt(0);
-      s.push('<polygon points="' + areaPts + '" fill="url(#hgrad)"/>');
-      s.push('<polyline points="' + pts + '" fill="none" stroke="var(--teal)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>');
-      var last = serie[serie.length - 1];
-      var lastX = xAt(parseFecha(last[0]));
-      s.push('<circle cx="' + lastX + '" cy="' + yAt(last[1]) + '" r="3.4" fill="var(--teal)"/>');
-      s.push('<text x="' + (lastX - 6) + '" y="' + (yAt(last[1]) - 12) + '" text-anchor="end" font-weight="800" font-size="16" fill="var(--teal)" font-family="Archivo,sans-serif">' + fmtCLP(last[1]) + '</text>');
-      s.push('<rect id="histHit" x="' + padL + '" y="' + padT + '" width="' + innerW + '" height="' + innerH + '" fill="transparent" style="cursor:crosshair"/>');
-      s.push('</svg><div class="tooltip" id="histTip"></div>');
-      wrap.innerHTML = s.join('');
-
-      var svgEl = wrap.querySelector('svg');
-      var histTip = document.getElementById('histTip');
-      var hitRect = document.getElementById('histHit');
-      hitRect.addEventListener('mousemove', function(ev){
-        var rect = svgEl.getBoundingClientRect();
-        var scaleX = W / rect.width;
-        var mx2 = (ev.clientX - rect.left) * scaleX;
-        var t = tMin + ((mx2 - padL) / innerW) * (tMax - tMin);
-        var d = serie.reduce(function(best, p){ return Math.abs(parseFecha(p[0]) - t) < Math.abs(parseFecha(best[0]) - t) ? p : best; }, serie[0]);
-        var wrapRect2 = wrap.getBoundingClientRect();
-        var px2 = (xAt(parseFecha(d[0])) / W) * wrapRect2.width, py2 = (yAt(d[1]) / H) * wrapRect2.height;
-        histTip.style.left = px2 + 'px'; histTip.style.top = py2 + 'px'; histTip.style.opacity = 1;
-        histTip.innerHTML = '<b>' + fmtFecha(d[0]) + '</b> &middot; ' + fmtCLP(d[1]);
-      });
-      hitRect.addEventListener('mouseleave', function(){ histTip.style.opacity = 0; });
-    }
-
-    renderHistorico();
-  }
-
-  // ================= COMPARAR =================
-  function initComparar(){
-    var PALETTE = ['#4FE3D2','#FF8A4C','#9B8CFF','#FFD166','#5CC8FF','#FF6B9D','#8BD17C','#C77DFF','#FFB454','#6EE7E7','#B0C4FF','#FF9EC4','#7FE0A0','#F2A6FF'];
-    var cState = { modo: 'combustibles', fuelFijo: 0, active: {} };
-
-    var modoRow = document.getElementById('cmpModoRow');
-    var fuelLabel = document.getElementById('cmpFuelLabel');
-    var fuelSelect = document.getElementById('cmpFuelSelect');
-    var entidadesLabel = document.getElementById('cmpEntidadesLabel');
-    var entidadesList = document.getElementById('cmpEntidadesList');
-    var rDesde = document.getElementById('cmpRangoDesde');
-    var rHasta = document.getElementById('cmpRangoHasta');
-    var rangoLabel = document.getElementById('cmpRangoLabel');
-    var cmpTitle = document.getElementById('cmpTitle');
-    var wrap = document.getElementById('cmpChartWrap');
-
-    DATA.combustibles.forEach(function(c, i){ var o = document.createElement('option'); o.value = i; o.textContent = c; fuelSelect.appendChild(o); });
-    fuelSelect.value = 0;
-
-    function pad2(n){ return n < 10 ? '0' + n : '' + n; }
-    function parseFecha(f){
-      var p = f.split('-');
-      if (f.length === 7) return Date.UTC(Number(p[0]), Number(p[1]) - 1, 15);
-      return Date.UTC(Number(p[0]), Number(p[1]) - 1, Number(p[2]));
-    }
-    var MESES = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
-    function fmtFechaEje(t, mensual){
-      var d = new Date(t);
-      if (mensual) return MESES[d.getUTCMonth()] + '-' + d.getUTCFullYear();
-      return pad2(d.getUTCDate()) + '/' + pad2(d.getUTCMonth() + 1) + '/' + String(d.getUTCFullYear()).slice(2);
-    }
-    function fmtCLP(v){ return '$' + Math.round(v).toLocaleString('es-CL'); }
-
-    function entidades(){
-      if (cState.modo === 'combustibles') {
-        return DATA.combustibles.map(function(c, i){ return { key: 'f' + i, nombre: c, serie: DATA.histNacional[c] || [] }; });
-      }
-      var combustible = DATA.combustibles[cState.fuelFijo];
-      var out = [{ key: 'nacional', nombre: 'Nacional (promedio)', serie: DATA.histNacional[combustible] || [] }];
-      DATA.regiones.forEach(function(r, i){
-        var s = (DATA.histRegional[combustible] && DATA.histRegional[combustible][r]) || [];
-        out.push({ key: 'r' + i, nombre: r, serie: s });
-      });
-      return out;
-    }
-
-    function defaultActive(){
-      cState.active = {};
-      if (cState.modo === 'combustibles') {
-        (DATA.fuelesConHistoriaOficial || []).forEach(function(c){ var i = DATA.combustibles.indexOf(c); if (i >= 0) cState.active['f' + i] = true; });
-      } else {
-        cState.active.nacional = true; cState.active.r0 = true; cState.active.r1 = true; cState.active.r2 = true;
-      }
-    }
-    defaultActive();
-
-    modoRow.querySelectorAll('.fuel-chip').forEach(function(chip){
-      chip.addEventListener('click', function(){
-        cState.modo = chip.getAttribute('data-modo');
-        modoRow.querySelectorAll('.fuel-chip').forEach(function(c2){ c2.classList.toggle('active', c2 === chip); });
-        var esRegiones = cState.modo === 'regiones';
-        fuelLabel.style.display = esRegiones ? '' : 'none';
-        fuelSelect.style.display = esRegiones ? '' : 'none';
-        entidadesLabel.textContent = esRegiones ? 'Regiones a mostrar' : 'Líneas a mostrar';
-        defaultActive();
-        buildEntidadesList();
-        renderChart();
-      });
-    });
-
-    fuelSelect.addEventListener('change', function(){ cState.fuelFijo = Number(fuelSelect.value); buildEntidadesList(); renderChart(); });
-
-    function buildEntidadesList(){
-      var ents = entidades();
-      entidadesList.innerHTML = '';
-      ents.forEach(function(e, idx){
-        var color = PALETTE[idx % PALETTE.length];
-        var row = document.createElement('div');
-        row.className = 'entity-row' + (cState.active[e.key] ? '' : ' off');
-        row.innerHTML = '<span class="dot" style="background:' + color + '; border-color:' + color + ';"></span><span class="name">' + e.nombre + '</span>';
-        row.addEventListener('click', function(){
-          cState.active[e.key] = !cState.active[e.key];
-          row.classList.toggle('off', !cState.active[e.key]);
-          renderChart();
-        });
-        entidadesList.appendChild(row);
-      });
-    }
-    buildEntidadesList();
-
-    rDesde.addEventListener('input', function(){ if (Number(rDesde.value) > Number(rHasta.value)) rDesde.value = rHasta.value; renderChart(); });
-    rHasta.addEventListener('input', function(){ if (Number(rHasta.value) < Number(rDesde.value)) rHasta.value = rDesde.value; renderChart(); });
-
-    document.getElementById('cmpExportSvg').addEventListener('click', function(){ exportChartSvg(wrap, 'comparacion_combustibles.svg'); });
-    document.getElementById('cmpExportPng').addEventListener('click', function(){ exportChartPng(wrap, 'comparacion_combustibles.png'); });
-
-    function renderChart(){
-      var ents = entidades();
-      var colorOf = {}; ents.forEach(function(e, i){ colorOf[e.key] = PALETTE[i % PALETTE.length]; });
-      var activos = ents.filter(function(e){ return cState.active[e.key] && e.serie.length; });
-
-      cmpTitle.textContent = cState.modo === 'combustibles'
-        ? 'Precio por litro, nacional — varios combustibles'
-        : 'Precio por litro de ' + DATA.combustibles[cState.fuelFijo] + ', por región';
-
-      if (!activos.length) {
-        wrap.innerHTML = '<div class="hist-note" style="padding:30px 0;">Elige al menos una línea en el panel de la izquierda.</div>';
-        rangoLabel.textContent = '';
-        return;
-      }
-
-      var allTimes = [];
-      activos.forEach(function(e){ e.serie.forEach(function(d){ allTimes.push(parseFecha(d[0])); }); });
-      var tMinAll = Math.min.apply(null, allTimes), tMaxAll = Math.max.apply(null, allTimes);
-      var desdeFrac = Number(rDesde.value) / 100, hastaFrac = Number(rHasta.value) / 100;
-      var tMin = tMinAll + (tMaxAll - tMinAll) * desdeFrac;
-      var tMax = tMinAll + (tMaxAll - tMinAll) * hastaFrac;
-      if (tMax <= tMin) tMax = tMin + 86400000;
-      rangoLabel.textContent = fmtFechaEje(tMin, true) + '  →  ' + fmtFechaEje(tMax, true);
-
-      var series = activos.map(function(e){
-        var pts = e.serie.map(function(d){ return [parseFecha(d[0]), d[1]]; }).filter(function(p){ return p[0] >= tMin && p[0] <= tMax; });
-        return { key: e.key, nombre: e.nombre, color: colorOf[e.key], pts: pts };
-      }).filter(function(s){ return s.pts.length; });
-
-      if (!series.length) { wrap.innerHTML = '<div class="hist-note" style="padding:30px 0;">Sin datos en el rango de tiempo elegido.</div>'; return; }
-
-      var W = 760, H = 760, padL = 50, padR = 190, padT = 20, padB = 34;
-      var innerW = W - padL - padR, innerH = H - padT - padB;
-      var allVals = [];
-      series.forEach(function(s){ s.pts.forEach(function(p){ allVals.push(p[1]); }); });
-      var maxY = Math.ceil(Math.max.apply(null, allVals) * 1.08 / 50) * 50 || 50;
-      var minY = 0;
-      function xAt(t){ return padL + ((t - tMin) / (tMax - tMin)) * innerW; }
-      function yAt(v){ return padT + innerH - ((v - minY) / (maxY - minY)) * innerH; }
-
-      // separa las etiquetas de fin de linea para que no se encimen (como en OWID)
-      var labelInfos = series.map(function(ser){
-        var last = ser.pts[ser.pts.length - 1];
-        return { ser: ser, lx: xAt(last[0]), ly: yAt(last[1]), y: yAt(last[1]) };
-      });
-      labelInfos.sort(function(a, b){ return a.y - b.y; });
-      var minGap = 13;
-      for (var gi = 1; gi < labelInfos.length; gi++) { if (labelInfos[gi].y < labelInfos[gi - 1].y + minGap) labelInfos[gi].y = labelInfos[gi - 1].y + minGap; }
-      for (var gj = labelInfos.length - 1; gj > 0; gj--) {
-        if (labelInfos[gj].y > H - padB) { labelInfos[gj].y = H - padB; labelInfos[gj - 1].y = Math.min(labelInfos[gj - 1].y, labelInfos[gj].y - minGap); }
-      }
-      var labelYByKey = {}; labelInfos.forEach(function(li){ labelYByKey[li.ser.key] = li.y; });
-
-      var s = [];
-      s.push('<svg viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="Comparacion de precios de combustibles">');
-      s.push(CHART_VARS);
-      s.push('<rect x="0" y="0" width="' + W + '" height="' + H + '" fill="var(--panel)"/>');
-      var ySteps = 5;
-      for (var si = 0; si <= ySteps; si++) {
-        var v = (maxY / ySteps) * si, y = yAt(v);
-        s.push('<line x1="' + padL + '" x2="' + (W - padR) + '" y1="' + y + '" y2="' + y + '" stroke="var(--border)" stroke-width="1"/>');
-        s.push('<text x="' + (padL - 10) + '" y="' + (y + 4) + '" text-anchor="end" font-size="13" font-weight="600" fill="var(--ink-muted)">' + Math.round(v) + '</text>');
-      }
-      var nLabels = 6, mensual = (tMax - tMin) > 1000 * 60 * 60 * 24 * 365 * 3;
-      for (var li2 = 0; li2 <= nLabels; li2++) {
-        var t = tMin + (tMax - tMin) * (li2 / nLabels);
-        s.push('<text x="' + xAt(t) + '" y="' + (H - 8) + '" text-anchor="middle" font-size="9.5" fill="var(--ink-faint)">' + fmtFechaEje(t, mensual) + '</text>');
-      }
-      series.forEach(function(ser){
-        var pts = ser.pts.map(function(p){ return xAt(p[0]) + ',' + yAt(p[1]); }).join(' ');
-        s.push('<polyline points="' + pts + '" fill="none" stroke="' + ser.color + '" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>');
-        var last = ser.pts[ser.pts.length - 1];
-        var dx = xAt(last[0]), dy = yAt(last[1]);
-        s.push('<circle cx="' + dx + '" cy="' + dy + '" r="3" fill="' + ser.color + '"/>');
-        var ly = labelYByKey[ser.key];
-        if (Math.abs(ly - dy) > 2) s.push('<line x1="' + (dx + 4) + '" y1="' + dy + '" x2="' + (dx + 8) + '" y2="' + ly + '" stroke="' + ser.color + '" stroke-width="1" opacity="0.5"/>');
-        s.push('<text x="' + (dx + 9) + '" y="' + (ly + 4) + '" font-size="11.5" font-weight="700" fill="' + ser.color + '" font-family="Archivo,sans-serif">' + ser.nombre + '</text>');
-      });
-      s.push('<rect id="cmpHit" x="' + padL + '" y="' + padT + '" width="' + innerW + '" height="' + innerH + '" fill="transparent" style="cursor:crosshair"/>');
-      s.push('</svg><div class="tooltip" id="cmpTip"></div>');
-      wrap.innerHTML = s.join('');
-
-      var svgEl = wrap.querySelector('svg');
-      var cmpTip = document.getElementById('cmpTip');
-      var hitRect = document.getElementById('cmpHit');
-      hitRect.addEventListener('mousemove', function(ev){
-        var rect = svgEl.getBoundingClientRect();
-        var scaleX = W / rect.width;
-        var mx = (ev.clientX - rect.left) * scaleX;
-        var t = tMin + ((mx - padL) / innerW) * (tMax - tMin);
-        var wrapRect2 = wrap.getBoundingClientRect();
-        var px2 = (mx / W) * wrapRect2.width;
-        var lines = series.map(function(ser){
-          var nearest = ser.pts.reduce(function(best, p){ return Math.abs(p[0] - t) < Math.abs(best[0] - t) ? p : best; }, ser.pts[0]);
-          return '<div><span style="color:' + ser.color + ';">●</span> ' + ser.nombre + ': <b>' + fmtCLP(nearest[1]) + '</b></div>';
-        }).join('');
-        cmpTip.style.left = px2 + 'px'; cmpTip.style.top = '10px'; cmpTip.style.opacity = 1;
-        cmpTip.innerHTML = '<b>' + fmtFechaEje(t, true) + '</b>' + lines;
-      });
-      hitRect.addEventListener('mouseleave', function(){ cmpTip.style.opacity = 0; });
-    }
-
-    renderChart();
-  }
-})();
+function all() { tiles(); chartFuels(); drawChart(); focusBar(); details(); }
+all(); tools2(); coverage();
+new ResizeObserver(() => drawChart()).observe($('cbox'));
 </script>
+</body>
+</html>

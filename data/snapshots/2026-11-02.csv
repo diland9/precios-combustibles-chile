@@ -997,7 +997,7 @@ fecha,estacion_id,marca,region,comuna,direccion,latitud,longitud,combustible_cor
 2026-11-02,283,COPEC,Valparaíso,Valparaíso,AV. FEDERICO STA. MARIA 2044,-33.045840566938374,-71.65060043334961,95,Gasolina 95,1566.000,$/L,AutoServicio,2026-10-30 16:18:08
 2026-11-02,284,COPEC,Valparaíso,Valparaíso,Av. Matta 2114,-33.047855,-71.580521,93,Gasolina 93,1515.000,$/L,AutoServicio,2026-10-30 18:47:04
 2026-11-02,284,COPEC,Valparaíso,Valparaíso,Av. Matta 2114,-33.047855,-71.580521,97,Gasolina 97,1604.000,$/L,AutoServicio,2026-10-29 07:34:02
-2026-11-02,284,COPEC,Valparaíso,Valparaíso,Av. Matta 2114,-33.047855,-71.580521,DI,Petroleo Diesel,1567.000,$/L,AutoServicio,2026-10-21 23:51:17
+2026-11-02,284,COPEC,Valparaíso,Valparaíso,Av. Matta 2114,-33.047855,-71.580521,DI,Petroleo Diesel,1566.000,$/L,AutoServicio,2026-11-02 20:01:54
 2026-11-02,284,COPEC,Valparaíso,Valparaíso,Av. Matta 2114,-33.047855,-71.580521,KE,Kerosene,1318.000,$/L,AutoServicio,2026-10-29 07:34:02
 2026-11-02,284,COPEC,Valparaíso,Valparaíso,Av. Matta 2114,-33.047855,-71.580521,95,Gasolina 95,1560.000,$/L,AutoServicio,2026-10-29 07:34:02
 2026-11-02,285,COPEC,Valparaíso,Valparaíso,Av. Curauma Sur 2795,-33.132608,-71.566323,93,Gasolina 93,1577.000,$/L,AutoServicio,2026-10-29 10:02:58
@@ -6089,7 +6089,7 @@ fecha,estacion_id,marca,region,comuna,direccion,latitud,longitud,combustible_cor
 2026-11-02,1863,COPEC,Metropolitana de Santiago,Pudahuel,San Pablo 8529,-33.44486189934619,-70.74796199798584,DI,Petroleo Diesel,1544.000,$/L,AutoServicio,2026-10-29 13:39:10
 2026-11-02,1863,COPEC,Metropolitana de Santiago,Pudahuel,San Pablo 8529,-33.44486189934619,-70.74796199798584,KE,Kerosene,1322.000,$/L,AutoServicio,2026-10-29 13:39:10
 2026-11-02,1863,COPEC,Metropolitana de Santiago,Pudahuel,San Pablo 8529,-33.44486189934619,-70.74796199798584,95,Gasolina 95,1555.000,$/L,AutoServicio,2026-10-29 13:39:10
-2026-11-02,1864,COPEC,Metropolitana de Santiago,Pudahuel,José Joaquín Pérez 8408,-33.43016990035761,-70.74119746685028,KE,Kerosene,1291.000,$/L,AutoServicio,2026-10-29 17:17:31
+2026-11-02,1864,COPEC,Metropolitana de Santiago,Pudahuel,José Joaquín Pérez 8408,-33.43016990035761,-70.74119746685028,KE,Kerosene,1290.000,$/L,AutoServicio,2026-11-02 20:57:56
 2026-11-02,1864,COPEC,Metropolitana de Santiago,Pudahuel,José Joaquín Pérez 8408,-33.43016990035761,-70.74119746685028,A93,Gasolina 93,1515.000,$/L,Asistido,2026-10-22 00:00:20
 2026-11-02,1864,COPEC,Metropolitana de Santiago,Pudahuel,José Joaquín Pérez 8408,-33.43016990035761,-70.74119746685028,A95,Gasolina 95,1552.000,$/L,Asistido,2026-10-22 00:00:20
 2026-11-02,1864,COPEC,Metropolitana de Santiago,Pudahuel,José Joaquín Pérez 8408,-33.43016990035761,-70.74119746685028,A97,Gasolina 97,1593.000,$/L,Asistido,2026-10-22 00:00:20

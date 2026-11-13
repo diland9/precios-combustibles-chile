@@ -4,10 +4,18 @@ on:
   schedule:
     # 13:00 UTC ≈ 09:00-10:00 hora Chile (según horario de verano/invierno)
     - cron: '0 13 * * *'
+    # Respaldo: si la corrida de la mañana falló (por ejemplo, un corte momentáneo de la API),
+    # esta la repite. Es seguro correr dos veces el mismo día: los agregados se reemplazan, no se duplican.
+    - cron: '0 21 * * *'
   workflow_dispatch: {}
 
 permissions:
   contents: write
+
+# Evita que dos corridas escriban a la vez sobre los mismos archivos.
+concurrency:
+  group: snapshot
+  cancel-in-progress: false
 
 jobs:
   snapshot:
@@ -20,10 +28,14 @@ jobs:
           node-version: '20'
 
       - name: Descargar y procesar precios de hoy
+        # El script ya reintenta cada llamada hasta 6 veces con espera creciente.
         run: node scripts/fetch_snapshot.js
 
-      - name: Regenerar el buscador (docs/index.html)
+      - name: Regenerar el buscador de estaciones (docs/buscador.html)
         run: node scripts/build_site.js
+
+      - name: Regenerar Terminal y Territorial (docs/index.html, docs/territorial.html)
+        run: node scripts/build_pages.js
 
       - name: Commit y push de los datos nuevos
         run: |
@@ -34,5 +46,6 @@ jobs:
             echo "Sin cambios, no se crea commit."
           else
             git commit -m "Snapshot $(date -u +%F)"
+            git pull --rebase --autostash || true
             git push
           fi

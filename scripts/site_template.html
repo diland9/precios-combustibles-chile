@@ -166,13 +166,23 @@
     </div>
 
     <div class="panel">
-      <div class="map-wrap" id="mapWrap"></div>
-      <div class="legend">
-        <span><span class="swatch" style="background:var(--ink-faint);"></span>sin stock de este combustible</span>
+      <div class="legend legend-top">
+        <span><b>Precio</b></span>
         <span>más barato <span class="grad-bar"></span> más caro</span>
+        <span><span class="swatch" style="background:var(--ink-faint);"></span>sin stock de este combustible</span>
         <span style="margin-left:auto;">Blanco = coincide con tu búsqueda</span>
       </div>
-    </div>
+      <div class="mapbar">
+        <span class="mapbar-t">Mapa de estaciones</span>
+        <div class="mapctl" role="group" aria-label="Controles del mapa">
+          <button type="button" id="zIn" class="mbtn" aria-label="Acercar el mapa">＋ Acercar</button>
+          <button type="button" id="zOut" class="mbtn" aria-label="Alejar el mapa">－ Alejar</button>
+          <button type="button" id="zAll" class="mbtn" aria-label="Ver todo Chile">⌂ Todo Chile</button>
+          <button type="button" id="mapBig" class="mbtn amber" aria-pressed="false">⤢ Ampliar el mapa</button>
+        </div>
+      </div>
+      <div class="map-wrap" id="mapWrap"></div>
+      </div>
   </div>
 
   <div class="layout" id="viewHistorico" style="display:none;">
@@ -247,12 +257,10 @@
   </div>
 
   <footer>
-    Datos: snapshot diario de <a href="https://github.com/diland9/precios-combustibles-chile" target="_blank" rel="noopener">precios-combustibles-chile</a>,
-    capturado desde la API pública de bencinaenlinea.cl (CNE/SEC). Fecha del snapshot: <span id="fechaSnapshot"></span>.
-    Precios fuera de rango razonable ya fueron descartados antes de llegar aquí. La evolución histórica nacional y regional
-    combina la serie oficial mensual de la CNE (1994 en adelante, 5 combustibles) con el monitoreo diario propio desde
-    que este proyecto arrancó; la comunal solo tiene el monitoreo diario propio (no existe respaldo histórico oficial a
-    ese nivel de detalle).
+    Elaboración propia (<a href="https://www.dilandcastro.com" target="_blank" rel="noopener">www.dilandcastro.com</a>) a partir de datos de la CNE y la SEC (bencinaenlinea.cl).
+    Fecha del snapshot: <span id="fechaSnapshot"></span>. Los precios fuera de rango razonable se descartaron. La evolución histórica nacional y regional
+    combina la serie oficial mensual de la CNE (1994 en adelante, 5 combustibles) con los precios diarios más recientes; el nivel comunal solo cuenta
+    con precios diarios recientes (no existe una serie histórica oficial a ese nivel de detalle).
   </footer>
 </div>
 
@@ -317,6 +325,38 @@
   var tip = document.getElementById('tip');
   var mapWrap = document.getElementById('mapWrap');
 
+  // ---------- zoom y desplazamiento del mapa ----------
+  var vb = { x: 0, y: 0, w: W, h: H };
+  function applyVB(){ svg.setAttribute('viewBox', vb.x + ' ' + vb.y + ' ' + vb.w + ' ' + vb.h); }
+  function ptOf(cx, cy){
+    var r = svg.getBoundingClientRect(), sc = Math.min(r.width / vb.w, r.height / vb.h);
+    var ox = (r.width - vb.w * sc) / 2, oy = (r.height - vb.h * sc) / 2;
+    return { x: vb.x + (cx - r.left - ox) / sc, y: vb.y + (cy - r.top - oy) / sc, sc: sc };
+  }
+  function zoomAt(f, mx, my){
+    var nw = Math.min(W * 1.15, Math.max(W / 60, vb.w * f)), k = nw / vb.w;
+    vb = { x: mx - (mx - vb.x) * k, y: my - (my - vb.y) * k, w: nw, h: vb.h * k };
+    applyVB();
+  }
+  function zoomCenter(f){ zoomAt(f, vb.x + vb.w / 2, vb.y + vb.h / 2); }
+  function resetView(){ vb = { x: 0, y: 0, w: W, h: H }; applyVB(); }
+  document.getElementById('zIn').addEventListener('click', function(){ zoomCenter(1 / 1.6); });
+  document.getElementById('zOut').addEventListener('click', function(){ zoomCenter(1.6); });
+  document.getElementById('zAll').addEventListener('click', resetView);
+  svg.addEventListener('wheel', function(e){ e.preventDefault(); var p = ptOf(e.clientX, e.clientY); zoomAt(e.deltaY < 0 ? 1 / 1.25 : 1.25, p.x, p.y); }, { passive: false });
+  var panning = null, dragged = false;
+  svg.addEventListener('pointerdown', function(e){ panning = { x: e.clientX, y: e.clientY, vb: { x: vb.x, y: vb.y, w: vb.w, h: vb.h } }; dragged = false; });
+  svg.addEventListener('pointermove', function(e){
+    if (!panning) return;
+    var dx = e.clientX - panning.x, dy = e.clientY - panning.y;
+    if (!dragged && Math.abs(dx) + Math.abs(dy) > 5) { dragged = true; svg.setPointerCapture(e.pointerId); svg.classList.add('drag'); tip.style.opacity = 0; }
+    if (dragged) { var sc = ptOf(0, 0).sc; vb = { x: panning.vb.x - dx / sc, y: panning.vb.y - dy / sc, w: vb.w, h: vb.h }; applyVB(); }
+  });
+  svg.addEventListener('pointerup', function(){ panning = null; svg.classList.remove('drag'); });
+  svg.addEventListener('click', function(e){ if (dragged) { e.stopPropagation(); e.preventDefault(); dragged = false; } }, true);
+  var bigBtn = document.getElementById('mapBig');
+  bigBtn.addEventListener('click', function(){ var on = !mapWrap.classList.contains('big'); mapWrap.classList.toggle('big', on); bigBtn.setAttribute('aria-pressed', on); bigBtn.textContent = on ? '⤡ Reducir el mapa' : '⤢ Ampliar el mapa'; if (on) mapWrap.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
+
   function fmtCLP(v){ return '$' + Math.round(v).toLocaleString('es-CL'); }
 
   function hasActiveFilter(){ return !!(state.texto || state.regionIdx >= 0 || state.comunaIdx >= 0 || state.marcaIdx >= 0); }
@@ -362,8 +402,9 @@
     var st = stationById[id];
     if (!st) return;
     var wrapRect = mapWrap.getBoundingClientRect();
-    var px = ((st[X] / W) * wrapRect.width);
-    var py = ((st[Y] / H) * wrapRect.height);
+    var dr = dotEls[id] ? dotEls[id].getBoundingClientRect() : null;
+    var px = dr ? (dr.left + dr.width / 2 - wrapRect.left) : ((st[X] / W) * wrapRect.width);
+    var py = dr ? (dr.top - wrapRect.top) : ((st[Y] / H) * wrapRect.height);
     tip.style.left = px + 'px'; tip.style.top = py + 'px'; tip.style.opacity = 1;
     var precio = st[PRECIOS][state.fuelIdx];
     var fuelName = DATA.combustibles[state.fuelIdx];
@@ -594,10 +635,10 @@
       var noteBox = document.getElementById('histNoteBox');
       if (hState.nivel === 'comunal') {
         noteBox.style.display = '';
-        noteBox.innerHTML = '<div class="hist-note">Nivel comunal: solo se muestra lo que este monitor ha ido capturando día a día desde que arrancó — no existe una serie histórica oficial a nivel de comuna. Para historia más larga, usa Nacional o Regional (esos sí combinan con la serie oficial de la CNE desde 1994 para 93/95/97/Diésel/Kerosene).</div>';
+        noteBox.innerHTML = '<div class="hist-note">Nivel comunal: solo hay precios diarios recientes — no existe una serie histórica oficial a nivel de comuna. Para historia más larga, usa Nacional o Regional (esos sí combinan con la serie oficial de la CNE desde 1994 para 93/95/97/Diésel/Kerosene).</div>';
       } else if (FUELES_CON_HISTORIA.indexOf(combustible) === -1) {
         noteBox.style.display = '';
-        noteBox.innerHTML = '<div class="hist-note">' + combustible + ' no tiene serie histórica oficial de la CNE (esa planilla solo cubre Gasolina 93/95/97, Diésel y Kerosene) — acá solo se ve el monitoreo diario propio desde que arrancó este proyecto.</div>';
+        noteBox.innerHTML = '<div class="hist-note">' + combustible + ' no tiene serie histórica oficial de la CNE (esa planilla solo cubre Gasolina 93/95/97, Diésel y Kerosene) — acá solo se ven los precios diarios recientes.</div>';
       } else {
         noteBox.style.display = 'none';
       }
@@ -636,14 +677,6 @@
         var v = (maxY / ySteps) * si, y = yAt(v);
         s.push('<line x1="' + padL + '" x2="' + (W - padR) + '" y1="' + y + '" y2="' + y + '" stroke="var(--border)" stroke-width="1"/>');
         s.push('<text x="' + (padL - 10) + '" y="' + (y + 4) + '" text-anchor="end" font-size="13" font-weight="600" fill="var(--ink-muted)">' + Math.round(v) + '</text>');
-      }
-      // marca el primer punto "diario" (de este monitor) si hay mezcla con historia mensual, dentro del rango visible
-      var firstDaily = null;
-      for (var k = 0; k < serie.length; k++) { if (serie[k][0].length === 10) { firstDaily = serie[k][0]; break; } }
-      if (firstDaily) {
-        var mx = xAt(parseFecha(firstDaily));
-        s.push('<line x1="' + mx + '" x2="' + mx + '" y1="' + padT + '" y2="' + (H - padB) + '" stroke="var(--orange)" stroke-width="1" stroke-dasharray="3 3" opacity="0.6"/>');
-        s.push('<text x="' + mx + '" y="' + (padT + 11) + '" text-anchor="middle" font-size="9.5" fill="var(--orange)" font-weight="700">INICIO MONITOREO DIARIO</text>');
       }
       // eje x: unas pocas etiquetas repartidas en el tiempo (no por indice)
       var nLabels = 6;
