@@ -20,10 +20,28 @@ function today() {
   return d.toISOString().slice(0, 10);
 }
 
-async function fetchJson(url) {
-  const res = await fetch(url, { headers: { 'User-Agent': 'precios-combustibles-chile-monitor/1.0 (github actions, uso ciudadano)' } });
-  if (!res.ok) throw new Error('HTTP ' + res.status + ' en ' + url);
-  return res.json();
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+// Reintenta con espera creciente: un error momentaneo de la API (5xx, timeout, corte de red)
+// ya no pierde el dia completo. Cada intento tiene un tope de 60 s.
+async function fetchJson(url, intentos = 6) {
+  let ultimoError;
+  for (let i = 1; i <= intentos; i++) {
+    try {
+      const res = await fetch(url, {
+        headers: { 'User-Agent': 'precios-combustibles-chile-monitor/1.0 (github actions, uso ciudadano)', 'Accept': 'application/json' },
+        signal: AbortSignal.timeout(60000)
+      });
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      return await res.json();
+    } catch (e) {
+      ultimoError = e;
+      const espera = Math.min(120000, 5000 * 2 ** (i - 1)); // 5 s, 10 s, 20 s, 40 s, 80 s, 120 s
+      console.warn('Intento ' + i + '/' + intentos + ' fallo en ' + url + ': ' + (e.cause?.code || e.message) + (i < intentos ? ' -> reintento en ' + espera / 1000 + ' s' : ''));
+      if (i < intentos) await sleep(espera);
+    }
+  }
+  throw new Error('La API no respondio tras ' + intentos + ' intentos (' + url + '): ' + (ultimoError.cause?.code || ultimoError.message));
 }
 
 function csvEscape(v) {
@@ -109,11 +127,14 @@ async function main() {
     return precio >= rango[0] && precio <= rango[1];
   }
 
+  // Idempotente: si ya existen filas de `fecha` en el archivo (por ejemplo porque el job corrio
+  // dos veces el mismo dia), se reemplazan en vez de duplicarse.
   function appendCsv(filePath, rows, headers) {
-    const isNew = !fs.existsSync(filePath);
     const body = rows.map(r => headers.map(h => csvEscape(r[h])).join(',')).join('\n') + '\n';
-    if (isNew) fs.writeFileSync(filePath, headers.join(',') + '\n' + body);
-    else fs.appendFileSync(filePath, body);
+    if (!fs.existsSync(filePath)) { fs.writeFileSync(filePath, headers.join(',') + '\n' + body); return; }
+    const previas = fs.readFileSync(filePath, 'utf8').split('\n');
+    const conservar = previas.filter((l, i) => i === 0 || (l.length > 0 && !l.startsWith(fecha + ',')));
+    fs.writeFileSync(filePath, conservar.join('\n') + '\n' + body);
   }
 
   // Agrega `filas` por la combinacion de claves que entregue keyFn(f), separado ademas por

@@ -1,9 +1,10 @@
-// Genera docs/index.html (el buscador/mapa) a partir del snapshot MAS RECIENTE en
+// Genera docs/buscador.html (el buscador/mapa de estaciones; la portada docs/index.html la genera build_pages.js) a partir del snapshot MAS RECIENTE en
 // data/snapshots/. Se corre despues de fetch_snapshot.js, asi la pagina publicada por
 // GitHub Pages queda al dia todos los dias.
 const fs = require('fs');
 const path = require('path');
 const { makeProjector, ringToPath } = require('./lib/mapkit');
+const { aplicarMarcaLigera } = require('./lib/brand');
 
 const SNAP_DIR = path.join(__dirname, '..', 'data', 'snapshots');
 const latestFile = fs.readdirSync(SNAP_DIR).filter(f => f.endsWith('.csv')).sort().pop();
@@ -148,8 +149,9 @@ const bundle = {
 
 const templatePath = path.join(__dirname, 'site_template.html');
 const template = fs.readFileSync(templatePath, 'utf8');
-const out = template.replace('__BUNDLE_JSON__', JSON.stringify(bundle));
+const out = template.replace('__BUNDLE_JSON__', () => JSON.stringify(bundle));
+const outMarca = aplicarMarcaLigera(out, 'buscador');
 const outDir = path.join(__dirname, '..', 'docs');
 fs.mkdirSync(outDir, { recursive: true });
-fs.writeFileSync(path.join(outDir, 'index.html'), out);
-console.log('Escrito docs/index.html (' + stationList.length + ' estaciones, ' + Math.round(out.length / 1024) + ' KB)');
+fs.writeFileSync(path.join(outDir, 'buscador.html'), outMarca);
+console.log('Escrito docs/buscador.html (' + stationList.length + ' estaciones, ' + Math.round(out.length / 1024) + ' KB)');

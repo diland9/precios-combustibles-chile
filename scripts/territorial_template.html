@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mapa de precios por región y comuna · dilandcastro</title>
+<meta name="description" content="Precio promedio de cada combustible por región y comuna de Chile, con línea de tiempo desde 1994 hasta hoy.">
+<!--__FONTS__-->
+<style>
+/*__BRAND_CSS__*/
+.mono{font-variant-numeric:tabular-nums}
+.up{color:var(--up)}.dn{color:var(--dn)}.fl{color:var(--mu)}
+.dark .up{color:#ff9a6b}.dark .dn{color:#5fe0a0}
+.hero.sm{padding:clamp(2.4rem,5vw,3.6rem) 0 clamp(3rem,5vw,4rem)}
+.hero.sm h1{font-size:clamp(2rem,4.6vw,3.6rem);max-width:18ch;margin-top:.9rem}
+
+/* ---- controles (tarjetas claras) ---- */
+.ctl{padding:1rem 1.2rem}
+.row{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px}
+.lbl{font-size:.66rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--mu)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:#fff;border:1px solid var(--line);color:var(--ink);padding:.5rem .9rem;border-radius:999px;font:500 .82rem var(--fb);cursor:pointer;display:flex;align-items:center;gap:8px;transition:border-color .2s,background .2s}
+.chip i{width:9px;height:9px;border-radius:50%;background:#cfd6e1;display:inline-block}
+.chip:hover{border-color:#b7c1d0}
+.chip[aria-pressed=true]{border-color:var(--amber);background:#fff6cc;font-weight:600}
+.chip[aria-pressed=true] i{background:var(--amber)}
+.chip.first{box-shadow:0 0 0 2px var(--amber)}
+.chip:disabled{opacity:.35;cursor:not-allowed}
+.seg{display:inline-flex;background:#e1e7ef;border-radius:10px;padding:3px;gap:2px}
+.seg button{background:transparent;border:0;color:var(--mu);padding:.45rem .9rem;border-radius:8px;font:600 .8rem var(--fb);cursor:pointer}
+.seg button:hover{color:var(--ink)}.seg button[aria-pressed=true]{background:var(--navy);color:#fff}
+select{background:#fff;color:var(--ink);border:1px solid var(--line);padding:.5rem .7rem;border-radius:10px;font:500 .82rem var(--fb)}
+
+/* ---- tiempo ---- */
+.time{display:grid;grid-template-columns:minmax(220px,auto) 1fr auto;gap:12px 26px;align-items:center;padding:1.1rem 1.3rem}
+.date .big{font-family:var(--fd);font-weight:600;font-size:clamp(2rem,4vw,3rem);letter-spacing:-.04em;line-height:1;color:var(--ink)}
+.date .tag{margin-top:.4rem;font-size:.7rem;color:var(--mu);font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+.pill{display:inline-block;margin-left:10px;padding:.25rem .55rem;background:var(--amber);color:#1a1400;font:700 .68rem var(--fb);letter-spacing:.12em;vertical-align:middle;border-radius:6px}
+.pill.warn{background:var(--up);color:#fff}
+.slider{position:relative;padding-bottom:22px}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:8px;border-radius:4px;outline:none;margin:10px 0 0;cursor:pointer}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:20px;height:20px;background:var(--amber);border:3px solid var(--navy);border-radius:50%;box-shadow:0 2px 8px rgba(2,31,69,.3)}
+input[type=range]::-moz-range-thumb{width:16px;height:16px;background:var(--amber);border:3px solid var(--navy);border-radius:50%}
+.ticks{position:absolute;left:0;right:0;top:28px;height:16px;font-size:.68rem;color:var(--mu);font-weight:500}
+.ticks span{position:absolute;transform:translateX(-50%);white-space:nowrap}
+.btns{display:flex;gap:5px;flex-wrap:wrap}
+.btns button{background:#1a2638;border:0;color:#d6deea;padding:.6rem .8rem;border-radius:8px;font:600 .72rem var(--fb);letter-spacing:.06em;cursor:pointer;min-width:38px;transition:background .2s}
+.btns button:hover{background:#25344b;color:#fff}
+.btns button.hoy{background:var(--amber);color:#1a1400}.btns button.hoy:hover{background:var(--yellow)}
+.nat{display:flex;flex-wrap:wrap;gap:6px 22px;padding:.8rem .2rem 0;font-size:.85rem;color:var(--mu)}
+.nat b{color:var(--ink);font-weight:700}.nat .k{font-size:.66rem;letter-spacing:.14em;font-weight:600;margin-right:6px;text-transform:uppercase}
+
+/* ---- mapa: cubre unos 3/4 de la pantalla; fichas a izquierda y derecha ---- */
+.stage{width:min(75vw,1180px);min-width:340px;margin:12px auto 0;padding:14px 16px 18px;position:relative;transition:width .3s}
+.stage.big{width:calc(100vw - 24px)}
+.stagebar{display:flex;align-items:center;justify-content:space-between;gap:12px 20px;flex-wrap:wrap;padding:.1rem .2rem .9rem}
+.stagebar b{font-family:var(--fd);font-size:1.3rem;letter-spacing:-.02em;font-weight:600;display:block;line-height:1.1}
+.stagebar span{color:var(--mud);font-size:.8rem}
+.stagegrid{display:grid;grid-template-columns:250px minmax(260px,1fr) 250px;gap:14px;position:relative}
+.side{position:relative;min-height:200px}
+.center{display:flex;flex-direction:column;min-width:0}
+.maphead{display:grid;gap:10px;padding-bottom:12px}
+.legend{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:.7rem .9rem;display:grid;gap:6px;color:#dbe4f0}
+.legend .l1{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.legend .t{font-family:var(--fd);font-weight:600;font-size:1rem;letter-spacing:-.01em;color:#fff;margin-right:2px}
+.legend .bar{height:12px;flex:1;min-width:90px;border-radius:6px}
+.legend .v{font-weight:700;font-size:.82rem;color:#fff}
+.legend .l2{font-size:.72rem;color:var(--mud);line-height:1.45}
+.legend .l2 b{color:#fff}
+.ctlrow{display:flex;flex-wrap:wrap;gap:8px 10px;align-items:center}
+.vlab{font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--mud)}
+.stage .seg{background:rgba(255,255,255,.1)}
+.stage .seg button{color:#c3cedd;padding:.55rem 1rem;font-size:.82rem}
+.stage .seg button:hover{color:#fff}
+.stage .seg button[aria-pressed=true]{background:var(--amber);color:#1a1400}
+.mbtn{background:#1a2638;color:#e8eef7;border:1px solid rgba(255,255,255,.18);border-radius:10px;padding:.5rem .75rem;font:600 .78rem var(--fb);cursor:pointer;min-height:40px;transition:background .2s,border-color .2s,transform .2s}
+.mbtn:hover{background:#25344b;border-color:var(--amber);color:#fff;transform:translateY(-1px)}
+.mbtn.ghost{background:transparent}
+.stage select{background:#1a2638;color:#e8eef7;border:1px solid rgba(255,255,255,.18);min-height:40px;max-width:150px}
+.mapwrap{position:relative;flex:1;min-height:520px;overflow:hidden;touch-action:none;border-radius:22px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08)}
+.mapwrap svg.map{width:100%;height:100%;position:absolute;inset:0;display:block;cursor:grab}
+.mapwrap svg.map.drag{cursor:grabbing}
+.reg,.com{stroke:#020812;stroke-width:1.1;vector-effect:non-scaling-stroke;transition:opacity .15s}
+.com{stroke-width:.5}
+.out{fill:none;stroke:#fff;stroke-opacity:.35;stroke-width:.8;vector-effect:non-scaling-stroke;pointer-events:none}
+.sel{stroke:var(--amber)!important;stroke-width:2.4!important}
+.hl{stroke:#fff!important;stroke-width:2.4!important}
+.reg:hover,.com:hover{filter:brightness(1.18)}
+.note{position:absolute;left:10px;top:10px;right:10px;z-index:3;background:rgba(252,196,0,.14);border:1px solid rgba(252,196,0,.5);color:#ffe9a3;padding:.55rem .8rem;border-radius:10px;font-size:.78rem;display:none}
+.note.on{display:block}
+.hint{font-size:.78rem;color:var(--mud);margin:0}
+#lines{position:absolute;inset:0;pointer-events:none;z-index:2;overflow:visible}
+#lines path{fill:none;stroke:var(--amber);stroke-width:1;stroke-opacity:.7}
+#lines circle{fill:var(--amber)}
+
+/* ---- fichas ---- */
+.pu{position:absolute;left:0;right:0;background:var(--card);color:var(--ink);border-radius:14px;border-top:3px solid var(--amber);padding:.5rem .7rem .55rem;z-index:2;transition:top .2s;box-shadow:0 10px 26px rgba(0,0,0,.35);cursor:pointer}
+.pu.com{border-top-color:#2f7fd1}
+.pu.x{padding:.75rem .9rem .8rem;cursor:default;z-index:3}
+.pu-h{display:flex;align-items:center;gap:8px}
+.pu-h .tag{font-size:.58rem;font-weight:700;letter-spacing:.12em;color:#1a1400;background:var(--amber);padding:2px 6px;border-radius:5px}
+.pu.com .pu-h .tag{background:#2f7fd1;color:#fff}
+.pu-h b{font-family:var(--fd);font-size:.98rem;letter-spacing:-.02em;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pu.x .pu-h b{font-size:1.08rem}
+.pu-h button{background:none;border:0;color:var(--mu);cursor:pointer;font-size:1.15rem;line-height:1;padding:0 2px}
+.pu-h button:hover{color:var(--up)}
+.pu-s{font-size:.7rem;color:var(--mu);margin:.2rem 0 .4rem}
+.pu table{width:100%;border-collapse:collapse;margin-top:.15rem}
+.pu td{padding:3px 0;border-top:1px solid var(--line);vertical-align:baseline}
+.pu td.f{color:var(--mu);font-size:.74rem;width:40%}
+.pu td.f small{display:block;font-size:.64rem;opacity:.85}
+.pu td.v{text-align:right;font-family:var(--fd);font-weight:600;font-size:1.02rem;letter-spacing:-.02em}
+.pu.x td.v{font-size:1.2rem}
+.pu td.d{text-align:right;font-size:.66rem;width:30%;white-space:nowrap;font-weight:600}
+.pu .rk{font:500 .62rem var(--fb);color:var(--mu);margin-left:6px;letter-spacing:0}
+.pu svg.sp{display:block;width:100%;height:34px;margin-top:.5rem}
+.pu .warn{margin-top:.5rem;font-size:.72rem;color:#b42318}
+.pu .more{font-size:.6rem;color:var(--mu);text-align:right;margin-top:2px;letter-spacing:.04em}
+.tip{position:fixed;z-index:80;pointer-events:none;background:var(--black);color:#fff;border:1px solid var(--amber);padding:.4rem .6rem;border-radius:8px;font-size:.78rem;display:none;white-space:nowrap}
+.tip b{color:var(--amber)}
+.foot{margin-top:1rem;color:var(--mu);font-size:.8rem;line-height:1.65;max-width:110ch}
+.foot b{color:var(--ink)}
+@media(max-width:1100px){.stagegrid{grid-template-columns:210px minmax(240px,1fr) 210px}}
+@media(max-width:860px){
+  .time{grid-template-columns:1fr}
+  .stage{width:auto;min-width:0;margin:8px}
+  .stagegrid{grid-template-columns:1fr}
+  .side{min-height:0;display:flex;flex-direction:column;gap:8px}
+  .pu{position:static!important}
+  #lines{display:none}
+  .mapwrap{min-height:440px}
+}
+</style>
+</head>
+<body>
+<!--__HEADER__-->
+<section class="panel dark hero sm">
+  <div class="wrap">
+    <span class="lab"><span class="dot"></span>Territorial · región y comuna</span>
+    <h1>Precios por <em>región y comuna</em></h1>
+    <p class="lead">Elige combustibles, mueve el tiempo desde 1994 hasta hoy y revisa las fichas de cada territorio en el mapa.</p>
+    <div class="facts"><span class="pillab" id="meta"></span></div>
+  </div>
+</section>
+<main class="wrap" style="padding-top:1.6rem;padding-bottom:1rem">
+  <div class="card ctl"><div class="row">
+    <span class="lbl">Combustibles</span><div class="chips" id="fuels" role="group" aria-label="Combustibles"></div>
+  </div></div>
+
+  <div class="card time" style="margin-top:12px">
+    <div class="date"><div class="big" id="dbig"></div><div class="tag" id="dtag"></div></div>
+    <div class="slider"><input type="range" id="sl" min="0" step="1" aria-label="Fecha"><div class="ticks" id="ticks"></div></div>
+    <div class="btns">
+      <button id="b-first" title="Primer dato (1994)" aria-label="Primer dato">⏮</button>
+      <button id="b-m12" title="Un año atrás" aria-label="Un año atrás">−1 año</button>
+      <button id="b-m1" title="Un paso atrás" aria-label="Un paso atrás">◀</button>
+      <button id="b-play" title="Reproducir" aria-label="Reproducir">▶ Play</button>
+      <button id="b-p1" title="Un paso adelante" aria-label="Un paso adelante">▶</button>
+      <button id="b-p12" title="Un año adelante" aria-label="Un año adelante">+1 año</button>
+      <button id="b-hoy" class="hoy" title="Volver a hoy" aria-label="Volver a hoy">HOY</button>
+    </div>
+  </div>
+  <div class="nat" id="nat"></div>
+</main>
+
+<section class="panel dark stage" id="stage">
+  <div class="stagebar"><div><b>Mapa interactivo</b><span>Cada región muestra su ficha con el precio de los combustibles elegidos. Toca una para ver más detalle.</span></div><button class="btn amber" id="bigBtn" type="button" aria-pressed="false">⤢ Ampliar el mapa</button></div>
+  <div class="stagegrid" id="stagegrid">
+    <div class="side" id="callL"></div>
+    <div class="center">
+      <div class="maphead" id="maphead">
+        <div class="legend" id="legend"></div>
+        <div class="ctlrow">
+          <span class="vlab">Ver por</span>
+          <div class="seg" id="level" role="group" aria-label="Nivel territorial"><button data-l="reg" aria-pressed="true">Regiones</button><button data-l="com" aria-pressed="false">Comunas</button></div>
+          <select id="zoom" aria-label="Ir a una región"></select>
+        </div>
+        <div class="ctlrow" role="group" aria-label="Zoom del mapa">
+          <button class="mbtn" id="zIn" type="button" aria-label="Acercar el mapa">＋ Acercar</button>
+          <button class="mbtn" id="zOut" type="button" aria-label="Alejar el mapa">－ Alejar</button>
+          <button class="mbtn" id="zAll" type="button" aria-label="Ver todo Chile">⌂ Todo Chile</button>
+        </div>
+        <div class="ctlrow" id="fichasRow">
+          <button class="mbtn ghost" id="showAll" type="button">Mostrar todas las fichas</button>
+          <button class="mbtn ghost" id="hideAll" type="button">Ocultar fichas</button>
+        </div>
+        <p class="hint" id="hint"></p>
+      </div>
+      <div class="mapwrap" id="mapwrap">
+        <div class="note" id="note"></div>
+        <svg class="map" id="svg" role="img" aria-label="Mapa de Chile por región y comuna"></svg>
+      </div>
+    </div>
+    <div class="side" id="callR"></div>
+    <svg id="lines"></svg>
+  </div>
+</section>
+<div class="wrap" style="padding-bottom:1rem"><div class="foot" id="foot"></div></div>
+<div class="tip" id="tip"></div>
+<!--__FOOTER__-->
+
+<script>
+const B = __BUNDLE__;
+const {T,nM,nD,fuels,regs,RS,RN,NS,NN,CS,CN,coms,geoReg,geoCom,W,H} = B;
+const NT = T.length, LAST = NT - 1;
+const MES = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+const $ = id => document.getElementById(id);
+const NS_ = 'http://www.w3.org/2000/svg';
+
+/* ------------------------------------------------------------- estado */
+const defaultPops = () => regs.map((_, i) => ({ k: 'r', i, x: false }));   // una ficha por región, de norte a sur
+const S = { sel: new Set([0, 3]), level: 'reg', t: LAST, pops: defaultPops(), big: false };
+let vb = { x: 0, y: 0, w: W, h: H };
+
+/* ------------------------------------------------------------- formatos */
+const nf0 = new Intl.NumberFormat('es-CL', { maximumFractionDigits: 0 });
+const nf1 = new Intl.NumberFormat('es-CL', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+const P = v => v == null ? '—' : '$' + (v >= 1000 ? nf0.format(v) : nf1.format(v));
+function chileHoy() { return new Date(Date.now() - 4 * 3600e3).toISOString().slice(0, 10); }
+function dinfo(i) {
+  const d = T[i];
+  if (d.length === 7) { const [y, m] = d.split('-'); return { big: MES[+m - 1].toUpperCase() + ' ' + y, tag: 'Promedio mensual por región · CNE oficial', daily: false, hoy: false }; }
+  const [y, m, dd] = d.split('-');
+  return { big: (+dd) + ' ' + MES[+m - 1].toUpperCase() + ' ' + y, tag: 'Precio diario de las estaciones', daily: true, hoy: d === chileHoy() };
+}
+function shortDate(i) { const d = T[i]; if (d.length === 7) { const [y, m] = d.split('-'); return MES[+m - 1] + ' ' + y; } const [y, m, dd] = d.split('-'); return (+dd) + ' ' + MES[+m - 1] + ' ' + y; }
+
+/* ------------------------------------------------------------- acceso a datos */
+const regVal = (f, r, t) => RS[f][r][t];
+const comVal = (f, c, t) => (t >= nM && CS[f][c]) ? CS[f][c][t - nM] : null;
+const hasData = (f, t) => RS[f].some(a => a[t] != null);
+const primary = () => { for (const f of [...S.sel].sort((a, b) => a - b)) if (hasData(f, S.t)) return f; return null; };
+function prevIdx(arr, t, lo) { for (let i = t - 1; i >= lo; i--) if (arr[i] != null) return i; return -1; }
+function seriesFor(kind, id, f) { // serie alineada a T (comunas: solo tramo diario)
+  if (kind === 'r') return RS[f][id];
+  const s = CS[f][id]; if (!s) return null; const out = new Array(NT).fill(null); for (let i = 0; i < nD; i++) out[nM + i] = s[i]; return out;
+}
+
+/* ------------------------------------------------------------- colores */
+const STOPS = [[0, [31, 122, 140]], [.5, [252, 196, 0]], [1, [228, 87, 46]]];   // azul petróleo -> ámbar de la marca -> naranja
+function ramp(u) {
+  u = Math.max(0, Math.min(1, u));
+  for (let i = 1; i < STOPS.length; i++) if (u <= STOPS[i][0]) { const [u0, c0] = STOPS[i - 1], [u1, c1] = STOPS[i]; const k = (u - u0) / (u1 - u0); return 'rgb(' + c0.map((c, j) => Math.round(c + (c1[j] - c) * k)).join(',') + ')'; }
+  return 'rgb(' + STOPS[2][1].join(',') + ')';
+}
+function regVal2(f, t, val) { return regs.findIndex((_, r) => regVal(f, r, t) === val); }
+function domain(f, t) {
+  const v = regs.map((_, r) => regVal(f, r, t)).filter(x => x != null);
+  if (!v.length) return null;
+  const lo = Math.min(...v), hi = Math.max(...v); return { lo, hi, rlo: regs[regVal2(f, t, lo)].n, rhi: regs[regVal2(f, t, hi)].n };
+}
+function comDomain(f, t) {
+  if (t < nM) return null; const v = []; coms.forEach((_, c) => { const x = comVal(f, c, t); if (x != null) v.push(x); });
+  if (!v.length) return null; return { lo: Math.min(...v), hi: Math.max(...v) };
+}
+
+/* ------------------------------------------------------------- mapa */
+const svg = $('svg');
+svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+const gReg = document.createElementNS(NS_, 'g'), gCom = document.createElementNS(NS_, 'g'), gOut = document.createElementNS(NS_, 'g');
+svg.append(gReg, gCom, gOut);
+const pathReg = [], pathCom = [];
+geoReg.forEach(g => { const p = document.createElementNS(NS_, 'path'); p.setAttribute('d', g.d); p.setAttribute('class', 'reg'); p.dataset.i = g.i; gReg.append(p); pathReg[g.i] = p;
+  const o = document.createElementNS(NS_, 'path'); o.setAttribute('d', g.d); o.setAttribute('class', 'out'); gOut.append(o); });
+geoCom.forEach(g => { const p = document.createElementNS(NS_, 'path'); p.setAttribute('d', g.d); p.setAttribute('class', 'com'); p.dataset.i = g.i; gCom.append(p); pathCom[g.i] = p; });
+function applyVB() { svg.setAttribute('viewBox', vb.x + ' ' + vb.y + ' ' + vb.w + ' ' + vb.h); }
+applyVB();
+
+function metrics() { const r = svg.getBoundingClientRect(); const sc = Math.min(r.width / vb.w, r.height / vb.h); return { r, sc, ox: (r.width - vb.w * sc) / 2, oy: (r.height - vb.h * sc) / 2 }; }
+function toMap(cx, cy) { const m = metrics(); return [vb.x + (cx - m.r.left - m.ox) / m.sc, vb.y + (cy - m.r.top - m.oy) / m.sc]; }
+function toScreen(x, y) { const m = metrics(); return [m.r.left + m.ox + (x - vb.x) * m.sc, m.r.top + m.oy + (y - vb.y) * m.sc]; }
+
+let anim = null;
+function flyTo(t) {
+  const a = { ...vb }, t0 = performance.now(); if (anim) cancelAnimationFrame(anim);
+  const step = now => { const k = Math.min(1, (now - t0) / 320), e = 1 - Math.pow(1 - k, 3);
+    vb = { x: a.x + (t.x - a.x) * e, y: a.y + (t.y - a.y) * e, w: a.w + (t.w - a.w) * e, h: a.h + (t.h - a.h) * e }; applyVB(); layout(); if (k < 1) anim = requestAnimationFrame(step); };
+  anim = requestAnimationFrame(step);
+}
+function fitBox(bb, pad = .08) {
+  const m = metrics(); const ar = m.r.width / m.r.height; let w = (bb[2] - bb[0]) * (1 + pad * 2), h = (bb[3] - bb[1]) * (1 + pad * 2);
+  if (w / h < ar) w = h * ar; else h = w / ar;
+  const cx = (bb[0] + bb[2]) / 2, cy = (bb[1] + bb[3]) / 2; return { x: cx - w / 2, y: cy - h / 2, w, h };
+}
+function zoomTo(code) {
+  if (code === 'all') { flyTo(fitBox([0, 0, W, H], .01)); return; }
+  const gs = geoReg.find(g => g.i === +code); if (gs) flyTo(fitBox(gs.bb));
+}
+svg.addEventListener('wheel', e => {
+  e.preventDefault(); const [mx, my] = toMap(e.clientX, e.clientY); const k = e.deltaY < 0 ? 1 / 1.2 : 1.2;
+  const nw = Math.min(W * 1.2, Math.max(W * .02, vb.w * k)), kk = nw / vb.w;
+  vb = { x: mx - (mx - vb.x) * kk, y: my - (my - vb.y) * kk, w: nw, h: vb.h * kk }; applyVB(); layout();
+}, { passive: false });
+let drag = null;
+svg.addEventListener('pointerdown', e => { drag = { x: e.clientX, y: e.clientY, vb: { ...vb }, moved: false }; });
+svg.addEventListener('pointermove', e => {
+  if (!drag) { hoverAt(e); return; }
+  const dx = e.clientX - drag.x, dy = e.clientY - drag.y;
+  if (!drag.moved && Math.abs(dx) + Math.abs(dy) > 5) { drag.moved = true; svg.setPointerCapture(e.pointerId); svg.classList.add('drag'); $('tip').style.display = 'none'; }
+  if (drag.moved) { const m = metrics(); vb = { ...drag.vb, x: drag.vb.x - dx / m.sc, y: drag.vb.y - dy / m.sc }; applyVB(); layout(); }
+});
+svg.addEventListener('pointerup', e => { const was = drag; drag = null; svg.classList.remove('drag'); if (was && !was.moved) clickAt(e); });
+svg.addEventListener('pointerleave', () => { $('tip').style.display = 'none'; });
+svg.addEventListener('dblclick', () => zoomTo('all'));
+$('zIn').onclick = () => { const c = { x: vb.x + vb.w / 2, y: vb.y + vb.h / 2 }; flyTo({ x: c.x - vb.w / 3, y: c.y - vb.h / 3, w: vb.w / 1.5, h: vb.h / 1.5 }); };
+$('zOut').onclick = () => { const c = { x: vb.x + vb.w / 2, y: vb.y + vb.h / 2 }; flyTo({ x: c.x - vb.w * .75, y: c.y - vb.h * .75, w: vb.w * 1.5, h: vb.h * 1.5 }); };
+$('zAll').onclick = () => { $('zoom').value = 'all'; zoomTo('all'); };
+
+function targetAt(e) {
+  const el = document.elementFromPoint(e.clientX, e.clientY); if (!el || !el.dataset || el.dataset.i == null) return null;
+  if (el.classList.contains('reg') && S.level === 'reg') return { k: 'r', i: +el.dataset.i };
+  if (el.classList.contains('com') && S.level === 'com') return { k: 'c', i: +el.dataset.i };
+  return null;
+}
+function nameOf(k, i) { return k === 'r' ? regs[i].n : coms[i].n; }
+function hoverAt(e) {
+  const tg = targetAt(e), tip = $('tip'); if (!tg) { tip.style.display = 'none'; return; }
+  const f = primary(); let v = null, extra = '';
+  if (f != null) { if (tg.k === 'r') v = regVal(f, tg.i, S.t); else { v = comVal(f, tg.i, S.t); if (v == null && S.t < nM) { v = regVal(f, coms[tg.i].r, S.t); extra = ' (prom. regional)'; } } }
+  tip.innerHTML = '<b>' + nameOf(tg.k, tg.i) + '</b>' + (tg.k === 'c' ? ' · ' + regs[coms[tg.i].r].n : '') + (f != null ? '<br>' + fuels[f] + ' ' + P(v) + extra : '');
+  tip.style.display = 'block'; tip.style.left = Math.min(innerWidth - 220, e.clientX + 14) + 'px'; tip.style.top = (e.clientY + 14) + 'px';
+}
+function clickAt(e) { const tg = targetAt(e); if (!tg) return; addPop(tg.k, tg.i); }
+
+/* ------------------------------------------------------------- pintado */
+function paint() {
+  const f = primary(), t = S.t, d = dinfo(t);
+  const note = $('note'); note.classList.remove('on');
+  gReg.style.display = S.level === 'reg' ? '' : 'none'; gCom.style.display = S.level === 'com' ? '' : 'none';
+  let dom = null;
+  if (f != null) {
+    dom = domain(f, t);
+    if (S.level === 'reg') geoReg.forEach(g => { const v = regVal(f, g.i, t); const p = pathReg[g.i]; p.style.fill = v == null ? '#22314b' : ramp((v - dom.lo) / ((dom.hi - dom.lo) || 1)); });
+    else {
+      const cd = comDomain(f, t);
+      if (cd) { dom = { ...dom, lo: cd.lo, hi: cd.hi, comunal: true }; geoCom.forEach(g => { const v = comVal(f, g.i, t); pathCom[g.i].style.fill = v == null ? '#22314b' : ramp((v - cd.lo) / ((cd.hi - cd.lo) || 1)); }); }
+      else { geoCom.forEach(g => { const v = regVal(f, coms[g.i].r, t); pathCom[g.i].style.fill = v == null ? '#22314b' : ramp((v - dom.lo) / ((dom.hi - dom.lo) || 1)); });
+        if (t < nM) { note.textContent = 'Los precios por comuna existen desde el ' + shortDate(nM) + '. Antes de esa fecha cada comuna muestra el promedio de su región.'; note.classList.add('on'); } }
+    }
+  } else { [...pathReg, ...pathCom].forEach(p => p && (p.style.fill = '#22314b'));
+    note.textContent = 'Ninguno de los combustibles elegidos tiene datos regionales en esta fecha. Prueba con Gasolina 93, 95, 97, Diésel o Kerosene.'; note.classList.add('on'); }
+  // contorno solo en las fichas abiertas en detalle
+  [...pathReg, ...pathCom].forEach(p => p && p.classList.remove('sel'));
+  S.pops.filter(p => p.x).forEach(p => (p.k === 'r' ? pathReg : pathCom)[p.i]?.classList.add('sel'));
+  // leyenda (arriba, clara)
+  const L = $('legend');
+  if (f == null) L.innerHTML = '<div class="l1"><span class="t">Leyenda</span></div><div class="l2">Sin datos para los combustibles elegidos en esta fecha.</div>';
+  else { const g = []; for (let i = 0; i <= 10; i++) g.push(ramp(i / 10)); const rr = domain(f, t);
+    L.innerHTML = '<div class="l1"><span class="t">' + fuels[f] + ' · ' + shortDate(t) + '</span><span class="v mono">' + P(dom.lo) + '</span><span class="bar" style="background:linear-gradient(90deg,' + g.join(',') + ')"></span><span class="v mono">' + P(dom.hi) + '</span></div>'
+      + '<div class="l2">Azul = más barato · naranja = más caro. Entre regiones: más barata <b>' + rr.rlo + '</b>, más cara <b>' + rr.rhi + '</b>. La escala es relativa a la fecha elegida.</div>'; }
+  $('hint').textContent = S.level === 'com' ? 'Toca una comuna para abrir su ficha. Con zoom ves mejor las comunas pequeñas.' : '';
+  $('fichasRow').style.display = S.level === 'reg' ? '' : 'none';
+}
+
+/* ------------------------------------------------------------- fichas (compactas por defecto; al tocarlas muestran el detalle) */
+function addPop(k, i) {
+  const ex = S.pops.find(p => p.k === k && p.i === i);
+  if (ex) ex.x = !ex.x;
+  else { S.pops.push({ k, i, x: true }); const same = S.pops.filter(p => p.k === 'c'); if (k === 'c' && same.length > 10) S.pops.splice(S.pops.indexOf(same[0]), 1); }
+  renderPops();
+}
+function delta(arr, t, lo) { const p = prevIdx(arr, t, lo); if (p < 0 || arr[t] == null) return null; return { abs: arr[t] - arr[p], pct: (arr[t] / arr[p] - 1) * 100, from: p }; }
+function dCell(dl) {
+  if (!dl) return '<span class="fl">—</span>';
+  const up = dl.pct >= 0.05, dn = dl.pct <= -0.05; const c = up ? 'up' : dn ? 'dn' : 'fl'; const ar = up ? '▲' : dn ? '▼' : '•';
+  return '<span class="' + c + '">' + ar + ' ' + (dl.pct >= 0 ? '+' : '') + nf1.format(dl.pct) + '%</span>';
+}
+function sparkSVG(arr, t, color) {
+  const a = t >= nM ? nM : Math.max(0, t - 35), pts = []; for (let i = a; i <= t; i++) if (arr[i] != null) pts.push([i, arr[i]]);
+  if (pts.length < 2) return ''; const ys = pts.map(p => p[1]), lo = Math.min(...ys), hi = Math.max(...ys), span = (hi - lo) || 1;
+  const w = 260, h = 34, x = i => ((i - a) / Math.max(1, t - a)) * (w - 4) + 2, y = v => h - 3 - ((v - lo) / span) * (h - 8);
+  return '<svg class="sp" viewBox="0 0 ' + w + ' ' + h + '" preserveAspectRatio="none"><polyline fill="none" stroke="' + color + '" stroke-width="1.5" points="' + pts.map(p => x(p[0]).toFixed(1) + ',' + y(p[1]).toFixed(1)).join(' ') + '"/><circle cx="' + x(pts[pts.length - 1][0]).toFixed(1) + '" cy="' + y(pts[pts.length - 1][1]).toFixed(1) + '" r="2.5" fill="' + color + '"/></svg>';
+}
+function popHTML(p) {
+  const t = S.t, d = dinfo(t), isR = p.k === 'r', f0 = primary(), x = p.x;
+  const regIdx = isR ? p.i : coms[p.i].r;
+  let warn = ''; const list = [...S.sel].sort((a, b) => a - b); const rows = [];
+  list.forEach(f => {
+    let v, arr, lo, ncount = null, fallback = false;
+    if (isR) { arr = RS[f][p.i]; v = arr[t]; lo = 0; ncount = (t >= nM && RN[f][p.i]) ? RN[f][p.i][t - nM] : null; }
+    else { arr = seriesFor('c', p.i, f); v = arr ? arr[t] : null; lo = nM; ncount = (t >= nM && CN[f][p.i]) ? CN[f][p.i][t - nM] : null;
+      if (v == null && t < nM) { arr = RS[f][regIdx]; v = arr[t]; lo = 0; fallback = true; } }
+    if (v == null && !arr) { rows.push('<tr><td class="f">' + fuels[f] + '</td><td class="v mono">—</td><td class="d"></td></tr>'); return; }
+    const dl = arr ? delta(arr, t, lo) : null; let rk = '';
+    if (x && isR && v != null) { const all = regs.map((_, r) => RS[f][r][t]).filter(q => q != null).sort((a, b) => a - b); const pos = all.indexOf(v) + 1; rk = '<span class="rk">#' + pos + '/' + all.length + '</span>'; }
+    rows.push('<tr><td class="f">' + fuels[f] + (x && ncount ? '<small>' + ncount + ' estaciones</small>' : '') + '</td><td class="v mono">' + P(v) + rk + (x && fallback ? '<span class="rk">región</span>' : '') + '</td><td class="d mono">' + dCell(dl) + '</td></tr>');
+  });
+  if (!isR) {
+    const any = [...S.sel].some(f => CS[f][p.i]);
+    if (t < nM) warn = 'Sin datos por comuna antes del ' + shortDate(nM) + '. Se muestra el promedio de la región ' + regs[regIdx].n + '.';
+    else if (!coms[p.i].d) warn = 'No hay estaciones con precio registradas en esta comuna.';
+    else if (!any) warn = 'Esta comuna no tiene datos de los combustibles elegidos.';
+  } else if (f0 == null) warn = 'Sin datos de los combustibles elegidos en esta fecha.';
+  let spark = '';
+  if (x && f0 != null) { const arr = isR ? RS[f0][p.i] : (seriesFor('c', p.i, f0) || []); const a2 = (!isR && t < nM) ? RS[f0][regIdx] : arr; spark = sparkSVG(a2, t, '#d49a00'); }
+  const head = '<div class="pu-h">' + (x ? '<span class="tag">' + (isR ? 'REGIÓN' : 'COMUNA') + '</span>' : '') + '<b title="' + nameOf(p.k, p.i) + '">' + nameOf(p.k, p.i) + '</b><button aria-label="Cerrar" data-x="1">×</button></div>';
+  const sub = x ? '<div class="pu-s mono">' + (isR ? '' : regs[regIdx].n + ' · ') + d.big + ' · ' + (d.daily ? 'diario' : 'prom. mensual') + '</div>' : '';
+  return head + sub + '<table class="mono">' + rows.join('') + '</table>' + spark + (x && warn ? '<div class="warn">' + warn + '</div>' : '') + (x ? '' : '<div class="more">toca para ver detalle</div>');
+}
+const sideEls = [$('callL'), $('callR')];
+function bindCard(el, p) {
+  el.addEventListener('mouseenter', () => (p.k === 'r' ? pathReg : pathCom)[p.i]?.classList.add('hl'));
+  el.addEventListener('mouseleave', () => (p.k === 'r' ? pathReg : pathCom)[p.i]?.classList.remove('hl'));
+  el.querySelector('[data-x]').onclick = ev => { ev.stopPropagation(); S.pops = S.pops.filter(q => q !== p); renderPops(); };
+  el.onclick = () => { p.x = !p.x; renderPops(); };
+}
+function renderPops() {
+  sideEls.forEach(s => s.innerHTML = '');
+  S.pops.forEach(p => {
+    const el = document.createElement('div'); el.className = 'pu ' + (p.k === 'c' ? 'com' : 'reg') + (p.x ? ' x' : ''); el.dataset.k = p.k; el.dataset.i = p.i; el.innerHTML = popHTML(p);
+    bindCard(el, p); sideEls[0].append(el);
+  });
+  paint(); layout();
+}
+function refreshPops() {
+  [...document.querySelectorAll('.pu')].forEach(el => { const p = S.pops.find(q => q.k === el.dataset.k && q.i === +el.dataset.i); if (p) { el.innerHTML = popHTML(p); bindCard(el, p); } });
+  layout();
+}
+
+/* ------------------------------------------------------------- distribución de las fichas: alternadas izquierda / derecha */
+const lines = $('lines');
+function layout() {
+  const cards = [...document.querySelectorAll('.pu')];
+  lines.innerHTML = '';
+  if (innerWidth <= 860) { cards.forEach(c => { if (c.parentNode !== sideEls[0]) sideEls[0].append(c); c.style.top = ''; }); $('mapwrap').style.minHeight = ''; return; }
+  const GAP = 8, head = $('maphead').offsetHeight;
+  const anchorOf = el => { const g = (el.dataset.k === 'r' ? geoReg.find(x => x.i === +el.dataset.i) : geoCom[+el.dataset.i]); return g.a; };
+  const place = () => {                       // posiciones en pantalla -> coordenadas del contenedor de fichas
+    const grid = $('stagegrid').getBoundingClientRect();
+    const info = cards.map(el => { const [sx, sy] = toScreen(...anchorOf(el)); return { el, ax: sx - grid.left, ay: sy - grid.top, h: el.offsetHeight }; });
+    info.sort((p, q) => p.ay - q.ay).forEach((o, k) => { o.side = k % 2; });   // de norte a sur: izquierda, derecha, izquierda...
+    return { grid, info };
+  };
+  // fase 1: el mapa crece solo lo necesario para que quepan las fichas de cada lado (depende del alto de las fichas, no de su posicion)
+  let { info } = place();
+  const need = Math.max(0, ...[0, 1].map(side => { const col = info.filter(o => o.side === side); return col.reduce((t, o) => t + o.h, 0) + GAP * Math.max(0, col.length - 1); }));
+  const mw = $('mapwrap'), baseMin = S.big ? Math.max(620, Math.round(innerHeight * .86) - head) : 520;
+  const wantMap = Math.round(Math.max(baseMin, need - head + 6));
+  if (mw.style.minHeight !== wantMap + 'px') mw.style.minHeight = wantMap + 'px';
+  // fase 2: con el mapa ya del tamano final, ubica cada ficha cerca de su territorio sin solaparse
+  const r2 = place(); info = r2.info; const grid = r2.grid, total = grid.height;
+  [0, 1].forEach(side => {
+    const col = info.filter(o => o.side === side).sort((p, q) => p.ay - q.ay); let y = 0;
+    col.forEach(o => { o.top = Math.max(Math.max(0, o.ay - o.h / 2), y); y = o.top + o.h + GAP; });
+    let lim = total; for (let i = col.length - 1; i >= 0; i--) { const o = col[i]; if (o.top + o.h > lim) o.top = Math.max(0, lim - o.h); lim = o.top - GAP; }
+    col.forEach(o => { if (o.el.parentNode !== sideEls[side]) sideEls[side].append(o.el); o.el.style.top = o.top + 'px'; });
+  });
+  // lineas guia
+  lines.setAttribute('width', grid.width); lines.setAttribute('height', grid.height);
+  const m = metrics(), leftEdge = $('callL').getBoundingClientRect().right - grid.left, rightEdge = $('callR').getBoundingClientRect().left - grid.left;
+  info.forEach(o => {
+    const inside = o.ax > (m.r.left - grid.left) && o.ax < (m.r.right - grid.left) && o.ay > (m.r.top - grid.top) && o.ay < (m.r.bottom - grid.top); if (!inside) return;
+    const edge = o.side === 0 ? leftEdge : rightEdge, dir = o.side === 0 ? -1 : 1, y2 = o.top + 16;
+    const path = document.createElementNS(NS_, 'path'); path.setAttribute('d', 'M' + o.ax + ',' + o.ay + ' L' + (edge - dir * 26) + ',' + o.ay + ' L' + (edge - dir * 8) + ',' + y2 + ' L' + edge + ',' + y2); lines.append(path);
+    const c = document.createElementNS(NS_, 'circle'); c.setAttribute('cx', o.ax); c.setAttribute('cy', o.ay); c.setAttribute('r', 2.8); lines.append(c);
+  });
+}
+
+/* ------------------------------------------------------------- controles */
+function buildFuels() {
+  const host = $('fuels'); host.innerHTML = '';
+  fuels.forEach((n, f) => {
+    const b = document.createElement('button'); b.className = 'chip'; b.innerHTML = '<i></i>' + n; b.setAttribute('aria-pressed', S.sel.has(f));
+    const ok = hasData(f, S.t); b.disabled = !ok && !S.sel.has(f); if (!ok) b.title = 'Sin datos regionales en esta fecha';
+    if (S.sel.has(f) && f === primary()) b.classList.add('first');
+    b.onclick = () => { if (S.sel.has(f)) { if (S.sel.size > 1) S.sel.delete(f); } else S.sel.add(f); update(); };
+    host.append(b);
+  });
+}
+function renderTime() {
+  const d = dinfo(S.t); const big = $('dbig'); big.innerHTML = d.big + (d.hoy ? '<span class="pill">HOY</span>' : (S.t === LAST ? '<span class="pill">ÚLTIMO DATO</span>' : ''));
+  $('dtag').textContent = d.tag; $('sl').value = S.t;
+  const nat = $('nat'); const parts = [...S.sel].sort((a, b) => a - b).map(f => { const v = NS[f][S.t]; if (v == null) return ''; const dl = delta(NS[f], S.t, S.t >= nM ? nM : 0); return '<span><span class="k">' + fuels[f].toUpperCase() + '</span><b>' + P(v) + '</b> ' + (dl ? dCell(dl) : '') + '</span>'; }).filter(Boolean);
+  nat.innerHTML = '<span class="k">NACIONAL</span>' + (parts.length ? parts.join('') : '<span>sin dato en esta fecha</span>');
+}
+function update() { buildFuels(); renderTime(); paint(); refreshPops(); }
+function setT(t) { S.t = Math.max(0, Math.min(LAST, t)); update(); }
+
+// slider: tramo mensual en gris, tramo diario en ámbar
+const sl = $('sl'); sl.max = LAST; sl.value = LAST;
+const cut = (nM - 1) / LAST * 100;
+sl.style.background = 'linear-gradient(90deg,#cfd6e1 0%,#cfd6e1 ' + cut + '%,#fcc400 ' + cut + '%,#fcc400 100%)';
+sl.oninput = () => setT(+sl.value);
+(function ticks() {
+  const host = $('ticks'); let h = '';
+  [1995, 2000, 2005, 2010, 2015, 2020, 2025].forEach(y => { const i = T.indexOf(y + '-01'); if (i >= 0 && (LAST - i) / LAST > 0.2) h += '<span class="mono" style="left:' + (i / LAST * 100) + '%">' + y + '</span>'; });
+  h += '<span class="mono" style="left:100%;transform:translateX(-100%);color:#b07f00;font-weight:700">' + shortDate(LAST) + '</span>'; host.innerHTML = h;
+})();
+$('b-first').onclick = () => setT(0); $('b-m1').onclick = () => setT(S.t - 1); $('b-p1').onclick = () => setT(S.t + 1);
+$('b-m12').onclick = () => { const y = +T[S.t].slice(0, 4) - 1, m = T[S.t].slice(5, 7); const i = T.indexOf(y + '-' + m); setT(i >= 0 ? i : 0); };
+$('b-p12').onclick = () => { const y = +T[S.t].slice(0, 4) + 1, m = T[S.t].slice(5, 7); const i = T.indexOf(y + '-' + m); setT(i >= 0 ? i : LAST); };
+$('b-hoy').onclick = () => { stop(); setT(LAST); };
+let timer = null;
+function stop() { if (timer) clearInterval(timer); timer = null; $('b-play').textContent = '▶ PLAY'; }
+$('b-play').onclick = () => { if (timer) { stop(); return; } if (S.t >= LAST) S.t = 0; $('b-play').textContent = '■ STOP'; timer = setInterval(() => { if (S.t >= LAST) { stop(); return; } setT(S.t + 1); }, 90); };
+document.addEventListener('keydown', e => { if (e.target.tagName === 'SELECT') return; if (e.key === 'ArrowLeft') setT(S.t - 1); else if (e.key === 'ArrowRight') setT(S.t + 1); else if (e.key === 'Home') setT(0); else if (e.key === 'End') setT(LAST); });
+
+// regiones / comunas (el botón vive dentro del mapa, bajo la leyenda)
+document.querySelectorAll('#level button').forEach(b => b.onclick = () => {
+  const next = b.dataset.l; if (next === S.level) return; S.level = next;
+  document.querySelectorAll('#level button').forEach(x => x.setAttribute('aria-pressed', x === b));
+  if (S.level === 'com') { S.pops = []; const rm = regs.findIndex(r => r.n === 'Metropolitana'); $('zoom').value = rm; zoomTo(rm); }
+  else { S.pops = defaultPops(); $('zoom').value = 'all'; zoomTo('all'); }
+  update(); renderPops();
+});
+$('showAll').onclick = () => { S.pops = defaultPops(); renderPops(); };
+$('hideAll').onclick = () => { S.pops = []; renderPops(); };
+const zs = $('zoom'); zs.innerHTML = '<option value="all">Ir a: Chile completo</option>' + regs.map((r, i) => '<option value="' + i + '">Ir a: ' + r.n + '</option>').join(''); zs.onchange = () => zoomTo(zs.value);
+
+/* ------------------------------------------------------------- pie y arranque */
+(function foot() {
+  const c = B.cobertura;
+  $('meta').innerHTML = 'Datos regionales <b style="color:var(--amber)">' + shortDate(0) + ' → ' + shortDate(LAST) + '</b>';
+  $('foot').innerHTML = '<b>Cobertura.</b> Promedio mensual por región, 1994 a ' + shortDate(nM - 1) + ' (CNE; gasolinas 93/95/97, diésel y kerosene; <b>GLP y GNC no tienen serie regional antes del ' + shortDate(nM) + '</b>). Desde el ' + shortDate(nM) + ' hay precio diario de cada estación, por lo que hay promedios por <b>comuna</b> solo desde esa fecha (' + c.comunasConDato + ' de ' + c.comunasTotal + ' comunas tienen estaciones con precio). Los promedios diarios son de estaciones (no ponderados por ventas); los mensuales históricos son promedios regionales oficiales, así que la comparación entre ambos tramos es aproximada. Elaboración propia (<a href="https://www.dilandcastro.com" style="color:var(--navy);font-weight:600">www.dilandcastro.com</a>) a partir de datos de la CNE y la SEC.';
+})();
+$('bigBtn').onclick = () => { S.big = !S.big; const st = $('stage'); st.classList.toggle('big', S.big); $('bigBtn').setAttribute('aria-pressed', S.big); $('bigBtn').innerHTML = S.big ? '⤡ Reducir el mapa' : '⤢ Ampliar el mapa'; if (S.big) st.scrollIntoView({ behavior: 'smooth', block: 'start' }); setTimeout(() => { layout(); }, 340); };
+const ro = new ResizeObserver(() => layout()); ro.observe($('mapwrap')); addEventListener('resize', layout);
+update(); renderPops();
+// las fichas cambian de alto cuando terminan de cargar las tipografías: recalcular posiciones y alto
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => { layout(); setTimeout(layout, 250); });
+</script>
+</body>
+</html>

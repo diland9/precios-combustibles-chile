@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Evolución del precio de los combustibles en Chile · Plataformas digitales</title>
+<meta name="description" content="Evolución del precio de la bencina, el diésel, el kerosene y el gas en Chile desde 1994, con detalle por región, comuna y operador. Elaboración propia de dilandcastro.com a partir de datos de la CNE y la SEC.">
+<!--__FONTS__-->
+<style>
+/*__BRAND_CSS__*/
+.mono{font-variant-numeric:tabular-nums}
+.up{color:var(--up)}.dn{color:var(--dn)}.fl{color:var(--mu)}
+.dark .up{color:#ff9a6b}.dark .dn{color:#5fe0a0}.dark .fl{color:var(--mud)}
+
+/* ---- portada con la evolución ---- */
+.hero{padding:clamp(2.6rem,5vw,4rem) 0 clamp(3.4rem,6vw,4.6rem)}
+.hero-head{display:grid;grid-template-columns:1fr auto;gap:1.2rem 2rem;align-items:end;margin-bottom:1.8rem}
+.hero h1{margin-top:.9rem;max-width:17ch;font-size:clamp(2.2rem,5vw,4.2rem)}
+.hero .open{display:flex;flex-direction:column;gap:.6rem;min-width:260px}
+.hero .open .btn{justify-content:space-between}
+.hero .facts{margin-top:1.4rem}
+.chartcard{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:26px;padding:clamp(1rem,2.2vw,1.6rem)}
+.chartcard h2{font-size:clamp(1.25rem,2.4vw,1.75rem);margin-bottom:.9rem;letter-spacing:-.025em}
+.chartcard h2 em{color:var(--amber)}
+.row{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;margin-bottom:1rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:transparent;border:1px solid rgba(255,255,255,.22);color:#dbe4f0;padding:.5rem .9rem;border-radius:999px;font:500 .8rem var(--fb);cursor:pointer;display:flex;align-items:center;gap:8px;transition:background .2s,border-color .2s}
+.chip i{width:9px;height:9px;border-radius:50%;background:var(--c,#fff);display:inline-block;opacity:.4}
+.chip:hover{background:rgba(255,255,255,.07)}
+.chip[aria-pressed=true]{border-color:var(--c,var(--amber));color:#fff;background:rgba(255,255,255,.08)}
+.chip[aria-pressed=true] i{opacity:1}
+.seg{display:inline-flex;background:rgba(255,255,255,.08);border-radius:10px;padding:3px;gap:2px;flex-wrap:wrap}
+.seg button{background:transparent;border:0;color:#c3cedd;padding:.45rem .85rem;border-radius:8px;font:600 .78rem var(--fb);cursor:pointer;letter-spacing:.02em}
+.seg button:hover{color:#fff}
+.seg button[aria-pressed=true]{background:var(--amber);color:#1a1400}
+.seg.light{background:#e1e7ef}.seg.light button{color:var(--mu)}.seg.light button:hover{color:var(--ink)}
+.seg.light button[aria-pressed=true]{background:var(--navy);color:#fff}
+.chartbox{position:relative;border:1px solid rgba(255,255,255,.1);background:rgba(2,8,18,.35);border-radius:18px;height:400px}
+.chartbox svg{width:100%;height:100%;display:block}
+.xh{position:absolute;pointer-events:none;background:#f3f5f8;color:var(--ink);border-radius:12px;padding:8px 11px;font-size:.78rem;display:none;z-index:4;min-width:170px;box-shadow:0 10px 30px rgba(0,0,0,.4)}
+.xh .dd{font-weight:700;margin-bottom:4px}
+.xh div.r{display:flex;justify-content:space-between;gap:14px}
+.note{margin-top:.9rem;font-size:.8rem;color:var(--mud);max-width:95ch}
+.note a{color:var(--amber);border-bottom:1px solid rgba(252,196,0,.4)}
+.note a:hover{border-bottom-color:var(--amber)}
+
+/* ---- tablero en una sola hilera ---- */
+.tiles{display:flex;gap:10px;overflow-x:auto;padding:4px 2px 10px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.tile{flex:1 0 150px;scroll-snap-align:start;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:.95rem .95rem .8rem;text-align:left;cursor:pointer;font:inherit;color:var(--ink);transition:transform .2s,box-shadow .2s,border-color .2s}
+.tile:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(2,31,69,.10)}
+.tile.on{border-color:var(--amber);box-shadow:0 0 0 2px var(--amber)}
+.tile .n{font-size:.64rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--mu);white-space:nowrap}
+.tile .p{font-family:var(--fd);font-weight:600;font-size:1.95rem;letter-spacing:-.04em;line-height:1.1;margin:.25rem 0 .55rem;white-space:nowrap}
+.tile .u{font:500 .68rem var(--fb);color:var(--mu);margin-left:4px;letter-spacing:0}
+.tile .cap{font-size:.6rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--mud);margin-bottom:.3rem}
+.tile .d{display:grid;grid-template-columns:1fr auto;gap:4px 6px;align-items:center;font-size:.72rem}
+.tile .d>span:nth-child(odd){color:var(--mu)}
+.pc{display:inline-block;padding:.12rem .42rem;border-radius:6px;font-weight:700;font-size:.68rem;white-space:nowrap}
+.pc.up{background:#fde8e4;color:#c2310f}
+.pc.dn{background:#e1f5ea;color:#127a47}
+.pc.fl{background:#e9edf3;color:var(--mu)}
+.tile svg.sp{display:block;width:100%;height:auto;margin-top:.55rem}
+.tile .src{font-size:.62rem;color:var(--mud);margin-top:.15rem}
+.legend-dl{display:flex;gap:14px;flex-wrap:wrap;font-size:.74rem;color:var(--mu);margin-top:.7rem}
+.legend-dl .pc{margin-right:5px}
+
+/* ---- abrir las herramientas ---- */
+.tools2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.tool{background:var(--card);color:var(--ink);border-radius:26px;padding:1.4rem;display:grid;grid-template-columns:120px 1fr;gap:1.2rem;align-items:center}
+.tool .pv{background:var(--navy2);border-radius:18px;height:170px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.tool .pv svg{height:100%;width:auto}
+.tool h3{font-size:1.5rem;margin-bottom:.4rem}
+.tool p{margin:0 0 1rem;color:var(--mu);font-size:.9rem;line-height:1.5}
+.tool .btn{width:100%;justify-content:space-between}
+
+/* ---- tablas ---- */
+.grid1{display:grid;grid-template-columns:1fr;gap:14px}
+.card.pad{padding:1.1rem 1.2rem 1rem}
+.card h3{font-size:1.15rem;margin-bottom:.7rem}
+table{width:100%;border-collapse:collapse;font-size:.88rem}
+th{font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mu);font-weight:600;text-align:right;padding:6px 6px;border-bottom:1px solid var(--line)}
+th:first-child,td:first-child{text-align:left}
+td{padding:8px 6px;border-bottom:1px solid #e3e8ef;text-align:right;white-space:nowrap}
+tr:last-child td{border-bottom:0}
+td.nm{font-weight:600}
+tr.hi td{background:#fff6cc}
+.regcard{display:grid;grid-template-columns:150px 1fr;gap:1.2rem;align-items:start}
+.regmapbox{position:sticky;top:76px}
+.regmap{display:block;width:100%;height:auto}
+.regmap path{stroke:#f3f5f8;stroke-width:6;transition:fill .25s;cursor:pointer}
+.regmap path.hl{stroke:var(--amber);stroke-width:30}
+.rampbar{height:8px;border-radius:4px;background:linear-gradient(90deg,#dbe6f4,#021f45);margin-top:.7rem}
+.rampcap{display:flex;justify-content:space-between;font-size:.62rem;color:var(--mu);margin-top:.25rem;letter-spacing:.04em}
+.lg{position:relative;display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:#e1e7ef;color:var(--navy);font:700 .6rem var(--fb);letter-spacing:.02em;margin-right:10px;vertical-align:middle;overflow:hidden;flex:none;border:1px solid var(--line)}
+.lg img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff;padding:2px;border-radius:50%}
+.ext{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.ext td.ad{white-space:normal;text-align:left;color:var(--mu);font-size:.8rem;line-height:1.35}
+.ext td.ad b{color:var(--ink)}
+.ext td.pr{font-family:var(--fd);font-weight:600;font-size:1.15rem;letter-spacing:-.02em;width:1%;padding-right:14px}
+.small{font-size:.78rem;color:var(--mu);margin:.8rem 0 0}
+
+/* ---- cobertura y cita ---- */
+.cov{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.cov .card{padding:1.2rem}
+.cov .k{font-size:.66rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--mu)}
+.cov .v{font-family:var(--fd);font-weight:600;font-size:1.5rem;letter-spacing:-.03em;margin:.3rem 0 .4rem;line-height:1.15}
+.cov p{margin:0;color:var(--mu);font-size:.88rem}
+.cov .card.no{background:transparent;border-style:dashed}
+.cite{display:grid;grid-template-columns:1fr auto;gap:1rem 1.5rem;align-items:center;padding:1.3rem 1.5rem}
+.cite .ct{margin:.4rem 0 0;font-size:1rem;line-height:1.55}
+.cite .ct a{color:var(--navy);font-weight:600;border-bottom:2px solid var(--amber)}
+@media(max-width:980px){.hero-head{grid-template-columns:1fr}.hero .open{flex-direction:row;flex-wrap:wrap}.hero .open .btn{flex:1 1 230px}.tools2{grid-template-columns:1fr}.regcard{grid-template-columns:1fr}.regmapbox{position:static;max-width:120px}.ext{grid-template-columns:1fr}.cite{grid-template-columns:1fr}.chartbox{height:340px}}
+@media(max-width:560px){.tool{grid-template-columns:1fr}.tool .pv{height:120px}}
+</style>
+</head>
+<body>
+<!--__HEADER__-->
+
+<section class="panel dark hero">
+  <div class="wrap">
+    <div class="hero-head">
+      <div>
+        <span class="lab"><span class="dot"></span>Plataformas digitales · Monitor diario</span>
+        <h1>Evolución del <em>precio de los combustibles</em></h1>
+        <p class="lead">Cuánto cuesta cargar bencina, diésel, kerosene y gas en Chile, desde 1994 hasta hoy. Datos oficiales de la CNE y la SEC.</p>
+      </div>
+      <div class="open">
+        <a class="btn amber" href="territorial.html">Abrir mapa territorial <i>→</i></a>
+        <a class="btn dark" href="buscador.html">Abrir buscador de estaciones <i>→</i></a>
+      </div>
+    </div>
+
+    <div class="chartcard">
+      <h2>Evolución <em>histórica</em> de los precios de los combustibles</h2>
+      <div class="row"><div class="chips" id="cfuels" role="group" aria-label="Combustibles del gráfico"></div><div class="seg" id="ranges" role="group" aria-label="Rango"></div></div>
+      <div class="chartbox" id="cbox"><svg id="chart" role="img" aria-label="Evolución histórica de los precios de los combustibles"></svg><div class="xh" id="xh"></div></div>
+      <div class="note">Elaboración propia (<a href="https://www.dilandcastro.com">www.dilandcastro.com</a>) a partir de los datos de la CNE y SEC.</div>
+    </div>
+    <div class="facts" id="facts"></div>
+  </div>
+</section>
+
+<main>
+  <section class="section"><div class="wrap">
+    <div class="sec-h"><span class="lab">Hoy</span><h2>Precio promedio <em style="color:var(--navy)">nacional</em></h2><p>Toca un combustible para ver su detalle más abajo.</p></div>
+    <div class="tiles" id="tiles"></div>
+    <div class="legend-dl"><span><span class="pc up">▲ sube</span>aumento de precio</span><span><span class="pc dn">▼ baja</span>descenso de precio</span><span>La línea muestra los días con precio diario desde el 1 de octubre de 2026.</span></div>
+  </div></section>
+
+  <section class="section" style="padding-top:.4rem"><div class="wrap">
+    <div class="panel dark" style="margin:0;padding:2rem clamp(1rem,3vw,2rem)">
+      <div class="sec-h" style="margin-bottom:1.2rem"><span class="lab">Herramientas</span><h2>Abre los mapas y <em>dashboards</em></h2><p>Explora el precio en cada región y comuna, o encuentra la estación más barata cerca de ti.</p></div>
+      <div class="tools2" id="tools2"></div>
+    </div>
+  </div></section>
+
+  <section class="section"><div class="wrap">
+    <div class="sec-h"><span class="lab">Detalle</span><h2>Dónde y con quién es más <em style="color:var(--navy)">caro</em></h2></div>
+    <div class="row"><div class="seg light" id="focus" role="group" aria-label="Combustible del detalle"></div></div>
+    <div class="grid1">
+      <div class="card pad"><h3>Por región</h3>
+        <div class="regcard">
+          <div class="regmapbox"><svg class="regmap" id="regmap" role="img" aria-label="Mapa de Chile con el precio por región"></svg><div class="rampbar"></div><div class="rampcap"><span>más barata</span><span>más cara</span></div></div>
+          <table class="mono" id="treg"></table>
+        </div>
+      </div>
+      <div class="card pad"><h3>Por operador</h3><table class="mono" id="tmar"></table>
+        <p class="small">«Sin bandera» agrupa estaciones sin marca informada. Incluye operadores regionales de la lista oficial de la CNE.</p></div>
+    </div>
+  </div></section>
+
+  <section class="section" style="padding-top:0"><div class="wrap">
+    <div class="sec-h"><span class="lab">Estaciones</span><h2>Las más baratas y las más caras</h2><p>Del combustible elegido arriba, según el último precio informado.</p></div>
+    <div class="ext"><div class="card pad"><h3>Más baratas</h3><table class="mono" id="tbar"></table></div><div class="card pad"><h3>Más caras</h3><table class="mono" id="tcar"></table></div></div>
+  </div></section>
+
+  <section class="section" style="padding-top:0"><div class="wrap">
+    <div class="sec-h"><span class="lab">Cobertura</span><h2>Qué datos hay y <em style="color:var(--navy)">hasta cuándo</em></h2></div>
+    <div class="cov" id="cov"></div>
+    <p class="small" id="metodo"></p>
+  </div></section>
+
+  <section class="section" style="padding-top:0"><div class="wrap">
+    <div class="card cite">
+      <div><span class="lab">Cómo citar</span><p class="ct" id="citeHtml"></p></div>
+      <button class="btn dark" id="copyCite" type="button">Copiar cita <i>⧉</i></button>
+    </div>
+  </div></section>
+</main>
+<!--__FOOTER__-->
+
+<script>
+const B = __BUNDLE__;
+const {T,nM,nD,fuels,regs,RS,NS,NN,OS,ON,OSN,LOGOS,marcas,extremos,cobertura:C,geoRegSmall,W,H} = B;
+const NT = T.length, LAST = NT - 1, $ = id => document.getElementById(id);
+const MES = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+const COL  = ['#fcc400','#4aa3ff','#b08cff','#ffffff','#5fd3c4','#7ee08a','#ff8aa8'];   // sobre fondo oscuro
+const COLL = ['#d49a00','#1f78d1','#7a4fe0','#07111f','#13897d','#2c9a3d','#d1456f'];   // sobre fondo claro
+const UNIT = ['/L','/L','/L','/L','/L','/L','/m³'];
+const nf0 = new Intl.NumberFormat('es-CL',{maximumFractionDigits:0}), nf1 = new Intl.NumberFormat('es-CL',{minimumFractionDigits:1,maximumFractionDigits:1});
+const P = v => v == null ? '—' : '$' + (v >= 1000 ? nf0.format(v) : nf1.format(v));
+const dLabel = d => d.length === 7 ? MES[+d.slice(5)-1] + ' ' + d.slice(0,4) : (+d.slice(8)) + ' ' + MES[+d.slice(5,7)-1] + ' ' + d.slice(0,4);
+const dShort = d => d.length === 7 ? MES[+d.slice(5)-1] + ' ' + d.slice(2,4) : (+d.slice(8)) + ' ' + MES[+d.slice(5,7)-1];
+const ms = d => d.length === 7 ? Date.UTC(+d.slice(0,4), +d.slice(5)-1, 15) : Date.UTC(+d.slice(0,4), +d.slice(5,7)-1, +d.slice(8));
+const lastIdx = arr => { for (let i = LAST; i >= 0; i--) if (arr[i] != null) return i; return -1; };
+const prevIdx = (arr, t, lo) => { for (let i = t - 1; i >= lo; i--) if (arr[i] != null) return i; return -1; };
+// variación: rojo si sube, verde si baja (precio al consumidor)
+function dl(cur, ref, pill) { if (cur == null || ref == null) return '<span class="fl">—</span>'; const p = (cur / ref - 1) * 100, c = p >= .05 ? 'up' : p <= -.05 ? 'dn' : 'fl', a = p >= .05 ? '▲' : p <= -.05 ? '▼' : '•'; return '<span class="' + (pill ? 'pc ' : '') + c + '">' + a + ' ' + (p > 0 ? '+' : '') + nf1.format(p) + '%</span>'; }
+const monthlyRef = key => T.indexOf(key);
+const fuelsWithData = fuels.map((_, f) => lastIdx(NS[f]) >= 0);
+const lastDay = T[LAST];
+
+/* ---------------- portada */
+$('facts').innerHTML = '<span class="pillab">Último dato <b>' + dLabel(lastDay) + '</b></span><span class="pillab"><b>' + nf0.format(C.estaciones) + '</b> estaciones</span><span class="pillab">Historia desde <b>' + T[0].slice(0,4) + '</b></span>';
+
+/* ---------------- tablero: una sola hilera, rojo sube / verde baja, con eje x */
+let focus = 0, range = '1A', sel = new Set([0, 3]);
+function tiles() {
+  const host = $('tiles'); host.innerHTML = '';
+  fuels.forEach((n, f) => {
+    const a = NS[f], t = lastIdx(a); if (t < nM) return;
+    const v = a[t], p1 = prevIdx(a, t, nM), ref30 = (() => { const target = new Date(ms(T[t]) - 30*864e5).toISOString().slice(0,10); let k = -1; for (let i = nM; i <= t; i++) if (a[i] != null && T[i] <= target) k = i; return k >= 0 ? k : a.findIndex((x, i) => i >= nM && x != null); })();
+    const jan = monthlyRef('2026-01');
+    const idx = []; for (let i = nM; i <= LAST; i++) if (a[i] != null) idx.push(i);
+    const vals = idx.map(i => a[i]), lo = Math.min(...vals), hi = Math.max(...vals), sp = (hi - lo) || 1;
+    const w = 160, h = 58, x0 = 3, x1 = w - 3, yb = 38, yt = 5;
+    const X = k => x0 + (k / Math.max(1, idx.length - 1)) * (x1 - x0), Y = x => yb - 4 - ((x - lo) / sp) * (yb - 4 - yt);
+    const pts = vals.map((x, k) => X(k).toFixed(1) + ',' + Y(x).toFixed(1)).join(' ');
+    const axis = '<line x1="' + x0 + '" y1="' + yb + '" x2="' + x1 + '" y2="' + yb + '" stroke="#cfd6e1" stroke-width="1"/><line x1="' + x0 + '" y1="' + yb + '" x2="' + x0 + '" y2="' + (yb + 3) + '" stroke="#9aa7ba"/><line x1="' + x1 + '" y1="' + yb + '" x2="' + x1 + '" y2="' + (yb + 3) + '" stroke="#9aa7ba"/>'
+      + '<text x="' + x0 + '" y="' + (yb + 14) + '" font-size="8.5" fill="#5c6879" font-family="Inter,system-ui,sans-serif">' + dShort(T[idx[0]]) + '</text><text x="' + x1 + '" y="' + (yb + 14) + '" font-size="8.5" fill="#5c6879" text-anchor="end" font-family="Inter,system-ui,sans-serif">' + dShort(T[idx[idx.length - 1]]) + '</text>';
+    const b = document.createElement('button'); b.className = 'tile' + (f === focus ? ' on' : ''); b.dataset.f = f;
+    b.innerHTML = '<div class="n">' + n + '</div><div class="p mono">' + P(v) + '<span class="u">' + UNIT[f] + '</span></div><div class="cap">Variación vs.</div>'
+      + '<div class="d mono"><span>ayer</span>' + dl(v, p1 >= 0 ? a[p1] : null, 1) + '<span>' + (T[ref30] === T[nM] ? dShort(T[nM]) : '30 días') + '</span>' + dl(v, ref30 >= 0 ? a[ref30] : null, 1)
+      + (jan >= 0 && a[jan] != null ? '<span>ene 2026</span>' + dl(v, a[jan], 1) : '') + '</div>'
+      + '<svg class="sp" viewBox="0 0 ' + w + ' ' + h + '" role="img" aria-label="Precio diario de ' + n + '">' + axis + '<polyline fill="none" stroke="' + COLL[f] + '" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="' + pts + '"/><circle cx="' + X(idx.length - 1).toFixed(1) + '" cy="' + Y(vals[vals.length - 1]).toFixed(1) + '" r="2.6" fill="' + COLL[f] + '"/></svg>';
+    b.onclick = () => { focus = f; sel.add(f); all(); document.getElementById('focus').scrollIntoView({ behavior: 'smooth', block: 'center' }); };
+    host.append(b);
+  });
+}
+
+/* ---------------- gráfico SVG con eje de tiempo real */
+const RANGES = [['1M',30],['3M',91],['6M',182],['1A',365],['5A',1826],['10A',3652],['MAX',null]];
+function chartFuels() {
+  const host = $('cfuels'); host.innerHTML = '';
+  fuels.forEach((n, f) => { const b = document.createElement('button'); b.className = 'chip'; b.style.setProperty('--c', COL[f]); b.innerHTML = '<i></i>' + n; b.setAttribute('aria-pressed', sel.has(f));
+    b.onclick = () => { if (sel.has(f)) { if (sel.size > 1) sel.delete(f); } else sel.add(f); all(); }; host.append(b); });
+  const r = $('ranges'); r.innerHTML = ''; RANGES.forEach(([k]) => { const b = document.createElement('button'); b.textContent = k; b.setAttribute('aria-pressed', k === range); b.onclick = () => { range = k; all(); }; r.append(b); });
+}
+function seriesPts(f) { const out = []; for (let i = 0; i < NT; i++) if (NS[f][i] != null) out.push([ms(T[i]), NS[f][i], T[i]]); return out; }
+const ns = 'http://www.w3.org/2000/svg';
+function niceTicks(lo, hi, n = 5) { const raw = (hi - lo) / n, mag = Math.pow(10, Math.floor(Math.log10(raw))), nr = raw / mag, step = (nr < 1.5 ? 1 : nr < 3 ? 2 : nr < 7 ? 5 : 10) * mag, out = []; for (let v = Math.ceil(lo / step) * step; v <= hi + 1e-9; v += step) out.push(Math.round(v * 1e6) / 1e6); return out; }
+const MEPCO = Date.UTC(2026, 2, 22);   // 22 de marzo de 2026
+function drawChart() {
+  const svg = $('chart'), box = $('cbox'), Wd = box.clientWidth, Hd = box.clientHeight, m = { l: 62, r: 16, t: 20, b: 30 };
+  svg.setAttribute('viewBox', '0 0 ' + Wd + ' ' + Hd); svg.innerHTML = '';
+  const t1 = ms(T[LAST]), spec = RANGES.find(r => r[0] === range)[1], t0 = spec ? t1 - spec * 864e5 : ms(T[0]);
+  const list = [...sel].sort((a, b) => a - b).map(f => ({ f, pts: seriesPts(f).filter(p => p[0] >= t0 - (range === 'MAX' ? 0 : 45 * 864e5) && p[0] <= t1) }));
+  const vals = list.flatMap(s => s.pts.filter(p => p[0] >= t0).map(p => p[1])); if (!vals.length) { svg.innerHTML = '<text x="20" y="40" fill="#9aa7ba">Sin datos en este rango</text>'; return; }
+  let lo = Math.min(...vals), hi = Math.max(...vals); const pad = (hi - lo) * .08 || hi * .02; lo -= pad; hi += pad; if (lo < 0) lo = 0;
+  const X = t => m.l + (t - t0) / (t1 - t0 || 1) * (Wd - m.l - m.r), Y = v => m.t + (1 - (v - lo) / (hi - lo)) * (Hd - m.t - m.b);
+  const el = (tag, at, txt) => { const e = document.createElementNS(ns, tag); for (const k in at) e.setAttribute(k, at[k]); if (txt != null) e.textContent = txt; svg.append(e); return e; };
+  const FONT = 'Inter,system-ui,sans-serif';
+  for (const v of niceTicks(lo, hi)) { const y = Y(v); el('line', { x1: m.l, x2: Wd - m.r, y1: y, y2: y, stroke: 'rgba(255,255,255,.08)' }); el('text', { x: m.l - 10, y: y + 4, 'text-anchor': 'end', fill: '#9aa7ba', 'font-size': 11, 'font-family': FONT }, P(v)); }
+  const span = (t1 - t0) / 864e5, ticks = []; const d0 = new Date(t0), d1 = new Date(t1);
+  if (span > 2200) { for (let y = d0.getUTCFullYear() + 1; y <= d1.getUTCFullYear(); y += span > 6000 ? 5 : 2) ticks.push([Date.UTC(y, 0, 1), String(y)]); }
+  else if (span > 500) { for (let y = d0.getUTCFullYear(); y <= d1.getUTCFullYear(); y++) for (const mo of [0, 6]) { const t = Date.UTC(y, mo, 1); if (t >= t0 && t <= t1) ticks.push([t, MES[mo] + ' ' + y]); } }
+  else if (span > 100) { for (let y = d0.getUTCFullYear(); y <= d1.getUTCFullYear(); y++) for (let mo = 0; mo < 12; mo++) { const t = Date.UTC(y, mo, 1); if (t >= t0 && t <= t1) ticks.push([t, MES[mo] + ' ' + String(y).slice(2)]); } }
+  else { const step = span > 40 ? 7 : span > 14 ? 3 : 2; for (let t = t0; t <= t1; t += step * 864e5) { const d = new Date(t); ticks.push([t, d.getUTCDate() + ' ' + MES[d.getUTCMonth()]]); } }
+  ticks.forEach(([t, lab]) => { const x = X(t); el('line', { x1: x, x2: x, y1: m.t, y2: Hd - m.b, stroke: 'rgba(255,255,255,.05)' }); el('text', { x, y: Hd - 9, 'text-anchor': 'middle', fill: '#9aa7ba', 'font-size': 11, 'font-family': FONT }, lab); });
+  // hito: modificación del MEPCO (22 de marzo de 2026)
+  if (MEPCO > t0 && MEPCO < t1) {
+    const x = X(MEPCO); el('line', { x1: x, x2: x, y1: m.t, y2: Hd - m.b, stroke: '#fcc400', 'stroke-dasharray': '4 4', 'stroke-opacity': .85, 'stroke-width': 1.4 });
+    const left = x > Wd * .72, tx = left ? x - 8 : x + 8, anchor = left ? 'end' : 'start';
+    el('text', { x: tx, y: m.t + 11, fill: '#fcc400', 'font-size': 11, 'font-weight': 700, 'font-family': FONT, 'text-anchor': anchor }, 'Modificación MEPCO');
+    el('text', { x: tx, y: m.t + 25, fill: '#9aa7ba', 'font-size': 10, 'font-family': FONT, 'text-anchor': anchor }, '22 mar 2026');
+  }
+  list.forEach(s => { const pts = s.pts; if (pts.length < 2) return; el('polyline', { fill: 'none', stroke: COL[s.f], 'stroke-width': 2, 'stroke-linejoin': 'round', 'stroke-linecap': 'round', points: pts.map(p => X(p[0]).toFixed(1) + ',' + Y(p[1]).toFixed(1)).join(' ') });
+    const q = pts[pts.length - 1]; el('circle', { cx: X(q[0]), cy: Y(q[1]), r: 4, fill: COL[s.f], stroke: '#020812', 'stroke-width': 2 }); el('text', { x: X(q[0]) - 10, y: Y(q[1]) - 9, 'text-anchor': 'end', fill: COL[s.f], 'font-size': 12, 'font-weight': 700, 'font-family': FONT }, P(q[1])); });
+  const vl = el('line', { y1: m.t, y2: Hd - m.b, stroke: '#fff', 'stroke-opacity': .35, visibility: 'hidden' });
+  svg.onmousemove = e => {
+    const r = svg.getBoundingClientRect(), x = (e.clientX - r.left) * (Wd / r.width), t = t0 + (x - m.l) / (Wd - m.l - m.r) * (t1 - t0); if (x < m.l || x > Wd - m.r) { hideX(); return; }
+    let rows = '', dstr = '', px = 0;
+    list.forEach(s => { let best = null; s.pts.forEach(p => { if (p[0] >= t0 && (best == null || Math.abs(p[0] - t) < Math.abs(best[0] - t))) best = p; }); if (best) { dstr = dstr || dLabel(best[2]) + (best[2].length === 7 ? ' · promedio mensual' : ''); px = X(best[0]); rows += '<div class="r"><span style="color:' + COLL[s.f] + ';font-weight:600">' + fuels[s.f] + '</span><b>' + P(best[1]) + '</b></div>'; } });
+    vl.setAttribute('x1', px); vl.setAttribute('x2', px); vl.setAttribute('visibility', 'visible');
+    const xh = $('xh'); xh.innerHTML = '<div class="dd">' + dstr + '</div>' + rows; xh.style.display = 'block'; const w = xh.offsetWidth; xh.style.left = Math.min(Wd - w - 8, Math.max(8, px + 14)) + 'px'; xh.style.top = '44px';
+  };
+  svg.onmouseleave = hideX; function hideX() { vl.setAttribute('visibility', 'hidden'); $('xh').style.display = 'none'; }
+}
+
+/* ---------------- detalle: regiones (tabla + mapa sobrio) y operadores (con logo) */
+const RAMP = (u) => { const a = [219, 230, 244], b = [2, 31, 69]; return 'rgb(' + a.map((c, i) => Math.round(c + (b[i] - c) * u)).join(',') + ')'; };
+(function initMap() { const g = $('regmap'); g.setAttribute('viewBox', '0 0 ' + W + ' ' + H); g.innerHTML = geoRegSmall.map(r => '<path d="' + r.d + '" data-i="' + r.i + '"></path>').join(''); })();
+function hl(i, on) { document.querySelectorAll('[data-i="' + i + '"]').forEach(e => e.classList.toggle(e.tagName === 'tr' || e.tagName === 'TR' ? 'hi' : 'hl', on)); }
+function wireHover() { document.querySelectorAll('#treg tr[data-i], #regmap path').forEach(e => { e.onmouseenter = () => hl(e.dataset.i, true); e.onmouseleave = () => hl(e.dataset.i, false); }); }
+const ini = s => s.replace(/[^A-Za-zÁÉÍÓÚÑáéíóúñ ]/g, '').trim().split(/\s+/).slice(0, 2).map(w => w[0]).join('').toUpperCase();
+function focusBar() { const h = $('focus'); h.innerHTML = ''; fuels.forEach((n, f) => { if (!fuelsWithData[f] || lastIdx(NS[f]) < nM) return; const b = document.createElement('button'); b.textContent = n; b.setAttribute('aria-pressed', f === focus); b.onclick = () => { focus = f; all(); }; h.append(b); }); }
+function details() {
+  const f = focus, a = RS[f], t = LAST, ref = nM;
+  const rows = regs.map((r, i) => { const v = a[i][t], first = a[i].findIndex((x, k) => k >= ref && x != null), jan = a[i][monthlyRef('2026-01')]; return { i, n: r.n, v, d30: first >= 0 ? a[i][first] : null, jan }; }).filter(r => r.v != null).sort((x, y) => y.v - x.v);
+  const hi = Math.max(...rows.map(r => r.v)), lo = Math.min(...rows.map(r => r.v));
+  $('treg').innerHTML = '<tr><th>Región</th><th>Hoy</th><th>vs ' + dLabel(T[nM]) + '</th><th>vs ene 2026</th></tr>' + rows.map(r => '<tr data-i="' + r.i + '"><td class="nm">' + r.n + '</td><td><b>' + P(r.v) + '</b></td><td>' + dl(r.v, r.d30, 1) + '</td><td>' + dl(r.v, r.jan, 1) + '</td></tr>').join('');
+  const byI = {}; rows.forEach(r => byI[r.i] = r.v);
+  document.querySelectorAll('#regmap path').forEach(p => { const v = byI[p.dataset.i]; p.style.fill = v == null ? '#e9edf3' : RAMP((v - lo) / ((hi - lo) || 1)); });
+  const mk = marcas.filter(m => OSN[f][m] > 0 && OS[f][m]).map(m => { const arr = OS[f][m]; const dIdx = arr.map((x, i) => x != null ? i : -1).filter(i => i >= 0); const li = dIdx[dIdx.length - 1], fi = dIdx[0]; return { m, v: arr[li], n: OSN[f][m], first: arr[fi] }; }).sort((x, y) => y.n - x.n);
+  $('tmar').innerHTML = '<tr><th>Operador</th><th>Promedio</th><th>Estaciones</th><th>vs ' + dLabel(T[nM]) + '</th></tr>' + mk.map(r => '<tr><td class="nm"><span class="lg"><b>' + ini(r.m) + '</b>' + (LOGOS[r.m] ? '<img src="' + encodeURI(LOGOS[r.m]) + '" alt="" loading="lazy" decoding="async" onerror="this.remove()">' : '') + '</span>' + r.m + '</td><td><b>' + P(r.v) + '</b></td><td>' + nf0.format(r.n) + '</td><td>' + dl(r.v, r.first, 1) + '</td></tr>').join('');
+  const e = extremos[f], tr = x => '<tr><td class="pr">' + P(x.p) + '</td><td class="ad"><b>' + x.m + '</b> · ' + x.c + ', ' + x.r + '<br>' + x.d + '</td></tr>';
+  $('tbar').innerHTML = e.barato.map(tr).join(''); $('tcar').innerHTML = e.caro.map(tr).join('');
+  wireHover();
+}
+
+/* ---------------- abrir herramientas */
+function tools2() {
+  // miniatura del mapa: mismo mapa de regiones, coloreado con el precio de la Gasolina 93 de hoy
+  const f = 0, t = lastIdx(RS[0][0]); const v = regs.map((_, i) => RS[f][i][t]); const ok = v.filter(x => x != null), lo = Math.min(...ok), hi = Math.max(...ok);
+  const ramp = u => { const S = [[31,122,140],[252,196,0],[228,87,46]], k = Math.min(1, Math.floor(u * 2)), fr = u * 2 - k, a = S[k], b = S[Math.min(2, k + 1)]; return 'rgb(' + a.map((c, i) => Math.round(c + (b[i] - c) * fr)).join(',') + ')'; };
+  const mini = '<svg viewBox="0 0 ' + W + ' ' + H + '" aria-hidden="true">' + geoRegSmall.map(r => '<path d="' + r.d + '" fill="' + (v[r.i] == null ? '#22314b' : ramp((v[r.i] - lo) / ((hi - lo) || 1))) + '" stroke="#0a1a30" stroke-width="8"/>').join('') + '</svg>';
+  const lupa = '<svg viewBox="0 0 64 64" width="84" height="84" fill="none" stroke="#fcc400" stroke-width="3.4" stroke-linecap="round" aria-hidden="true"><circle cx="27" cy="27" r="14"/><path d="M38 38l14 14"/><path d="M27 20v14M20 27h14" stroke="#4aa3ff"/></svg>';
+  $('tools2').innerHTML = '<div class="tool"><div class="pv">' + mini + '</div><div><h3>Mapa territorial</h3><p>Precio por región y comuna, con línea de tiempo de 1994 a hoy y fichas para comparar territorios.</p><a class="btn amber" href="territorial.html">Abrir el mapa <i>→</i></a></div></div>'
+    + '<div class="tool"><div class="pv">' + lupa + '</div><div><h3>Buscador de estaciones</h3><p>Encuentra la estación más barata: filtra por región, comuna, operador y combustible.</p><a class="btn amber" href="buscador.html">Abrir el buscador <i>→</i></a></div></div>';
+}
+
+/* ---------------- cobertura y cita */
+function coverage() {
+  const card = (k, v, p, cls) => '<div class="card ' + (cls || '') + '"><div class="k">' + k + '</div><div class="v">' + v + '</div><p>' + p + '</p></div>';
+  $('cov').innerHTML = card('Mensual · por región', dLabel(T[0]) + ' → ' + dLabel(T[nM - 1]), 'Gasolina 93, 95 y 97, diésel y kerosene en las 16 regiones. Serie oficial de la CNE, completa y sin meses faltantes.')
+    + card('Diario · por estación', 'Desde ' + dLabel(T[nM]), nf0.format(C.estaciones) + ' estaciones y los 7 combustibles, incluidos GLP y GNC. Se actualiza todos los días.')
+    + card('Por comuna', 'Desde ' + dLabel(T[nM]), C.comunasConDato + ' de ' + C.comunasTotal + ' comunas tienen estaciones con precio informado.')
+    + card('Antes de ' + dLabel(T[nM]), 'Sin detalle', 'No hay precio por estación, por comuna ni por día: la fuente solo entrega el precio de hoy y esa historia no se puede reconstruir.', 'no');
+  $('metodo').textContent = 'Nota metodológica: hasta ' + dLabel(T[nM - 1]) + ' el gráfico usa el promedio simple de las 16 regiones (CNE, mensual); desde el ' + dLabel(T[nM]) + ', el promedio de todas las estaciones (diario). El empalme entre ambos tramos es aproximado.';
+  const yr = lastDay.slice(0, 4);
+  $('citeHtml').innerHTML = 'Favor citar como: Castro, D. (' + yr + '). <i>Evolución del precio de los combustibles en Chile</i>. Elaboración propia a partir de datos de la CNE y la SEC. <a href="https://www.dilandcastro.com">www.dilandcastro.com</a>';
+  $('copyCite').onclick = () => { const txt = 'Castro, D. (' + yr + '). Evolución del precio de los combustibles en Chile. Elaboración propia a partir de datos de la CNE y la SEC. www.dilandcastro.com';
+    const ok = () => { $('copyCite').innerHTML = 'Copiada ✓'; setTimeout(() => { $('copyCite').innerHTML = 'Copiar cita <i>⧉</i>'; }, 1800); };
+    if (navigator.clipboard) navigator.clipboard.writeText(txt).then(ok, ok); else ok(); };
+}
+
+function all() { tiles(); chartFuels(); drawChart(); focusBar(); details(); }
+all(); tools2(); coverage();
+new ResizeObserver(() => drawChart()).observe($('cbox'));
+</script>
+</body>
+</html>
