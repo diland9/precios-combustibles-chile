@@ -3931,7 +3931,7 @@ fecha,region,combustible,precio_promedio,precio_min,precio_max,n_registros
 2026-11-13,Atacama,Gasolina 95,1722.29,1695,1754,42
 2026-11-13,Atacama,Kerosene,1428,1403,1454,7
 2026-11-13,Coquimbo,GLP,844,844,844,3
-2026-11-13,Coquimbo,Gasolina 93,1669.2,1582,1695,93
+2026-11-13,Coquimbo,Gasolina 93,1669.11,1582,1695,93
 2026-11-13,Coquimbo,Gasolina 97,1739.76,1665,1768,86
 2026-11-13,Coquimbo,Diésel,1674.21,1596,1699,94
 2026-11-13,Coquimbo,Gasolina 95,1704.73,1623,1731,89
@@ -3943,23 +3943,23 @@ fecha,region,combustible,precio_promedio,precio_min,precio_max,n_registros
 2026-11-13,Valparaíso,Gasolina 95,1650.5,1449,1678,207
 2026-11-13,Valparaíso,Gasolina 97,1693.92,1494,1720,194
 2026-11-13,Del Libertador Gral. Bernardo O’Higgins,GLP,679.75,623,740,4
-2026-11-13,Del Libertador Gral. Bernardo O’Higgins,Gasolina 93,1627.85,1461,1655,130
-2026-11-13,Del Libertador Gral. Bernardo O’Higgins,Gasolina 97,1697.77,1517,1737,103
-2026-11-13,Del Libertador Gral. Bernardo O’Higgins,Diésel,1635.82,1231,1671,129
+2026-11-13,Del Libertador Gral. Bernardo O’Higgins,Gasolina 93,1628.15,1461,1655,130
+2026-11-13,Del Libertador Gral. Bernardo O’Higgins,Gasolina 97,1698.15,1517,1737,103
+2026-11-13,Del Libertador Gral. Bernardo O’Higgins,Diésel,1636.15,1231,1671,129
 2026-11-13,Del Libertador Gral. Bernardo O’Higgins,Kerosene,1397.08,1103,1627,76
-2026-11-13,Del Libertador Gral. Bernardo O’Higgins,Gasolina 95,1653.2,1246,1683,130
+2026-11-13,Del Libertador Gral. Bernardo O’Higgins,Gasolina 95,1653.5,1246,1683,130
 2026-11-13,Del Maule,GLP,698.5,625,775,6
-2026-11-13,Del Maule,Gasolina 93,1616.92,1550,1690,166
+2026-11-13,Del Maule,Gasolina 93,1616.94,1550,1690,166
 2026-11-13,Del Maule,Gasolina 97,1688.86,1628,1727,107
 2026-11-13,Del Maule,Diésel,1617.33,1496,1677,169
-2026-11-13,Del Maule,Gasolina 95,1648.55,1584,1710,165
-2026-11-13,Del Maule,Kerosene,1368.92,1074,1480,95
+2026-11-13,Del Maule,Gasolina 95,1648.56,1584,1710,165
+2026-11-13,Del Maule,Kerosene,1369.12,1074,1480,95
 2026-11-13,Del Biobío,GLP,758,690,825,4
 2026-11-13,Del Biobío,Kerosene,1359.22,1058,1412,97
-2026-11-13,Del Biobío,Gasolina 93,1609.99,1387,1675,177
-2026-11-13,Del Biobío,Gasolina 95,1643.83,1425,1692,175
-2026-11-13,Del Biobío,Gasolina 97,1678.22,1466,1708,161
-2026-11-13,Del Biobío,Diésel,1614.37,1160,1691,180
+2026-11-13,Del Biobío,Gasolina 93,1610.24,1387,1675,177
+2026-11-13,Del Biobío,Gasolina 95,1644.09,1425,1692,175
+2026-11-13,Del Biobío,Gasolina 97,1678.49,1466,1708,161
+2026-11-13,Del Biobío,Diésel,1614.66,1160,1691,180
 2026-11-13,De la Araucanía,GLP,714,685,743,2
 2026-11-13,De la Araucanía,Gasolina 93,1636.26,1499,1984,145
 2026-11-13,De la Araucanía,Gasolina 97,1698.36,1612,1802,132
@@ -3985,11 +3985,11 @@ fecha,region,combustible,precio_promedio,precio_min,precio_max,n_registros
 2026-11-13,Magallanes y de la Antártica Chilena,GLP,601,601,601,1
 2026-11-13,Metropolitana de Santiago,GLP,712.53,591,795,15
 2026-11-13,Metropolitana de Santiago,GNC,943.8,899,1091,5
-2026-11-13,Metropolitana de Santiago,Gasolina 93,1576.03,1387,1644,596
-2026-11-13,Metropolitana de Santiago,Gasolina 97,1673.08,1277,1750,561
-2026-11-13,Metropolitana de Santiago,Diésel,1595.05,1208,1653,604
-2026-11-13,Metropolitana de Santiago,Kerosene,1372.24,1000,1573,397
-2026-11-13,Metropolitana de Santiago,Gasolina 95,1621.48,1434,1697,599
+2026-11-13,Metropolitana de Santiago,Gasolina 93,1576.1,1387,1644,596
+2026-11-13,Metropolitana de Santiago,Gasolina 97,1673.15,1277,1750,561
+2026-11-13,Metropolitana de Santiago,Diésel,1595.09,1208,1653,604
+2026-11-13,Metropolitana de Santiago,Kerosene,1372.27,1000,1573,397
+2026-11-13,Metropolitana de Santiago,Gasolina 95,1621.54,1434,1697,599
 2026-11-13,De los Ríos,GLP,861,861,861,1
 2026-11-13,De los Ríos,Gasolina 93,1662.98,1568,1890,54
 2026-11-13,De los Ríos,Gasolina 97,1720.1,1630,1746,48
