@@ -64406,10 +64406,10 @@ fecha,region,comuna,combustible,precio_promedio,precio_min,precio_max,n_registro
 2026-11-15,Tarapacá,Iquique,Gasolina 97,1726.91,1685,1741,22
 2026-11-15,Tarapacá,Iquique,Diésel,1626.87,1587,1643,23
 2026-11-15,Tarapacá,Iquique,Gasolina 95,1697.41,1654,1710,22
-2026-11-15,Tarapacá,Alto Hospicio,Gasolina 93,1673.4,1636,1684,5
-2026-11-15,Tarapacá,Alto Hospicio,Gasolina 97,1732,1695,1744,5
-2026-11-15,Tarapacá,Alto Hospicio,Diésel,1622.14,1582,1633,7
-2026-11-15,Tarapacá,Alto Hospicio,Gasolina 95,1699.2,1662,1710,5
+2026-11-15,Tarapacá,Alto Hospicio,Gasolina 93,1683,1679,1684,5
+2026-11-15,Tarapacá,Alto Hospicio,Gasolina 97,1741.6,1735,1744,5
+2026-11-15,Tarapacá,Alto Hospicio,Diésel,1629.43,1622,1633,7
+2026-11-15,Tarapacá,Alto Hospicio,Gasolina 95,1708.8,1704,1710,5
 2026-11-15,Tarapacá,Alto Hospicio,Kerosene,1544.5,1543,1546,2
 2026-11-15,Tarapacá,Pica,Gasolina 93,1700,1700,1700,1
 2026-11-15,Tarapacá,Pica,Gasolina 97,1747,1747,1747,1
@@ -64728,14 +64728,14 @@ fecha,region,comuna,combustible,precio_promedio,precio_min,precio_max,n_registro
 2026-11-15,Del Libertador Gral. Bernardo O’Higgins,Rancagua,GLP,669,623,715,2
 2026-11-15,Del Libertador Gral. Bernardo O’Higgins,Rancagua,Gasolina 93,1639.65,1584,1651,31
 2026-11-15,Del Libertador Gral. Bernardo O’Higgins,Rancagua,Gasolina 97,1697.97,1649,1709,31
-2026-11-15,Del Libertador Gral. Bernardo O’Higgins,Rancagua,Diésel,1648.91,1591,1670,32
+2026-11-15,Del Libertador Gral. Bernardo O’Higgins,Rancagua,Diésel,1651.53,1591,1670,32
 2026-11-15,Del Libertador Gral. Bernardo O’Higgins,Rancagua,Kerosene,1402,1103,1418,23
 2026-11-15,Del Libertador Gral. Bernardo O’Higgins,Rancagua,Gasolina 95,1668.31,1615,1680,32
 2026-11-15,Del Libertador Gral. Bernardo O’Higgins,Olivar,Kerosene,1260.5,1108,1413,2
-2026-11-15,Del Libertador Gral. Bernardo O’Higgins,Olivar,Gasolina 93,1626.33,1598,1650,3
-2026-11-15,Del Libertador Gral. Bernardo O’Higgins,Olivar,Gasolina 95,1658,1627,1680,3
+2026-11-15,Del Libertador Gral. Bernardo O’Higgins,Olivar,Gasolina 93,1642.33,1631,1650,3
+2026-11-15,Del Libertador Gral. Bernardo O’Higgins,Olivar,Gasolina 95,1674,1667,1680,3
 2026-11-15,Del Libertador Gral. Bernardo O’Higgins,Olivar,Gasolina 97,1708.5,1705,1712,2
-2026-11-15,Del Libertador Gral. Bernardo O’Higgins,Olivar,Diésel,1631.67,1606,1667,3
+2026-11-15,Del Libertador Gral. Bernardo O’Higgins,Olivar,Diésel,1645.67,1606,1667,3
 2026-11-15,Del Libertador Gral. Bernardo O’Higgins,Coltauco,Gasolina 93,1647,1647,1647,1
 2026-11-15,Del Libertador Gral. Bernardo O’Higgins,Coltauco,Gasolina 97,1711,1711,1711,1
 2026-11-15,Del Libertador Gral. Bernardo O’Higgins,Coltauco,Diésel,1661,1661,1661,1
@@ -64978,9 +64978,9 @@ fecha,region,comuna,combustible,precio_promedio,precio_min,precio_max,n_registro
 2026-11-15,Del Maule,Empedrado,Gasolina 95,1678,1678,1678,1
 2026-11-15,Del Maule,Río Claro,Gasolina 93,1678,1678,1678,1
 2026-11-15,Del Maule,Río Claro,Diésel,1664,1664,1664,1
-2026-11-15,Del Maule,Vichuquén,Gasolina 93,1619,1598,1640,2
-2026-11-15,Del Maule,Vichuquén,Diésel,1636.5,1620,1653,2
-2026-11-15,Del Maule,Vichuquén,Gasolina 95,1652,1625,1679,2
+2026-11-15,Del Maule,Vichuquén,Gasolina 93,1640,1640,1640,2
+2026-11-15,Del Maule,Vichuquén,Diésel,1655.5,1653,1658,2
+2026-11-15,Del Maule,Vichuquén,Gasolina 95,1674.5,1670,1679,2
 2026-11-15,Del Maule,Chanco,Gasolina 93,1604,1603,1605,2
 2026-11-15,Del Maule,Chanco,Diésel,1603.5,1603,1604,2
 2026-11-15,Del Maule,Chanco,Gasolina 95,1643.5,1643,1644,2
@@ -65180,11 +65180,11 @@ fecha,region,comuna,combustible,precio_promedio,precio_min,precio_max,n_registro
 2026-11-15,De la Araucanía,Lautaro,Diésel,1636,1630,1640,5
 2026-11-15,De la Araucanía,Lautaro,Kerosene,1405.5,1405,1406,2
 2026-11-15,De la Araucanía,Lautaro,Gasolina 95,1673.6,1669,1676,5
-2026-11-15,De la Araucanía,Loncoche,Gasolina 93,1744,1650,1984,4
-2026-11-15,De la Araucanía,Loncoche,Gasolina 97,1735.5,1735,1736,4
-2026-11-15,De la Araucanía,Loncoche,Diésel,1658.5,1632,1682,4
+2026-11-15,De la Araucanía,Loncoche,Gasolina 93,1743.75,1649,1984,4
+2026-11-15,De la Araucanía,Loncoche,Gasolina 97,1736.5,1735,1740,4
+2026-11-15,De la Araucanía,Loncoche,Diésel,1659.75,1637,1682,4
 2026-11-15,De la Araucanía,Loncoche,Kerosene,1428,1428,1428,1
-2026-11-15,De la Araucanía,Loncoche,Gasolina 95,1697.75,1683,1710,4
+2026-11-15,De la Araucanía,Loncoche,Gasolina 95,1698.75,1687,1710,4
 2026-11-15,De la Araucanía,Nueva Imperial,Gasolina 93,1645.33,1644,1648,3
 2026-11-15,De la Araucanía,Nueva Imperial,Gasolina 97,1717,1716,1719,3
 2026-11-15,De la Araucanía,Nueva Imperial,Diésel,1646.67,1646,1648,3
@@ -65664,11 +65664,11 @@ fecha,region,comuna,combustible,precio_promedio,precio_min,precio_max,n_registro
 2026-11-15,Metropolitana de Santiago,San Bernardo,Diésel,1566.25,1227,1648,36
 2026-11-15,Metropolitana de Santiago,San Bernardo,Kerosene,1382,1326,1415,19
 2026-11-15,Metropolitana de Santiago,San Bernardo,Gasolina 95,1614.31,1519,1683,35
-2026-11-15,Metropolitana de Santiago,Buin,Gasolina 93,1600.1,1478,1633,10
-2026-11-15,Metropolitana de Santiago,Buin,Gasolina 97,1699.2,1577,1733,10
-2026-11-15,Metropolitana de Santiago,Buin,Diésel,1595.7,1326,1646,10
+2026-11-15,Metropolitana de Santiago,Buin,Gasolina 93,1604,1478,1633,10
+2026-11-15,Metropolitana de Santiago,Buin,Gasolina 97,1703.1,1577,1733,10
+2026-11-15,Metropolitana de Santiago,Buin,Diésel,1599.9,1326,1646,10
 2026-11-15,Metropolitana de Santiago,Buin,Kerosene,1385.67,1337,1400,6
-2026-11-15,Metropolitana de Santiago,Buin,Gasolina 95,1649.2,1527,1683,10
+2026-11-15,Metropolitana de Santiago,Buin,Gasolina 95,1653.1,1527,1683,10
 2026-11-15,Metropolitana de Santiago,Calera de Tango,Gasolina 93,1604,1592,1607,5
 2026-11-15,Metropolitana de Santiago,Calera de Tango,Gasolina 97,1672,1660,1675,5
 2026-11-15,Metropolitana de Santiago,Calera de Tango,Diésel,1606,1594,1609,5
@@ -65690,7 +65690,7 @@ fecha,region,comuna,combustible,precio_promedio,precio_min,precio_max,n_registro
 2026-11-15,Metropolitana de Santiago,Curacaví,Gasolina 95,1653.6,1648,1656,5
 2026-11-15,Metropolitana de Santiago,María Pinto,Gasolina 93,1627,1627,1627,1
 2026-11-15,Metropolitana de Santiago,María Pinto,Gasolina 97,1722,1722,1722,1
-2026-11-15,Metropolitana de Santiago,María Pinto,Diésel,1632,1632,1632,1
+2026-11-15,Metropolitana de Santiago,María Pinto,Diésel,1631,1631,1631,1
 2026-11-15,Metropolitana de Santiago,María Pinto,Kerosene,1394,1394,1394,1
 2026-11-15,Metropolitana de Santiago,María Pinto,Gasolina 95,1679,1679,1679,1
 2026-11-15,Metropolitana de Santiago,Talagante,Gasolina 93,1611,1597,1618,8
