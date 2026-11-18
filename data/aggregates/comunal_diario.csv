@@ -67836,10 +67836,10 @@ fecha,region,comuna,combustible,precio_promedio,precio_min,precio_max,n_registro
 2026-11-17,Del Libertador Gral. Bernardo O’Higgins,La Estrella,Diésel,1565,1565,1565,1
 2026-11-17,Del Libertador Gral. Bernardo O’Higgins,La Estrella,Kerosene,1300,1300,1300,1
 2026-11-17,Del Libertador Gral. Bernardo O’Higgins,La Estrella,Gasolina 95,1640,1640,1640,1
-2026-11-17,Del Libertador Gral. Bernardo O’Higgins,Navidad,Gasolina 93,1622,1622,1622,1
-2026-11-17,Del Libertador Gral. Bernardo O’Higgins,Navidad,Gasolina 97,1689,1689,1689,1
-2026-11-17,Del Libertador Gral. Bernardo O’Higgins,Navidad,Diésel,1633,1633,1633,1
-2026-11-17,Del Libertador Gral. Bernardo O’Higgins,Navidad,Gasolina 95,1654,1654,1654,1
+2026-11-17,Del Libertador Gral. Bernardo O’Higgins,Navidad,Gasolina 93,1621,1621,1621,1
+2026-11-17,Del Libertador Gral. Bernardo O’Higgins,Navidad,Gasolina 97,1688,1688,1688,1
+2026-11-17,Del Libertador Gral. Bernardo O’Higgins,Navidad,Diésel,1632,1632,1632,1
+2026-11-17,Del Libertador Gral. Bernardo O’Higgins,Navidad,Gasolina 95,1653,1653,1653,1
 2026-11-17,Del Libertador Gral. Bernardo O’Higgins,Paredones,Gasolina 93,1615.5,1596,1635,2
 2026-11-17,Del Libertador Gral. Bernardo O’Higgins,Paredones,Diésel,1625.5,1605,1646,2
 2026-11-17,Del Libertador Gral. Bernardo O’Higgins,Paredones,Gasolina 95,1649.5,1629,1670,2
@@ -68555,7 +68555,7 @@ fecha,region,comuna,combustible,precio_promedio,precio_min,precio_max,n_registro
 2026-11-17,Metropolitana de Santiago,Maipú,Gasolina 93,1545.7,1496,1617,37
 2026-11-17,Metropolitana de Santiago,Maipú,Gasolina 97,1623,1577,1661,34
 2026-11-17,Metropolitana de Santiago,Maipú,Diésel,1582.49,1541,1621,37
-2026-11-17,Metropolitana de Santiago,Maipú,Kerosene,1357.23,1080,1401,22
+2026-11-17,Metropolitana de Santiago,Maipú,Kerosene,1357.18,1080,1401,22
 2026-11-17,Metropolitana de Santiago,Maipú,Gasolina 95,1584.14,1537,1678,37
 2026-11-17,Metropolitana de Santiago,Pedro Aguirre Cerda,Gasolina 93,1580.29,1567,1614,7
 2026-11-17,Metropolitana de Santiago,Pedro Aguirre Cerda,Gasolina 97,1677.71,1647,1713,7
