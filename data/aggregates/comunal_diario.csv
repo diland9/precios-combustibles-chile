@@ -70393,7 +70393,7 @@ fecha,region,comuna,combustible,precio_promedio,precio_min,precio_max,n_registro
 2026-11-19,Tarapacá,Pozo Almonte,Gasolina 95,1688,1688,1688,2
 2026-11-19,Antofagasta,Antofagasta,GLP,846,846,846,1
 2026-11-19,Antofagasta,Antofagasta,Gasolina 93,1667.91,1654,1705,32
-2026-11-19,Antofagasta,Antofagasta,Gasolina 97,1728.41,1715,1763,32
+2026-11-19,Antofagasta,Antofagasta,Gasolina 97,1728.38,1715,1763,32
 2026-11-19,Antofagasta,Antofagasta,Diésel,1560.81,1539,1694,32
 2026-11-19,Antofagasta,Antofagasta,Kerosene,1519.67,1519,1520,3
 2026-11-19,Antofagasta,Antofagasta,Gasolina 95,1700.63,1687,1737,32
@@ -70461,7 +70461,7 @@ fecha,region,comuna,combustible,precio_promedio,precio_min,precio_max,n_registro
 2026-11-19,Coquimbo,Coquimbo,GLP,844,844,844,1
 2026-11-19,Coquimbo,Ovalle,GLP,844,844,844,1
 2026-11-19,Coquimbo,La Serena,Gasolina 93,1644.77,1629,1678,30
-2026-11-19,Coquimbo,La Serena,Gasolina 97,1715.54,1698,1749,28
+2026-11-19,Coquimbo,La Serena,Gasolina 97,1715.5,1698,1749,28
 2026-11-19,Coquimbo,La Serena,Diésel,1546.3,1523,1678,30
 2026-11-19,Coquimbo,La Serena,Gasolina 95,1680.55,1664,1714,29
 2026-11-19,Coquimbo,La Serena,Kerosene,1404.7,1397,1410,10
@@ -70495,11 +70495,11 @@ fecha,region,comuna,combustible,precio_promedio,precio_min,precio_max,n_registro
 2026-11-19,Coquimbo,Salamanca,Gasolina 97,1677,1677,1677,2
 2026-11-19,Coquimbo,Salamanca,Kerosene,1397,1397,1397,1
 2026-11-19,Coquimbo,Salamanca,Gasolina 95,1635,1635,1635,2
-2026-11-19,Coquimbo,Ovalle,Gasolina 93,1634.07,1619,1651,15
-2026-11-19,Coquimbo,Ovalle,Gasolina 97,1695.57,1680,1722,14
+2026-11-19,Coquimbo,Ovalle,Gasolina 93,1633.93,1619,1651,15
+2026-11-19,Coquimbo,Ovalle,Gasolina 97,1695,1679,1722,14
 2026-11-19,Coquimbo,Ovalle,Diésel,1539.2,1525,1556,15
 2026-11-19,Coquimbo,Ovalle,Kerosene,1398.5,1396,1400,4
-2026-11-19,Coquimbo,Ovalle,Gasolina 95,1667.4,1652,1686,15
+2026-11-19,Coquimbo,Ovalle,Gasolina 95,1667.2,1652,1686,15
 2026-11-19,Coquimbo,Combarbalá,Gasolina 93,1634,1634,1634,1
 2026-11-19,Coquimbo,Combarbalá,Gasolina 97,1694,1694,1694,1
 2026-11-19,Coquimbo,Combarbalá,Diésel,1540,1540,1540,1
@@ -70523,7 +70523,7 @@ fecha,region,comuna,combustible,precio_promedio,precio_min,precio_max,n_registro
 2026-11-19,Valparaíso,Limache,Kerosene,1371.8,1365,1381,5
 2026-11-19,Valparaíso,Limache,Gasolina 95,1625.18,1603,1663,11
 2026-11-19,Valparaíso,Limache,Gasolina 97,1669.36,1645,1702,11
-2026-11-19,Valparaíso,Valparaíso,Gasolina 93,1541.15,1513,1615,33
+2026-11-19,Valparaíso,Valparaíso,Gasolina 93,1541.21,1513,1615,33
 2026-11-19,Valparaíso,Valparaíso,Gasolina 97,1644.76,1610,1673,29
 2026-11-19,Valparaíso,Valparaíso,Diésel,1474.27,1453,1629,33
 2026-11-19,Valparaíso,Valparaíso,Gasolina 95,1591.31,1566,1655,32
@@ -70543,25 +70543,25 @@ fecha,region,comuna,combustible,precio_promedio,precio_min,precio_max,n_registro
 2026-11-19,Valparaíso,Puchuncaví,Diésel,1480.5,1472,1491,4
 2026-11-19,Valparaíso,Puchuncaví,Kerosene,1370.5,1369,1372,2
 2026-11-19,Valparaíso,Puchuncaví,Gasolina 95,1629,1626,1630,4
-2026-11-19,Valparaíso,Quilpué,Gasolina 93,1588.59,1560,1612,17
+2026-11-19,Valparaíso,Quilpué,Gasolina 93,1577.71,1560,1612,17
 2026-11-19,Valparaíso,Quilpué,Gasolina 97,1677.17,1656,1706,12
-2026-11-19,Valparaíso,Quilpué,Diésel,1543.59,1472,1629,17
-2026-11-19,Valparaíso,Quilpué,Kerosene,1376.64,1373,1383,11
-2026-11-19,Valparaíso,Quilpué,Gasolina 95,1639.06,1611,1662,17
+2026-11-19,Valparaíso,Quilpué,Diésel,1501.82,1472,1629,17
+2026-11-19,Valparaíso,Quilpué,Kerosene,1373.91,1373,1383,11
+2026-11-19,Valparaíso,Quilpué,Gasolina 95,1628.47,1611,1662,17
 2026-11-19,Valparaíso,Quintero,Gasolina 93,1567,1567,1567,4
 2026-11-19,Valparaíso,Quintero,Gasolina 97,1655,1655,1655,4
 2026-11-19,Valparaíso,Quintero,Diésel,1473,1467,1475,4
 2026-11-19,Valparaíso,Quintero,Kerosene,1361.75,1359,1370,4
 2026-11-19,Valparaíso,Quintero,Gasolina 95,1611,1611,1611,4
-2026-11-19,Valparaíso,Villa Alemana,Gasolina 93,1587.33,1575,1612,9
+2026-11-19,Valparaíso,Villa Alemana,Gasolina 93,1575,1575,1575,9
 2026-11-19,Valparaíso,Villa Alemana,Gasolina 97,1671,1671,1671,6
-2026-11-19,Valparaíso,Villa Alemana,Diésel,1534.33,1487,1629,9
-2026-11-19,Valparaíso,Villa Alemana,Kerosene,1372.67,1356,1383,9
-2026-11-19,Valparaíso,Villa Alemana,Gasolina 95,1638,1626,1662,9
-2026-11-19,Valparaíso,Viña del Mar,Gasolina 93,1573.52,1559,1611,29
+2026-11-19,Valparaíso,Villa Alemana,Diésel,1487,1487,1487,9
+2026-11-19,Valparaíso,Villa Alemana,Kerosene,1369.33,1356,1373,9
+2026-11-19,Valparaíso,Villa Alemana,Gasolina 95,1626,1626,1626,9
+2026-11-19,Valparaíso,Viña del Mar,Gasolina 93,1573.45,1559,1611,29
 2026-11-19,Valparaíso,Viña del Mar,Gasolina 95,1618.17,1604,1655,29
 2026-11-19,Valparaíso,Viña del Mar,Gasolina 97,1664.17,1648,1703,29
-2026-11-19,Valparaíso,Viña del Mar,Diésel,1481.59,1452,1609,29
+2026-11-19,Valparaíso,Viña del Mar,Diésel,1481.52,1452,1609,29
 2026-11-19,Valparaíso,Viña del Mar,Kerosene,1371.47,1339,1383,19
 2026-11-19,Valparaíso,Quillota,Gasolina 93,1575.27,1565,1581,15
 2026-11-19,Valparaíso,Quillota,Gasolina 97,1661,1651,1666,15
@@ -70584,8 +70584,8 @@ fecha,region,comuna,combustible,precio_promedio,precio_min,precio_max,n_registro
 2026-11-19,Valparaíso,San Esteban,Kerosene,1386,1386,1386,2
 2026-11-19,Valparaíso,San Esteban,Gasolina 95,1634,1634,1634,2
 2026-11-19,Valparaíso,La Ligua,Kerosene,1381,1381,1381,2
-2026-11-19,Valparaíso,La Ligua,Diésel,1488.33,1488,1489,3
-2026-11-19,Valparaíso,La Ligua,Gasolina 93,1584.33,1584,1585,3
+2026-11-19,Valparaíso,La Ligua,Diésel,1488,1488,1488,3
+2026-11-19,Valparaíso,La Ligua,Gasolina 93,1584,1584,1584,3
 2026-11-19,Valparaíso,La Ligua,Gasolina 95,1629,1629,1629,3
 2026-11-19,Valparaíso,La Ligua,Gasolina 97,1673,1673,1673,3
 2026-11-19,Valparaíso,Cabildo,Gasolina 93,1580,1580,1580,2
@@ -70745,11 +70745,11 @@ fecha,region,comuna,combustible,precio_promedio,precio_min,precio_max,n_registro
 2026-11-19,Del Libertador Gral. Bernardo O’Higgins,Peumo,Gasolina 97,1666,1666,1666,3
 2026-11-19,Del Libertador Gral. Bernardo O’Higgins,Peumo,Diésel,1503.67,1503,1504,3
 2026-11-19,Del Libertador Gral. Bernardo O’Higgins,Peumo,Gasolina 95,1637,1637,1637,3
-2026-11-19,Del Libertador Gral. Bernardo O’Higgins,Pichidegua,Gasolina 93,1630,1605,1655,2
+2026-11-19,Del Libertador Gral. Bernardo O’Higgins,Pichidegua,Gasolina 93,1611.5,1605,1618,2
 2026-11-19,Del Libertador Gral. Bernardo O’Higgins,Pichidegua,Gasolina 97,1668,1668,1668,1
-2026-11-19,Del Libertador Gral. Bernardo O’Higgins,Pichidegua,Diésel,1611.67,1513,1661,3
+2026-11-19,Del Libertador Gral. Bernardo O’Higgins,Pichidegua,Diésel,1517,1513,1519,3
 2026-11-19,Del Libertador Gral. Bernardo O’Higgins,Pichidegua,Kerosene,1407,1407,1407,1
-2026-11-19,Del Libertador Gral. Bernardo O’Higgins,Pichidegua,Gasolina 95,1668,1638,1683,3
+2026-11-19,Del Libertador Gral. Bernardo O’Higgins,Pichidegua,Gasolina 95,1643.33,1638,1646,3
 2026-11-19,Del Libertador Gral. Bernardo O’Higgins,Quinta de Tilcoco,Gasolina 93,1606,1606,1606,3
 2026-11-19,Del Libertador Gral. Bernardo O’Higgins,Quinta de Tilcoco,Gasolina 97,1669,1669,1669,2
 2026-11-19,Del Libertador Gral. Bernardo O’Higgins,Quinta de Tilcoco,Diésel,1515,1515,1515,2
@@ -70907,20 +70907,20 @@ fecha,region,comuna,combustible,precio_promedio,precio_min,precio_max,n_registro
 2026-11-19,Del Maule,Linares,Diésel,1470,1461,1602,18
 2026-11-19,Del Maule,Linares,Kerosene,1372.86,1305,1385,14
 2026-11-19,Del Maule,Linares,Gasolina 95,1607.89,1601,1640,18
-2026-11-19,Del Maule,Colbún,Gasolina 93,1591,1584,1596,3
+2026-11-19,Del Maule,Colbún,Gasolina 93,1594,1593,1596,3
 2026-11-19,Del Maule,Colbún,Gasolina 97,1645,1645,1645,1
-2026-11-19,Del Maule,Colbún,Diésel,1509.33,1476,1576,3
-2026-11-19,Del Maule,Colbún,Gasolina 95,1618.67,1611,1624,3
+2026-11-19,Del Maule,Colbún,Diésel,1476,1476,1476,3
+2026-11-19,Del Maule,Colbún,Gasolina 95,1622,1621,1624,3
 2026-11-19,Del Maule,Colbún,Kerosene,1385,1378,1392,2
 2026-11-19,Del Maule,Parral,Gasolina 93,1582.5,1559,1632,12
 2026-11-19,Del Maule,Parral,Gasolina 97,1659.75,1641,1696,8
 2026-11-19,Del Maule,Parral,Diésel,1514.25,1478,1631,12
 2026-11-19,Del Maule,Parral,Gasolina 95,1616.5,1596,1666,12
 2026-11-19,Del Maule,Parral,Kerosene,1327.83,1270,1344,6
-2026-11-19,Del Maule,Retiro,Gasolina 93,1591.33,1585,1604,3
-2026-11-19,Del Maule,Retiro,Gasolina 97,1660,1651,1676,3
-2026-11-19,Del Maule,Retiro,Diésel,1531.33,1484,1623,3
-2026-11-19,Del Maule,Retiro,Gasolina 95,1624.67,1619,1636,3
+2026-11-19,Del Maule,Retiro,Gasolina 93,1579.67,1569,1585,3
+2026-11-19,Del Maule,Retiro,Gasolina 97,1648.33,1641,1653,3
+2026-11-19,Del Maule,Retiro,Diésel,1484,1481,1487,3
+2026-11-19,Del Maule,Retiro,Gasolina 95,1612.67,1600,1619,3
 2026-11-19,Del Maule,San Javier,Gasolina 93,1590.75,1582,1618,8
 2026-11-19,Del Maule,San Javier,Gasolina 97,1654.5,1649,1673,6
 2026-11-19,Del Maule,San Javier,Diésel,1485.44,1450,1613,9
@@ -70938,7 +70938,7 @@ fecha,region,comuna,combustible,precio_promedio,precio_min,precio_max,n_registro
 2026-11-19,Del Maule,Rauco,Kerosene,1336,1336,1336,1
 2026-11-19,Del Maule,Rauco,Gasolina 95,1644,1641,1647,2
 2026-11-19,Del Maule,Longaví,Gasolina 93,1624.33,1570,1654,3
-2026-11-19,Del Maule,Longaví,Diésel,1467.33,1461,1477,3
+2026-11-19,Del Maule,Longaví,Diésel,1462,1461,1464,3
 2026-11-19,Del Maule,Longaví,Gasolina 95,1646.67,1597,1674,3
 2026-11-19,Del Maule,Curepto,Gasolina 93,1617,1617,1617,2
 2026-11-19,Del Maule,Curepto,Diésel,1528,1528,1528,2
@@ -70960,7 +70960,7 @@ fecha,region,comuna,combustible,precio_promedio,precio_min,precio_max,n_registro
 2026-11-19,Del Maule,Pelluhue,Diésel,1464.33,1464,1465,3
 2026-11-19,Del Maule,Pelluhue,Kerosene,1388,1388,1388,3
 2026-11-19,Del Maule,Pelluhue,Gasolina 95,1589.33,1589,1590,3
-2026-11-19,Del Maule,Retiro,Kerosene,1407.5,1335,1480,2
+2026-11-19,Del Maule,Retiro,Kerosene,1412.5,1345,1480,2
 2026-11-19,Del Maule,Romeral,Gasolina 93,1608.67,1598,1615,3
 2026-11-19,Del Maule,Romeral,Gasolina 97,1670.33,1663,1678,3
 2026-11-19,Del Maule,Romeral,Diésel,1516.67,1506,1523,3
@@ -70983,26 +70983,26 @@ fecha,region,comuna,combustible,precio_promedio,precio_min,precio_max,n_registro
 2026-11-19,Del Biobío,Concepción,Gasolina 93,1574.62,1553,1591,37
 2026-11-19,Del Biobío,Concepción,Gasolina 95,1610.7,1591,1633,37
 2026-11-19,Del Biobío,Concepción,Gasolina 97,1647.69,1633,1672,35
-2026-11-19,Del Biobío,Concepción,Diésel,1479.92,1452,1623,37
+2026-11-19,Del Biobío,Concepción,Diésel,1476.11,1452,1595,37
 2026-11-19,Del Biobío,Chiguayante,Gasolina 93,1578,1566,1581,5
 2026-11-19,Del Biobío,Chiguayante,Gasolina 95,1609.8,1598,1613,5
 2026-11-19,Del Biobío,Chiguayante,Gasolina 97,1650.6,1639,1654,5
 2026-11-19,Del Biobío,Chiguayante,Diésel,1479,1467,1482,5
 2026-11-19,Del Biobío,Chiguayante,Kerosene,1368.25,1368,1369,4
-2026-11-19,Del Biobío,San Pedro de la Paz,Gasolina 93,1577.4,1570,1581,10
+2026-11-19,Del Biobío,San Pedro de la Paz,Gasolina 93,1577.3,1570,1581,10
 2026-11-19,Del Biobío,San Pedro de la Paz,Gasolina 97,1648.9,1641,1654,10
-2026-11-19,Del Biobío,San Pedro de la Paz,Diésel,1479.2,1473,1484,10
-2026-11-19,Del Biobío,San Pedro de la Paz,Kerosene,1371.5,1370,1375,6
+2026-11-19,Del Biobío,San Pedro de la Paz,Diésel,1479.1,1473,1484,10
+2026-11-19,Del Biobío,San Pedro de la Paz,Kerosene,1371.33,1370,1374,6
 2026-11-19,Del Biobío,San Pedro de la Paz,Gasolina 95,1616.7,1609,1621,10
 2026-11-19,Del Biobío,Concepción,GLP,690,690,690,1
 2026-11-19,Del Biobío,Penco,Gasolina 93,1593.17,1585,1626,6
 2026-11-19,Del Biobío,Penco,Gasolina 97,1657.5,1648,1689,6
 2026-11-19,Del Biobío,Penco,Diésel,1503.5,1476,1624,6
 2026-11-19,Del Biobío,Penco,Gasolina 95,1624.5,1615,1658,6
-2026-11-19,Del Biobío,Coronel,Gasolina 93,1581.89,1570,1615,9
+2026-11-19,Del Biobío,Coronel,Gasolina 93,1581.78,1570,1615,9
 2026-11-19,Del Biobío,Coronel,Gasolina 97,1655.56,1642,1687,9
-2026-11-19,Del Biobío,Coronel,Diésel,1506.44,1479,1621,9
-2026-11-19,Del Biobío,Coronel,Kerosene,1356,1307,1375,7
+2026-11-19,Del Biobío,Coronel,Diésel,1506.33,1479,1621,9
+2026-11-19,Del Biobío,Coronel,Kerosene,1355.86,1307,1374,7
 2026-11-19,Del Biobío,Coronel,Gasolina 95,1622.78,1610,1655,9
 2026-11-19,Del Biobío,Florida,Gasolina 93,1586,1586,1586,1
 2026-11-19,Del Biobío,Florida,Gasolina 97,1651,1651,1651,1
@@ -71020,9 +71020,9 @@ fecha,region,comuna,combustible,precio_promedio,precio_min,precio_max,n_registro
 2026-11-19,Del Biobío,Hualpén,Diésel,1473,1466,1476,4
 2026-11-19,Del Biobío,Hualpén,Kerosene,1350.33,1350,1351,3
 2026-11-19,Del Biobío,Hualpén,Gasolina 95,1604,1599,1607,4
-2026-11-19,Del Biobío,Talcahuano,Gasolina 93,1561.56,1542,1587,18
+2026-11-19,Del Biobío,Talcahuano,Gasolina 93,1561.61,1542,1587,18
 2026-11-19,Del Biobío,Talcahuano,Gasolina 97,1643.13,1628,1652,16
-2026-11-19,Del Biobío,Talcahuano,Diésel,1468.17,1452,1483,18
+2026-11-19,Del Biobío,Talcahuano,Diésel,1468.22,1452,1483,18
 2026-11-19,Del Biobío,Talcahuano,Kerosene,1339.89,1325,1370,9
 2026-11-19,Del Biobío,Talcahuano,Gasolina 95,1602.61,1587,1619,18
 2026-11-19,Del Biobío,Tomé,Gasolina 93,1587,1587,1587,4
@@ -71062,11 +71062,11 @@ fecha,region,comuna,combustible,precio_promedio,precio_min,precio_max,n_registro
 2026-11-19,Del Biobío,Tirúa,Gasolina 97,1665,1665,1665,2
 2026-11-19,Del Biobío,Tirúa,Diésel,1503,1503,1503,2
 2026-11-19,Del Biobío,Tirúa,Gasolina 95,1636,1636,1636,2
-2026-11-19,Del Biobío,Los Ángeles,Gasolina 93,1561.19,1535,1596,32
-2026-11-19,Del Biobío,Los Ángeles,Gasolina 97,1625.14,1601,1673,29
-2026-11-19,Del Biobío,Los Ángeles,Diésel,1492.68,1452,1611,34
-2026-11-19,Del Biobío,Los Ángeles,Kerosene,1349.88,1277,1371,17
-2026-11-19,Del Biobío,Los Ángeles,Gasolina 95,1592.81,1566,1624,31
+2026-11-19,Del Biobío,Los Ángeles,Gasolina 93,1558.94,1535,1596,32
+2026-11-19,Del Biobío,Los Ángeles,Gasolina 97,1622.72,1601,1673,29
+2026-11-19,Del Biobío,Los Ángeles,Diésel,1484.32,1451,1611,34
+2026-11-19,Del Biobío,Los Ángeles,Kerosene,1349.24,1277,1367,17
+2026-11-19,Del Biobío,Los Ángeles,Gasolina 95,1590.48,1566,1624,31
 2026-11-19,Del Biobío,Cabrero,Gasolina 93,1588.43,1581,1621,7
 2026-11-19,Del Biobío,Cabrero,Gasolina 97,1673,1673,1673,3
 2026-11-19,Del Biobío,Cabrero,Diésel,1489.57,1467,1610,7
@@ -71092,7 +71092,7 @@ fecha,region,comuna,combustible,precio_promedio,precio_min,precio_max,n_registro
 2026-11-19,Del Biobío,Santa Bárbara,Diésel,1491,1491,1491,2
 2026-11-19,Del Biobío,Santa Bárbara,Kerosene,1348,1348,1348,2
 2026-11-19,Del Biobío,Santa Bárbara,Gasolina 95,1624,1624,1624,2
-2026-11-19,Del Biobío,Tucapel,Gasolina 93,1582.5,1582,1583,2
+2026-11-19,Del Biobío,Tucapel,Gasolina 93,1583,1583,1583,2
 2026-11-19,Del Biobío,Tucapel,Gasolina 97,1650,1650,1650,2
 2026-11-19,Del Biobío,Tucapel,Diésel,1477,1477,1477,2
 2026-11-19,Del Biobío,Tucapel,Gasolina 95,1617,1617,1617,2
@@ -71118,13 +71118,13 @@ fecha,region,comuna,combustible,precio_promedio,precio_min,precio_max,n_registro
 2026-11-19,Del Biobío,Quilleco,Gasolina 95,1598,1598,1598,1
 2026-11-19,Del Biobío,Quilleco,Diésel,1629,1629,1629,1
 2026-11-19,De la Araucanía,Temuco,GLP,713.5,685,742,2
-2026-11-19,De la Araucanía,Temuco,Gasolina 93,1601.88,1582,1637,42
+2026-11-19,De la Araucanía,Temuco,Gasolina 93,1601.86,1582,1637,42
 2026-11-19,De la Araucanía,Temuco,Gasolina 97,1665.75,1647,1705,40
-2026-11-19,De la Araucanía,Temuco,Diésel,1509.83,1481,1644,42
-2026-11-19,De la Araucanía,Temuco,Gasolina 95,1635.4,1617,1672,42
+2026-11-19,De la Araucanía,Temuco,Diésel,1509.81,1481,1644,42
+2026-11-19,De la Araucanía,Temuco,Gasolina 95,1635.43,1617,1672,42
 2026-11-19,De la Araucanía,Temuco,Kerosene,1389.42,1310,1403,26
-2026-11-19,De la Araucanía,Carahue,Gasolina 93,1591.25,1581,1611,4
-2026-11-19,De la Araucanía,Carahue,Gasolina 97,1666,1655,1686,4
+2026-11-19,De la Araucanía,Carahue,Gasolina 93,1591,1581,1611,4
+2026-11-19,De la Araucanía,Carahue,Gasolina 97,1666.25,1655,1686,4
 2026-11-19,De la Araucanía,Carahue,Diésel,1523.25,1493,1593,4
 2026-11-19,De la Araucanía,Carahue,Gasolina 95,1631.75,1622,1649,4
 2026-11-19,De la Araucanía,Cunco,Gasolina 93,1612.25,1610,1618,4
@@ -71169,20 +71169,20 @@ fecha,region,comuna,combustible,precio_promedio,precio_min,precio_max,n_registro
 2026-11-19,De la Araucanía,Pitrufquén,Diésel,1579,1508,1650,2
 2026-11-19,De la Araucanía,Pitrufquén,Kerosene,1387,1387,1387,1
 2026-11-19,De la Araucanía,Pitrufquén,Gasolina 95,1651,1633,1669,2
-2026-11-19,De la Araucanía,Pucón,Gasolina 93,1615.2,1615,1616,5
+2026-11-19,De la Araucanía,Pucón,Gasolina 93,1615,1615,1615,5
 2026-11-19,De la Araucanía,Pucón,Gasolina 97,1677,1677,1677,5
-2026-11-19,De la Araucanía,Pucón,Diésel,1514.2,1514,1515,5
-2026-11-19,De la Araucanía,Pucón,Kerosene,1405,1404,1406,3
+2026-11-19,De la Araucanía,Pucón,Diésel,1514,1514,1514,5
+2026-11-19,De la Araucanía,Pucón,Kerosene,1404.67,1404,1405,3
 2026-11-19,De la Araucanía,Pucón,Gasolina 95,1647,1647,1647,5
 2026-11-19,De la Araucanía,Vilcún,Gasolina 93,1605.5,1601,1610,2
 2026-11-19,De la Araucanía,Vilcún,Gasolina 97,1667.5,1663,1672,2
 2026-11-19,De la Araucanía,Vilcún,Diésel,1507,1502,1512,2
 2026-11-19,De la Araucanía,Vilcún,Gasolina 95,1637,1633,1641,2
-2026-11-19,De la Araucanía,Villarrica,Gasolina 93,1613.2,1597,1651,15
+2026-11-19,De la Araucanía,Villarrica,Gasolina 93,1613.07,1597,1651,15
 2026-11-19,De la Araucanía,Villarrica,Gasolina 97,1663.33,1644,1699,15
-2026-11-19,De la Araucanía,Villarrica,Diésel,1520.27,1497,1654,15
+2026-11-19,De la Araucanía,Villarrica,Diésel,1520.07,1497,1654,15
 2026-11-19,De la Araucanía,Villarrica,Gasolina 95,1638.53,1621,1675,15
-2026-11-19,De la Araucanía,Villarrica,Kerosene,1367.91,1036,1420,11
+2026-11-19,De la Araucanía,Villarrica,Kerosene,1367.73,1036,1420,11
 2026-11-19,De la Araucanía,Angol,Gasolina 93,1577.88,1565,1581,8
 2026-11-19,De la Araucanía,Angol,Gasolina 97,1661.86,1649,1664,7
 2026-11-19,De la Araucanía,Angol,Diésel,1469.88,1457,1473,8
@@ -71264,7 +71264,7 @@ fecha,region,comuna,combustible,precio_promedio,precio_min,precio_max,n_registro
 2026-11-19,De la Araucanía,Cholchol,Kerosene,1408,1408,1408,1
 2026-11-19,De la Araucanía,Renaico,Gasolina 97,1664,1664,1664,1
 2026-11-19,De los Lagos,Osorno,GLP,778,778,778,1
-2026-11-19,De los Lagos,Puerto Montt,Gasolina 93,1621.12,1601,1633,42
+2026-11-19,De los Lagos,Puerto Montt,Gasolina 93,1621.1,1601,1632,42
 2026-11-19,De los Lagos,Puerto Montt,Gasolina 97,1675.62,1657,1686,42
 2026-11-19,De los Lagos,Puerto Montt,Diésel,1531.9,1513,1632,42
 2026-11-19,De los Lagos,Puerto Montt,Kerosene,1413.84,1367,1421,25
@@ -71307,7 +71307,7 @@ fecha,region,comuna,combustible,precio_promedio,precio_min,precio_max,n_registro
 2026-11-19,De los Lagos,Castro,Diésel,1597,1546,1687,8
 2026-11-19,De los Lagos,Castro,Kerosene,1438,1432,1449,6
 2026-11-19,De los Lagos,Castro,Gasolina 95,1690.25,1677,1715,8
-2026-11-19,De los Lagos,Ancud,Gasolina 93,1638.5,1638,1639,4
+2026-11-19,De los Lagos,Ancud,Gasolina 93,1638.25,1638,1639,4
 2026-11-19,De los Lagos,Ancud,Gasolina 97,1693,1693,1693,4
 2026-11-19,De los Lagos,Ancud,Diésel,1526,1526,1526,4
 2026-11-19,De los Lagos,Ancud,Kerosene,1441,1441,1441,3
@@ -71322,7 +71322,7 @@ fecha,region,comuna,combustible,precio_promedio,precio_min,precio_max,n_registro
 2026-11-19,De los Lagos,Dalcahue,Diésel,1561,1552,1578,3
 2026-11-19,De los Lagos,Dalcahue,Kerosene,1446,1446,1446,1
 2026-11-19,De los Lagos,Dalcahue,Gasolina 95,1693.67,1679,1722,3
-2026-11-19,De los Lagos,Quellón,Gasolina 93,1632,1621,1636,5
+2026-11-19,De los Lagos,Quellón,Gasolina 93,1631.8,1621,1636,5
 2026-11-19,De los Lagos,Quellón,Gasolina 97,1692.4,1681,1696,5
 2026-11-19,De los Lagos,Quellón,Diésel,1545.8,1535,1550,5
 2026-11-19,De los Lagos,Quellón,Kerosene,1470,1465,1479,3
@@ -71382,11 +71382,11 @@ fecha,region,comuna,combustible,precio_promedio,precio_min,precio_max,n_registro
 2026-11-19,De los Lagos,Puyehue,Gasolina 97,1686.5,1683,1690,2
 2026-11-19,De los Lagos,Puyehue,Diésel,1584,1534,1634,2
 2026-11-19,De los Lagos,Puyehue,Kerosene,1405,1405,1405,1
-2026-11-19,Aysén del Gral. Carlos Ibáñez del Campo,Coihaique,Gasolina 93,1651.71,1651,1653,7
-2026-11-19,Aysén del Gral. Carlos Ibáñez del Campo,Coihaique,Gasolina 97,1723.57,1720,1727,7
+2026-11-19,Aysén del Gral. Carlos Ibáñez del Campo,Coihaique,Gasolina 93,1651.57,1651,1652,7
+2026-11-19,Aysén del Gral. Carlos Ibáñez del Campo,Coihaique,Gasolina 97,1723.43,1720,1726,7
 2026-11-19,Aysén del Gral. Carlos Ibáñez del Campo,Coihaique,Diésel,1596.43,1596,1597,7
 2026-11-19,Aysén del Gral. Carlos Ibáñez del Campo,Coihaique,Kerosene,1473.5,1462,1485,6
-2026-11-19,Aysén del Gral. Carlos Ibáñez del Campo,Coihaique,Gasolina 95,1691.71,1691,1693,7
+2026-11-19,Aysén del Gral. Carlos Ibáñez del Campo,Coihaique,Gasolina 95,1691.57,1691,1692,7
 2026-11-19,Aysén del Gral. Carlos Ibáñez del Campo,Cisnes,Gasolina 93,1694.67,1677,1730,3
 2026-11-19,Aysén del Gral. Carlos Ibáñez del Campo,Cisnes,Gasolina 97,1745.67,1728,1781,3
 2026-11-19,Aysén del Gral. Carlos Ibáñez del Campo,Cisnes,Diésel,1670.75,1665,1684,4
@@ -71425,10 +71425,10 @@ fecha,region,comuna,combustible,precio_promedio,precio_min,precio_max,n_registro
 2026-11-19,Magallanes y de la Antártica Chilena,Porvenir,Gasolina 97,1879,1879,1879,1
 2026-11-19,Magallanes y de la Antártica Chilena,Porvenir,Diésel,1697,1697,1697,1
 2026-11-19,Magallanes y de la Antártica Chilena,Porvenir,Gasolina 95,1836,1836,1836,1
-2026-11-19,Magallanes y de la Antártica Chilena,Punta Arenas,Gasolina 93,1636.56,1619,1670,16
-2026-11-19,Magallanes y de la Antártica Chilena,Punta Arenas,Gasolina 97,1717.63,1701,1750,16
+2026-11-19,Magallanes y de la Antártica Chilena,Punta Arenas,Gasolina 93,1636.5,1619,1670,16
+2026-11-19,Magallanes y de la Antártica Chilena,Punta Arenas,Gasolina 97,1717.56,1701,1750,16
 2026-11-19,Magallanes y de la Antártica Chilena,Punta Arenas,Diésel,1620.13,1589,1745,16
-2026-11-19,Magallanes y de la Antártica Chilena,Punta Arenas,Gasolina 95,1676.31,1659,1709,16
+2026-11-19,Magallanes y de la Antártica Chilena,Punta Arenas,Gasolina 95,1676.25,1659,1709,16
 2026-11-19,Magallanes y de la Antártica Chilena,Primavera,Gasolina 93,1831,1812,1865,3
 2026-11-19,Magallanes y de la Antártica Chilena,Primavera,Diésel,1786.67,1704,1851,3
 2026-11-19,Magallanes y de la Antártica Chilena,Natales,Gasolina 93,1669.25,1669,1670,4
@@ -71638,21 +71638,21 @@ fecha,region,comuna,combustible,precio_promedio,precio_min,precio_max,n_registro
 2026-11-19,Metropolitana de Santiago,Buin,Diésel,1512.4,1484,1645,10
 2026-11-19,Metropolitana de Santiago,Buin,Kerosene,1390.17,1382,1399,6
 2026-11-19,Metropolitana de Santiago,Buin,Gasolina 95,1641.3,1625,1681,10
-2026-11-19,Metropolitana de Santiago,Calera de Tango,Gasolina 93,1580.6,1568,1607,5
-2026-11-19,Metropolitana de Santiago,Calera de Tango,Gasolina 97,1648.6,1636,1675,5
-2026-11-19,Metropolitana de Santiago,Calera de Tango,Diésel,1520.8,1467,1609,5
-2026-11-19,Metropolitana de Santiago,Calera de Tango,Kerosene,1391.25,1389,1398,4
-2026-11-19,Metropolitana de Santiago,Calera de Tango,Gasolina 95,1615.6,1603,1642,5
+2026-11-19,Metropolitana de Santiago,Calera de Tango,Gasolina 93,1565,1553,1568,5
+2026-11-19,Metropolitana de Santiago,Calera de Tango,Gasolina 97,1633,1621,1636,5
+2026-11-19,Metropolitana de Santiago,Calera de Tango,Diésel,1464,1452,1467,5
+2026-11-19,Metropolitana de Santiago,Calera de Tango,Kerosene,1389,1389,1389,4
+2026-11-19,Metropolitana de Santiago,Calera de Tango,Gasolina 95,1600,1588,1603,5
 2026-11-19,Metropolitana de Santiago,Paine,Kerosene,1394.2,1390,1400,5
 2026-11-19,Metropolitana de Santiago,Paine,Gasolina 93,1590.67,1576,1594,6
 2026-11-19,Metropolitana de Santiago,Paine,Gasolina 95,1639.83,1625,1643,6
 2026-11-19,Metropolitana de Santiago,Paine,Gasolina 97,1689.8,1674,1696,5
 2026-11-19,Metropolitana de Santiago,Paine,Diésel,1501.17,1484,1505,6
-2026-11-19,Metropolitana de Santiago,Melipilla,Gasolina 93,1590.27,1588,1613,11
-2026-11-19,Metropolitana de Santiago,Melipilla,Gasolina 97,1686.3,1683,1708,10
-2026-11-19,Metropolitana de Santiago,Melipilla,Diésel,1501.27,1489,1620,11
+2026-11-19,Metropolitana de Santiago,Melipilla,Gasolina 93,1586.73,1574,1588,11
+2026-11-19,Metropolitana de Santiago,Melipilla,Gasolina 97,1682.4,1669,1685,10
+2026-11-19,Metropolitana de Santiago,Melipilla,Diésel,1488.55,1480,1490,11
 2026-11-19,Metropolitana de Santiago,Melipilla,Kerosene,1335.5,1075,1573,8
-2026-11-19,Metropolitana de Santiago,Melipilla,Gasolina 95,1641.55,1639,1658,11
+2026-11-19,Metropolitana de Santiago,Melipilla,Gasolina 95,1638,1619,1640,11
 2026-11-19,Metropolitana de Santiago,Curacaví,Gasolina 93,1575,1570,1577,5
 2026-11-19,Metropolitana de Santiago,Curacaví,Gasolina 97,1662,1657,1664,5
 2026-11-19,Metropolitana de Santiago,Curacaví,Diésel,1494,1489,1496,5
@@ -71716,9 +71716,9 @@ fecha,region,comuna,combustible,precio_promedio,precio_min,precio_max,n_registro
 2026-11-19,De los Ríos,Valdivia,GLP,861,861,861,1
 2026-11-19,De los Ríos,Valdivia,Gasolina 93,1625.83,1610,1666,18
 2026-11-19,De los Ríos,Valdivia,Gasolina 97,1687.72,1670,1728,18
-2026-11-19,De los Ríos,Valdivia,Diésel,1539.65,1513,1671,20
+2026-11-19,De los Ríos,Valdivia,Diésel,1532.55,1513,1671,20
 2026-11-19,De los Ríos,Valdivia,Kerosene,1404.25,1381,1423,12
-2026-11-19,De los Ríos,Valdivia,Gasolina 95,1662.37,1646,1700,19
+2026-11-19,De los Ríos,Valdivia,Gasolina 95,1660.47,1646,1700,19
 2026-11-19,De los Ríos,Lanco,Gasolina 93,1618.67,1608,1638,3
 2026-11-19,De los Ríos,Lanco,Gasolina 97,1698,1694,1702,2
 2026-11-19,De los Ríos,Lanco,Diésel,1492,1490,1496,3
@@ -71777,10 +71777,10 @@ fecha,region,comuna,combustible,precio_promedio,precio_min,precio_max,n_registro
 2026-11-19,Arica y Parinacota,Arica,Gasolina 95,1679.94,1658,1688,17
 2026-11-19,Arica y Parinacota,Arica,Kerosene,1542,1542,1542,1
 2026-11-19,Ñuble,Chillán,GLP,800,800,800,1
-2026-11-19,Ñuble,Chillán,Gasolina 93,1560.14,1508,1598,29
+2026-11-19,Ñuble,Chillán,Gasolina 93,1560.1,1508,1598,29
 2026-11-19,Ñuble,Chillán,Gasolina 97,1631.27,1618,1637,22
-2026-11-19,Ñuble,Chillán,Diésel,1471,1449,1605,29
-2026-11-19,Ñuble,Chillán,Kerosene,1349.5,1060,1380,20
+2026-11-19,Ñuble,Chillán,Diésel,1470.97,1449,1605,29
+2026-11-19,Ñuble,Chillán,Kerosene,1349.45,1060,1380,20
 2026-11-19,Ñuble,Chillán,Gasolina 95,1597.9,1544,1634,29
 2026-11-19,Ñuble,Chillán Viejo,Gasolina 93,1584.33,1565,1597,6
 2026-11-19,Ñuble,Chillán Viejo,Gasolina 97,1647.2,1637,1654,5
@@ -71831,7 +71831,7 @@ fecha,region,comuna,combustible,precio_promedio,precio_min,precio_max,n_registro
 2026-11-19,Ñuble,San Carlos,Kerosene,1357,1340,1369,3
 2026-11-19,Ñuble,Yungay,Gasolina 93,1588.25,1569,1646,4
 2026-11-19,Ñuble,Yungay,Gasolina 97,1644,1644,1644,2
-2026-11-19,Ñuble,Yungay,Diésel,1529.25,1485,1658,4
+2026-11-19,Ñuble,Yungay,Diésel,1529.5,1485,1658,4
 2026-11-19,Ñuble,Yungay,Kerosene,1381,1381,1381,1
 2026-11-19,Ñuble,Yungay,Gasolina 95,1619.25,1601,1674,4
 2026-11-19,Ñuble,Chillán Viejo,Kerosene,1345,1314,1376,2
