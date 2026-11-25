@@ -718,9 +718,9 @@ fecha,estacion_id,marca,region,comuna,direccion,latitud,longitud,combustible_cor
 2026-11-25,218,Sin Bandera,Coquimbo,Coquimbo,"Sitio 3, Pan de Azúcar 0",-30.006506,-71.257812  ,DI,Petroleo Diesel,1536.000,$/L,AutoServicio,2026-11-22 10:12:47
 2026-11-25,219,VIVA COMBUSTIBLES,Coquimbo,Coquimbo,25 de mayo esq panamericana norte 1,-29.966739338203492,-71.32401466369629,93,Gasolina 93,1634.000,$/L,AutoServicio,2026-11-19 09:42:13
 2026-11-25,219,VIVA COMBUSTIBLES,Coquimbo,Coquimbo,25 de mayo esq panamericana norte 1,-29.966739338203492,-71.32401466369629,DI,Petroleo Diesel,1534.000,$/L,AutoServicio,2026-11-19 09:42:14
-2026-11-25,239,Sin Bandera,Coquimbo,Canela,Ruta D-71 km 17.5 Canela Baja 000,-31.39234811626504,-71.44264340400696,93,Gasolina 93,1670.000,$/L,AutoServicio,2026-10-23 13:06:30
-2026-11-25,239,Sin Bandera,Coquimbo,Canela,Ruta D-71 km 17.5 Canela Baja 000,-31.39234811626504,-71.44264340400696,DI,Petroleo Diesel,1643.000,$/L,AutoServicio,2026-10-23 13:06:30
-2026-11-25,239,Sin Bandera,Coquimbo,Canela,Ruta D-71 km 17.5 Canela Baja 000,-31.39234811626504,-71.44264340400696,95,Gasolina 95,1698.000,$/L,AutoServicio,2026-10-23 13:06:30
+2026-11-25,239,Sin Bandera,Coquimbo,Canela,Ruta D-71 km 17.5 Canela Baja 000,-31.39234811626504,-71.44264340400696,93,Gasolina 93,1683.000,$/L,AutoServicio,2026-11-25 06:27:37
+2026-11-25,239,Sin Bandera,Coquimbo,Canela,Ruta D-71 km 17.5 Canela Baja 000,-31.39234811626504,-71.44264340400696,DI,Petroleo Diesel,1549.000,$/L,AutoServicio,2026-11-25 06:27:38
+2026-11-25,239,Sin Bandera,Coquimbo,Canela,Ruta D-71 km 17.5 Canela Baja 000,-31.39234811626504,-71.44264340400696,95,Gasolina 95,1708.000,$/L,AutoServicio,2026-11-25 06:27:38
 2026-11-25,260,SHELL,Coquimbo,Ovalle,PROLONGACION BENAVENTE 1735,-30.59505567,-71.17517976,93,Gasolina 93,1634.000,$/L,AutoServicio,2026-11-19 10:06:17
 2026-11-25,260,SHELL,Coquimbo,Ovalle,PROLONGACION BENAVENTE 1735,-30.59505567,-71.17517976,97,Gasolina 97,1694.000,$/L,AutoServicio,2026-11-19 10:06:17
 2026-11-25,260,SHELL,Coquimbo,Ovalle,PROLONGACION BENAVENTE 1735,-30.59505567,-71.17517976,DI,Petroleo Diesel,1537.000,$/L,AutoServicio,2026-11-19 10:06:17
@@ -1923,8 +1923,8 @@ fecha,estacion_id,marca,region,comuna,direccion,latitud,longitud,combustible_cor
 2026-11-25,512,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,MILLï¿½N 1023,-34.173393795284845,-70.75066566467285,95,Gasolina 95,1642.000,$/L,AutoServicio,2026-11-19 08:15:03
 2026-11-25,513,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,CARRETERA EL COBRE 512,-34.18271351245914,-70.72727411985397,93,Gasolina 93,1614.000,$/L,AutoServicio,2026-11-18 23:56:57
 2026-11-25,513,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,CARRETERA EL COBRE 512,-34.18271351245914,-70.72727411985397,97,Gasolina 97,1674.000,$/L,AutoServicio,2026-11-18 23:56:57
-2026-11-25,513,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,CARRETERA EL COBRE 512,-34.18271351245914,-70.72727411985397,DI,Petroleo Diesel,1528.000,$/L,AutoServicio,2026-11-18 23:56:57
-2026-11-25,513,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,CARRETERA EL COBRE 512,-34.18271351245914,-70.72727411985397,KE,Kerosene,1409.000,$/L,AutoServicio,2026-11-18 09:16:07
+2026-11-25,513,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,CARRETERA EL COBRE 512,-34.18271351245914,-70.72727411985397,DI,Petroleo Diesel,1529.000,$/L,AutoServicio,2026-11-25 18:54:19
+2026-11-25,513,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,CARRETERA EL COBRE 512,-34.18271351245914,-70.72727411985397,KE,Kerosene,1462.000,$/L,AutoServicio,2026-11-25 18:54:19
 2026-11-25,513,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,CARRETERA EL COBRE 512,-34.18271351245914,-70.72727411985397,95,Gasolina 95,1644.000,$/L,AutoServicio,2026-11-18 23:56:57
 2026-11-25,515,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,ALAMEDA 790,-34.165200469988136,-70.74508130550385,93,Gasolina 93,1611.000,$/L,AutoServicio,2026-11-19 09:34:48
 2026-11-25,515,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,ALAMEDA 790,-34.165200469988136,-70.74508130550385,97,Gasolina 97,1670.000,$/L,AutoServicio,2026-11-19 09:34:48
@@ -1952,13 +1952,13 @@ fecha,estacion_id,marca,region,comuna,direccion,latitud,longitud,combustible_cor
 2026-11-25,517,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,Avda. Miguel Ramirez 199,-34.173318345755135,-70.71614027023315,95,Gasolina 95,1643.000,$/L,AutoServicio,2026-11-20 12:18:32
 2026-11-25,518,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,CACHAPOAL 1420,-34.18897489659359,-70.75132548809052,93,Gasolina 93,1604.000,$/L,AutoServicio,2026-11-19 09:32:04
 2026-11-25,518,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,CACHAPOAL 1420,-34.18897489659359,-70.75132548809052,97,Gasolina 97,1671.000,$/L,AutoServicio,2026-11-19 09:32:04
-2026-11-25,518,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,CACHAPOAL 1420,-34.18897489659359,-70.75132548809052,DI,Petroleo Diesel,1506.000,$/L,AutoServicio,2026-11-19 09:32:05
-2026-11-25,518,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,CACHAPOAL 1420,-34.18897489659359,-70.75132548809052,KE,Kerosene,1408.000,$/L,AutoServicio,2026-11-19 09:32:04
+2026-11-25,518,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,CACHAPOAL 1420,-34.18897489659359,-70.75132548809052,DI,Petroleo Diesel,1507.000,$/L,AutoServicio,2026-11-25 13:07:20
+2026-11-25,518,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,CACHAPOAL 1420,-34.18897489659359,-70.75132548809052,KE,Kerosene,1461.000,$/L,AutoServicio,2026-11-25 13:07:20
 2026-11-25,518,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,CACHAPOAL 1420,-34.18897489659359,-70.75132548809052,95,Gasolina 95,1636.000,$/L,AutoServicio,2026-11-19 09:32:04
 2026-11-25,518,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,CACHAPOAL 1420,-34.18897489659359,-70.75132548809052,A93,Gasolina 93,1589.000,$/L,Asistido,2026-11-19 09:32:04
 2026-11-25,518,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,CACHAPOAL 1420,-34.18897489659359,-70.75132548809052,A95,Gasolina 95,1621.000,$/L,Asistido,2026-11-19 09:32:04
 2026-11-25,518,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,CACHAPOAL 1420,-34.18897489659359,-70.75132548809052,A97,Gasolina 97,1656.000,$/L,Asistido,2026-11-19 09:32:04
-2026-11-25,518,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,CACHAPOAL 1420,-34.18897489659359,-70.75132548809052,ADI,Petroleo Diesel,1491.000,$/L,Asistido,2026-11-19 09:32:05
+2026-11-25,518,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,CACHAPOAL 1420,-34.18897489659359,-70.75132548809052,ADI,Petroleo Diesel,1492.000,$/L,Asistido,2026-11-25 13:07:20
 2026-11-25,519,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,camino a Doñihue     Km. 2,-34.16832521224155,-70.77459633350372,93,Gasolina 93,1611.000,$/L,AutoServicio,2026-11-19 11:32:50
 2026-11-25,519,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,camino a Doñihue     Km. 2,-34.16832521224155,-70.77459633350372,97,Gasolina 97,1670.000,$/L,AutoServicio,2026-11-19 11:32:50
 2026-11-25,519,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,camino a Doñihue     Km. 2,-34.16832521224155,-70.77459633350372,DI,Petroleo Diesel,1520.000,$/L,AutoServicio,2026-11-19 11:32:50
@@ -1966,13 +1966,13 @@ fecha,estacion_id,marca,region,comuna,direccion,latitud,longitud,combustible_cor
 2026-11-25,519,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,camino a Doñihue     Km. 2,-34.16832521224155,-70.77459633350372,95,Gasolina 95,1640.000,$/L,AutoServicio,2026-11-19 11:32:50
 2026-11-25,520,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,RECREO 238,-34.16327407977344,-70.73925018310547,93,Gasolina 93,1611.000,$/L,AutoServicio,2026-11-18 16:16:12
 2026-11-25,520,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,RECREO 238,-34.16327407977344,-70.73925018310547,97,Gasolina 97,1669.000,$/L,AutoServicio,2026-11-18 16:16:12
-2026-11-25,520,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,RECREO 238,-34.16327407977344,-70.73925018310547,DI,Petroleo Diesel,1520.000,$/L,AutoServicio,2026-11-18 16:16:12
-2026-11-25,520,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,RECREO 238,-34.16327407977344,-70.73925018310547,KE,Kerosene,1407.000,$/L,AutoServicio,2026-11-18 16:16:12
+2026-11-25,520,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,RECREO 238,-34.16327407977344,-70.73925018310547,DI,Petroleo Diesel,1521.000,$/L,AutoServicio,2026-11-25 17:28:48
+2026-11-25,520,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,RECREO 238,-34.16327407977344,-70.73925018310547,KE,Kerosene,1460.000,$/L,AutoServicio,2026-11-25 17:28:48
 2026-11-25,520,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,RECREO 238,-34.16327407977344,-70.73925018310547,95,Gasolina 95,1642.000,$/L,AutoServicio,2026-11-23 10:16:55
 2026-11-25,520,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,RECREO 238,-34.16327407977344,-70.73925018310547,A93,Gasolina 93,1596.000,$/L,Asistido,2026-11-18 16:16:12
 2026-11-25,520,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,RECREO 238,-34.16327407977344,-70.73925018310547,A95,Gasolina 95,1627.000,$/L,Asistido,2026-11-23 10:16:55
 2026-11-25,520,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,RECREO 238,-34.16327407977344,-70.73925018310547,A97,Gasolina 97,1654.000,$/L,Asistido,2026-11-18 16:16:12
-2026-11-25,520,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,RECREO 238,-34.16327407977344,-70.73925018310547,ADI,Petroleo Diesel,1505.000,$/L,Asistido,2026-11-18 16:16:12
+2026-11-25,520,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,RECREO 238,-34.16327407977344,-70.73925018310547,ADI,Petroleo Diesel,1506.000,$/L,Asistido,2026-11-25 17:28:48
 2026-11-25,523,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,Alameda Bernardo O'Higgins 1915,-34.159876,-70.760273,93,Gasolina 93,1611.000,$/L,AutoServicio,2026-11-19 09:00:00
 2026-11-25,523,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,Alameda Bernardo O'Higgins 1915,-34.159876,-70.760273,97,Gasolina 97,1670.000,$/L,AutoServicio,2026-11-19 09:00:00
 2026-11-25,523,COPEC,Del Libertador Gral. Bernardo O’Higgins,Rancagua,Alameda Bernardo O'Higgins 1915,-34.159876,-70.760273,DI,Petroleo Diesel,1520.000,$/L,AutoServicio,2026-11-19 09:00:00
@@ -2170,9 +2170,9 @@ fecha,estacion_id,marca,region,comuna,direccion,latitud,longitud,combustible_cor
 2026-11-25,552,Sin Bandera,Del Libertador Gral. Bernardo O’Higgins,Graneros,Av. Santa Lucía 364,-34.06729848908997,-70.72811901569366,DI,Petroleo Diesel,1492.000,$/L,AutoServicio,2026-11-19 14:59:25
 2026-11-25,552,Sin Bandera,Del Libertador Gral. Bernardo O’Higgins,Graneros,Av. Santa Lucía 364,-34.06729848908997,-70.72811901569366,KE,Kerosene,1322.000,$/L,AutoServicio,2026-10-22 14:46:17
 2026-11-25,552,Sin Bandera,Del Libertador Gral. Bernardo O’Higgins,Graneros,Av. Santa Lucía 364,-34.06729848908997,-70.72811901569366,95,Gasolina 95,1621.000,$/L,AutoServicio,2026-11-19 14:59:25
-2026-11-25,571,Sin Bandera,Del Libertador Gral. Bernardo O’Higgins,Olivar,Camino La Vara Gruesa Ruta H-40 0,-34.230334499191336,-70.85994958877563,93,Gasolina 93,1646.000,$/L,AutoServicio,2026-11-15 18:11:35
-2026-11-25,571,Sin Bandera,Del Libertador Gral. Bernardo O’Higgins,Olivar,Camino La Vara Gruesa Ruta H-40 0,-34.230334499191336,-70.85994958877563,DI,Petroleo Diesel,1664.000,$/L,AutoServicio,2026-11-15 18:11:35
-2026-11-25,571,Sin Bandera,Del Libertador Gral. Bernardo O’Higgins,Olivar,Camino La Vara Gruesa Ruta H-40 0,-34.230334499191336,-70.85994958877563,95,Gasolina 95,1675.000,$/L,AutoServicio,2026-11-15 18:11:35
+2026-11-25,571,Sin Bandera,Del Libertador Gral. Bernardo O’Higgins,Olivar,Camino La Vara Gruesa Ruta H-40 0,-34.230334499191336,-70.85994958877563,93,Gasolina 93,1606.000,$/L,AutoServicio,2026-11-25 19:08:31
+2026-11-25,571,Sin Bandera,Del Libertador Gral. Bernardo O’Higgins,Olivar,Camino La Vara Gruesa Ruta H-40 0,-34.230334499191336,-70.85994958877563,DI,Petroleo Diesel,1524.000,$/L,AutoServicio,2026-11-25 19:08:31
+2026-11-25,571,Sin Bandera,Del Libertador Gral. Bernardo O’Higgins,Olivar,Camino La Vara Gruesa Ruta H-40 0,-34.230334499191336,-70.85994958877563,95,Gasolina 95,1635.000,$/L,AutoServicio,2026-11-25 19:08:31
 2026-11-25,572,Sin Bandera,Del Libertador Gral. Bernardo O’Higgins,Olivar,"Ruta TravesÃ­a Ex 5 Sur, NÂ°480 Lote 1B 0",-34.206201,-70.765732,93,Gasolina 93,1613.000,$/L,AutoServicio,2026-11-19 09:28:59
 2026-11-25,572,Sin Bandera,Del Libertador Gral. Bernardo O’Higgins,Olivar,"Ruta TravesÃ­a Ex 5 Sur, NÂ°480 Lote 1B 0",-34.206201,-70.765732,97,Gasolina 97,1677.000,$/L,AutoServicio,2026-11-19 09:28:59
 2026-11-25,572,Sin Bandera,Del Libertador Gral. Bernardo O’Higgins,Olivar,"Ruta TravesÃ­a Ex 5 Sur, NÂ°480 Lote 1B 0",-34.206201,-70.765732,DI,Petroleo Diesel,1525.000,$/L,AutoServicio,2026-11-19 09:28:59
@@ -3310,11 +3310,11 @@ fecha,estacion_id,marca,region,comuna,direccion,latitud,longitud,combustible_cor
 2026-11-25,919,COPEC,Del Biobío,Lota,"BANNEN, ESQ. SERRANO 0",-37.08854097149937,-73.15784096717834,DI,Petroleo Diesel,1472.000,$/L,AutoServicio,2026-11-19 08:56:55
 2026-11-25,919,COPEC,Del Biobío,Lota,"BANNEN, ESQ. SERRANO 0",-37.08854097149937,-73.15784096717834,KE,Kerosene,1402.000,$/L,AutoServicio,2026-11-19 08:56:55
 2026-11-25,919,COPEC,Del Biobío,Lota,"BANNEN, ESQ. SERRANO 0",-37.08854097149937,-73.15784096717834,95,Gasolina 95,1609.000,$/L,AutoServicio,2026-11-19 08:56:55
-2026-11-25,926,COPEC,Del Biobío,Penco,CALLE PENCO 25,-36.73714520651616,-72.9953071475029,93,Gasolina 93,1586.000,$/L,AutoServicio,2026-11-20 00:08:43
-2026-11-25,926,COPEC,Del Biobío,Penco,CALLE PENCO 25,-36.73714520651616,-72.9953071475029,97,Gasolina 97,1650.000,$/L,AutoServicio,2026-11-20 00:08:43
-2026-11-25,926,COPEC,Del Biobío,Penco,CALLE PENCO 25,-36.73714520651616,-72.9953071475029,DI,Petroleo Diesel,1477.000,$/L,AutoServicio,2026-11-20 00:08:43
+2026-11-25,926,COPEC,Del Biobío,Penco,CALLE PENCO 25,-36.73714520651616,-72.9953071475029,93,Gasolina 93,1585.000,$/L,AutoServicio,2026-11-25 14:49:24
+2026-11-25,926,COPEC,Del Biobío,Penco,CALLE PENCO 25,-36.73714520651616,-72.9953071475029,97,Gasolina 97,1648.000,$/L,AutoServicio,2026-11-25 14:49:24
+2026-11-25,926,COPEC,Del Biobío,Penco,CALLE PENCO 25,-36.73714520651616,-72.9953071475029,DI,Petroleo Diesel,1476.000,$/L,AutoServicio,2026-11-25 14:49:25
 2026-11-25,926,COPEC,Del Biobío,Penco,CALLE PENCO 25,-36.73714520651616,-72.9953071475029,KE,Kerosene,1339.000,$/L,AutoServicio,2026-11-19 00:02:31
-2026-11-25,926,COPEC,Del Biobío,Penco,CALLE PENCO 25,-36.73714520651616,-72.9953071475029,95,Gasolina 95,1616.000,$/L,AutoServicio,2026-11-20 00:08:43
+2026-11-25,926,COPEC,Del Biobío,Penco,CALLE PENCO 25,-36.73714520651616,-72.9953071475029,95,Gasolina 95,1615.000,$/L,AutoServicio,2026-11-25 14:49:24
 2026-11-25,927,COPEC,Del Biobío,Penco,CAMILO HENRIQUEZ 8,-36.712669360135905,-72.97658264636993,93,Gasolina 93,1585.000,$/L,AutoServicio,2026-11-19 09:56:39
 2026-11-25,927,COPEC,Del Biobío,Penco,CAMILO HENRIQUEZ 8,-36.712669360135905,-72.97658264636993,97,Gasolina 97,1649.000,$/L,AutoServicio,2026-11-19 09:56:39
 2026-11-25,927,COPEC,Del Biobío,Penco,CAMILO HENRIQUEZ 8,-36.712669360135905,-72.97658264636993,DI,Petroleo Diesel,1476.000,$/L,AutoServicio,2026-11-19 09:56:39
@@ -3694,7 +3694,7 @@ fecha,estacion_id,marca,region,comuna,direccion,latitud,longitud,combustible_cor
 2026-11-25,1011,ARAMCO,Del Biobío,Los Ángeles,OHiggins 100,-37.47322751686033,-72.35093593597412,ADI,Petroleo Diesel,1451.000,$/L,Asistido,2026-11-19 20:05:19
 2026-11-25,1044,ARAMCO,Del Biobío,Hualqui,Av. Linares 1027,-37.241972497401235,-71.95057499950795,93,Gasolina 93,1582.000,$/L,AutoServicio,2026-11-20 13:46:19
 2026-11-25,1044,ARAMCO,Del Biobío,Hualqui,Av. Linares 1027,-37.241972497401235,-71.95057499950795,97,Gasolina 97,1650.000,$/L,AutoServicio,2026-11-20 13:46:19
-2026-11-25,1044,ARAMCO,Del Biobío,Hualqui,Av. Linares 1027,-37.241972497401235,-71.95057499950795,DI,Petroleo Diesel,1477.000,$/L,AutoServicio,2026-11-20 13:46:19
+2026-11-25,1044,ARAMCO,Del Biobío,Hualqui,Av. Linares 1027,-37.241972497401235,-71.95057499950795,DI,Petroleo Diesel,1478.000,$/L,AutoServicio,2026-11-25 17:55:14
 2026-11-25,1044,ARAMCO,Del Biobío,Hualqui,Av. Linares 1027,-37.241972497401235,-71.95057499950795,95,Gasolina 95,1617.000,$/L,AutoServicio,2026-11-20 13:46:19
 2026-11-25,936,SHELL,Del Biobío,San Pedro de la Paz,AVDA. MICHIMALONCO 1130,-36.843326,-73.094604,93,Gasolina 93,1580.000,$/L,AutoServicio,2026-11-23 23:06:12
 2026-11-25,936,SHELL,Del Biobío,San Pedro de la Paz,AVDA. MICHIMALONCO 1130,-36.843326,-73.094604,97,Gasolina 97,1651.000,$/L,AutoServicio,2026-11-24 00:20:56
@@ -3746,7 +3746,7 @@ fecha,estacion_id,marca,region,comuna,direccion,latitud,longitud,combustible_cor
 2026-11-25,892,SHELL,Del Biobío,Concepción,Paicavi 1769,-36.81023387725661,-73.05077791213989,A93,Gasolina 93,1557.000,$/L,Asistido,2026-11-23 23:06:23
 2026-11-25,892,SHELL,Del Biobío,Concepción,Paicavi 1769,-36.81023387725661,-73.05077791213989,ADI,Petroleo Diesel,1452.000,$/L,Asistido,2026-11-24 13:36:07
 2026-11-25,893,Serviautos,Del Biobío,Concepción,Manuel Gutierrez 2313,-36.801832623712755,-73.04058820009231,93,Gasolina 93,1553.000,$/L,AutoServicio,2026-11-19 10:31:29
-2026-11-25,893,Serviautos,Del Biobío,Concepción,Manuel Gutierrez 2313,-36.801832623712755,-73.04058820009231,97,Gasolina 97,1634.000,$/L,AutoServicio,2026-11-19 10:31:29
+2026-11-25,893,Serviautos,Del Biobío,Concepción,Manuel Gutierrez 2313,-36.801832623712755,-73.04058820009231,97,Gasolina 97,1634.000,$/L,AutoServicio,2026-11-25 16:27:15
 2026-11-25,893,Serviautos,Del Biobío,Concepción,Manuel Gutierrez 2313,-36.801832623712755,-73.04058820009231,DI,Petroleo Diesel,1459.000,$/L,AutoServicio,2026-11-19 10:31:29
 2026-11-25,893,Serviautos,Del Biobío,Concepción,Manuel Gutierrez 2313,-36.801832623712755,-73.04058820009231,KE,Kerosene,1375.000,$/L,AutoServicio,2026-11-19 10:31:29
 2026-11-25,893,Serviautos,Del Biobío,Concepción,Manuel Gutierrez 2313,-36.801832623712755,-73.04058820009231,95,Gasolina 95,1591.000,$/L,AutoServicio,2026-11-19 10:31:29
@@ -3847,12 +3847,10 @@ fecha,estacion_id,marca,region,comuna,direccion,latitud,longitud,combustible_cor
 2026-11-25,981,SHELL,Del Biobío,Cañete,Saavedra /Covadonga 591,-37.801617,-73.400251,93,Gasolina 93,1595.000,$/L,AutoServicio,2026-11-19 09:24:36
 2026-11-25,981,SHELL,Del Biobío,Cañete,Saavedra /Covadonga 591,-37.801617,-73.400251,97,Gasolina 97,1665.000,$/L,AutoServicio,2026-11-19 09:24:36
 2026-11-25,981,SHELL,Del Biobío,Cañete,Saavedra /Covadonga 591,-37.801617,-73.400251,DI,Petroleo Diesel,1497.000,$/L,AutoServicio,2026-11-19 09:24:36
-2026-11-25,981,SHELL,Del Biobío,Cañete,Saavedra /Covadonga 591,-37.801617,-73.400251,KE,Kerosene,1328.000,$/L,AutoServicio,2026-10-08 09:25:02
 2026-11-25,981,SHELL,Del Biobío,Cañete,Saavedra /Covadonga 591,-37.801617,-73.400251,95,Gasolina 95,1631.000,$/L,AutoServicio,2026-11-19 09:24:36
 2026-11-25,985,SHELL,Del Biobío,Curanilahue,O'Higgins 905,-37.476243,-73.342124,93,Gasolina 93,1596.000,$/L,AutoServicio,2026-11-19 07:52:20
 2026-11-25,985,SHELL,Del Biobío,Curanilahue,O'Higgins 905,-37.476243,-73.342124,97,Gasolina 97,1665.000,$/L,AutoServicio,2026-11-19 07:52:20
 2026-11-25,985,SHELL,Del Biobío,Curanilahue,O'Higgins 905,-37.476243,-73.342124,DI,Petroleo Diesel,1495.000,$/L,AutoServicio,2026-11-19 07:52:20
-2026-11-25,985,SHELL,Del Biobío,Curanilahue,O'Higgins 905,-37.476243,-73.342124,KE,Kerosene,1198.000,$/L,AutoServicio,2026-05-29 10:51:27
 2026-11-25,985,SHELL,Del Biobío,Curanilahue,O'Higgins 905,-37.476243,-73.342124,95,Gasolina 95,1630.000,$/L,AutoServicio,2026-11-19 07:52:20
 2026-11-25,1012,SHELL,Del Biobío,Los Ángeles,Ricardo Vicuña /Blanco Encalada 790,-37.472872,-72.354452,93,Gasolina 93,1556.000,$/L,AutoServicio,2026-11-19 10:20:48
 2026-11-25,1012,SHELL,Del Biobío,Los Ángeles,Ricardo Vicuña /Blanco Encalada 790,-37.472872,-72.354452,97,Gasolina 97,1616.000,$/L,AutoServicio,2026-11-19 12:35:45
@@ -4649,7 +4647,7 @@ fecha,estacion_id,marca,region,comuna,direccion,latitud,longitud,combustible_cor
 2026-11-25,2234,COPEC,De la Araucanía,Villarrica,Av Segunda faja S/N,-39.30277925785606,-72.23001297253631,93,Gasolina 93,1611.000,$/L,AutoServicio,2026-11-19 09:48:25
 2026-11-25,2234,COPEC,De la Araucanía,Villarrica,Av Segunda faja S/N,-39.30277925785606,-72.23001297253631,95,Gasolina 95,1636.000,$/L,AutoServicio,2026-11-19 09:48:25
 2026-11-25,2234,COPEC,De la Araucanía,Villarrica,Av Segunda faja S/N,-39.30277925785606,-72.23001297253631,97,Gasolina 97,1660.000,$/L,AutoServicio,2026-11-19 09:48:25
-2026-11-25,2234,COPEC,De la Araucanía,Villarrica,Av Segunda faja S/N,-39.30277925785606,-72.23001297253631,KE,Kerosene,1036.000,$/L,AutoServicio,2026-11-19 09:48:25
+2026-11-25,2234,COPEC,De la Araucanía,Villarrica,Av Segunda faja S/N,-39.30277925785606,-72.23001297253631,KE,Kerosene,1449.000,$/L,AutoServicio,2026-11-25 16:48:44
 2026-11-25,2234,COPEC,De la Araucanía,Villarrica,Av Segunda faja S/N,-39.30277925785606,-72.23001297253631,DI,Petroleo Diesel,1511.000,$/L,AutoServicio,2026-11-19 09:48:25
 2026-11-25,1443,Gasco Autogas,De los Lagos,Osorno,Av. Los Carreras 501,-40.5726376,-73.1265856,GLP,GLP Vehicular,778.000,$/m3,AutoServicio,2026-11-19 17:20:07
 2026-11-25,1353,COPEC,De los Lagos,Puerto Montt,AV. ANGELMO 1920,-41.48148379019156,-72.95587599277496,93,Gasolina 93,1621.000,$/L,AutoServicio,2026-11-23 09:44:42
@@ -5835,13 +5833,13 @@ fecha,estacion_id,marca,region,comuna,direccion,latitud,longitud,combustible_cor
 2026-11-25,1752,COPEC,Metropolitana de Santiago,Macul,José Pedro Alessandri 2526,-33.477988102605764,-70.59872388839722,95,Gasolina 95,1566.000,$/L,AutoServicio,2026-11-18 21:39:02
 2026-11-25,1753,COPEC,Metropolitana de Santiago,Macul,Vicuña Mackenna 5700,-33.50776491750868,-70.61354577541351,93,Gasolina 93,1516.000,$/L,AutoServicio,2026-11-19 00:10:11
 2026-11-25,1753,COPEC,Metropolitana de Santiago,Macul,Vicuña Mackenna 5700,-33.50776491750868,-70.61354577541351,97,Gasolina 97,1620.000,$/L,AutoServicio,2026-11-19 00:10:11
-2026-11-25,1753,COPEC,Metropolitana de Santiago,Macul,Vicuña Mackenna 5700,-33.50776491750868,-70.61354577541351,DI,Petroleo Diesel,1440.000,$/L,AutoServicio,2026-11-19 00:10:11
-2026-11-25,1753,COPEC,Metropolitana de Santiago,Macul,Vicuña Mackenna 5700,-33.50776491750868,-70.61354577541351,KE,Kerosene,1380.000,$/L,AutoServicio,2026-11-19 00:10:11
+2026-11-25,1753,COPEC,Metropolitana de Santiago,Macul,Vicuña Mackenna 5700,-33.50776491750868,-70.61354577541351,DI,Petroleo Diesel,1454.000,$/L,AutoServicio,2026-11-25 11:20:30
+2026-11-25,1753,COPEC,Metropolitana de Santiago,Macul,Vicuña Mackenna 5700,-33.50776491750868,-70.61354577541351,KE,Kerosene,1388.000,$/L,AutoServicio,2026-11-25 11:20:30
 2026-11-25,1753,COPEC,Metropolitana de Santiago,Macul,Vicuña Mackenna 5700,-33.50776491750868,-70.61354577541351,95,Gasolina 95,1567.000,$/L,AutoServicio,2026-11-19 00:10:11
 2026-11-25,1753,COPEC,Metropolitana de Santiago,Macul,Vicuña Mackenna 5700,-33.50776491750868,-70.61354577541351,A93,Gasolina 93,1501.000,$/L,Asistido,2026-11-19 00:10:11
 2026-11-25,1753,COPEC,Metropolitana de Santiago,Macul,Vicuña Mackenna 5700,-33.50776491750868,-70.61354577541351,A95,Gasolina 95,1552.000,$/L,Asistido,2026-11-19 00:10:11
 2026-11-25,1753,COPEC,Metropolitana de Santiago,Macul,Vicuña Mackenna 5700,-33.50776491750868,-70.61354577541351,A97,Gasolina 97,1605.000,$/L,Asistido,2026-11-19 00:10:11
-2026-11-25,1753,COPEC,Metropolitana de Santiago,Macul,Vicuña Mackenna 5700,-33.50776491750868,-70.61354577541351,ADI,Petroleo Diesel,1425.000,$/L,Asistido,2026-11-19 00:10:11
+2026-11-25,1753,COPEC,Metropolitana de Santiago,Macul,Vicuña Mackenna 5700,-33.50776491750868,-70.61354577541351,ADI,Petroleo Diesel,1439.000,$/L,Asistido,2026-11-25 11:20:30
 2026-11-25,1760,COPEC,Metropolitana de Santiago,Maipú,Avenida Pajaritos 5200,-33.474587454403114,-70.73997974395752,93,Gasolina 93,1487.000,$/L,AutoServicio,2026-11-18 23:22:30
 2026-11-25,1760,COPEC,Metropolitana de Santiago,Maipú,Avenida Pajaritos 5200,-33.474587454403114,-70.73997974395752,97,Gasolina 97,1569.000,$/L,AutoServicio,2026-11-18 23:22:30
 2026-11-25,1760,COPEC,Metropolitana de Santiago,Maipú,Avenida Pajaritos 5200,-33.474587454403114,-70.73997974395752,DI,Petroleo Diesel,1430.000,$/L,AutoServicio,2026-11-18 23:22:30
@@ -6396,18 +6394,18 @@ fecha,estacion_id,marca,region,comuna,direccion,latitud,longitud,combustible_cor
 2026-11-25,2045,COPEC,Metropolitana de Santiago,San Bernardo,San José 10,-33.59835649483095,-70.69459676742554,A95,Gasolina 95,1552.000,$/L,Asistido,2026-11-18 23:52:46
 2026-11-25,2045,COPEC,Metropolitana de Santiago,San Bernardo,San José 10,-33.59835649483095,-70.69459676742554,A97,Gasolina 97,1591.000,$/L,Asistido,2026-11-18 23:52:46
 2026-11-25,2045,COPEC,Metropolitana de Santiago,San Bernardo,San José 10,-33.59835649483095,-70.69459676742554,ADI,Petroleo Diesel,1421.000,$/L,Asistido,2026-11-18 23:52:46
-2026-11-25,2046,COPEC,Metropolitana de Santiago,San Bernardo,CAMINO LONGITUDINAL SUR KM 27,-33.669568405304105,-70.7220196723938,93,Gasolina 93,1575.000,$/L,AutoServicio,2026-11-23 16:35:10
-2026-11-25,2046,COPEC,Metropolitana de Santiago,San Bernardo,CAMINO LONGITUDINAL SUR KM 27,-33.669568405304105,-70.7220196723938,97,Gasolina 97,1674.000,$/L,AutoServicio,2026-11-23 16:35:10
-2026-11-25,2046,COPEC,Metropolitana de Santiago,San Bernardo,CAMINO LONGITUDINAL SUR KM 27,-33.669568405304105,-70.7220196723938,DI,Petroleo Diesel,1446.000,$/L,AutoServicio,2026-11-23 16:35:10
-2026-11-25,2046,COPEC,Metropolitana de Santiago,San Bernardo,CAMINO LONGITUDINAL SUR KM 27,-33.669568405304105,-70.7220196723938,95,Gasolina 95,1624.000,$/L,AutoServicio,2026-11-23 16:35:10
-2026-11-25,2047,COPEC,Metropolitana de Santiago,San Bernardo,PRESIDENTE JORGE ALESSANDRI RODRIGUEZ 20011,-33.63203548734894,-70.71417537462156,93,Gasolina 93,1575.000,$/L,AutoServicio,2026-11-23 16:45:13
-2026-11-25,2047,COPEC,Metropolitana de Santiago,San Bernardo,PRESIDENTE JORGE ALESSANDRI RODRIGUEZ 20011,-33.63203548734894,-70.71417537462156,97,Gasolina 97,1674.000,$/L,AutoServicio,2026-11-23 16:45:13
-2026-11-25,2047,COPEC,Metropolitana de Santiago,San Bernardo,PRESIDENTE JORGE ALESSANDRI RODRIGUEZ 20011,-33.63203548734894,-70.71417537462156,DI,Petroleo Diesel,1446.000,$/L,AutoServicio,2026-11-23 16:45:13
-2026-11-25,2047,COPEC,Metropolitana de Santiago,San Bernardo,PRESIDENTE JORGE ALESSANDRI RODRIGUEZ 20011,-33.63203548734894,-70.71417537462156,95,Gasolina 95,1624.000,$/L,AutoServicio,2026-11-23 16:45:13
-2026-11-25,2047,COPEC,Metropolitana de Santiago,San Bernardo,PRESIDENTE JORGE ALESSANDRI RODRIGUEZ 20011,-33.63203548734894,-70.71417537462156,ADI,Petroleo Diesel,1431.000,$/L,Asistido,2026-11-23 16:45:13
-2026-11-25,2047,COPEC,Metropolitana de Santiago,San Bernardo,PRESIDENTE JORGE ALESSANDRI RODRIGUEZ 20011,-33.63203548734894,-70.71417537462156,A93,Gasolina 93,1560.000,$/L,Asistido,2026-11-23 16:45:13
-2026-11-25,2047,COPEC,Metropolitana de Santiago,San Bernardo,PRESIDENTE JORGE ALESSANDRI RODRIGUEZ 20011,-33.63203548734894,-70.71417537462156,A95,Gasolina 95,1609.000,$/L,Asistido,2026-11-23 16:45:13
-2026-11-25,2047,COPEC,Metropolitana de Santiago,San Bernardo,PRESIDENTE JORGE ALESSANDRI RODRIGUEZ 20011,-33.63203548734894,-70.71417537462156,A97,Gasolina 97,1659.000,$/L,Asistido,2026-11-23 16:45:13
+2026-11-25,2046,COPEC,Metropolitana de Santiago,San Bernardo,CAMINO LONGITUDINAL SUR KM 27,-33.669568405304105,-70.7220196723938,93,Gasolina 93,1595.000,$/L,AutoServicio,2026-11-25 15:36:19
+2026-11-25,2046,COPEC,Metropolitana de Santiago,San Bernardo,CAMINO LONGITUDINAL SUR KM 27,-33.669568405304105,-70.7220196723938,97,Gasolina 97,1694.000,$/L,AutoServicio,2026-11-25 15:36:19
+2026-11-25,2046,COPEC,Metropolitana de Santiago,San Bernardo,CAMINO LONGITUDINAL SUR KM 27,-33.669568405304105,-70.7220196723938,DI,Petroleo Diesel,1466.000,$/L,AutoServicio,2026-11-25 15:36:19
+2026-11-25,2046,COPEC,Metropolitana de Santiago,San Bernardo,CAMINO LONGITUDINAL SUR KM 27,-33.669568405304105,-70.7220196723938,95,Gasolina 95,1644.000,$/L,AutoServicio,2026-11-25 15:36:19
+2026-11-25,2047,COPEC,Metropolitana de Santiago,San Bernardo,PRESIDENTE JORGE ALESSANDRI RODRIGUEZ 20011,-33.63203548734894,-70.71417537462156,93,Gasolina 93,1595.000,$/L,AutoServicio,2026-11-25 16:03:36
+2026-11-25,2047,COPEC,Metropolitana de Santiago,San Bernardo,PRESIDENTE JORGE ALESSANDRI RODRIGUEZ 20011,-33.63203548734894,-70.71417537462156,97,Gasolina 97,1694.000,$/L,AutoServicio,2026-11-25 16:03:36
+2026-11-25,2047,COPEC,Metropolitana de Santiago,San Bernardo,PRESIDENTE JORGE ALESSANDRI RODRIGUEZ 20011,-33.63203548734894,-70.71417537462156,DI,Petroleo Diesel,1466.000,$/L,AutoServicio,2026-11-25 16:03:36
+2026-11-25,2047,COPEC,Metropolitana de Santiago,San Bernardo,PRESIDENTE JORGE ALESSANDRI RODRIGUEZ 20011,-33.63203548734894,-70.71417537462156,95,Gasolina 95,1644.000,$/L,AutoServicio,2026-11-25 16:03:36
+2026-11-25,2047,COPEC,Metropolitana de Santiago,San Bernardo,PRESIDENTE JORGE ALESSANDRI RODRIGUEZ 20011,-33.63203548734894,-70.71417537462156,ADI,Petroleo Diesel,1451.000,$/L,Asistido,2026-11-25 16:03:36
+2026-11-25,2047,COPEC,Metropolitana de Santiago,San Bernardo,PRESIDENTE JORGE ALESSANDRI RODRIGUEZ 20011,-33.63203548734894,-70.71417537462156,A93,Gasolina 93,1580.000,$/L,Asistido,2026-11-25 16:03:36
+2026-11-25,2047,COPEC,Metropolitana de Santiago,San Bernardo,PRESIDENTE JORGE ALESSANDRI RODRIGUEZ 20011,-33.63203548734894,-70.71417537462156,A95,Gasolina 95,1629.000,$/L,Asistido,2026-11-25 16:03:36
+2026-11-25,2047,COPEC,Metropolitana de Santiago,San Bernardo,PRESIDENTE JORGE ALESSANDRI RODRIGUEZ 20011,-33.63203548734894,-70.71417537462156,A97,Gasolina 97,1679.000,$/L,Asistido,2026-11-25 16:03:36
 2026-11-25,2075,COPEC,Metropolitana de Santiago,Buin,Balmaceda 901,-33.73161636130819,-70.74891149997711,93,Gasolina 93,1632.000,$/L,AutoServicio,2026-11-17 17:48:11
 2026-11-25,2075,COPEC,Metropolitana de Santiago,Buin,Balmaceda 901,-33.73161636130819,-70.74891149997711,97,Gasolina 97,1731.000,$/L,AutoServicio,2026-11-17 17:48:11
 2026-11-25,2075,COPEC,Metropolitana de Santiago,Buin,Balmaceda 901,-33.73161636130819,-70.74891149997711,DI,Petroleo Diesel,1645.000,$/L,AutoServicio,2026-11-17 17:48:11
@@ -6524,11 +6522,11 @@ fecha,estacion_id,marca,region,comuna,direccion,latitud,longitud,combustible_cor
 2026-11-25,2140,COPEC,Metropolitana de Santiago,Peñaflor,Vicuña Mackenna 3957,-33.61083087074034,-70.9031492471695,DI,Petroleo Diesel,1383.000,$/L,AutoServicio,2026-11-19 11:56:50
 2026-11-25,2140,COPEC,Metropolitana de Santiago,Peñaflor,Vicuña Mackenna 3957,-33.61083087074034,-70.9031492471695,KE,Kerosene,1382.000,$/L,AutoServicio,2026-11-19 00:03:00
 2026-11-25,2140,COPEC,Metropolitana de Santiago,Peñaflor,Vicuña Mackenna 3957,-33.61083087074034,-70.9031492471695,95,Gasolina 95,1506.000,$/L,AutoServicio,2026-11-19 11:56:50
-2026-11-25,2141,COPEC,Metropolitana de Santiago,Peñaflor,Balmaceda 83,-33.603533,-70.851626,93,Gasolina 93,1510.000,$/L,AutoServicio,2026-11-19 13:57:56
-2026-11-25,2141,COPEC,Metropolitana de Santiago,Peñaflor,Balmaceda 83,-33.603533,-70.851626,97,Gasolina 97,1609.000,$/L,AutoServicio,2026-11-19 13:57:56
+2026-11-25,2141,COPEC,Metropolitana de Santiago,Peñaflor,Balmaceda 83,-33.603533,-70.851626,93,Gasolina 93,1516.000,$/L,AutoServicio,2026-11-25 18:47:59
+2026-11-25,2141,COPEC,Metropolitana de Santiago,Peñaflor,Balmaceda 83,-33.603533,-70.851626,97,Gasolina 97,1612.000,$/L,AutoServicio,2026-11-25 18:47:59
 2026-11-25,2141,COPEC,Metropolitana de Santiago,Peñaflor,Balmaceda 83,-33.603533,-70.851626,DI,Petroleo Diesel,1462.000,$/L,AutoServicio,2026-11-19 13:57:56
 2026-11-25,2141,COPEC,Metropolitana de Santiago,Peñaflor,Balmaceda 83,-33.603533,-70.851626,KE,Kerosene,1389.000,$/L,AutoServicio,2026-11-19 13:57:56
-2026-11-25,2141,COPEC,Metropolitana de Santiago,Peñaflor,Balmaceda 83,-33.603533,-70.851626,95,Gasolina 95,1515.000,$/L,AutoServicio,2026-11-19 13:57:56
+2026-11-25,2141,COPEC,Metropolitana de Santiago,Peñaflor,Balmaceda 83,-33.603533,-70.851626,95,Gasolina 95,1521.000,$/L,AutoServicio,2026-11-25 18:47:59
 2026-11-25,1899,JLC,Metropolitana de Santiago,Quinta Normal,VARGAS FONTECILLA 4193,-33.43326787187986,-70.69204330444336,93,Gasolina 93,1470.000,$/L,AutoServicio,2026-11-19 16:08:18
 2026-11-25,1899,JLC,Metropolitana de Santiago,Quinta Normal,VARGAS FONTECILLA 4193,-33.43326787187986,-70.69204330444336,97,Gasolina 97,1552.000,$/L,AutoServicio,2026-11-19 16:08:18
 2026-11-25,1899,JLC,Metropolitana de Santiago,Quinta Normal,VARGAS FONTECILLA 4193,-33.43326787187986,-70.69204330444336,DI,Petroleo Diesel,1425.000,$/L,AutoServicio,2026-11-19 16:08:18
@@ -7408,15 +7406,15 @@ fecha,estacion_id,marca,region,comuna,direccion,latitud,longitud,combustible_cor
 2026-11-25,1741,SHELL,Metropolitana de Santiago,Lo Barnechea,Av. Pie Andino 4850,-33.325140,-70.541100,A95,Gasolina 95,1628.000,$/L,Asistido,2026-11-19 10:21:12
 2026-11-25,1741,SHELL,Metropolitana de Santiago,Lo Barnechea,Av. Pie Andino 4850,-33.325140,-70.541100,A97,Gasolina 97,1678.000,$/L,Asistido,2026-11-24 00:21:07
 2026-11-25,1741,SHELL,Metropolitana de Santiago,Lo Barnechea,Av. Pie Andino 4850,-33.325140,-70.541100,ADI,Petroleo Diesel,1492.000,$/L,Asistido,2026-11-24 13:36:08
-2026-11-25,1745,SHELL,Metropolitana de Santiago,Lo Espejo,Don Miguel Angel 9175,-33.5270611,-70.70536249999998,93,Gasolina 93,1575.000,$/L,AutoServicio,2026-11-23 23:06:10
-2026-11-25,1745,SHELL,Metropolitana de Santiago,Lo Espejo,Don Miguel Angel 9175,-33.5270611,-70.70536249999998,97,Gasolina 97,1674.000,$/L,AutoServicio,2026-11-24 00:20:55
-2026-11-25,1745,SHELL,Metropolitana de Santiago,Lo Espejo,Don Miguel Angel 9175,-33.5270611,-70.70536249999998,DI,Petroleo Diesel,1446.000,$/L,AutoServicio,2026-11-24 13:35:58
+2026-11-25,1745,SHELL,Metropolitana de Santiago,Lo Espejo,Don Miguel Angel 9175,-33.5270611,-70.70536249999998,93,Gasolina 93,1595.000,$/L,AutoServicio,2026-11-25 12:51:00
+2026-11-25,1745,SHELL,Metropolitana de Santiago,Lo Espejo,Don Miguel Angel 9175,-33.5270611,-70.70536249999998,97,Gasolina 97,1694.000,$/L,AutoServicio,2026-11-25 12:51:00
+2026-11-25,1745,SHELL,Metropolitana de Santiago,Lo Espejo,Don Miguel Angel 9175,-33.5270611,-70.70536249999998,DI,Petroleo Diesel,1466.000,$/L,AutoServicio,2026-11-25 12:51:01
 2026-11-25,1745,SHELL,Metropolitana de Santiago,Lo Espejo,Don Miguel Angel 9175,-33.5270611,-70.70536249999998,KE,Kerosene,1355.000,$/L,AutoServicio,2026-11-19 09:54:30
-2026-11-25,1745,SHELL,Metropolitana de Santiago,Lo Espejo,Don Miguel Angel 9175,-33.5270611,-70.70536249999998,95,Gasolina 95,1624.000,$/L,AutoServicio,2026-11-19 09:54:30
-2026-11-25,1745,SHELL,Metropolitana de Santiago,Lo Espejo,Don Miguel Angel 9175,-33.5270611,-70.70536249999998,A93,Gasolina 93,1560.000,$/L,Asistido,2026-11-23 23:06:10
-2026-11-25,1745,SHELL,Metropolitana de Santiago,Lo Espejo,Don Miguel Angel 9175,-33.5270611,-70.70536249999998,A95,Gasolina 95,1609.000,$/L,Asistido,2026-11-19 09:54:30
-2026-11-25,1745,SHELL,Metropolitana de Santiago,Lo Espejo,Don Miguel Angel 9175,-33.5270611,-70.70536249999998,A97,Gasolina 97,1659.000,$/L,Asistido,2026-11-24 00:20:55
-2026-11-25,1745,SHELL,Metropolitana de Santiago,Lo Espejo,Don Miguel Angel 9175,-33.5270611,-70.70536249999998,ADI,Petroleo Diesel,1431.000,$/L,Asistido,2026-11-24 13:35:58
+2026-11-25,1745,SHELL,Metropolitana de Santiago,Lo Espejo,Don Miguel Angel 9175,-33.5270611,-70.70536249999998,95,Gasolina 95,1644.000,$/L,AutoServicio,2026-11-25 12:51:00
+2026-11-25,1745,SHELL,Metropolitana de Santiago,Lo Espejo,Don Miguel Angel 9175,-33.5270611,-70.70536249999998,A93,Gasolina 93,1580.000,$/L,Asistido,2026-11-25 12:51:00
+2026-11-25,1745,SHELL,Metropolitana de Santiago,Lo Espejo,Don Miguel Angel 9175,-33.5270611,-70.70536249999998,A95,Gasolina 95,1629.000,$/L,Asistido,2026-11-25 12:51:00
+2026-11-25,1745,SHELL,Metropolitana de Santiago,Lo Espejo,Don Miguel Angel 9175,-33.5270611,-70.70536249999998,A97,Gasolina 97,1679.000,$/L,Asistido,2026-11-25 12:51:00
+2026-11-25,1745,SHELL,Metropolitana de Santiago,Lo Espejo,Don Miguel Angel 9175,-33.5270611,-70.70536249999998,ADI,Petroleo Diesel,1451.000,$/L,Asistido,2026-11-25 12:51:01
 2026-11-25,1747,SHELL,Metropolitana de Santiago,Lo Prado,San Pablo 8247,-33.444405329887175,-70.74008703231812,A93,Gasolina 93,1531.000,$/L,Asistido,2026-11-20 18:32:37
 2026-11-25,1747,SHELL,Metropolitana de Santiago,Lo Prado,San Pablo 8247,-33.444405329887175,-70.74008703231812,A95,Gasolina 95,1552.000,$/L,Asistido,2026-11-20 18:32:37
 2026-11-25,1747,SHELL,Metropolitana de Santiago,Lo Prado,San Pablo 8247,-33.444405329887175,-70.74008703231812,A97,Gasolina 97,1585.000,$/L,Asistido,2026-11-20 18:32:37
@@ -7501,14 +7499,14 @@ fecha,estacion_id,marca,region,comuna,direccion,latitud,longitud,combustible_cor
 2026-11-25,1817,SHELL,Metropolitana de Santiago,Pedro Aguirre Cerda,Avenida Departamental 2400,-33.49776514767982,-70.67232370376587,DI,Petroleo Diesel,1460.000,$/L,AutoServicio,2026-11-19 10:20:39
 2026-11-25,1817,SHELL,Metropolitana de Santiago,Pedro Aguirre Cerda,Avenida Departamental 2400,-33.49776514767982,-70.67232370376587,KE,Kerosene,1129.000,$/L,AutoServicio,2026-07-08 17:48:55
 2026-11-25,1817,SHELL,Metropolitana de Santiago,Pedro Aguirre Cerda,Avenida Departamental 2400,-33.49776514767982,-70.67232370376587,95,Gasolina 95,1596.000,$/L,AutoServicio,2026-11-19 10:20:39
-2026-11-25,1818,SHELL,Metropolitana de Santiago,Pedro Aguirre Cerda,Cerrillos 6199,-33.5000958,-70.6934918,93,Gasolina 93,1575.000,$/L,AutoServicio,2026-11-23 23:06:10
-2026-11-25,1818,SHELL,Metropolitana de Santiago,Pedro Aguirre Cerda,Cerrillos 6199,-33.5000958,-70.6934918,97,Gasolina 97,1674.000,$/L,AutoServicio,2026-11-24 00:20:55
+2026-11-25,1818,SHELL,Metropolitana de Santiago,Pedro Aguirre Cerda,Cerrillos 6199,-33.5000958,-70.6934918,93,Gasolina 93,1595.000,$/L,AutoServicio,2026-11-25 12:51:00
+2026-11-25,1818,SHELL,Metropolitana de Santiago,Pedro Aguirre Cerda,Cerrillos 6199,-33.5000958,-70.6934918,97,Gasolina 97,1694.000,$/L,AutoServicio,2026-11-25 12:51:00
 2026-11-25,1818,SHELL,Metropolitana de Santiago,Pedro Aguirre Cerda,Cerrillos 6199,-33.5000958,-70.6934918,DI,Petroleo Diesel,1446.000,$/L,AutoServicio,2026-11-24 13:35:58
 2026-11-25,1818,SHELL,Metropolitana de Santiago,Pedro Aguirre Cerda,Cerrillos 6199,-33.5000958,-70.6934918,KE,Kerosene,1377.000,$/L,AutoServicio,2026-11-19 10:20:47
-2026-11-25,1818,SHELL,Metropolitana de Santiago,Pedro Aguirre Cerda,Cerrillos 6199,-33.5000958,-70.6934918,95,Gasolina 95,1624.000,$/L,AutoServicio,2026-11-19 10:20:47
-2026-11-25,1818,SHELL,Metropolitana de Santiago,Pedro Aguirre Cerda,Cerrillos 6199,-33.5000958,-70.6934918,A97,Gasolina 97,1659.000,$/L,Asistido,2026-11-24 00:20:55
-2026-11-25,1818,SHELL,Metropolitana de Santiago,Pedro Aguirre Cerda,Cerrillos 6199,-33.5000958,-70.6934918,A95,Gasolina 95,1609.000,$/L,Asistido,2026-11-19 10:20:47
-2026-11-25,1818,SHELL,Metropolitana de Santiago,Pedro Aguirre Cerda,Cerrillos 6199,-33.5000958,-70.6934918,A93,Gasolina 93,1560.000,$/L,Asistido,2026-11-23 23:06:10
+2026-11-25,1818,SHELL,Metropolitana de Santiago,Pedro Aguirre Cerda,Cerrillos 6199,-33.5000958,-70.6934918,95,Gasolina 95,1644.000,$/L,AutoServicio,2026-11-25 12:51:00
+2026-11-25,1818,SHELL,Metropolitana de Santiago,Pedro Aguirre Cerda,Cerrillos 6199,-33.5000958,-70.6934918,A97,Gasolina 97,1679.000,$/L,Asistido,2026-11-25 12:51:00
+2026-11-25,1818,SHELL,Metropolitana de Santiago,Pedro Aguirre Cerda,Cerrillos 6199,-33.5000958,-70.6934918,A95,Gasolina 95,1629.000,$/L,Asistido,2026-11-25 12:51:00
+2026-11-25,1818,SHELL,Metropolitana de Santiago,Pedro Aguirre Cerda,Cerrillos 6199,-33.5000958,-70.6934918,A93,Gasolina 93,1580.000,$/L,Asistido,2026-11-25 12:51:00
 2026-11-25,1818,SHELL,Metropolitana de Santiago,Pedro Aguirre Cerda,Cerrillos 6199,-33.5000958,-70.6934918,ADI,Petroleo Diesel,1431.000,$/L,Asistido,2026-11-24 13:35:58
 2026-11-25,1832,SHELL,Metropolitana de Santiago,Peñalolén,Avenida Américo Vespucio 1828,-33.47120457193123,-70.57620942592621,93,Gasolina 93,1531.000,$/L,AutoServicio,2026-11-19 10:19:56
 2026-11-25,1832,SHELL,Metropolitana de Santiago,Peñalolén,Avenida Américo Vespucio 1828,-33.47120457193123,-70.57620942592621,97,Gasolina 97,1643.000,$/L,AutoServicio,2026-11-19 10:19:56
@@ -7726,39 +7724,39 @@ fecha,estacion_id,marca,region,comuna,direccion,latitud,longitud,combustible_cor
 2026-11-25,2062,SHELL,Metropolitana de Santiago,San Bernardo,Portales 1800,-33.61243024827864,-70.69721460342407,A95,Gasolina 95,1552.000,$/L,Asistido,2026-11-19 10:20:44
 2026-11-25,2062,SHELL,Metropolitana de Santiago,San Bernardo,Portales 1800,-33.61243024827864,-70.69721460342407,A97,Gasolina 97,1591.000,$/L,Asistido,2026-11-19 10:20:44
 2026-11-25,2062,SHELL,Metropolitana de Santiago,San Bernardo,Portales 1800,-33.61243024827864,-70.69721460342407,ADI,Petroleo Diesel,1421.000,$/L,Asistido,2026-11-19 10:20:44
-2026-11-25,2063,SHELL,Metropolitana de Santiago,San Bernardo,"Panamericana Sur Km 20, Pdte Jorge alessandri 1437",-33.603253528056385,-70.7170844078064,93,Gasolina 93,1575.000,$/L,AutoServicio,2026-11-23 23:06:22
-2026-11-25,2063,SHELL,Metropolitana de Santiago,San Bernardo,"Panamericana Sur Km 20, Pdte Jorge alessandri 1437",-33.603253528056385,-70.7170844078064,97,Gasolina 97,1674.000,$/L,AutoServicio,2026-11-24 00:21:05
-2026-11-25,2063,SHELL,Metropolitana de Santiago,San Bernardo,"Panamericana Sur Km 20, Pdte Jorge alessandri 1437",-33.603253528056385,-70.7170844078064,DI,Petroleo Diesel,1446.000,$/L,AutoServicio,2026-11-24 13:36:07
-2026-11-25,2063,SHELL,Metropolitana de Santiago,San Bernardo,"Panamericana Sur Km 20, Pdte Jorge alessandri 1437",-33.603253528056385,-70.7170844078064,95,Gasolina 95,1624.000,$/L,AutoServicio,2026-11-19 10:21:09
-2026-11-25,2063,SHELL,Metropolitana de Santiago,San Bernardo,"Panamericana Sur Km 20, Pdte Jorge alessandri 1437",-33.603253528056385,-70.7170844078064,A93,Gasolina 93,1560.000,$/L,Asistido,2026-11-23 23:06:22
-2026-11-25,2063,SHELL,Metropolitana de Santiago,San Bernardo,"Panamericana Sur Km 20, Pdte Jorge alessandri 1437",-33.603253528056385,-70.7170844078064,A95,Gasolina 95,1609.000,$/L,Asistido,2026-11-19 10:21:09
-2026-11-25,2063,SHELL,Metropolitana de Santiago,San Bernardo,"Panamericana Sur Km 20, Pdte Jorge alessandri 1437",-33.603253528056385,-70.7170844078064,A97,Gasolina 97,1659.000,$/L,Asistido,2026-11-24 00:21:05
-2026-11-25,2063,SHELL,Metropolitana de Santiago,San Bernardo,"Panamericana Sur Km 20, Pdte Jorge alessandri 1437",-33.603253528056385,-70.7170844078064,ADI,Petroleo Diesel,1431.000,$/L,Asistido,2026-11-24 13:36:07
-2026-11-25,2064,SHELL,Metropolitana de Santiago,San Bernardo,"Ruta 5 sur km 16,4 0",-33.61461649145899,-70.71727552871096,93,Gasolina 93,1575.000,$/L,AutoServicio,2026-11-23 23:06:10
-2026-11-25,2064,SHELL,Metropolitana de Santiago,San Bernardo,"Ruta 5 sur km 16,4 0",-33.61461649145899,-70.71727552871096,97,Gasolina 97,1674.000,$/L,AutoServicio,2026-11-24 00:20:55
-2026-11-25,2064,SHELL,Metropolitana de Santiago,San Bernardo,"Ruta 5 sur km 16,4 0",-33.61461649145899,-70.71727552871096,DI,Petroleo Diesel,1446.000,$/L,AutoServicio,2026-11-24 13:35:58
+2026-11-25,2063,SHELL,Metropolitana de Santiago,San Bernardo,"Panamericana Sur Km 20, Pdte Jorge alessandri 1437",-33.603253528056385,-70.7170844078064,93,Gasolina 93,1595.000,$/L,AutoServicio,2026-11-25 12:51:08
+2026-11-25,2063,SHELL,Metropolitana de Santiago,San Bernardo,"Panamericana Sur Km 20, Pdte Jorge alessandri 1437",-33.603253528056385,-70.7170844078064,97,Gasolina 97,1694.000,$/L,AutoServicio,2026-11-25 12:51:08
+2026-11-25,2063,SHELL,Metropolitana de Santiago,San Bernardo,"Panamericana Sur Km 20, Pdte Jorge alessandri 1437",-33.603253528056385,-70.7170844078064,DI,Petroleo Diesel,1466.000,$/L,AutoServicio,2026-11-25 12:51:08
+2026-11-25,2063,SHELL,Metropolitana de Santiago,San Bernardo,"Panamericana Sur Km 20, Pdte Jorge alessandri 1437",-33.603253528056385,-70.7170844078064,95,Gasolina 95,1644.000,$/L,AutoServicio,2026-11-25 12:51:08
+2026-11-25,2063,SHELL,Metropolitana de Santiago,San Bernardo,"Panamericana Sur Km 20, Pdte Jorge alessandri 1437",-33.603253528056385,-70.7170844078064,A93,Gasolina 93,1580.000,$/L,Asistido,2026-11-25 12:51:08
+2026-11-25,2063,SHELL,Metropolitana de Santiago,San Bernardo,"Panamericana Sur Km 20, Pdte Jorge alessandri 1437",-33.603253528056385,-70.7170844078064,A95,Gasolina 95,1629.000,$/L,Asistido,2026-11-25 12:51:08
+2026-11-25,2063,SHELL,Metropolitana de Santiago,San Bernardo,"Panamericana Sur Km 20, Pdte Jorge alessandri 1437",-33.603253528056385,-70.7170844078064,A97,Gasolina 97,1679.000,$/L,Asistido,2026-11-25 12:51:08
+2026-11-25,2063,SHELL,Metropolitana de Santiago,San Bernardo,"Panamericana Sur Km 20, Pdte Jorge alessandri 1437",-33.603253528056385,-70.7170844078064,ADI,Petroleo Diesel,1451.000,$/L,Asistido,2026-11-25 12:51:08
+2026-11-25,2064,SHELL,Metropolitana de Santiago,San Bernardo,"Ruta 5 sur km 16,4 0",-33.61461649145899,-70.71727552871096,93,Gasolina 93,1595.000,$/L,AutoServicio,2026-11-25 12:51:01
+2026-11-25,2064,SHELL,Metropolitana de Santiago,San Bernardo,"Ruta 5 sur km 16,4 0",-33.61461649145899,-70.71727552871096,97,Gasolina 97,1694.000,$/L,AutoServicio,2026-11-25 12:51:01
+2026-11-25,2064,SHELL,Metropolitana de Santiago,San Bernardo,"Ruta 5 sur km 16,4 0",-33.61461649145899,-70.71727552871096,DI,Petroleo Diesel,1466.000,$/L,AutoServicio,2026-11-25 12:51:01
 2026-11-25,2064,SHELL,Metropolitana de Santiago,San Bernardo,"Ruta 5 sur km 16,4 0",-33.61461649145899,-70.71727552871096,KE,Kerosene,1355.000,$/L,AutoServicio,2026-11-19 10:20:47
-2026-11-25,2064,SHELL,Metropolitana de Santiago,San Bernardo,"Ruta 5 sur km 16,4 0",-33.61461649145899,-70.71727552871096,95,Gasolina 95,1624.000,$/L,AutoServicio,2026-11-19 10:20:47
-2026-11-25,2064,SHELL,Metropolitana de Santiago,San Bernardo,"Ruta 5 sur km 16,4 0",-33.61461649145899,-70.71727552871096,ADI,Petroleo Diesel,1431.000,$/L,Asistido,2026-11-24 13:35:58
-2026-11-25,2064,SHELL,Metropolitana de Santiago,San Bernardo,"Ruta 5 sur km 16,4 0",-33.61461649145899,-70.71727552871096,A93,Gasolina 93,1560.000,$/L,Asistido,2026-11-23 23:06:10
-2026-11-25,2064,SHELL,Metropolitana de Santiago,San Bernardo,"Ruta 5 sur km 16,4 0",-33.61461649145899,-70.71727552871096,A95,Gasolina 95,1609.000,$/L,Asistido,2026-11-19 10:20:47
-2026-11-25,2064,SHELL,Metropolitana de Santiago,San Bernardo,"Ruta 5 sur km 16,4 0",-33.61461649145899,-70.71727552871096,A97,Gasolina 97,1659.000,$/L,Asistido,2026-11-24 00:20:55
-2026-11-25,2065,SHELL,Metropolitana de Santiago,San Bernardo,Jorge Alessandri Autopista Central 25616,-33.681397,-70.726440,93,Gasolina 93,1575.000,$/L,AutoServicio,2026-11-23 23:06:12
-2026-11-25,2065,SHELL,Metropolitana de Santiago,San Bernardo,Jorge Alessandri Autopista Central 25616,-33.681397,-70.726440,97,Gasolina 97,1674.000,$/L,AutoServicio,2026-11-24 00:20:56
-2026-11-25,2065,SHELL,Metropolitana de Santiago,San Bernardo,Jorge Alessandri Autopista Central 25616,-33.681397,-70.726440,DI,Petroleo Diesel,1446.000,$/L,AutoServicio,2026-11-24 13:35:59
-2026-11-25,2065,SHELL,Metropolitana de Santiago,San Bernardo,Jorge Alessandri Autopista Central 25616,-33.681397,-70.726440,95,Gasolina 95,1624.000,$/L,AutoServicio,2026-11-19 10:19:36
-2026-11-25,2065,SHELL,Metropolitana de Santiago,San Bernardo,Jorge Alessandri Autopista Central 25616,-33.681397,-70.726440,A93,Gasolina 93,1560.000,$/L,Asistido,2026-11-23 23:06:12
-2026-11-25,2065,SHELL,Metropolitana de Santiago,San Bernardo,Jorge Alessandri Autopista Central 25616,-33.681397,-70.726440,A95,Gasolina 95,1609.000,$/L,Asistido,2026-11-19 10:19:36
-2026-11-25,2065,SHELL,Metropolitana de Santiago,San Bernardo,Jorge Alessandri Autopista Central 25616,-33.681397,-70.726440,A97,Gasolina 97,1659.000,$/L,Asistido,2026-11-24 00:20:56
-2026-11-25,2065,SHELL,Metropolitana de Santiago,San Bernardo,Jorge Alessandri Autopista Central 25616,-33.681397,-70.726440,ADI,Petroleo Diesel,1431.000,$/L,Asistido,2026-11-24 13:35:59
-2026-11-25,2066,SHELL,Metropolitana de Santiago,San Bernardo,AV. Presidente Jorge Alessandri 26517,-33.681080,-70.725660,93,Gasolina 93,1575.000,$/L,AutoServicio,2026-11-23 23:06:12
-2026-11-25,2066,SHELL,Metropolitana de Santiago,San Bernardo,AV. Presidente Jorge Alessandri 26517,-33.681080,-70.725660,97,Gasolina 97,1674.000,$/L,AutoServicio,2026-11-24 00:20:56
-2026-11-25,2066,SHELL,Metropolitana de Santiago,San Bernardo,AV. Presidente Jorge Alessandri 26517,-33.681080,-70.725660,DI,Petroleo Diesel,1446.000,$/L,AutoServicio,2026-11-24 13:35:59
-2026-11-25,2066,SHELL,Metropolitana de Santiago,San Bernardo,AV. Presidente Jorge Alessandri 26517,-33.681080,-70.725660,95,Gasolina 95,1624.000,$/L,AutoServicio,2026-11-19 10:20:49
-2026-11-25,2066,SHELL,Metropolitana de Santiago,San Bernardo,AV. Presidente Jorge Alessandri 26517,-33.681080,-70.725660,A93,Gasolina 93,1560.000,$/L,Asistido,2026-11-23 23:06:12
-2026-11-25,2066,SHELL,Metropolitana de Santiago,San Bernardo,AV. Presidente Jorge Alessandri 26517,-33.681080,-70.725660,A95,Gasolina 95,1609.000,$/L,Asistido,2026-11-19 10:20:49
-2026-11-25,2066,SHELL,Metropolitana de Santiago,San Bernardo,AV. Presidente Jorge Alessandri 26517,-33.681080,-70.725660,A97,Gasolina 97,1659.000,$/L,Asistido,2026-11-24 00:20:56
-2026-11-25,2066,SHELL,Metropolitana de Santiago,San Bernardo,AV. Presidente Jorge Alessandri 26517,-33.681080,-70.725660,ADI,Petroleo Diesel,1431.000,$/L,Asistido,2026-11-24 13:35:59
+2026-11-25,2064,SHELL,Metropolitana de Santiago,San Bernardo,"Ruta 5 sur km 16,4 0",-33.61461649145899,-70.71727552871096,95,Gasolina 95,1644.000,$/L,AutoServicio,2026-11-25 12:51:01
+2026-11-25,2064,SHELL,Metropolitana de Santiago,San Bernardo,"Ruta 5 sur km 16,4 0",-33.61461649145899,-70.71727552871096,ADI,Petroleo Diesel,1451.000,$/L,Asistido,2026-11-25 12:51:01
+2026-11-25,2064,SHELL,Metropolitana de Santiago,San Bernardo,"Ruta 5 sur km 16,4 0",-33.61461649145899,-70.71727552871096,A93,Gasolina 93,1580.000,$/L,Asistido,2026-11-25 12:51:01
+2026-11-25,2064,SHELL,Metropolitana de Santiago,San Bernardo,"Ruta 5 sur km 16,4 0",-33.61461649145899,-70.71727552871096,A95,Gasolina 95,1629.000,$/L,Asistido,2026-11-25 12:51:01
+2026-11-25,2064,SHELL,Metropolitana de Santiago,San Bernardo,"Ruta 5 sur km 16,4 0",-33.61461649145899,-70.71727552871096,A97,Gasolina 97,1679.000,$/L,Asistido,2026-11-25 12:51:01
+2026-11-25,2065,SHELL,Metropolitana de Santiago,San Bernardo,Jorge Alessandri Autopista Central 25616,-33.681397,-70.726440,93,Gasolina 93,1595.000,$/L,AutoServicio,2026-11-25 12:51:01
+2026-11-25,2065,SHELL,Metropolitana de Santiago,San Bernardo,Jorge Alessandri Autopista Central 25616,-33.681397,-70.726440,97,Gasolina 97,1694.000,$/L,AutoServicio,2026-11-25 12:51:01
+2026-11-25,2065,SHELL,Metropolitana de Santiago,San Bernardo,Jorge Alessandri Autopista Central 25616,-33.681397,-70.726440,DI,Petroleo Diesel,1466.000,$/L,AutoServicio,2026-11-25 12:51:01
+2026-11-25,2065,SHELL,Metropolitana de Santiago,San Bernardo,Jorge Alessandri Autopista Central 25616,-33.681397,-70.726440,95,Gasolina 95,1644.000,$/L,AutoServicio,2026-11-25 12:51:01
+2026-11-25,2065,SHELL,Metropolitana de Santiago,San Bernardo,Jorge Alessandri Autopista Central 25616,-33.681397,-70.726440,A93,Gasolina 93,1580.000,$/L,Asistido,2026-11-25 12:51:01
+2026-11-25,2065,SHELL,Metropolitana de Santiago,San Bernardo,Jorge Alessandri Autopista Central 25616,-33.681397,-70.726440,A95,Gasolina 95,1629.000,$/L,Asistido,2026-11-25 12:51:01
+2026-11-25,2065,SHELL,Metropolitana de Santiago,San Bernardo,Jorge Alessandri Autopista Central 25616,-33.681397,-70.726440,A97,Gasolina 97,1679.000,$/L,Asistido,2026-11-25 12:51:01
+2026-11-25,2065,SHELL,Metropolitana de Santiago,San Bernardo,Jorge Alessandri Autopista Central 25616,-33.681397,-70.726440,ADI,Petroleo Diesel,1451.000,$/L,Asistido,2026-11-25 12:51:01
+2026-11-25,2066,SHELL,Metropolitana de Santiago,San Bernardo,AV. Presidente Jorge Alessandri 26517,-33.681080,-70.725660,93,Gasolina 93,1595.000,$/L,AutoServicio,2026-11-25 12:51:01
+2026-11-25,2066,SHELL,Metropolitana de Santiago,San Bernardo,AV. Presidente Jorge Alessandri 26517,-33.681080,-70.725660,97,Gasolina 97,1694.000,$/L,AutoServicio,2026-11-25 12:51:01
+2026-11-25,2066,SHELL,Metropolitana de Santiago,San Bernardo,AV. Presidente Jorge Alessandri 26517,-33.681080,-70.725660,DI,Petroleo Diesel,1466.000,$/L,AutoServicio,2026-11-25 12:51:01
+2026-11-25,2066,SHELL,Metropolitana de Santiago,San Bernardo,AV. Presidente Jorge Alessandri 26517,-33.681080,-70.725660,95,Gasolina 95,1644.000,$/L,AutoServicio,2026-11-25 12:51:01
+2026-11-25,2066,SHELL,Metropolitana de Santiago,San Bernardo,AV. Presidente Jorge Alessandri 26517,-33.681080,-70.725660,A93,Gasolina 93,1580.000,$/L,Asistido,2026-11-25 12:51:01
+2026-11-25,2066,SHELL,Metropolitana de Santiago,San Bernardo,AV. Presidente Jorge Alessandri 26517,-33.681080,-70.725660,A95,Gasolina 95,1629.000,$/L,Asistido,2026-11-25 12:51:01
+2026-11-25,2066,SHELL,Metropolitana de Santiago,San Bernardo,AV. Presidente Jorge Alessandri 26517,-33.681080,-70.725660,A97,Gasolina 97,1679.000,$/L,Asistido,2026-11-25 12:51:01
+2026-11-25,2066,SHELL,Metropolitana de Santiago,San Bernardo,AV. Presidente Jorge Alessandri 26517,-33.681080,-70.725660,ADI,Petroleo Diesel,1451.000,$/L,Asistido,2026-11-25 12:51:01
 2026-11-25,2082,SHELL,Metropolitana de Santiago,Buin,Panamericana Sur 4251,-33.763236734717246,-70.7438850402832,93,Gasolina 93,1594.000,$/L,AutoServicio,2026-11-19 10:58:29
 2026-11-25,2082,SHELL,Metropolitana de Santiago,Buin,Panamericana Sur 4251,-33.763236734717246,-70.7438850402832,97,Gasolina 97,1694.000,$/L,AutoServicio,2026-11-19 10:58:29
 2026-11-25,2082,SHELL,Metropolitana de Santiago,Buin,Panamericana Sur 4251,-33.763236734717246,-70.7438850402832,DI,Petroleo Diesel,1504.000,$/L,AutoServicio,2026-11-19 10:58:29
@@ -7822,6 +7820,10 @@ fecha,estacion_id,marca,region,comuna,direccion,latitud,longitud,combustible_cor
 2026-11-25,2149,ARAMCO,Metropolitana de Santiago,Peñaflor,Avenida Vicuña Mackenna 1545,-33.6102411486292,-70.87487876415253,DI,Petroleo Diesel,1467.000,$/L,AutoServicio,2026-11-19 10:04:01
 2026-11-25,2149,ARAMCO,Metropolitana de Santiago,Peñaflor,Avenida Vicuña Mackenna 1545,-33.6102411486292,-70.87487876415253,KE,Kerosene,1389.000,$/L,AutoServicio,2026-11-19 10:04:01
 2026-11-25,2149,ARAMCO,Metropolitana de Santiago,Peñaflor,Avenida Vicuña Mackenna 1545,-33.6102411486292,-70.87487876415253,95,Gasolina 95,1572.000,$/L,AutoServicio,2026-11-19 10:04:01
+2026-11-25,2149,ARAMCO,Metropolitana de Santiago,Peñaflor,Avenida Vicuña Mackenna 1545,-33.6102411486292,-70.87487876415253,A93,Gasolina 93,1527.000,$/L,Asistido,2026-11-25 12:18:15
+2026-11-25,2149,ARAMCO,Metropolitana de Santiago,Peñaflor,Avenida Vicuña Mackenna 1545,-33.6102411486292,-70.87487876415253,A95,Gasolina 95,1557.000,$/L,Asistido,2026-11-25 12:18:15
+2026-11-25,2149,ARAMCO,Metropolitana de Santiago,Peñaflor,Avenida Vicuña Mackenna 1545,-33.6102411486292,-70.87487876415253,A97,Gasolina 97,1603.000,$/L,Asistido,2026-11-25 12:18:15
+2026-11-25,2149,ARAMCO,Metropolitana de Santiago,Peñaflor,Avenida Vicuña Mackenna 1545,-33.6102411486292,-70.87487876415253,ADI,Petroleo Diesel,1452.000,$/L,Asistido,2026-11-25 12:18:15
 2026-11-25,2150,SHELL,Metropolitana de Santiago,Peñaflor,Avenida Vicuña Mackenna 2130,-33.611057,-70.882004,93,Gasolina 93,1501.000,$/L,AutoServicio,2026-11-20 13:35:47
 2026-11-25,2150,SHELL,Metropolitana de Santiago,Peñaflor,Avenida Vicuña Mackenna 2130,-33.611057,-70.882004,97,Gasolina 97,1618.000,$/L,AutoServicio,2026-11-20 13:35:47
 2026-11-25,2150,SHELL,Metropolitana de Santiago,Peñaflor,Avenida Vicuña Mackenna 2130,-33.611057,-70.882004,DI,Petroleo Diesel,1383.000,$/L,AutoServicio,2026-11-20 13:35:47
@@ -8098,7 +8100,7 @@ fecha,estacion_id,marca,region,comuna,direccion,latitud,longitud,combustible_cor
 2026-11-25,2068,SHELL,Metropolitana de Santiago,San Bernardo,Ochagavía 13021,-33.56998978716342,-70.69972783327103,DI,Petroleo Diesel,1436.000,$/L,AutoServicio,2026-11-19 10:20:56
 2026-11-25,2068,SHELL,Metropolitana de Santiago,San Bernardo,Ochagavía 13021,-33.56998978716342,-70.69972783327103,KE,Kerosene,1415.000,$/L,AutoServicio,2026-10-22 11:56:41
 2026-11-25,2068,SHELL,Metropolitana de Santiago,San Bernardo,Ochagavía 13021,-33.56998978716342,-70.69972783327103,95,Gasolina 95,1567.000,$/L,AutoServicio,2026-11-19 10:20:56
-2026-11-25,2069,SHELL,Metropolitana de Santiago,San Bernardo,Panamericana Sur Km. 21,-33.614194890177764,-70.71649968624115,DI,Petroleo Diesel,1446.000,$/L,AutoServicio,2026-11-19 10:20:58
+2026-11-25,2069,SHELL,Metropolitana de Santiago,San Bernardo,Panamericana Sur Km. 21,-33.614194890177764,-70.71649968624115,DI,Petroleo Diesel,1466.000,$/L,AutoServicio,2026-11-25 12:51:05
 2026-11-25,2070,SHELL,Metropolitana de Santiago,San Bernardo,Avenida Colón 190,-33.591953293771475,-70.69435000419617,93,Gasolina 93,1514.000,$/L,AutoServicio,2026-11-19 10:20:58
 2026-11-25,2070,SHELL,Metropolitana de Santiago,San Bernardo,Avenida Colón 190,-33.591953293771475,-70.69435000419617,97,Gasolina 97,1606.000,$/L,AutoServicio,2026-11-19 10:20:59
 2026-11-25,2070,SHELL,Metropolitana de Santiago,San Bernardo,Avenida Colón 190,-33.591953293771475,-70.69435000419617,DI,Petroleo Diesel,1436.000,$/L,AutoServicio,2026-11-19 10:20:59
@@ -8175,10 +8177,10 @@ fecha,estacion_id,marca,region,comuna,direccion,latitud,longitud,combustible_cor
 2026-11-25,2201,SHELL,Metropolitana de Santiago,Colina,Carretera General San Martin km 10 Algarrobal,-33.27863887002154,-70.70356490241379,A97,Gasolina 97,1687.000,$/L,Asistido,2026-11-24 00:21:00
 2026-11-25,2201,SHELL,Metropolitana de Santiago,Colina,Carretera General San Martin km 10 Algarrobal,-33.27863887002154,-70.70356490241379,DI,Petroleo Diesel,1508.000,$/L,AutoServicio,2026-11-24 13:36:02
 2026-11-25,2201,SHELL,Metropolitana de Santiago,Colina,Carretera General San Martin km 10 Algarrobal,-33.27863887002154,-70.70356490241379,ADI,Petroleo Diesel,1500.000,$/L,Asistido,2026-11-24 13:36:02
-2026-11-25,2206,COPEC,Metropolitana de Santiago,San Bernardo,AVENIDA GENERAL VELASQUEZ N° 9301,-33.53941040958925,-70.70909642460394,93,Gasolina 93,1555.000,$/L,AutoServicio,2026-11-19 07:45:40
-2026-11-25,2206,COPEC,Metropolitana de Santiago,San Bernardo,AVENIDA GENERAL VELASQUEZ N° 9301,-33.53941040958925,-70.70909642460394,95,Gasolina 95,1604.000,$/L,AutoServicio,2026-11-19 07:45:40
-2026-11-25,2206,COPEC,Metropolitana de Santiago,San Bernardo,AVENIDA GENERAL VELASQUEZ N° 9301,-33.53941040958925,-70.70909642460394,97,Gasolina 97,1654.000,$/L,AutoServicio,2026-11-19 07:45:40
-2026-11-25,2206,COPEC,Metropolitana de Santiago,San Bernardo,AVENIDA GENERAL VELASQUEZ N° 9301,-33.53941040958925,-70.70909642460394,DI,Petroleo Diesel,1446.000,$/L,AutoServicio,2026-11-19 07:45:40
+2026-11-25,2206,COPEC,Metropolitana de Santiago,San Bernardo,AVENIDA GENERAL VELASQUEZ N° 9301,-33.53941040958925,-70.70909642460394,93,Gasolina 93,1595.000,$/L,AutoServicio,2026-11-25 17:33:05
+2026-11-25,2206,COPEC,Metropolitana de Santiago,San Bernardo,AVENIDA GENERAL VELASQUEZ N° 9301,-33.53941040958925,-70.70909642460394,95,Gasolina 95,1644.000,$/L,AutoServicio,2026-11-25 17:33:05
+2026-11-25,2206,COPEC,Metropolitana de Santiago,San Bernardo,AVENIDA GENERAL VELASQUEZ N° 9301,-33.53941040958925,-70.70909642460394,97,Gasolina 97,1694.000,$/L,AutoServicio,2026-11-25 17:33:05
+2026-11-25,2206,COPEC,Metropolitana de Santiago,San Bernardo,AVENIDA GENERAL VELASQUEZ N° 9301,-33.53941040958925,-70.70909642460394,DI,Petroleo Diesel,1466.000,$/L,AutoServicio,2026-11-25 17:33:05
 2026-11-25,2214,COPEC,Metropolitana de Santiago,Colina,Carretera General San Martin km 6.3,-33.31467725816192,-70.70472026084401,93,Gasolina 93,1596.000,$/L,AutoServicio,2026-11-19 16:47:44
 2026-11-25,2214,COPEC,Metropolitana de Santiago,Colina,Carretera General San Martin km 6.3,-33.31467725816192,-70.70472026084401,95,Gasolina 95,1645.000,$/L,AutoServicio,2026-11-19 16:47:44
 2026-11-25,2214,COPEC,Metropolitana de Santiago,Colina,Carretera General San Martin km 6.3,-33.31467725816192,-70.70472026084401,97,Gasolina 97,1695.000,$/L,AutoServicio,2026-11-19 16:47:44
@@ -8318,9 +8320,9 @@ fecha,estacion_id,marca,region,comuna,direccion,latitud,longitud,combustible_cor
 2026-11-25,1316,COPEC,De los Ríos,Lanco,"Arturo Prat s/n KM 26, Ruta CH 203, Malalhue",-39.53856500907855,-72.5140569008056,DI,Petroleo Diesel,1496.000,$/L,AutoServicio,2026-11-19 10:18:02
 2026-11-25,1316,COPEC,De los Ríos,Lanco,"Arturo Prat s/n KM 26, Ruta CH 203, Malalhue",-39.53856500907855,-72.5140569008056,KE,Kerosene,1425.000,$/L,AutoServicio,2026-11-19 10:18:02
 2026-11-25,1316,COPEC,De los Ríos,Lanco,"Arturo Prat s/n KM 26, Ruta CH 203, Malalhue",-39.53856500907855,-72.5140569008056,95,Gasolina 95,1665.000,$/L,AutoServicio,2026-11-19 10:18:02
-2026-11-25,1331,Sin Bandera,De los Ríos,Panguipulli,Los Raulíes S/N,-39.847020,-71.943249,93,Gasolina 93,1890.000,$/L,AutoServicio,2026-10-28 16:27:55
-2026-11-25,1331,Sin Bandera,De los Ríos,Panguipulli,Los Raulíes S/N,-39.847020,-71.943249,DI,Petroleo Diesel,1877.000,$/L,AutoServicio,2026-10-28 16:27:15
-2026-11-25,1331,Sin Bandera,De los Ríos,Panguipulli,Los Raulíes S/N,-39.847020,-71.943249,95,Gasolina 95,1917.000,$/L,AutoServicio,2026-10-28 16:27:15
+2026-11-25,1331,Sin Bandera,De los Ríos,Panguipulli,Los Raulíes S/N,-39.847020,-71.943249,93,Gasolina 93,1899.000,$/L,AutoServicio,2026-11-25 13:20:52
+2026-11-25,1331,Sin Bandera,De los Ríos,Panguipulli,Los Raulíes S/N,-39.847020,-71.943249,DI,Petroleo Diesel,1797.000,$/L,AutoServicio,2026-11-25 13:20:52
+2026-11-25,1331,Sin Bandera,De los Ríos,Panguipulli,Los Raulíes S/N,-39.847020,-71.943249,95,Gasolina 95,1933.000,$/L,AutoServicio,2026-11-25 13:20:52
 2026-11-25,1313,Sin Bandera,De los Ríos,Corral,Avenida Costanera s/n  0,-39.883511,-73.434639,DI,Petroleo Diesel,1538.000,$/L,AutoServicio,2026-11-19 08:10:13
 2026-11-25,1313,Sin Bandera,De los Ríos,Corral,Avenida Costanera s/n  0,-39.883511,-73.434639,95,Gasolina 95,1671.000,$/L,AutoServicio,2026-11-19 08:10:13
 2026-11-25,1303,ARAMCO,De los Ríos,Valdivia,Picarte  esq. Rubén Darío 3050,-39.838298849862056,-73.20958614349365,93,Gasolina 93,1630.000,$/L,AutoServicio,2026-11-19 09:09:10
@@ -8590,10 +8592,10 @@ fecha,estacion_id,marca,region,comuna,direccion,latitud,longitud,combustible_cor
 2026-11-25,1092,COPEC,Ñuble,Chillán Viejo,RUTA 5 KM 409.4 0,-36.63410053553575,-72.1942412853241,97,Gasolina 97,1654.000,$/L,AutoServicio,2026-11-19 00:08:16
 2026-11-25,1092,COPEC,Ñuble,Chillán Viejo,RUTA 5 KM 409.4 0,-36.63410053553575,-72.1942412853241,DI,Petroleo Diesel,1498.000,$/L,AutoServicio,2026-11-19 00:08:16
 2026-11-25,1092,COPEC,Ñuble,Chillán Viejo,RUTA 5 KM 409.4 0,-36.63410053553575,-72.1942412853241,95,Gasolina 95,1625.000,$/L,AutoServicio,2026-11-19 00:08:16
-2026-11-25,1060,Sin Bandera,Ñuble,Chillán,20 de agosto 25,-36.61703016004149,-72.1309390284195,93,Gasolina 93,1508.000,$/L,AutoServicio,2026-10-18 21:26:43
-2026-11-25,1060,Sin Bandera,Ñuble,Chillán,20 de agosto 25,-36.61703016004149,-72.1309390284195,DI,Petroleo Diesel,1467.000,$/L,AutoServicio,2026-10-18 21:26:43
+2026-11-25,1060,Sin Bandera,Ñuble,Chillán,20 de agosto 25,-36.61703016004149,-72.1309390284195,93,Gasolina 93,1561.000,$/L,AutoServicio,2026-11-25 12:12:29
+2026-11-25,1060,Sin Bandera,Ñuble,Chillán,20 de agosto 25,-36.61703016004149,-72.1309390284195,DI,Petroleo Diesel,1463.000,$/L,AutoServicio,2026-11-25 12:12:29
 2026-11-25,1060,Sin Bandera,Ñuble,Chillán,20 de agosto 25,-36.61703016004149,-72.1309390284195,KE,Kerosene,1060.000,$/L,AutoServicio,2026-10-18 20:30:07
-2026-11-25,1060,Sin Bandera,Ñuble,Chillán,20 de agosto 25,-36.61703016004149,-72.1309390284195,95,Gasolina 95,1544.000,$/L,AutoServicio,2026-10-18 21:26:43
+2026-11-25,1060,Sin Bandera,Ñuble,Chillán,20 de agosto 25,-36.61703016004149,-72.1309390284195,95,Gasolina 95,1596.000,$/L,AutoServicio,2026-11-25 12:12:29
 2026-11-25,1079,COPEC,Ñuble,Bulnes,Sargento Aldea 498,-36.74896004477087,-72.28687405586242,93,Gasolina 93,1589.000,$/L,AutoServicio,2026-11-19 00:07:57
 2026-11-25,1079,COPEC,Ñuble,Bulnes,Sargento Aldea 498,-36.74896004477087,-72.28687405586242,97,Gasolina 97,1645.000,$/L,AutoServicio,2026-11-19 00:07:57
 2026-11-25,1079,COPEC,Ñuble,Bulnes,Sargento Aldea 498,-36.74896004477087,-72.28687405586242,DI,Petroleo Diesel,1479.000,$/L,AutoServicio,2026-11-19 00:07:57
